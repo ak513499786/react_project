@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react_project/static/css/main.58e5c45f.css",
+    "main.js": "/react_project/static/js/main.acbbd0a6.js",
+    "static/js/787.ec704a7a.chunk.js": "/react_project/static/js/787.ec704a7a.chunk.js",
+    "static/media/GraphikThin.otf": "/react_project/static/media/GraphikThin.e3d1797d6ba86f13242c.otf",
+    "static/media/graphik.otf": "/react_project/static/media/graphik.e7f4046c1937c259c933.otf",
+    "static/media/Frame 76.png": "/react_project/static/media/Frame 76.4371c71c65b4ead175a0.png",
+    "static/media/Group 1000002240.png": "/react_project/static/media/Group 1000002240.7bb687eb496285fbba2c.png",
+    "static/media/Frame 77.png": "/react_project/static/media/Frame 77.8da12e9af829935b8188.png",
+    "static/media/logo.svg": "/react_project/static/media/logo.604f8e1a7561ed4924d04afc5576a8f7.svg",
+    "static/media/mdi_instagram.svg": "/react_project/static/media/mdi_instagram.f872e423414f4ff96dd037afa4c4b019.svg",
+    "static/media/mdi_linkedin.svg": "/react_project/static/media/mdi_linkedin.b26373ace4e4b22c09e9d3a6a9b8d622.svg",
+    "static/media/mdi_twitter.svg": "/react_project/static/media/mdi_twitter.b418cee0529e6b44cc3d2aa960cd98e1.svg",
+    "static/media/Group 1000002377.svg": "/react_project/static/media/Group 1000002377.cb05fbea66d7135572428d2411e077ac.svg",
+    "static/media/ic_baseline-facebook.svg": "/react_project/static/media/ic_baseline-facebook.84b1d6c1edc3c7451f669595439742a1.svg",
+    "index.html": "/react_project/index.html",
+    "main.58e5c45f.css.map": "/react_project/static/css/main.58e5c45f.css.map",
+    "main.acbbd0a6.js.map": "/react_project/static/js/main.acbbd0a6.js.map",
+    "787.ec704a7a.chunk.js.map": "/react_project/static/js/787.ec704a7a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58e5c45f.css",
+    "static/js/main.acbbd0a6.js"
+  ]
+}
