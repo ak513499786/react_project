@@ -1,0 +1,101 @@
+#socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 25%;
+    position: relative;
+    left: 20%;
+    bottom: 40px;
+}
+#footer{
+    position: relative;
+    top: 250px;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+#ftrcnt{
+    font-family: graphikthin;
+    color: rgba(255, 255, 255, 0.612);
+    font-size: clamp(20px,25px,30px);
+    text-align: center;
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 30px;
+    white-space: nowrap;
+}
+#ftrh1{
+    font-size: clamp(20px,250px,300px);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    transition: 0.5s;
+    white-space: nowrap;
+    font-family: Graphik;
+}
+#ftrh1:hover{
+    text-shadow: 0px 0px 20px rgb(245, 230, 202),0px 0px 20px rgb(249, 228, 190);
+}
+#lower-footer{
+    display: flex;
+    justify-content: space-around;
+    max-width: 40em;
+    padding-left: 26.5%;
+    padding-top: 100px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+#contact{
+    line-height: 30px;
+    font-size: 15pz;
+    position: relative;
+    left: 10%;
+}
+.arrow{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    display: inline;
+    width: 100px;
+}
+.icon{
+    width: 20px;
+}
+.column{
+    line-height: 38px;
+}
+.link{
+    text-decoration: none;
+}
+@media screen and (max-width:1000px){
+    #ftrcnt{
+        font-size: 20px;   
+    }
+    .arrow{
+        width: 80px;
+    }
+    #lower-footer{
+        padding-left: 5%;
+    }
+    #ftrh1{
+        font-size:100px;
+    }
+    #socials{
+        width: 20%;
+    }
+}
+@media screen and (max-width:750px){
+    #lower-footer{
+        max-width: 30em;
+    }
+    #ftrh1{
+        font-size:70px;
+    }
+}

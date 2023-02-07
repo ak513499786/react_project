@@ -1,0 +1,108 @@
+#hero_services{
+    font-size: clamp(50px,57px,60px);
+    font-weight: 900;
+    height: 100vh;
+    width: 100%;
+    font-family: graphikthin;
+}
+.services_hero-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+}
+.words{
+    display: block;
+    padding-left: 10px;
+    animation: spin-words 4s infinite;
+    letter-spacing: 0.003em;
+    animation-delay:2s ;
+}
+.rolling-words{
+    overflow: hidden;
+    height: 75px;
+    position: relative;
+    letter-spacing: 0.003em;
+    top: 0px;
+}
+.wedo{
+    width: 90%;
+    height: 80vh;
+    margin-left: 9%;
+    margin-top: 10%;
+}
+.wedo-h1{
+    font-size: 80px;
+}
+.wedo-para{
+    font-size: 15px;
+    font-family: graphik;
+    color: #848488;
+    width: 65%;
+    line-height: 25px;
+    margin: 30px 0px 60px 0px;
+}
+.service-container-h1{
+    font-size: 70px;
+    width: 60%;
+    margin: 5% 0 3% 9%;
+}
+.s-container-para{
+    font-size: 15px;
+    line-height: 23px;
+    color: #848488;
+    font-family: graphik;
+    width: 33%;
+    margin-left: 9%;
+}
+.service-mini-container{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 12% 0  0 11%;
+}
+.ser-btn{
+    line-height: 43px;
+    font-size: 23px;
+    color: #a9a9a9;
+}
+.color-white{
+    color: white;
+}
+.side-content-containers{
+    width: 40%;
+    margin: 10px;
+}
+.side-content{
+    width: 47%;
+    margin-right: 5%;
+}
+.sc{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+}
+.side-content-h1{
+    font-size: 27px;
+    margin-bottom: 20px;
+    color: #a9a9a9;
+}
+.side-content-para{
+    color: #525253;
+    font-size: 15px;
+    font-family: graphik;
+    line-height: 23px;
+}
+@keyframes spin-words {
+    33%{
+        transform: translateY(-100%);
+        
+    }
+    70%{
+        transform: translateY(-205%);
+    }
+    100%{
+        transform: translateY(-310%);
+    }
+}

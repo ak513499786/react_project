@@ -1,0 +1,226 @@
+.contact-hero {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-section {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 130px;
+}
+.contact-hero-h1 {
+  font-size: 78px;
+  margin: 20px;
+}
+.contact-hero-para {
+  width: 70%;
+  margin-left: 15%;
+  line-height: 23px;
+  color: #848488;
+  font-family: graphik;
+  font-size: 15px;
+}
+.address {
+  text-align: center;
+  margin-top: 195px;
+  width: 100%;
+  height: 50vh;
+}
+.address-h1 {
+  font-size: 25px;
+  margin: 20px;
+}
+.address-p {
+  color: #848488;
+  font-family: graphik;
+  line-height: 25px;
+  font-size: 15px;
+}
+.address-loc {
+  font-size: 27px;
+  font-family: graphik;
+  color: #848488;
+  margin-top: 65px;
+}
+.sub_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  width: 230px;
+  height: 30px;
+  border: 2px solid #686868;
+  border-radius: 20px;
+  position: relative;
+  left: 33%;
+  transition: 0.5s;
+}
+.sub_btn:hover {
+  background-color: rgb(232, 202, 33);
+  color: black;
+  font-weight: bold;
+  border: 2px solid rgb(232, 202, 33);
+}
+.sub_btn:hover .exp_btn-content {
+  color: black;
+  font-weight: bold;
+}
+.name {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  color: #848488;
+  font-size: 16px;
+  font-family: graphik;
+  margin-top: 30px;
+}
+.border-white {
+  border-bottom: 2px solid white;
+}
+.border-grey {
+  border-bottom: 2px solid #686868;
+}
+#form {
+  width: 46%;
+  margin-left: 27%;
+  margin-top: 35px;
+  text-align: center;
+}
+.contact-form-h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+.width-40 {
+  width: 45%;
+}
+.width-35 {
+  width: 38%;
+}
+.lastname {
+  margin-left: 68px;
+}
+.yourmsg {
+  width: 100%;
+}
+.email {
+  margin-right: 68px;
+}
+.service {
+  width: 35%;
+}
+.tele{
+    position: relative;
+    top: 1px;
+}
+.question{
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.question-h1{
+    font-size: 40px;
+    width: 30%;
+    margin: 50px 35%;
+}
+.questions{
+    border-bottom: 2px solid #686868;
+    width: 34%;
+    margin: 10px 33%;
+    font-size: 25px;
+    color: #919191;
+    font-family: graphik;
+    padding: 15px 0px;
+    display: flex;
+    gap: 73%;
+}
+.plus{
+    color: #919191;
+}
+#contact-left, #contact-right{
+    width: 45px;
+    height: 45px;
+    border-radius: 360px;
+}
+#contact-arrow{
+    display: flex;
+    width:150px;
+    justify-content: space-between;
+    margin: 20% 34%;
+}
+#contact-nums{
+    font-size: 18px;
+    margin-top: 10px;
+    color: #bcbcbc;
+}
+#contact-container{
+    width: 32%;
+    margin-left: 35%;
+    margin-top: 13%;
+}
+#contact-container-h3{
+    font-size: 15px;
+    color: #828282;
+    font-family: graphik;
+    font-weight: 100;
+    line-height: 23px;
+}
+#contact-container_h2{
+    margin-top: 20px;
+    font-size: 27px;
+}
+#contact-pm{
+    color: #878787;
+    font-size: 15px;
+    font-family: graphik;
+}
+.e-model{
+    margin-top: 25vh;
+    margin-left: 10%;
+}
+.e-model-h1{
+    font-size: 60px;
+    margin-bottom: 45px;
+}
+.e-model-para{
+    color: #686868;
+    font-family: graphik;
+    width: 65%;
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 100px;
+}
+.accordian{
+    width: 52%;
+    height: 11vh;
+}
+.accordian-h1{
+    font-size: 40px;
+    color: #bcbcbc;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.hr{
+    width: 50%;
+    height: 1px;
+    background-color: #686868;
+    border: #686868;
+}
+.accordian-plus{
+    font-size: 55px;
+    color: #9b9b9b;
+}
+.accordian-para {
+    font-size: 15px;
+    color: #929292;
+    font-family: graphik;
+    line-height: 23px;
+    margin-bottom: 70px;
+    display: none;
+}

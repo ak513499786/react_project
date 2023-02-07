@@ -1,0 +1,139 @@
+.career-hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.career-hero-h1{
+    font-size: 60px;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 6%;
+}
+.career-hero-para{
+    font-size: 15px;
+    width: 55%;
+    color: #7e7e7e;
+    font-family: graphik;
+    line-height: 20px;
+    margin-left: 10%;
+}
+.line{
+    width: 100.5%;
+    font-size: 160px;
+    position: relative;
+    right: 10px;
+    color: #7e7e7e;
+    margin-top: 150px;
+}
+.whyus{
+    height: 100vh;
+}
+.whyus-h1{
+    font-size: 75px;
+    margin: 12% 0px 20px 10%;
+}
+.whyus-para{
+    font-size: 15;
+    font-family: graphik;
+    color: #7e7e7e;
+    width: 40%;
+    line-height: 23px;
+    margin-left: 10%;
+}
+.whyus-container{
+    width:15%;
+    height: 30vh;
+    border: 1px solid;
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-top: 15vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-container{
+    display: flex;
+    justify-content: end;
+}
+.wucontainer-para{
+    font-size: 12px;
+    padding: 15px;
+    color: #b3b3b3;
+}
+.no{
+    font-size: 25px;
+    font-family: graphik;
+}
+.life-at-cl{
+    display: flex;
+    justify-content: end;
+}
+.life-container{
+    width: 40%;
+    margin: 3.5%;
+}
+.life-h1{
+    font-size: 75px;
+    margin-bottom: 25px;
+}
+.life-para{
+    font-size: 15px;
+    font-family: graphik;
+    color: #7e7e7e;
+    line-height: 23px;
+}
+.mini-containers{
+    text-align: center;
+    width: 50%;
+    padding: 5%;
+    border: 1px solid #7e7e7e;
+    border-radius: 10px;
+    margin: 4% 0% 10% 25%;
+}
+.mini-h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.mini-para{
+    font-size: 15px;
+    color: #7e7e7e;
+    font-family: graphik;
+    line-height: 22px;
+    padding: 0 5%;
+}
+.positions{
+    display: flex;
+    justify-content: space-between;
+    width: 58%;
+    padding: 15px;
+    margin-left: 21%;
+    font-size: 22px;
+    transition: 0.3s;
+}
+.position-h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 10vh;
+}
+.office{
+    font-size: 15px;
+    color: #b3b3b3;
+    transition: 0.3s;
+}
+.pos-hr{
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid #7e7e7e;
+    background-color: #7e7e7e;
+}
+.positions:hover{
+    background-color: #b3b3b32a;
+    text-shadow: 0px 0px 5px white;
+}
+.positions:hover .office{
+    text-shadow: 0px 0px 0px black;
+    transform: translateX(3px);
+}
