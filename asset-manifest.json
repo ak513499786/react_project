@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/react_project/static/css/main.f6b3b34e.css",
-    "main.js": "/react_project/static/js/main.249222cc.js",
+    "main.css": "/react_project/static/css/main.1fddaca7.css",
+    "main.js": "/react_project/static/js/main.05e4e6d9.js",
     "static/js/787.ec704a7a.chunk.js": "/react_project/static/js/787.ec704a7a.chunk.js",
+    "static/media/black-bg.mp4": "/react_project/static/media/black-bg.1f643730b066970933dc.mp4",
     "static/media/img2.png": "/react_project/static/media/img2.4f74633a4b17a8a68fa4.png",
     "static/media/img3.png": "/react_project/static/media/img3.93a23feed1c3a408214d.png",
     "static/media/image 4.png": "/react_project/static/media/image 4.c9bda7cdef4b44b24ec1.png",
@@ -35,12 +36,12 @@
     "static/media/Group 1000002377.svg": "/react_project/static/media/Group 1000002377.cb05fbea66d7135572428d2411e077ac.svg",
     "static/media/ic_baseline-facebook.svg": "/react_project/static/media/ic_baseline-facebook.84b1d6c1edc3c7451f669595439742a1.svg",
     "index.html": "/react_project/index.html",
-    "main.f6b3b34e.css.map": "/react_project/static/css/main.f6b3b34e.css.map",
-    "main.249222cc.js.map": "/react_project/static/js/main.249222cc.js.map",
+    "main.1fddaca7.css.map": "/react_project/static/css/main.1fddaca7.css.map",
+    "main.05e4e6d9.js.map": "/react_project/static/js/main.05e4e6d9.js.map",
     "787.ec704a7a.chunk.js.map": "/react_project/static/js/787.ec704a7a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6b3b34e.css",
-    "static/js/main.249222cc.js"
+    "static/css/main.1fddaca7.css",
+    "static/js/main.05e4e6d9.js"
   ]
 }
