@@ -10,12 +10,15 @@ import left_arrow from "./Images/Frame 7.png";
 import right_arrow from "./Images/Frame 8.png";
 
 import { Link } from "react-router-dom";
+import {TweenMax} from "gsap";
+
+TweenMax.from('.blog-hero-h1', {duration: 1, opacity: 0})
 
 export default function Blog() {
   return (
     <>
       <main className="blog-hero">
-        <h1 className="blog-hero-h1">We Got Plenty Of Ideas</h1>
+        <h1 className="blog-hero-h1" on>We Got Plenty Of Ideas</h1>
       </main>
       <section className="blog-content">
         <div className="blog-btns">
@@ -29,7 +32,7 @@ export default function Blog() {
           <p className="blog-btn-content">Rice Ricotta</p>
         </div>
         <aside className="blogcol">
-          <div className="blog-containers">
+          <div className="blog-containers link-cont">
             <Link to={'/empathy'}>
             <img src={image1} alt="" className="blog-imgs" />
             </Link>
@@ -40,7 +43,7 @@ export default function Blog() {
             </p>
             <p className="blog-btns">Read More</p>
           </div>
-          <div className="blog-containers">
+          <div className="blog-containers  DMT">
             <img src={image2} alt="" className="blog-imgs" />
             <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
             <p className="blog-para">

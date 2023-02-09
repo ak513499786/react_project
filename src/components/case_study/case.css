@@ -88,5 +88,32 @@
 }
 .browse{
     margin-left: 9%;
-    width: 80%;
+    width: 85%;
+}
+.browse-h1{
+    font-size: 60px;
+    line-height: 70px;
+    width: 90%;
+    margin: 35px 0px;
+}
+.browse-container{
+    display: flex;
+    justify-content: space-between;
+}
+.browse-mini{
+    width: 30%;
+    margin-top: 75px;
+    text-align: center;
+}
+.browse-img{
+    width: 95%;
+}
+.img-detail-h1{
+    font-size: 27px;
+    margin: 20px;
+}
+.img-details{
+    font-family: graphik;
+    font-size: 15px;
+    color: #6b6b6b;
 }

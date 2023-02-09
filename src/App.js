@@ -16,7 +16,6 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 function App() {
   return (
     <div>
-      <BrowserRouter>
         <Nav />
         <Routes>
           <Route exact path="/" element={<Home /> }/>
@@ -31,7 +30,6 @@ function App() {
           <Route exact path="/craft" element={<Craft/>}/>
         </Routes>
         <Footer />
-      </BrowserRouter>
     </div>
   );
 }

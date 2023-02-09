@@ -30,30 +30,30 @@ export default function Career() {
           you, we have a role for you!
         </p>
         <div className="main-container">
-        <div className="whyus-container">
-          <span className="no">01</span>
-          <p className="wucontainer-para">
-            We give you SMART results, no fluff. The KPIs and other metrics of
-            the project will be discussed beforehand so that you can track the
-            project's progress and performance on your own terms.
-          </p>
-        </div>
-        <div className="whyus-container">
-          <span className="no">02</span>
-          <p className="wucontainer-para">
-            We give you SMART results, no fluff. The KPIs and other metrics of
-            the project will be discussed beforehand so that you can track the
-            project's progress and performance on your own terms.
-          </p>
-        </div>
-        <div className="whyus-container">
-          <span className="no">03</span>
-          <p className="wucontainer-para">
-            We give you SMART results, no fluff. The KPIs and other metrics of
-            the project will be discussed beforehand so that you can track the
-            project's progress and performance on your own terms.
-          </p>
-        </div>
+          <div className="whyus-container">
+            <span className="no">01</span>
+            <p className="wucontainer-para">
+              We give you SMART results, no fluff. The KPIs and other metrics of
+              the project will be discussed beforehand so that you can track the
+              project's progress and performance on your own terms.
+            </p>
+          </div>
+          <div className="whyus-container">
+            <span className="no">02</span>
+            <p className="wucontainer-para">
+              We give you SMART results, no fluff. The KPIs and other metrics of
+              the project will be discussed beforehand so that you can track the
+              project's progress and performance on your own terms.
+            </p>
+          </div>
+          <div className="whyus-container">
+            <span className="no">03</span>
+            <p className="wucontainer-para">
+              We give you SMART results, no fluff. The KPIs and other metrics of
+              the project will be discussed beforehand so that you can track the
+              project's progress and performance on your own terms.
+            </p>
+          </div>
         </div>
       </section>
       <section className="life-at-cl">
@@ -97,16 +97,106 @@ export default function Career() {
             </p>
           </div>
         </div>
-      </section><h1 className="position-h1">Open Positions</h1>
+      </section>
+      <h1 className="position-h1">Open Positions</h1>
       <section className="open-pos">
-            <div className="positions">Product Designer (UX/UI) <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">Software Development Engineer - Frontend <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">Software Development Engineer - Backend <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">Software Development Engineer - CMS <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">Software Development Engineer - e-commerce <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">Business Manager - Sales <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">Business Analyst <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
-            <div className="positions">DevOps Engineer <span className="office">Bangalore (Remote)</span></div><hr className="pos-hr"/>
+        <div className="positions">
+          Product Designer (UX/UI){" "}
+          <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          Software Development Engineer - Frontend{" "}
+          <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          Software Development Engineer - Backend{" "}
+          <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          Software Development Engineer - CMS{" "}
+          <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          Software Development Engineer - e-commerce{" "}
+          <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          Business Manager - Sales{" "}
+          <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          Business Analyst <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+        <div className="positions">
+          DevOps Engineer <span className="office">Bangalore (Remote)</span>
+        </div>
+        <hr className="pos-hr" />
+      </section>
+      <section className="PD">
+        <h1 className="job-pd-title">
+          Product Designer (UI/UX) <span className="jobline"></span>
+        </h1>
+        <p className="job-loc">Bangalore (Remote)</p>
+        <p className="job-loc">Experience Band: 3+ Yrs</p>
+        <div className="job-description">
+          <p className="job-pd-desc job-loc">
+            At Codelinear, we are looking for people who are passionate and
+            driven to be the "Propellers of Impact". As an experienced UI/ UX
+            designer, you will contribute by having a working knowledge of tools
+            such as Figma and work as a part of a cross-functional team by
+            collaborating with our Creative Director to design products that
+            uplift brand values.
+          </p>
+          <div className="job-req">
+            Figma | Wireframes & User Flows | Prototypes UX Research | Personas
+            | Design System
+          </div>
+          <p className="apply">Feel like you’re a match?</p>
+          <div className="apply_btn">
+            <div className="allworks">
+              <p className="workbtn_content">apply now</p>
+            </div>
+          </div>
+        </div>
+        <div className="applying-form">
+          <form action="" id="form">
+            <input
+              type="text"
+              placeholder="First Name*"
+              className="fname"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Last Name*"
+              className="lname"
+              required
+            />
+            <select name="" id="" className="tele">
+              <option value="">+91</option>
+            </select>
+            <input
+              type="number"
+              placeholder="Phone*"
+              className="phone"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Past The Drive Link Of Your Resume Here*"
+              className="resume-here"
+              required
+            />
+              <button className="sub_btn-content submit_btn">submit</button>
+          </form>
+        </div>
       </section>
     </>
   );

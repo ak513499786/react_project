@@ -7,6 +7,7 @@ import instagram from "./images/mdi_instagram.svg";
 import linkedin from "./images/mdi_linkedin.svg";
 
 import { Link } from "react-router-dom";
+import { gsap } from 'gsap/gsap-core';
 
 var id = null;
 function navSlide() {
@@ -39,8 +40,9 @@ function navSlidesBack() {
   }
 }
 
-function fade() {
-  document.getElementById("navigation-slide").style.bottom = "-100%";
+
+function fade(){
+  document.getElementById("navigation-slide").style.bottom='-100%'
 }
 
 export default function navigation_bar() {
@@ -54,8 +56,8 @@ export default function navigation_bar() {
                 <img src={logo} alt="" className="logo" />
               </Link>
             </li>
-            <li className="nav_list-item" onClick={navSlide}>
-              <div className="menu"></div>
+            <li className="nav_list-item">
+              <div className="menu"  onClick={navSlide}></div>
             </li>
           </ul>
         </nav>
@@ -64,32 +66,32 @@ export default function navigation_bar() {
         <div className="nav-menu" onClick={navSlidesBack}></div>
         <ul className="slide_nav_list">
           <li className="slide_nav_list-item">
-            <Link to="/about" className="slide_nav_links" onClick={fade}>
+            <Link to="/about" className="slide_nav_links">
               About
             </Link>
           </li>
           <li className="slide_nav_list-item">
-            <Link to="/Services" className="slide_nav_links" onClick={fade}>
+            <Link to="/Services" className="slide_nav_links">
               Services
             </Link>
           </li>
           <li className="slide_nav_list-item">
-            <Link to="/Work" className="slide_nav_links" onClick={fade}>
+            <Link to="/Work" className="slide_nav_links">
               Work
             </Link>
           </li>
           <li className="slide_nav_list-item">
-            <Link to="/Career" className="slide_nav_links" onClick={fade}>
+            <Link to="/Career" className="slide_nav_links">
               Career
             </Link>
           </li>
           <li className="slide_nav_list-item">
-            <Link to="/Blog" className="slide_nav_links" onClick={fade}>
+            <Link to="/Blog" className="slide_nav_links">
               Blog
             </Link>
           </li>
           <li className="slide_nav_list-item">
-            <Link to="/let's_talk" className="slide_nav_links" onClick={fade}>
+            <Link to="/let's_talk" className="slide_nav_links">
               Let's Talk
             </Link>
           </li>
@@ -101,12 +103,12 @@ export default function navigation_bar() {
             <img src={instagram} alt="" className="icons" />
             <img src={twitter} alt="" className="icons" />
           </div>
-          <p className="loc">
-            12<sup>o</sup> 56' 27.06" N, 77<sup>o</sup> 32 ' 39.228"E
+          <p className="contact-loc">
+            12<sup>o</sup> 56' 27.06" N, 77<sup>o</sup> 32' 39.228" E
           </p>
           <div className="contact">
-            <p className="mail">info@codelinear.com</p>
-            <p className="phone">+1 415 523 5957</p>
+            <p className="contact-mail">info@codelinear.com</p>
+            <p className="contact-no">+1 415 523 5957</p>
           </div>
         </div>
       </section>

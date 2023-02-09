@@ -8,14 +8,16 @@ import image1 from "./images/clients.png";
 import image2 from "./images/Frame 75.png";
 import image3 from "./images/Frame 76.png";
 import image4 from "./images/Frame 77.png";
+import bgvideo from './images/black-bg.mp4';
 
 
 export default function Home() {
   return (
     <>
       <section id="hero">
-        <div id="bgi">
-          <video autoplay loop muted></video>
+        <div className="bgi">
+          <video autoplay loop muted className='bgv' src={bgvideo}>
+          </video>
         </div>
         <section id="content">
           <h1 id="header">
@@ -92,7 +94,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section id="testimonials">
         <div id="container-2">
           <h1 id="container-2_header">

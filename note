@@ -1,0 +1,42 @@
+
+          <Route exact path="/about" element={<About /> }/>
+          <Route exact path="/work" element={<Work /> }/>
+          <Route exact path="/career" element={<Career /> }/>
+          <Route exact path="/blog" element={<Blog /> }/>
+          <Route exact path="/services" element={<Services /> }/>
+          <Route exact path="/let's_talk" element={<Talk /> }/>
+          <Route exact path="/case_study" element={<Case/>}/>
+          <Route exact path="/empathy" element={<Empathy/>}/>
+          <Route exact path="/craft" element={<Craft/>}/>
+
+
+          var id = null;
+function navSlide() {
+  var elem = document.getElementById("navigation-slide");   
+  var pos = 100;
+  clearInterval(id);
+  id = setInterval(frame, 1);
+  function frame() {
+    if (pos === 0) {
+      clearInterval(id);
+    } else {
+      pos--; 
+      elem.style.bottom = pos + '%';
+    }
+  }
+}
+
+function navSlidesBack() {
+  var elem = document.getElementById("navigation-slide");   
+  var pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 1);
+  function frame() {
+    if (pos === 100) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.bottom = pos + '%';
+    }
+  }
+}
