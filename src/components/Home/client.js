@@ -33,7 +33,7 @@ export default function Client() {
       setLogo8Opacity(Math.random());
       setLogo9Opacity(Math.random());
       setLogo10Opacity(Math.random());
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(intervalId);
   }, []);

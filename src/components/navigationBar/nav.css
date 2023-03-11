@@ -90,21 +90,32 @@
 .nav-menu {
   float: right;
   align-items: center;
-  padding: 60px 174px 30px;
+  /* padding: 60px 174px 30px; */
+  margin-top:70px;
   width: 78.9px;
   height: 92px;
   cursor: pointer;
   z-index: 3;
 }
 #navigation-slide {
+  /* position: fixed; */
+  /* scroll: none; */
+  overflow-y: hidden;
+  /* left: 0px; */
+  bottom: 100%;
+  width: 100%;
+  height: 115vh;
+  /* background-color: rgba(15, 15, 15, 0.655); */
+  z-index: 5;
+  font-family: graphik;
   position: fixed;
   left: 0px;
-  bottom: 150vh;
-  width: 100%;
-  height: 100vh;
+  /* bottom: 150vh; */
+  /* width: 100%; */
+  /* height: 100vh; */
   background: rgba(9, 9, 9, 0.55);
-  z-index: 5;
-  backdrop-filter: blur(40px);
+  /* z-index: 5; */
+  backdrop-filter: blur(30px);
 }
 .slide_nav_list-item {
   list-style: none;
