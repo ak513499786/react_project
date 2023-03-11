@@ -1,6 +1,7 @@
 import "./work.css";
 import { useRef } from "react";
 import gsap from "gsap";
+import Card from "./card/Card";
 // import Clients from '../home/client'
 
 export default function Work() {
@@ -243,7 +244,9 @@ export default function Work() {
           <h1 id="work_heading">We're Proud To Show You Our Accomplishments</h1>
         </div>
       </main>
-      <section className="work-section" ref={(el) => (overflowcontrol = el)}>
+
+      <Card/>
+      {/* <section className="work-section" ref={(el) => (overflowcontrol = el)}>
           <div className="work-maincontainer" ref={(el) => (cardcenter = el)}>
             <div className="work-containers">
               <div className="bg1">
@@ -448,7 +451,9 @@ export default function Work() {
               </div>
             </div>
           </div>
-      </section>
+      </section> */}
+
+
       <div className="showmore-btn" ref={(el) => (showmore = el)}>
         <div className="showmore">show more</div>
       </div>

@@ -1,4 +1,5 @@
 import "./service.css";
+import "./do/do.scss";
 import { gsap, Power0 } from "gsap";
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -6,9 +7,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper";
 import { Mousewheel } from "swiper";
 // import Explore from '../Explore/Explore'
+import Do from "./do/Do";
 
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
+import Navigation_bar from "../navigationBar/Nav";
 
 export default function Services() {
   let arrows = useRef(null);
@@ -36,7 +39,7 @@ export default function Services() {
       repeat: -1,
       ease: Power0,
     });
-    tl.fromTo(wordanimation, 1, { y: 0 }, { y: 0 });
+    tl.fromTo(wordanimation, 2, { y: 0 }, { y: 0 });
     tl.fromTo(wordanimation, 2, { y: 0 }, { y: -97 });
     tl.fromTo(wordanimation, 2, { y: -97 }, { y: -197 });
     tl.fromTo(wordanimation, 2, { y: -197 }, { y: -292 });
@@ -109,6 +112,7 @@ export default function Services() {
   };
   return (
     <main className="services">
+      <Navigation_bar />
       <section id="hero_services" ref={(el) => (fade = el)}>
         <div className="services_hero-text">
           <p className="leading">Leading The Way From</p>
@@ -122,6 +126,8 @@ export default function Services() {
           </div>
         </div>
       </section>
+
+      {/* <Do /> */}
       <section className="wedo">
         <div className="wedo-container">
           <h1 className="wedo-h1">We Do It All!</h1>
@@ -133,6 +139,13 @@ export default function Services() {
             luxury of transformational technology and dynamic UI/UX right to
             their threshold.
           </p>
+        </div>
+        <div className="circles max-xl:hidden absolute -mt-64">
+          <div className="circle1 circlee">
+            <div className="circle2 mt-20 circlee">
+              <div className="circle3 circlee"></div>
+            </div>
+          </div>
         </div>
         <div className="accordian-container">
           <div className="accordian">
@@ -167,6 +180,7 @@ export default function Services() {
           </div>
         </div>
       </section>
+
       {/* <section className="services-container">
         <h1 className="ser-h1">Explore Our Services</h1>
         <div className="ser-mini">
