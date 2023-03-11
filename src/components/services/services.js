@@ -1,35 +1,142 @@
 import "./service.css";
+import { gsap, Power0 } from "gsap";
+import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper";
+import { Mousewheel } from "swiper";
+// import Explore from '../Explore/Explore'
+
+import arrowdown from "./images/Vector.svg";
+import whitedownarrow from "./images/downarrow.svg";
 
 export default function Services() {
+  let arrows = useRef(null);
+  let skip = useRef(null);
+  let background = useRef(null);
+  let title = useRef(null);
+  let background1 = useRef(null);
+  let title1 = useRef(null);
+  let background2 = useRef(null);
+  let title2 = useRef(null);
+  let background3 = useRef(null);
+  let title3 = useRef(null);
+  let wordanimation = useRef(null);
+  let fade = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 0.5 },
+    });
+    tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });
+  }, []);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+      ease: Power0,
+    });
+    tl.fromTo(wordanimation, 1, { y: 0 }, { y: 0 });
+    tl.fromTo(wordanimation, 2, { y: 0 }, { y: -97 });
+    tl.fromTo(wordanimation, 2, { y: -97 }, { y: -197 });
+    tl.fromTo(wordanimation, 2, { y: -197 }, { y: -292 });
+  }, []);
+
+  const mouseOver = () => {
+    gsap.to(background, 0.3, {
+      css: { backgroundSize: "120%", backgroundPosition: "50% 0" },
+    });
+    gsap.to(title, 0.3, {
+      css: { color: "white", textShadow: "0px 0px 20px white" },
+    });
+  };
+  const mouseOut = () => {
+    gsap.to(background, 0.5, { css: { backgroundSize: "100%" } });
+    gsap.to(title, 0.3, {
+      css: { color: "grey", textShadow: "0px 0px 0px white" },
+    });
+  };
+  const mouseOver1 = () => {
+    gsap.to(background1, 0.3, {
+      css: { backgroundSize: "120%", backgroundPosition: "50% 0" },
+    });
+    gsap.to(title1, 0.3, {
+      css: { color: "white", textShadow: "0px 0px 20px white" },
+    });
+  };
+  const mouseOut1 = () => {
+    gsap.to(background1, 0.5, { css: { backgroundSize: "100%" } });
+    gsap.to(title1, 0.3, {
+      css: { color: "grey", textShadow: "0px 0px 0px white" },
+    });
+  };
+  const mouseOver2 = () => {
+    gsap.to(background2, 0.3, {
+      css: { backgroundSize: "120%", backgroundPosition: "50% 0" },
+    });
+    gsap.to(title2, 0.3, {
+      css: { color: "white", textShadow: "0px 0px 20px white" },
+    });
+  };
+  const mouseOut2 = () => {
+    gsap.to(background2, 0.5, { css: { backgroundSize: "100%" } });
+    gsap.to(title2, 0.3, {
+      css: { color: "grey", textShadow: "0px 0px 0px white" },
+    });
+  };
+  const mouseOver3 = () => {
+    gsap.to(background3, 0.3, {
+      css: { backgroundSize: "120%", backgroundPosition: "50% 0" },
+    });
+    gsap.to(title3, 0.3, {
+      css: { color: "white", textShadow: "0px 0px 20px white" },
+    });
+  };
+  const mouseOut3 = () => {
+    gsap.to(background3, 0.5, { css: { backgroundSize: "100%" } });
+    gsap.to(title3, 0.3, {
+      css: { color: "grey", textShadow: "0px 0px 0px white" },
+    });
+  };
+
+  const arrowRotate = () => {
+    gsap.to(arrows, 0.2, { y: 30 });
+    gsap.to(skip, 0.2, { css: { color: "white" } });
+  };
+  const arrowRotateBack = () => {
+    gsap.to(arrows, 0.2, { y: 0 });
+    gsap.to(skip, 0.2, { css: { color: "#848484" } });
+  };
   return (
-    <>
-      <main id="hero_services">
+    <main className="services">
+      <section id="hero_services" ref={(el) => (fade = el)}>
         <div className="services_hero-text">
-          <p>Leading The Way From</p>
-          <div className="rolling-words">
-            <p className="words">Design To Execution</p>
-            <p className="words">Strategy To Execution</p>
-            <p className="words">Development To Execution</p>
-            <p className="words">Marketing To Success</p>
+          <p className="leading">Leading The Way From</p>
+          <div className="overflowcontrol">
+            <div className="rolling-words" ref={(el) => (wordanimation = el)}>
+              <p className="words">Design To Execution</p>
+              <p className="words">Strategy To Execution</p>
+              <p className="words">Development To Execution</p>
+              <p className="words">Marketing To Success</p>
+            </div>
           </div>
         </div>
-      </main>
+      </section>
       <section className="wedo">
-        <h1 className="wedo-h1">We Do It All!</h1>
-        <p className="wedo-para">
-          Our comprehensive services encompass UX design, product development,
-          consulting, and everything within and beyond. Starting with the
-          development of the products and continuing through the launch
-          strategies, we help businesses launch their success and bring the
-          luxury of transformational technology and dynamic UI/UX right to their
-          doorstep.
-        </p>
-        <div id="accordian">
+        <div className="wedo-container">
+          <h1 className="wedo-h1">We Do It All!</h1>
+          <p className="wedo-para">
+            Our comprehensive services encompass UX design, product development,
+            digital marketing, and everything within and beyond. Starting with
+            the development of the products and continuing through the launch
+            strategies, we help businesses launch their success and bring the
+            luxury of transformational technology and dynamic UI/UX right to
+            their threshold.
+          </p>
+        </div>
+        <div className="accordian-container">
           <div className="accordian">
-            <h1 className="accordian-h1">
-              The Innate Problem Solvers{" "}
-              <span className="accordian-plus">+</span>
-            </h1>
+            <h1 className="accordian-h1">The Innate Problem Solvers</h1>
             <p className="accordian-para">
               We thrive on challenges and comlex problems. Our team ranges from
               industry experts ,providing years of industry insights, to young
@@ -39,11 +146,8 @@ export default function Services() {
               into opportunities.
             </p>
           </div>
-          <hr className="hr" />
           <div className="accordian">
-            <h1 className="accordian-h1">
-              The Leaders Of Agility<span className="accordian-plus">+</span>
-            </h1>
+            <h1 className="accordian-h1">The Leaders Of Agility</h1>
             <p className="accordian-para">
               With the constantly evolves in tandem with it, our agile team of
               designers, developers, marketers, and strategists evolves in
@@ -52,12 +156,8 @@ export default function Services() {
               adaptability and resilence in the face of change.
             </p>
           </div>
-          <hr className="hr" />
           <div className="accordian">
-            <h1 className="accordian-h1">
-              The Patrons Of Globalization
-              <span className="accordian-plus">+</span>
-            </h1>
+            <h1 className="accordian-h1">The Patrons Of Globalization</h1>
             <p className="accordian-para">
               We are here to establish the new status quo- Design with Impact
               and we believe that in the era of globalisation, boundaries are
@@ -67,275 +167,157 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="services-container">
-        <h1 className="service-container-h1">
-          Garlic Cheese Spinach Tomato Deep Fresh.
-        </h1>
-        <p className="s-container-para">
-          Lorem porta amet at tempus malesuada hac massa at. Lacus a bibendum
-          turpis enim nibh sed ornare porta convallis. Dignissim faucibus
-          integer non aliquam sit. Tellus ullamcorper id morbi donec volutpat
-          enim vitae et ipsum.
-        </p>
-        <div className="service-mini-container">
-          <div className="ser-links">
-            <p className="ser-btn color-white">Consulting And Strategy</p>
-            <p className="ser-btn">User Experience</p>
-            <p className="ser-btn">Product Development</p>
-            <p className="ser-btn">Digital Marketing</p>
+      {/* <section className="services-container">
+        <h1 className="ser-h1">Explore Our Services</h1>
+        <div className="ser-mini">
+          <Swiper
+            spaceBetween={90}
+            className="ser-imgs"
+            direction={"horizontal"}
+            mousewheel={true}
+            releaseOnEdge={true}
+            slidesPerView={3}
+            modules={[Mousewheel]}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+            }}
+          >
+            <div className="ser-imgs">
+              <SwiperSlide className="cns"
+              ref={(el) => (background = el)}
+                  onMouseOver={mouseOver}
+                  onMouseOut={mouseOut}>
+                <Link
+                  to={"/consultingandstrategy"}
+                  className="slide"
+                >
+                  <p className="ser-txt" ref={(el) => (title = el)}>
+                    Consulting And Strategy
+                  </p>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide className="ue">
+                <Link
+                  to={"/userexperience"}
+                  className="ue"
+                  ref={(el) => (background1 = el)}
+                  onMouseOver={mouseOver1}
+                  onMouseOut={mouseOut1}
+                >
+                  <p className="ser-txt" ref={(el) => (title1 = el)}>
+                    User Experience
+                  </p>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide className="pd">
+                <Link
+                  to={"/productdevelopment"}
+                  className="pd"
+                  ref={(el) => (background2 = el)}
+                  onMouseOver={mouseOver2}
+                  onMouseOut={mouseOut2}
+                >
+                  <p className="ser-txt" ref={(el) => (title2 = el)}>
+                    Product Development
+                  </p>
+                </Link>
+              </SwiperSlide>
+              <SwiperSlide className="dm">
+                <Link
+                  to={"/digitalmarketing"}
+                  className="dm"
+                  ref={(el) => (background3 = el)}
+                  onMouseOver={mouseOver3}
+                  onMouseOut={mouseOut3}
+                >
+                  <p className="ser-txt" ref={(el) => (title3 = el)}>
+                    Digital Marketing
+                  </p>
+                </Link>
+              </SwiperSlide>
+            </div>
+          </Swiper>
+        </div>
+      </section> */}
+      {/* <Explore/> */}
+      <section className="e-model">
+        <div className="engagement-model">
+          <div className="model">
+            <div className="model-content">
+              <h1 className="em-h1">Our Engagement Model</h1>
+              <p className="e-para">
+                Our comprehensive services encompass UX design, product
+                development, consulting, and everything within and beyond.
+                Starting with the development of the products and continuing
+                through the launch strategies, we help businesses launch their
+                success and bring the luxury of transformational technology and
+                dynamic UI/UX right to their doorstep.
+              </p>
+            </div>
+            <div className="skip-container">
+              <div
+                className="skip"
+                onMouseOut={arrowRotateBack}
+                onMouseOver={arrowRotate}
+                ref={(el) => (skip = el)}
+              >
+                skip ahead
+                <div className="downarrows" ref={(el) => (arrows = el)}>
+                  <img src={whitedownarrow} alt="" className="arrowdown" />
+                  <img src={arrowdown} alt="" className="arrowdown" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="side-content">
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Market Research</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Stakeholder Workshops</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
+          <div className="model-container">
+            <div className="m-m-container">
+              <h1 className="m-title">
+                <p className="m-numbers">02</p>
+                Tempus Enim Tellus Vel
+              </h1>
+              <p className="m-desc">
+                Mauris nulla ultricies aliquet massa tempor odio. Tincidunt
+                parturient nec tortor dolor eu tristique dictumst ultrices
+                vestibulum. Urna scelerisque nulla turpis adipiscing accumsan
+                congue etiam habitant. In convallis velit felis turpis nulla
+                gravida dictumst vel egestas. Amet tempus massa nec erat arcu
+                et. Ullamcorper pellentesque.
+              </p>
             </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Product Strategy & Roadmapping</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Tech Consulting & Platform Planning</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
+            <div className="m-m-container">
+              <h1 className="m-title">
+                <p className="m-numbers">02</p>
+                Ut Luctus Ipsum Etiam In
+              </h1>
+              <p className="m-desc">
+                Vitae mollis consectetur congue donec nunc iaculis non. Est
+                integer ultrices dolor pharetra. Arcu non ut nec nam maecenas
+                libero ornare. Lacus ullamcorper aliquam mauris nibh rutrum. In
+                fermentum arcu quis purus posuere neque ante. Etiam tincidunt
+                quis metus tristique vulputate. Amet nunc facilisis maecenas
+                sit.
+              </p>
             </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Digital Strategy Consulting</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">GTM Strategy</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
+            <div className="m-m-container">
+              <h1 className="m-title">
+                <p className="m-numbers">02</p>
+                Accumsan Eleifend Ut
+              </h1>
+              <p className="m-desc">
+                Commodo pellentesque risus sed non sed auctor dui donec neque.
+                Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
+                et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
+                quis felis. At ultrices lacus nec eget integer consectetur
+                molestie. Neque suscipit viverra ridiculus rhoncus sagittis
+                vulputate sed. Tristique.
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="services-container">
-        <h1 className="service-container-h1">
-          Garlic Cheese Spinach Tomato Deep Fresh.
-        </h1>
-        <p className="s-container-para">
-          Lorem porta amet at tempus malesuada hac massa at. Lacus a bibendum
-          turpis enim nibh sed ornare porta convallis. Dignissim faucibus
-          integer non aliquam sit. Tellus ullamcorper id morbi donec volutpat
-          enim vitae et ipsum.
-        </p>
-        <div className="service-mini-container">
-          <div className="ser-links">
-            <p className="ser-btn">Consulting And Strategy</p>
-            <p className="ser-btn color-white">User Experience</p>
-            <p className="ser-btn">Product Development</p>
-            <p className="ser-btn">Digital Marketing</p>
-          </div>
-          <div className="side-content">
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">User Interface Design</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">User Interface Design</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Ux Research</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Ux Audit</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Design Consulting & Strategy</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Digital Branding</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="services-container">
-        <h1 className="service-container-h1">
-          Garlic Cheese Spinach Tomato Deep Fresh.
-        </h1>
-        <p className="s-container-para">
-          Lorem porta amet at tempus malesuada hac massa at. Lacus a bibendum
-          turpis enim nibh sed ornare porta convallis. Dignissim faucibus
-          integer non aliquam sit. Tellus ullamcorper id morbi donec volutpat
-          enim vitae et ipsum.
-        </p>
-        <div className="service-mini-container">
-          <div className="ser-links">
-            <p className="ser-btn">Consulting And Strategy</p>
-            <p className="ser-btn">User Experience</p>
-            <p className="ser-btn color-white">Product Development</p>
-            <p className="ser-btn">Digital Marketing</p>
-          </div>
-          <div className="side-content">
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Website Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">E-Commerce Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Web App Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">MVP Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Native App Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Hybrid App Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Enterprise App Development</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="services-container">
-        <h1 className="service-container-h1">
-          Garlic Cheese Spinach Tomato Deep Fresh.
-        </h1>
-        <p className="s-container-para">
-          Lorem porta amet at tempus malesuada hac massa at. Lacus a bibendum
-          turpis enim nibh sed ornare porta convallis. Dignissim faucibus
-          integer non aliquam sit. Tellus ullamcorper id morbi donec volutpat
-          enim vitae et ipsum.
-        </p>
-        <div className="service-mini-container">
-          <div className="ser-links">
-            <p className="ser-btn">Consulting And Strategy</p>
-            <p className="ser-btn">User Experience</p>
-            <p className="ser-btn">Product Development</p>
-            <p className="ser-btn color-white">Digital Marketing</p>
-          </div>
-          <div className="side-content">
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">SEO</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Social Media</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-            <div className="sc">
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Paid Search</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-              <div className="side-content-containers">
-                <h1 className="side-content-h1">Paid Media</h1>
-                <p className="side-content-para">
-                  Crust beef mozzarella ham red ranch tomatoes spinach. Mouth
-                  burnt Chicago steak ricotta sauce burnt pepperoni mouth.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+    </main>
   );
 }

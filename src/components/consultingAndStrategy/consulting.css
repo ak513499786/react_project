@@ -1,0 +1,239 @@
+.otherservices {
+  height: 1080px;
+}
+.inner-service-h1 {
+  width: 68.5%;
+  height: 176px;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 88px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #d8d6d6;
+  position: absolute;
+  height: 176px;
+  left: 184px;
+  top: 452px;
+}
+.vertical-animation {
+  position: relative;
+  width: 681px;
+  height: 609px;
+  left: 116.61px;
+  display: flex;
+  flex-direction: column;
+}
+.vertical-effect {
+  width: 770px;
+  height: 456px;
+  overflow: scroll;
+}
+.vertical-animation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  position: relative;
+  width: 32%;
+  left: 33.01px;
+  padding: 80px 0;
+}
+.vertical-animation-h1 {
+  width: 614.53px;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 88px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #ebebeb;
+}
+.vertical-animation-para {
+  width: 614.87px;
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #848484;
+  opacity: 0.6;
+}
+.horizontal-animation {
+  overflow: scroll;
+  position: relative;
+  width: 46%;
+  height: 56px;
+  left: 790px;
+  bottom: 300px;
+}
+.horizontal-animation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 94px;
+  width: 1047.77px;
+  height: 56px;
+}
+.horizontal-animation-para {
+  height: 56px;
+  font-family: "Graphik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #848484;
+}
+@media screen and (max-width: 1440px) {
+  .inner-service-h1 {
+    font-size: 60px;
+    line-height: 65px;
+    left: 9.7%;
+    width: 80%;
+    top: 300px;
+  }
+  .vertical-animation{
+    left: 6.7%;
+  }
+  .vertical-effect{
+    width: 500px;
+  }
+  .vertical-animation-container{
+    width: 430px;
+  }
+  .vertical-animation-para{
+    width: 100%;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .vertical-animation-h1 {
+    font-size: 45px;
+    line-height: 50px;
+    width: 100%;
+  }
+  .horizontal-animation {
+    width: 40%;
+    left: 520px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .inner-service-h1 {
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .vertical-effect{
+    height: 400px;
+  }
+  .vertical-animation-h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .vertical-animation-para {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .horizontal-animation-para {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .horizontal-animation{
+    width: 35%;
+    left: 470px;
+    height: 130px;
+  }
+  .vertical-animation{
+    left: 4.7%;
+  }
+  .vertical-effect{
+    width: 450px;
+  }
+  .vertical-animation-container{
+    width: 380px;
+  }
+  .horizontal-animation-container{
+    gap: 150px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inner-service-h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .vertical-animation-h1 {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .vertical-animation-para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .horizontal-animation-para {
+    line-height: 20px;
+    font-size: 16px;
+  }
+  .other-ser-h1{
+    font-size: 40px;
+  }
+  .horizontal-animation{
+    width: 30%;
+    left: 470px;
+    height: auto;
+  }
+  .horizontal-animation-container{
+    gap: 150px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .inner-service-h1 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .ser-h1, .other-ser-h1 {
+    font-size: 35px;
+  }
+  .vertical-effect{
+    height: 350px;
+    width: 250px;
+  }
+  .vertical-animation-h1{
+    font-size: 25px;
+  }
+  .vertical-animation-para{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .horizontal-animation{
+    width: 150px;
+    left: 270px;
+    bottom: 240px;
+    height: 350px;
+    align-items: center;
+  }
+  .horizontal-animation-para{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .vertical-animation{
+    left: 0%;
+    width: 250px;
+  }
+  .vertical-animation-container{
+    width: 200px;
+  }
+}
+@media screen and (max-width: 410px) {
+  .horizontal-animation{
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    height: 350px;
+    align-items: center;
+  }
+  .other-ser-h1{
+    font-size: 25px;
+  }
+}

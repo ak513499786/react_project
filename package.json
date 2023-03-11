@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ak513499786.github.io/react_project",
+  "homepage": "./",
   "name": "project",
   "version": "0.1.0",
   "private": true,
@@ -10,14 +10,16 @@
     "git": "^0.1.5",
     "gsap": "^3.11.4",
     "react": "^18.2.0",
+    "react-animated-cursor": "^2.5.2",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "swiper": "^9.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "sass": "^1.58.3",
+    "tailwindcss": "^3.2.7"
   }
 }
