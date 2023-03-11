@@ -1,9 +1,9 @@
 // import About from "./components/about/about";
 import Services from "./components/services/services";
-import Home from "./components/home/Home";
+import Home from "./components/Home/Home";
 import Work from "./components/work/Work";
-import Career from "./components/career/career";
-import Blog from "./components/blog/Blog";
+import Career from "./components/Career/Career";
+import Blog from "./components/Blog/Blog";
 import Talk from "./components/letsTalk/Talk";
 import Case from "./components/caseStudy/case_study";
 import Empathy from "./components/empathy/empathy";
@@ -19,7 +19,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div>
-      <AnimatedCursor color="255, 255, 255" classname="bg-white text-white" />
+      <AnimatedCursor color="255, 255, 255"/>
       <BrowserRouter>
         <ScrollToTop />
         <Routes>

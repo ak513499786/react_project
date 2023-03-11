@@ -1,7 +1,7 @@
 import "./work.css";
 import { useRef } from "react";
 import gsap from "gsap";
-import Clients from '../home/client'
+// import Clients from '../home/client'
 
 export default function Work() {
   let cardHover = useRef(null);

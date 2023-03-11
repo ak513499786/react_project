@@ -2,6 +2,7 @@ import "./home.css";
 import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
 import Ideas from "./ideas";
+import BlogHome from "./BlogHome";
 
 import Hero from "./Hero";
 import HomeAbout from "./homeAbout";
@@ -9,6 +10,7 @@ import HomeServices from "./Homeservices";
 import Testimonials from "./Testmonials";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
+import Blog from "../Blog/Blog";
 
 export default function Home() {
   let fade = useRef(null);
@@ -28,7 +30,8 @@ export default function Home() {
         <HomeAbout />
         <HomeServices />
         <Testimonials />
-        <Ideas />
+        <BlogHome />
+        {/* <Ideas /> */}
       </main>
       <Footer />
     </>

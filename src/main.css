@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: graphikthin;
   src: url(./GraphikThin.otf);
@@ -22,5 +26,5 @@ body {
   overflow-x: hidden;
   /* cursor: url('./components/Home/images/pool\ ball.cur'), auto; */
   /* cursor: url('./Normal\ Select.cur'), auto; */
-  cursor: url('./my-mouse-pointer.cur'), auto;
+  /* cursor: url("./my-mouse-pointer.cur"), auto; */
 }
