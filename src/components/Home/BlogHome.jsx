@@ -84,8 +84,8 @@ const BlogHome = () => {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
-                768: {
-                  slidesPerView: 2,
+                1060: {
+                  slidesPerView: 3,
                   spaceBetween: 30,
                 },
               }}
@@ -94,7 +94,7 @@ const BlogHome = () => {
               // }}
               // navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper h-[35rem] mt-20 "
+              className="mySwiper h-[35rem] mt-20 max-md:mt-0 "
             >
               <SwiperSlide className="cass">
                 <div className="cardh    mx-4 items-center">

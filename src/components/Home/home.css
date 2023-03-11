@@ -1273,8 +1273,8 @@
     height: 1024px;
   }
   #about {
-    height: 2167px;
-    top: 1024px;
+    height: 1067px;
+    top: 624px;
     position: absolute;
   }
   #abth1 {
@@ -1434,6 +1434,7 @@
   }
   #rectangle {
     right: 0%;
+    display: none;
   }
   #srvcnt {
     font-size: 70px;
@@ -1815,7 +1816,7 @@
     background-position: -100px 00px;
   }
   #service {
-    top: 1800px;
+    top: 1500px;
   }
   .service_main {
     flex-direction: column;
