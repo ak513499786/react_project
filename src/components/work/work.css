@@ -31,8 +31,7 @@
   width: 80%;
   margin-left: 10%;
   position: relative;
-  height: 700px;
-  bottom: 300px;
+  height: 300px;
 }
 .work-section {
   overflow-x: scroll;
@@ -188,6 +187,19 @@
   color: black;
   background-color: #ffcd05;
 }
+@media screen and (max-width: 1541px) and (min-width: 1440px) {
+  .work_hero {
+    height: 800px;
+  }
+  .container-1 {
+    top: 309.5px;
+  }
+  #work_heading {
+    width: 63%;
+    font-size: 58px;
+    line-height: 68px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .container-1{
     width: 100%;
@@ -204,6 +216,9 @@
     width: 90%;
     font-size: 60px;
     line-height: 65px;
+  }
+  .client-container {
+    height: 230px;
   }
   .explorediv {
     top: 0;

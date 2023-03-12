@@ -306,6 +306,7 @@ sup {
 @media screen and (max-width: 1440px) {
   .nav_list {
     padding: 0px 151px 24px;
+    gap: 0;
   }
   .slide_nav_list {
     display: flex;

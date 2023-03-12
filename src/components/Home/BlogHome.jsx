@@ -53,9 +53,9 @@ const BlogHome = () => {
       <>
         <div
           id="blog"
-          className="loves ml-2 w-full flex justify-center flex-col items-center"
         >
-          <div className="max-w-7xl homeidea ">
+      <div id="blog_heading">We Pen Down Our Brightest Ideas</div>
+          <div className="max-w-7xl homeidea">
             <Swiper
               slidesPerView={3}
               slidesPerGroupSkip={1}
@@ -282,13 +282,11 @@ const BlogHome = () => {
                   </div>
                 </div>
               </div> */}
-            <div className=" flex justify-center mt-16 max-lg:ml-0 ">
+            <div className=" flex justify-center">
               <button
-                onMouseEnter={onEnter}
-                onMouseLeave={onLeave}
-                className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50"
+                className="exp_btn"
               >
-                <Link to="/blog">explore more</Link>
+                <Link to="/blog" className="exp_btn-content">explore more</Link>
               </button>
             </div>
           </div>

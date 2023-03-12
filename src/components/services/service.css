@@ -347,6 +347,21 @@
   letter-spacing: -0.03em;
   color: #848484;
 }
+.skip{
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  font-family: graphik;
+  overflow: hidden;
+  height: 30px;
+}
+.downarrows{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  bottom: 23px;
+}
 @media screen and (max-width: 1800px) {
   .rolling-words {
     position: absolute;
@@ -717,13 +732,52 @@
     left: 5%;
   }
   .model-container {
+    gap: 80px;
     width: 100%;
-  }
-  .accordian-para {
     height: auto;
   }
   .m-m-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 54px 47px;
+    gap: 0px;
+    width: 650px;
+    height: auto;
+  }
+  .m-desc {
+    width: 320px;
+    font-size: 16px;
+    height: 154px;
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+  }
+  .m-title {
+    width: 300px;
+    height: 154px;
+    align-items: center;
+    height: auto;
+    font-size: 42px;
+    line-height: 45px;
+  }
+  .m-numbers {
+    width: 331px;
+    height: 28px;
+    font-family: "Graphik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    color: #848484;
     width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .accordian-para {
+    height: auto;
   }
   .cns,
   .ue,
@@ -768,18 +822,6 @@
   }
   .words {
     font-size: 50px;
-  }
-  .m-m-container {
-    padding: 34px 57px;
-    gap: 50px;
-  }
-  .m-desc {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .m-title {
-    width: 270px;
-    font-size: 40px;
   }
   .model {
     width: 100%;

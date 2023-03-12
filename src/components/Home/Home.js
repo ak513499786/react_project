@@ -10,7 +10,7 @@ import HomeServices from "./Homeservices";
 import Testimonials from "./Testmonials";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
-import Blog from "../Blog/Blog";
+// import Blog from "../blog/Blog";
 
 export default function Home() {
   let fade = useRef(null);

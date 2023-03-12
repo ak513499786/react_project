@@ -1,0 +1,130 @@
+.about-hero-h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 68.7%;
+  height: 176px;
+  left: 9.6%;
+  top: 452px;
+  height: 176px;
+  font-weight: 600;
+  font-size: 75px;
+  line-height: 88px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+  color: #d8d6d6;
+}
+.intersect {
+  width: 182px;
+  position: absolute;
+  opacity: 0;
+}
+.arrowanimate {
+  position: relative;
+  left: 210px;
+  bottom: 60px;
+  opacity: 0;
+}
+.circle1 {
+  width: 182px;
+  height: 182px;
+  border-radius: 100%;
+  border: 1px solid #848484;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 1;
+}
+.circle2 {
+  width: 182px;
+  height: 182px;
+  border-radius: 100%;
+  border: 1px solid #848484;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+}
+.circles-animation {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  align-items: center;
+}
+@media screen and (max-width: 1540px) and (min-width: 1441px) {
+  .about-hero-h1 {
+    top: 297px;
+    height: 176px;
+    font-size: 60px;
+    line-height: 68px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .about-hero-h1 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-hero-h1 {
+    font-size: 70px;
+    width: 83%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .circle2 {
+    width: 130px;
+    height: 130px;
+    font-size: 12px;
+    opacity: 0;
+  }
+  .circle21 {
+    margin-top: 0px;
+    margin-right: 60px;
+    margin-bottom: 35px;
+  }
+  .circle22 {
+    margin-bottom: 35px;
+    margin-left: 59px;
+  }
+  .circle23 {
+    margin-top: 60px;
+  }
+  .arrowanimate {
+    width: 250px;
+    left: 140px;
+    display: none;
+  }
+  .intersect {
+    width: 132px;
+  }
+  .circle1 {
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+  }
+  .about-hero-h1 {
+    font-size: 60px;
+    line-height: 60px;
+    top: 300px;
+    left: 6.7%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-hero-h1 {
+    left: 5%;
+    top: 200px;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 428px) {
+  .about-hero-h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}

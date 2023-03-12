@@ -15,6 +15,11 @@
   left: 23.3%;
   top: 488.72px;
 }
+.centerclass{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 .contact-hero-h1 {
   width: 824px;
   height: 101px;
@@ -243,6 +248,7 @@
   line-height: 28px;
   letter-spacing: -0.03em;
   color: #848484;
+  white-space: nowrap
 }
 .sub_btn:hover {
   background-color: #ffcd05;
@@ -255,7 +261,34 @@
   color: black;
   font-weight: bold;
 }
-
+@media screen and (max-width: 1540px) and (min-width: 1441px){
+  .contact-hero {
+    height: 880px;
+  }
+  .contact-section {
+    top: 308.72px;
+  }
+  .contact-hero-h1 {
+    font-size: 78px;
+    line-height: 78px;
+    width: auto;
+  }
+  .contact-hero-para {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .address-h1 {
+    font-size: 30px;
+  }
+  .address-p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .address-loc {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .contact-section {
     width: 70%;
@@ -293,6 +326,9 @@
     width: 100%;
     left: 0%;
     top: 300px;
+  }
+  .contact-hero {
+    height: 580px;
   }
   .contact-container{
     width: 100%;
@@ -338,11 +374,12 @@
   }
   #form {
     width: 80%;
+    gap: 28px;
   }
   .name-container {
     width: 100%;
     flex-direction: column;
-    gap: 50px;
+    gap: 28px;
     height: auto;
   }
   .first-name {

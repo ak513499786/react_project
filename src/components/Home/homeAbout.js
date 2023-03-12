@@ -19,32 +19,18 @@ const HomeAbout = () => {
       containerClass: "half-image-container",
     },
     640: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 20,
     },
   };
   const [Widht, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
-
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, {
-      backgroundColor: "#ffcd05",
-      scale: 0.9,
-    });
-  };
-  const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { backgroundColor: "#0D0D0D", scale: 1 });
-  };
   return (
     <>
       <section id="about" className=" agency mt-8">
@@ -61,7 +47,7 @@ const HomeAbout = () => {
             <p className="workbt_content">all works</p>
           </Link>
         </div>
-        {Widht > 1300 ? (
+        {Widht > 768 ? (
           <>
             <div className="bg-container">
               <div className="bg-mini-1">
@@ -96,7 +82,7 @@ const HomeAbout = () => {
           </>
         ) : (
           <>
-            <div className="testhome max-xl:mt-96">
+            <div className="testhome max-xl:mt-56">
               <div className="imghome1 hideehome">
                 <div className="bghome"></div>
                 <div id="i" className="p-5">

@@ -169,6 +169,8 @@
 .footer-animationtxt {
   font-size: 30px;
   font-family: graphik;
+  margin-top: 25px;
+  margin-left: 10px;
 }
 .aligncenter {
   overflow-x: hidden;
@@ -178,6 +180,9 @@
 .footer-bounce {
   white-space: nowrap;
   width: 132.06px;
+}
+.footer-animation{
+  display: flex;
 }
 @media screen and (max-width: 1620px) {
   #lower-footer {

@@ -68,7 +68,7 @@
   padding: 36px 15px;
   gap: 81px;
   width: 338.39px;
-  height: 342px;
+  height: 402px;
   background: #111111;
   border-radius: 30px;
 }
@@ -273,7 +273,7 @@
   display: flex;
   width: 75%;
   justify-content: space-between;
-  height: 54px;
+  height: auto;
   font-weight: 600;
   font-size: 50px;
   line-height: 54px;
@@ -353,7 +353,7 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  width: 92px;
+  width: 172px;
   border: 1px solid #848484;
   border-radius: 72px;
   padding: 7px 39px;
@@ -370,6 +370,7 @@
   letter-spacing: -0.03em;
   color: #848484;
   transition: 0.3s;
+  white-space: nowrap
 }
 .apply_btn:hover {
   background: #ffcd05;
@@ -424,6 +425,122 @@
     width: 75%;
   }
 }
+@media screen and (max-width: 1540px) and (min-width: 1441px) {
+  .career-hero {
+    height: 575px;
+  }
+  .career-hero-h1 {
+    top: 357px;
+    height: 176px;
+    font-size: 60px;
+    line-height: 68px;
+  }
+  .whyus {
+    height: 1372px;
+  }
+  .why-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 35px;
+
+    position: relative;
+    width: 58%;
+    height: 271.24px;
+    left: 9.6%;
+    top: 70px;
+    display: inline-block;
+  }
+  .whyus-h1 {
+    font-size: 78px;
+    line-height: 78px;
+  }
+  .whyus-para {
+    width: 90%;
+    font-size: 15px;
+    line-height: 24px;
+  }
+  .main-container {
+    gap: 39px;
+  }
+  .whyus-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 19px;
+    width: 308.39px;
+    height: 115px;
+  }
+  .wucontainer-para {
+    font-size: 15px;
+  }
+  .no {
+    font-size: 30px;
+  }
+  .life-container {
+    left: 9.6%;
+    top: 456px;
+  }
+  .life-h1 {
+    font-size: 78px;
+    line-height: 78px;
+    height: auto;
+  }
+  .life-para {
+    font-size: 15px;
+    line-height: 23px;
+  }
+  .HS-img {
+    width: 60.12%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .positions {
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
+  }
+  .position-content-container {
+    gap: 70px;
+    width: 82%;
+  }
+  .position-h1 {
+    font-size: 58px;
+    line-height: 73px;
+  }
+  .open-pos {
+    justify-content: space-between;
+    padding: 0px;
+
+    width: 100%;
+  }
+  .position-content-h1 {
+    font-size: 20px;
+    line-height: 113.3%;
+  }
+  .office {
+    font-size: 15px;
+  }
+  .pos-hr {
+    width: 80%;
+  }
+  .PD {
+    height: 100vh;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: black;
+    padding: 53px 8px;
+  }
+  .applying-form{
+    margin-left: 0%;
+  }
+}
 @media screen and (max-width: 1440px) {
   .career-hero-h1 {
     width: 70%;
@@ -455,6 +572,9 @@
   }
   .job-pd-desc {
     width: 80%;
+  }
+  .PD{
+    padding-top: 50px;
   }
   .fname,
   .lname,
@@ -494,6 +614,7 @@
     gap: 10px;
     padding-left: 0;
     padding-right: 0;
+    height: auto;
   }
   .office {
     margin: 0;
@@ -524,8 +645,12 @@
   .open-pos {
     height: auto;
   }
+  .PD{
+    padding-top: 33px;
+  }
   .job-pd-desc {
     height: auto;
+    margin-top: 30px;
   }
   .job-pd-title {
     width: 90%;
@@ -601,6 +726,10 @@
   }
   .job-pd-title {
     font-size: 35px;
+    line-height: 40px;
+  }
+  .applying-form{
+    width: 90%;
   }
   .job-pd-desc {
     width: 90%;
@@ -608,6 +737,18 @@
   .job-req {
     font-size: 25px;
     width: 90%;
+    line-height: 30px;
+  }
+  .apply{
+    font-size: 15px;
+  }
+  .job-loc{
+    font-size: 15px;
+    line-height: 23px;
+    height: auto;
+  }
+  .PD {
+    padding: 23px 8px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -628,6 +769,9 @@
   }
   .no {
     font-size: 20px;
+  }
+  .applying-form{
+    width: 100%;
   }
   .whyus-container {
     width: 90%;
@@ -686,14 +830,46 @@
     height: auto;
   }
   .job-pd-desc {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 23px;
+    margin-top: 30px;
   }
   .job-req {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
+  }
+  .apply{
+    font-size: 15px;
+  }
+  .job-loc{
+    font-size: 15px;
+    line-height: 23px;
+    height: auto;
   }
   .apply_btn {
     top: 0;
+    width: 90%;
+    background: #ffcd05;
+    box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
+    border: 1px solid #ffcd05;
+  }
+  .about_btn_content{
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .PD {
+    padding: 3px 8px;
+  }
+  .form {
+    gap: 28px;
+  }
+  .applying-form {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .submit_btn {
+    width: 90%;
   }
 }

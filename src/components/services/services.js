@@ -7,12 +7,13 @@ import "swiper";
 import { Mousewheel } from "swiper";
 // import Explore from '../Explore/Explore'
 
-import arrowdown from "./images/Vector.svg";
-import whitedownarrow from "./images/downarrow.svg";
+import Servicehero from "./Servicehero";
+import Wedo from "./wedo";
+import Model from "./Model";
+import Navbar from "../navigationBar/Nav";
+import Footer from "../footer/footer";
 
 export default function Services() {
-  let arrows = useRef(null);
-  let skip = useRef(null);
   let background = useRef(null);
   let title = useRef(null);
   let background1 = useRef(null);
@@ -21,7 +22,6 @@ export default function Services() {
   let title2 = useRef(null);
   let background3 = useRef(null);
   let title3 = useRef(null);
-  let wordanimation = useRef(null);
   let fade = useRef(null);
 
   useEffect(() => {
@@ -29,17 +29,6 @@ export default function Services() {
       defaults: { duration: 0.5 },
     });
     tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });
-  }, []);
-
-  useEffect(() => {
-    const tl = gsap.timeline({
-      repeat: -1,
-      ease: Power0,
-    });
-    tl.fromTo(wordanimation, 1, { y: 0 }, { y: 0 });
-    tl.fromTo(wordanimation, 2, { y: 0 }, { y: -97 });
-    tl.fromTo(wordanimation, 2, { y: -97 }, { y: -197 });
-    tl.fromTo(wordanimation, 2, { y: -197 }, { y: -292 });
   }, []);
 
   const mouseOver = () => {
@@ -98,76 +87,13 @@ export default function Services() {
       css: { color: "grey", textShadow: "0px 0px 0px white" },
     });
   };
-
-  const arrowRotate = () => {
-    gsap.to(arrows, 0.2, { y: 30 });
-    gsap.to(skip, 0.2, { css: { color: "white" } });
-  };
-  const arrowRotateBack = () => {
-    gsap.to(arrows, 0.2, { y: 0 });
-    gsap.to(skip, 0.2, { css: { color: "#848484" } });
-  };
   return (
-    <main className="services">
-      <section id="hero_services" ref={(el) => (fade = el)}>
-        <div className="services_hero-text">
-          <p className="leading">Leading The Way From</p>
-          <div className="overflowcontrol">
-            <div className="rolling-words" ref={(el) => (wordanimation = el)}>
-              <p className="words">Design To Execution</p>
-              <p className="words">Strategy To Execution</p>
-              <p className="words">Development To Execution</p>
-              <p className="words">Marketing To Success</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="wedo">
-        <div className="wedo-container">
-          <h1 className="wedo-h1">We Do It All!</h1>
-          <p className="wedo-para">
-            Our comprehensive services encompass UX design, product development,
-            digital marketing, and everything within and beyond. Starting with
-            the development of the products and continuing through the launch
-            strategies, we help businesses launch their success and bring the
-            luxury of transformational technology and dynamic UI/UX right to
-            their threshold.
-          </p>
-        </div>
-        <div className="accordian-container">
-          <div className="accordian">
-            <h1 className="accordian-h1">The Innate Problem Solvers</h1>
-            <p className="accordian-para">
-              We thrive on challenges and comlex problems. Our team ranges from
-              industry experts ,providing years of industry insights, to young
-              enthusiasts, providing a creative and innovative perspective.
-              Equipped with this wide arena of experience, we devise solution
-              that enable you to leverage the adversities, converting challenges
-              into opportunities.
-            </p>
-          </div>
-          <div className="accordian">
-            <h1 className="accordian-h1">The Leaders Of Agility</h1>
-            <p className="accordian-para">
-              With the constantly evolves in tandem with it, our agile team of
-              designers, developers, marketers, and strategists evolves in
-              tandem with it. Our protective team is consistently hustling to
-              provide you with the finest assistance, enabling you to maintain
-              adaptability and resilence in the face of change.
-            </p>
-          </div>
-          <div className="accordian">
-            <h1 className="accordian-h1">The Patrons Of Globalization</h1>
-            <p className="accordian-para">
-              We are here to establish the new status quo- Design with Impact
-              and we believe that in the era of globalisation, boundaries are
-              only thearetical. Therefore, we may be based in Bengaluru, but the
-              impact we weild is global.
-            </p>
-          </div>
-        </div>
-      </section>
-      {/* <section className="services-container">
+    <>
+    <Navbar/>
+      <main className="services" ref={(el) => (fade = el)}>
+        <Servicehero />
+        <Wedo />
+        {/* <section className="services-container">
         <h1 className="ser-h1">Explore Our Services</h1>
         <div className="ser-mini">
           <Swiper
@@ -242,82 +168,10 @@ export default function Services() {
           </Swiper>
         </div>
       </section> */}
-      {/* <Explore/> */}
-      <section className="e-model">
-        <div className="engagement-model">
-          <div className="model">
-            <div className="model-content">
-              <h1 className="em-h1">Our Engagement Model</h1>
-              <p className="e-para">
-                Our comprehensive services encompass UX design, product
-                development, consulting, and everything within and beyond.
-                Starting with the development of the products and continuing
-                through the launch strategies, we help businesses launch their
-                success and bring the luxury of transformational technology and
-                dynamic UI/UX right to their doorstep.
-              </p>
-            </div>
-            <div className="skip-container">
-              <div
-                className="skip"
-                onMouseOut={arrowRotateBack}
-                onMouseOver={arrowRotate}
-                ref={(el) => (skip = el)}
-              >
-                skip ahead
-                <div className="downarrows" ref={(el) => (arrows = el)}>
-                  <img src={whitedownarrow} alt="" className="arrowdown" />
-                  <img src={arrowdown} alt="" className="arrowdown" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="model-container">
-            <div className="m-m-container">
-              <h1 className="m-title">
-                <p className="m-numbers">02</p>
-                Tempus Enim Tellus Vel
-              </h1>
-              <p className="m-desc">
-                Mauris nulla ultricies aliquet massa tempor odio. Tincidunt
-                parturient nec tortor dolor eu tristique dictumst ultrices
-                vestibulum. Urna scelerisque nulla turpis adipiscing accumsan
-                congue etiam habitant. In convallis velit felis turpis nulla
-                gravida dictumst vel egestas. Amet tempus massa nec erat arcu
-                et. Ullamcorper pellentesque.
-              </p>
-            </div>
-            <div className="m-m-container">
-              <h1 className="m-title">
-                <p className="m-numbers">02</p>
-                Ut Luctus Ipsum Etiam In
-              </h1>
-              <p className="m-desc">
-                Vitae mollis consectetur congue donec nunc iaculis non. Est
-                integer ultrices dolor pharetra. Arcu non ut nec nam maecenas
-                libero ornare. Lacus ullamcorper aliquam mauris nibh rutrum. In
-                fermentum arcu quis purus posuere neque ante. Etiam tincidunt
-                quis metus tristique vulputate. Amet nunc facilisis maecenas
-                sit.
-              </p>
-            </div>
-            <div className="m-m-container">
-              <h1 className="m-title">
-                <p className="m-numbers">02</p>
-                Accumsan Eleifend Ut
-              </h1>
-              <p className="m-desc">
-                Commodo pellentesque risus sed non sed auctor dui donec neque.
-                Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
-                et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
-                quis felis. At ultrices lacus nec eget integer consectetur
-                molestie. Neque suscipit viverra ridiculus rhoncus sagittis
-                vulputate sed. Tristique.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        {/* <Explore/> */}
+        <Model />
+      </main>
+      <Footer/>
+    </>
   );
 }
