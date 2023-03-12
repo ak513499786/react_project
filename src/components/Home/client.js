@@ -34,72 +34,143 @@ export default function Client() {
       setLogo9Opacity(Math.random());
       setLogo10Opacity(Math.random());
     }, 2000);
+// <<<<<<< HEAD
+//     return () => clearInterval(intervalId);
+//   }, []);
+
+//   return (
+//     <div alt="" id="clients">
+//       <img
+//         src={client1}
+//         alt=""
+//         className="client-img1"
+//         style={{ opacity: logo1Opacity }}
+//       />
+//       <img
+//         src={client2}
+//         alt=""
+//         className="client-img2"
+//         style={{ opacity: logo2Opacity }}
+//       />
+//       <img
+//         src={client3}
+//         alt=""
+//         className="client-img3"
+//         style={{ opacity: logo3Opacity }}
+//       />
+//       <img
+//         src={client4}
+//         alt=""
+//         className="client-img4"
+//         style={{ opacity: logo4Opacity }}
+//       />
+//       <img
+//         src={client5}
+//         alt=""
+//         className="client-img5"
+//         style={{ opacity: logo5Opacity }}
+//       />
+
+//       <img
+//         src={client7}
+//         alt=""
+//         className="client-img6"
+//         style={{ opacity: logo6Opacity }}
+//       />
+//       <img
+//         src={client6}
+//         alt=""
+//         className="client-img7"
+//         style={{ opacity: logo7Opacity }}
+//       />
+//       <img
+//         src={client8}
+//         alt=""
+//         className="client-img8"
+//         style={{ opacity: logo8Opacity }}
+//       />
+//       <img
+//         src={client9}
+//         alt=""
+//         className="client-img9"
+//         style={{ opacity: logo9Opacity }}
+//       />
+//       <img
+//         src={client10}
+//         alt=""
+//         className="client-img0"
+//         style={{ opacity: logo10Opacity }}
+//       />
+//     </div>
+// =======
+
     return () => clearInterval(intervalId);
   }, []);
-
   return (
-    <div alt="" id="clients">
-      <img
-        src={client1}
-        alt=""
-        className="client-img1"
-        style={{ opacity: logo1Opacity }}
-      />
-      <img
-        src={client2}
-        alt=""
-        className="client-img2"
-        style={{ opacity: logo2Opacity }}
-      />
-      <img
-        src={client3}
-        alt=""
-        className="client-img3"
-        style={{ opacity: logo3Opacity }}
-      />
-      <img
-        src={client4}
-        alt=""
-        className="client-img4"
-        style={{ opacity: logo4Opacity }}
-      />
-      <img
-        src={client5}
-        alt=""
-        className="client-img5"
-        style={{ opacity: logo5Opacity }}
-      />
-
-      <img
-        src={client7}
-        alt=""
-        className="client-img6"
-        style={{ opacity: logo6Opacity }}
-      />
-      <img
-        src={client6}
-        alt=""
-        className="client-img7"
-        style={{ opacity: logo7Opacity }}
-      />
-      <img
-        src={client8}
-        alt=""
-        className="client-img8"
-        style={{ opacity: logo8Opacity }}
-      />
-      <img
-        src={client9}
-        alt=""
-        className="client-img9"
-        style={{ opacity: logo9Opacity }}
-      />
-      <img
-        src={client10}
-        alt=""
-        className="client-img0"
-        style={{ opacity: logo10Opacity }}
-      />
-    </div>
+    <>
+      <div alt="" id="clients">
+        <img
+          src={client1}
+          alt=""
+          className="client-img1"
+          style={{ opacity: logo1Opacity }}
+        />
+        <img
+          src={client2}
+          alt=""
+          className="client-img2"
+          style={{ opacity: logo2Opacity }}
+        />
+        <img
+          src={client3}
+          alt=""
+          className="client-img3"
+          style={{ opacity: logo3Opacity }}
+        />
+        <img
+          src={client4}
+          alt=""
+          className="client-img4"
+          style={{ opacity: logo4Opacity }}
+        />
+        <img
+          src={client5}
+          alt=""
+          className="client-img5"
+          style={{ opacity: logo5Opacity }}
+        />
+        <img
+          src={client7}
+          alt=""
+          className="client-img6"
+          style={{ opacity: logo6Opacity }}
+        />
+        <img
+          src={client6}
+          alt=""
+          className="client-img7"
+          style={{ opacity: logo7Opacity }}
+        />
+        <img
+          src={client8}
+          alt=""
+          className="client-img8"
+          style={{ opacity: logo8Opacity }}
+        />
+        <img
+          src={client9}
+          alt=""
+          className="client-img9"
+          style={{ opacity: logo9Opacity }}
+        />
+        <img
+          src={client10}
+          alt=""
+          className="client-img0"
+          style={{ opacity: logo10Opacity }}
+        />
+      </div>
+    </>
+// >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
   );
 }
