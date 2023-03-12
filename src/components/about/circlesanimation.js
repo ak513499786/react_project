@@ -34,7 +34,7 @@ export default function Circles() {
       onMouseOver={mouseOverAnimation}
       onMouseOut={mouseOutAnimation}
     >
-        <img src={graphintersect} alt="" className="intersect" ref={(el) => (intersect = el)}/>
+        {/* <img src={graphintersect} alt="" className="intersect" ref={(el) => (intersect = el)}/>
         <img src={grapharrow} alt="" className="arrowanimate" ref={(el) => (arrow = el)}/>
       <div className="circle1" ref={(el) => (circle1 = el)}>
         Codelinear
@@ -47,7 +47,7 @@ export default function Circles() {
       </div>
       <div className="circle2 circle23" ref={(el) => (circle4 = el)}>
         Design
-      </div>
+      </div> */}
     </div>
   );
 }

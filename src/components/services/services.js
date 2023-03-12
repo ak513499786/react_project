@@ -115,7 +115,7 @@ export default function Services() {
     <Navbar/>
       <main className="services" ref={(el) => (fade = el)}>
         <Servicehero />
-        <Wedo />
+        {/* <Wedo /> */}
         {/* <section className="services-container">
 =======
     <main className="services">
