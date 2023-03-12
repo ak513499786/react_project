@@ -7,9 +7,6 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
-// import HorizontalScroll from "react-horizontal-scrolling";
-// import HorizontalScroll from "react-scroll-horizontal";
-// import HorizontalScroll from "react-scroll-horizontal";
 
 import "./card.scss";
 
@@ -26,14 +23,12 @@ const Card = () => {
       setExplore(false);
     }
   };
-  // const child = { width: `93em`, height: `35em` };
-  // const parent = { width: `60em`, height: `10em` };
 
   return (
     <>
       {!explore ? (
         <div className="test">
-          <div className="card11 hidee max-md:mx-0  m60 mx-10 flex flex-col justify-center   p-10">
+          <div className="card11 hidee max-md:mx-0  m60 mx-10 flex flex-col justifycenter   p-10">
             <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
             <p className="colo my-10 mt-20">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -47,7 +42,7 @@ const Card = () => {
               </button>
             </div>
           </div>
-          <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
+          <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
             <h1 className="text-5xl mt-24 wcw">MANGO</h1>
             <p className="colo my-10 mt-20">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -230,10 +225,10 @@ const Card = () => {
           </div>
 
           {/* <div className=" afterl mt-5 max-lg:ml-0 w- ">
-            <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-              Show more
-            </button>
-          </div> */}
+          <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+            Show more
+          </button>
+        </div> */}
         </div>
       )}
     </>

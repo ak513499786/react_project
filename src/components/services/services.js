@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper";
 import { Mousewheel } from "swiper";
-// import Explore from '../Explore/Explore'
+import Explore from './Explore/Explore'
 import Do from "./do/Do";
 
 // <<<<<<< HEAD
@@ -52,7 +52,6 @@ export default function Services() {
   //   tl.fromTo(wordanimation, 2, { y: -197 }, { y: -292 });
   // }, []);
 
-// >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
   const mouseOver = () => {
     gsap.to(background, 0.3, {
       css: { backgroundSize: "120%", backgroundPosition: "50% 0" },
@@ -264,7 +263,7 @@ export default function Services() {
           </Swiper>
         </div>
       </section> */}
-        {/* <Explore/> */}
+        <Explore/>
         <Model />
       </main>
       <Footer/>

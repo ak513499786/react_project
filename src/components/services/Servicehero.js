@@ -1,7 +1,11 @@
 import { gsap, Power0 } from "gsap";
-import { useRef, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 
 export default function Serviceshero() {
+  const [Widht, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => setWidth(window.innerWidth));
+  });
   let wordanimation = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline({
@@ -14,18 +18,32 @@ export default function Serviceshero() {
     tl.fromTo(wordanimation, 2, { y: -197 }, { y: -292 });
   }, []);
   return (
-    <section id="hero_services">
-      <div className="services_hero-text">
-        <p className="leading">Leading The Way From</p>
-        <div className="overflowcontrol">
-          <div className="rolling-words" ref={(el) => (wordanimation = el)}>
-            <p className="words">Design To Execution</p>
-            <p className="words">Strategy To Execution</p>
-            <p className="words">Development To Execution</p>
-            <p className="words">Marketing To Success</p>
+    <>
+      {Widht > 1300 ? (
+        <section id="hero_services">
+          <div className="services_hero-text">
+            <p className="leading">Leading The Way From</p>
+            <div className="overflowcontrol">
+              <div className="rolling-words" ref={(el) => (wordanimation = el)}>
+                <p className="words">Design To Execution</p>
+                <p className="words">Strategy To Execution</p>
+                <p className="words">Development To Execution</p>
+                <p className="words">Marketing To Success</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      ) : (
+        <div className="vision w-full mb-52 mt-52 flex justify-center h-full relative  items-center">
+          <div className="widthh max-md:flex-col max-md:p-8  w-full flex relative">
+            <div className=" mt-24 -ml-9 max-xl:ml-0 flex w-full">
+              <h1 className="text-6xl w-1/2 max-sm:w-full mt-16 ml-5 max-xl:ml-5 max-lg:text-4xl font-extrabold text-white">
+                Leading The Way From Design TO Execution
+              </h1>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      )}
+    </>
   );
 }

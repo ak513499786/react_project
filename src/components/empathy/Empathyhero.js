@@ -1,4 +1,4 @@
-import empathy from "../blog/Images/Frame 43.svg";
+// import empathy from "../blog/Images/Frame 43.svg";
 import cheese from "./images/Ellipse 19.png";
 
 export default function Empathyhero(){
@@ -14,7 +14,7 @@ export default function Empathyhero(){
             <p className="cheese-para">cheese</p>
           </div>
         </div>
-        <img src={empathy} alt="" className="empathy" />
+        {/* <img src={empathy} alt="" className="empathy" /> */}
       </section>
     );
 }

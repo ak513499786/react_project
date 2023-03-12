@@ -27,7 +27,7 @@
   transform-origin: center center;
   width: 390px;
   height: 602px;
-  margin: -91px 95px;
+  margin: -91px 106px;
 }
 
 .card1 {
@@ -76,21 +76,26 @@
 .card1:hover {
   box-shadow: 0px 0px 20px #f7f5f513;
   background: #090909;
+  transition: 0.5s ease-in-out;
 }
 .img1 {
   position: absolute;
-  background-image: url("../../../public/services/chees.jpg");
-  background-size: 800px;
+  // background-image: url("../../../public/services/chees.jpg");
+  background-image: url("../images/unsplash_9Trha5ptc-c.svg");
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -280px -100px;
-  height: 500px;
+  background-position: -50px -100px;
+  height: 465px;
   //   border-radius: 22.8144px;
   width: 320px;
 }
 .img2 {
   position: absolute;
-  background-image: url("../../../public/services/watch.jpg");
+  // background-image: url("../../../public/services/watch.jpg");
+
   background-size: 400px;
+  background-image: url("../images/unsplash_QRWAdBCqysc.svg");
+
   background-repeat: no-repeat;
   background-position: 0px -100px;
   // margin-left: -20px;
@@ -100,10 +105,12 @@
 }
 .img3 {
   position: absolute;
-  background-image: url("../../../public/services/laptop.jpg");
-  background-size: 800px;
+  // background-image: url("../../../public/services/laptop.jpg");
+  background-image: url("../images/unsplash_Im7lZjxeLhg.svg");
+
+  background-size: 500px;
   background-repeat: no-repeat;
-  background-position: -280px -100px;
+  background-position: -180px -100px;
   height: 430px;
   //   border-radius: 22.8144px;
 
@@ -111,40 +118,44 @@
 }
 .img4 {
   position: absolute;
-  background-image: url("../../../public/services/phone.jpg");
-  background-size: 1000px;
+  // background-image: url("../../../public/services/phone.jpg");
+  background-image: url("../images/unsplash_w33-zg-dNL4.svg");
+
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -280px -100px;
+  background-position: -80px -100px;
   height: 430px;
   width: 300px;
 }
 .card1:hover .img1 {
-  background-position: -324px 1px;
-  background-size: 900px;
-  height: 550.82px;
-
+  background-position: -124px 1px;
+  background-size: 550px;
+  height: 515.82px;
+  transition: 0.5s ease-in-out;
 }
 .card1:hover .img2 {
   background-position: -18px 1px;
   background-size: 338px;
   height: 750.82px;
+  transition: 0.5s ease-in-out;
 }
 .card1:hover .img3 {
-  background-position: -300px -60px;
-  background-size: 900px;
-  height: 550.82px;
-
+  background-position: -150px -60px;
+  background-size: 550px;
+  height: 500.82px;
+  transition: 0.5s ease-in-out;
 }
 .card1:hover .img4 {
-  background-position: -300px -20px;
-  background-size: 1100px;
-  height: 550.82px;
-
+  background-position: -100px -20px;
+  background-size: 450px;
+  height: 500.82px;
+  transition: 0.5s ease-in-out;
 }
 
 .card1:hover .name {
   text-shadow: #fff 0px 0px 10px, #fff 0px 0px 15px, #fffbfd 0px 0px 20px,
     #ebe5e8 0px 0px 30px, 2px 2px 2px rgba(206, 89, 55, 0);
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -167,7 +178,7 @@
     width: 100%;
     height: 40vh;
     min-height: 400px;
-    margin-top:9px;
+    margin-top: 9px;
     margin-left: 0px;
     overflow-y: auto;
     overflow-x: hidden;

@@ -1,6 +1,6 @@
 import "./work.css";
 // <<<<<<< HEAD
-import Clients from "../home/client";
+// import Clients from "../home/client";
 import Workhero from "./Workhero";
 import Workhorizontalscroll from "./Workhorizontalscroll";
 import Navbar from "../navigationBar/Nav";
@@ -9,18 +9,11 @@ import Footer from "../footer/footer";
 import { useRef } from "react";
 import gsap from "gsap";
 import Card from "./card/Card";
-// import Clients from '../home/client'
-// >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
+
 
 export default function Work() {
   return (
     <>
-{/* <<<<<<< HEAD
-      <Workhero />
-      <Workhorizontalscroll />
-      <div className="client-container">
-        <Clients />
-======= */}
       <Navbar />
       <main className="work_hero">
         <div className="container-1">
@@ -28,7 +21,7 @@ export default function Work() {
         </div>
       </main>
 
-      <Card/>
+      <Card />
       {/* <section className="work-section" ref={(el) => (overflowcontrol = el)}>
           <div className="work-maincontainer" ref={(el) => (cardcenter = el)}>
             <div className="work-containers">
@@ -235,11 +228,11 @@ export default function Work() {
             </div>
           </div>
       </section> */}
-{/* 
+      {/* 
 
       <div className="showmore-btn" ref={(el) => (showmore = el)}>
         <div className="showmore">show more</div> */}
-{/* >>>>>>> cf43176c7766f4b31cb4810966493754162b7074 */}
+      {/* >>>>>>> cf43176c7766f4b31cb4810966493754162b7074 */}
       {/* </div> */}
       <Footer />
     </>
