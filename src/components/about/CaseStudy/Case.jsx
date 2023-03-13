@@ -85,10 +85,10 @@ const Case = () => {
                   spaceBetween: 30,
                 },
               }}
-              // autoplay={{
-              //   delay: 2500,
-              //   disableOnInteraction: false,
-              // }}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               // pagination={{
               //   clickable: true,
               // }}
@@ -96,54 +96,53 @@ const Case = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper mt-20 w-[80%]"
             >
-
               {/* <div className="testhome"> */}
-              
-                <SwiperSlide className="cass">
-                  <div className="imghome1 hideehome cass ">
-                    <div className="img121 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img211 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img311 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img411 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img121 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img211 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img311 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img311 cass"></div>
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
-                    <div className="img211 cass"></div>
-                  </div>
-                </SwiperSlide>
+
+              <SwiperSlide className="cass">
+                <div className="imghome1 hideehome cass ">
+                  <div className="img121 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img211 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img311 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img411 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img121 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img211 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img311 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img311 cass"></div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="imghome1 hideehome casee  ">
+                  <div className="img211 cass"></div>
+                </div>
+              </SwiperSlide>
               {/* </div> */}
             </Swiper>
           </div>
