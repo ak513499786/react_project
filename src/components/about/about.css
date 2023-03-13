@@ -1,3 +1,6 @@
+.about-hero{
+  height: 100vh;
+}
 .about-hero-h1 {
   display: flex;
   flex-direction: column;
@@ -54,7 +57,7 @@
 .circles-animation {
   display: flex;
   justify-content: center;
-  height: 600px;
+  height: 300px;
   align-items: center;
 }
 .crewclass {
@@ -207,7 +210,7 @@
   }
   .core-container {
     padding: 120px 9.7%;
-    gap: 100px;
+    gap: 70px;
   }
   .core-para {
     font-size: 15px;
@@ -222,10 +225,16 @@
     font-size: 25px;
     line-height: 37px;
   }
+  .crewcontainer{
+    position: relative;
+    bottom: 70px;
+    height: auto;
+  }
 }
 @media screen and (max-width: 1440px) {
   .about-hero-h1 {
-    width: 70%;
+    width: 85%;
+    top: 250px;
   }
   .core-container {
     padding: 120px 10.7%;
@@ -267,7 +276,12 @@
   }
   .guiding-subcontainer {
     width: 60%;
-    gap: 100px;
+    gap: 70px;
+  }
+  .crewcontainer{
+    position: relative;
+    bottom: 300px;
+    height: 1400px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -319,7 +333,7 @@
     left: 6.7%;
   }
   #careerbtn {
-    width: 90%;
+    width: 95%;
     background-color: #ffcd05;
     color: black;
     font-weight: bold;
@@ -359,6 +373,13 @@
   .crewclass {
     margin-left: 3%;
   }
+  .crewcontainer{
+    bottom: 200px;
+  }
+  .about-case{
+    position: relative;
+    bottom: 100px;
+  }
 }
 @media screen and (max-width: 630px) {
   .about-hero-h1 {
@@ -367,15 +388,44 @@
     width: 90%;
   }
 }
+@media screen and (max-width: 540px) {
+.about-case{
+  position: relative;
+  bottom: 250px;
+}
+.crewcontainer{
+  bottom: 50px;
+  height: 1600px;
+}
+}
 @media screen and (max-width: 428px) {
   .about-hero-h1 {
     font-size: 40px;
     line-height: 45px;
   }
+  .core-container{
+    gap: 70px;
+  }
+  .core-guiding-container{
+    gap: 50px;
+  }
   .strategist {
     text-align: center;
   }
-  .crewclass {
+/* <<<<<<< HEAD */
+  /* .crewclass {
+
+  .guiding-skip{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+  } */
+  .crewclass{
+/* >>>>>>> 197f0f4aaf057c6d88ae03b456bb3f9c37fb18ac */
     margin-left: 0;
+  }
+  .crewcontainer{
+    bottom: 300px;
+    height: 1150px;
   }
 }

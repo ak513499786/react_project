@@ -8,7 +8,7 @@ import AnimatedCursor from "react-animated-cursor";
 
 import "./about.css";
 import Vision from "./vision/Vision";
-import Casestudy from './CaseStudy/Case'
+import Casestudy from "./CaseStudy/Case";
 
 export default function about() {
   return (
@@ -30,7 +30,9 @@ export default function about() {
       <Circles />
       <Vision />
       <Crew />
-      <Casestudy/>
+      <div className="about-case">
+        <Casestudy />
+      </div>
       <Footer />
     </>
   );
