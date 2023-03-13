@@ -544,6 +544,10 @@
 @media screen and (max-width: 1440px) {
   .career-hero-h1 {
     width: 70%;
+    top: 250px;
+  }
+  .career-hero{
+    height: 600px;
   }
   .life-container {
     top: 300px;
@@ -560,7 +564,7 @@
   .main-container {
     flex-wrap: wrap;
     margin-left: 16%;
-    width: 70%;
+    width: 65%;
     gap: 40px;
     height: auto;
   }
@@ -598,6 +602,12 @@
   .career-hero-h1 {
     font-size: 70px;
     width: 83%;
+  }
+  .applying-form{
+    margin-top: 5px;
+  }
+  .submit_btn{
+    margin-top: 0;
   }
   .life-container {
     width: 80%;
@@ -671,8 +681,11 @@
   .career-hero-h1 {
     font-size: 60px;
     line-height: 60px;
-    top: 300px;
+    top: 200px;
     left: 6.7%;
+  }
+  .career-hero{
+    height: 500px;
   }
   .horizontal-slide {
     gap: 2em;
@@ -701,7 +714,7 @@
     height: auto;
   }
   .whyus {
-    height: 2572px;
+    height: 2372px;
   }
   .card-imgs {
     width: 25%;
@@ -786,7 +799,7 @@
     height: auto;
   }
   .whyus {
-    height: 2600px;
+    height: 2400px;
   }
   .whyus-para {
     height: auto;

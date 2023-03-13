@@ -13,13 +13,9 @@ export default function Crew() {
           adipisicing elit. Est, natus veniam! Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Maxime Lorem, ipsum dolor sit amet.
         </p>
-        <div className=" mt-5 max-lg:ml-0 max-lg:p-8 ">
-          <button id="careerbtn">
-            <Link to="/career" className="careerbtn_content">
-              careers
-            </Link>
-          </button>
-        </div>
+        <Link to={"/career"} id="careerbtn">
+          <p className="careerbtn_content">career</p>
+        </Link>
       </div>
       <div className="crewcontainer">
         <section className="e-model">

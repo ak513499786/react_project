@@ -81,7 +81,7 @@ const HomeAbout = () => {
             </div>
           </>
         ) : (
-          <>
+          <div className="horizontalAbout">
             <div className="testhome">
               <div className="imghome1 hideehome">
                 <div className="bghome"></div>
@@ -123,7 +123,7 @@ const HomeAbout = () => {
                 </div>
               </div>
             </div>
-          </>
+          </div>
         )}
       </section>
     </>

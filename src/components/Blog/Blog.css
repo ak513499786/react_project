@@ -168,13 +168,13 @@
     align-items: flex-start;
     padding: 0px;
     gap: 10.9%;
-  
+
     width: 77.2%;
     height: 484.85px;
   }
   .blog-containers {
     gap: 30px;
-  
+
     width: 308.67px;
     height: auto;
   }
@@ -210,101 +210,126 @@
     gap: 10%;
     width: 80%;
   }
-  .blog-container{
+  .blog-container {
     width: 350px;
+  }
+  .blog-hero {
+    height: 650px;
   }
 }
 @media screen and (max-width: 1140px) {
-  .blog-imgs{
+  .blog-imgs {
     width: 250px;
   }
-  .blog-container-content{
+  .blog-container-content {
     width: 250px;
   }
-  .blog-heading{
+  .blog-heading {
     font-size: 30px;
   }
-  .blog-para{
+  .blog-para {
     font-size: 18px;
     width: 230px;
     line-height: 23px;
   }
+  .blog-hero {
+    height: 500px;
+  }
+  .blog-hero-h1 {
+    top: 300px;
+  }
 }
 @media screen and (max-width: 838px) {
-  .blog-hero-h1{
+  .blog-hero-h1 {
     font-size: 55px;
     width: 60%;
     left: 20%;
   }
-  .blogcol{
+  .blogcol {
     height: auto;
   }
-  .blog-container{
+  .blog-container {
     flex-direction: column;
     height: auto;
     width: 100%;
     gap: 120px;
     padding: 60px 0;
   }
-  .blog-containers{
+  .blog-containers {
     width: 100%;
   }
-  .blog-container-content{
+  .blog-container-content {
     height: auto;
   }
-  .blog-imgs{
+  .blog-imgs {
     width: 50%;
     height: auto;
   }
-  .link-imgs{
+  .link-imgs {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  .blog-container-content{
+  .blog-container-content {
     width: 50%;
   }
-  .blog-heading{
+  .blog-heading {
     font-size: 30px;
   }
-  .blog-para{
+  .blog-para {
     font-size: 18px;
     width: 90%;
     line-height: 23px;
   }
+  .blog-hero-h1 {
+    top: 250px;
+  }
+  .blog-hero {
+    height: 600px;
+  }
 }
 @media screen and (max-width: 768px) {
-  .blog-hero-h1{
+  .blog-hero-h1 {
     font-size: 55px;
     width: 60%;
     left: 6.7%;
+    top: 200px;
   }
-  .blog-btns{
+  .blog-hero {
+    height: 500px;
+  }
+  .blog-btns {
     gap: 20px;
   }
-  .blog-btn-content{
+  .blog-btn-content {
     font-size: 20px;
   }
 }
 @media screen and (max-width: 428px) {
-  .blog-hero-h1{
+  .blog-hero-h1 {
     font-size: 45px;
     width: 90%;
     line-height: 60px;
     left: 6.7%;
-    top: 300px;
+    top: 200px;
   }
-  .blog-btns{
+  .blog-btns {
     gap: 15px;
   }
-  .blog-btn-content{
+  .blog-btn-content {
     font-size: 16px;
   }
-  .blog-imgs{
+  .blog-imgs {
     width: 90%;
     height: auto;
   }
-  .blog-container-content{
+  .blog-content-section {
+    height: auto;
+  }
+  .blog-container-content {
     width: 90%;
+  }
+  .blog-hero {
+    height: 450px;
   }
 }
