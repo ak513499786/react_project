@@ -14,7 +14,7 @@ const Explore = () => {
             </h1>
           </div>
           {/* <div className=""> */}
-          <div className="cards testt mb-20  max-lg:p-20">
+          <div className="cards testt p-10  max-lg:p-20">
             <Link to="/consultingandstrategy">
               <div className="card1 mb20 m-20 mx-10 my- hideee relative">
                 <div className="img1 ml-1  ma\  -top-0"></div>
@@ -27,7 +27,7 @@ const Explore = () => {
             </Link>
             <Link to="/userexperience">
               <div className="card1 mx-10 hideee relative">
-                <div className="img2 max-md:ml- ml-0 top-0"></div>
+                <div className="img22 max-md:ml- ml-0 top-0"></div>
                 <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
                   <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                     User Experience

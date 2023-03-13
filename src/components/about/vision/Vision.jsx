@@ -21,6 +21,15 @@ const Vision = () => {
     gsap.to(arrows, 0.2, { y: 0 });
     gsap.to(skip, 0.2, { css: { color: "#848484" } });
   };
+  const scrollToTarget = (target) => {
+    const targetPosition = document.getElementById(target);
+
+    // scroll to the target element
+    window.scrollTo({
+      top: 2000,
+      behavior: "smooth",
+    });
+  };
   return (
     <>
       <section className="core-container">
@@ -50,6 +59,7 @@ const Vision = () => {
             <div className="guiding-skip">
               <div className="skip-container">
                 <div
+                  onClick={() => scrollToTarget("section1")}
                   className="skip"
                   onMouseOut={arrowRotateBack}
                   onMouseOver={arrowRotate}

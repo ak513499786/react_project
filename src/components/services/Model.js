@@ -1,12 +1,15 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { gsap, Power0 } from "gsap";
 
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
 // import { Link } from "react-router-dom";
-import { Link } from "react";
+import Scroll from "react-scroll";
+import { Link } from "react-scroll";
 
 export default function Wedo() {
+  const ScrollLink = Scroll.ScrollLink;
+
   let arrows = useRef(null);
   let skip = useRef(null);
 
@@ -19,13 +22,17 @@ export default function Wedo() {
     gsap.to(skip, 0.2, { css: { color: "#848484" } });
   };
 
-  // const scrollToTarget = (target) => {
-  //   scroll.scrollTo(target, {
-  //     duration: 500,
-  //     smooth: true,
-  //     offset: -70, // change this offset based on your navbar height
-  //   });
-  // };
+  const [isActive, setIsActive] = useState(false);
+
+  const scrollToTarget = (target) => {
+    const targetPosition = document.getElementById(target);
+
+    // scroll to the target element
+    window.scrollTo({
+      top: 10000,
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="e-model">
       <div className="engagement-model">
@@ -42,19 +49,32 @@ export default function Wedo() {
             </p>
           </div>
           <div className="skip-container">
-            {/* <Link to="#footer"> */}
-              <div
-                className="skip"
-                onMouseOut={arrowRotateBack}
-                onMouseOver={arrowRotate}
-                ref={(el) => (skip = el)}
-              >
-                skip ahead
-                <div className="downarrows" ref={(el) => (arrows = el)}>
-                  <img src={whitedownarrow} alt="" className="arrowdown" />
-                  <img src={arrowdown} alt="" className="arrowdown" />
-                </div>
+            {/* <Link to="#footer"></Link> */}
+            {/* <Link
+              activeClass="active"
+              to="footer"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              onClick={() => scrollToTarget("section1")}
+            > */}
+            {/* Section 1 */}
+
+            <div
+              onClick={() => scrollToTarget("section1")}
+              className="skip"
+              onMouseOut={arrowRotateBack}
+              onMouseOver={arrowRotate}
+              ref={(el) => (skip = el)}
+            >
+              skip ahead
+              <div className="downarrows" ref={(el) => (arrows = el)}>
+                <img src={whitedownarrow} alt="" className="arrowdown" />
+                <img src={arrowdown} alt="" className="arrowdown" />
               </div>
+            </div>
+            {/* </Link> */}
           </div>
         </div>
         <div className="model-container">

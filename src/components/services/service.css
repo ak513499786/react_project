@@ -286,7 +286,8 @@
 }
 .model-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 0px;
@@ -347,7 +348,7 @@
   letter-spacing: -0.03em;
   color: #848484;
 }
-.skip{
+.skip {
   display: flex;
   gap: 15px;
   font-size: 20px;
@@ -355,7 +356,7 @@
   overflow: hidden;
   height: 30px;
 }
-.downarrows{
+.downarrows {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -568,7 +569,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 120px 0px;
+    padding: 0px 0px;
+    margin-top: 100px;
     gap: 10px;
     width: 100%;
     height: auto;
@@ -590,7 +592,7 @@
     align-items: center;
     padding: 0px;
     gap: 65px;
-    width: 946px;
+    width: 1346px;
     height: auto;
   }
   .model-content {
@@ -626,7 +628,7 @@
     align-items: center;
     padding: 54px 47px;
     gap: 0px;
-    width: 650px;
+    width: 550px;
     height: auto;
   }
   .m-desc {
@@ -716,7 +718,7 @@
     width: 60%;
   }
   .engagement-model {
-    width: 80%;
+    width: 100%;
   }
   .model-content {
     width: 804px;
@@ -743,7 +745,7 @@
     align-items: center;
     padding: 54px 47px;
     gap: 0px;
-    width: 650px;
+    width: 550px;
     height: auto;
   }
   .m-desc {
@@ -1038,7 +1040,7 @@
   .m-numbers {
     width: 30px;
   }
-  .e-model{
+  .e-model {
     height: auto;
   }
 }
