@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
 import { useRef } from "react";
-import Servicesslide from "../serviceHorizontalSlide/SHS";
+import Servicesslide from "../services/Explore/Explore";
+
+import Footer from "../footer/footer";
+import Navbar from "../navigationBar/Nav";
 
 export default function Digitalmarketing() {
   let horizontalelement = useRef(null);
@@ -18,6 +21,8 @@ export default function Digitalmarketing() {
     gsap.to(horizontalelement, 1, { x: "0" });
   };
   return (
+    <>
+    <Navbar/>
     <main>
       <section className="otherservices">
         <h1 className="inner-service-h1">Digital Marketing</h1>
@@ -91,5 +96,7 @@ export default function Digitalmarketing() {
       </section>
       <Servicesslide />
     </main>
+    <Footer/>
+    </>
   );
 }

@@ -20,7 +20,7 @@ const Explore = () => {
                 <div className="img1 ml-1  ma\  -top-0"></div>
                 <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                   <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
-                    Consulting And Stretegy
+                    Consulting And Strategy
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ const Explore = () => {
                 <div className="img3 ml-3 max-md:ml-44 -top-0"></div>
                 <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                   <p className="name text-2xl max-md:ml-72 max-md:mt-16">
-                    Produt Development
+                    Product Development
                   </p>
                 </div>
               </div>

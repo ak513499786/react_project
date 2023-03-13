@@ -6,93 +6,91 @@
 .card11 {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
-  top: 0px;
+  position: relative;
+  left: 100px;
+  top: 10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
-  background-size: 1480px;
+  background: #111111;
   background-repeat: no-repeat;
-  background-position: -630px -100px;
+  background-position: -150px 0px;
   transition: all 0.5s ease-in-out;
   margin-left: 99px;
 }
 .MANGO {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: 0px;
   border-radius: 13.07215690612793px;
-  background: #090909;
-  background-size: 1080px;
+  background: #111111;
   background-repeat: no-repeat;
-  background-position: -400px -100px;
+  background-position: -150px 0px;
   transition: all 0.5s ease-in-out;
   margin: 0px 40px;
 }
 .Willium {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: -10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
-  background-size: 1080px;
+  background: #111111;
   background-repeat: no-repeat;
-  background-position: -330px -100px;
+  background-position: -150px 0px;
   transition: all 0.5s ease-out;
 }
 .Kernel {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: 10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
-  background-size: 480px;
+  background: #111111;
   background-repeat: no-repeat;
-  background-position: -10px -100px;
+  background-position: -50px 0px;
   transition: all 0.5s ease-out;
 }
 .klub {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: -10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
-  background-size: 480px;
+  background: #111111;
   background-repeat: no-repeat;
-  background-position: -70px -100px;
+  background-position: -50px 0px;
   transition: all 0.5s ease-out;
   margin: 0px 40px;
-
 }
 .Lyra {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: -10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
-  background-size: 780px;
+  background: #111111;
   background-repeat: no-repeat;
-  background-position: -230px -100px;
+  background-position: -50px 0px;
   transition: all 0.5s ease-out;
-  
 }
 .studio {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: -10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
+  background: #111111;
   background-size: 480px;
   background-repeat: no-repeat;
   background-position: -80px -100px;
   transition: all 0.5s ease-out;
   margin: 0px 40px;
-
 }
 .deel {
   height: 601.0874633789062px;
@@ -100,7 +98,7 @@
   left: 0px;
   top: -10px;
   border-radius: 13.07215690612793px;
-  background: #090909;
+  background: #111111;
   background-size: 480px;
   background-repeat: no-repeat;
   background-position: -30px -100px;
@@ -109,11 +107,12 @@
 .exploree {
   height: 601.0874633789062px;
   width: 390.37213134765625px;
-  left: 0px;
+  position: relative;
+  left: 100px;
   top: 0px;
   margin-left: 99px;
   border-radius: 13.07215690612793px;
-  background: #090909;
+  background: #111111;
   background-size: 1480px;
   background-repeat: no-repeat;
   background-position: -630px -100px;
@@ -122,47 +121,32 @@
 
 .card11:hover {
   background-image: url("../images/img1.png");
-  transition: all 0.5s ease-in-out;
 }
 .Willium:hover {
   background-image: url("../images/Mask\ group\ 1.png");
-
-  transition: all 0.5s ease-in-out;
 }
 .MANGO:hover {
   background-image: url("../images/img2.png");
-
-  transition: all 0.5s ease-in-out;
 }
 .klub:hover {
   background-image: url("../images/image\ 17\ \(2\).png");
-
-  transition: all 0.5s ease-in-out;
 }
 .Kernel:hover {
   background-image: url("../images/image\ 17\ \(1\).png");
-
-  transition: all 0.5s ease-in-out;
 }
 .studio:hover {
   background-image: url("../images/image\ 17\ \(4\).png");
-
-  transition: all 0.5s ease-in-out;
 }
 .deel:hover {
   background-image: url("../images/image\ 17\ \(4\).png");
-
-  transition: all 0.5s ease-in-out;
 }
 .Lyra:hover {
   background-image: url("../images/image\ 17.png");
-
-  transition: all 0.5s ease-in-out;
 }
 .exploree:hover {
   background: rgb(232, 202, 33);
   transition: all 0.5s ease-in-out;
-  color: #000;
+  color: black;
   border: none;
 }
 // ?/////////////////////?????????????????????///////////////
@@ -170,7 +154,6 @@
   visibility: hidden;
   transition: all 0.01s ease-in-out;
 }
-
 .wcw {
   font-size: 2.5rem;
 }
@@ -180,18 +163,20 @@
 }
 .hidee:hover .wcw {
   visibility: hidden;
-  transition: all 0.01s ease-in-out;
+  // transition: all 0.5s ease-in-out;
 }
 // /...................../////////////
 .hidee:hover .btn {
-  width: 90%;
+  width: 100%;
   background-color: rgb(232, 202, 33);
-  // transition: 0.7s ease;
   color: #000;
   font-weight: 900;
   transition: all 0.5s ease-in-out;
+  border-radius: 72px; 
 }
-
+.btn{
+  transition: all 0.5s ease-in-out;
+}
 ::-webkit-scrollbar {
   width: 1px;
   height: 1px;

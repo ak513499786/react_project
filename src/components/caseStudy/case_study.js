@@ -5,13 +5,17 @@ import img3 from "./Images/img3.png";
 import web from "./Images/web.svg";
 import graph from "./Images/graph.png";
 
+import Footer from "../footer/footer";
+import Navbar from "../navigationBar/Nav";
+
 export default function Case() {
   return (
     <>
+    <Navbar/>
       <main className="case-hero">
         <section className="case-hero-container">
         <h1 className="case-hero-h1">
-          Roll Ranch Steak Ipsum Onions Personal Sautéed.
+          Roll Ranch Steak Ipsum Onions Personal Sauteed.
         </h1>
         <p className="case-hero-para">
           Lorem porta amet at tempus malesuada hac massa at. Lacus a bibendum
@@ -104,6 +108,7 @@ export default function Case() {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }

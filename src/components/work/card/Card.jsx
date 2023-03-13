@@ -27,8 +27,8 @@ const Card = () => {
   return (
     <>
       {!explore ? (
-        <div className="test">
-          <div className="card11 hidee max-md:mx-0  m60 mx-10 flex flex-col justifycenter   p-10">
+        <div className="test work-section">
+          <div className="card11 hidee max-md:mx-0  m60 mx-10 flex flex-col justifycenter   p-10 ">
             <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
             <p className="colo my-10 mt-20">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero

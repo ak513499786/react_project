@@ -87,6 +87,37 @@
   letter-spacing: -0.03em;
   color: #848484;
 }
+@media screen and (min-width: 1441px) and (max-width: 1540px) {
+  .otherservices {
+    height: 880px;
+  }
+  .inner-service-h1 {
+    font-size: 65px;
+    line-height: 78px;
+    left: 9.7%;
+    top: 402px;
+  }
+  .vertical-animation-h1 {
+    width: 614.53px;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 78px;
+    letter-spacing: -0.015em;
+    text-transform: capitalize;
+    color: #ebebeb;
+  }
+  .vertical-animation-container{
+    gap: 60px;
+  }
+  .vertical-animation-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .horizontal-animation-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .inner-service-h1 {
     font-size: 60px;

@@ -90,31 +90,28 @@
 .nav-menu {
   float: right;
   align-items: center;
-  /* padding: 60px 174px 30px; */
-  margin-top:90px;
+  padding: 60px 174px 30px;
+  margin-top: 0px;
   width: 78.9px;
   height: 92px;
   cursor: pointer;
   z-index: 3;
 }
 #navigation-slide {
-  /* position: fixed; */
-  /* scroll: none; */
+  position: fixed;
   overflow-y: hidden;
-  /* left: 0px; */
-  bottom: 100%;
+  left: 0px;
   width: 100%;
-  height: 115vh;
   /* background-color: rgba(15, 15, 15, 0.655); */
   z-index: 5;
   font-family: graphik;
   position: fixed;
   left: 0px;
-  /* bottom: 150vh; */
-  /* width: 100%; */
-  /* height: 100vh; */
+  bottom: 150vh;
+  width: 100%;
+  height: 100vh;
   background: rgba(9, 9, 9, 0.55);
-  /* z-index: 5; */
+  z-index: 5;
   backdrop-filter: blur(30px);
 }
 .slide_nav_list-item {
@@ -137,6 +134,8 @@
   width: 61px;
   height: 0px;
   border: 1.38998px solid #ffcd05;
+  position: relative;
+  right: 49px;
 }
 .slide_nav_list {
   display: flex;

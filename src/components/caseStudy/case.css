@@ -242,13 +242,155 @@
   opacity: 0.7;
   margin: 10px 0;
 }
-@media screen and (max-width: 1520px) {
+@media screen and (min-width: 1441px) and (max-width: 1540px) {
   .browse-img{
     width: 400px;
     height: 650px;
   }
   .aussie{
     gap: 100px;
+  }
+  .case-hero {
+    height: 880px;
+  }
+  .case-hero-container {
+    left: 9.7%;
+    top: 289.5px;
+  }
+  .case-hero-h1 {
+    width: 896.1px;
+    height: auto;
+    font-weight: 600;
+    font-size: 78px;
+    line-height: 78px;
+  }
+  .case-hero-para {
+    width: 512.64px;
+    font-size: 15px;
+  }
+  .aussie {
+    display: flex;
+    justify-content: center;
+    gap: 11em;
+    margin-top: 10px;
+  }
+  .case-div {
+    gap: 30px;
+  
+    width: 490.3px;
+    height: auto;
+  }
+  .case-img {
+    width: 450.12px;
+    height: 692.64px;
+  }
+  .case-section-h1 {
+    font-size: 58px;
+    width: 490px;
+    line-height: 68px;
+    height: auto;
+    color: #e4e4e4;
+  }
+  .case-section-para {
+    width: 490.3px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    color: #848484;
+  }
+  .case-btns {
+    font-size: 30px;
+    line-height: 54px;
+  }
+  .synopsis {
+    margin-top: 75px;
+    gap: 5em;
+  }
+  .web {
+    width: 430.01px;
+    height: 550.97px;
+  }
+  .syn-content {
+    width: 40%;
+  }
+  .syn-h1 {
+    width: 100%;
+    font-size: 78px;
+    line-height: 78px;
+  }
+  .syn-para {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .sp-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 9.5em;
+  }
+  .sp-h1 {
+    font-size: 59px;
+    line-height: 68px;
+  }
+  .sp {
+    margin: 10%;
+  }
+  .sp-btn {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 44px;
+  }
+  .timeline {
+    margin-top: 7%;
+  }
+  .timeline-h1 {
+    font-size: 55px;
+    line-height: 68px;
+  }
+  .timeline-para {
+    margin: 30px 0px 75px 10px;
+    width: 490.3px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .graph {
+    margin: 0px 0px 9% 13%;
+    width: 830px;
+  }
+  .browse {
+    margin-left: 9%;
+    width: 85%;
+    margin-bottom: 80px;
+  }
+  .browse-h1 {
+    font-size: 50px;
+    line-height: 60px;
+    width: 90%;
+    margin: 5px 0px;
+  }
+  .browse-container {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+  }
+  .browse-mini {
+    width: 25%;
+    margin-top: 75px;
+    text-align: center;
+  }
+  .browse-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .img-detail-h1 {
+    font-size: 25px;
+    line-height: 36px;
+  }
+  .img-details {
+    font-size: 15px;
+    line-height: 23px;
   }
 }
 @media screen and (max-width: 1440px) {

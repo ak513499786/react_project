@@ -1,6 +1,9 @@
 import gsap from "gsap";
 import { useRef } from "react";
-import Servicesslide from "../serviceHorizontalSlide/SHS";
+import Servicesslide from "../services/Explore/Explore";
+
+import Footer from "../footer/footer";
+import Navbar from "../navigationBar/Nav";
 
 export default function UX() {
   let horizontalelement = useRef(null);
@@ -25,6 +28,7 @@ export default function UX() {
   };
   return (
     <main>
+      <Navbar/>
       <section className="otherservices">
         <h1 className="inner-service-h1">
         User Experience</h1></section>
@@ -117,6 +121,7 @@ export default function UX() {
         </div>
       </section>
       <Servicesslide />
+      <Footer/>
     </main>
   );
 }

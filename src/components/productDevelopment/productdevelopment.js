@@ -1,6 +1,9 @@
 import gsap from "gsap";
 import { useRef } from "react";
-import Servicesslide from "../serviceHorizontalSlide/SHS";
+import Servicesslide from "../services/Explore/Explore";
+
+import Footer from "../footer/footer";
+import Navbar from "../navigationBar/Nav";
 
 export default function Productdevelopment() {
   let horizontalelement = useRef(null);
@@ -28,6 +31,7 @@ export default function Productdevelopment() {
   };
   return (
     <main>
+      <Navbar/>
       <section className="otherservices">
         <h1 className="inner-service-h1">
           Providing Ideas The Platform To Be Transformed Into Reality.
@@ -138,6 +142,7 @@ export default function Productdevelopment() {
         </div>
       </section>
       <Servicesslide />
+      <Footer/>
     </main>
   );
 }
