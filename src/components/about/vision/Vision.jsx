@@ -33,19 +33,19 @@ const Vision = () => {
         <div className="vision-container">
           <h2 className="visionh1">Our Vision</h2>
           <p className="vision-para">
-            To propel huminity forword by building digital products for business
-            that unrich peoples lives
+            To propel humanity forward by building digital products for
+            businesses that enrich people's lives.
           </p>
         </div>
         <div className="core-guiding-container">
           <div className="guiding-container">
             <h2 className="guiding-container-h1">Guiding Principle</h2>
-            <p className="guiding-cotainer-para">
-              To propel huminity forword by building digital products for
-              business that unrich peoples lives Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Est, natus veniam! Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Maxime Lorem, ipsum
-              dolor sit amet.
+            <p className="guiding-container-para">
+              Crafting ideal, innovative and impactful digital products are the
+              three core pillars around which each of our projects is
+              centred.Despite capital mindset overtaking business practices, our
+              guiding principles enable us to adhere to our core and deliver
+              exceptional projects.
             </p>
             <div className="guiding-skip">
               <div className="skip-container">
@@ -69,42 +69,34 @@ const Vision = () => {
               <img className="subcontainer-img" src={svg1} alt="svg" />
               <h1 className="subcontainer-h1">Ideal</h1>
               <p className="subcontainer-para">
-                To propel huminitz forword by building digital products for
-                business that unrich peoples lives Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Est, natus veniam! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Maxime Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Optio enim minima
-                quam repudiandae labore fugit mollitia maiores consequatur
-                molestiae! libero ex asperiores fugiat. Voluptatem minus error
-                porro molestiae ipsam.
+                We understand the varying needs of our clients, and therefore
+                custom-tailor every product ideally suited to their
+                requirements. Our diverse team of designers, developers,
+                marketers, and strategists works in collaboration to deliver
+                competitive advantages and unparalleled solutions tailored to
+                your needs.
               </p>
             </div>
             <div className="subcontainer">
               <img className="subcontainer-img" src={svg2} alt="svg" />
               <h1 className="subcontainer-h1">Impact</h1>
               <p className="subcontainer-para">
-                To propel huminity forword by building digital products for
-                business that unrich peoples lives Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Est, natus veniam! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Maxime Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Optio enim minima
-                quam repudiandae labore fugit mollitia maiores consequatur
-                molestiae! libero ex asperiores fugiat. Voluptatem minus error
-                porro molestiae ipsam.
+                Driven by impact, our ultimate focus is to build digital
+                products that address real-world problems. Our team of industry
+                experts ascertains that in addition to crafting epitomes of
+                digital experiences, we create products that enrich lives and
+                create value.
               </p>
             </div>
             <div className="subcontainer">
               <img className="subcontainer-img" src={svg3} alt="svg" />
               <h1 className="subcontainer-h1">Innovation</h1>
               <p className="subcontainer-para">
-                To propel huminity forword by building digital products for
-                business that unrich peoples lives Lorem ipsum dolor sit amet
-                consectetur, adipisicing elit. Est, natus veniam! Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Maxime Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Optio enim minima
-                quam repudiandae labore fugit mollitia maiores consequatur
-                molestiae! libero ex asperiores fugiat. Voluptatem minus error
-                porro molestiae ipsam.
+                We envision ourselves to be the trendsetters and strive to make
+                our clients one too. When organisations across the world are on
+                the verge of transformation or running the risk of irrelevance,
+                we turn to innovation to stay ahead. We, therefore, go beyond
+                strategising and implement innovation into our projects.
               </p>
             </div>
           </div>
