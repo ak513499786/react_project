@@ -34,20 +34,20 @@ export default function Circles() {
       onMouseOver={mouseOverAnimation}
       onMouseOut={mouseOutAnimation}
     >
-        {/* <img src={graphintersect} alt="" className="intersect" ref={(el) => (intersect = el)}/>
+        <img src={graphintersect} alt="" className="intersect" ref={(el) => (intersect = el)}/>
         <img src={grapharrow} alt="" className="arrowanimate" ref={(el) => (arrow = el)}/>
-      <div className="circle1" ref={(el) => (circle1 = el)}>
+      <div className="circle11" ref={(el) => (circle1 = el)}>
         Codelinear
       </div>
-      <div className="circle2 circle21" ref={(el) => (circle2 = el)}>
+      <div className="circle20 circle21" ref={(el) => (circle2 = el)}>
         Market
       </div>
-      <div className="circle2 circle22" ref={(el) => (circle3 = el)}>
+      <div className="circle20 circle22" ref={(el) => (circle3 = el)}>
         Develop
       </div>
-      <div className="circle2 circle23" ref={(el) => (circle4 = el)}>
+      <div className="circle20 circle23" ref={(el) => (circle4 = el)}>
         Design
-      </div> */}
+      </div>
     </div>
   );
 }

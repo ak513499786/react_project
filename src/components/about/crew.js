@@ -1,66 +1,78 @@
+import { Link } from "react-router-dom";
+
 export default function Crew() {
   return (
-    <section className="e-model">
-      <div className="engagement-model">
-        
-        <div className="model-container">
-          <div className="m-m-container">
-            <h1 className="m-title">
-              <p className="m-numbers">02</p>
-              Tempus Enim Tellus Vel
-            </h1>
-            <p className="m-desc">
-              Mauris nulla ultricies aliquet massa tempor odio. Tincidunt
-              parturient nec tortor dolor eu tristique dictumst ultrices
-              vestibulum. Urna scelerisque nulla turpis adipiscing accumsan
-              congue etiam habitant. In convallis velit felis turpis nulla
-              gravida dictumst vel egestas. Amet tempus massa nec erat arcu et.
-              Ullamcorper pellentesque.
-            </p>
-          </div>
-          <div className="m-m-container">
-            <h1 className="m-title">
-              <p className="m-numbers">02</p>
-              Ut Luctus Ipsum Etiam In
-            </h1>
-            <p className="m-desc">
-              Vitae mollis consectetur congue donec nunc iaculis non. Est
-              integer ultrices dolor pharetra. Arcu non ut nec nam maecenas
-              libero ornare. Lacus ullamcorper aliquam mauris nibh rutrum. In
-              fermentum arcu quis purus posuere neque ante. Etiam tincidunt quis
-              metus tristique vulputate. Amet nunc facilisis maecenas sit.
-            </p>
-          </div>
-          <div className="m-m-container">
-            <h1 className="m-title">
-              <p className="m-numbers">02</p>
-              Accumsan Eleifend Ut
-            </h1>
-            <p className="m-desc">
-              Commodo pellentesque risus sed non sed auctor dui donec neque.
-              Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
-              et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
-              quis felis. At ultrices lacus nec eget integer consectetur
-              molestie. Neque suscipit viverra ridiculus rhoncus sagittis
-              vulputate sed. Tristique.
-            </p>
-          </div>
-          <div className="m-m-container">
-            <h1 className="m-title">
-              <p className="m-numbers">02</p>
-              Accumsan Eleifend Ut
-            </h1>
-            <p className="m-desc">
-              Commodo pellentesque risus sed non sed auctor dui donec neque.
-              Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
-              et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
-              quis felis. At ultrices lacus nec eget integer consectetur
-              molestie. Neque suscipit viverra ridiculus rhoncus sagittis
-              vulputate sed. Tristique.
-            </p>
-          </div>
+    <>
+      <div className=" produc crewclass">
+        <h2 className="text-7xl max-xl:text-5xl max-xl:p-5 leading-sng font-extrabold ml">
+          Meet The Crew : A Clique <br /> Of Visionaries
+        </h2>
+        <p className="my-10 w-2/5 max-lg:w-full max-xl:p-5 max-md:p-6 crewpara">
+          To propel huminity forword by building digital products for business
+          that unrich peoples lives Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Est, natus veniam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Maxime Lorem, ipsum dolor sit amet.
+        </p>
+        <div className=" mt-5 max-lg:ml-0 max-lg:p-8 ">
+          <button id="careerbtn">
+            <Link to="/career" className="careerbtn_content">
+              careers
+            </Link>
+          </button>
         </div>
       </div>
-    </section>
+      <div className="crewcontainer">
+        <section className="e-model">
+          <div className="engagement-model">
+            <div className="model-container">
+              <div className="m-m-container">
+                <h1 className="m-title">
+                  <p className="m-numbers">01</p>
+                  <span className="strategist"> Design Architects</span>
+                </h1>
+                <p className="m-desc">
+                  the Design Architects will orchestrate the project development
+                  process. From capturing customer expectations to managing the
+                  budget - they will do it all.
+                </p>
+              </div>
+              <div className="m-m-container">
+                <h1 className="m-title">
+                  <p className="m-numbers">02</p>
+                  <span className="strategist">Strategists</span>
+                </h1>
+                <p className="m-desc">
+                  They are the geniuses responsible for formulating,
+                  documenting, and implementing strategies that operate behind
+                  the scene to drive results.
+                </p>
+              </div>
+              <div className="m-m-container">
+                <h1 className="m-title">
+                  <p className="m-numbers">03</p>
+                  <span className="strategist">Tech Experts</span>
+                </h1>
+                <p className="m-desc">
+                  Our Tech Experts will devise the perfect strategy, prepare a
+                  detailed roadmap, and leverage the right technology to help
+                  you achieve your goals.
+                </p>
+              </div>
+              <div className="m-m-container">
+                <h1 className="m-title">
+                  <p className="m-numbers">04</p>
+                  <span className="strategist">Delivery Managers</span>
+                </h1>
+                <p className="m-desc">
+                  Your point-of-contact with Codelinear, who will keep you
+                  apprised on all the ins and outs of your project and its
+                  status.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 }

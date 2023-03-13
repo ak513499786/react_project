@@ -38,7 +38,7 @@ export default function Serviceshero() {
           <div className="widthh max-md:flex-col max-md:p-8  w-full flex relative">
             <div className=" mt-24 -ml-9 max-xl:ml-0 flex w-full">
               <h1 className="text-6xl w-1/2 max-sm:w-full mt-16 ml-5 max-xl:ml-5 max-lg:text-4xl font-extrabold text-white">
-                Leading The Way From Design TO Execution
+                Leading The Way From Design To Execution
               </h1>
             </div>
           </div>

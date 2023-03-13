@@ -55,7 +55,7 @@ const BlogHome = () => {
           id="blog"
         >
       <div id="blog_heading">We Pen Down Our Brightest Ideas</div>
-          <div className="max-w-7xl homeidea">
+          <div className="max-w-[100%] homeidea">
             <Swiper
               slidesPerView={3}
               slidesPerGroupSkip={1}

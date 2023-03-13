@@ -24,8 +24,8 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <main ref={(el) => (fade = el)} className="home">
-        <Navbar />
         <Hero />
         <HomeAbout />
         <HomeServices />

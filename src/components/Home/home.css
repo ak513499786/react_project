@@ -6,7 +6,7 @@
   position: relative;
   left: 0px;
   top: 0px;
-  height: 6884px;
+  height: 6684px;
 }
 #hero {
   width: 100%;
@@ -14,7 +14,7 @@
 }
 .bgv {
   position: absolute;
-  width: 166%;
+  max-width: 166%;
   height: 1659.78px;
   left: -27.78px;
   top: -491.98px;
@@ -709,9 +709,12 @@
   align-items: center;
   margin-left: 0%;
   gap: 77px;
+  width: 80%;
   height: 1050.06px;
   position: absolute;
   top: 5734.05px;
+  left: 19.1%;
+
 }
 #blog_heading {
   width: 774.84px;
@@ -724,7 +727,6 @@
   color: #d8d6d6;
   position: relative;
   top: 100px;
-  left: 19.1%;
 }
 .blog-home-container {
   display: flex;
@@ -828,7 +830,7 @@
     top: 500px;
   }
   #blog {
-    margin-left: 14%;
+    left: 14%;
   }
   #testimonials {
     margin-left: 10.4%;
@@ -1181,9 +1183,10 @@
     height: 1050.06px;
     position: absolute;
     top: 4534.05px;
+    left: 13.4%;
   }
   .home{
-    height: 5600px;
+    height: 5450px;
   }
   .blog-home-container{
     gap: 60px;
@@ -1193,7 +1196,6 @@
     line-height: 102.8%;
     letter-spacing: 0em;
     height: 200px;
-    left: 13.4%;
   }
   #blog-icons {
     display: flex;
@@ -1238,7 +1240,7 @@
 }
 @media screen and (max-width: 1440px) {
   .home {
-    height: 6605.12px;
+    height: 5855.12px;
   }
   #content {
     width: 720px;
@@ -1250,12 +1252,11 @@
   }
   .bgv {
     position: absolute;
-    width: 2543.52px;
+    max-width: 2543.52px;
     height: 1316.67px;
     left: -27.78px;
     top: -370.34px;
   }
-  
   .testhome{
     width: 100%;
   }
@@ -1364,7 +1365,7 @@
     position: absolute;
     gap: 10px;
     height: 978px;
-    top: 3191px;
+    top: 2791px;
   }
   .service_main-content {
     width: auto;
@@ -1382,17 +1383,21 @@
   }
   #testimonials {
     margin-left: 11.37%;
-    top: 4169px;
+    top: 3609px;
   }
   #clients {
     width: 100%;
   }
   #blog {
-    top: 5386.05px;
+    top: 4906.05px;
     margin-left: 0%;
     gap: 10px;
     height: 1050px;
     width: 100%;
+    left: 0;
+  }
+  #blog_heading{
+    left: 13%;
   }
   .blog-home-container {
     width: 100%;
@@ -1472,7 +1477,7 @@
 }
 @media screen and (max-width: 1060px) {
   .bgv {
-    width: 166%;
+    max-width: 166%;
   }
   .bg-mini-2 {
     height: 700px;
@@ -1550,14 +1555,14 @@
     height: auto;
   }
   #service {
-    top: 1800px;
+    top: 2400px;
   }
   #srvcnt {
     font-size: 50px;
     line-height: 55px;
   }
   #testimonials {
-    top: 2651px;
+    top: 3151px;
     margin-left: 0;
     width: 100%;
   }
@@ -1577,7 +1582,8 @@
     margin-left: 6.7%;
   }
   #blog {
-    top: 3530px;
+    top: 4200px;
+    left: 0;
   }
   .blog-home-container {
     width: 100%;
@@ -1592,7 +1598,7 @@
     height: 600px;
   }
   .home {
-    height: 4600px;
+    height: 5100px;
   }
   .client-img1 {
     left: 5.08%;
@@ -2013,7 +2019,7 @@
   .service_main {
     text-align: left;
     align-items: start;
-    padding-left: 9.7%;
+    padding-left: 4.7%;
     width: 90%;
   }
   #srvp {
@@ -2191,7 +2197,7 @@
     left: 5%;
   }
   .home {
-    height: 5250px;
+    height: 4700px;
   }
   #blog {
     top: 3950px;

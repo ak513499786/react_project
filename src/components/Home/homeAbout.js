@@ -23,8 +23,8 @@ const HomeAbout = () => {
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1,
+      spaceBetween: 0,
     },
   };
   const [Widht, setWidth] = useState(window.innerWidth);
@@ -82,7 +82,7 @@ const HomeAbout = () => {
           </>
         ) : (
           <>
-            <div className="testhome max-xl:mt-56">
+            <div className="testhome">
               <div className="imghome1 hideehome">
                 <div className="bghome"></div>
                 <div id="i" className="p-5">

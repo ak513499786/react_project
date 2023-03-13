@@ -1038,4 +1038,7 @@
   .m-numbers {
     width: 30px;
   }
+  .e-model{
+    height: auto;
+  }
 }
