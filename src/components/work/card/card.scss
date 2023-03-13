@@ -146,7 +146,7 @@
 .exploree:hover {
   background: rgb(232, 202, 33);
   transition: all 0.5s ease-in-out;
-  color: black;
+  color: #000;
   border: none;
 }
 // ?/////////////////////?????????????????????///////////////
@@ -172,9 +172,9 @@
   color: #000;
   font-weight: 900;
   transition: all 0.5s ease-in-out;
-  border-radius: 72px; 
+  border-radius: 72px;
 }
-.btn{
+.btn {
   transition: all 0.5s ease-in-out;
 }
 ::-webkit-scrollbar {

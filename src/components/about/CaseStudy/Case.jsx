@@ -97,51 +97,68 @@ const Case = () => {
               className="mySwiper mt-20 w-[80%]"
             >
               {/* <div className="testhome"> */}
-
-              <SwiperSlide className="cass">
-                <div className="imghome1 hideehome cass ">
-                  <div className="img121 cass"></div>
-                </div>
+              <SwiperSlide className="">
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome  ">
+                    <div className="img121 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img211 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img211 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img311 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img311 "></div>
+                  </div>
+                </Link>
+              </SwiperSlide>{" "}
+              <SwiperSlide>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img411 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img411 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img121 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img121 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img211 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img211 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img311 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img311 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img311 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img311 cass"></div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="imghome1 hideehome casee  ">
-                  <div className="img211 cass"></div>
-                </div>
+                <Link to="/case_study">
+                  <div className="imghome1 hideehome   ">
+                    <div className="img211 "></div>
+                  </div>
+                </Link>
               </SwiperSlide>
               {/* </div> */}
             </Swiper>
