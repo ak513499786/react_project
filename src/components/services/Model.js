@@ -6,6 +6,7 @@ import whitedownarrow from "./images/downarrow.svg";
 // import { Link } from "react-router-dom";
 import Scroll from "react-scroll";
 import { Link } from "react-scroll";
+// import { Link } from "react";
 
 export default function Wedo() {
   const ScrollLink = Scroll.ScrollLink;

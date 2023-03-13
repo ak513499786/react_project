@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
-import AnimatedCursor from "react-animated-cursor";
 
 export default function Consultingandstrategy() {
   let horizontalelement = useRef(null);
@@ -26,8 +25,8 @@ export default function Consultingandstrategy() {
   };
   return (
     <main className="service-inner-page">
+      <Navbar/>
       <section className="otherservices">
-        {/* <AnimatedCursor color="255, 255, 255" /> */}
         <h1 className="inner-service-h1">
           Define And Shape Tomorrow With Us By Capitalising On Today's
           Disruptions.
@@ -124,6 +123,7 @@ export default function Consultingandstrategy() {
         </div>
       </section>
       <Servicesslide />
+      <Footer/>
     </main>
   );
 }
