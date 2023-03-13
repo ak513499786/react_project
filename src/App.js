@@ -15,11 +15,20 @@ import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
     <div>
-      <AnimatedCursor color="255, 255, 255"/>
+      {/* <AnimatedCursor color="255, 255, 255"/> */}
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={8}
+        color="225, 225, 225"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={0.2}
+      />
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
@@ -36,6 +45,7 @@ function App() {
           <Route exact path="/let's_talk" element={<Talk />} />
           <Route exact path="/case_study" element={<Case />} />
           <Route exact path="/empathy" element={<Empathy />} />
+          {/* <Route exact path="/footer" element={<Footer />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

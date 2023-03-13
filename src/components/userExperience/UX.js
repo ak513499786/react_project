@@ -4,6 +4,7 @@ import Servicesslide from "../services/Explore/Explore";
 
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function UX() {
   let horizontalelement = useRef(null);
@@ -28,17 +29,20 @@ export default function UX() {
   };
   return (
     <main>
-      <Navbar/>
+      <Navbar />
+
       <section className="otherservices">
-        <h1 className="inner-service-h1">
-        User Experience</h1></section>
+        {/* <AnimatedCursor color="255, 255, 255" /> */}
+        <h1 className="inner-service-h1">User Experience</h1>
+      </section>
       <section className="animations">
         <div className="vertical-effect">
           <div className="vertical-animation">
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onLoad={scrollanimation}
               onMouseEnter={scrollanimation}
-              >
+            >
               <h1 className="vertical-animation-h1">UX Audit</h1>
               <p className="vertical-animation-para">
                 "Evaluation is Creation." A UX audit is a critical evaluation of
@@ -47,9 +51,10 @@ export default function UX() {
                 data-driven action plan for you to hit the ground running.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation1}
-              >
+            >
               <h1 className="vertical-animation-h1">UX Research</h1>
               <p className="vertical-animation-para">
                 A holistic understanding of the target audience is the key
@@ -59,9 +64,10 @@ export default function UX() {
                 strengths and weaknesses.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation2}
-              >
+            >
               <h1 className="vertical-animation-h1">UI UX Consulting</h1>
               <p className="vertical-animation-para">
                 "Evaluation is Creation." A UX audit is a critical evaluation of
@@ -70,9 +76,10 @@ export default function UX() {
                 data-driven action plan for you to hit the ground running.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation3}
-              >
+            >
               <h1 className="vertical-animation-h1">User Experience Design</h1>
               <p className="vertical-animation-para">
                 User Experience is at the core of everything we build at
@@ -82,9 +89,10 @@ export default function UX() {
                 the conglomeration of intuition, empathy, and clarity.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation4}
-              >
+            >
               <h1 className="vertical-animation-h1">User Interface Design</h1>
               <p className="vertical-animation-para">
                 In the era of plummeting user attention span, an engaging user
@@ -94,9 +102,10 @@ export default function UX() {
                 users to seamlessly interact with them.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation5}
-              >
+            >
               <h1 className="vertical-animation-h1">Digital Branding</h1>
               <p className="vertical-animation-para">
                 Our Go-To-Market Strategy entails extensive research into the
@@ -108,9 +117,10 @@ export default function UX() {
           </div>
         </div>
         <div className="horizontal-animation">
-          <div className="horizontal-animation-container"
-              ref={(el) => (horizontalelement = el)}
-              >
+          <div
+            className="horizontal-animation-container"
+            ref={(el) => (horizontalelement = el)}
+          >
             <p className="horizontal-animation-para">UX Audit</p>
             <p className="horizontal-animation-para">UX Research</p>
             <p className="horizontal-animation-para">UI UX Consulting</p>
@@ -121,7 +131,7 @@ export default function UX() {
         </div>
       </section>
       <Servicesslide />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

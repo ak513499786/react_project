@@ -17,7 +17,24 @@
   opacity: 1;
   // color: #fff;
 }
-
+// .subcontainer-img :hover {
+//   transform: rotate(360deg);
+// }
+.subcontainer-img {
+  display: inline-block;
+  width: 60px;
+  margin-right: 20px;
+  animation-name: example;
+  animation-duration: 5s;
+}
+.subcontainer img {
+  transition: transform 1s ease;
+}
+.subcontainer-img img:hover {
+}
+.subcontainer img:hover {
+  transform: rotate(360deg);
+}
 @media (max-width: 768px) {
   .lefts {
     width: 115%;

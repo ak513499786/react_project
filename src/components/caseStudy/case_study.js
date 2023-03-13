@@ -7,12 +7,14 @@ import graph from "./Images/graph.png";
 
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Case() {
   return (
     <>
     <Navbar/>
       <main className="case-hero">
+    {/* <AnimatedCursor color="255, 255, 255"/> */}
         <section className="case-hero-container">
         <h1 className="case-hero-h1">
           Roll Ranch Steak Ipsum Onions Personal Sauteed.

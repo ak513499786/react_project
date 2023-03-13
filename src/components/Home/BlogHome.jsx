@@ -14,8 +14,10 @@ import image3 from "./images/Frame 44.svg";
 import image4 from "./images/Frame 472.svg";
 // import imgqq from "../blog/blogimages/Frame 44.png";
 // import imgq1 from "../blog/blogimages/Frame 472.png";
+import AnimatedCursor from "react-animated-cursor";
 import { gsap, TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
+
 
 const BlogHome = () => {
   const onEnter = ({ currentTarget }) => {
@@ -51,6 +53,7 @@ const BlogHome = () => {
     <>
       {/* {Widht >= 920 ? ( */}
       <>
+      {/* <AnimatedCursor color="255, 255, 255" /> */}
         <div
           id="blog"
         >

@@ -3,7 +3,8 @@ import { gsap, Power0 } from "gsap";
 
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 export default function Wedo() {
   let arrows = useRef(null);
@@ -17,6 +18,14 @@ export default function Wedo() {
     gsap.to(arrows, 0.2, { y: 0 });
     gsap.to(skip, 0.2, { css: { color: "#848484" } });
   };
+
+  // const scrollToTarget = (target) => {
+  //   scroll.scrollTo(target, {
+  //     duration: 500,
+  //     smooth: true,
+  //     offset: -70, // change this offset based on your navbar height
+  //   });
+  // };
   return (
     <section className="e-model">
       <div className="engagement-model">
@@ -33,7 +42,8 @@ export default function Wedo() {
             </p>
           </div>
           <div className="skip-container">
-            <Link to="#footeer">
+            {/* <Link to="#footer"> */}
+            <Link to="footer">
               <div
                 className="skip"
                 onMouseOut={arrowRotateBack}

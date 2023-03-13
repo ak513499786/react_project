@@ -112,7 +112,7 @@
   height: 100vh;
   background: rgba(9, 9, 9, 0.55);
   z-index: 5;
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(15px);
 }
 .slide_nav_list-item {
   list-style: none;
@@ -467,7 +467,7 @@ sup {
   #navigation-slide {
     background: rgba(9, 9, 9, 0.8);
   }
-  .slide_nav_list-item{
+  .slide_nav_list-item {
     background: #000;
   }
   .nav-menu {
@@ -573,7 +573,7 @@ sup {
     width: 35px;
     height: 35px;
   }
-  .icons{
+  .icons {
     width: 14.7%;
   }
 }
