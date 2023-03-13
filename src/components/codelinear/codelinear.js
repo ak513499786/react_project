@@ -1,29 +1,41 @@
 import { useLocation } from "react-router-dom";
 import codelinear from "../footer/images/Vector.svg";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 export default function Codelinear() {
   const url = useLocation();
+  let footerScroll = useRef(null)
+
+  const Effect = () => {
+    window.scrollTo(0, 0);
+  };
 
   if (url.pathname === "/") {
     return (
-      <div className="footer-animation">
+      <Link
+        to={"/"}
+        className="footer-animation"
+        ref={(el) => (footerScroll = el)}
+        onClick={Effect}
+      >
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to impact</span>
-      </div>
+      </Link>
     );
   } else if (url.pathname === "/about") {
     return (
-      <div className="footer-animation">
+      <Link to={"/"} className="footer-animation">
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to innovation</span>
-      </div>
+      </Link>
     );
   } else if (url.pathname === "/case_study" || url.pathname === "/work") {
     return (
-      <div className="footer-animation">
+      <Link to={"/"} className="footer-animation">
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to perfection</span>
-      </div>
+      </Link>
     );
   } else if (
     url.pathname === "/services" ||
@@ -34,24 +46,24 @@ export default function Codelinear() {
     url.pathname === "/career"
   ) {
     return (
-      <div className="footer-animation">
+      <Link to={"/"} className="footer-animation">
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to pioneers</span>
-      </div>
+      </Link>
     );
   } else if (url.pathname === "/blog" || url.pathname === "/empathy") {
     return (
-      <div className="footer-animation">
+      <Link to={"/"} className="footer-animation">
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to ideas</span>
-      </div>
+      </Link>
     );
   } else if (url.pathname === "/let's_talk") {
     return (
-      <div className="footer-animation">
+      <Link to={"/"} className="footer-animation">
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to passion</span>
-      </div>
+      </Link>
     );
   }
 }

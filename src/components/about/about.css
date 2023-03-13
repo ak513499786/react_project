@@ -1,4 +1,4 @@
-.about-hero{
+.about-hero {
   height: 100vh;
 }
 .about-hero-h1 {
@@ -123,6 +123,10 @@
   display: flex;
   justify-content: space-between;
 }
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 .visionh1 {
   font-size: 50px;
   font-weight: 600;
@@ -170,7 +174,6 @@
   width: 60px;
   margin-right: 20px;
 }
-
 
 .subcontainer-h1 {
   display: inline-block;
@@ -225,7 +228,7 @@
     font-size: 25px;
     line-height: 37px;
   }
-  .crewcontainer{
+  .crewcontainer {
     position: relative;
     bottom: 70px;
     height: auto;
@@ -278,7 +281,7 @@
     width: 60%;
     gap: 70px;
   }
-  .crewcontainer{
+  .crewcontainer {
     position: relative;
     bottom: 300px;
     height: 1400px;
@@ -373,10 +376,10 @@
   .crewclass {
     margin-left: 3%;
   }
-  .crewcontainer{
+  .crewcontainer {
     bottom: 200px;
   }
-  .about-case{
+  .about-case {
     position: relative;
     bottom: 100px;
   }
@@ -389,30 +392,30 @@
   }
 }
 @media screen and (max-width: 540px) {
-.about-case{
-  position: relative;
-  bottom: 250px;
-}
-.crewcontainer{
-  bottom: 50px;
-  height: 1600px;
-}
+  .about-case {
+    position: relative;
+    bottom: 250px;
+  }
+  .crewcontainer {
+    bottom: 50px;
+    height: 1600px;
+  }
 }
 @media screen and (max-width: 428px) {
   .about-hero-h1 {
     font-size: 40px;
     line-height: 45px;
   }
-  .core-container{
+  .core-container {
     gap: 70px;
   }
-  .core-guiding-container{
+  .core-guiding-container {
     gap: 50px;
   }
   .strategist {
     text-align: center;
   }
-/* <<<<<<< HEAD */
+  /* <<<<<<< HEAD */
   /* .crewclass {
 
   .guiding-skip{
@@ -420,11 +423,11 @@
     display: flex;
     justify-content: end;
   } */
-  .crewclass{
-/* >>>>>>> 197f0f4aaf057c6d88ae03b456bb3f9c37fb18ac */
+  .crewclass {
+    /* >>>>>>> 197f0f4aaf057c6d88ae03b456bb3f9c37fb18ac */
     margin-left: 0;
   }
-  .crewcontainer{
+  .crewcontainer {
     bottom: 300px;
     height: 1150px;
   }

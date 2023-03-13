@@ -189,7 +189,6 @@ export default function Services() {
           </div>
         </div>
       </section>
-
       {/* <section className="services-container">
 >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
         <h1 className="ser-h1">Explore Our Services</h1>

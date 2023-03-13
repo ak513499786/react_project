@@ -15,7 +15,6 @@ import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -45,7 +44,6 @@ function App() {
           <Route exact path="/let's_talk" element={<Talk />} />
           <Route exact path="/case_study" element={<Case />} />
           <Route exact path="/empathy" element={<Empathy />} />
-          {/* <Route exact path="/footer" element={<Footer />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

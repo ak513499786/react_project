@@ -15,10 +15,12 @@ export default function Navigation_bar() {
 
   const navSlide = () => {
     gsap.to(slide, 0.8, { css: { bottom: "0vh" } });
+    document.body.classList.add("stop-scrolling");
   };
 
   const navSlidesBack = () => {
     gsap.to(slide, 0.8, { css: { bottom: "150vh" }, ease: Power3.easeIn });
+    document.body.classList.remove('stop-scrolling');
   };
   const fade = () => {
     gsap.to(slide, 0, { css: { bottom: "150vh" } });
@@ -48,8 +50,7 @@ export default function Navigation_bar() {
             left: 0,
             right: 0,
             padding: "0px 0px",
-            visibility: visible ? "visible" : "hidden",
-            transform: visible ? "none" : "translateY(-110%)",
+            transform: visible ? "translate(0)" : "translateY(-100vh)",
             transition: "transform 0.3s ease-in-out",
           }}
           className="navigation_bar"

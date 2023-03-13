@@ -4,7 +4,7 @@ import { gsap, Power0 } from "gsap";
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
 // import { Link } from "react-router-dom";
-import { Link } from "react-scroll";
+import { Link } from "react";
 
 export default function Wedo() {
   let arrows = useRef(null);
@@ -43,7 +43,6 @@ export default function Wedo() {
           </div>
           <div className="skip-container">
             {/* <Link to="#footer"> */}
-            <Link to="footer">
               <div
                 className="skip"
                 onMouseOut={arrowRotateBack}
@@ -56,7 +55,6 @@ export default function Wedo() {
                   <img src={arrowdown} alt="" className="arrowdown" />
                 </div>
               </div>
-            </Link>
           </div>
         </div>
         <div className="model-container">

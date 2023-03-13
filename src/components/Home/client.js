@@ -9,6 +9,7 @@ import client8 from "./images/client7.svg";
 import client9 from "./images/client8.svg";
 import client10 from "./images/client9.svg";
 import React, { useState, useEffect } from "react";
+import gsap from "gsap";
 
 export default function Client() {
   const [logo1Opacity, setLogo1Opacity] = useState(0.5);

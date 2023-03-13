@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  gap: 50px;
+  gap: 0px;
 }
 #socials {
   display: flex;
@@ -40,7 +40,7 @@
 }
 #ftrh1 {
   width: 58.64%;
-  height: 345px;
+  height: auto;
   font-family: "Graphik";
   font-style: normal;
   font-weight: 400;
@@ -149,7 +149,7 @@
   padding: 0px;
   gap: 10px;
   width: 100%;
-  height: 456px;
+  height: 406px;
   transition: 0.3s;
 }
 .lower-footer {
@@ -162,7 +162,7 @@
   position: relative;
   width: 80.72%;
   height: 124px;
-  top: 80px;
+  top: 0px;
 }
 .codelinear {
   width: 132.06px;
@@ -171,8 +171,7 @@
 .footer-animationtxt {
   font-size: 30px;
   font-family: graphik;
-  margin-top: 25px;
-  margin-left: 10px;
+  height: 12.91px;
 }
 .aligncenter {
   overflow-x: hidden;
@@ -185,6 +184,8 @@
 }
 .footer-animation{
   display: flex;
+  align-items: center;
+  gap: 10px;
 }
 @media screen and (max-width: 1620px) {
   #lower-footer {
@@ -217,8 +218,12 @@
     height: 25.8px;
     margin-left: 20px;
   }
+  .main-footer{
+    gap: 0px;
+    height: auto;
+  }
   #footer{
-    height: 720px;
+    height: 740px;
   }
   #ftrcnt {
     font-size: 25px;
@@ -226,6 +231,10 @@
   }
   #ftrh1 {
     font-size: 249.26px;
+    height: auto;
+  }
+  #footer{
+    height: auto;
   }
   .copyright {
     font-size: 14px;
@@ -271,7 +280,7 @@
   }
   .lower-footer {
     gap: 12.36%;
-    top: 10px;
+    top: 0px;
     width: 80%;
   }
 }
