@@ -15,7 +15,7 @@ const Explore = () => {
           </div>
           {/* <div className=""> */}
           <div className="cards testt mt-  max-lg:p-20">
-            <Link to="/consulting">
+            <Link to="/consultingandstrategy">
               <div className="card1 mx-10 my- hideee relative">
                 <div className="img1 ml-1  ma\  -top-0"></div>
                 <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
@@ -38,7 +38,7 @@ const Explore = () => {
                 </div> */}
               </div>
             </Link>
-            <Link to="/productdev" className="h-full">
+            <Link to="/productdevelopment" className="h-full">
               <div className="card1 mx-10 hideee relative">
                 <div className="img3 ml-3 max-md:ml-44 -top-0"></div>
                 <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
@@ -48,7 +48,7 @@ const Explore = () => {
                 </div>
               </div>
             </Link>
-            <Link to="/productdev">
+            <Link to="/digitalmarketing">
               <div className="card1 mx-10 hideee relative">
                 <div className="img4 ml-3 max-md:ml-72 -top-0"></div>
                 <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
