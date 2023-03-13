@@ -99,11 +99,9 @@ const Card = () => {
             </div>
           </div>
           <button className="my-24 -20" onClick={toggleCase}>
-            <div className="exploree hidee max-md:mx-0 flex items-center justify-center hover:text-black">
-              <div className="flex w-full justify-center items-center h-full hover:text-black">
-                <h1 className="text-4xl font-extrabold hover:text-black ">
-                  explore More
-                </h1>
+            <div className="exploree hidee max-md:mx-0 flex items-center justify-center">
+              <div className="flex w-full justify-center items-center h-full">
+                <h1 className="text-4xl font-extrabold ">explore More</h1>
               </div>
             </div>
           </button>
@@ -126,7 +124,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="MANGO hidee max-md:mx-0 mx-1 max-xl:-10 flex flex-col justify-center max-md:my-10  p-10">
+            <div className="MANGO hidee max-xl:mx-0   mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">MANGO</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -140,7 +138,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="Willium hidee max-lg:mx-0 mx-10  max-xl:my-10 flex flex-col justify-center   p-10">
+            <div className="Willium hidee max-xl:mx-0   mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">Willium Abraham</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -154,7 +152,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="Kernel my-16 hidee max-lg:mx-0 max-lg:my-10 mx-12 ml- flex flex-col justify-center   p-10">
+            <div className="Kernel hidee max-xl:mx-0  my-10 mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">Kernel Wealth</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -168,7 +166,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="klub hidee my-16 max-lg:mx-0 mx-10 max-lg:my-10 flex flex-col justify-center max-md:my-10   p-10">
+            <div className="klub hidee max-xl:mx-0 my-10  mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">klub</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -182,7 +180,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="Lyra my-16 hidee max-lg:mx-0 mx-10 max-lg:my-10 flex flex-col justify-center   p-10">
+            <div className="Lyra hidee max-xl:mx-0 my-10  mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">Lyra Health</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -196,7 +194,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="studio hidee max-lg:mx-0 mx-10 max-lg:my-10 flex flex-col justify-center  max-md:my-10  p-10">
+            <div className="studio hidee max-xl:mx-0   mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">Kernel Wealth</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -210,7 +208,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="deel hidee max-lg:mx-0 mx-10 max-lg:my-10 flex flex-col justify-center max-md:my-10  p-10">
+            <div className="deel hidee max-xl:mx-0   mx-1 flex flex-col justify-center max-md:my-10   p-10">
               <h1 className="text-5xl -mt24 wcw">Lyra Health</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
