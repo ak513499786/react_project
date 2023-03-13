@@ -6,7 +6,7 @@ import Crew from "./crew";
 
 import "./about.css";
 import Vision from "./vision/Vision";
-// import Casestudy from './CaseStudy/Case'
+import Casestudy from './CaseStudy/Case'
 
 export default function about() {
   return (
@@ -25,7 +25,7 @@ export default function about() {
       <Circles />
       <Vision />
       <Crew />
-      {/* <Casestudy/> */}
+      <Casestudy/>
       <Footer />
     </>
   );

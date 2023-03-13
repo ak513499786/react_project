@@ -61,28 +61,46 @@ const Case = () => {
                 repellat assumenda quasi incidunt.
               </p>
             </div>
-            {/* ?/////////////////////////////////////////////////////////////////////////////// */}
-            {/* <div className="imagesd max-xl:flex-col flex mt-28  max-xl:items-center max-xl:justify-center items-end justify-end"> */}
-            {/* <Swiper
+            <Swiper
               slidesPerView={3}
               slidesPerGroupSkip={1}
               spaceBetween={60}
               loop={true}
-              breakpoints
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                  containerClass: "half-image-container",
+                },
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
               }}
-              pagination={{
-                clickable: true,
-              }}
-              navigation={true}
+              // autoplay={{
+              //   delay: 2500,
+              //   disableOnInteraction: false,
+              // }}
+              // pagination={{
+              //   clickable: true,
+              // }}
+              // navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper mt-20"
+              className="mySwiper mt-20 w-[80%]"
             >
-              <div className="testhome">
-                <SwiperSlide>
-                  <div className="imghome1 hideehome casee  ">
+
+              {/* <div className="testhome"> */}
+              
+                <SwiperSlide className="cass">
+                  <div className="imghome1 hideehome cass ">
                     <div className="img121 cass"></div>
                   </div>
                 </SwiperSlide>
@@ -126,8 +144,8 @@ const Case = () => {
                     <div className="img211 cass"></div>
                   </div>
                 </SwiperSlide>
-              </div>
-            </Swiper> */}
+              {/* </div> */}
+            </Swiper>
           </div>
         </div>
       ) : (
@@ -159,11 +177,11 @@ const Case = () => {
           <div className="imghome1 hideehome">
             <div className="bghome4"></div>
             <div id="i" className="p-5">
-                <h1>COWBOY</h1>
-                <p id="imgsp" className="coloo">
-                  shopify platform design + development
-                </p>
-              </div>
+              <h1>COWBOY</h1>
+              <p id="imgsp" className="coloo">
+                shopify platform design + development
+              </p>
+            </div>
           </div>
         </div>
       )}

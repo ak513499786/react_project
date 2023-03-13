@@ -3,6 +3,7 @@ import { gsap, Power0 } from "gsap";
 
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
+import { Link } from "react-router-dom";
 
 export default function Wedo() {
   let arrows = useRef(null);
@@ -32,18 +33,20 @@ export default function Wedo() {
             </p>
           </div>
           <div className="skip-container">
-            <div
-              className="skip"
-              onMouseOut={arrowRotateBack}
-              onMouseOver={arrowRotate}
-              ref={(el) => (skip = el)}
-            >
-              skip ahead
-              <div className="downarrows" ref={(el) => (arrows = el)}>
-                <img src={whitedownarrow} alt="" className="arrowdown" />
-                <img src={arrowdown} alt="" className="arrowdown" />
+            <Link to="#footeer">
+              <div
+                className="skip"
+                onMouseOut={arrowRotateBack}
+                onMouseOver={arrowRotate}
+                ref={(el) => (skip = el)}
+              >
+                skip ahead
+                <div className="downarrows" ref={(el) => (arrows = el)}>
+                  <img src={whitedownarrow} alt="" className="arrowdown" />
+                  <img src={arrowdown} alt="" className="arrowdown" />
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="model-container">
