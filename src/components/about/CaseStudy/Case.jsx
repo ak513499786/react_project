@@ -48,7 +48,7 @@ const Case = () => {
   return (
     <>
       {Widht > 1300 ? (
-        <div className="circle flex mt-52 justify-center h-full relative  items-center">
+        <div className="circle flex mt-0 justify-center h-full relative  items-center">
           <div className="width w-full flex-col h-full items-center flex justify-center relative">
             <div className="tal items-center flex justify-center flex-col h-full">
               <h1 className="text-7xl text-center font-bold max-md:text-5xl max-md:p-10">
