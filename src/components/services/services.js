@@ -20,6 +20,7 @@ import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
 import Navigation_bar from "../navigationBar/Nav";
 // >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Services() {
   let background = useRef(null);
@@ -113,6 +114,8 @@ export default function Services() {
     <>
     <Navbar/>
       <main className="services" ref={(el) => (fade = el)}>
+      {/* <AnimatedCursor color="255, 255, 255"/> */}
+
         <Servicehero />
         {/* <Wedo /> */}
         {/* <section className="services-container">

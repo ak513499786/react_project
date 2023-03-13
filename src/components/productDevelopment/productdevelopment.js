@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Servicesslide from "../services/Explore/Explore";
 
 import Footer from "../footer/footer";
+import AnimatedCursor from "react-animated-cursor";
 import Navbar from "../navigationBar/Nav";
 
 export default function Productdevelopment() {
@@ -31,8 +32,11 @@ export default function Productdevelopment() {
   };
   return (
     <main>
-      <Navbar/>
+      <Navbar />
+
       <section className="otherservices">
+        {/* <AnimatedCursor color="255, 255, 255" /> */}
+
         <h1 className="inner-service-h1">
           Providing Ideas The Platform To Be Transformed Into Reality.
         </h1>
@@ -40,10 +44,11 @@ export default function Productdevelopment() {
       <section className="animations">
         <div className="vertical-effect">
           <div className="vertical-animation">
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onLoad={scrollanimation}
               onMouseEnter={scrollanimation}
-              >
+            >
               <h1 className="vertical-animation-h1">Website Development</h1>
               <p className="vertical-animation-para">
                 A user's first interaction with your company is through your
@@ -52,9 +57,10 @@ export default function Productdevelopment() {
                 seamless experience across each point of contact.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation1}
-              >
+            >
               <h1 className="vertical-animation-h1">Web App Development</h1>
               <p className="vertical-animation-para">
                 A holistic understanding of the target audience is the key
@@ -64,9 +70,10 @@ export default function Productdevelopment() {
                 strengths and weaknesses.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation2}
-              >
+            >
               <h1 className="vertical-animation-h1">E-Commerce Development </h1>
               <p className="vertical-animation-para">
                 "Evaluation is Creation." A UX audit is a critical evaluation of
@@ -75,9 +82,10 @@ export default function Productdevelopment() {
                 data-driven action plan for you to hit the ground running.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation3}
-              >
+            >
               <h1 className="vertical-animation-h1">MVP Development </h1>
               <p className="vertical-animation-para">
                 Minimum Viable Product enables you to launch your product in the
@@ -86,9 +94,10 @@ export default function Productdevelopment() {
                 essence of the original product with minimal investment.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation4}
-              >
+            >
               <h1 className="vertical-animation-h1">Native App Development</h1>
               <p className="vertical-animation-para">
                 Technology is altering the way the world is perceived. We build
@@ -99,9 +108,10 @@ export default function Productdevelopment() {
                 reality.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation5}
-              >
+            >
               <h1 className="vertical-animation-h1">Hybrid App Development</h1>
               <p className="vertical-animation-para">
                 Our Go-To-Market Strategy entails extensive research into the
@@ -110,9 +120,10 @@ export default function Productdevelopment() {
                 mitigating the risks and capitalising on data-driven insights.
               </p>
             </div>
-            <div className="vertical-animation-container"
+            <div
+              className="vertical-animation-container"
               onMouseEnter={scrollanimation6}
-              >
+            >
               <h1 className="vertical-animation-h1">
                 Enterprise App Development
               </h1>
@@ -126,9 +137,10 @@ export default function Productdevelopment() {
           </div>
         </div>
         <div className="horizontal-animation">
-          <div className="horizontal-animation-container"
-              ref={(el) => (horizontalelement = el)}
-              >
+          <div
+            className="horizontal-animation-container"
+            ref={(el) => (horizontalelement = el)}
+          >
             <p className="horizontal-animation-para">Website Development</p>
             <p className="horizontal-animation-para">Web App Developments</p>
             <p className="horizontal-animation-para">E-Commerce Development</p>
@@ -142,7 +154,7 @@ export default function Productdevelopment() {
         </div>
       </section>
       <Servicesslide />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

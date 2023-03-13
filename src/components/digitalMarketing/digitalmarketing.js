@@ -3,6 +3,7 @@ import { useRef } from "react";
 import Servicesslide from "../services/Explore/Explore";
 
 import Footer from "../footer/footer";
+import AnimatedCursor from "react-animated-cursor";
 import Navbar from "../navigationBar/Nav";
 
 export default function Digitalmarketing() {
@@ -24,6 +25,7 @@ export default function Digitalmarketing() {
     <>
     <Navbar/>
     <main>
+    {/* <AnimatedCursor color="255, 255, 255"/> */}
       <section className="otherservices">
         <h1 className="inner-service-h1">Digital Marketing</h1>
       </section>

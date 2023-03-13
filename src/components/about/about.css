@@ -149,9 +149,9 @@
   flex-direction: column;
   gap: 30px;
 }
-.guiding-skip{
+.guiding-skip {
   position: relative;
-  left:-25px ;
+  left: -25px;
 }
 .guiding-container-h1 {
   font-size: 35px;
@@ -164,11 +164,14 @@
   font-family: graphik;
   color: #848484;
 }
+
 .subcontainer-img {
   display: inline-block;
   width: 60px;
   margin-right: 20px;
 }
+
+
 .subcontainer-h1 {
   display: inline-block;
   font-size: 35px;
@@ -253,9 +256,9 @@
     width: 35%;
     gap: 20px;
   }
-  .guiding-skip{
+  .guiding-skip {
     position: relative;
-    left:-150px ;
+    left: -150px;
   }
   .guiding-container-h1 {
     font-size: 30px;
@@ -286,9 +289,9 @@
     font-size: 70px;
     width: 83%;
   }
-  .guiding-skip{
+  .guiding-skip {
     position: relative;
-    left:-100px ;
+    left: -100px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -341,7 +344,7 @@
     color: black;
     font-weight: bold;
   }
-  .core-guiding-container{
+  .core-guiding-container {
     flex-direction: column;
   }
   .core-container {
@@ -350,24 +353,24 @@
   .guiding-container {
     width: 100%;
   }
-  .guiding-skip{
+  .guiding-skip {
     position: relative;
-    left:0px;
+    left: 0px;
   }
   .guiding-subcontainer {
     width: 100%;
     gap: 70px;
   }
-  .vision-container{
+  .vision-container {
     flex-direction: column;
     gap: 10px;
   }
-  .vision-para{
+  .vision-para {
     width: 100%;
     font-size: 18px;
     line-height: 24px;
   }
-  .crewclass{
+  .crewclass {
     margin-left: 3%;
   }
   .crewcontainer{
@@ -409,12 +412,16 @@
   .strategist {
     text-align: center;
   }
+/* <<<<<<< HEAD */
+  /* .crewclass {
+
   .guiding-skip{
     width: 100%;
     display: flex;
     justify-content: end;
-  }
+  } */
   .crewclass{
+/* >>>>>>> 197f0f4aaf057c6d88ae03b456bb3f9c37fb18ac */
     margin-left: 0;
   }
   .crewcontainer{

@@ -94,7 +94,7 @@ const Case = () => {
               // }}
               // navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper mt-20 w-[80%]"
+              className="mySwiper mt-20 w-[100%]"
             >
               {/* <div className="testhome"> */}
               <SwiperSlide className="">
@@ -128,35 +128,35 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study">
                   <div className="imghome1 hideehome   ">
-                    <div className="img121 "></div>
+                    <div className="img412 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
                 <Link to="/case_study">
                   <div className="imghome1 hideehome   ">
-                    <div className="img211 "></div>
+                    <div className="img413 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
                 <Link to="/case_study">
                   <div className="imghome1 hideehome   ">
-                    <div className="img311 "></div>
+                    <div className="img414 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
                 <Link to="/case_study">
                   <div className="imghome1 hideehome   ">
-                    <div className="img311 "></div>
+                    <div className="img415 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
                 <Link to="/case_study">
                   <div className="imghome1 hideehome   ">
-                    <div className="img211 "></div>
+                    <div className="img416 "></div>
                   </div>
                 </Link>
               </SwiperSlide>

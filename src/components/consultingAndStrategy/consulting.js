@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Consultingandstrategy() {
   let horizontalelement = useRef(null);
@@ -26,6 +27,7 @@ export default function Consultingandstrategy() {
   return (
     <main className="service-inner-page">
       <section className="otherservices">
+        {/* <AnimatedCursor color="255, 255, 255" /> */}
         <h1 className="inner-service-h1">
           Define And Shape Tomorrow With Us By Capitalising On Today's
           Disruptions.
@@ -35,9 +37,10 @@ export default function Consultingandstrategy() {
         <div className="animation-container">
           <div className="vertical-effect">
             <div className="vertical-animation">
-              <div className="vertical-animation-container"
-              onLoad={scrollanimation}
-              onMouseEnter={scrollanimation}
+              <div
+                className="vertical-animation-container"
+                onLoad={scrollanimation}
+                onMouseEnter={scrollanimation}
               >
                 <h1 className="vertical-animation-h1">Market Research</h1>
                 <p className="vertical-animation-para">
@@ -48,8 +51,9 @@ export default function Consultingandstrategy() {
                   you to make decisions driven by consumer behaviour and data.
                 </p>
               </div>
-              <div className="vertical-animation-container"
-              onMouseEnter={scrollanimation1}
+              <div
+                className="vertical-animation-container"
+                onMouseEnter={scrollanimation1}
               >
                 <h1 className="vertical-animation-h1">Stakeholder Workshops</h1>
                 <p className="vertical-animation-para">
@@ -59,8 +63,9 @@ export default function Consultingandstrategy() {
                   strategically develop an action plan.
                 </p>
               </div>
-              <div className="vertical-animation-container"
-              onMouseEnter={scrollanimation2}
+              <div
+                className="vertical-animation-container"
+                onMouseEnter={scrollanimation2}
               >
                 <h1 className="vertical-animation-h1">
                   Product Strategy and Roadmapping
@@ -72,8 +77,9 @@ export default function Consultingandstrategy() {
                   transform theoretical conjectures into working models.
                 </p>
               </div>
-              <div className="vertical-animation-container"
-              onMouseEnter={scrollanimation3}
+              <div
+                className="vertical-animation-container"
+                onMouseEnter={scrollanimation3}
               >
                 <h1 className="vertical-animation-h1">
                   Technology Consulting and Platform Planning
@@ -85,8 +91,9 @@ export default function Consultingandstrategy() {
                   you to adapt and lead the digital transformation.
                 </p>
               </div>
-              <div className="vertical-animation-container"
-              onMouseEnter={scrollanimation4}
+              <div
+                className="vertical-animation-container"
+                onMouseEnter={scrollanimation4}
               >
                 <h1 className="vertical-animation-h1">GTM Strategy</h1>
                 <p className="vertical-animation-para">

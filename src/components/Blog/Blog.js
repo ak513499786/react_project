@@ -6,6 +6,7 @@ import Bloghero from "./Bloghero";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 import Blogsection from "./Blogsection";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Blog() {
   let fade = useRef(null);
@@ -19,7 +20,12 @@ export default function Blog() {
   return (
     <main className="blog-page" ref={(el) => (fade = el)}>
       <Navbar/>
+      
+     
+
+
       <Bloghero/>
+      {/* <AnimatedCursor color="255, 255, 255"/> */}
       <Blogsection/>
       <Footer/>
     </main>

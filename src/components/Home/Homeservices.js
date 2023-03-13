@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Hero(){
     return(
       <section id="service">
+      {/* <AnimatedCursor color="255, 255, 255" /> */}
       <div className="service_main">
         <div className="service_main-content">
           <h1 id="srvcnt">Our Services</h1>
