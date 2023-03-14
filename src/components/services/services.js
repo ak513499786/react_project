@@ -2,35 +2,15 @@ import "./service.css";
 import "./do/do.scss";
 import { gsap, Power0 } from "gsap";
 import { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper";
-import { Mousewheel } from "swiper";
 import Explore from "./Explore/Explore";
-import Do from "./do/Do";
 import { Element } from "react-scroll";
-// <<<<<<< HEAD
 import Servicehero from "./Servicehero";
-import Wedo from "./wedo";
 import Model from "./Model";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
-// =======
-import arrowdown from "./images/Vector.svg";
-import whitedownarrow from "./images/downarrow.svg";
-import Navigation_bar from "../navigationBar/Nav";
-// >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
-import AnimatedCursor from "react-animated-cursor";
 
 export default function Services() {
-  let background = useRef(null);
-  let title = useRef(null);
-  let background1 = useRef(null);
-  let title1 = useRef(null);
-  let background2 = useRef(null);
-  let title2 = useRef(null);
-  let background3 = useRef(null);
-  let title3 = useRef(null);
   let fade = useRef(null);
 
   useEffect(() => {

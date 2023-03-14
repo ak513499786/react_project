@@ -1,5 +1,3 @@
-import gsap from "gsap";
-import { useRef } from "react";
 import Servicesslide from "../services/Explore/Explore";
 
 import Footer from "../footer/footer";

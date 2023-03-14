@@ -1,12 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 
 import "./card.scss";
 
@@ -105,7 +100,6 @@ const Card = () => {
               </div>
             </div>
           </button>
-          {/* </HorizontalScroll> */}
         </div>
       ) : (
         <div className="lead flex flex-wrap justify-center h-full relative  items-center">
@@ -223,12 +217,6 @@ const Card = () => {
               </div>
             </div>
           </div>
-
-          {/* <div className=" afterl mt-5 max-lg:ml-0 w- ">
-          <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-            Show more
-          </button>
-        </div> */}
         </div>
       )}
     </>

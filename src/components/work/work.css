@@ -36,160 +36,6 @@
   position: relative;
   height: 300px;
 }
-.work-section {
-  overflow-x: scroll;
-}
-.work-maincontainer {
-  display: flex;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 80px;
-  position: relative;
-  width: 3216.23px;
-  height: 701.09px;
-  margin: 0 160px;
-}
-.work-div {
-  width: 469.37px;
-  height: 701.09px;
-  background: #111111;
-  border-radius: 13.0722px;
-}
-.bg1 {
-  background-image: url("./images/img1.png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg2 {
-  background-image: url("./images/Mask\ group\ 1.png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg3 {
-  background-image: url("./images/img2.png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg4 {
-  background-image: url("./images/image\ 17\ \(2\).png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg5 {
-  background-image: url("./images/image\ 17.png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg6 {
-  background-image: url("./images/image\ 17\ \(1\).png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg7 {
-  background-image: url("./images/image\ 17\ \(3\).png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.bg8 {
-  background-image: url("./images/image\ 17\ \(4\).png");
-  border-radius: 20px;
-  background-size: cover;
-}
-.work-section-h1 {
-  position: relative;
-  width: 385.83px;
-  height: 121.33px;
-  left: 41.77px;
-  top: 88.67px;
-  font-weight: 300;
-  font-size: 49.0206px;
-  line-height: 58px;
-  letter-spacing: -0.03em;
-  text-transform: capitalize;
-  color: #e4e4e4;
-}
-.work-section-para {
-  position: relative;
-  width: 385.83px;
-  height: 168px;
-  left: 41.77px;
-  top: 120.14px;
-  font-family: "Graphik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.03em;
-  color: #848484;
-}
-.work-btn {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 39px;
-  gap: 10px;
-  position: relative;
-  width: 219px;
-  height: 42px;
-  left: 41.77px;
-  top: 181.03px;
-  border: 1px solid #d8d6d6;
-  border-radius: 72px;
-  font-family: graphikthin;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.015em;
-  color: #d8d6d6;
-}
-.expmore {
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transition: 0.3s;
-}
-.explorediv {
-  transition: 0.3s;
-}
-.explorediv:hover {
-  background-color: #ffcd05;
-}
-.explorediv:hover .expmore {
-  color: black;
-  font-weight: 700;
-}
-.invisible {
-  display: none;
-}
-.showmore-btn {
-  text-align: center;
-  display: none;
-  justify-content: center;
-}
-.showmore {
-  transition: 0.5s;
-  font-family: graphikthin;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.015em;
-  color: #d8d6d6;
-  border: 1px solid #d8d6d6;
-  border-radius: 72px;
-  padding: 10px 80px;
-  margin-top: 80px;
-}
-.showmore:hover {
-  border: 1px solid #ffcd05;
-  color: black;
-  background-color: #ffcd05;
-}
 @media screen and (max-width: 1541px) and (min-width: 1440px) {
   .work_hero {
     height: 800px;
@@ -223,53 +69,11 @@
   .client-container {
     height: 230px;
   }
-  .explorediv {
-    top: 0;
-  }
-  .work-maincontainer{
-    margin: 0 60px;
-  }
-  .explorediv {
-    background-color: #ffcd05;
-  }
-  .expmore {
-    color: black;
-    font-weight: 700;
-  }
-  .work-div {
-    width: 369.37px;
-    height: 601.09px;
-  }
-  .work-maincontainer{
-    gap: 40px;
-    width: 2500px;
-  }
-  .work-section-h1{
-    width: 340px;
-    left: 30px;
-    font-size: 40px;
-  }
-  .work-section-para{
-    width: 330px;
-    left: 30px;
-    font-size: 18px;
-    line-height: 26px;
-  }
-  .work-btn{
-    border: 1px solid #ffcd05;
-    background-color: #ffcd05;
-    color: black;
-  }
   #work_heading {
     font-size: 50px;
     line-height: 60px;
     letter-spacing: -0.01em;
     height: auto;
-  }
-  .showmore {
-    border: 1px solid #ffcd05;
-    color: black;
-    background-color: #ffcd05;
   }
   .container-1{
     height: auto;
@@ -284,30 +88,5 @@
   .container-1{
     top: 300px;
     height: auto;
-  }
-  .work-container{
-    width: 80%;
-  }
-  .work-div{
-    width: 300px;
-    height: 500px;
-  }
-  .work-section-h1{
-    font-size: 30px;
-    width: auto;
-  }
-  .work-section-para{
-    font-size: 16px;
-    line-height: 23px;
-    top: 50px;
-    width: 85%;
-  }
-  .work-btn{
-    top: 80px;
-  }
-  .work-maincontainer {
-    gap: 50px;
-    width: 2216.23px;
-    margin: 0;
   }
 }
