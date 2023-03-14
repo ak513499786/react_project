@@ -26,6 +26,10 @@ const Case = () => {
       slidesPerView: 2,
       spaceBetween: 30,
     },
+    1020: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
     1200: {
       slidesPerView: 4,
       spaceBetween: 30,
@@ -64,7 +68,7 @@ const Case = () => {
             <Swiper
               slidesPerView={3}
               slidesPerGroupSkip={1}
-              spaceBetween={60}
+              spaceBetween={10}
               loop={true}
               breakpoints={{
                 320: {
