@@ -172,7 +172,7 @@ const Animation = () => {
                   users to seamlessly interact with them.
                 </p>
               </div>
-              <div className="vertical-animation-container">
+              {/* <div className="vertical-animation-container">
                 <h1 className="vertical-animation-h1">Digital Branding </h1>
                 <p className="vertical-animation-para">
                   User Experience is at the core of everything we build at Our
@@ -181,7 +181,7 @@ const Animation = () => {
                   strategies for you to position yourself in the market by
                   mitigating the risks and capitalising on data-driven insights.
                 </p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -35,6 +35,7 @@
   gap: 40px;
   width: 32%;
   padding-bottom: 80px;
+  margin-top: -20px;
 }
 .vertical-animation-h1 {
   width: 614.53px;
@@ -145,7 +146,7 @@
   }
   .horizontal-animation {
     width: 40%;
-    left: 520px;
+    left: 0px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -170,7 +171,7 @@
   }
   .horizontal-animation{
     width: 35%;
-    left: 470px;
+    left: 0px;
     height: 130px;
   }
   .vertical-animation{
@@ -209,7 +210,7 @@
   }
   .horizontal-animation{
     width: 30%;
-    left: 470px;
+    left: 0px;
     height: auto;
   }
   .horizontal-animation-container{
@@ -237,8 +238,8 @@
   }
   .horizontal-animation{
     width: 150px;
-    left: 270px;
-    bottom: 240px;
+    left: 0px;
+    bottom: 0px;
     height: 350px;
     align-items: center;
   }
