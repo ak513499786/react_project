@@ -23,9 +23,16 @@
   height: 200px;
   transition: transform 0.5s ease-in-out;
 }
+<<<<<<< HEAD
 .cass:hover {
   transform: scale(1.6);
 }
+=======
+// .cass:hover {
+//   transform: scale(1.1);
+//   // height: 100%;
+// }
+>>>>>>> 05c4b8f4c082a168fa929aa0b7b08f82f11fffad
 
 .section1 {
   height: 100vh;
@@ -82,7 +89,7 @@
   height: 300px;
   background-size: 550px;
   background-repeat: no-repeat;
-  background-position: -210px -70px;
+  background-position: -150px -70px;
   transition: 0.5s;
 }
 .img211 {
@@ -93,9 +100,9 @@
 
   width: 300px;
   height: 300px;
-  background-size: 1080px;
+  background-size: 380px;
   background-repeat: no-repeat;
-  background-position: -430px -100px;
+  background-position: -30px 00px;
   transition: 0.5s;
 }
 .img311 {
@@ -117,7 +124,7 @@
   height: 300px;
   background-size: 500px;
   background-repeat: no-repeat;
-  background-position: -150px 12px;
+  // background-position: -150px 12px;
   transition: 0.5s;
 }
 .img412 {
@@ -126,9 +133,9 @@
 
   width: 300px;
   height: 300px;
-  background-size: 400px;
+  background-size: 300px;
   background-repeat: no-repeat;
-  background-position: -50px 12px;
+  // background-position: -50px 12px;
   transition: 0.5s;
 }
 .img413 {
@@ -137,7 +144,7 @@
 
   width: 300px;
   height: 300px;
-  // background-size: 500px;
+  background-size: 300px;
   // background-repeat: no-repeat;
   // background-position: -150px 12px;
   transition: 0.5s;
@@ -148,7 +155,7 @@
 
   width: 300px;
   height: 300px;
-  // background-size: 500px;
+  background-size: 300px;
   // background-repeat: no-repeat;
   // background-position: -150px 12px;
   transition: 0.5s;
@@ -159,7 +166,7 @@
 
   width: 300px;
   height: 300px;
-  // background-size: 500px;
+  background-size: 300px;
   // background-repeat: no-repeat;
   // background-position: -150px 12px;
   transition: 0.5s;
@@ -170,13 +177,13 @@
 
   width: 300px;
   height: 300px;
-  // background-size: 500px;
-  // background-repeat: no-repeat;
+  background-size: 300px;
+  background-repeat: no-repeat;
   // background-position: -150px 12px;
   transition: 0.5s;
 }
 .hideehome:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: 0.2s ease-in;
 }
 @media (max-width: 768px) {
