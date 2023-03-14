@@ -10,7 +10,7 @@ const Explore = () => {
       // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
 
       <>
-        <div className="lead flex mt-40 justify-center h-full relative  items-center">
+        <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
               <h1 className="text-7xl w-1/2  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
@@ -73,7 +73,7 @@ const Explore = () => {
       // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
 
       <>
-        <div className="lead flex mt-40 justify-center h-full relative  items-center">
+        <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
               <h1 className="text-7xl w-1/2  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
@@ -136,7 +136,7 @@ const Explore = () => {
       // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
 
       <>
-        <div className="lead flex mt-40 justify-center h-full relative  items-center">
+        <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
               <h1 className="text-7xl w-1/2  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
@@ -199,7 +199,7 @@ const Explore = () => {
       // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
 
       <>
-        <div className="lead flex mt-40 justify-center h-full relative  items-center">
+        <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
               <h1 className="text-7xl w-1/2  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
@@ -262,11 +262,11 @@ const Explore = () => {
       // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
 
       <>
-        <div className="lead flex mt-40 justify-center h-full relative  items-center">
+        <div className="lead flex mt-0 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
-              <h1 className="text-7xl w-1/2  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
-                Explore Our Other Services
+              <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
+                Explore Our Services
               </h1>
             </div>
             {/* <div className=""> */}

@@ -172,7 +172,7 @@
 .footer-animationtxt {
   font-size: 30px;
   font-family: graphik;
-  height: 10px;
+  height: 60px;
 }
 .aligncenter {
   overflow-x: hidden;
@@ -185,8 +185,8 @@
 }
 .footer-animation{
   display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: baseline;
 }
 @media screen and (max-width: 1620px) {
   #lower-footer {

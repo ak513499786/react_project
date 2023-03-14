@@ -48,7 +48,7 @@ const Case = () => {
   return (
     <>
       {Widht > 1300 ? (
-        <div className="circle flex mt-40 justify-center h-full relative  items-center">
+        <div className="circle flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col h-full items-center flex justify-center relative">
             <div className="tal items-center flex justify-center flex-col h-full">
               <h1 className="text-7xl text-center font-bold max-md:text-5xl max-md:p-10">
@@ -94,7 +94,7 @@ const Case = () => {
               // }}
               // navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper mt-20 w-[100%]"
+              className="mySwiper mt-0 w-[100%]"
             >
               {/* <div className="testhome"> */}
               <SwiperSlide className="">
