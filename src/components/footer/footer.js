@@ -10,10 +10,10 @@ export default function Footer() {
       <section id="footeer" className="main-footer">
         <p id="ftrcnt">
           Wanna Know A Secret?
-          <div className="arrow">
+        </p>
+        <div className="arrow">
             <img src={arrow} alt="" srcset="" className="arrow" />
           </div>
-        </p>
         <Link to="/let's_talk" className="link">
           <h1 id="ftrh1">Let's Talk</h1>
         </Link>
