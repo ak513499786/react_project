@@ -36,7 +36,7 @@
   padding: 0px;
   gap: 71px;
   width: 100%;
-  height: 465.17px;
+  height: auto;
 }
 .date {
   width: 127px;
@@ -107,7 +107,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 72px;
+  gap: 52px;
 
   width: 100%;
   height: 1906.77px;
@@ -123,14 +123,14 @@
 }
 .empathy-h1 {
   width: 67.2%;
-  height: 88px;
+  height: auto;
   font-weight: 600;
   font-size: 75px;
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
   color: #ebebeb;
-  white-space: nowrap;
+  text-align: center;
 }
 @media screen and (max-width: 1880px) {
   .empathy-page {
@@ -179,15 +179,18 @@
   width: 100%;
   height: 567.09px;
 }
+.empathy-content{
+  height: auto;
+}
 .empathy-content-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 72px;
+  gap: 52px;
 
   width: 100%;
-  height: 1706.77px;
+  height: auto;
 }
 .empathy-para {
   font-size: 16px;
@@ -201,6 +204,10 @@
   .empathy-page{
     width: 71.11%;
     left: 14.44%;
+  }
+  .empathy-content{
+    gap: 35px;
+    height: auto;
   }
 }
 @media screen and (max-width: 1024px) {

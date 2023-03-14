@@ -20,7 +20,6 @@
   color: #f2f0f0;
   font-weight: 100;
 }
-
 .coloo {
   color: #848484;
   font-family: graphik;
@@ -34,6 +33,13 @@
   font-family: graphik;
 }
 
+@media (max-width: 1440px) {
+  .circles{
+    position: relative;
+    top: calc( 100vh + 500px);
+  }
+  
+}
 @media (max-width: 1090px) {
   .leftsss {
     width: 120%;
