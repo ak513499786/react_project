@@ -20,7 +20,4 @@ body {
   background-color: #090909;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  /* cursor: url('./components/Home/images/pool\ ball.cur'), auto; */
-  /* cursor: url('./Normal\ Select.cur'), auto; */
-  /* cursor: url("./my-mouse-pointer.cur"), auto; */
 }
