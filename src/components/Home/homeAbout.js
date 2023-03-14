@@ -37,14 +37,6 @@ const HomeAbout = () => {
       <section id="about" className=" agency mt-8">
         <div id="rectangle" className="max-xl:none"></div>
         <div id="abtcnt">
-          {/* <AnimatedCursor
-            innerSize={8}
-            outerSize={8}
-            color="225, 225, 225"
-            outerAlpha={0.2}
-            innerScale={0.7}
-            outerScale={5}
-          /> */}
           <div className="header1">
             <h1 id="abth1">We Help Our Clients Define And Shape The Future.</h1>
             <p id="abtdmycnt">

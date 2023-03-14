@@ -9,9 +9,7 @@ import Whyus from "./Whyus";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 import AnimatedCursor from "react-animated-cursor";
-{
-  /* <AnimatedCursor color="255, 255, 255"/> */
-}
+
 
 export default function Career() {
   let fade = useRef(null);
@@ -27,7 +25,7 @@ export default function Career() {
     <>
       <Navbar />
       <main className="career-page" ref={(el) => (fade = el)}>
-        {/* <AnimatedCursor color="255, 255, 255" /> */}
+        
 
         <CareerHero />
         <Horizontalanimation1 />

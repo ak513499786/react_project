@@ -5,7 +5,6 @@ import twitter from "./images/mdi_twitter.svg";
 import facebook from "./images/ic_baseline-facebook.svg";
 import instagram from "./images/mdi_instagram.svg";
 import linkedin from "./images/mdi_linkedin.svg";
-import AnimatedCursor from "react-animated-cursor";
 
 import { Link } from "react-router-dom";
 import { gsap, Power3 } from "gsap/gsap-core";
@@ -20,11 +19,11 @@ export default function Navigation_bar() {
 
   const navSlidesBack = () => {
     gsap.to(slide, 0.8, { css: { bottom: "150vh" }, ease: Power3.easeIn });
-    document.body.classList.remove('stop-scrolling');
+    document.body.classList.remove("stop-scrolling");
   };
   const fade = () => {
     gsap.to(slide, 0, { css: { bottom: "150vh" } });
-    document.body.classList.remove('stop-scrolling');
+    document.body.classList.remove("stop-scrolling");
   };
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -59,14 +58,6 @@ export default function Navigation_bar() {
           <ul className="nav_list">
             <li className="nav_list-item">
               <Link to={"/"} className="nav_logo">
-                <AnimatedCursor
-                  innerSize={8}
-                  outerSize={8}
-                  color="225, 225, 225"
-                  outerAlpha={0.2}
-                  innerScale={0.7}
-                  outerScale={0.2}
-                />
                 <img src={logo} alt="" className="logo" />
                 <span className="hyphen"></span>
               </Link>

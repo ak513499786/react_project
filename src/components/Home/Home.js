@@ -25,14 +25,7 @@ export default function Home() {
 
   return (
     <>
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={8}
-        color="225, 225, 225"
-        outerAlpha={0.2}
-        innerScale={0.7}
-        outerScale={0.2}
-      />
+      
       <Navbar />
 
       <main ref={(el) => (fade = el)} className="home">

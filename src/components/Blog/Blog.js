@@ -18,11 +18,11 @@ export default function Blog() {
   }, []);
   return (
     <main className="blog-page" ref={(el) => (fade = el)}>
-      <Navbar/>
-      <Bloghero/>
-      {/* <AnimatedCursor color="255, 255, 255"/> */}
-      <Blogsection/>
-      <Footer/>
+      <Navbar />
+      <Bloghero />
+
+      <Blogsection />
+      <Footer />
     </main>
   );
 }
