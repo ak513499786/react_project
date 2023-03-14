@@ -17,7 +17,7 @@ export default function Digitalmarketing() {
           <h1 className="inner-service-h1">Digital Marketing</h1>
         </section>
         <Animation />
-        <div className="slidecontainer">
+        <div className="slide-container">
           <Servicesslide />
         </div>
       </main>

@@ -243,11 +243,11 @@
   margin: 10px 0;
 }
 @media screen and (min-width: 1441px) and (max-width: 1540px) {
-  .browse-img{
+  .browse-img {
     width: 400px;
     height: 650px;
   }
-  .aussie{
+  .aussie {
     gap: 100px;
   }
   .case-hero {
@@ -276,7 +276,7 @@
   }
   .case-div {
     gap: 30px;
-  
+
     width: 490.3px;
     height: auto;
   }
@@ -399,31 +399,48 @@
     line-height: 73px;
     width: 70%;
     left: 15%;
+    height: auto;
+  }
+  .case-div {
+    gap: 30px;
+
+    width: 490.3px;
+    height: auto;
+  }
+  .case-img {
+    width: 460.12px;
+    height: auto;
+  }
+  .case-section-h1 {
+    width: 440px;
+    height: auto;
+  }
+  .case-section-para {
+    width: 440.3px;
+  }
+  .case-hero {
+    height: 100vh;
+  }
+  .case-hero-container {
+    top: 200px;
   }
   .case-hero-para {
     width: 50%;
     left: 25%;
   }
-  .case-div{
-    width: 35%;
-  }
-  .case-img{
-    width: 600px;
-    height: 1000px;
-  }
-  .case-section-para{
+  .case-section-para {
     width: 100%;
   }
-  .web{
+  .web {
     width: 600px;
     height: 500px;
   }
-  .sp-btn{
+  .sp-btn {
     font-size: 30px;
     line-height: 40px;
     white-space: nowrap;
   }
-  .graph{
+  .graph {
     margin: 0px 0px 5.7% 5.7%;
     width: 900px;
   }
@@ -450,7 +467,7 @@
     display: flex;
     margin-top: 155px;
     justify-content: start;
-    margin-left: 6.7%;
+    margin-left: 10.3%;
   }
   .syn-h1 {
     font-size: 50px;
@@ -458,11 +475,7 @@
   .syn-para {
     width: 85%;
   }
-  .case-img {
-    width: 45%;
-    margin-top: 2%;
-  }
-  .browse-img{
+  .browse-img {
     width: 350px;
     height: 550px;
   }
@@ -473,16 +486,16 @@
   .case-btns {
     font-size: 18px;
   }
-  .browse-container{
+  .browse-container {
     gap: 10px;
   }
-  .timeline{
-    margin-left: 6.7%;
+  .timeline {
+    margin-left: 10.3%;
   }
-  .browse{
-    margin-left: 6.7%;
+  .browse {
+    margin-left: 10.3%;
   }
-  .case-section-h1{
+  .case-section-h1 {
     width: 100%;
   }
 }
@@ -510,7 +523,7 @@
   .timeline-h1 {
     font-size: 50px;
   }
-  .graph{
+  .graph {
     margin: 0px 0px 5.7% 5.7%;
     width: 80%;
   }
@@ -562,19 +575,19 @@
   .case-div {
     width: 40%;
   }
-  .browse-img{
+  .browse-img {
     width: 100%;
     height: auto;
   }
-  .browse-container{
+  .browse-container {
     gap: 20px;
   }
 }
 @media screen and (max-width: 838px) {
-  .sp-btn{
+  .sp-btn {
     font-size: 20px;
   }
-  .case-hero-para{
+  .case-hero-para {
     width: 80%;
     height: auto;
   }
@@ -586,12 +599,12 @@
     width: 90%;
     text-align: left;
   }
-  .case-hero-container{
+  .case-hero-container {
     width: 90%;
     left: 5%;
     top: 300px;
   }
-  .case-hero{
+  .case-hero {
     height: 700px;
   }
   .case-hero-para {
@@ -604,7 +617,7 @@
     margin-left: 5%;
     width: 90%;
   }
-  .browse-container{
+  .browse-container {
     width: 100%;
     overflow-x: scroll;
   }
@@ -669,8 +682,8 @@
     font-size: 40px;
     width: 100%;
   }
-  .aussie{
-    flex-direction: column ;
+  .aussie {
+    flex-direction: column;
     align-items: center;
   }
   .case-img {
@@ -699,7 +712,7 @@
     font-size: 16px;
     line-height: 22px;
   }
-  .case-hero-container{
+  .case-hero-container {
     align-items: start;
     width: 95%;
   }
@@ -736,7 +749,7 @@
   .case-btns {
     font-size: 15px;
   }
-  .sp-h1{
+  .sp-h1 {
     line-height: 40px;
     height: auto;
   }

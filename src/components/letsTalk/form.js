@@ -42,9 +42,9 @@ export default function form() {
             placeholder="Your Message"
             className="yourmsg first-name"
           />
-          <div className="sub_btn">
+          <button className="sub_btn">
             <p className="sub_button-content">submit your response</p>
-          </div>
+          </button>
         </form>
       </div>
     </section>

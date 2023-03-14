@@ -709,7 +709,8 @@
     height: auto;
   }
   .e-model {
-    padding: 50px 0px;
+    padding: 0px 0px;
+    padding-bottom: 50px;
   }
   .engagement-model {
     width: 100%;
@@ -789,6 +790,9 @@
     position: relative;
     left: 40%;
   }
+  .engagement-model{
+    gap: 70px;
+  }
 }
 @media screen and (max-width: 940px) {
   .ser-txt {
@@ -823,6 +827,9 @@
   }
   .model-content {
     width: 100%;
+  }
+  .e-model{
+    padding-top: 50px;
   }
   .ser-h1,
   .other-ser-h1 {

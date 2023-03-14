@@ -101,7 +101,7 @@ input:focus {
   align-items: flex-start;
   padding: 0px;
   gap: 15px;
-  color: #d8d6d69a;
+  color: #d8d6d6;
   width: 390.36px;
   height: 43px;
   background-color: transparent;
@@ -110,6 +110,7 @@ input:focus {
   font-size: 20px;
   line-height: 28px;
   padding-bottom: 15px;
+  font-family: graphik;
 }
 .tele {
   display: flex;
@@ -117,7 +118,7 @@ input:focus {
   align-items: center;
   padding: 0px;
   margin-top: 8px;
-  color: #d8d6d69a;
+  color: #848484;
   width: 60.36px;
   height: 23px;
   background-color: transparent;
@@ -130,7 +131,6 @@ input:focus {
   align-items: flex-start;
   padding: 0px;
   gap: 15px;
-  color: #d8d6d69a;
   width: 390.36px;
   height: 43px;
   background-color: transparent;
@@ -139,6 +139,7 @@ input:focus {
   font-size: 20px;
   line-height: 28px;
   padding-bottom: 15px;
+  font-family: graphik;
 }
 .phone-number {
   display: flex;
@@ -146,7 +147,6 @@ input:focus {
   align-items: flex-start;
   padding: 0px;
   gap: 15px;
-  color: #d8d6d69a;
   width: 390.36px;
   height: 43px;
   background-color: transparent;
@@ -253,6 +253,9 @@ input:focus {
   color: #848484;
   white-space: nowrap;
 }
+.phone-number::placeholder{
+  color: #848484;
+}
 .sub_btn:hover {
   background-color: #ffcd05;
   color: black;
@@ -296,12 +299,23 @@ input:focus {
   .contact-section {
     width: 70%;
     left: 15%;
+    top: 250px;
+  }
+  .contact-hero{
+    height: 100vh;
+  }
+  .contact-form{
+    justify-content: start;
+    height: auto;
   }
   .contact-hero-para {
     width: 65%;
   }
   .contact-form {
     padding: 0;
+  }
+  .address{
+    height: auto;
   }
 }
 @media screen and (max-width: 1024px) {

@@ -7,14 +7,13 @@ import graph from "./Images/graph.png";
 
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
-import AnimatedCursor from "react-animated-cursor";
+import { Link } from "react-router-dom";
 
 export default function Case() {
   return (
     <>
     <Navbar/>
       <main className="case-hero">
-    {/* <AnimatedCursor color="255, 255, 255"/> */}
         <section className="case-hero-container">
         <h1 className="case-hero-h1">
           Roll Ranch Steak Ipsum Onions Personal Sauteed.
@@ -73,9 +72,9 @@ export default function Case() {
       <section className="sp">
         <h1 className="sp-h1">Services Provided</h1>
         <div className="sp-btns">
-          <div className="sp-btn">Consulting And Strategy</div>
-          <div className="sp-btn">User Experience</div>
-          <div className="sp-btn">Product Development</div>
+          <Link to={'/consultingandstrategy'} className="sp-btn">Consulting And Strategy</Link>
+          <Link to={'/userexperience'} className="sp-btn">User Experience</Link>
+          <Link to={'/productdevelopment'} className="sp-btn">Product Development</Link>
         </div>
       </section>
       <section className="timeline">
