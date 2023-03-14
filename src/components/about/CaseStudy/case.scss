@@ -1,3 +1,65 @@
+.baorder {
+  height: 20px;
+  width: 100px;
+  opacity: 0.5;
+  border-bottom: 2px solid #4e4949;
+}
+.carousel-container {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.carousel-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw / 3);
+  height: 200px;
+  transition: transform 0.5s ease-in-out;
+}
+.cass:hover {
+  transform: scale(1.3);
+  // height: 100%;
+}
+
+.section1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: #eee;
+}
+
+.section2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // background-color: #ccc;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+  // cursor: pointer;
+}
+
+
 .down {
   font-family: graphik;
   //   border-radius: 25px;
@@ -19,7 +81,7 @@
   position: relative;
   // background-image: url("../../Home/images/image\ 17.svg");
   // background-image: url("../../Home/images/image\ 3.svg");
-  background-image: url("../../home/images/image\ 5.svg");
+  background-image: url("../../Home/images/image\ 5.svg");
 
   width: 300px;
   height: 300px;
@@ -29,7 +91,7 @@
   transition: 0.5s;
 }
 .img211 {
-  background-image: url("../../home/images/image\ 17.svg");
+  background-image: url("../../Home/images/image\ 17.svg");
   // background-image: url("../../Home/images/image\ 17.svg");
 
   // background-image: url("../../home/images/image\ 17.svg");
@@ -43,7 +105,7 @@
 }
 .img311 {
   // background-image: url("../../home/images/image\ 3.svg");
-  background-image: url("../../home/images/image\ 4.svg");
+  background-image: url("../../Home/images/image\ 4.svg");
 
   width: 300px;
   height: 300px;
@@ -53,7 +115,7 @@
   transition: 0.5s;
 }
 .img411 {
-  background-image: url("../../home/images/image\ 11.svg");
+  background-image: url("../../Home/images/image\ 11.svg");
   // background-image: url("../images/Group\ 28.svg");
 
   width: 300px;

@@ -170,7 +170,7 @@
   }
   .horizontal-animation{
     width: 35%;
-    left: 470px;
+    left: 0px;
     height: 130px;
   }
   .vertical-animation{
@@ -209,7 +209,7 @@
   }
   .horizontal-animation{
     width: 30%;
-    left: 470px;
+    left: 0px;
     height: auto;
   }
   .horizontal-animation-container{
@@ -237,8 +237,8 @@
   }
   .horizontal-animation{
     width: 150px;
-    left: 270px;
-    bottom: 240px;
+    left: 0px;
+    bottom: 0px;
     height: 350px;
     align-items: center;
   }

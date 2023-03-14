@@ -16,7 +16,9 @@ export default function Consultingandstrategy() {
           Disruptions.
         </h1>
       </section>
-      <Animation />
+      <div className="mt-52">
+        <Animation />
+      </div>
       <div className="slide-container">
         <Servicesslide />
       </div>
