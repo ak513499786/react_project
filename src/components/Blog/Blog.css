@@ -45,6 +45,7 @@
   padding: 5.65008px;
   gap: 5.65px;
   white-space: nowrap;
+  cursor: pointer;
 }
 .blogcol {
   display: flex;

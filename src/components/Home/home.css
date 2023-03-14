@@ -1373,12 +1373,16 @@
   }
   #srvcnt {
     width: 100%;
+    font-size: 90px;
   }
   #srvp {
     font-size: 18px;
   }
   #buttons {
     width: auto;
+  }
+  .btnlinks{
+    width: 395px
   }
   #testimonials {
     margin-left: 11.37%;
