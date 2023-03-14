@@ -81,9 +81,8 @@ export default function Services() {
         </div>
         <Model />
       </main>
-      <Element id="example" name="example">
-        <Footer />
-      </Element>
+
+      <Footer />
     </>
   );
 }
