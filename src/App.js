@@ -25,7 +25,7 @@ function App() {
         outerSize={8}
         color="225, 225, 225"
         outerAlpha={0.2}
-        innerScale={0.7}
+        innerScale={1.5}
         outerScale={0.2}
       />
       <BrowserRouter>

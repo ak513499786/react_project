@@ -19,7 +19,7 @@ export default function Serviceshero() {
   }, []);
   return (
     <>
-      {Widht > 1300 ? (
+      {/* {Widht > 1300 ? ( */}
         <section id="hero_services">
           <div className="services_hero-text">
             <p className="leading">Leading The Way From</p>
@@ -33,17 +33,17 @@ export default function Serviceshero() {
             </div>
           </div>
         </section>
-      ) : (
-        <div className="vision w-full mb-52 mt-52 flex justify-center h-full relative  items-center">
-          <div className="widthh max-md:flex-col max-md:p-8  w-full flex relative">
-            <div className=" mt-24 -ml-9 max-xl:ml-0 flex w-full">
-              <h1 className="text-6xl w-1/2 max-sm:w-full mt-16 ml-5 max-xl:ml-5 max-lg:text-4xl font-extrabold text-white">
-                Leading The Way From Design To Execution
-              </h1>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* // ) : (
+      //   <div className="vision w-full mb-52 mt-52 flex justify-center h-full relative  items-center">
+      //     <div className="widthh max-md:flex-col max-md:p-8  w-full flex relative">
+      //       <div className=" mt-24 -ml-9 max-xl:ml-0 flex w-full">
+      //         <h1 className="text-6xl w-1/2 max-sm:w-full mt-16 ml-5 max-xl:ml-5 max-lg:text-4xl font-extrabold text-white">
+      //           Leading The Way From Design To Execution
+      //         </h1>
+      //       </div>
+      //     </div>
+      //   </div>
+      // )} */}
     </>
   );
 }

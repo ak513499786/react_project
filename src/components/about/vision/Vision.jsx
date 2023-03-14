@@ -26,7 +26,7 @@ const Vision = () => {
 
     // scroll to the target element
     window.scrollTo({
-      top: 2000,
+      top: 2250,
       behavior: "smooth",
     });
   };

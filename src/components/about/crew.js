@@ -13,61 +13,58 @@ export default function Crew() {
           adipisicing elit. Est, natus veniam! Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Maxime Lorem, ipsum dolor sit amet.
         </p>
-        <Link to={"/career"} id="careerbtn">
-          <p className="careerbtn_content">career</p>
+        <Link to={"/career"} className="career-crew-btn">
+          <p className="career-crew-content">career</p>
         </Link>
       </div>
       <div className="crewcontainer">
-        <section className="e-model">
-          <div className="engagement-model">
-            <div className="model-container">
-              <div className="m-m-container">
-                <h1 className="m-title">
-                  <p className="m-numbers">01</p>
-                  <span className="strategist"> Design Architects</span>
-                </h1>
-                <p className="m-desc">
-                  the Design Architects will orchestrate the project development
-                  process. From capturing customer expectations to managing the
-                  budget - they will do it all.
-                </p>
-              </div>
-              <div className="m-m-container">
-                <h1 className="m-title">
-                  <p className="m-numbers">02</p>
-                  <span className="strategist">Strategists</span>
-                </h1>
-                <p className="m-desc">
-                  They are the geniuses responsible for formulating,
-                  documenting, and implementing strategies that operate behind
-                  the scene to drive results.
-                </p>
-              </div>
-              <div className="m-m-container">
-                <h1 className="m-title">
-                  <p className="m-numbers">03</p>
-                  <span className="strategist">Tech Experts</span>
-                </h1>
-                <p className="m-desc">
-                  Our Tech Experts will devise the perfect strategy, prepare a
-                  detailed roadmap, and leverage the right technology to help
-                  you achieve your goals.
-                </p>
-              </div>
-              <div className="m-m-container">
-                <h1 className="m-title">
-                  <p className="m-numbers">04</p>
-                  <span className="strategist">Delivery Managers</span>
-                </h1>
-                <p className="m-desc">
-                  Your point-of-contact with Codelinear, who will keep you
-                  apprised on all the ins and outs of your project and its
-                  status.
-                </p>
-              </div>
+        <div className="crew-model">
+          <div className="crew-model-container">
+            <div className="c-container">
+              <h1 className="m-title">
+                <p className="m-numbers">01</p>
+                <span className="strategist"> Design Architects</span>
+              </h1>
+              <p className="m-desc">
+                the Design Architects will orchestrate the project development
+                process. From capturing customer expectations to managing the
+                budget - they will do it all.
+              </p>
+            </div>
+            <div className="c-container">
+              <h1 className="m-title">
+                <p className="m-numbers">02</p>
+                <span className="strategist">Strategists</span>
+              </h1>
+              <p className="m-desc">
+                They are the geniuses responsible for formulating, documenting,
+                and implementing strategies that operate behind the scene to
+                drive results.
+              </p>
+            </div>
+            <div className="c-container">
+              <h1 className="m-title">
+                <p className="m-numbers">03</p>
+                <span className="strategist">Tech Experts</span>
+              </h1>
+              <p className="m-desc">
+                Our Tech Experts will devise the perfect strategy, prepare a
+                detailed roadmap, and leverage the right technology to help you
+                achieve your goals.
+              </p>
+            </div>
+            <div className="c-container">
+              <h1 className="m-title">
+                <p className="m-numbers">04</p>
+                <span className="strategist">Delivery Managers</span>
+              </h1>
+              <p className="m-desc">
+                Your point-of-contact with Codelinear, who will keep you
+                apprised on all the ins and outs of your project and its status.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </>
   );

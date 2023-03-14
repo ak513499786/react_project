@@ -24,6 +24,7 @@ export default function Navigation_bar() {
   };
   const fade = () => {
     gsap.to(slide, 0, { css: { bottom: "150vh" } });
+    document.body.classList.remove('stop-scrolling');
   };
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);

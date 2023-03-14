@@ -16,7 +16,8 @@ export default function about() {
       {/* <AnimatedCursor color="255, 255, 255"/> */}
 
       <Navbar />
-      <iframe
+      <div className="iframe-container">
+      <iframe className="iframe"
         src="https://my.spline.design/untitled-7e4e7fbe3d7aaedc118f34cadd85536b/"
         frameborder="0"
         width="100%"
@@ -26,6 +27,7 @@ export default function about() {
           position: "absolute",
         }}
       ></iframe>
+      </div>
       <Abouthero />
       <Circles />
       <Vision />

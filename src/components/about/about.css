@@ -68,7 +68,7 @@
   font-family: graphik;
   opacity: 0.9;
 }
-#careerbtn {
+.career-crew-btn {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -76,14 +76,14 @@
   align-items: center;
   padding: 7px 39px;
   gap: 10px;
-  width: 155px;
+  width: 140px;
   height: 42px;
   border: 1px solid #848484;
   border-radius: 72px;
   text-decoration: none;
   transition: 0.3s;
 }
-.careerbtn_content {
+.career-crew-content {
   width: 77px;
   height: 28px;
   font-size: 20px;
@@ -92,14 +92,14 @@
   font-family: graphik;
   color: #848484;
 }
-#careerbtn:hover {
+.career-crew-btn:hover {
   background-color: #ffcd05;
   color: black;
   font-weight: bold;
   border: 1px solid #ffcd05;
   box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
 }
-#careerbtn:hover .careerbtn_content {
+.career-crew-btn:hover .career-crew-content {
   color: black;
   font-weight: bold;
 }
@@ -168,18 +168,30 @@
   font-family: graphik;
   color: #848484;
 }
-
 .subcontainer-img {
   display: inline-block;
   width: 60px;
   margin-right: 20px;
 }
-
 .subcontainer-h1 {
   display: inline-block;
   font-size: 35px;
   color: #d8d6d6;
   font-family: graphik;
+}
+.iframe-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+}
+.iframe {
+  width: 1900px;
+  height: 1500px;
+  position: absolute;
+  top: -100px;
+  right: 20px;
+  transform: scale(1.5);
 }
 .subcontainer-para {
   font-size: 20px;
@@ -193,6 +205,32 @@
   display: flex;
   flex-direction: column;
   gap: 130px;
+}
+.crew-model {
+  display: flex;
+  justify-content: center;
+  margin-top:100px ;
+}
+.crew-model-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+.m-desc{
+  display: flex;
+  align-items: center;
+}
+.c-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 30px;
+  gap: 0px;
+  width: 746px;
+  height: 280px;
+  background: #111111;
+  border-radius: 30px;
 }
 @media screen and (max-width: 1540px) and (min-width: 1441px) {
   .about-hero-h1 {
@@ -228,10 +266,21 @@
     font-size: 25px;
     line-height: 37px;
   }
-  .crewcontainer {
+  /* .crewcontainer {
     position: relative;
     bottom: 70px;
     height: auto;
+  } */
+  .c-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 0px;
+    width: 600px;
+    height: 252px;
+    background: #111111;
+    border-radius: 30px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -239,12 +288,23 @@
     width: 85%;
     top: 250px;
   }
-  .core-container {
+  /* .core-container {
     padding: 120px 10.7%;
-  }
+  } */
   .core-para {
     font-size: 17px;
     line-height: 26px;
+  }
+  .c-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 40px;
+    gap: 0px;
+    width: 550px;
+    height: 232px;
+    background: #111111;
+    border-radius: 30px;
   }
   .visionh1 {
     font-size: 40px;
@@ -281,11 +341,11 @@
     width: 60%;
     gap: 70px;
   }
-  .crewcontainer {
+  /* .crewcontainer {
     position: relative;
     bottom: 300px;
     height: 1400px;
-  }
+  } */
 }
 @media screen and (max-width: 1024px) {
   .about-hero-h1 {
@@ -335,7 +395,7 @@
     top: 300px;
     left: 6.7%;
   }
-  #careerbtn {
+  .career-crew-btn {
     width: 95%;
     background-color: #ffcd05;
     color: black;
@@ -343,7 +403,7 @@
     border: 1px solid #ffcd05;
     box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
   }
-  .careerbtn_content {
+  .career-crew-content {
     color: black;
     font-weight: bold;
   }
@@ -373,12 +433,12 @@
     font-size: 18px;
     line-height: 24px;
   }
-  .crewclass {
+  /* .crewclass {
     margin-left: 3%;
   }
   .crewcontainer {
     bottom: 200px;
-  }
+  } */
   .about-case {
     position: relative;
     bottom: 100px;
@@ -396,19 +456,19 @@
     position: relative;
     bottom: 250px;
   }
-  .crewcontainer {
+  /* .crewcontainer {
     bottom: 50px;
     height: 1600px;
-  }
+  } */
 }
 @media screen and (max-width: 428px) {
   .about-hero-h1 {
     font-size: 40px;
     line-height: 45px;
   }
-  .core-container {
+  /* .core-container {
     gap: 70px;
-  }
+  } */
   .core-guiding-container {
     gap: 50px;
   }
@@ -427,8 +487,8 @@
     /* >>>>>>> 197f0f4aaf057c6d88ae03b456bb3f9c37fb18ac */
     margin-left: 0;
   }
-  .crewcontainer {
+  /* .crewcontainer {
     bottom: 300px;
     height: 1150px;
-  }
+  } */
 }

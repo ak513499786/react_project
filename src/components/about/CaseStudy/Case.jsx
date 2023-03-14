@@ -98,63 +98,63 @@ const Case = () => {
             >
               {/* <div className="testhome"> */}
               <SwiperSlide className="">
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome  ">
                     <div className="img121 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img211 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img311 "></div>
                   </div>
                 </Link>
               </SwiperSlide>{" "}
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img411 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img412 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img413 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img414 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img415 "></div>
                   </div>
                 </Link>
               </SwiperSlide>
               <SwiperSlide>
-                <Link to="/case_study">
+                <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img416 "></div>
                   </div>
