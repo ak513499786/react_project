@@ -57,7 +57,7 @@ const BlogHome = () => {
           <div id="blog_heading" className="-ml-20">
             We Pen Down Our Brightest Ideas
           </div>
-          <div className="max-w-[100%] homeidea -ml-16">
+          <div className="max-w-[100%] homeidea -ml-16 max-lg:ml-0">
             <Swiper
               slidesPerView={3}
               slidesPerGroupSkip={1}
@@ -86,17 +86,17 @@ const BlogHome = () => {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
+                90: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
                 1060: {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
               }}
-              // pagination={{
-              //   clickable: true,
-              // }}
-              // navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper h-[35rem] mt-20 max-md:mt-0 "
+              className="mySwiper h-[35rem] mt-20 max-md:mt-0  w-[115%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
             >
               <SwiperSlide className="cass">
                 <div className="cardh    mx-4 items-center">
