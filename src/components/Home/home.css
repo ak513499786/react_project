@@ -56,7 +56,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 7px 39px;
+  padding: 0px 0px;
   gap: 10px;
   width: 155px;
   height: 42px;
@@ -66,13 +66,14 @@
   transition: 0.3s;
 }
 .aboutbtn_content {
-  width: 77px;
-  height: 28px;
+  width: auto;
+  height: auto;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 20px;
   letter-spacing: -0.045em;
   font-family: graphik;
   color: #848484;
+  font-weight: 100;
 }
 #aboutbtn:hover {
   background-color: #ffcd05;
@@ -140,7 +141,7 @@
   height: 56px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
@@ -218,14 +219,17 @@
   height: 51.19px;
   font-size: 25px;
   color: #d8d6d6;
+  font-weight: 600;
+  opacity: 0.9;
 }
 #imgs1p {
   font-size: 18px;
   line-height: 28px;
   white-space: nowrap;
   color: #848484;
+  font-weight: 100;
   font-family: graphik;
-  opacity: 0.7;
+  opacity: 1;
 }
 .bg-mini-1 {
   display: flex;
@@ -261,17 +265,19 @@
   width: 100%;
   height: 61px;
   font-size: 25px;
+  font-weight: 600;
+  opacity: 0.9;
 }
 #imgs2p {
   height: 28px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.03em;
   color: #848484;
-  opacity: 0.7;
+  opacity: 1;
   white-space: nowrap;
 }
 .bg-mini-3 {
@@ -309,6 +315,8 @@
   letter-spacing: -0.03em;
   color: #d8d6d6;
   white-space: nowrap;
+  font-weight: 600;
+  opacity: 0.9;
 }
 #imgs3p {
   height: 28px;
@@ -317,8 +325,8 @@
   line-height: 28px;
   letter-spacing: -0.03em;
   color: #848484;
-  opacity: 0.7;
-  margin-left: 15px;
+  opacity: 1;
+  font-weight: 100;
 }
 #imgs4 {
   display: flex;
@@ -330,17 +338,19 @@
   height: 46px;
   font-size: 25px;
   white-space: nowrap;
+  font-weight: 600;
+  opacity: 0.9;
 }
 #imgs4p {
   height: 18px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   line-height: 139.52%;
   letter-spacing: -0.02em;
   color: #959595;
-  opacity: 0.7;
+  opacity: 1;
   white-space: nowrap;
 }
 #img4 {
@@ -361,7 +371,7 @@
   position: absolute;
   width: 37.03%;
   height: 1138px;
-  left: 10.3%;
+  left: 9.7%;
   top: 2053.81px;
 }
 #img4:hover {
@@ -413,7 +423,7 @@
 #srvp {
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 20px;
   line-height: 28px;
   color: #848484;
@@ -436,7 +446,7 @@
 .svcbtn_content {
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.03em;
@@ -563,7 +573,7 @@
 #pm {
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   line-height: 20px;
   letter-spacing: 0em;
@@ -799,7 +809,7 @@
   padding: 7px 39px;
   border-radius: 72px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
@@ -836,6 +846,9 @@
   }
 }
 @media screen and (max-width: 1540px) and (min-width: 1441px) {
+  #hero {
+    height: 105vh;
+  }
   .bgv {
     position: absolute;
     width: 140%;
@@ -858,21 +871,22 @@
     height: auto;
   }
   #aboutbtn {
-    padding: 7px 30px;
+    padding: 0px 0px;
     width: 123px;
     height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .aboutbtn_content {
-    width: 100%;
-    height: 28px;
+    width: auto;
+    height: auto;
     font-size: 16px;
     line-height: 28px;
+    padding-bottom: 1px;
   }
   #rectangle {
     top: 160px;
-  }
-  #hero {
-    height: 1024px;
   }
   #abtcnt {
     z-index: 3;
@@ -893,12 +907,15 @@
     line-height: 23px;
   }
   .allwork {
-    padding: 7px 30px;
+    padding: 0px 0px;
     width: 123px;
     height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .workbt_content {
-    width: 100%;
+    width: auto;
     height: 28px;
     font-size: 16px;
     line-height: 28px;
@@ -920,7 +937,7 @@
     background-position: -50px 230px;
   }
   #imgs1 {
-    font-size: 18px;
+    font-size: 20px;
     gap: 15px;
   }
   #imgs1p {
@@ -943,7 +960,7 @@
     background-position: 0px 400px;
   }
   #imgs2 {
-    font-size: 18px;
+    font-size: 20px;
     gap: 15px;
   }
   #imgs2p {
@@ -966,14 +983,14 @@
     background-position: -50px -20px;
   }
   #imgs3 {
-    font-size: 18px;
+    font-size: 20px;
     gap: 15px;
   }
   #imgs3p {
     font-size: 15px;
   }
   #imgs4 {
-    font-size: 18px;
+    font-size: 20px;
     gap: 15px;
   }
   #imgs4p {
@@ -997,7 +1014,7 @@
   #service {
     width: 100%;
     height: 646px;
-    top: 3076px;
+    top: 2876px;
   }
   .service_main {
     gap: 22.08%;
@@ -1018,15 +1035,19 @@
     line-height: 22px;
   }
   #svcbtn {
-    padding: 7px 30px;
+    padding: 0px 0px;
     width: 158px;
     height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .svcbtn_content {
-    width: 100%;
-    height: 28px;
+    width: auto;
+    height: auto;
     font-size: 16px;
     line-height: 28px;
+    padding-bottom: 1px;
   }
   #buttons {
     gap: 44px;
@@ -1041,7 +1062,7 @@
   }
   #testimonials {
     margin-left: 11.9%;
-    top: 3637px;
+    top: 3407px;
   }
   .test-main-container {
     gap: 10px;
@@ -1103,17 +1124,19 @@
   .client-img1 {
     left: 2.08%;
     right: 85.81%;
-    top: 115.6px;
+    top: 100.6px;
     bottom: 12.62%;
     transition: 0.3s;
     opacity: 0.5;
+    width: 120px;
   }
   .client-img2 {
     left: 22.04%;
     right: 64.3%;
-    top: 78.02px;
+    top: 68.02px;
     opacity: 0.5;
     transition: 0.3s;
+    width: 125px;
   }
   .client-img3 {
     left: 47.3%;
@@ -1122,19 +1145,22 @@
     bottom: 12.23%;
     transition: 0.3s;
     opacity: 0.5;
+    width: 55px;
   }
   .client-img4 {
     left: 67.29%;
     right: 24.73%;
-    top: 55.89%;
+    top: 10.89px;
     bottom: 12.95%;
     transition: 0.3s;
     opacity: 0.5;
+    width: 80px;
   }
   .client-img5 {
     left: 86.76%;
     right: 2.08%;
-    top: -30px;
+    top: -20px;
+    width: 110px;
   }
   .client-img6 {
     left: 4.41%;
@@ -1181,11 +1207,11 @@
     gap: 0px;
     height: 1050.06px;
     position: absolute;
-    top: 4534.05px;
-    left: 13.4%;
+    top: 4300.05px;
+    left: 15%;
   }
   .home {
-    height: 5450px;
+    height: 5200px;
   }
   .blog-home-container {
     gap: 60px;
@@ -1230,8 +1256,9 @@
   .exp_btn-content {
     width: 95px;
     height: 25px;
-    padding: 6px 30px;
+    padding: 5px 30px 7px 30px;
     font-size: 16px;
+    font-weight: 100;
   }
   .explore_btn {
     width: 950px;
@@ -1381,8 +1408,8 @@
   #buttons {
     width: auto;
   }
-  .btnlinks{
-    width: 395px
+  .btnlinks {
+    width: 395px;
   }
   #testimonials {
     margin-left: 11.37%;
@@ -1651,7 +1678,7 @@
   .home {
     height: 4500px;
   }
-  .horizontalAbout{
+  .horizontalAbout {
     position: absolute;
     top: 200px;
   }
@@ -1998,7 +2025,7 @@
   }
 }
 @media screen and (max-width: 540px) {
-  .horizontalAbout{
+  .horizontalAbout {
     position: relative;
     top: 0px;
   }
@@ -2008,7 +2035,7 @@
     font-size: 40px;
     line-height: 45px;
   }
-  #content{
+  #content {
     top: 200px;
   }
   #aboutbtn {

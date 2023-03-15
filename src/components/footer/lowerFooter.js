@@ -19,8 +19,8 @@ export default function Lowerfooter() {
       ease: Bounce,
     });
     tl.fromTo(footeranimation, 1, { x: 0 }, { x: 0 });
-    tl.fromTo(footeranimation, 0.1, { x: 0 }, { x: -78 });
-    tl.fromTo(footeranimation, 1, { x: -78 }, { x: -78 });
+    tl.fromTo(footeranimation, 0.1, { x: 0 }, { x: -60 });
+    tl.fromTo(footeranimation, 1, { x: -60 }, { x: -60 });
   }, []);
   useEffect(() => {
     const tl = gsap.timeline({
@@ -28,9 +28,9 @@ export default function Lowerfooter() {
       yoyo: true,
       ease: Bounce,
     });
-    tl.fromTo(footeranimationwidth, 1, { width: 133 }, { width: 133 });
-    tl.fromTo(footeranimationwidth, 0.1, { width: 133 }, { width: "auto" });
-    tl.fromTo(footeranimationwidth, 1, { width: 250 }, { width: 250 });
+    tl.fromTo(footeranimationwidth, 1, { width: 102 }, { width: 102 });
+    tl.fromTo(footeranimationwidth, 0.1, { width: 102 }, { width: "auto" });
+    tl.fromTo(footeranimationwidth, 1, { width: 230 }, { width: 230 });
   }, []);
   return (
     <section className="lower-footer">
@@ -46,18 +46,18 @@ export default function Lowerfooter() {
         <div className="footer-column">
           <div className="column">
             <Link to={"/about"} className="footerlink">
-              about
+              About
             </Link>
             <Link to={"/services"} className="footerlink">
-              services
+              Services
             </Link>
           </div>
           <div className="column">
             <Link to={"/work"} className="footerlink">
-              work
+              Work
             </Link>
             <Link to={"/career"} className="footerlink">
-              careers
+              Careers
             </Link>
           </div>
           <div className="column">
@@ -70,7 +70,11 @@ export default function Lowerfooter() {
           </div>
         </div>
         <div id="contact">
-          <p>info@codelinear.com</p>
+          <p>info
+           <span style={{
+            fontFamily: 'sans-serif'
+           }}>@</span>
+            codelinear.com</p>
           <p>+1 415 523 5957</p>
         </div>
         <div id="socials">

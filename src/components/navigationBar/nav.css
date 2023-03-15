@@ -18,8 +18,8 @@
   z-index: 3;
 }
 .logo {
-  margin-right: 0.27%;
-  margin-top: 1px;
+  margin-right: 0%;
+  margin-top: -0px;
   width: 132.41px;
   height: 60.91px;
   transition: 0.5s;
@@ -238,7 +238,7 @@ sup {
   .hyphen {
     width: 5px;
     height: 2px;
-    top: 44px;
+    top: 42.5px;
     left: 175px;
   }
   .menu {
@@ -250,14 +250,21 @@ sup {
   .nav_logo::after {
     top: 103.32%;
     left: 183px;
+    font-family: graphikthin;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    word-spacing: 0.06em;
+  }
+  .nav_logo:hover:after {
+    font-size: 10px;
   }
   .nav_logo::before {
     content: "";
-    width: 33px;
-    height: 33px;
+    width: 31.5px;
+    height: 31.5px;
     position: absolute;
-    top: 27px;
-    left: 153.5px;
+    top: 28px;
+    left: 154px;
   }
   .nav_logo:hover .logo {
     margin-left: 9px;
