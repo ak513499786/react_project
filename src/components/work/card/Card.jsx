@@ -53,7 +53,22 @@ const Card = () => {
               </div>
             </div>
             <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-              <h1 className="text-5xl mt-24 wcw">Willium Abraham</h1>
+              <h1 className="text-5xl mt-24 wcw">William Abraham</h1>
+              <p className="colo my-10 mt-20">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
+                iusto deleniti, rem atque laborum tempore, reprehenderit minima
+                enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
+                minima error tempore.
+              </p>
+              <div className=" mt-5 max-lg:ml-0 ">
+                <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  View case study
+                </button>
+              </div>
+            </div>
+
+            <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
+              <h1 className="text-5xl mt-24 wcw">Lyra Health</h1>
               <p className="colo my-10 mt-20">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                 iusto deleniti, rem atque laborum tempore, reprehenderit minima
@@ -80,20 +95,7 @@ const Card = () => {
                 </button>
               </div>
             </div>
-            <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
-              <h1 className="text-5xl mt-24 wcw">Lyra Health</h1>
-              <p className="colo my-10 mt-20">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                iusto deleniti, rem atque laborum tempore, reprehenderit minima
-                enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-                minima error tempore.
-              </p>
-              <div className=" mt-5 max-lg:ml-0 ">
-                <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                  View case study
-                </button>
-              </div>
-            </div>
+
             <button className="my-24 -20" onClick={toggleCase}>
               <div className="exploree hidee max-md:mx-0 flex items-center justify-center">
                 <div className="flex w-full justify-center items-center h-full">
@@ -104,7 +106,7 @@ const Card = () => {
           </div>
         </div>
       ) : (
-        <div className="workunfolds">
+        <div className="workunfolds mb-20">
           <div className="lead flex flex-wrap justify-center h-full relative  items-center">
             <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10  justify-center items-center relative">
               <div className="card111 hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
@@ -192,7 +194,7 @@ const Card = () => {
                 </div>
               </div>
               <div className="studio hidee max-xl:mx-0   mx-1 flex flex-col justify-center max-xl:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">Kernel Wealth</h1>
+                <h1 className="text-5xl -mt24 wcw">Studio Neat</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
@@ -205,8 +207,8 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="deel hidee max-xl:mx-0   ml-40 flex flex-col justify-center max-xl:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">Lyra Health</h1>
+              <div className="deel hidee max-xl:mx-0   ml40 flex flex-col justify-center max-xl:my-10   p-10">
+                <h1 className="text-5xl -mt24 wcw">Deel</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit

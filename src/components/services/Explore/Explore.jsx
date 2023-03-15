@@ -2,6 +2,16 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./explore.scss";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+
+// import required modules
+import { FreeMode, Pagination } from "swiper";
 const Explore = () => {
   const url = useLocation();
 
@@ -19,16 +29,6 @@ const Explore = () => {
             </div>
             {/* <div className=""> */}
             <div className="cards testt p-10  max-lg:p-20">
-              {/* <Link to="/consultingandstrategy">
-                <div className="card1 mb20 m-20 mx-10 my- hideee relative">
-                  <div className="img1 ml-1  ma\  -top-0"></div>
-                  <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
-                      Consulting And Strategy
-                    </p>
-                  </div>
-                </div>
-              </Link> */}
               <Link to="/userexperience">
                 <div className="card1 mx-10 hideee relative">
                   <div className="img22 max-md:ml- ml-0 top-0"></div>
@@ -37,9 +37,6 @@ const Explore = () => {
                       User Experience
                     </p>
                   </div>
-                  {/* <div className="opacity-60 absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl">User Experience</p>
-                  </div> */}
                 </div>
               </Link>
               <Link to="/productdevelopment" className="h-full">
@@ -70,8 +67,6 @@ const Explore = () => {
     );
   } else if (url.pathname === "/userexperience") {
     return (
-      // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
-
       <>
         <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
@@ -80,7 +75,7 @@ const Explore = () => {
                 Explore Our Other Services
               </h1>
             </div>
-            {/* <div className=""> */}
+
             <div className="cards testt p-10  max-lg:p-20">
               <Link to="/consultingandstrategy">
                 <div className="card1 mb20 m-20 mx-10 my- hideee relative">
@@ -92,19 +87,7 @@ const Explore = () => {
                   </div>
                 </div>
               </Link>
-              {/* <Link to="/userexperience">
-                <div className="card1 mx-10 hideee relative">
-                  <div className="img22 max-md:ml- ml-0 top-0"></div>
-                  <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
-                      User Experience
-                    </p>
-                  </div> */}
-              {/* <div className="opacity-60 absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl">User Experience</p>
-                  </div> */}
-              {/* </div>
-              </Link> */}
+
               <Link to="/productdevelopment" className="h-full">
                 <div className="card1 mx-10 hideee relative">
                   <div className="img3 ml-3 max-md:ml-44 -top-0"></div>
@@ -127,14 +110,11 @@ const Explore = () => {
               </Link>
             </div>
           </div>
-          {/* </div>   */}
         </div>
       </>
     );
   } else if (url.pathname === "/productdevelopment") {
     return (
-      // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
-
       <>
         <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
@@ -143,7 +123,7 @@ const Explore = () => {
                 Explore Our Other Services
               </h1>
             </div>
-            {/* <div className=""> */}
+
             <div className="cards testt p-10  max-lg:p-20">
               <Link to="/consultingandstrategy">
                 <div className="card1 mb20 m-20 mx-10 my- hideee relative">
@@ -163,21 +143,9 @@ const Explore = () => {
                       User Experience
                     </p>
                   </div>
-                  {/* <div className="opacity-60 absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl">User Experience</p>
-                  </div> */}
                 </div>
               </Link>
-              {/* <Link to="/productdevelopment" className="h-full">
-                <div className="card1 mx-10 hideee relative">
-                  <div className="img3 ml-3 max-md:ml-44 -top-0"></div>
-                  <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:ml-72 max-md:mt-16">
-                      Product Development
-                    </p>
-                  </div>
-                </div>
-              </Link> */}
+
               <Link to="/digitalmarketing">
                 <div className="card1 mx-10 hideee relative">
                   <div className="img4 ml-3 max-md:ml-72 -top-0"></div>
@@ -190,14 +158,11 @@ const Explore = () => {
               </Link>
             </div>
           </div>
-          {/* </div>   */}
         </div>
       </>
     );
   } else if (url.pathname === "/digitalmarketing") {
     return (
-      // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
-
       <>
         <div className="lead flex mt-20 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
@@ -206,7 +171,7 @@ const Explore = () => {
                 Explore Our Other Services
               </h1>
             </div>
-            {/* <div className=""> */}
+
             <div className="cards testt p-10  max-lg:p-20">
               <Link to="/consultingandstrategy">
                 <div className="card1 mb20 m-20 mx-10 my- hideee relative">
@@ -226,9 +191,6 @@ const Explore = () => {
                       User Experience
                     </p>
                   </div>
-                  {/* <div className="opacity-60 absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl">User Experience</p>
-                  </div> */}
                 </div>
               </Link>
               <Link to="/productdevelopment" className="h-full">
@@ -241,26 +203,13 @@ const Explore = () => {
                   </div>
                 </div>
               </Link>
-              {/* <Link to="/digitalmarketing">
-                <div className="card1 mx-10 hideee relative">
-                  <div className="img4 ml-3 max-md:ml-72 -top-0"></div>
-                  <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:ml-80 max-md:mt-16">
-                      Digital Marketing
-                    </p>
-                  </div>
-                </div>
-              </Link> */}
             </div>
           </div>
-          {/* </div>   */}
         </div>
       </>
     );
   } else {
     return (
-      // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
-
       <>
         <div className="lead flex mt-0 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
@@ -269,54 +218,70 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            {/* <div className=""> */}
             <div className="cards testt p-10  max-lg:p-20">
-              <Link to="/consultingandstrategy">
-                <div className="card1 mb20 m-20 mx-10 my- hideee relative">
-                  <div className="img1 ml-1  ma\  -top-0"></div>
-                  <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
-                      Consulting And Strategy
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link to="/userexperience">
-                <div className="card1 mx-10 hideee relative">
-                  <div className="img22 max-md:ml- ml-0 top-0"></div>
-                  <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
-                      User Experience
-                    </p>
-                  </div>
-                  {/* <div className="opacity-60 absolute  bottom-10 w-full flex justify-center items-end colo">
-                  <p className="name text-2xl">User Experience</p>
-                </div> */}
-                </div>
-              </Link>
-              <Link to="/productdevelopment" className="h-full">
-                <div className="card1 mx-10 hideee relative">
-                  <div className="img3 ml-3 max-md:ml-44 -top-0"></div>
-                  <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:ml-72 max-md:mt-16">
-                      Product Development
-                    </p>
-                  </div>
-                </div>
-              </Link>
-              <Link to="/digitalmarketing">
-                <div className="card1 mx-10 hideee relative">
-                  <div className="img4 ml-3 max-md:ml-72 -top-0"></div>
-                  <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
-                    <p className="name text-2xl max-md:ml-80 max-md:mt-16">
-                      Digital Marketing
-                    </p>
-                  </div>
-                </div>
-              </Link>
+              <Swiper
+                slidesPerView={3}
+                spaceBetween={30}
+                freeMode={true}
+                pagination={{
+                  clickable: true,
+                }}
+                modules={[FreeMode, Pagination]}
+                className="mySiper"
+              >
+                {/* Slide 1</SwiperSlide> */}
+
+                <SwiperSlide>
+                  <Link to="/consultingandstrategy">
+                    <div className="card1 mb20 m-20 mx-10 my- hideee relative">
+                      <div className="img1 ml-1  ma\  -top-0"></div>
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                        <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
+                          Consulting And Strategy
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Link to="/userexperience">
+                    <div className="card1 mx-10 hideee relative">
+                      <div className="img22 max-md:ml- ml-0 top-0"></div>
+                      <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
+                        <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
+                          User Experience
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Link to="/productdevelopment" className="h-full">
+                    <div className="card1 mx-10 hideee relative">
+                      <div className="img3 ml-3 max-md:ml-44 -top-0"></div>
+                      <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
+                        <p className="name text-2xl max-md:ml-72 max-md:mt-16">
+                          Product Development
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <Link to="/digitalmarketing">
+                    <div className="card1 mx-10 hideee relative">
+                      <div className="img4 ml-3 max-md:ml-72 -top-0"></div>
+                      <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
+                        <p className="name text-2xl max-md:ml-80 max-md:mt-16">
+                          Digital Marketing
+                        </p>
+                      </div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
-          {/* </div>   */}
         </div>
       </>
     );
