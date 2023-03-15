@@ -53,7 +53,7 @@ const Case = () => {
     <>
       {Widht > 1300 ? (
         <div className="circle flex mt-20 justify-center h-full relative  items-center">
-          <div className="width w-full flex-col h-full items-center flex justify-center relative">
+          <div className="width max-w-[1340px] w-full flex-col h-full items-center flex justify-center relative">
             <div className="tal items-center flex justify-center flex-col h-full">
               <h1 className="text-7xl text-center font-bold max-md:text-5xl max-md:p-10">
                 Take A Peek At Our <br /> Case Study
@@ -93,12 +93,8 @@ const Case = () => {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              // pagination={{
-              //   clickable: true,
-              // }}
-              // navigation={true}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper mt-0 w-[100%]"
+              className="mySwiper -ml-10 w-[115%]"
             >
               {/* <div className="testhome"> */}
               <SwiperSlide className="">
@@ -108,7 +104,7 @@ const Case = () => {
                   </div>
                 </Link>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="w-[600px]">
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="img211 "></div>

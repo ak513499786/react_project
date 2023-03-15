@@ -35,14 +35,36 @@ const Explore = () => {
                 // pagination={{
                 //   clickable: true,
                 // }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    containerClass: "half-image-container",
+                  },
+                  435: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 modules={[FreeMode, Pagination]}
-                className="mySiper w-[100%]
-                "
+                className="mySwiper w-[110%]"
               >
                 <SwiperSlide>
-                  <Link to="/userexperience" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img22 max-md:ml- ml-4 top-0"></div>
+                  <Link to="/userexperience" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img22 max-md:ml- ml-10 top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           User Experience
@@ -52,9 +74,9 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link to="/productdevelopment" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img3 ml-6 max-md:ml-44 -top-0"></div>
+                  <Link to="/productdevelopment" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img3 ml-12 max-md:ml-44 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:ml-72 max-md:mt-16">
                           Product Development
@@ -64,7 +86,7 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link to="/digitalmarketing" className="px-20">
+                  <Link to="/digitalmarketing" className="px20">
                     <div className="card1 mx-40 hideee relative">
                       <div className="img4 ml-12 max-md:ml-72 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
@@ -99,13 +121,36 @@ const Explore = () => {
                 // pagination={{
                 //   clickable: true,
                 // }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    containerClass: "half-image-container",
+                  },
+                  435: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 modules={[FreeMode, Pagination]}
-                className="mySiper"
+                className="mySwiper w-[110%]"
               >
                 <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img1 ml-4  ma\  -top-0"></div>
+                  <Link to="/consultingandstrategy" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           Consulting And Strategy
@@ -116,9 +161,9 @@ const Explore = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Link to="/productdevelopment" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img3 ml-6 max-md:ml-44 -top-0"></div>
+                  <Link to="/productdevelopment" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img3 ml-12 max-md:ml-44 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:ml-72 max-md:mt-16">
                           Product Development
@@ -128,7 +173,7 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link to="/digitalmarketing" className="px-20">
+                  <Link to="/digitalmarketing" className="px20">
                     <div className="card1 mx-40 hideee relative">
                       <div className="img4 ml-12 max-md:ml-72 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
@@ -163,13 +208,36 @@ const Explore = () => {
                 // pagination={{
                 //   clickable: true,
                 // }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    containerClass: "half-image-container",
+                  },
+                  435: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 modules={[FreeMode, Pagination]}
-                className="mySiper"
+                className="mySwiper w-[110%]"
               >
                 <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img1 ml-4  ma\  -top-0"></div>
+                  <Link to="/consultingandstrategy" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           Consulting And Strategy
@@ -179,9 +247,9 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link to="/userexperience" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img22 max-md:ml- ml-4 top-0"></div>
+                  <Link to="/userexperience" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img22 max-md:ml- ml-10 top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           User Experience
@@ -192,7 +260,7 @@ const Explore = () => {
                 </SwiperSlide>
 
                 <SwiperSlide>
-                  <Link to="/digitalmarketing" className="px-20">
+                  <Link to="/digitalmarketing" className="px20">
                     <div className="card1 mx-40 hideee relative">
                       <div className="img4 ml-12 max-md:ml-72 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
@@ -227,13 +295,36 @@ const Explore = () => {
                 // pagination={{
                 //   clickable: true,
                 // }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    containerClass: "half-image-container",
+                  },
+                  435: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 modules={[FreeMode, Pagination]}
-                className="mySiper"
+                className="mySwiper w-[110%]"
               >
                 <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img1 ml-4  ma\  -top-0"></div>
+                  <Link to="/consultingandstrategy" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           Consulting And Strategy
@@ -243,9 +334,9 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link to="/userexperience" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img22 max-md:ml- ml-4 top-0"></div>
+                  <Link to="/userexperience" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img22 max-md:ml- ml-10 top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           User Experience
@@ -255,9 +346,9 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <Link to="/productdevelopment" className="px-20">
-                    <div className="card1 mx-32 hideee relative">
-                      <div className="img3 ml-6 max-md:ml-44 -top-0"></div>
+                  <Link to="/productdevelopment" className="px20">
+                    <div className="card1 mx-48 hideee relative">
+                      <div className="img3 ml-12 max-md:ml-44 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:ml-72 max-md:mt-16">
                           Product Development
@@ -290,13 +381,36 @@ const Explore = () => {
                 // pagination={{
                 //   clickable: true,
                 // }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    containerClass: "half-image-container",
+                  },
+                  435: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
                 modules={[FreeMode, Pagination]}
-                className="mySiper"
+                className="mySwiper w-[110%]"
               >
                 <SwiperSlide>
                   <Link to="/consultingandstrategy" className="px20">
                     <div className="card1 mx-48 hideee relative">
-                      <div className="img1 ml-4  ma\  -top-0"></div>
+                      <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           Consulting And Strategy
@@ -308,7 +422,7 @@ const Explore = () => {
                 <SwiperSlide>
                   <Link to="/userexperience" className="px20">
                     <div className="card1 mx-48 hideee relative">
-                      <div className="img22 max-md:ml- ml-4 top-0"></div>
+                      <div className="img22 max-md:ml- ml-10 top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
                           User Experience
@@ -320,7 +434,7 @@ const Explore = () => {
                 <SwiperSlide>
                   <Link to="/productdevelopment" className="px20">
                     <div className="card1 mx-48 hideee relative">
-                      <div className="img3 ml-6 max-md:ml-44 -top-0"></div>
+                      <div className="img3 ml-12 max-md:ml-44 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:ml-72 max-md:mt-16">
                           Product Development

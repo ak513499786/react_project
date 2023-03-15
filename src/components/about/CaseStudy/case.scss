@@ -55,7 +55,6 @@
   color: #fff;
 }
 
-
 .down {
   font-family: graphik;
   color: #848484;
@@ -76,46 +75,46 @@
   position: relative;
   // background-image: url("../../Home/images/image\ 17.svg");
   // background-image: url("../../Home/images/image\ 3.svg");
-  background-image: url("../../home/images/image\ 5.svg");
+  background-image: url("../../Home/images/image\ 5.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 550px;
+  background-size: 700px;
   background-repeat: no-repeat;
   background-position: -150px -70px;
   transition: 0.5s;
 }
 .img211 {
-  // background-image: url("../../Home/images/image\ 17.svg");
+  background-image: url("../../Home/images/image\ 17.svg");
   // background-image: url("../../Home/images/image\ 17.svg");
 
-  background-image: url("../../home/images/image\ 17.svg");
+  // background-image: url("../../home/images/image\ 17.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 380px;
+  background-size: 700px;
   background-repeat: no-repeat;
-  background-position: -30px 00px;
+  background-position: -100px 00px;
   transition: 0.5s;
 }
 .img311 {
-  background-image: url("../../home/images/image\ 3.svg");
+  background-image: url("../../Home/images/image\ 3.svg");
   // background-image: url("../../Home/images/image\ 4.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 500px;
+  background-size: 700px;
   background-repeat: no-repeat;
-  background-position: -150px 12px;
+  background-position: -150px -212px;
   transition: 0.5s;
 }
 .img411 {
-  background-image: url("../../home/images/image\ 11.svg");
+  background-image: url("../../Home/images/image\ 11.svg");
   // background-image: url("../images/Group\ 28.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 500px;
+  background-size: 700px;
   background-repeat: no-repeat;
   background-position: -150px 12px;
   transition: 0.5s;
@@ -124,59 +123,63 @@
   background-image: url("../../work/images/image\ 17\ \(1\).png");
   // background-image: url("../images/Group\ 28.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 300px;
+  background-size: 700px;
   background-repeat: no-repeat;
-  // background-position: -50px 12px;
+  background-position: -110px -112px;
   transition: 0.5s;
 }
 .img413 {
   background-image: url("../../work/images/image\ 17\ \(4\).png");
   // background-image: url("../images/Group\ 28.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 300px;
-  // background-repeat: no-repeat;
-  // background-position: -150px 12px;
+  background-size: 550px;
+  background-repeat: no-repeat;
+  background-position: -10px 12px;
   transition: 0.5s;
 }
+
 .img414 {
   background-image: url("../../services/images/unsplash_QRWAdBCqysc.svg");
   // background-image: url("../images/Group\ 28.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 300px;
-  // background-repeat: no-repeat;
-  // background-position: -150px 12px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: -50px 12px;
   transition: 0.5s;
 }
 .img415 {
   background-image: url("../../services/images/unsplash_Im7lZjxeLhg.svg");
   // background-image: url("../images/Group\ 28.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 300px;
-  // background-repeat: no-repeat;
-  // background-position: -150px 12px;
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: -0px -112px;
   transition: 0.5s;
 }
 .img416 {
   background-image: url("../../services/images/unsplash_9Trha5ptc-c.svg");
   // background-image: url("../images/Group\ 28.svg");
 
-  width: 300px;
+  width: 470px;
   height: 300px;
-  background-size: 300px;
+  background-size: 600px;
   background-repeat: no-repeat;
-  // background-position: -150px 12px;
+  background-position: -70px -112px;
   transition: 0.5s;
 }
 .hideehome:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  // padding: 10px;
+  // margin: 10px;
+  width: 550px;
   transition: 0.2s ease-in;
 }
 @media (max-width: 768px) {
@@ -201,7 +204,7 @@
   }
   .img311 {
     // background-image: url("../../../public/images/shoe.jpg");
-    width: 310px;
+    width: 0px;
     height: 200px;
     // background-size: 580px;
     // background-repeat: no-repeat;
