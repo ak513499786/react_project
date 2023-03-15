@@ -320,7 +320,8 @@
   line-height: 54px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f3f3f3;
+  color: #d8d6d6;
+  opacity: 0.9;
 }
 .m-numbers {
   width: 331px;
