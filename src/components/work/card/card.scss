@@ -10,7 +10,8 @@
   border-radius: 13.07215690612793px;
   background: #111111;
   background-repeat: no-repeat;
-  background-position: -150px 0px;
+  background-size: 400px;
+  background-position: -1 0px 0px;
   transition: all 0.5s ease-in-out;
   margin-left: 99px;
 }
@@ -21,8 +22,10 @@
   top: 0px;
   border-radius: 13.07215690612793px;
   background: #111111;
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -150px 0px;
+
+  background-position: -0px 0px;
   transition: all 0.5s ease-in-out;
   margin: 0px 40px;
 }
@@ -32,8 +35,9 @@
   position: relative;
   border-radius: 13.07215690612793px;
   background: #111111;
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -150px 0px;
+  background-position: -10px 0px;
   transition: all 0.5s ease-out;
 }
 .Kernel {
@@ -52,8 +56,9 @@
   position: relative;
   border-radius: 13.07215690612793px;
   background: #111111;
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -50px 0px;
+  background-position: -0px 0px;
   transition: all 0.5s ease-out;
   margin: 0px 40px;
 }
@@ -63,8 +68,9 @@
   position: relative;
   border-radius: 13.07215690612793px;
   background: #111111;
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: -50px 0px;
+  background-position: -0px 0px;
   transition: all 0.5s ease-out;
 }
 .studio {
@@ -109,13 +115,13 @@
   background-image: url("../images/img1.png");
 }
 .Willium:hover {
-  background-image: url("../images/Mask\ group\ 1.png");
-}
-.MANGO:hover {
   background-image: url("../images/img2.png");
 }
+.MANGO:hover {
+  background-image: url("../images/Mask\ group\ 1.png");
+}
 .klub:hover {
-  background-image: url("../images/image\ 17\ \(2\).png");
+  background-image: url("../images/image\ 17.png");
 }
 .Kernel:hover {
   background-image: url("../images/image\ 17\ \(1\).png");
@@ -124,10 +130,10 @@
   background-image: url("../images/image\ 17\ \(4\).png");
 }
 .deel:hover {
-  background-image: url("../images/image\ 17\ \(4\).png");
+  background-image: url("../images/image\ 17.svg");
 }
 .Lyra:hover {
-  background-image: url("../images/image\ 17.png");
+  background-image: url("../images/image\ 17\ \(2\).png");
 }
 .exploree:hover {
   background: rgb(232, 202, 33);
@@ -149,12 +155,15 @@
 .hidee:hover .wcw {
   visibility: hidden;
 }
+.btn{
+  width: 70%;
+}
 .hidee:hover .btn {
   width: 100%;
   background-color: rgb(232, 202, 33);
   color: #000;
   font-weight: 900;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 72px;
 }
 .btn {
