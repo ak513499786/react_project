@@ -2,7 +2,7 @@ import "./footer.css";
 import { Link } from "react-router-dom";
 
 import arrow from "./images/Group 1000002377.svg";
-import LowerFooter  from "./lowerFooter";
+import LowerFooter from "./lowerFooter";
 
 export default function Footer() {
   return (
@@ -15,9 +15,11 @@ export default function Footer() {
           </div>
         </p>
         <Link to="/let's_talk" className="link">
-          <h1 id="ftrh1">Let's Talk</h1>
+          <h1 id="ftrh1" className="-ml-20">
+            Let's Talk
+          </h1>
         </Link>
-        <LowerFooter/>
+        <LowerFooter />
       </section>
     </footer>
   );

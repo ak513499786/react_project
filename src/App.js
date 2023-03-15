@@ -30,7 +30,7 @@ function App() {
           color="225, 225, 225"
           outerAlpha={5}
           innerScale={0}
-          outerScale={0.5}
+          outerScale={0.7}
           hasBlendMode={true}
           outerStyle={{
             mixBlendMode: "exclusion",

@@ -18,7 +18,6 @@ import AnimatedCursor from "react-animated-cursor";
 import { gsap, TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 
-
 const BlogHome = () => {
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, {
@@ -53,12 +52,12 @@ const BlogHome = () => {
     <>
       {/* {Widht >= 920 ? ( */}
       <>
-      {/* <AnimatedCursor color="255, 255, 255" /> */}
-        <div
-          id="blog"
-        >
-      <div id="blog_heading">We Pen Down Our Brightest Ideas</div>
-          <div className="max-w-[100%] homeidea">
+        {/* <AnimatedCursor color="255, 255, 255" /> */}
+        <div id="blog">
+          <div id="blog_heading" className="-ml-20">
+            We Pen Down Our Brightest Ideas
+          </div>
+          <div className="max-w-[100%] homeidea -ml-16">
             <Swiper
               slidesPerView={3}
               slidesPerGroupSkip={1}
@@ -211,85 +210,12 @@ const BlogHome = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-            {/* <div className="flex">
-                <div className="casee">
-                  <div className="cardh  cass  mx-4 items-center">
-                    <div className="img max-md:flex  max-md:justify-center">
-                      <img src="/blog/Frame 43.png" alt="" />
-                    </div>
-                    <div className="head mt-5">
-                      <h2 className="text-3xl text-center text-stone-400">
-                        Empathy in UX
-                      </h2>
-                    </div>
-                    <div className="descrip flex flex-col justify-center items-center mt-5">
-                      <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                        Union flatten auto flatten duplicate. Line slice inspect
-                        horizontal image strikethrough share follower.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="casee">
-                  <div className="cardh  cass  mx-4 items-center">
-                    <div className="img max-md:flex  max-md:justify-center">
-                      <img src="/blog/Frame 43.png" alt="" />
-                    </div>
-                    <div className="head mt-5">
-                      <h2 className="text-3xl text-center text-stone-400">
-                        Empathy in UX
-                      </h2>
-                    </div>
-                    <div className="descrip flex flex-col justify-center items-center mt-5">
-                      <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                        Union flatten auto flatten duplicate. Line slice inspect
-                        horizontal image strikethrough share follower.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="casee">
-                  <div className="cardh  cass  mx-4 items-center">
-                    <div className="img max-md:flex  max-md:justify-center">
-                      <img src="/blog/Frame 43.png" alt="" />
-                    </div>
-                    <div className="head mt-5">
-                      <h2 className="text-3xl text-center text-stone-400">
-                        Empathy in UX
-                      </h2>
-                    </div>
-                    <div className="descrip flex flex-col justify-center items-center mt-5">
-                      <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                        Union flatten auto flatten duplicate. Line slice inspect
-                        horizontal image strikethrough share follower.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="casee">
-                  <div className="cardh  cass  mx-4 items-center">
-                    <div className="img max-md:flex  max-md:justify-center">
-                      <img src="/blog/Frame 43.png" alt="" />
-                    </div>
-                    <div className="head mt-5">
-                      <h2 className="text-3xl text-center text-stone-400">
-                        Empathy in UX
-                      </h2>
-                    </div>
-                    <div className="descrip flex flex-col justify-center items-center mt-5">
-                      <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                        Union flatten auto flatten duplicate. Line slice inspect
-                        horizontal image strikethrough share follower.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-            <div className=" flex justify-center">
-              <button
-                className="exp_btn"
-              >
-                <Link to="/blog" className="exp_btn-content">explore more</Link>
+
+            <div className=" flex justify-center items-center -mt-2 -ml-2">
+              <button className="exp_btn ">
+                <Link to="/blog" className="exp_btn-content -mt4">
+                  explore more
+                </Link>
               </button>
             </div>
           </div>
