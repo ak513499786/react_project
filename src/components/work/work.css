@@ -16,8 +16,11 @@
   left: 10.65%;
   top: 389.5px;
 }
-.slide-work-container{
+.worksection{
   height: 1050px;
+}
+.workunfolds{
+  height: auto;
 }
 #work_heading {
   width: 57.12%;

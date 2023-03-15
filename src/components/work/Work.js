@@ -9,9 +9,7 @@ export default function Work() {
     <>
       <Navbar />
       <Workhero />
-      <div className="slide-work-container">
-        <Card />
-      </div>
+      <Card />
       <Footer />
     </>
   );

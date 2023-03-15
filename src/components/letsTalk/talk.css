@@ -256,6 +256,16 @@ input:focus {
 .phone-number::placeholder{
   color: #848484;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .sub_btn:hover {
   background-color: #ffcd05;
   color: black;
