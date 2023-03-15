@@ -8,6 +8,10 @@
   font-family: graphik;
   src: url(./Graphik-Regular-Trial.otf);
 }
+@font-face {
+  font-family: graphik2;
+  src: url(./graphik.otf);
+}
 * {
   margin: 0;
   padding: 0;

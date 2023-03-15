@@ -7,7 +7,6 @@
   align-items: flex-start;
   padding: 0px;
   gap: 16px;
-
   position: absolute;
   width: 58.7%;
   height: 176px;
@@ -508,9 +507,13 @@ select::placeholder{
     padding: 10px 30px;
     width: 100%;
   }
+  .position-container{
+    margin-left: 9.6%;
+  }
   .position-content-container {
     gap: 70px;
     width: 82%;
+    left: 1.3%;
   }
   .position-h1 {
     font-size: 58px;

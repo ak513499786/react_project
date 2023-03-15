@@ -66,6 +66,7 @@
 .crewpara {
   color: #848484;
   font-family: graphik;
+  font-weight: 100;
   opacity: 0.9;
 }
 .career-crew-btn {
@@ -74,7 +75,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 7px 39px;
+  padding: 0px 0px;
   gap: 10px;
   width: 140px;
   height: 42px;
@@ -84,13 +85,15 @@
   transition: 0.3s;
 }
 .career-crew-content {
-  width: 77px;
-  height: 28px;
+  width: auto;
+  height: auto;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.045em;
   font-family: graphik;
+  font-weight: 100;
   color: #848484;
+  padding-bottom: 4px;
 }
 .career-crew-btn:hover {
   background-color: #ffcd05;
@@ -116,6 +119,7 @@
   font-size: 20px;
   line-height: 32px;
   font-family: graphik;
+  font-weight: 100;
   color: #848484;
   opacity: 0.9;
 }
@@ -138,6 +142,7 @@
   font-family: graphik;
   color: #848484;
   opacity: 0.9;
+  font-weight: 100;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -160,13 +165,16 @@
 .guiding-container-h1 {
   font-size: 35px;
   color: #d8d6d6;
-  font-family: graphik;
+  font-family: graphikthin;
+  font-weight: 600;
 }
 .guiding-container-para {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 30px;
   font-family: graphik;
+  font-weight: 100;
   color: #848484;
+  font-weight: 100;
 }
 .subcontainer-img {
   display: inline-block;
@@ -177,7 +185,9 @@
   display: inline-block;
   font-size: 35px;
   color: #d8d6d6;
-  font-family: graphik;
+  font-family: graphikthin;
+  font-weight: 600;
+  opacity: 0.9;
 }
 .iframe-container {
   width: 100%;
@@ -197,6 +207,8 @@
   font-size: 20px;
   line-height: 32px;
   font-family: graphik;
+  font-weight: 100;
+  letter-spacing: -0.03em;
   color: #848484;
   text-indent: 80px;
 }
@@ -242,7 +254,6 @@
   .guiding-container-para {
     font-size: 15px;
     line-height: 25px;
-    font-family: graphik;
     color: #848484;
   }
   .subcontainer-para {
@@ -259,7 +270,6 @@
   }
   .visionh1 {
     font-size: 35px;
-    font-weight: 600;
     color: #d8d6d6;
   }
   .vision-para {
