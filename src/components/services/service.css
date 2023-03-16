@@ -649,7 +649,7 @@
   }
 }
 @media screen and (max-width: 1440px) {
-  #hero_services{
+  #hero_services {
     height: 100vh;
   }
   .services_hero-text {
@@ -791,7 +791,7 @@
     position: relative;
     left: 40%;
   }
-  .engagement-model{
+  .engagement-model {
     gap: 70px;
   }
 }
@@ -829,7 +829,7 @@
   .model-content {
     width: 100%;
   }
-  .e-model{
+  .e-model {
     padding-top: 50px;
   }
   .ser-h1,
@@ -851,7 +851,7 @@
     width: 100%;
   }
   .wedo {
-    height: 1000px;
+    height: 100%;
   }
   .wedo-h1 {
     font-size: 55px;
@@ -865,7 +865,7 @@
   }
   .accordian-container {
     left: 6.72%;
-    top: 1070px;
+    top: 170px;
     width: 80%;
     gap: 70px;
     height: auto;
