@@ -43,8 +43,18 @@
   flex-grow: 0;
   box-sizing: border-box;
 }
+.card1:hover {
+  box-shadow: 0px 0px 20px #f7f5f513;
+  background: #090909;
+  transition: 0.5s ease-in-out;
+}
 
 @media (max-width: 1090px) {
+  .card1:hover {
+    box-shadow: 0px 0px 0px ;
+    // background: #090909;
+    transition: 0.5s ease-in-out;
+  }
   // .testt {
   //   // position: absolute;
   //   // display: block;
@@ -76,11 +86,7 @@
   //   margin: -190px 0px;
   // }
 }
-.card1:hover {
-  box-shadow: 0px 0px 20px #f7f5f513;
-  background: #090909;
-  transition: 0.5s ease-in-out;
-}
+
 .img1 {
   position: absolute;
   // background-image: url("../../../public/services/chees.jpg");
@@ -166,6 +172,9 @@
 }
 
 @media (max-width: 768px) {
+  .name{
+    margin-left: 25px;
+  }
   .card1 {
     width: 310.5px;
     height: 390.82px;

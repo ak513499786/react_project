@@ -13,17 +13,20 @@ const Animation = () => {
   };
   if (url.pathname === "/consultingandstrategy") {
     return (
-      <div style={{ display: "flex", height: "400px" }}>
+      <div
+        ref={verticalRef}
+        onScroll={handleScroll}
+        style={{ display: "flex", height: "400px" }}
+      >
         <div
-          ref={verticalRef}
           style={{
             flex: 1,
             overflowY: "scroll",
             marginRight: "20px",
             paddingRight: "20px",
             height: "300px",
+            scrollBehavior: "smooth",
           }}
-          onScroll={handleScroll}
         >
           <div className="vertical-animation">
             <div className="vertical-effect">
@@ -103,7 +106,7 @@ const Animation = () => {
     );
   } else if (url.pathname === "/userexperience") {
     return (
-      <div style={{ display: "flex", height: "400px" }}>
+      <div onScroll={handleScroll} style={{ display: "flex", height: "400px" }}>
         <div
           ref={verticalRef}
           style={{
@@ -113,7 +116,7 @@ const Animation = () => {
             paddingRight: "20px",
             height: "300px",
           }}
-          onScroll={handleScroll}
+          // onScroll={handleScroll}
         >
           <div className="vertical-animation">
             <div className="vertical-effect">

@@ -108,7 +108,7 @@ const Card = () => {
       ) : (
         <div className="workunfolds mb-20">
           <div className="lead flex flex-wrap justify-center h-full relative  items-center">
-            <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10  justify-center items-center relative">
+            <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10  justify-start items-start relative">
               <div className="card111 hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                 <h1 className="text-5xl -mt24 wcw">COWBOY</h1>
                 <p className="colo my-10 mt-20">
@@ -123,7 +123,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="MANGO hidee max-xl:mx-0   mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="MANGO hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                 <h1 className="text-5xl -mt24 wcw">MANGO</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -165,7 +165,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="klub hidee max-xl:mx-0 my-12  mx-10 flex flex-col justify-center max-md:my-10   p-10">
+              <div className="klub hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
                 <h1 className="text-5xl -mt24 wcw">klub</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -193,7 +193,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="studio hidee max-xl:mx-0   mx-1 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="studio hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                 <h1 className="text-5xl -mt24 wcw">Studio Neat</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -207,7 +207,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="deel hidee max-xl:mx-0   ml40 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="deel hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                 <h1 className="text-5xl -mt24 wcw">Deel</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
