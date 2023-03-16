@@ -867,7 +867,7 @@
     width: 100%;
   }
   .wedo {
-    height: 1000px;
+    height: auto;
   }
   .wedo-h1 {
     font-size: 55px;
@@ -883,7 +883,7 @@
   .accordian-container {
     position: relative;
     left: 6.72%;
-    top: 1070px;
+    top: 100px;
     width: 80%;
     gap: 70px;
     height: auto;
@@ -910,10 +910,12 @@
   .e-model {
     width: 100%;
     padding: 100px 0;
+    align-items: start;
+    justify-content: start;
   }
   .engagement-model {
     width: 85%;
-    margin-left: 7.5%;
+    margin-left: 6.7%;
   }
   .cns,
   .ue,
