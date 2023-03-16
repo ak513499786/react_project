@@ -27,7 +27,7 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  max-lg:p-20">
+            <div className="cards tett p-10  max-lg:p20">
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -366,14 +366,14 @@ const Explore = () => {
   } else {
     return (
       <>
-        <div className="lead flex mt-0 justify-center h-full relative  items-center">
+        <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
               <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  max-lg:p-20">
+            <div className="cards tett p-10  max-lg:p20">
               <Swiper
                 slidesPerView={3}
                 spaceBetween={30}
@@ -409,7 +409,7 @@ const Explore = () => {
               >
                 <SwiperSlide>
                   <Link to="/consultingandstrategy" className="px20">
-                    <div className="card1 mx-48 hideee relative">
+                    <div className="card1 mx-48 max-md:mx-0 hideee relative">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
@@ -421,7 +421,7 @@ const Explore = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link to="/userexperience" className="px20">
-                    <div className="card1 mx-48 hideee relative">
+                    <div className="card1 mx-48 max-md:mx-0 hideee relative">
                       <div className="img22 max-md:ml- ml-10 top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml-28 max-xl:-mt-60">
@@ -433,7 +433,7 @@ const Explore = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link to="/productdevelopment" className="px20">
-                    <div className="card1 mx-48 hideee relative">
+                    <div className="card1 mx-48 max-md:mx-0 hideee relative">
                       <div className="img3 ml-12 max-md:ml-44 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:ml-72 max-md:mt-16">
@@ -445,7 +445,7 @@ const Explore = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                   <Link to="/digitalmarketing" className="px20">
-                    <div className="card1 mx-40 hideee relative">
+                    <div className="card1 mx-40 max-md:mx-0 hideee relative">
                       <div className="img4 ml-12 max-md:ml-72 -top-0"></div>
                       <div className="opacity-60 name absolute  bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:ml-80 max-md:mt-16">

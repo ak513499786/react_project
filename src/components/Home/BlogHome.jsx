@@ -66,7 +66,7 @@ const BlogHome = () => {
               // breakpoints
               autoplay={{
                 delay: 2500,
-                // disableOnInteraction: false,
+                disableOnInteraction: false,
               }}
               breakpoints={{
                 320: {
@@ -98,7 +98,7 @@ const BlogHome = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper h-[35rem] mt-20 max-md:mt-0  w-[115%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
             >
-              <SwiperSlide className="cass">
+              <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     <img src={image2} alt="" />
@@ -116,7 +116,7 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="cass">
+              <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     <img src={image4} alt="" />
@@ -134,7 +134,7 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="cass">
+              <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     <img src={image3} alt="" />
@@ -152,7 +152,7 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh  cass  mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
@@ -171,7 +171,7 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh  cass  mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
@@ -190,7 +190,7 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh  cass  mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}

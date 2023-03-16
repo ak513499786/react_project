@@ -867,10 +867,7 @@
     width: 100%;
   }
   .wedo {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 140px;
+    height: 1000px;
   }
   .wedo-h1 {
     font-size: 55px;
@@ -886,7 +883,7 @@
   .accordian-container {
     position: relative;
     left: 6.72%;
-    top: 0px;
+    top: 1070px;
     width: 80%;
     gap: 70px;
     height: auto;
