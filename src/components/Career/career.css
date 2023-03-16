@@ -220,7 +220,7 @@
   height: 360px;
 }
 .position-content-h1 {
-  height: 32px;
+  height: auto;
   font-weight: 600;
   font-size: 28px;
   line-height: 113.3%;
@@ -231,7 +231,7 @@
 }
 .office {
   width: 163px;
-  height: 23px;
+  height: auto;
   font-weight: 600;
   font-size: 20px;
   line-height: 113.3%;
