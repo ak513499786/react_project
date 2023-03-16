@@ -84,7 +84,9 @@ export default function Blogsection() {
           <p className="blog-btn-content" onClick={onClickSort2}>
             No Code
           </p>
-          <p className="blog-btn-content" onClick={onClickSort3}>MVP</p>
+          <p className="blog-btn-content" onClick={onClickSort3}>
+            MVP
+          </p>
           <p className="blog-btn-content">Rice Ricotta</p>
         </div>
       </section>
@@ -98,8 +100,10 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  Empathy is a foundational principle in the concept of design
+                  thinking – a user-based approach to problem-solving that
+                  combines hands-on testing of a product or service with the
+                  actual users.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -112,8 +116,8 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  We have compiled a list of digital marketing trends that may
+                  assist you in staying on top of your marketing game.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -125,8 +129,10 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  Empathy is a foundational principle in the concept of design
+                  thinking – a user-based approach to problem-solving that
+                  combines hands-on testing of a product or service with the
+                  actual users.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -140,8 +146,9 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  Building an MVP that attracts investors enough to fund it is
+                  indeed a magic potion that is not complete without the right
+                  spells.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -151,8 +158,9 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Design System</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  A design system is a guide or a standard structure with
+                  parameters for design and code along with design components
+                  that will unify both.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -162,8 +170,9 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  Building an MVP that attracts investors enough to fund it is
+                  indeed a magic potion that is not complete without the right
+                  spells.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -177,8 +186,9 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  The No-code revolution is indicative that modern businessmen
+                  and women want to keep creative control in their own hands
+                  when it comes to developing websites or mobile applications.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -188,8 +198,9 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">Spotify Vs Magento</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  While Shopify offers a no-coding and user-friendly platform
+                  that can help you run an online shop in no time, Magento’s
+                  flexibility may help you scale faster.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>
@@ -199,8 +210,9 @@ export default function Blogsection() {
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
                 <p className="blog-para">
-                  Union flatten auto flatten duplicate. Line slice inspect
-                  horizontal image strikethrough share follower.
+                  The No-code revolution is indicative that modern businessmen
+                  and women want to keep creative control in their own hands
+                  when it comes to developing websites or mobile applications.
                 </p>
               </div>
               <p className="blog-btns">Read More</p>

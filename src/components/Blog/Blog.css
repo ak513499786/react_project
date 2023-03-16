@@ -65,7 +65,7 @@
   gap: 13.9%;
 
   width: 77.2%;
-  height: 484.85px;
+  height: auto;
 }
 .blog-containers {
   display: flex;
@@ -75,7 +75,7 @@
   gap: 40px;
 
   width: 358.67px;
-  height: 438.83px;
+  height: auto;
 }
 .blog-imgs {
   width: 358.67px;
@@ -89,7 +89,7 @@
   gap: 10px;
 
   width: 358.67px;
-  height: 155.2px;
+  height: auto;
 }
 .blog-heading {
   font-weight: 600;

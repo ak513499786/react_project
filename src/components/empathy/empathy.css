@@ -6,7 +6,7 @@
   gap: 238px;
   position: relative;
   width: 53.33%;
-  height: 3558px;
+  height: auto;
   left: 23.33%;
   top: 327.37px;
 }
@@ -110,7 +110,7 @@
   gap: 52px;
 
   width: 100%;
-  height: 1906.77px;
+  height: auto;
 }
 .empathy-para {
   width: 100%;
@@ -143,7 +143,7 @@
   gap: 58px;
   position: relative;
   width: 53.33%;
-  height: 3058px;
+  height: auto;
   left: 23.33%;
   top: 227.37px;
 }
@@ -235,7 +235,7 @@
     left: 5%;
     top: 200px;
     gap: 100px;
-    height: 3000px;
+    height: auto;
   }
   .empathy-hero{
     gap: 80px;
@@ -291,9 +291,6 @@
   }
 }
 @media screen and (max-width: 428px) {
-  .empathy-page{
-    height: 2850px;
-  }
   .empathy-hero-h1 {
     font-size: 50px;
   }
