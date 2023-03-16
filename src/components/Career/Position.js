@@ -140,7 +140,9 @@ export default function Positions() {
       <div className="PD" ref={(el) => (positioncard = el)}>
         <h1 className="job-pd-title">
           Product Designer (UI/UX)
-          <div className="jobline" onClick={formhide}></div>
+          <div className="jobline" onClick={formhide}>
+            <div className="close-line"></div>
+          </div>
         </h1>
         <p className="job-loc">Bangalore (Remote)</p>
         <p className="job-loc">Experience Band: 3+ Yrs</p>
@@ -154,9 +156,7 @@ export default function Positions() {
             uplift brand values.
           </p>
           <div className="job-req">
-            Figma | Wireframes <span style={{
-              fontFamily: 'serif',
-            }}> &</span> User Flows | Prototypes UX Research | Personas
+            Figma | Wireframes <span className="and"> &</span> User Flows | Prototypes UX Research | Personas
             | Design System
           </div>
           <p className="apply">Feel like you’re a match?</p>
