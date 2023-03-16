@@ -100,6 +100,10 @@ const Case = () => {
               <SwiperSlide className="">
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome  ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img121 "></div>
                   </div>
                 </Link>
@@ -107,6 +111,10 @@ const Case = () => {
               <SwiperSlide className="w-[600px]">
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img211 "></div>
                   </div>
                 </Link>
@@ -114,6 +122,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img311 "></div>
                   </div>
                 </Link>
@@ -121,6 +133,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img411 "></div>
                   </div>
                 </Link>
@@ -128,6 +144,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img412 "></div>
                   </div>
                 </Link>
@@ -135,6 +155,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img413 "></div>
                   </div>
                 </Link>
@@ -142,6 +166,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img414 "></div>
                   </div>
                 </Link>
@@ -149,6 +177,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img415 "></div>
                   </div>
                 </Link>
@@ -156,6 +188,10 @@ const Case = () => {
               <SwiperSlide>
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
+                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
+                      {" "}
+                      Click
+                    </div>
                     <div className="img416 "></div>
                   </div>
                 </Link>
