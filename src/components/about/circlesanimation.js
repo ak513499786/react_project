@@ -17,7 +17,7 @@ export default function Circles() {
     gsap.to(arrow, { opacity: 1 });
     gsap.to(circle2, { opacity: 1, y: 63, x: 98, scale: 1.5 });
     gsap.to(circle3, { opacity: 1, y: 64, x: -97, scale: 1.5 });
-    gsap.to(circle4, { opacity: 1, y: -104, x: -5, scale: 1.5 });
+    gsap.to(circle4, { opacity: 1, y: -105, x: -5, scale: 1.5 });
   };
   const mouseOutAnimation = () => {
     gsap.to(circle1, { opacity: 1 });

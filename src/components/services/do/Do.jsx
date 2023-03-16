@@ -8,22 +8,24 @@ const Do = () => {
         <div className="width w-full flex-col min-h-screen h-full items-center flex justify-center relative">
           <div className="vision w-full mt-60 flex justify-center h-full max-xl:p-5 relative  items-center">
             <div className="widthh w-full  h-full  flex justify relative max-md:flex-col">
-              <div className="leftsss produc w-full">
-                <h2 className="text-7xl max-md:text-6xl  font-extrabold opacity-80">
-                  We Do It All!
-                </h2>
-                <p className="my-10 ">
-                  To propel huminity forword by building digital products for
-                  business that unrich peoples lives Lorem ipsum dolor sit amet
-                  consectetur, adipisicing elit. Est, natus veniam! Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Maxime Lorem,
-                  ipsum dolor sit amet. dolor sit amet consectetur adipisicing
-                  elit
-                </p>
-                <div className="circles max-xl:hidden absolute -mt-64">
-                  <div className="circle1 circlee">
-                    <div className="circle2 mt-20 circlee">
-                      <div className="circle3 circlee"></div>
+              <div className="stickyclass">
+                <div className="leftsss produc w-full">
+                  <h2 className="text-7xl max-md:text-6xl  font-extrabold opacity-80">
+                    We Do It All!
+                  </h2>
+                  <p className="my-10 ">
+                    To propel huminity forword by building digital products for
+                    business that unrich peoples lives Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Est, natus veniam! Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                    Lorem, ipsum dolor sit amet. dolor sit amet consectetur
+                    adipisicing elit
+                  </p>
+                  <div className="circles max-xl:hidden absolute -mt-64">
+                    <div className="circle1 circlee">
+                      <div className="circle2 mt-20 circlee">
+                        <div className="circle3 circlee"></div>
+                      </div>
                     </div>
                   </div>
                 </div>

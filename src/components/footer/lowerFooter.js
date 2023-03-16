@@ -19,7 +19,7 @@ export default function Lowerfooter() {
       ease: Bounce,
     });
     tl.fromTo(footeranimation, 1, { x: 0 }, { x: 0 });
-    tl.fromTo(footeranimation, 0.1, { x: 0 }, { x: -60 });
+    tl.fromTo(footeranimation, 0.3, { x: 0 }, { x: -60 });
     tl.fromTo(footeranimation, 1, { x: -60 }, { x: -60 });
   }, []);
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function Lowerfooter() {
       ease: Bounce,
     });
     tl.fromTo(footeranimationwidth, 1, { width: 102 }, { width: 102 });
-    tl.fromTo(footeranimationwidth, 0.1, { width: 102 }, { width: "auto" });
+    tl.fromTo(footeranimationwidth, 0.3, { width: 102 }, { width: "auto" });
     tl.fromTo(footeranimationwidth, 1, { width: 230 }, { width: 230 });
   }, []);
   return (

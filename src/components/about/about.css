@@ -157,6 +157,9 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position:sticky;
+  top: 0px;
+  height: 260px;
 }
 .guiding-skip {
   position: relative;
@@ -180,6 +183,7 @@
   display: inline-block;
   width: 60px;
   margin-right: 20px;
+  opacity: 0.7;
 }
 .subcontainer-h1 {
   display: inline-block;
@@ -362,6 +366,9 @@
     font-size: 70px;
     width: 83%;
   }
+  .guiding-container{
+    height: auto;
+  }
   .guiding-skip {
     position: relative;
     left: -100px;
@@ -373,6 +380,9 @@
     height: 130px;
     font-size: 12px;
     opacity: 0;
+  }
+  .iframe{
+    display: none;
   }
   .circle21 {
     margin-top: 0px;
@@ -406,7 +416,7 @@
     left: 6.7%;
   }
   .career-crew-btn {
-    width: 95%;
+    margin-left: 3%;
     background-color: #ffcd05;
     color: black;
     font-weight: bold;
@@ -443,10 +453,17 @@
     font-size: 18px;
     line-height: 24px;
   }
-  /* .crewclass {
+  .crewclass {
     margin-left: 3%;
   }
-  .crewcontainer {
+  .c-container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+  }
+  /* .crewcontainer {
     bottom: 200px;
   } */
   .about-case {
@@ -472,6 +489,10 @@
   } */
 }
 @media screen and (max-width: 428px) {
+  .career-crew-btn{
+    width: 90%;
+    margin-left: 5%;
+  }
   .about-hero-h1 {
     font-size: 40px;
     line-height: 45px;

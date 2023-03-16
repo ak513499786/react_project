@@ -12,6 +12,18 @@ import whitedownarrow from "../../services/images/downarrow.svg";
 const Vision = () => {
   let arrows = useRef(null);
   let skip = useRef(null);
+  let spinimg1 = useRef(null);
+  let spinimg2 = useRef(null);
+  let spinimg3 = useRef(null);
+
+  window.onscroll = function () {
+    scrollSpin();
+};
+  const scrollSpin = () => {
+    gsap.to(spinimg1, {transform : "rotate(" + window.pageYOffset/3 + "deg)"});
+    gsap.to(spinimg2, {transform : "rotate(" + window.pageYOffset/3 + "deg)"});
+    gsap.to(spinimg3, {transform : "rotate(" + window.pageYOffset/3 + "deg)"});
+  };
 
   const arrowRotate = () => {
     gsap.to(arrows, 0.2, { y: 30 });
@@ -76,7 +88,12 @@ const Vision = () => {
           </div>
           <div className="guiding-subcontainer">
             <div className="subcontainer">
-              <img className="subcontainer-img" src={svg1} alt="svg" />
+              <img
+                className="subcontainer-img"
+                src={svg1}
+                alt="svg"
+                ref={(el) => (spinimg1 = el)}
+              />
               <h1 className="subcontainer-h1">Ideal</h1>
               <p className="subcontainer-para">
                 We understand the varying needs of our clients, and therefore
@@ -88,7 +105,12 @@ const Vision = () => {
               </p>
             </div>
             <div className="subcontainer">
-              <img className="subcontainer-img" src={svg2} alt="svg" />
+              <img
+                className="subcontainer-img"
+                src={svg2}
+                alt="svg"
+                ref={(el) => (spinimg2 = el)}
+              />
               <h1 className="subcontainer-h1">Impact</h1>
               <p className="subcontainer-para">
                 Driven by impact, our ultimate focus is to build digital
@@ -99,7 +121,12 @@ const Vision = () => {
               </p>
             </div>
             <div className="subcontainer">
-              <img className="subcontainer-img" src={svg3} alt="svg" />
+              <img
+                className="subcontainer-img"
+                src={svg3}
+                alt="svg"
+                ref={(el) => (spinimg3 = el)}
+              />
               <h1 className="subcontainer-h1">Innovation</h1>
               <p className="subcontainer-para">
                 We envision ourselves to be the trendsetters and strive to make
