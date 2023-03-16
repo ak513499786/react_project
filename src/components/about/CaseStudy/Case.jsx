@@ -94,7 +94,7 @@ const Case = () => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper -ml-10 w-[115%]"
+              className="mySwiper -ml-10 w-[115%] max-xl:w-[100%] max-xl:ml-0"
             >
               {/* <div className="testhome"> */}
               <SwiperSlide className="">
