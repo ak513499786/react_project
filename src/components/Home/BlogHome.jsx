@@ -153,7 +153,7 @@ const BlogHome = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh  cass  mx-4 items-center">
+                <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image2} alt="" />
@@ -172,7 +172,7 @@ const BlogHome = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh  cass  mx-4 items-center">
+                <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image4} alt="" />
@@ -191,7 +191,7 @@ const BlogHome = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh  cass  mx-4 items-center">
+                <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image3} alt="" />

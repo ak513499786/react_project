@@ -22,12 +22,16 @@ function App() {
     <div>
       {/* <AnimatedCursor color="255, 255, 255"/> */}
       <AnimatedCursor
-        innerSize={8}
+        innerSize={0}
         outerSize={8}
         color="225, 225, 225"
-        outerAlpha={0.2}
-        innerScale={1.5}
-        outerScale={0.2}
+        outerAlpha={2}
+        innerScale={1.7}
+        outerScale={1.5}
+        hasBlendMode={true}
+        outerStyle={{
+          mixBlendMode: "exclusion",
+        }}
       />
       <BrowserRouter>
         <ScrollToTop />

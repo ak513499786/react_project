@@ -64,7 +64,7 @@ const Explore = () => {
               >
                 <SwiperSlide>
                   <Link to="/userexperience" className="px20">
-                    <div className="card1 m48 max-md:mx-0 hideee relative">
+                    <div className="card1 mx-4 max-md:mx-0 hideee relative">
                       <div className="img22 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
@@ -151,7 +151,7 @@ const Explore = () => {
               >
                 <SwiperSlide>
                   <Link to="/consultingandstrategy" className="px20">
-                    <div className="card1 mx48 max-md:mx-0 hideee relative">
+                    <div className="card1 mx-4 max-md:mx-0 hideee relative">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
@@ -239,7 +239,7 @@ const Explore = () => {
               >
                 <SwiperSlide>
                   <Link to="/consultingandstrategy" className="px20">
-                    <div className="card1 mx48 max-md:mx-0 hideee relative">
+                    <div className="card1 mx-4 max-md:mx-0 hideee relative">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
@@ -327,7 +327,7 @@ const Explore = () => {
               >
                 <SwiperSlide>
                   <Link to="/consultingandstrategy" className="px20">
-                    <div className="card1 mx48 max-md:mx-0 hideee relative">
+                    <div className="card1 mx-4 max-md:mx-0 hideee relative">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
