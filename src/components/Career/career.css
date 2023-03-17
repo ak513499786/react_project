@@ -709,6 +709,9 @@ select::placeholder {
     top: 200px;
     left: 6.7%;
   }
+  .jobline{
+    width: 120px;
+  }
   .career-hero {
     height: 500px;
   }
@@ -790,6 +793,9 @@ select::placeholder {
   }
 }
 @media screen and (max-width: 600px) {
+  .jobline{
+    width: 80px;
+  }
   .career-hero-h1 {
     font-size: 45px;
     line-height: 50px;
