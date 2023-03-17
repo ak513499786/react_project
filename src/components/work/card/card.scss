@@ -15,7 +15,6 @@
   transition: all 0.5s ease-in-out;
   margin-left: 99px;
   border-radius: 13.75px;
-
 }
 .MANGO {
   height: 601.0874633789062px;
@@ -27,7 +26,6 @@
   background-size: 400px;
   background-repeat: no-repeat;
   border-radius: 13.75px;
-
 
   background-position: -0px 0px;
   transition: all 0.5s ease-in-out;
@@ -124,6 +122,10 @@
   background-position: -630px -100px;
   transition: all 0.5s ease-out;
 }
+.exploree :hover .extra {
+  font-weight: 900;
+  color: #000;
+}
 
 .card111:hover {
   background-image: url("../images/img1.png");
@@ -155,7 +157,7 @@
   color: #000;
   border: none;
 }
-.hidee{
+.hidee {
 }
 .hidee:hover .colo {
   visibility: hidden;
@@ -233,7 +235,6 @@
     width: 390px;
     height: 602px;
     margin: -140px 95px;
-
   }
 }
 
