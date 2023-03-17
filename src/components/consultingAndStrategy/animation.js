@@ -9,7 +9,7 @@ const Animation = () => {
   const handleScroll = (event) => {
     const { scrollTop } = event.target;
     verticalRef.current.scrollTop = scrollTop;
-    horizontalRef.current.scrollLeft = scrollTop;
+    horizontalRef.current.scrollLeft = scrollTop/1.5;
   };
   if (url.pathname === "/consultingandstrategy") {
     return (
@@ -17,10 +17,9 @@ const Animation = () => {
         <div
           style={{
             overflowY: "scroll",
-            marginRight: "20px",
-            paddingRight: "20px",
+            marginRight: "0px",
+            paddingRight: "x0px",
             height: "300px",
-            scrollBehavior: "smooth",
           }}
           onScroll={handleScroll}
         >

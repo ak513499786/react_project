@@ -206,7 +206,9 @@ export default function Positions() {
       <div className="PD" ref={(el) => (positioncard1 = el)}>
         <h1 className="job-pd-title">
           Software Development Engineer - Mobile Frontend{" "}
-          <div className="jobline" onClick={formhide1}></div>
+          <div className="jobline" onClick={formhide1}>
+            <div className="close-line"></div>
+          </div>
         </h1>
         <p className="job-loc">Bangalore (Remote)</p>
         <p className="job-loc">Experience Band: 3+ Yrs</p>
@@ -269,7 +271,9 @@ export default function Positions() {
       <div className="PD" ref={(el) => (positioncard2 = el)}>
         <h1 className="job-pd-title">
           Software Development Engineer - Web Frontend{" "}
-          <div className="jobline" onClick={formhide2}></div>
+          <div className="jobline" onClick={formhide2}>
+            <div className="close-line"></div>
+          </div>
         </h1>
         <p className="job-loc">Bangalore (Remote)</p>
         <p className="job-loc">Experience Band: 3+ Yrs</p>
@@ -333,7 +337,9 @@ export default function Positions() {
       <div className="PD" ref={(el) => (positioncard3 = el)}>
         <h1 className="job-pd-title">
           Software Development Engineer - Backend{" "}
-          <div className="jobline" onClick={formhide3}></div>
+          <div className="jobline" onClick={formhide3}>
+            <div className="close-line"></div>
+          </div>
         </h1>
         <p className="job-loc">Bangalore (Remote)</p>
         <p className="job-loc">Experience Band: 3+ Yrs</p>
@@ -396,7 +402,9 @@ export default function Positions() {
       <div className="PD" ref={(el) => (positioncard4 = el)}>
         <h1 className="job-pd-title">
           Software Development Engineer - CMS/E-Commerce
-          <div className="jobline" onClick={formhide4}></div>
+          <div className="jobline" onClick={formhide4}>
+            <div className="close-line"></div>
+          </div>
         </h1>
         <p className="job-loc">Bangalore (Remote)</p>
         <p className="job-loc">Experience Band: 3+ Yrs</p>
