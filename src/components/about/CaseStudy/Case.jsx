@@ -101,7 +101,6 @@ const Case = () => {
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome  ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28">
-                      {" "}
                       Click
                     </div>
                     <div className="img121 "></div>
@@ -112,7 +111,6 @@ const Case = () => {
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
                       Click
                     </div>
                     <div className="img211 "></div>
@@ -123,7 +121,6 @@ const Case = () => {
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
                       Click
                     </div>
                     <div className="img311 "></div>
@@ -204,6 +201,12 @@ const Case = () => {
         <div className="testhome">
           <div className="imghome1 hideehome">
             <div className="bghome"></div>
+            <div id="i" className="p-5">
+              <h1>COWBOY</h1>
+              <p id="imgsp" className="coloo">
+                shopify platform design + development
+              </p>
+            </div>
           </div>
 
           <div className="imghome1 hideehome">
