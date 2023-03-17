@@ -2031,6 +2031,9 @@
   }
 }
 @media screen and (max-width: 428px) {
+  #hero {
+    height: 100vh;
+  }
   #header {
     font-size: 40px;
     line-height: 45px;
@@ -2041,17 +2044,17 @@
   #aboutbtn {
     width: 95%;
     position: absolute;
-    top: 320px;
+    top: calc(92vh - 200px);
   }
   #about {
-    top: 600px;
+    top: 100vh;
   }
   .allwork {
     width: 90%;
     left: 10%;
   }
   #service {
-    top: 1400px;
+    top: calc(100vh + 800px);
   }
   #srvcnt {
     height: auto;
@@ -2065,13 +2068,16 @@
     padding-left: 4.7%;
     width: 90%;
   }
+  #srvcnt {
+    font-size: 30px;
+  }
   #srvp {
     line-height: 20px;
     width: 90%;
     font-size: 16px;
   }
   #testimonials {
-    top: 2450px;
+    top: calc(100vh + 1850px);
   }
   #buttons {
     width: 280px;
@@ -2086,7 +2092,7 @@
   }
   #blog {
     height: auto;
-    top: 4000px;
+    top: calc(100vh + 2900px);
   }
   .blog-home-container {
     height: auto;
@@ -2110,10 +2116,17 @@
     border-radius: 20px;
   }
   #blog_heading {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 35px;
     height: auto;
     text-align: left;
+    margin-bottom: 40px;
+  }
+  .horizontalAbout {
+    width: calc(100% + 50px);
+    height: 1100px;
+    overflow-x: scroll;
+    left: -50px;
   }
   .blog-icon_div-h2 {
     font-size: 25px;
@@ -2235,18 +2248,18 @@
   #nums {
     left: 35%;
   }
+  .exp_btn {
+    width: 100%;
+  }
   #container {
     width: 90%;
     left: 5%;
   }
   .home {
-    height: 4400px;
-  }
-  #blog {
-    top: 3550px;
+    height: calc(100vh + 3600px);
   }
   .exp_btn-content {
-    width: 70%;
+    padding: 7px 25%;
     text-align: center;
   }
   .blog-home-container {
