@@ -14,6 +14,8 @@
   background-position: -1 0px 0px;
   transition: all 0.5s ease-in-out;
   margin-left: 99px;
+  border-radius: 13.75px;
+
 }
 .MANGO {
   height: 601.0874633789062px;
@@ -24,6 +26,8 @@
   background: #111111;
   background-size: 400px;
   background-repeat: no-repeat;
+  border-radius: 13.75px;
+
 
   background-position: -0px 0px;
   transition: all 0.5s ease-in-out;
@@ -36,6 +40,8 @@
   border-radius: 13.07215690612793px;
   background: #111111;
   background-size: 400px;
+  border-radius: 13.75px;
+
   background-repeat: no-repeat;
   background-position: -10px 0px;
   transition: all 0.5s ease-out;
@@ -45,6 +51,8 @@
   width: 390.37213134765625px;
   position: relative;
   border-radius: 13.07215690612793px;
+  border-radius: 13.75px;
+
   background: #111111;
   background-repeat: no-repeat;
   background-position: -50px 0px;
@@ -56,6 +64,8 @@
   position: relative;
   border-radius: 13.07215690612793px;
   background: #111111;
+  border-radius: 13.75px;
+
   background-size: 400px;
   background-repeat: no-repeat;
   background-position: -0px 0px;
@@ -64,6 +74,8 @@
 }
 .Lyra {
   height: 601.0874633789062px;
+  border-radius: 13.75px;
+
   width: 390.37213134765625px;
   position: relative;
   border-radius: 13.07215690612793px;
@@ -78,6 +90,8 @@
   width: 390.37213134765625px;
   position: relative;
   border-radius: 13.07215690612793px;
+  border-radius: 13.75px;
+
   background: #111111;
   background-size: 480px;
   background-repeat: no-repeat;
@@ -140,6 +154,8 @@
   transition: all 0.5s ease-in-out;
   color: #000;
   border: none;
+}
+.hidee{
 }
 .hidee:hover .colo {
   visibility: hidden;
@@ -217,6 +233,7 @@
     width: 390px;
     height: 602px;
     margin: -140px 95px;
+
   }
 }
 

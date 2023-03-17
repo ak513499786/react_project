@@ -10,6 +10,8 @@ import Navbar from "../navigationBar/Nav";
 import { Link } from "react-router-dom";
 
 export default function Case() {
+
+  
   return (
     <>
     <Navbar/>
@@ -26,6 +28,7 @@ export default function Case() {
         </p>
         </section>
       </main>
+
       <section className="aussie">
         <img src={img1} alt="" className="case-img" />
         <div className="case-div">
@@ -87,6 +90,10 @@ export default function Case() {
         </p>
         <img src={graph} alt="" className="graph" />
       </section>
+
+
+
+
       <section className="browse">
         <h1 className="browse-h1">
           Browse Through Other Business That We Have Impacted
