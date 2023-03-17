@@ -98,7 +98,7 @@
   position: relative;
   width: 94.38px;
   height: 72.73px;
-  left: 100px;
+  left: 110px;
   bottom: 17px;
 }
 .icon {
@@ -175,14 +175,15 @@
   font-size: 23px;
   font-family: graphik;
   height: auto;
+  opacity: 0.9;
   position: relative;
   top: 13px;
-  opacity: 0.9;
 }
 .aligncenter {
   overflow-x: hidden;
   width: 102.06px;
-  height: 50.91px;
+  height: 60px;
+  margin-bottom: 15px;
 }
 .footer-bounce {
   white-space: nowrap;
@@ -252,9 +253,6 @@
     font-size: 14px;
     letter-spacing: -0.01em;
   }
-  .aligncenter {
-    height: 70px;
-  }
   .lower-footer-container {
     margin-bottom: 10px;
   }
@@ -294,6 +292,9 @@
     gap: 12.36%;
     top: 0px;
     width: 80%;
+  }
+  .arrow {
+    left: 90px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -383,17 +384,19 @@
   }
   .arrow {
     width: 66.67px;
+    left: 90px;
     height: 51.76px;
   }
   #ftrh1 {
-    font-size: 115px;
+    font-size: 105px;
     width: 100%;
     margin-left: 0;
     height: auto;
   }
   .column {
     flex-direction: row;
-    gap: 70px;
+    gap: 30px;
+    width: auto;
   }
   .footer-column {
     flex-direction: column;
@@ -452,6 +455,7 @@
     position: relative;
     top: 180px;
     left: 0;
+    margin-top: 15px;
   }
   #lower-footer {
     flex-wrap: wrap;
@@ -459,6 +463,9 @@
     gap: 20px;
     position: absolute;
     left: 0%;
+  }
+  .link{
+    height: 150px;
   }
   #contact {
     position: relative;
@@ -469,6 +476,6 @@
     position: relative;
     width: 70%;
     left: 0%;
-    top: 80px;
+    top: 30px;
   }
 }

@@ -991,11 +991,12 @@
   }
 }
 @media screen and (max-width: 428px) {
-  .leading {
-    font-size: 42px;
-  }
   .overflowcontrol {
     top: 100px;
+    height: 40px;
+  }
+  .leading{
+    height: auto;
   }
   .words {
     font-size: 25px;
