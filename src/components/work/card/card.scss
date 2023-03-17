@@ -155,19 +155,23 @@
 .hidee:hover .wcw {
   visibility: hidden;
 }
+
 .btn {
   width: 70%;
-  border: 72px; 
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 72px;
+  // border: 72px;
+  transition: all 0.5s ease-in-out;
   color: #000;
-  font-family: 'Graphik'
-  border-c
+  font-family: "Graphik";
 }
 .hidee:hover .btn {
   width: 100%;
   background-color: rgb(232, 202, 33);
+  border: none;
   color: #000;
   font-weight: 900;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 72px;
 }
 .btn {

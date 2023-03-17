@@ -1,6 +1,9 @@
 .heading {
   font-size: 80px;
 }
+.head h2 {
+  font-family: "Graphik";
+}
 .mySwiper {
   /* width: 80%; */
   padding-top: 100px;

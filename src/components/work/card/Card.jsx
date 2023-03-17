@@ -193,7 +193,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="studio hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
+              <div className="studio hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
                 <h1 className="text-5xl -mt24 wcw">Studio Neat</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -207,7 +207,7 @@ const Card = () => {
                   </button>
                 </div>
               </div>
-              <div className="deel hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
+              <div className="deel hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
                 <h1 className="text-5xl -mt24 wcw">Deel</h1>
                 <p className="colo my-10 mt-20">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
