@@ -24,7 +24,7 @@ export default function Services() {
       <Navbar />
       <main className="services" ref={(el) => (fade = el)}>
         <Servicehero />
-        <section className="wedo max-md:mt-20">
+        <section className="wedo max-md:mt-20 max-sm:mt-40">
           <div className="wedo-container">
             <h1 className="wedo-h1">We Do It All!</h1>
             <p className="wedo-para">

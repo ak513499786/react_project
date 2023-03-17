@@ -189,7 +189,7 @@ export default function Case() {
           ) : (
             <div className="workunfolds mt-72  mb-20">
               <div className="lead flex flex-wrap justify-center h-full relative  items-center">
-                <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10  justify-start items-start relative">
+                <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10  max-sm:p-1   justify-start items-start relative">
                   <div className="card111 hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                     <h1 className="text-5xl -mt24 wcw">COWBOY</h1>
                     <p className="colo my-10 mt-20">

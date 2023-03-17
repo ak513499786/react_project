@@ -27,7 +27,7 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  w-[100%] max-lg:p20">
+            <div className="cards tett p-10  w-[100%] max-lg:p-0">
               <Swiper
                 slidesPerView={2}
                 slidesPerGroup={1}
@@ -114,7 +114,7 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  w-[100%] max-lg:p20">
+            <div className="cards tett p-10  w-[100%] max-lg:p-0">
               <Swiper
                 slidesPerView={2}
                 slidesPerGroup={1}
@@ -202,7 +202,7 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  w-[100%] max-lg:p20">
+            <div className="cards tett p-10  w-[100%] max-lg:p-0">
               <Swiper
                 slidesPerView={2}
                 slidesPerGroup={1}
@@ -290,7 +290,7 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  w-[100%] max-lg:p20">
+            <div className="cards tett p-10  w-[100%] max-lg:p-0">
               <Swiper
                 slidesPerView={2}
                 slidesPerGroup={1}
@@ -377,7 +377,7 @@ const Explore = () => {
                 Explore Our Services
               </h1>
             </div>
-            <div className="cards tett p-10  w-[100%] max-lg:p20">
+            <div className="cards tett p-10  w-[100%] max-lg:p-0">
               <Swiper
                 slidesPerView={2}
                 slidesPerGroup={1}
