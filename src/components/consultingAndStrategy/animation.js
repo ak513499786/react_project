@@ -16,7 +16,6 @@ const Animation = () => {
       <div ref={verticalRef} style={{ display: "flex", height: "400px" }}>
         <div
           style={{
-            flex: 1,
             overflowY: "scroll",
             marginRight: "0px",
             paddingRight: "x0px",
@@ -106,9 +105,9 @@ const Animation = () => {
         <div
           ref={verticalRef}
           style={{
-            flex: 1,
+            
             overflowY: "scroll",
-            marginRight: "20px",
+            // marginRight: "20px",
             paddingRight: "20px",
             height: "300px",
           }}
@@ -208,9 +207,9 @@ const Animation = () => {
         <div
           ref={verticalRef}
           style={{
-            flex: 1,
+            // flex: 1,
             overflowY: "scroll",
-            marginRight: "20px",
+            // marginRight: "20px",
             paddingRight: "20px",
             height: "300px",
           }}
@@ -325,7 +324,7 @@ const Animation = () => {
         <div
           ref={verticalRef}
           style={{
-            flex: 1,
+            // flex: 1,
             overflowY: "scroll",
             marginRight: "20px",
             paddingRight: "20px",

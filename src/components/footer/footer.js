@@ -6,7 +6,7 @@ import LowerFooter from "./lowerFooter";
 
 export default function Footer() {
   return (
-    <footer id="footer">
+    <footer id="footer" className="max-md:mt-10">
       <section id="footeer" className="main-footer">
         <p id="ftrcnt">
           Wanna Know A Secret?
