@@ -355,7 +355,7 @@ input[type=number] {
     top: 300px;
   }
   .contact-hero {
-    height: 580px;
+    height: 100vh;
   }
   .contact-container {
     width: 100%;
@@ -365,7 +365,7 @@ input[type=number] {
     width: 100%;
     text-align: center;
     height: auto;
-    line-height: 65px;
+    line-height: 60px;
   }
   .contact-hero-para {
     width: 50%;
@@ -428,6 +428,9 @@ input[type=number] {
   }
 }
 @media screen and (max-width: 428px) {
+  .contact-section{
+    top: 250px;
+  }
   .contact-form-h1 {
     font-size: 35px;
   }
@@ -470,6 +473,6 @@ input[type=number] {
     word-spacing: -0.03em;
   }
   .sub_btn {
-    width: 80%;
+    width: 100%;
   }
 }

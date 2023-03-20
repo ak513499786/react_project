@@ -404,9 +404,6 @@ sup {
     left: 86.01%;
     top: 6.02px;
   }
-  #navigation-slide {
-    background: #0a0a0a;
-  }
   .nav-menu {
     padding: 62px 35px;
   }
@@ -421,7 +418,7 @@ sup {
     width: 41.8%;
     height: 526px;
     left: 51.5%;
-    top: 162px;
+    top: 150px;
   }
   .details {
     display: flex;
@@ -435,7 +432,7 @@ sup {
     width: 269.64px;
     height: 173.41px;
     left: 47px;
-    top: 75.8vh;
+    top: 70vh;
   }
   .socials {
     display: flex;
@@ -497,7 +494,7 @@ sup {
     position: absolute;
     width: 75%;
     left: 16.3%;
-    top: 15.9vh;
+    top: 10vh;
   }
   .details {
     display: flex;
@@ -505,11 +502,11 @@ sup {
     justify-content: center;
     align-items: flex-end;
     padding: 0px;
-    gap: 26px;
+    gap: 2px;
     position: absolute;
     width: 63%;
     left: 28%;
-    top: 67.12%;
+    top: 70vh;
   }
   .contact-loc {
     width: 260px;
@@ -552,6 +549,8 @@ sup {
     letter-spacing: -0.03em;
     text-align: right;
     color: #959595;
+    position: relative;
+    top: 70px;
   }
   .contact-no {
     width: 100%;
@@ -561,6 +560,8 @@ sup {
     letter-spacing: -0.03em;
     text-align: right;
     color: #959595;
+    position: relative;
+    top: 70px;
   }
   .hyphen {
     top: 46.5px;
