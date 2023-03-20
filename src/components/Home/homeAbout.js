@@ -125,7 +125,7 @@ const HomeAbout = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper h  mt-20 max-md:mt-0  w-[100%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
               >
-                <SwiperSlide className="cs mr-0 flex justify-center items-center -ml-16">
+                <SwiperSlide className="cs mr-0 flex justify-center items-center -ml-20">
                   <div className="imghome1 hiehome">
                     <div className="bghome"></div>
                     <div id="i" className="p-5">
