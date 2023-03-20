@@ -185,9 +185,7 @@
 }
 .hideehome:hover {
   transform: scale(1.1);
-  // padding: 10px;
-  // margin: 10px;
-  width: 550px;
+  // width: 550px;
   transition: 0.2s ease-in;
 }
 @media (max-width: 768px) {
@@ -211,36 +209,38 @@
     height: 200px;
   }
   .img311 {
-    // background-image: url("../../../public/images/shoe.jpg");
-    width: 0px;
+    width: 350px;
     height: 200px;
-    // background-size: 580px;
-    // background-repeat: no-repeat;
-    // background-position: -150px 12px;
-    // transition: 0.5s;
+  }
+  .img411 {
+    width: 350px;
+    height: 200px;
+  }
+  .img412 {
+    width: 350px;
+    height: 200px;
+  }
+  .img413 {
+    width: 350px;
+    height: 200px;
+  }
+  .img414 {
+    width: 350px;
+    height: 200px;
+  }
+  .img415 {
+    width: 350px;
+    height: 200px;
+  }
+  .img416 {
+    width: 350px;
+    height: 200px;
+  }
+  .hideehome:hover {
+    transform: scale(1);
+    // padding: 10px;
+    // margin: 10px;
+    width: 550px;
+    transition: 0.2s ease-in;
   }
 }
-
-.carousel-container {
-  width: 100%;
-  overflow-x: scroll;
-}
-
-.carousel-items {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.carousel-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: calc(100vw / 3);
-  height: 200px;
-  transition: transform 0.5s ease-in-out;
-}
-
-// .casee:hover {
-//   transform: scale(1.3);
-// }
