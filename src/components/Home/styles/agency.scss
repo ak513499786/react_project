@@ -149,9 +149,6 @@
     width: calc(750px);
     height: 65vh;
     min-height: 429px;
-
-    // margin-top: -199px;
-    // margin-left: -119px;
     overflow-y: auto;
     overflow-x: hidden;
     transform: rotate(-90deg) translateY(0px);
@@ -177,6 +174,9 @@
     transform: rotate(-90deg) translateY(0px);
     transform-origin: center center;
     padding: 25px 0 0 0;
+  }
+  .hiee{
+    margin: 0px 20px;
   }
 }
 
