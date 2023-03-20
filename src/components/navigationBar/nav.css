@@ -381,11 +381,11 @@ sup {
     left: 186px;
   }
   .nav_logo::after {
-    top: 63px;
+    top: 60px;
     left: 199px;
   }
   .nav_logo::before {
-    top: 35px;
+    top: 33.3px;
     left: 162px;
   }
 }
@@ -445,16 +445,18 @@ sup {
     height: 37.41px;
   }
   .hyphen {
-    top: 45px;
-    left: 76px;
+    top: 43.7px;
+    left: 75.7px;
   }
   .nav_logo::after {
-    top: 51px;
+    top: 48px;
     left: 87px;
   }
   .nav_logo::before {
-    top: 32px;
-    left: 58px;
+    top: 29px;
+    left: 55px;
+    width: 33px;
+    height: 33px;
   }
 }
 @media screen and (max-width: 428px) {
@@ -564,19 +566,21 @@ sup {
     top: 70px;
   }
   .hyphen {
-    top: 46.5px;
+    top: 45px;
     left: 72px;
     width: 5px;
+    display: none;
   }
   .nav_logo::after {
-    top: 53px;
+    top: 50px;
     left: 85px;
   }
   .nav_logo::before {
-    top: 31px;
+    top: 30px;
     left: 50px;
     width: 35px;
     height: 35px;
+    display: none;
   }
   .icons {
     width: 14.7%;
