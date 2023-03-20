@@ -709,6 +709,9 @@ select::placeholder {
     top: 200px;
     left: 6.7%;
   }
+  .life-container{
+    margin-top: 0;
+  }
   .jobline{
     width: 120px;
   }
@@ -817,6 +820,10 @@ select::placeholder {
   .applying-form {
     width: 100%;
   }
+  .card-imgs{
+    width: 40%;
+    padding: 0;
+  }
   .whyus-container {
     width: 90%;
     margin-left: 5%;
@@ -915,5 +922,8 @@ select::placeholder {
   }
   .submit_btn {
     width: 90%;
+  }
+  .life-para{
+    margin-top: 0;
   }
 }

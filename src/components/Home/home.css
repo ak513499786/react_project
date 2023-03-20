@@ -723,7 +723,7 @@
   height: 1050.06px;
   position: absolute;
   top: 5734.05px;
-  left: 19.1%;
+  left: 14%;
 }
 #blog_heading {
   width: 774.84px;
@@ -1014,7 +1014,7 @@
   #service {
     width: 100%;
     height: 646px;
-    top: 2876px;
+    top: calc(100vh + 2150px);
   }
   .service_main {
     gap: 22.08%;
@@ -1062,7 +1062,7 @@
   }
   #testimonials {
     margin-left: 11.9%;
-    top: 3407px;
+    top: calc(100vh + 2650px);
   }
   .test-main-container {
     gap: 10px;
@@ -1207,11 +1207,11 @@
     gap: 0px;
     height: 1050.06px;
     position: absolute;
-    top: 4300.05px;
+    top: calc(100vh + 3500px);
     left: 15%;
   }
   .home {
-    height: 5200px;
+    height: calc(100vh + 4400px);
   }
   .blog-home-container {
     gap: 60px;
@@ -1266,12 +1266,17 @@
 }
 @media screen and (max-width: 1440px) {
   .home {
-    height: 5855.12px;
+    height: calc(100vh + 4850px);
   }
   #content {
     width: 720px;
-    left: 149px;
+    left: 10.3%;
     top: 288px;
+  }
+  #header {
+    font-size: 65px;
+    line-height: 70px;
+    height: auto;
   }
   #abtcnt {
     width: 80%;
@@ -1283,23 +1288,25 @@
     left: -27.78px;
     top: -370.34px;
   }
-  .testhome {
-    width: 100%;
-  }
   #hero {
-    height: 1024px;
+    height: 100vh;
   }
   #about {
     height: 1067px;
-    top: 624px;
+    top: 90vh;
     position: absolute;
   }
   #abth1 {
-    font-size: 90px;
-    line-height: 90px;
+    font-size: 80px;
+    line-height: 85px;
+    height: auto;
+  }
+  .header1 {
+    height: auto;
   }
   #abtcnt {
-    left: 149px;
+    left: 10.7%;
+    width: 1000px;
     top: 148px;
   }
   #rectangle {
@@ -1313,17 +1320,38 @@
     margin-left: 0%;
     width: 70%;
   }
-  #imgs1,
-  #imgs2,
-  #imgs3,
+  #imgs1 {
+    gap: 8.83px;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
+  #imgs2 {
+    gap: 8.83px;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
+  #imgs3 {
+    gap: 8.83px;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+  }
   #imgs4 {
     gap: 8.83px;
-    font-size: 17px;
-    opacity: 0.7;
+    font-size: 20px;
+    letter-spacing: 0em;
   }
-  #imgs1p,
-  #imgs2p,
-  #imgs3p,
+  #imgs1p {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  #imgs2p {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  #imgs3p {
+    font-size: 15px;
+    margin-left: 0;
+  }
   #imgs4p {
     font-size: 15px;
     margin-left: 0;
@@ -1391,7 +1419,7 @@
     position: absolute;
     gap: 10px;
     height: 978px;
-    top: 2791px;
+    top: calc(100vh + 2000px);
   }
   .service_main-content {
     width: auto;
@@ -1400,40 +1428,55 @@
   }
   #srvcnt {
     width: 100%;
-    font-size: 90px;
+    font-size: 80px;
   }
   #srvp {
     font-size: 18px;
   }
   #buttons {
-    width: auto;
+    width: 300px;
   }
   .btnlinks {
-    width: 395px;
+    width: 330px;
+    font-size: 40px;
+    line-height: 45px;
   }
   #testimonials {
     margin-left: 11.37%;
-    top: 3609px;
+    top: calc(100vh + 2750px);
+  }
+  #container-2{
+    gap: 150px;
+  }
+  #container-2_header{
+    font-size: 80px;
+    line-height: 85px;
+    width: 900px;
   }
   #clients {
     width: 100%;
   }
   #blog {
-    top: 4906.05px;
+    top: calc(100vh + 3950px);
     margin-left: 0%;
     gap: 10px;
     height: 1050px;
     width: 100%;
     left: 0;
+    overflow-x: hidden;
   }
   #blog_heading {
-    left: 13%;
-  }
-  .blog-home-container {
-    width: 100%;
+    left: 10.3%;
+    font-size: 80px;
+    line-height: 85px;
+    width: 700px;
+    display: inline-block;
   }
   .service_main {
-    gap: 20%;
+    gap: 30%;
+  }
+  .exp_btn{
+    margin-left: 10%;
   }
 }
 @media screen and (max-width: 1310px) {
@@ -1469,9 +1512,14 @@
     gap: 150px;
   }
   #container-2_header {
-    width: 100%;
     font-size: 70px;
     line-height: 70px;
+  }
+  #abtcnt {
+    width: 85%;
+  }
+  .service_main{
+    gap: 20%;
   }
   #blog_heading {
     font-size: 70px;
@@ -1585,34 +1633,40 @@
     height: auto;
   }
   #service {
-    top: 2400px;
+    top: calc(100vh + 1650px);
   }
   #srvcnt {
     font-size: 50px;
     line-height: 55px;
   }
   #testimonials {
-    top: 3151px;
+    top: calc(100vh + 2400px);
     margin-left: 0;
     width: 100%;
+  }
+  .test-main-container{
+    gap: 100px;
   }
   #container-2 {
     width: 90%;
     margin-left: 5%;
   }
   #container-2_header {
+    width: 100%;
     font-size: 60px;
     line-height: 60px;
   }
   .btnlinks {
-    font-size: 40px;
+    font-size: 35px;
+    line-height: 40px;
+    width: 310px;
   }
   .test-main-container {
     width: 85%;
     margin-left: 6.7%;
   }
   #blog {
-    top: 4200px;
+    top: calc(100vh + 3350px);
     left: 0;
   }
   .blog-home-container {
@@ -1628,7 +1682,7 @@
     height: 600px;
   }
   .home {
-    height: 5100px;
+    height: calc(100vh + 4300px);
   }
   .client-img1 {
     left: 5.08%;
@@ -1676,17 +1730,19 @@
 }
 @media screen and (max-width: 768px) {
   .home {
-    height: 4500px;
+    height: calc(100vh + 3650px);
   }
   .horizontalAbout {
     position: absolute;
-    top: 200px;
+    top: 0px;
   }
   .bgi {
     height: 900px;
   }
-  #hero {
-    height: 900px;
+  .bgv{
+    width: 3500px;
+    height: auto;
+    top: 0;
   }
   #imgs1 {
     align-items: start;
@@ -1730,7 +1786,7 @@
     display: none;
   }
   #abtcnt {
-    left: 6.7%;
+    left: 6%;
     top: 0;
   }
   .header1 {
@@ -1749,15 +1805,27 @@
     border: 1px solid #ffcd05;
     box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.377);
     position: absolute;
-    left: 35%;
-    top: 900px;
+    left: 33%;
+    top: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .workbt_content{
+    height: auto;
   }
   .exp_btn-content {
-    background-color: #ffc017;
+    width: 100%;
+    background-color: #ffcd05;
     color: black;
     font-weight: bold;
-    border: 1px solid #ffc017;
-    box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
+    border: 1px solid #ffcd05;
+    box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.377);
+    padding: 7px 10%;
+  }
+  .exp_btn{
+    width: 100%;
+    margin-left: 0;
   }
   .workbt_content {
     color: black;
@@ -1766,8 +1834,8 @@
     width: 100%;
     overflow-x: scroll;
     display: flex;
-    position: absolute;
-    top: 280px;
+    position: relative;
+    top: 350px;
     height: 600px;
   }
   .bg-mini-1,
@@ -1830,7 +1898,7 @@
     background-position: -100px 00px;
   }
   #service {
-    top: 1500px;
+    top: calc(100vh + 800px);
   }
   .service_main {
     flex-direction: column;
@@ -1840,16 +1908,17 @@
   }
   .service_main-content {
     text-align: center;
+    width: 100%;
+    align-items: center;
   }
   #svcbtn {
     position: relative;
     top: 600px;
-    width: 90%;
-    margin-left: 5%;
+    width: 34%;
     background-color: #ffcd05;
     color: black;
     border: 1px solid #ffcd05;
-    box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
+    box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.377);
   }
   .svcbtn_content {
     color: black;
@@ -1860,10 +1929,10 @@
     text-shadow: 0px 0px 20px white;
   }
   #testimonials {
-    top: 2550px;
+    top: calc(100vh + 1850px);
   }
   .test-main-container {
-    margin-left: 5%;
+    margin-left: 3%;
     align-items: start;
   }
   #container-2 {
@@ -1968,13 +2037,14 @@
     width: 100%;
   }
   #blog {
-    top: 3600px;
+    top: calc(100vh + 2850px);
     width: 100%;
     margin-left: 0;
   }
   #blog_heading {
-    font-size: 60px;
-    left: 5%;
+    font-size: 50px;
+    left: 0%;
+    height: auto;
     width: 95%;
     text-align: center;
   }
@@ -1994,7 +2064,7 @@
     height: auto;
   }
   #srvp {
-    font-size: 13px;
+    font-size: 15px;
   }
   #buttons {
     font-size: 30px;
@@ -2004,8 +2074,8 @@
     justify-content: center;
   }
   #abth1 {
-    font-size: 40px;
-    line-height: 38px;
+    font-size: 50px;
+    line-height: 53px;
   }
   .bg-mini-1 {
     position: absolute;
@@ -2044,14 +2114,19 @@
   #aboutbtn {
     width: 95%;
     position: absolute;
-    top: calc(92vh - 200px);
+    top: calc(92vh - 300px);
   }
   #about {
     top: 100vh;
   }
-  .allwork {
+  #abtcnt{
     width: 90%;
-    left: 10%;
+  }
+
+  .allwork {
+    width: 100%;
+    left: 0%;
+    top: 900px;
   }
   #service {
     top: calc(100vh + 800px);
@@ -2066,14 +2141,14 @@
     text-align: left;
     align-items: start;
     padding-left: 4.7%;
-    width: 90%;
+    width: 95.3%;
   }
   #srvcnt {
-    font-size: 30px;
+    font-size: 35px;
   }
   #srvp {
     line-height: 20px;
-    width: 90%;
+    width: 100%;
     font-size: 16px;
   }
   #testimonials {
@@ -2085,10 +2160,11 @@
   }
   .btnlinks {
     justify-content: start;
-    width: 280px;
   }
   #svcbtn {
     margin: 0;
+    width: 100%;
+    right: 2.5%;
   }
   #blog {
     height: auto;
@@ -2116,17 +2192,18 @@
     border-radius: 20px;
   }
   #blog_heading {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 35px;
+    line-height: 40px;
     height: auto;
     text-align: left;
     margin-bottom: 40px;
+    margin-left: 7%;
   }
   .horizontalAbout {
-    width: calc(100% + 50px);
+    width: calc(100% + 20px);
     height: 1100px;
     overflow-x: scroll;
-    left: -50px;
+    left: -20px;
   }
   .blog-icon_div-h2 {
     font-size: 25px;
@@ -2139,12 +2216,12 @@
     height: auto;
   }
   #abth1 {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 35px;
+    line-height: 40px;
   }
   #container-2_header {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 35px;
+    line-height: 40px;
   }
   .client-img1 {
     position: absolute;
@@ -2181,6 +2258,11 @@
     bottom: 12.95%;
     transition: 0.3s;
     opacity: 1;
+  }
+  .btnlinks{
+    font-size: 30px;
+    line-height: 35px;
+    width: 260px;
   }
   .client-img5 {
     position: absolute;
@@ -2235,12 +2317,12 @@
     opacity: 1;
   }
   #container-2 {
-    width: 90%;
+    width: 95%;
     margin-left: 5%;
-    gap: 80px;
+    gap: 40px;
   }
   .test-main-container {
-    gap: 70px;
+    gap: 100px;
   }
   #container-h3 {
     width: 100%;
@@ -2256,11 +2338,13 @@
     left: 5%;
   }
   .home {
-    height: calc(100vh + 3600px);
+    height: calc(100vh + 3500px);
   }
   .exp_btn-content {
     padding: 7px 25%;
     text-align: center;
+    position: relative;
+    bottom: 80px;
   }
   .blog-home-container {
     gap: 50px;

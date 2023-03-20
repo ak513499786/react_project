@@ -48,7 +48,7 @@ const HomeAbout = () => {
             <p className="workbt_content">all works</p>
           </Link>
         </div>
-        {Widht > 768 ? (
+        {Widht > 428 ? (
           <>
             <div className="bg-container">
               <div className="bg-mini-1">
