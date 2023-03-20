@@ -329,7 +329,7 @@
   .test {
     top: 0;
     left: 0%;
-    width: calc(750px);
+    width: calc(700px);
     height: 43vh;
     min-height: 400px;
     margin-bottom: 250px;
@@ -337,7 +337,7 @@
     margin-left: -165px;
     overflow-y: auto;
     overflow-x: hidden;
-    transform: rotate(-90deg) translateY(0px);
+    transform: rotate(-90deg) translateY(10px);
     transform-origin: center center;
     padding: 43px 0 0 0;
   }

@@ -84,7 +84,7 @@
 
 .testhome {
   .hideehome {
-    display: block;
+    // display: block;
     padding: 35px;
 
     // top: 0;
@@ -187,15 +187,15 @@
       // margin-bottom: 90px; */
     top: 0;
     left: 0%;
-    width: calc(750px);
+    width: calc(547px);
     height: 27vh;
     min-height: 400px;
 
-    margin-top: 369px;
-    margin-left: -99px;
+    margin-top: 400px;
+    margin-left: -158px;
     overflow-y: auto;
     overflow-x: hidden;
-    transform: rotate(-90deg) translateY(0px);
+    transform: rotate(-90deg) translateY(140px);
     transform-origin: center center;
     padding: 25px 0 0 0;
   }
