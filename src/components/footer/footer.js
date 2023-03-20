@@ -15,7 +15,7 @@ export default function Footer() {
             <img src={arrow} alt="" srcset="" className="arrow" />
           </div>
         <Link to="/let's_talk" className="link">
-          <h1 id="ftrh1" className="-ml-20">
+          <h1 id="ftrh1">
             Let's Talk
           </h1>
         </Link>

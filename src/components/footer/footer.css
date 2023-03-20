@@ -301,6 +301,9 @@
   #ftrh1 {
     font-size: 203px;
   }
+  .link{
+    gap: 0;
+  }
 }
 @media screen and (max-width: 1080px) {
   #ftrh1 {
@@ -319,6 +322,9 @@
   #ftrcnt {
     width: 100%;
     justify-content: center;
+  }
+  #socials{
+    gap: 20px;
   }
 }
 @media screen and (max-width: 768px) {
