@@ -83,17 +83,18 @@ const HomeAbout = () => {
           </>
         ) : (
           <div className="horizontalAbout">
-            <div className="teshome w-[36rem] max-md:mt-20 max-sm:mt-40">
+            <div className="teshome w-[36rem] max-md:mt-20 max-sm:mt-48">
               <Swiper
                 slidesPerView={3}
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
-                loop={true}
+                // loop={true}
+                freeMode = {true}
                 // breakpoints
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //   delay: 2500,
+                //   disableOnInteraction: false,
+                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
@@ -124,8 +125,8 @@ const HomeAbout = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper h  mt-20 max-md:mt-0  w-[100%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
               >
-                <SwiperSlide className="cass mr-0 flex justify-center items-center">
-                  <div className="imghome1 hideehome">
+                <SwiperSlide className="cs mr-0 flex justify-center items-center -ml-16">
+                  <div className="imghome1 hiehome">
                     <div className="bghome"></div>
                     <div id="i" className="p-5">
                       <h1>COWBOY</h1>
@@ -135,8 +136,8 @@ const HomeAbout = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
-                  <div className="imghome1 hideehome">
+                <SwiperSlide className="cs flex justify-center items-center ">
+                  <div className="imghome1 hiehome">
                     <div className="bghome2"></div>
                     <div id="i" className="p-5">
                       <h1>COWBOY</h1>
@@ -146,8 +147,8 @@ const HomeAbout = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
-                  <div className="imghome1 hideehome">
+                <SwiperSlide className="c flex justify-center items-center ">
+                  <div className="imghome1 hiehome">
                     <div className="bghome3"></div>
                     <div id="i" className="p-5">
                       <h1>COWBOY</h1>
@@ -157,8 +158,8 @@ const HomeAbout = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
-                  <div className="imghome1 hideehome">
+                <SwiperSlide className="s flex justify-center items-center ">
+                  <div className="imghome1 hiehome">
                     <div className="bghome4"></div>
                     <div id="i" className="p-5">
                       <h1>COWBOY</h1>
