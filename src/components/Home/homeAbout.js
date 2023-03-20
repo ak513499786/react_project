@@ -83,46 +83,92 @@ const HomeAbout = () => {
           </>
         ) : (
           <div className="horizontalAbout">
-            <div className="testhome">
-              <div className="imghome1 hideehome">
-                <div className="bghome"></div>
-                <div id="i" className="p-5">
-                  <h1>COWBOY</h1>
-                  <p id="imgsp" className="coloo">
-                    shopify platform design + development
-                  </p>
-                </div>
-              </div>
-
-              <div className="imghome1 hideehome">
-                <div className="bghome2"></div>
-                <div id="i" className="p-5">
-                  <h1>COWBOY</h1>
-                  <p id="imgsp" className="coloo">
-                    shopify platform design + development
-                  </p>
-                </div>
-              </div>
-
-              <div className="imghome1 hideehome">
-                <div className="bghome3"></div>
-                <div id="i" className="p-5">
-                  <h1>COWBOY</h1>
-                  <p id="imgsp" className="coloo">
-                    shopify platform design + development
-                  </p>
-                </div>
-              </div>
-
-              <div className="imghome1 hideehome">
-                <div className="bghome4"></div>
-                <div id="i" className="p-5">
-                  <h1>COWBOY</h1>
-                  <p id="imgsp" className="coloo">
-                    shopify platform design + development
-                  </p>
-                </div>
-              </div>
+            <div className="teshome w-[36rem] max-md:mt-20 max-sm:mt-40">
+              <Swiper
+                slidesPerView={3}
+                slidesPerGroupSkip={1}
+                spaceBetween={10}
+                loop={true}
+                // breakpoints
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    containerClass: "half-image-container",
+                  },
+                  435: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  90: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1060: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper h  mt-20 max-md:mt-0  w-[100%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
+              >
+                <SwiperSlide className="cass mr-0 flex justify-center items-center">
+                  <div className="imghome1 hideehome">
+                    <div className="bghome"></div>
+                    <div id="i" className="p-5">
+                      <h1>COWBOY</h1>
+                      <p id="imgsp" className="coloo">
+                        shopify platform design + development
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="cass flex justify-center items-center">
+                  <div className="imghome1 hideehome">
+                    <div className="bghome2"></div>
+                    <div id="i" className="p-5">
+                      <h1>COWBOY</h1>
+                      <p id="imgsp" className="coloo">
+                        shopify platform design + development
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="cass flex justify-center items-center">
+                  <div className="imghome1 hideehome">
+                    <div className="bghome3"></div>
+                    <div id="i" className="p-5">
+                      <h1>COWBOY</h1>
+                      <p id="imgsp" className="coloo">
+                        shopify platform design + development
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="cass flex justify-center items-center">
+                  <div className="imghome1 hideehome">
+                    <div className="bghome4"></div>
+                    <div id="i" className="p-5">
+                      <h1>COWBOY</h1>
+                      <p id="imgsp" className="coloo">
+                        shopify platform design + development
+                      </p>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
         )}

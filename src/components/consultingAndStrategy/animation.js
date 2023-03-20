@@ -9,17 +9,22 @@ const Animation = () => {
   const handleScroll = (event) => {
     const { scrollTop } = event.target;
     verticalRef.current.scrollTop = scrollTop;
-    horizontalRef.current.scrollLeft = scrollTop/1.5;
+    horizontalRef.current.scrollLeft = scrollTop / 1.5;
   };
   if (url.pathname === "/consultingandstrategy") {
     return (
-      <div ref={verticalRef} style={{ display: "flex", height: "400px" }}>
+      <div
+        ref={verticalRef}
+        style={{ display: "flex", height: "400px" }}
+        className="item-center justify-center"
+      >
         <div
           style={{
             overflowY: "scroll",
             marginRight: "0px",
             paddingRight: "x0px",
             height: "300px",
+            width: "100%",
           }}
           onScroll={handleScroll}
         >
@@ -105,11 +110,12 @@ const Animation = () => {
         <div
           ref={verticalRef}
           style={{
-            
             overflowY: "scroll",
             // marginRight: "20px",
             paddingRight: "20px",
             height: "300px",
+            width: "100%",
+
           }}
           onScroll={handleScroll}
         >
@@ -212,6 +218,8 @@ const Animation = () => {
             // marginRight: "20px",
             paddingRight: "20px",
             height: "300px",
+            width: "100%",
+
           }}
           onScroll={handleScroll}
         >
@@ -329,6 +337,8 @@ const Animation = () => {
             marginRight: "20px",
             paddingRight: "20px",
             height: "300px",
+            width: "100%",
+
           }}
           onScroll={handleScroll}
         >

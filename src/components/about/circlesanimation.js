@@ -30,7 +30,7 @@ export default function Circles() {
 
   return (
     <div
-      className="circles-animation"
+      className="circles-animation max-md:mt-40"
       onMouseOver={mouseOverAnimation}
       onMouseOut={mouseOutAnimation}
     >
