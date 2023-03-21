@@ -59,10 +59,8 @@ const Case = () => {
               Take A Peek At Our <br /> Case Study
             </h1>
             <p className="down text-center mt-8 max-md:p-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              accusantium in optio dolore sed molestiae maiores odit facere
-              asperiores dolor, dolorum voluptate, vel, harum ab mollitia
-              repellat assumenda quasi incidunt.
+              We handle all our projects with the utmost discretion. Through our
+              case studies take a look at how we drive growth for our clients.
             </p>
           </div>
           <Swiper

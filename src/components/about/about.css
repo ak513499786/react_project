@@ -158,7 +158,7 @@
   flex-direction: column;
   gap: 30px;
   position:sticky;
-  top: 0px;
+  top: 70px;
   height: 260px;
 }
 .guiding-skip {

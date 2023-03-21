@@ -18,11 +18,17 @@ const Vision = () => {
 
   window.onscroll = function () {
     scrollSpin();
-};
+  };
   const scrollSpin = () => {
-    gsap.to(spinimg1, {transform : "rotate(" + window.pageYOffset/3 + "deg)"});
-    gsap.to(spinimg2, {transform : "rotate(" + window.pageYOffset/3 + "deg)"});
-    gsap.to(spinimg3, {transform : "rotate(" + window.pageYOffset/3 + "deg)"});
+    gsap.to(spinimg1, {
+      transform: "rotate(" + window.pageYOffset / 3 + "deg)",
+    });
+    gsap.to(spinimg2, {
+      transform: "rotate(" + window.pageYOffset / 3 + "deg)",
+    });
+    gsap.to(spinimg3, {
+      transform: "rotate(" + window.pageYOffset / 3 + "deg)",
+    });
   };
 
   const arrowRotate = () => {
@@ -46,16 +52,16 @@ const Vision = () => {
     <>
       <section className="core-container">
         <p className="core-para">
-          We are a digital product development and UX design firm determined to
-          make an impact through our clients. With the finest end-user
-          experience as our primary objective we intergrate our tech expertise
-          with a social conscience to build digital products.
+          A digital product development and UX design firm determined to make an
+          impact through clients. We integrate our tech expertise with a social
+          conscience to build digital products that provide end-user with the
+          finest experience.
         </p>
         <div className="vision-container">
           <h2 className="visionh1">Our Vision</h2>
           <p className="vision-para">
-            To propel humanity forward by building digital products for
-            businesses that enrich people's lives.
+            To propel humanity forward by building digital products that uplift
+            our client's value proposition and enrich their users' lives.
           </p>
         </div>
         <div className="core-guiding-container">
@@ -63,9 +69,8 @@ const Vision = () => {
             <h2 className="guiding-container-h1">Guiding Principle</h2>
             <p className="guiding-container-para">
               Crafting ideal, innovative and impactful digital products are the
-              three core pillars around which each of our projects is
-              centred.Despite capital mindset overtaking business practices, our
-              guiding principles enable us to adhere to our core and deliver
+              three core pillars around which each of our projects is centred.
+              Our guiding principles enable us to adhere to our core and deliver
               exceptional projects.
             </p>
             <div className="guiding-skip">
