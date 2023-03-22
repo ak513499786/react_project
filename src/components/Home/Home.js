@@ -13,6 +13,8 @@ import Footer from "../footer/footer";
 // import Blog from "../blog/Blog";
 import AnimatedCursor from "react-animated-cursor";
 
+import LazyLoad from "react-lazy-load";
+
 export default function Home() {
   let fade = useRef(null);
 
@@ -25,7 +27,6 @@ export default function Home() {
 
   return (
     <>
-      
       <Navbar />
 
       <main ref={(el) => (fade = el)} className="home">

@@ -1,3 +1,4 @@
+import "./styles/clients.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import HorizontalScroll from "react-horizontal-scrolling";
 
@@ -6,10 +7,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper"; // import "./all.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
-import "./styles/clients.css";
 import image2 from "./images/Frame 43.svg";
+// import image5 from "./images/Frame 3.svg";
 import image3 from "./images/Frame 44.svg";
 import image4 from "./images/Frame 472.svg";
 // import imgqq from "../blog/blogimages/Frame 44.png";
@@ -19,54 +20,35 @@ import { gsap, TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 
 const BlogHome = () => {
-  const onEnter = ({ currentTarget }) => {
-    gsap.to(currentTarget, {
-      backgroundColor: "#ffcd05",
-      scale: 0.9,
-    });
-  };
-  const onLeave = ({ currentTarget }) => {
-    gsap.to(currentTarget, { backgroundColor: "#0D0D0D", scale: 1 });
-  };
-  const breakpoints = {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      containerClass: "half-image-container",
-    },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-  };
   const [Widht, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
+  const swiperRef = useRef(null);
 
   return (
     <>
       {/* {Widht >= 920 ? ( */}
       <>
-        {/* <AnimatedCursor color="255, 255, 255" /> */}
         <div id="blog">
           <div id="blog_heading" className="-ml-20">
             We Pen Down Our Brightest Ideas
           </div>
-          <div className="max-w-[100%] homeidea -ml-16 max-lg:ml-0">
+          <div
+            onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
+            onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
+            className="max-w-[100%] homeidea -ml-32 max-lg:ml-0"
+          >
             <Swiper
-              slidesPerView={3}
+              ref={swiperRef}
+              slidesPerView={4}
               slidesPerGroupSkip={1}
               spaceBetween={10}
               loop={true}
-              // breakpoints
               autoplay={{
                 delay: 2500,
-                disableOnInteraction: false,
+                disableOnInteraction: true,
+                waitForTransition: true,
               }}
               breakpoints={{
                 320: {
@@ -96,7 +78,7 @@ const BlogHome = () => {
                 },
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="mySwiper h-[35rem] mt-20 max-md:mt-0  w-[115%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
+              className=" swiper-container mySwiper h-[35rem] mt-20 max-md:mt-0  w-[115%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
             >
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
@@ -211,7 +193,7 @@ const BlogHome = () => {
               </SwiperSlide>
             </Swiper>
 
-            <div className=" flex justify-center items-center -mt-2 -ml-2">
+            <div className=" flex justify-center items-center -mt-2 ml-36">
               <button className="exp_btn ">
                 <Link to="/blog" className="exp_btn-content -mt4">
                   explore more
