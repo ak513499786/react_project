@@ -13,7 +13,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #d8d6d6;
+  color: #f6f6f6;
 }
 .blog-content-section {
   display: flex;
@@ -35,7 +35,7 @@
   height: 42.3px;
 }
 .blog-btn-content {
-  color: #848484;
+  color: #cecece;
   font-weight: 900;
   font-size: 28px;
   font-family: graphikthin;
@@ -97,8 +97,7 @@
   line-height: 46px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #d8d6d6;
-  opacity: 0.8;
+  color: #f6f6f6;
   text-align: center;
 }
 .blog-para {
@@ -110,8 +109,7 @@
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #d8d6d6;
-  opacity: 0.6;
+  color: #cecece;
 }
 .blog-btns {
   width: 103px;
@@ -123,7 +121,6 @@
   line-height: 113.3%;
   letter-spacing: -0.045em;
   color: #848484;
-  opacity: 0.8;
 }
 .arrow-left-right {
   display: flex;

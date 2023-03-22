@@ -173,7 +173,7 @@ const BlogHome = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
-            <div className=" flex justify-center items-center -mt-2 -ml-10">
+            <div className=" flex justify-center items-center -mt-2 -ml-40">
               <button className="exp_btn ">
                 <Link to="/blog" className="exp_btn-content -mt4">
                   explore more
