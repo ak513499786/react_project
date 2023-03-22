@@ -1,19 +1,21 @@
 .widthh {
   max-width: 1225px;
 }
+
 .rights {
   width: 100%;
 }
+
 .leftss {
   width: 57%;
 }
+
 .subcontainer-img {
   display: inline-block;
   width: 60px;
   margin-right: 20px;
 }
-.subcontainer-img img:hover {
-}
+
 @media (max-width: 768px) {
   .lefts {
     width: 115%;
@@ -27,4 +29,4 @@
     padding: 20px;
   }
 }
- 
+/*# sourceMappingURL=vision.css.map */
