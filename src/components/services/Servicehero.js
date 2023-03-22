@@ -66,7 +66,7 @@ export default function Serviceshero() {
                 </SwiperSlide>
                 <SwiperSlide className="">
                   <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-4xl font-extrabold text-white">
-                    Stretegy To Execution
+                    Strategy To Execution
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide className="">

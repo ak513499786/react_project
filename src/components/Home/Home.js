@@ -11,9 +11,8 @@ import Testimonials from "./Testmonials";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 // import Blog from "../blog/Blog";
-import AnimatedCursor from "react-animated-cursor";
 
-import LazyLoad from "react-lazy-load";
+// import LazyLoad from "react-lazy-load";
 
 export default function Home() {
   let fade = useRef(null);

@@ -19,7 +19,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #d8d6d6;
+  color: #f6f6f6;
 }
 .intersect {
   width: 182px;
@@ -36,7 +36,7 @@
   width: 182px;
   height: 182px;
   border-radius: 100%;
-  border: 1px solid #848484;
+  border: 1px solid #cecece;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
   width: 182px;
   height: 182px;
   border-radius: 100%;
-  border: 1px solid #848484;
+  border: 1px solid #cecece;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,7 +64,7 @@
   margin-left: 9.6%;
 }
 .crewpara {
-  color: #848484;
+  color: #cecece;
   font-family: graphik;
   font-weight: 100;
   opacity: 0.9;
@@ -79,7 +79,7 @@
   gap: 10px;
   width: 140px;
   height: 42px;
-  border: 1px solid #848484;
+  border: 1px solid #cecece;
   border-radius: 72px;
   text-decoration: none;
   transition: 0.3s;
@@ -92,7 +92,7 @@
   letter-spacing: -0.045em;
   font-family: graphik;
   font-weight: 100;
-  color: #848484;
+  color: #cecece;
   padding-bottom: 4px;
 }
 .career-crew-btn:hover {
@@ -120,7 +120,7 @@
   line-height: 32px;
   font-family: graphik;
   font-weight: 100;
-  color: #848484;
+  color: #cecece;
   opacity: 0.9;
 }
 .vision-container {
@@ -134,14 +134,13 @@
 .visionh1 {
   font-size: 50px;
   font-weight: 600;
-  color: #d8d6d6;
+  color: #f6f6f6;
 }
 .vision-para {
   font-size: 32px;
   line-height: 42px;
   font-family: graphik;
-  color: #848484;
-  opacity: 0.9;
+  color: #cecece;
   font-weight: 100;
   display: flex;
   align-items: center;
@@ -167,7 +166,7 @@
 }
 .guiding-container-h1 {
   font-size: 35px;
-  color: #d8d6d6;
+  color: #f6f6f6;
   font-family: graphikthin;
   font-weight: 600;
 }
@@ -176,7 +175,7 @@
   line-height: 30px;
   font-family: graphik;
   font-weight: 100;
-  color: #848484;
+  color: #cecece;
   font-weight: 100;
 }
 .subcontainer-img {
@@ -188,10 +187,9 @@
 .subcontainer-h1 {
   display: inline-block;
   font-size: 35px;
-  color: #d8d6d6;
+  color: #f6f6f6;
   font-family: graphikthin;
   font-weight: 600;
-  opacity: 0.9;
 }
 .iframe-container {
   width: 100%;
@@ -213,7 +211,7 @@
   font-family: graphik;
   font-weight: 100;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
   text-indent: 80px;
 }
 .guiding-subcontainer {
@@ -258,7 +256,6 @@
   .guiding-container-para {
     font-size: 15px;
     line-height: 25px;
-    color: #848484;
   }
   .subcontainer-para {
     font-size: 15px;

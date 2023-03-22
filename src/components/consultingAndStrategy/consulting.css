@@ -9,7 +9,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #d8d6d6;
+  color: #f6f6f6;
   position: absolute;
   height: 176px;
   left: 184px;
@@ -51,7 +51,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #ebebeb;
+  color: #f6f6f6;
 }
 .vertical-animation-para {
   width: 614.87px;
@@ -61,8 +61,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #848484;
-  opacity: 0.6;
+  color: #cecece;
 }
 .horizontal-animation {
   overflow-x: scroll;
@@ -90,7 +89,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
   list-style: none;
 }
 @media screen and (min-width: 1441px) and (max-width: 1540px) {
