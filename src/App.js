@@ -17,6 +17,7 @@ import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Client from "./components/Home/client";
 import Dummy from "./components/Home/Dummy";
+import Cursor from "./components/work/Cursor";
 
 function App() {
   window.scroll({
@@ -35,7 +36,8 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
+          <Route exact path="/" element={<Cursor />} />
           {/* <Route exact path="/" element={<Dummy />} /> */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />

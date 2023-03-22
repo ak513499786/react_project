@@ -35,7 +35,7 @@ export default function Client() {
       setLogo8Opacity(Math.random());
       setLogo9Opacity(Math.random());
       setLogo10Opacity(Math.random());
-    }, 1000);
+    }, 2500);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -166,6 +166,6 @@ export default function Client() {
         />
       </div>
     </>
-    // >>>>>>> cf43176c7766f4b31cb4810966493754162b7074
+
   );
 }
