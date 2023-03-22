@@ -23,7 +23,6 @@ function App() {
   });
   return (
     <div>
-      {/* <AnimatedCursor color="255, 255, 255"/> */}
       <AnimatedCursor
         innerSize={8}
         outerSize={0}
