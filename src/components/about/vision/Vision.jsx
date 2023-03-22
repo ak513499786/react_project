@@ -21,13 +21,13 @@ const Vision = () => {
   };
   const scrollSpin = () => {
     gsap.to(spinimg1, {
-      transform: "rotate(" + window.pageYOffset / 3 + "deg)",
+      transform: "rotate(" + window.pageYOffset / 3.75 + "deg)",
     });
     gsap.to(spinimg2, {
-      transform: "rotate(" + window.pageYOffset / 3 + "deg)",
+      transform: "rotate(" + window.pageYOffset / 3.75 + "deg)",
     });
     gsap.to(spinimg3, {
-      transform: "rotate(" + window.pageYOffset / 3 + "deg)",
+      transform: "rotate(" + window.pageYOffset / 3.75 + "deg)",
     });
   };
 

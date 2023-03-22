@@ -52,31 +52,38 @@ export default function Client() {
   //         setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
   //         break;
   //       case 3:
+  //         setLogo1Opacity(logo1Opacity === 1 ? 0.5 : 1);
   //         setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
   //         break;
   //       case 4:
   //         setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
+  //         setLogo2Opacity(logo2Opacity === 1 ? 0.5 : 1);
   //         break;
   //       case 5:
   //         setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
+  //         setLogo6Opacity(logo6Opacity === 1 ? 0.5 : 1);
   //         break;
   //       case 6:
   //         setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
+  //         setLogo7Opacity(logo7Opacity === 1 ? 0.5 : 1);
   //         break;
   //       case 7:
   //         setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
+  //         setLogo5Opacity(logo5Opacity === 1 ? 0.5 : 1);
   //         break;
   //       case 8:
   //         setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
+  //         setLogo3Opacity(logo3Opacity === 1 ? 0.5 : 1);
   //         break;
   //       case 9:
   //         setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
+  //         setLogo4Opacity(logo4Opacity === 1 ? 0.5 : 1);
   //         break;
 
   //       default:
   //         break;
   //     }
-  //     setCurrentLogoIndex((currentLogoIndex) => (currentLogoIndex + 6) % 10);
+  //     setCurrentLogoIndex((currentLogoIndex) => currentLogoIndex + 1);
   //   }, 1000);
 
   //   return () => clearInterval(intervalId);
