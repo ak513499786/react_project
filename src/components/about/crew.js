@@ -23,18 +23,18 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">01</p>
-                <span className="strategist"> Design Architects</span>
+                <span className="strategist">The <br /> Design Architects</span>
               </h1>
               <p className="m-desc">
-                the Design Architects will orchestrate the project development
+                The Design Architects orchestrate the project development
                 process. From capturing customer expectations to managing the
-                budget - they will do it all.
+                budget - they do it all.
               </p>
             </div>
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">02</p>
-                <span className="strategist">Strategists</span>
+                <span className="strategist">The <br /> Strategists</span>
               </h1>
               <p className="m-desc">
                 They are the geniuses responsible for formulating, documenting,
@@ -45,10 +45,10 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">03</p>
-                <span className="strategist">Tech Experts</span>
+                <span className="strategist">The <br /> Tech Experts</span>
               </h1>
               <p className="m-desc">
-                Our Tech Experts will devise the perfect strategy, prepare a
+                Our Tech Experts devise the perfect strategy, prepare a
                 detailed roadmap, and leverage the right technology to help you
                 achieve your goals.
               </p>
@@ -56,10 +56,10 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">04</p>
-                <span className="strategist">Delivery Managers</span>
+                <span className="strategist">The <br /> Delivery Managers</span>
               </h1>
               <p className="m-desc">
-                Your point-of-contact with Codelinear, who will keep you
+                Your point-of-contact with Codelinear, who  keeps you
                 apprised on all the ins and outs of your project and its status.
               </p>
             </div>

@@ -25,6 +25,7 @@ export default function Blogsection() {
   let col2 = useRef(null);
   let col3 = useRef(null);
   let arrow = useRef(null);
+  let all = useRef(null);
 
   const onClickSort = () => {
     gsap.to(digitalmarketing, 0, { display: "none" });
@@ -39,6 +40,7 @@ export default function Blogsection() {
     gsap.to(arrow, 0, { display: "none" });
 
     gsap.to(col1, 0, { display: "flex" });
+    gsap.to(all, 0, { visibility: "visible" });
     gsap.to(empathy1, 0, { display: "flex" });
     gsap.to(empathy2, 0, { display: "flex" });
   };
@@ -55,13 +57,14 @@ export default function Blogsection() {
     gsap.to(arrow, 0, { display: "none" });
 
     gsap.to(NCR1, 0, { display: "flex" });
+    gsap.to(all, 0, { visibility: "visible" });
     gsap.to(NCR2, 0, { display: "flex" });
     gsap.to(col3, 0, { display: "flex" });
   };
   const onClickSort3 = () => {
     gsap.to(digitalmarketing, 0, { display: "none" });
-    gsap.to(MVP1, 0, { display: "none" });
-    gsap.to(MVP2, 0, { display: "none" });
+    gsap.to(NCR1, 0, { display: "none" });
+    gsap.to(NCR2, 0, { display: "none" });
     gsap.to(empathy1, 0, { display: "none" });
     gsap.to(empathy2, 0, { display: "none" });
     gsap.to(design, 0, { display: "none" });
@@ -71,6 +74,24 @@ export default function Blogsection() {
     gsap.to(arrow, 0, { display: "none" });
 
     gsap.to(MVP1, 0, { display: "flex" });
+    gsap.to(all, 0, { visibility: "visible" });
+    gsap.to(MVP2, 0, { display: "flex" });
+    gsap.to(col2, 0, { display: "flex" });
+  };
+  const onClickSort1 = () => {
+    gsap.to(digitalmarketing, 0, { display: "flex" });
+    gsap.to(NCR1, 0, { display: "flex" });
+    gsap.to(NCR2, 0, { display: "flex" });
+    gsap.to(empathy1, 0, { display: "flex" });
+    gsap.to(empathy2, 0, { display: "flex" });
+    gsap.to(design, 0, { display: "flex" });
+    gsap.to(SVM, 0, { display: "flex" });
+    gsap.to(col1, 0, { display: "flex" });
+    gsap.to(col3, 0, { display: "flex" });
+    gsap.to(arrow, 0, { display: "flex" });
+
+    gsap.to(MVP1, 0, { display: "flex" });
+    gsap.to(all, 0, { visibility: "hidden" });
     gsap.to(MVP2, 0, { display: "flex" });
     gsap.to(col2, 0, { display: "flex" });
   };
@@ -78,6 +99,16 @@ export default function Blogsection() {
     <>
       <section className="blog-content-section">
         <div className="blog-btns">
+          <p
+            className="blog-btn-content"
+            ref={(el) => (all = el)}
+            style={{
+              visibility: "hidden",
+            }}
+            onClick={onClickSort1}
+          >
+            All
+          </p>
           <p className="blog-btn-content" onClick={onClickSort}>
             UX
           </p>
@@ -87,7 +118,6 @@ export default function Blogsection() {
           <p className="blog-btn-content" onClick={onClickSort3}>
             MVP
           </p>
-          <p className="blog-btn-content">Rice Ricotta</p>
         </div>
       </section>
       <section>

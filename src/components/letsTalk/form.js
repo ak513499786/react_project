@@ -26,9 +26,12 @@ export default function form() {
               required
             />
             <div className="number">
-              <select name="" id="" className="tele">
-                <option value="">+91</option>
-              </select>
+              <input
+                type="number"
+                placeholder="+91 -"
+                className="tele"
+                required
+              />
               <input
                 type="number"
                 placeholder="Phone*"
