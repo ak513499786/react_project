@@ -110,10 +110,10 @@ const Card = () => {
                 </div>
 
                 <button
-                  className="my-24 hover:text-black -20"
+                  className="my-24 hover:text-black -20 "
                   onClick={toggleCase}
                 >
-                  <div className="exploree hidee hover:text-black max-md:mx-0 flex items-center justify-center">
+                  <div className="exploree card111 hidee max-md:mx-0 mx-10 ml-10 flex flex-col justify-cnter   p-10">
                     <div className="flex w-full justify-center hover:text-black items-center h-full">
                       <h1 className="text-4xl extra  hover:text-black font-extrabold ">
                         Explore More
