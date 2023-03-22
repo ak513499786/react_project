@@ -31,7 +31,7 @@ input:focus {
   line-height: 100px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #d8d6d6;
+  color: #f6f6f6;
 }
 .contact-hero-para {
   width: 655.97px;
@@ -43,7 +43,7 @@ input:focus {
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
 }
 .contact-form {
   display: flex;
@@ -73,7 +73,7 @@ input:focus {
   text-align: center;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #d8d6d6;
+  color: #f6f6f6;
 }
 #form {
   display: flex;
@@ -101,7 +101,6 @@ input:focus {
   align-items: flex-start;
   padding: 0px;
   gap: 15px;
-  color: #d8d6d6;
   width: 390.36px;
   height: 43px;
   background-color: transparent;
@@ -195,13 +194,13 @@ input:focus {
   top: 0px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 35px;
   line-height: 113.3%;
   text-align: center;
   letter-spacing: -0.045em;
   text-transform: capitalize;
-  color: #ebebeb;
+  color: #f6f6f6;
 }
 .address-p {
   position: relative;
@@ -211,24 +210,24 @@ input:focus {
   top: 63.04px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
 }
 .address-loc {
   width: 506px;
   height: 50px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 35px;
   line-height: 50px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
 }
 .sub_btn {
   display: flex;
@@ -239,7 +238,7 @@ input:focus {
   gap: 10px;
   width: 270px;
   height: 42px;
-  border: 1px solid #848484;
+  border: 1px solid #cecece;
   border-radius: 72px;
   transition: 0.3s;
 }
@@ -250,7 +249,7 @@ input:focus {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
   white-space: nowrap;
 }
 .phone-number::placeholder{

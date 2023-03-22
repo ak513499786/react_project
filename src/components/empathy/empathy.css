@@ -48,7 +48,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #848484;
+  color: #cecece;
   opacity: 0.8;
 }
 .empathy-hero-h1 {
@@ -59,8 +59,7 @@
   line-height: 100px;
   letter-spacing: -0.03em;
   text-transform: capitalize;
-  color: #d8d6d6;
-  opacity: 0.8;
+  color: #f6f6f6;
   white-space: nowrap;
 }
 .empathy-inner-content {
@@ -92,12 +91,11 @@
   height: 50px;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 35px;
   line-height: 50px;
   letter-spacing: -0.03em;
-  color: #848484;
-  opacity: 0.8;
+  color: #cecece;
 }
 .empathy {
   width: 100%;
@@ -117,10 +115,10 @@
   width: 100%;
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 20px;
   line-height: 202.5%;
-  color: #848484;
+  color: #cecece;
 }
 .empathy-h1 {
   width: 67.2%;
@@ -130,7 +128,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #ebebeb;
+  color: #f6f6f6;
   text-align: center;
 }
 @media screen and (max-width: 1880px) {
