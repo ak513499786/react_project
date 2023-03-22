@@ -3,6 +3,7 @@ import Workhero from "./Workhero";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 import Card from "./card/Card";
+import Dummy from "../Home/Dummy";
 
 export default function Work() {
   return (
@@ -10,6 +11,7 @@ export default function Work() {
       <Navbar />
       <Workhero />
       <Card />
+      {/* <Dummy /> */}
       <Footer />
     </>
   );
