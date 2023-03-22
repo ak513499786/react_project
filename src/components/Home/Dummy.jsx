@@ -1,211 +1,112 @@
 import React, { useRef } from "react";
-import HorizontalScroll from "react-scroll-horizontal";
 
 function Dummy() {
-  const containerRef = useRef(null);
+  const parentDivRef = useRef(null);
+  const leftDivRef = useRef(null);
+  const rightDivRef = useRef(null);
 
-  const handleWheel = (event) => {
-    event.preventDefault();
-    const container = containerRef.current;
-    container.scrollTo({
-      left:
-        container.scrollLeft +
-        Math.abs(event.deltaY) * (event.deltaY > 0 ? 1 : -1),
-      behavior: "smooth",
-    });
+  const handleParentScroll = () => {
+    if (leftDivRef.current && rightDivRef.current) {
+      leftDivRef.current.scrollLeft = parentDivRef.current.scrollTop;
+      rightDivRef.current.scrollTop = parentDivRef.current.scrollLeft;
+    }
   };
-  const child = { width: `30em`, height: `50em` };
-  const parent = { width: `100em`, height: `50em  ` };
 
   return (
-    <>
-      <div style={parent}>
-        <HorizontalScroll reverseScroll={1}>
-          <div
-            // style={child}
-            className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 "
-          >
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
+    <div
+      ref={parentDivRef}
+      style={{ position: "relative", height: "500px", overflow: "scroll" }}
+      onScroll={handleParentScroll}
+    >
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "80%",
+          height: "100%",
+        }}
+        ref={leftDivRef}
+      >
+        {/* content for left div */}
+        <div style={{ height: "2000px" }}>
+          <div className="vertical-animation-container">
+            <h1 className="vertical-animation-h1">Market Research</h1>
+            <p className="vertical-animation-para">
+              As technology is propelling the world into a new realm of
+              disruptions, our strategic market research enables you to identify
+              the viability of the product by directly taking insights from
+              targeted consumers and market trends, enabling you to make
+              decisions driven by consumer behaviour and data.
             </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
           </div>
-          <div
-            // style={child}
-            className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 "
-          >
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
+          <div className="vertical-animation-container">
+            <h1 className="vertical-animation-h1">Market Research</h1>
+            <p className="vertical-animation-para">
+              As technology is propelling the world into a new realm of
+              disruptions, our strategic market research enables you to identify
+              the viability of the product by directly taking insights from
+              targeted consumers and market trends, enabling you to make
+              decisions driven by consumer behaviour and data.
             </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
           </div>
-          <div
-            // style={child}
-            className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 "
-          >
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
+          <div className="vertical-animation-container">
+            <h1 className="vertical-animation-h1">Market Research</h1>
+            <p className="vertical-animation-para">
+              As technology is propelling the world into a new realm of
+              disruptions, our strategic market research enables you to identify
+              the viability of the product by directly taking insights from
+              targeted consumers and market trends, enabling you to make
+              decisions driven by consumer behaviour and data.
             </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-          <div
-            // style={child}
-            className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 "
-          >
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-          <div
-            // style={child}
-            className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 "
-          >
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-          <div
-            // style={child}
-            className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 "
-          >
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-          {/* <div style={child} />
-          <div style={child} /> */}
-        </HorizontalScroll>
-      </div>
-      {/* <HorizontalScroll>
-        <div className="flex">
-          <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
-            <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-
-          <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
-            <h1 className="text-5xl mt-24 wcw">MANGO</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-
-          <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-            <h1 className="text-5xl mt-24 wcw">William Abraham</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-
-          <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
-            <h1 className="text-5xl mt-24 wcw">Lyra Health</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
-          </div>
-
-          <div className="klub hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-            <h1 className="text-5xl mt-24 wcw">klub</h1>
-            <p className="colo my-10 mt-20">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-              iusto deleniti, rem atque laborum tempore, reprehenderit minima
-              enim mollitia quae pariatur ipsum ipsa esse nostrum fugit. Modi
-              minima error tempore.
-            </p>
-            <div className=" mt-5 max-lg:ml-0 ">
-              <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
-                View case study
-              </button>
-            </div>
           </div>
         </div>
-      </HorizontalScroll> */}
-    </>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: "80%",
+          width: "20%",
+          height: "100%",
+        }}
+        ref={rightDivRef}
+      >
+        {/* content for right div */}
+        <div className="flex" style={{ width: "2000px", height: "100%" }}>
+          <div className="vertical-animation-container">
+            <h1 className="vertical-animation-h1">Market Research</h1>
+            <p className="vertical-animation-para">
+              As technology is propelling the world into a new realm of
+              disruptions, our strategic market research enables you to identify
+              the viability of the product by directly taking insights from
+              targeted consumers and market trends, enabling you to make
+              decisions driven by consumer behaviour and data.
+            </p>
+          </div>
+          <div className="vertical-animation-container">
+            <h1 className="vertical-animation-h1">Market Research</h1>
+            <p className="vertical-animation-para">
+              As technology is propelling the world into a new realm of
+              disruptions, our strategic market research enables you to identify
+              the viability of the product by directly taking insights from
+              targeted consumers and market trends, enabling you to make
+              decisions driven by consumer behaviour and data.
+            </p>
+          </div>
+          <div className="vertical-animation-container">
+            <h1 className="vertical-animation-h1">Market Research</h1>
+            <p className="vertical-animation-para">
+              As technology is propelling the world into a new realm of
+              disruptions, our strategic market research enables you to identify
+              the viability of the product by directly taking insights from
+              targeted consumers and market trends, enabling you to make
+              decisions driven by consumer behaviour and data.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

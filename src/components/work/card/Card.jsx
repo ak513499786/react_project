@@ -110,7 +110,7 @@ const Card = () => {
                 </div>
 
                 <button
-                  className="my-24 hover:text-black -20 "
+                  className="my-36 hover:text-black -20 "
                   onClick={toggleCase}
                 >
                   <div className="exploree card111 hidee max-md:mx-0 mx-10 ml-10 flex flex-col justify-cnter   p-10">
