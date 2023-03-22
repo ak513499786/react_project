@@ -35,8 +35,8 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          {/* <Route exact path="/" element={<Home />} /> */}
-          <Route exact path="/" element={<Dummy />} />
+          <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/" element={<Dummy />} /> */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/career" element={<Career />} />
