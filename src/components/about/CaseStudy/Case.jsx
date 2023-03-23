@@ -37,14 +37,14 @@ const Case = () => {
 
   return (
     <>
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={1}
         outerSize={1}
         color="255, 255, 255"
         outerAlpha={0}
         innerScale={0}
         outerScale={0}
-      />
+      /> */}
       {/* {Widht > 1300 ? ( */}
       <div className="circle flex mt-60 justify-center h-full relative  items-center">
         <div className="width max-w-[1340px] w-full flex-col h-full items-center flex justify-center relative">

@@ -26,14 +26,14 @@ function App() {
   return (
     <div>
       <AnimatedCursor
-        innerSize={12}
+        innerSize={8}
         outerSize={0}
         color="255, 255, 255"
-        outerAlpha={5}
+        outerAlpha={0}
         innerScale={1.2}
         outerScale={5}
       />
-      <Cursor>
+      {/* <Cursor> */}
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
@@ -57,7 +57,7 @@ function App() {
             <Route exact path="/empathy" element={<Empathy />} />
           </Routes>
         </BrowserRouter>
-      </Cursor>
+      {/* </Cursor> */}
     </div>
   );
 }
