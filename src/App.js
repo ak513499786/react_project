@@ -13,6 +13,7 @@ import UX from "./components/userExperience/UX";
 import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
+import Cursor from "react-special-cursor";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Client from "./components/Home/client";
@@ -32,6 +33,9 @@ function App() {
         innerScale={1.2}
         outerScale={5}
       />
+      {/* <Cursor> */}
+
+      
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
@@ -51,6 +55,7 @@ function App() {
           <Route exact path="/empathy" element={<Empathy />} />
         </Routes>
       </BrowserRouter>
+      {/* </Cursor> */}
     </div>
   );
 }
