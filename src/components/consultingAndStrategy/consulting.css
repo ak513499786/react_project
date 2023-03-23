@@ -189,6 +189,7 @@
   }
   .vertical-animation-container {
     width: 380px;
+    padding-bottom: 125px;
   }
   .horizontal-animation-container {
     gap: 150px;
@@ -223,6 +224,9 @@
   .horizontal-animation-container {
     gap: 150px;
   }
+  .vertical-animation-container{
+    padding-bottom: 180px;
+  }
 }
 @media screen and (max-width: 570px) {
   .inner-service-h1 {
@@ -246,7 +250,7 @@
   }
   .horizontal-animation {
     width: 150px;
-    left: 0px;
+    left: 0;
     bottom: 0px;
     height: 350px;
     align-items: center;
@@ -258,15 +262,14 @@
   .vertical-animation {
     left: 0%;
     width: 640px;
-    margin-left: 0%;
+    margin-left: 6.7%;
   }
   .vertical-animation-container {
-    width: 200px;
+    width: 250px;
   }
 }
 @media screen and (max-width: 410px) {
   .horizontal-animation {
-    width: 100%;
     left: 0px;
     bottom: 0px;
     height: 350px;
@@ -274,5 +277,8 @@
   }
   .other-ser-h1 {
     font-size: 25px;
+  }
+  .vertical-animation-container {
+    width: 200px;
   }
 }

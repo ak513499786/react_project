@@ -12,7 +12,7 @@ import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 // import Blog from "../blog/Blog";
 // import { SmoothProvider } from "react-smooth-scrolling";
-import LazyLoad from "react-lazyload";
+// import LazyLoad from "react-lazyload";
 
 // import LazyLoad from "react-lazy-load";
 
