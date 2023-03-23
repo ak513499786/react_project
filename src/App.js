@@ -1,9 +1,9 @@
 import About from "./components/about/about";
 import Services from "./components/services/services";
-import Home from "./components/home/Home";
+import Home from "./components/Home/Home";
 import Work from "./components/work/Work";
-import Career from "./components/career/career";
-import Blog from "./components/blog/Blog";
+import Career from "./components/Career/career";
+import Blog from "./components/Blog/Blog";
 import Talk from "./components/letsTalk/Talk";
 import Case from "./components/caseStudy/case_study";
 import Empathy from "./components/empathy/empathy";
@@ -15,8 +15,8 @@ import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Client from "./components/Home/client";
-// import Dummy from "./components/Home/Dummy";
+import Client from "./components/Home/client";
+import Dummy from "./components/Home/Dummy";
 
 function App() {
   window.scroll({
@@ -43,6 +43,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/" element={<Cursor />} /> */}
           {/* <Route exact path="/" element={<Dummy />} /> */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />

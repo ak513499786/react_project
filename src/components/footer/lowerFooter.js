@@ -18,7 +18,7 @@ export default function Lowerfooter() {
       yoyo: true,
       ease: Bounce.easeOut,
     });
-    tl.fromTo(footeranimation, 1, { x: 0 }, { x: 0});
+    tl.fromTo(footeranimation, 1, { x: 0 }, { x: 0 });
     tl.fromTo(footeranimation, 0.2, { x: 0 }, { x: -65 });
     tl.fromTo(footeranimation, 0.2, { x: -65 }, { x: -60 });
     tl.fromTo(footeranimation, 1, { x: -60 }, { x: -60 });
@@ -71,18 +71,31 @@ export default function Lowerfooter() {
           </div>
         </div>
         <div id="contact">
-          <p>info
-           <span style={{
-            fontFamily: 'sans-serif'
-           }}>@</span>
-            codelinear.com</p>
+          <p>
+            info
+            <span
+              style={{
+                fontFamily: "sans-serif",
+              }}
+            >
+              @
+            </span>
+            codelinear.com
+          </p>
           <p>+1 415 523 5957</p>
         </div>
         <div id="socials">
-          <img src={linkedin} alt="" srcset="" className="icon" />
+          <Link
+            target="blank"
+            to="https://www.linkedin.com/company/codelinear/mycompany/?viewAsMember=true"
+          >
+            <img src={linkedin} alt="" srcset="" className="icon" />
+          </Link>
           <img src={facebook} alt="" srcset="" className="icon" />
           <img src={instagram} alt="" srcset="" className="icon" />
-          <img src={twitter} alt="" srcset="" className="icon" />
+          <Link target="blank" to="https://medium.com/@codelinear_">
+            <img src={twitter} alt="" srcset="" className="icon" />
+          </Link>
         </div>
       </div>
     </section>

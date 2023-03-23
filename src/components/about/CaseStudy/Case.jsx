@@ -13,29 +13,21 @@ import "./case.scss";
 import AnimatedCursor from "react-animated-cursor";
 
 const Case = () => {
-  const breakpoints = {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 0,
-      containerClass: "half-image-container",
-    },
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1020: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
+  const [hovered, setHovered] = useState(false);
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    setCursorPos({ x: e.clientX, y: e.clientY });
   };
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
   const [Widht, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -48,7 +40,7 @@ const Case = () => {
       {/* {Widht > 1300 ? ( */}
       <div className="circle flex mt-60 justify-center h-full relative  items-center">
         <div className="width max-w-[1340px] w-full flex-col h-full items-center flex justify-center relative">
-          <div className="tal items-center flex justify-center flex-col h-full pb-60">
+          <div className="tal items-center flex justify-center flex-col h-full pb-20">
             <h1 className="text-7xl text-center font-bold max-md:text-5xl max-md:p-10">
               Take A Peek At Our <br /> Case Study
             </h1>
@@ -63,8 +55,6 @@ const Case = () => {
             className="w-full  h-[50%]"
           >
             <Swiper
-              onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
-              onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
               ref={swiperRef}
               slidesPerView={3}
               slidesPerGroupSkip={1}
@@ -102,106 +92,127 @@ const Case = () => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="ySwiper -ml-24 w-[115%] max-xl:w-[100%] max-xl:ml-0"
+              className="ySwiper relative -ml-24 w-[115%] max-xl:w-[100%] max-xl:ml-0"
             >
               {/* <div className="testhome"> */}
-              <SwiperSlide className=" flex justify-center items-center">
+              <SwiperSlide
+                className=" flex justify-center items-center"
+                onMouseMove={handleMouseMove}
+                style={{ cursor: "none" }}
+              >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome  ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28">
-                      Click
-                    </div>
-                    <div className="img121 "></div>
+                    <div
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="img121  "
+                    ></div>
                   </div>
                 </Link>
               </SwiperSlide>
-              <SwiperSlide className="w-[600px] flex justify-center items-center">
+              <SwiperSlide
+                onMouseMove={handleMouseMove}
+                style={{ cursor: "none" }}
+                className="w-[600px] flex justify-center items-center"
+              >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
                       Click
                     </div>
-                    <div className="img211 "></div>
+                    <div
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="img211 "
+                    ></div>
                   </div>
                 </Link>
               </SwiperSlide>{" "}
-              <SwiperSlide className=" flex justify-center items-center">
+              
+              <SwiperSlide
+                onMouseMove={handleMouseMove}
+                style={{ cursor: "none" }}
+                className=" flex justify-center items-center"
+              >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
                       Click
                     </div>
-                    <div className="img311 "></div>
+                    <div
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="img311 "
+                    ></div>
                   </div>
                 </Link>
               </SwiperSlide>{" "}
-              <SwiperSlide className=" flex justify-center items-center">
+              <SwiperSlide
+                onMouseMove={handleMouseMove}
+                style={{ cursor: "none" }}
+                className=" flex justify-center items-center"
+              >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
                       {" "}
                       Click
                     </div>
-                    <div className="img411 "></div>
+                    <div
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="img411 "
+                    ></div>
                   </div>
                 </Link>
               </SwiperSlide>{" "}
-              <SwiperSlide className=" flex justify-center items-center">
+              <SwiperSlide
+                onMouseMove={handleMouseMove}
+                style={{ cursor: "none" }}
+                className=" flex justify-center items-center"
+              >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
                     <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
                       {" "}
                       Click
                     </div>
-                    <div className="img412 "></div>
+                    <div
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="img412 "
+                    ></div>
                   </div>
                 </Link>
               </SwiperSlide>
-              <SwiperSlide className=" flex justify-center items-center">
+              <SwiperSlide
+                onMouseMove={handleMouseMove}
+                style={{ cursor: "none" }}
+                className=" flex justify-center items-center"
+              >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
-                      Click
-                    </div>
-                    <div className="img413 "></div>
+                    <div
+                      onMouseEnter={handleMouseEnter}
+                      onMouseLeave={handleMouseLeave}
+                      className="img413 "
+                    ></div>
                   </div>
                 </Link>
               </SwiperSlide>
-              {/* <SwiperSlide className=" flex justify-center items-center">
-                <Link to="/case_study" className="cursor">
-                  <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
-                      Click
-                    </div>
-                    <div className="img414 "></div>
+              {hovered && (
+                <div
+                  className="custom-cursor"
+                  style={{
+                    left: cursorPos.x - 50 + "px",
+                    top: cursorPos.y - 300 + "px",
+                  }}
+                >
+                  <div className="custom-cursor-circle">
+                    <span className="custom-cursor-text">View</span>
                   </div>
-                </Link>
-              </SwiperSlide> */}
-              {/* <SwiperSlide className=" flex justify-center items-center">
-                <Link to="/case_study" className="cursor">
-                  <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
-                      Click
-                    </div>
-                    <div className="img415 "></div>
-                  </div>
-                </Link>
-              </SwiperSlide> */}
-              {/* <SwiperSlide className=" flex justify-center items-center">
-                <Link to="/case_study" className="cursor">
-                  <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
-                      Click
-                    </div>
-                    <div className="img416 "></div>
-                  </div>
-                </Link>
-              </SwiperSlide> */}
-              {/* </div> */}
+                </div>
+              )}
             </Swiper>
           </div>
         </div>
