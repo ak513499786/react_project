@@ -1,9 +1,9 @@
 import About from "./components/about/about";
 import Services from "./components/services/services";
-import Home from "./components/home/Home";
+import Home from "./components/Home/Home";
 import Work from "./components/work/Work";
-import Career from "./components/career/career";
-import Blog from "./components/blog/Blog";
+import Career from "./components/Career/career";
+import Blog from "./components/Blog/Blog";
 import Talk from "./components/letsTalk/Talk";
 import Case from "./components/caseStudy/case_study";
 import Empathy from "./components/empathy/empathy";
@@ -13,8 +13,8 @@ import UX from "./components/userExperience/UX";
 import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
-import Cursor from "react-special-cursor";
-import Scrollbar from 'smooth-scrollbar';
+// import Cursor from "react-special-cursor";
+// import Scrollbar from 'smooth-scrollbar';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Client from "./components/Home/client";
@@ -24,7 +24,6 @@ function App() {
   window.scroll({
     behavior: "smooth",
   });
-  Scrollbar.init(document.querySelector('#root'));
   return (
     <div>
       <AnimatedCursor
@@ -39,7 +38,7 @@ function App() {
           mixBlendMode: "exclusion",
         }}
       />
-      <Cursor>
+      {/* <Cursor> */}
         <BrowserRouter>
           <ScrollToTop />
           <Routes>
@@ -63,7 +62,7 @@ function App() {
             <Route exact path="/empathy" element={<Empathy />} />
           </Routes>
         </BrowserRouter>
-      </Cursor>
+      {/* </Cursor> */}
     </div>
   );
 }
