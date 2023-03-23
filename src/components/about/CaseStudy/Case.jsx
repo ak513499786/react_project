@@ -10,7 +10,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap, TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 import "./case.scss";
-import AnimatedCursor from "react-animated-cursor";
 
 const Case = () => {
   const [hovered, setHovered] = useState(false);
@@ -117,9 +116,6 @@ const Case = () => {
               >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      Click
-                    </div>
                     <div
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
@@ -128,7 +124,6 @@ const Case = () => {
                   </div>
                 </Link>
               </SwiperSlide>{" "}
-              
               <SwiperSlide
                 onMouseMove={handleMouseMove}
                 style={{ cursor: "none" }}
@@ -136,9 +131,6 @@ const Case = () => {
               >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      Click
-                    </div>
                     <div
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
@@ -154,10 +146,6 @@ const Case = () => {
               >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
-                      Click
-                    </div>
                     <div
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
@@ -173,10 +161,6 @@ const Case = () => {
               >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome   ">
-                    <div className="click absolute border-2 h-40 w-40 rounded-full text-xl text-black font-extrabold flex justify-center items-center border-black z-50  bottom-10 right-28  ">
-                      {" "}
-                      Click
-                    </div>
                     <div
                       onMouseEnter={handleMouseEnter}
                       onMouseLeave={handleMouseLeave}
