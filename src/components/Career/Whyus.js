@@ -55,7 +55,7 @@ export default function whyus() {
           <img src={image9} alt="" className="card-imgs" />
         </div>
       </div>
-      <div className="life-container">
+      <div className="life-container max-xl:my-10">
         <h1 className="life-h1">Life At Codelinear</h1>
         <p className="life-para">
           We believe in actions over statements. When we say we are diverse, we
