@@ -45,7 +45,7 @@ const BlogHome = () => {
           >
             <Swiper
               ref={swiperRef}
-              slidesPerView={3}
+              slidesPerView={4}
               slidesPerGroupSkip={1}
               spaceBetween={30}
               loop={true}
@@ -76,6 +76,14 @@ const BlogHome = () => {
                 },
                 1060: {
                   slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                1200: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+                1500: {
+                  slidesPerView: 4,
                   spaceBetween: 30,
                 },
               }}
@@ -161,6 +169,42 @@ const BlogHome = () => {
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image5} alt="" />
+                  </div>
+                  <div className="head mt-5">
+                    <h2 className="text-3xl text-center text-stone-400">
+                      Empathy in UX
+                    </h2>
+                  </div>
+                  <div className="descrip flex flex-col justify-center items-center mt-5">
+                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                      Union flatten auto flatten duplicate. Line slice inspect
+                      horizontal image strikethrough share follower.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="cass flex justify-center items-center">
+                <div className="cardh    mx-4 items-center">
+                  <div className="img max-md:flex  max-md:justify-center">
+                    <img src={image3} alt="" />
+                  </div>
+                  <div className="head mt-5">
+                    <h2 className="text-3xl text-center text-stone-400">
+                      Empathy in UX
+                    </h2>
+                  </div>
+                  <div className="descrip flex flex-col justify-center items-center mt-5">
+                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                      Union flatten auto flatten duplicate. Line slice inspect
+                      horizontal image strikethrough share follower.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="cass flex justify-center items-center">
+                <div className="cardh    mx-4 items-center">
+                  <div className="img max-md:flex  max-md:justify-center">
+                    <img src={image3} alt="" />
                   </div>
                   <div className="head mt-5">
                     <h2 className="text-3xl text-center text-stone-400">

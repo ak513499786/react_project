@@ -14,7 +14,7 @@ import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 // import Cursor from "react-special-cursor";
-import Scrollbar from 'smooth-scrollbar';
+// import Scrollbar from 'smooth-scrollbar';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Client from "./components/Home/client";
@@ -24,7 +24,6 @@ function App() {
   window.scroll({
     behavior: "smooth",
   });
-  Scrollbar.init(document.querySelector('#root'));
   return (
     <div>
       <AnimatedCursor
