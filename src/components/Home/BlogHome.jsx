@@ -2,6 +2,7 @@ import "./styles/clients.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import HorizontalScroll from "react-horizontal-scrolling";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -41,7 +42,7 @@ const BlogHome = () => {
           <div
             onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
             onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-            className="max-w-[100%] w-[100%] homeidea -ml-0 max-lg:ml-0"
+            className="max-w-[100%] w-[100%] homeidea -ml-9 max-lg:ml-0"
           >
             <Swiper
               ref={swiperRef}
@@ -183,8 +184,25 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              
-             
+              <SwiperSlide className="cass flex justify-center items-center">
+                <div className="cardh    mx-4 items-center">
+                  <div className="img max-md:flex  max-md:justify-center">
+                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                    <img src={image5} alt="" />
+                  </div>
+                  <div className="head mt-5">
+                    <h2 className="text-3xl text-center text-stone-400">
+                      Empathy in UX
+                    </h2>
+                  </div>
+                  <div className="descrip flex flex-col justify-center items-center mt-5">
+                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                      Union flatten auto flatten duplicate. Line slice inspect
+                      horizontal image strikethrough share follower.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
             </Swiper>
             <div className=" flex justify-center items-center -mt-2 -ml-40">
               <button className="exp_btn ">
