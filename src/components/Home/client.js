@@ -23,89 +23,78 @@ export default function Client() {
   const [logo9Opacity, setLogo9Opacity] = useState(0.5);
   const [logo10Opacity, setLogo10Opacity] = useState(0.5);
   const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setLogo1Opacity(Math.random());
-      setLogo2Opacity(Math.random());
-      setLogo3Opacity(Math.random());
-      setLogo4Opacity(Math.random());
-      setLogo5Opacity(Math.random());
-      setLogo6Opacity(Math.random());
-      setLogo7Opacity(Math.random());
-      setLogo8Opacity(Math.random());
-      setLogo9Opacity(Math.random());
-      setLogo10Opacity(Math.random());
-    }, 2500);
-
-    return () => clearInterval(intervalId);
-  }, []);
   // useEffect(() => {
   //   const intervalId = setInterval(() => {
-  //     for (let i = 0; i < 100; i++) {
-  //       switch (currentLogoIndex) {
-  //         case 0:
-  //           setLogo1Opacity(logo1Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo6Opacity(logo6Opacity === 1 ? 0.5 : 0.5);
-  //           break;
-  //         case 1:
-  //           setLogo2Opacity(logo2Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo7Opacity(logo7Opacity === 1 ? 0.5 : 0.5);
-  //           break;
-  //         case 2:
-  //           setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo8Opacity(logo8Opacity === 1 ? 0.5 : 0.5);
-  //           break;
-  //         case 3:
-  //           setLogo1Opacity(logo1Opacity === 1 ? 0.5 : 1);
-  //           setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
-  //           break;
-  //         case 4:
-  //           setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo2Opacity(logo2Opacity === 1 ? 0.5 : 1);
-  //           break;
-  //         case 5:
-  //           setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo6Opacity(logo6Opacity === 1 ? 0.5 : 1);
-  //           break;
-  //         case 6:
-  //           setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo7Opacity(logo7Opacity === 1 ? 0.5 : 1);
-  //           break;
-  //         case 7:
-  //           setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo5Opacity(logo5Opacity === 1 ? 0.5 : 1);
-  //           break;
-  //         case 8:
-  //           setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo3Opacity(logo3Opacity === 1 ? 0.5 : 1);
-  //           break;
-  //         case 9:
-  //           setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
-  //           setLogo4Opacity(logo4Opacity === 1 ? 0.5 : 1);
-  //           break;
-
-  //         default:
-  //           break;
-  //       }
-  //     }
-
-  //     setCurrentLogoIndex((currentLogoIndex) => currentLogoIndex + 1);
-  //   }, 1000);
+  //     setLogo1Opacity(Math.random());
+  //     setLogo2Opacity(Math.random());
+  //     setLogo3Opacity(Math.random());
+  //     setLogo4Opacity(Math.random());
+  //     setLogo5Opacity(Math.random());
+  //     setLogo6Opacity(Math.random());
+  //     setLogo7Opacity(Math.random());
+  //     setLogo8Opacity(Math.random());
+  //     setLogo9Opacity(Math.random());
+  //     setLogo10Opacity(Math.random());
+  //   }, 2500);
 
   //   return () => clearInterval(intervalId);
-  // }, [
-  //   currentLogoIndex,
-  //   logo1Opacity,
-  //   logo2Opacity,
-  //   logo3Opacity,
-  //   logo4Opacity,
-  //   logo5Opacity,
-  //   logo6Opacity,
-  //   logo7Opacity,
-  //   logo8Opacity,
-  //   logo9Opacity,
-  //   logo10Opacity,
-  // ]);
+  // }, []);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      for (let i = 0; i < 100; i++) {
+        switch (currentLogoIndex) {
+          case 0:
+            setLogo1Opacity(logo1Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 1:
+            setLogo2Opacity(logo2Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 2:
+            setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 3:
+            setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 4:
+            setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 5:
+            setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 6:
+            setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 7:
+            setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 8:
+            setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 9:
+            setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
+            break;
+          default:
+            break;
+        }
+      }
+
+      setCurrentLogoIndex((currentLogoIndex) => (currentLogoIndex + 1));
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [
+    currentLogoIndex,
+    logo1Opacity,
+    logo2Opacity,
+    logo3Opacity,
+    logo4Opacity,
+    logo5Opacity,
+    logo6Opacity,
+    logo7Opacity,
+    logo8Opacity,
+    logo9Opacity,
+    logo10Opacity,
+  ]);
 
   return (
     <>

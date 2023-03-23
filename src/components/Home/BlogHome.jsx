@@ -313,7 +313,6 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt="" />
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image5} alt="" />
                   </div>
