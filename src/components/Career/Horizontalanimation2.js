@@ -36,7 +36,7 @@ export default function Horizontalanimation2() {
 
   return (
     <>
-      <div className="horizontal-slide">
+      <div className="horizontal-slide max-xl:mt-20">
         <img
           src={image4}
           alt=""
