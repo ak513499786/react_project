@@ -31,6 +31,7 @@ const Animation = () => {
             height: "300px",
             width: "100%",
           }}
+          className="h=[221px]"
           onScroll={handleScroll}
         >
           <div className="vertical-animation">
@@ -129,6 +130,7 @@ const Animation = () => {
             height: "300px",
             width: "100%",
           }}
+          className="h=[221px]"
           onScroll={handleScroll}
         >
           <div className="vertical-animation">
@@ -229,6 +231,7 @@ const Animation = () => {
             height: "300px",
             width: "100%",
           }}
+          className="h=[221px]"
           onScroll={handleScroll}
         >
           <div className="vertical-animation">
@@ -346,6 +349,7 @@ const Animation = () => {
         className="item-center justify-center"
       >
         <div
+          className="max-md:h=[221px]"
           style={{
             overflowY: "scroll",
             marginRight: "0px",

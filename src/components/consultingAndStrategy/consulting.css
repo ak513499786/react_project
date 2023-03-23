@@ -28,7 +28,7 @@
   left: 0px;
   display: flex;
   flex-direction: column;
-  scroll-snap-type:proximity;
+  scroll-snap-type: proximity;
   scroll-snap-type: y proximity;
 }
 .vertical-animation-container {
@@ -43,6 +43,7 @@
   height: 300px;
   scroll-snap-stop: always;
   scroll-snap-align: start;
+  cursor: move;
 }
 .vertical-animation-h1 {
   width: 614.53px;

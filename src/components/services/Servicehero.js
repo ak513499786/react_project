@@ -53,7 +53,7 @@ export default function Serviceshero() {
                 direction={"vertical"}
                 loop={true}
                 autoplay={{
-                  delay: 3000,
+                  delay: 5000,
                   disableOnInteraction: true,
                 }}
                 modules={[Autoplay, FreeMode, Pagination, Navigation]}
