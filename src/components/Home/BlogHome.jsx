@@ -13,9 +13,9 @@ import image2 from "./images/Frame 43.svg";
 // import image5 from "./images/Frame 3.svg";
 import image3 from "./images/Frame 44.svg";
 import image4 from "./images/Frame 472.svg";
-import image5 from "../blog/Images/Frame 45.svg";
-import image6 from "../blog/Images/Frame 47.svg";
-import image7 from "../blog/Images/Frame 46.svg";
+import image5 from "../Blog/Images/Frame 45.svg";
+import image6 from "../Blog/Images/Frame 47.svg";
+import image7 from "../Blog/Images/Frame 46.svg";
 
 // import imgqq from "../blog/blogimages/Frame 44.png";
 // import imgq1 from "../blog/blogimages/Frame 472.png";
