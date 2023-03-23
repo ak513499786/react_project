@@ -201,7 +201,9 @@ const Case = () => {
                   }}
                 >
                   <div className="custom-cursor-circle">
-                    <span className="custom-cursor-text">View</span>
+                    <span className="custom-cursor-text" style={{
+                      color: 'black'
+                    }}>Click</span>
                   </div>
                 </div>
               )}
