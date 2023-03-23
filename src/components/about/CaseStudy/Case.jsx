@@ -204,7 +204,7 @@ const Case = () => {
                   className="custom-cursor"
                   style={{
                     left: cursorPos.x - 50 + "px",
-                    top: cursorPos.y - 300 + "px",
+                    top: cursorPos.y - 80 + "px",
                   }}
                 >
                   <div className="custom-cursor-circle">
