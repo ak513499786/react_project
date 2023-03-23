@@ -42,8 +42,8 @@ export default function Serviceshero() {
 
         <div className="vision w-full mb-52  flex justify-center h-full relative  items-center">
           <div className="widthh max-md:flex-col max-md:p-8  w-full flex relative">
-            <div className=" mt -ml-9 max-xl:ml-0 flex w-full">
-              <h1 className="text-6xl w-full mt6 ml-5 max-xl:ml-5 max-md:text-4xl font-extrabold text-white">
+            <div className=" mt -ml-9 max-xl:ml-0 flex w-full max-sm:flex-col">
+              <h1 className="text-6xl w-full mt6 ml-5 max-xl:mb-5 max-md:text-3xl font-extrabold text-white">
                 Leading The Way From
               </h1>
               <Swiper
@@ -60,22 +60,22 @@ export default function Serviceshero() {
                 className="mySwi -ml-10 max-xl:ml-0   w-full h-40 "
               >
                 <SwiperSlide className="-ml">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-4xl font-extrabold text-white">
+                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
                     Design To Execution
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide className="">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-4xl font-extrabold text-white">
+                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
                     Strategy To Execution
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide className="">
-                  <h1 className="text-[3rem]  mt16 ml-9 max-xl:ml-5 max-md:text-4xl font-extrabold text-white">
+                  <h1 className="text-[3rem]  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
                     Development To Execution
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide className="">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-4xl font-extrabold text-white">
+                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
                     Marketing to Success
                   </h1>
                 </SwiperSlide>

@@ -419,8 +419,8 @@ const Card = () => {
       ) : (
         <div className="workunfolds mb-20">
           <div className="lead flex flex-wrap justify-center h-full relative  items-center">
-            <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10 max-sm:p-1  justify-start items-start relative">
-              <div className="card111 hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+            <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10 max-sm:p-1  justify-start items-start max-xl:items-center max-xl:justify-center relative">
+              <div className="card111 hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -450,7 +450,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="MANGO hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="MANGO hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -480,7 +480,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="Willium hidee max-xl:mx-0 my-10   mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="Willium hidee max-xl:mx-5 my-10   mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -510,7 +510,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="Kernel hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="Kernel hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -540,7 +540,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="klub hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
+              <div className="klub hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -570,7 +570,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="Lyra hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
+              <div className="Lyra hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -600,7 +600,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="studio hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
+              <div className="studio hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -630,7 +630,7 @@ const Card = () => {
                 </div>
               </div>
 
-              <div className="deel hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
+              <div className="deel hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{

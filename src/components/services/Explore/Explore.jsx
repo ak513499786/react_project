@@ -149,8 +149,11 @@ const Explore = () => {
                 modules={[FreeMode, Pagination]}
                 className="mySwiper w-[110%] -ml-28 max-lg:w-[100%] max-lg:ml-0  cursor-grab"
               >
-                <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px20 cursor-grab">
+                <SwiperSlide className="flex justify-center items-center">
+                  <Link
+                    to="/consultingandstrategy"
+                    className="px20 cursor-grab"
+                  >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
@@ -162,7 +165,7 @@ const Explore = () => {
                   </Link>
                 </SwiperSlide>
 
-                <SwiperSlide>
+                <SwiperSlide className="flex justify-center items-center">
                   <Link to="/productdevelopment" className="px20 cursor-grab">
                     <div className="card1 mx48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img3 ml-10  ma\  -top-0"></div>
@@ -174,7 +177,7 @@ const Explore = () => {
                     </div>
                   </Link>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="flex justify-center items-center">
                   <Link to="/digitalmarketing" className="px20 cursor-grab">
                     <div className="card1 ml48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img4 ml-10  ma\  -top-0"></div>
@@ -238,7 +241,10 @@ const Explore = () => {
                 className="mySwiper w-[110%] -ml-28 max-lg:w-[100%] max-lg:ml-0  cursor-grab"
               >
                 <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px20  cursor-grab">
+                  <Link
+                    to="/consultingandstrategy"
+                    className="px20  cursor-grab"
+                  >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
@@ -326,7 +332,10 @@ const Explore = () => {
                 className="mySwiper w-[110%] -ml-28 max-lg:w-[100%] max-lg:ml-0 cursor-grab"
               >
                 <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px20 cursor-grab">
+                  <Link
+                    to="/consultingandstrategy"
+                    className="px20 cursor-grab"
+                  >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
@@ -412,8 +421,11 @@ const Explore = () => {
                 modules={[FreeMode, Pagination]}
                 className="mySwiper w-[115%] -ml-28 max-lg:w-[100%] max-lg:ml-0 cursor-grab"
               >
-                <SwiperSlide>
-                  <Link to="/consultingandstrategy" className="px20 cursor-grab">
+                <SwiperSlide className="flex justify-center items-center">
+                  <Link
+                    to="/consultingandstrategy"
+                    className="px20 cursor-grab"
+                  >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
                       <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
@@ -424,7 +436,7 @@ const Explore = () => {
                     </div>
                   </Link>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="flex justify-center items-center">
                   <Link to="/userexperience" className="px20 cursor-grab">
                     <div className="card1 m48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img22 ml-10  ma\  -top-0"></div>
@@ -436,7 +448,7 @@ const Explore = () => {
                     </div>
                   </Link>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="flex justify-center items-center">
                   <Link to="/productdevelopment" className="px20 cursor-grab">
                     <div className="card1 mx48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img3 ml-10  ma\  -top-0"></div>
@@ -448,7 +460,7 @@ const Explore = () => {
                     </div>
                   </Link>
                 </SwiperSlide>
-                <SwiperSlide>
+                <SwiperSlide className="flex justify-center items-center">
                   <Link to="/digitalmarketing" className="px20 cursor-grab">
                     <div className="card1 ml48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img4 ml-10  ma\  -top-0"></div>
