@@ -12,6 +12,8 @@ import Consulting from "./components/consultingAndStrategy/consulting";
 import UX from "./components/userExperience/UX";
 import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
+import AnimatedCursor from "react-animated-cursor";
+import Scrollbar from 'smooth-scrollbar';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Client from "./components/Home/client";
@@ -21,31 +23,22 @@ function App() {
   window.scroll({
     behavior: "smooth",
   });
+  Scrollbar.init(document.querySelector('#root'));
   return (
     <div>
-      {/* <AnimatedCursor
+      <AnimatedCursor
         innerSize={12}
         outerSize={0}
-<<<<<<< HEAD
-        color="#fff"
-        outerAlpha={0}
-        innerScale={1.7}
-        outerScale={0}
-        hasBlendMode={true}
-        innerStyle={{
-          mixBlendMode: "exclusion",
-        }}
-        clickables={[
-          '.cursor'
-        ]}
-      /> */}
-=======
         color="255, 255, 255"
         outerAlpha={5}
         innerScale={1.2}
         outerScale={5}
+        hasBlendMode={true}
+        innerStyle={{
+          mixBlendMode: "exclusion",
+        }}
       />
->>>>>>> c815a212405ce203136c6f8678ad7b8ca2f971bd
+
       <BrowserRouter>
         <ScrollToTop />
         <Routes>

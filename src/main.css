@@ -17,10 +17,6 @@
   padding: 0;
   color: white;
   scrollbar-width: none;
-<<<<<<< HEAD
-=======
-  /* cursor:none; */
->>>>>>> c815a212405ce203136c6f8678ad7b8ca2f971bd
 }
 *::-webkit-scrollbar {
   display: none;
@@ -30,8 +26,4 @@ body {
   background-color: #090909;
   scroll-behavior: smooth;
   overflow-x: hidden;
-<<<<<<< HEAD
-=======
-  /* cursor: default; */
->>>>>>> c815a212405ce203136c6f8678ad7b8ca2f971bd
 }
