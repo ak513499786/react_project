@@ -27,23 +27,15 @@ function App() {
       <AnimatedCursor
         innerSize={12}
         outerSize={0}
-        color="#fff"
-        outerAlpha={0}
-        innerScale={1.7}
-        outerScale={0}
-        hasBlendMode={true}
-        innerStyle={{
-          mixBlendMode: "exclusion",
-        }}
-        clickables={[
-          '.cursor'
-        ]}
+        color="255, 255, 255"
+        outerAlpha={5}
+        innerScale={1.2}
+        outerScale={5}
       />
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/" element={<Cursor />} /> */}
           {/* <Route exact path="/" element={<Dummy />} /> */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />

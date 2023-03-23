@@ -73,8 +73,7 @@ function Dummy() {
         ref={rightDivRef}
       >
         {/* content for right div */}
-        <div className="flex" style={{ width: "2000px", height: "100%" }}>
-          <div className="vertical-animation-container">
+        <div style={{ width: "2000px", height: "100%" }}><div className="vertical-animation-container">
             <h1 className="vertical-animation-h1">Market Research</h1>
             <p className="vertical-animation-para">
               As technology is propelling the world into a new realm of
@@ -83,8 +82,7 @@ function Dummy() {
               targeted consumers and market trends, enabling you to make
               decisions driven by consumer behaviour and data.
             </p>
-          </div>
-          <div className="vertical-animation-container">
+          </div><div className="vertical-animation-container">
             <h1 className="vertical-animation-h1">Market Research</h1>
             <p className="vertical-animation-para">
               As technology is propelling the world into a new realm of
@@ -93,18 +91,7 @@ function Dummy() {
               targeted consumers and market trends, enabling you to make
               decisions driven by consumer behaviour and data.
             </p>
-          </div>
-          <div className="vertical-animation-container">
-            <h1 className="vertical-animation-h1">Market Research</h1>
-            <p className="vertical-animation-para">
-              As technology is propelling the world into a new realm of
-              disruptions, our strategic market research enables you to identify
-              the viability of the product by directly taking insights from
-              targeted consumers and market trends, enabling you to make
-              decisions driven by consumer behaviour and data.
-            </p>
-          </div>
-        </div>
+          </div></div>
       </div>
     </div>
   );

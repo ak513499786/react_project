@@ -17,7 +17,7 @@
   padding: 0;
   color: white;
   scrollbar-width: none;
-  cursor:none;
+  /* cursor:none; */
 }
 *::-webkit-scrollbar {
   display: none;
@@ -27,5 +27,5 @@ body {
   background-color: #090909;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  cursor: none;
+  /* cursor: default; */
 }
