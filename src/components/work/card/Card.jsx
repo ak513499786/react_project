@@ -35,8 +35,23 @@ const Card = () => {
             <div className="worksection">
               <div className="test">
                 <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
-                  <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-                  <p className="colo my-10 mt-20">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#f6f6f6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    COWBOY
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#cecece",
+                    }}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Vero iusto deleniti, rem atque laborum tempore,
                     reprehenderit minima enim mollitia quae pariatur ipsum ipsa
@@ -50,8 +65,23 @@ const Card = () => {
                 </div>
 
                 <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
-                  <h1 className="text-5xl mt-24 wcw">MANGO</h1>
-                  <p className="colo my-10 mt-20">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#f6f6f6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    MANGO
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#cecece",
+                    }}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Vero iusto deleniti, rem atque laborum tempore,
                     reprehenderit minima enim mollitia quae pariatur ipsum ipsa
@@ -65,8 +95,23 @@ const Card = () => {
                 </div>
 
                 <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-                  <h1 className="text-5xl mt-24 wcw">William Abraham</h1>
-                  <p className="colo my-10 mt-20">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#f6f6f6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    William Abraham
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#cecece",
+                    }}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Vero iusto deleniti, rem atque laborum tempore,
                     reprehenderit minima enim mollitia quae pariatur ipsum ipsa
@@ -80,8 +125,23 @@ const Card = () => {
                 </div>
 
                 <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
-                  <h1 className="text-5xl mt-24 wcw">Lyra Health</h1>
-                  <p className="colo my-10 mt-20">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#f6f6f6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Lyra Health
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#cecece",
+                    }}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Vero iusto deleniti, rem atque laborum tempore,
                     reprehenderit minima enim mollitia quae pariatur ipsum ipsa
@@ -95,8 +155,23 @@ const Card = () => {
                 </div>
 
                 <div className="klub hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-                  <h1 className="text-5xl mt-24 wcw">klub</h1>
-                  <p className="colo my-10 mt-20">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#f6f6f6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Klub
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#cecece",
+                    }}
+                  >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Vero iusto deleniti, rem atque laborum tempore,
                     reprehenderit minima enim mollitia quae pariatur ipsum ipsa
@@ -131,7 +206,7 @@ const Card = () => {
                   slidesPerGroupSkip={1}
                   spaceBetween={10}
                   // loop={true}
-                  freeMode = {true}
+                  freeMode={true}
                   // breakpoints
                   // autoplay={{
                   //   delay: 2500,
@@ -169,8 +244,23 @@ const Card = () => {
                 >
                   <SwiperSlide className="cass mr-0 flex justify-center items-center">
                     <div className="card111 hiee max-md:mx-4 mx-10 flex flex-col justify-cnter   p-10 ">
-                      <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
-                      <p className="colo my-10 mt-20">
+                      <h1
+                        className="text-5xl mt-24 wcw"
+                        style={{
+                          fontFamily: "graphikthin",
+                          color: "#f6f6f6",
+                          fontWeight: "600",
+                        }}
+                      >
+                        COWBOY
+                      </h1>
+                      <p
+                        className="colo my-10 mt-20"
+                        style={{
+                          fontFamily: "graphik",
+                          color: "#cecece",
+                        }}
+                      >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Vero iusto deleniti, rem atque laborum tempore,
                         reprehenderit minima enim mollitia quae pariatur ipsum
@@ -185,8 +275,23 @@ const Card = () => {
                   </SwiperSlide>
                   <SwiperSlide className="cass flex justify-center items-center">
                     <div className="MANGO hiee max-md:mx-4 mx-10 flex flex-col justify-cnter   p-10">
-                      <h1 className="text-5xl mt-24 wcw">MANGO</h1>
-                      <p className="colo my-10 mt-20">
+                      <h1
+                        className="text-5xl mt-24 wcw"
+                        style={{
+                          fontFamily: "graphikthin",
+                          color: "#f6f6f6",
+                          fontWeight: "600",
+                        }}
+                      >
+                        MANGO
+                      </h1>
+                      <p
+                        className="colo my-10 mt-20"
+                        style={{
+                          fontFamily: "graphik",
+                          color: "#cecece",
+                        }}
+                      >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Vero iusto deleniti, rem atque laborum tempore,
                         reprehenderit minima enim mollitia quae pariatur ipsum
@@ -201,8 +306,23 @@ const Card = () => {
                   </SwiperSlide>
                   <SwiperSlide className="cass flex justify-center items-center">
                     <div className="Willium hiee max-md:mx-4 mx-10 flex flex-col justify-center   p-10">
-                      <h1 className="text-5xl mt-24 wcw">William Abraham</h1>
-                      <p className="colo my-10 mt-20">
+                      <h1
+                        className="text-5xl mt-24 wcw"
+                        style={{
+                          fontFamily: "graphikthin",
+                          color: "#f6f6f6",
+                          fontWeight: "600",
+                        }}
+                      >
+                        William Abraham
+                      </h1>
+                      <p
+                        className="colo my-10 mt-20"
+                        style={{
+                          fontFamily: "graphik",
+                          color: "#cecece",
+                        }}
+                      >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Vero iusto deleniti, rem atque laborum tempore,
                         reprehenderit minima enim mollitia quae pariatur ipsum
@@ -217,8 +337,23 @@ const Card = () => {
                   </SwiperSlide>
                   <SwiperSlide className="cass flex justify-center items-center">
                     <div className="Lyra hiee max-md:mx-4 mx-10 mr-12 flex flex-col justify-center   p-10">
-                      <h1 className="text-5xl mt-24 wcw">Lyra Health</h1>
-                      <p className="colo my-10 mt-20">
+                      <h1
+                        className="text-5xl mt-24 wcw"
+                        style={{
+                          fontFamily: "graphikthin",
+                          color: "#f6f6f6",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Lyra Health
+                      </h1>
+                      <p
+                        className="colo my-10 mt-20"
+                        style={{
+                          fontFamily: "graphik",
+                          color: "#cecece",
+                        }}
+                      >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Vero iusto deleniti, rem atque laborum tempore,
                         reprehenderit minima enim mollitia quae pariatur ipsum
@@ -233,8 +368,23 @@ const Card = () => {
                   </SwiperSlide>
                   <SwiperSlide className="cass flex justify-center items-center">
                     <div className="klub hiee max-md:mx-4 mx-10 flex flex-col justify-center   p-10">
-                      <h1 className="text-5xl mt-24 wcw">klub</h1>
-                      <p className="colo my-10 mt-20">
+                      <h1
+                        className="text-5xl mt-24 wcw"
+                        style={{
+                          fontFamily: "graphikthin",
+                          color: "#f6f6f6",
+                          fontWeight: "600",
+                        }}
+                      >
+                        Klub
+                      </h1>
+                      <p
+                        className="colo my-10 mt-20"
+                        style={{
+                          fontFamily: "graphik",
+                          color: "#cecece",
+                        }}
+                      >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
                         elit. Vero iusto deleniti, rem atque laborum tempore,
                         reprehenderit minima enim mollitia quae pariatur ipsum
@@ -271,8 +421,23 @@ const Card = () => {
           <div className="lead flex flex-wrap justify-center h-full relative  items-center">
             <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10 max-sm:p-1  justify-start items-start relative">
               <div className="card111 hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">COWBOY</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  COWBOY
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -286,8 +451,23 @@ const Card = () => {
               </div>
 
               <div className="MANGO hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">MANGO</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  MANGO
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -301,8 +481,23 @@ const Card = () => {
               </div>
 
               <div className="Willium hidee max-xl:mx-0 my-10   mx-10 flex flex-col justify-center max-xl:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">Willium Abraham</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  Willium Abraham
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -316,8 +511,23 @@ const Card = () => {
               </div>
 
               <div className="Kernel hidee max-xl:mx-0  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">Kernel Wealth</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  Kernel Wealth
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -331,8 +541,23 @@ const Card = () => {
               </div>
 
               <div className="klub hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">klub</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  Klub
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -346,8 +571,23 @@ const Card = () => {
               </div>
 
               <div className="Lyra hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
-                <h1 className="text-5xl -mt24 wcw">Lyra Health</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  Lyra Health
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -361,8 +601,23 @@ const Card = () => {
               </div>
 
               <div className="studio hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
-                <h1 className="text-5xl -mt24 wcw">Studio Neat</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  Studio Neat
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum
@@ -376,8 +631,23 @@ const Card = () => {
               </div>
 
               <div className="deel hidee max-xl:mx-0 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
-                <h1 className="text-5xl -mt24 wcw">Deel</h1>
-                <p className="colo my-10 mt-20">
+                <h1
+                  className="text-5xl -mt24 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#f6f6f6",
+                    fontWeight: "600",
+                  }}
+                >
+                  Deel
+                </h1>
+                <p
+                  className="colo my-10 mt-20"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#cecece",
+                  }}
+                >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
                   iusto deleniti, rem atque laborum tempore, reprehenderit
                   minima enim mollitia quae pariatur ipsum ipsa esse nostrum

@@ -817,7 +817,7 @@
   color: #cecece;
   transition: 0.3s;
 }
-.exp_btn:hover .exp_btn-content{
+.exp_btn-content:hover{
   background-color: #ffc017;
   color: black;
   font-weight: bold;
@@ -1256,7 +1256,7 @@
   }
   .exp_btn-content {
     width: 95px;
-    height: 25px;
+    height: auto;
     padding: 5px 30px 7px 30px;
     font-size: 16px;
     font-weight: 100;

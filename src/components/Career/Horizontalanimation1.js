@@ -11,7 +11,7 @@ export default function Horizontalanimation1() {
   let slideImg6 = useRef(null);
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { duration: 10 },
+      defaults: { duration: 30 },
       repeat: -1,
       yoyo: true,
     });
@@ -19,7 +19,7 @@ export default function Horizontalanimation1() {
   }, []);
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { duration: 10 },
+      defaults: { duration: 30 },
       repeat: -1,
       yoyo: true,
     });
@@ -27,7 +27,7 @@ export default function Horizontalanimation1() {
   }, []);
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { duration: 10 },
+      defaults: { duration: 30 },
       repeat: -1,
       yoyo: true,
     });

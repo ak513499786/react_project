@@ -13,9 +13,9 @@ import image2 from "./images/Frame 43.svg";
 // import image5 from "./images/Frame 3.svg";
 import image3 from "./images/Frame 44.svg";
 import image4 from "./images/Frame 472.svg";
-import image5 from "../Blog/Images/Frame 45.svg";
-import image6 from "../Blog/Images/Frame 47.svg";
-import image7 from "../Blog/Images/Frame 46.svg";
+import image5 from "../blog/Images/Frame 45.svg";
+import image6 from "../blog/Images/Frame 47.svg";
+import image7 from "../blog/Images/Frame 46.svg";
 
 // import imgqq from "../blog/blogimages/Frame 44.png";
 // import imgq1 from "../blog/blogimages/Frame 472.png";
@@ -96,12 +96,25 @@ const BlogHome = () => {
                     <img src={image7} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -114,12 +127,25 @@ const BlogHome = () => {
                     <img src={image3} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -133,12 +159,25 @@ const BlogHome = () => {
                     <img src={image2} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -152,12 +191,25 @@ const BlogHome = () => {
                     <img src={image6} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -171,12 +223,25 @@ const BlogHome = () => {
                     <img src={image5} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -189,12 +254,25 @@ const BlogHome = () => {
                     <img src={image3} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -207,12 +285,25 @@ const BlogHome = () => {
                     <img src={image3} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -225,12 +316,25 @@ const BlogHome = () => {
                     <img src={image3} alt="" />
                   </div>
                   <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#f6f6f6",
+                        fontWeight: "600",
+                      }}
+                    >
                       Empathy in UX
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#cecece",
+                      }}
+                    >
                       Union flatten auto flatten duplicate. Line slice inspect
                       horizontal image strikethrough share follower.
                     </p>
@@ -240,7 +344,7 @@ const BlogHome = () => {
             </Swiper>
             <div className=" flex justify-center items-center -mt-2 -ml-40">
               <button className="exp_btn ">
-                <Link to="/blog" className="exp_btn-content -mt4">
+                <Link to="/blog" className="exp_btn-content">
                   explore more
                 </Link>
               </button>

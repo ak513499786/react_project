@@ -51,7 +51,9 @@ const Case = () => {
             <h1 className="text-7xl text-center font-bold max-md:text-5xl max-md:p-10">
               Take A Peek At Our <br /> Case Study
             </h1>
-            <p className="down text-center mt-8 max-md:p-10">
+            <p className="down text-center mt-8 max-md:p-10" style={{
+              color: '#cecece'
+            }}>
               We handle all our projects with the utmost discretion. Through our
               case studies take a look at how we drive growth for our clients.
             </p>

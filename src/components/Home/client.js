@@ -41,48 +41,54 @@ export default function Client() {
   }, []);
   // useEffect(() => {
   //   const intervalId = setInterval(() => {
-  //     switch (currentLogoIndex) {
-  //       case 0:
-  //         setLogo1Opacity(logo1Opacity === 0.5 ? 1 : 0.5);
-  //         break;
-  //       case 1:
-  //         setLogo2Opacity(logo2Opacity === 0.5 ? 1 : 0.5);
-  //         break;
-  //       case 2:
-  //         setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
-  //         break;
-  //       case 3:
-  //         setLogo1Opacity(logo1Opacity === 1 ? 0.5 : 1);
-  //         setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
-  //         break;
-  //       case 4:
-  //         setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
-  //         setLogo2Opacity(logo2Opacity === 1 ? 0.5 : 1);
-  //         break;
-  //       case 5:
-  //         setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
-  //         setLogo6Opacity(logo6Opacity === 1 ? 0.5 : 1);
-  //         break;
-  //       case 6:
-  //         setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
-  //         setLogo7Opacity(logo7Opacity === 1 ? 0.5 : 1);
-  //         break;
-  //       case 7:
-  //         setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
-  //         setLogo5Opacity(logo5Opacity === 1 ? 0.5 : 1);
-  //         break;
-  //       case 8:
-  //         setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
-  //         setLogo3Opacity(logo3Opacity === 1 ? 0.5 : 1);
-  //         break;
-  //       case 9:
-  //         setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
-  //         setLogo4Opacity(logo4Opacity === 1 ? 0.5 : 1);
-  //         break;
+  //     for (let i = 0; i < 100; i++) {
+  //       switch (currentLogoIndex) {
+  //         case 0:
+  //           setLogo1Opacity(logo1Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo6Opacity(logo6Opacity === 1 ? 0.5 : 0.5);
+  //           break;
+  //         case 1:
+  //           setLogo2Opacity(logo2Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo7Opacity(logo7Opacity === 1 ? 0.5 : 0.5);
+  //           break;
+  //         case 2:
+  //           setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo8Opacity(logo8Opacity === 1 ? 0.5 : 0.5);
+  //           break;
+  //         case 3:
+  //           setLogo1Opacity(logo1Opacity === 1 ? 0.5 : 1);
+  //           setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
+  //           break;
+  //         case 4:
+  //           setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo2Opacity(logo2Opacity === 1 ? 0.5 : 1);
+  //           break;
+  //         case 5:
+  //           setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo6Opacity(logo6Opacity === 1 ? 0.5 : 1);
+  //           break;
+  //         case 6:
+  //           setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo7Opacity(logo7Opacity === 1 ? 0.5 : 1);
+  //           break;
+  //         case 7:
+  //           setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo5Opacity(logo5Opacity === 1 ? 0.5 : 1);
+  //           break;
+  //         case 8:
+  //           setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo3Opacity(logo3Opacity === 1 ? 0.5 : 1);
+  //           break;
+  //         case 9:
+  //           setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
+  //           setLogo4Opacity(logo4Opacity === 1 ? 0.5 : 1);
+  //           break;
 
-  //       default:
-  //         break;
+  //         default:
+  //           break;
+  //       }
   //     }
+
   //     setCurrentLogoIndex((currentLogoIndex) => currentLogoIndex + 1);
   //   }, 1000);
 
@@ -166,6 +172,5 @@ export default function Client() {
         />
       </div>
     </>
-
   );
 }
