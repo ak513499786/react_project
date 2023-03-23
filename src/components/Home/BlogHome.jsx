@@ -183,60 +183,8 @@ const BlogHome = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh    mx-4 items-center">
-                  <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt="" />
-                  </div>
-                  <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
-                      Empathy in UX
-                    </h2>
-                  </div>
-                  <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh    mx-4 items-center">
-                  <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt="" />
-                  </div>
-                  <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
-                      Empathy in UX
-                    </h2>
-                  </div>
-                  <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh    mx-4 items-center">
-                  <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt="" />
-                  </div>
-                  <div className="head mt-5">
-                    <h2 className="text-3xl text-center text-stone-400">
-                      Empathy in UX
-                    </h2>
-                  </div>
-                  <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p className="flex coloo w-full box-pera text-stone-400 items-center justify-center text-center">
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
+              
+             
             </Swiper>
             <div className=" flex justify-center items-center -mt-2 -ml-40">
               <button className="exp_btn ">
