@@ -28,10 +28,10 @@ function App() {
   return (
     <div>
       <AnimatedCursor
-        innerSize={12}
+        innerSize={8}
         outerSize={0}
         color="255, 255, 255"
-        outerAlpha={5}
+        outerAlpha={0}
         innerScale={1.2}
         outerScale={5}
         hasBlendMode={true}
@@ -39,25 +39,31 @@ function App() {
           mixBlendMode: "exclusion",
         }}
       />
-      <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/" element={<Dummy />} /> */}
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/work" element={<Work />} />
-          <Route exact path="/career" element={<Career />} />
-          <Route exact path="/blog" element={<Blog />} />
-          <Route exact path="/services" element={<Services />} />
-          <Route exact path="/consultingandstrategy" element={<Consulting />} />
-          <Route exact path="/userexperience" element={<UX />} />
-          <Route exact path="/productdevelopment" element={<PD />} />
-          <Route exact path="/digitalmarketing" element={<DM />} />
-          <Route exact path="/let's_talk" element={<Talk />} />
-          <Route exact path="/case_study" element={<Case />} />
-          <Route exact path="/empathy" element={<Empathy />} />
-        </Routes>
-      </BrowserRouter>
+      <Cursor>
+        <BrowserRouter>
+          <ScrollToTop />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            {/* <Route exact path="/" element={<Dummy />} /> */}
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/work" element={<Work />} />
+            <Route exact path="/career" element={<Career />} />
+            <Route exact path="/blog" element={<Blog />} />
+            <Route exact path="/services" element={<Services />} />
+            <Route
+              exact
+              path="/consultingandstrategy"
+              element={<Consulting />}
+            />
+            <Route exact path="/userexperience" element={<UX />} />
+            <Route exact path="/productdevelopment" element={<PD />} />
+            <Route exact path="/digitalmarketing" element={<DM />} />
+            <Route exact path="/let's_talk" element={<Talk />} />
+            <Route exact path="/case_study" element={<Case />} />
+            <Route exact path="/empathy" element={<Empathy />} />
+          </Routes>
+        </BrowserRouter>
+      </Cursor>
     </div>
   );
 }
