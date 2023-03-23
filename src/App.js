@@ -13,6 +13,7 @@ import UX from "./components/userExperience/UX";
 import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
+import Cursor from "react-special-cursor";
 import Scrollbar from 'smooth-scrollbar';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -38,7 +39,6 @@ function App() {
           mixBlendMode: "exclusion",
         }}
       />
-
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
