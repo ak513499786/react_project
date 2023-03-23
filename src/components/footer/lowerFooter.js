@@ -1,4 +1,3 @@
-import twitter from "../navigationBar/images/mdi_twitter.svg";
 import facebook from "../navigationBar/images/ic_baseline-facebook.svg";
 import instagram from "../navigationBar/images/mdi_instagram.svg";
 import linkedin from "../navigationBar/images/mdi_linkedin.svg";
