@@ -41,7 +41,7 @@ const BlogHome = () => {
           <div
             onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
             onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-            className="max-w-[100%] w-[100%] homeidea -ml-0 max-lg:ml-0"
+            className="max-w-[100%] w-[100%] homeidea -ml-9 max-lg:ml-0"
           >
             <Swiper
               ref={swiperRef}
@@ -314,6 +314,8 @@ const BlogHome = () => {
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     <img src={image3} alt="" />
+                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                    <img src={image5} alt="" />
                   </div>
                   <div className="head mt-5">
                     <h2

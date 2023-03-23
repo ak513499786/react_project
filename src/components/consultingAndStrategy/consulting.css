@@ -28,8 +28,8 @@
   left: 0px;
   display: flex;
   flex-direction: column;
-  /* scroll-snap-type:proximity;
-  scroll-snap-type: y proximity; */
+  scroll-snap-type:proximity;
+  scroll-snap-type: y proximity;
 }
 .vertical-animation-container {
   display: flex;
@@ -41,8 +41,8 @@
   padding-bottom: 102px;
   margin-top: 0px;
   height: 300px;
-  /* scroll-snap-stop: always;
-  scroll-snap-align: start; */
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
 }
 .vertical-animation-h1 {
   width: 614.53px;
@@ -257,8 +257,7 @@
   .vertical-animation {
     left: 0%;
     width: 640px;
-  margin-left: 0%;
-
+    margin-left: 0%;
   }
   .vertical-animation-container {
     width: 200px;

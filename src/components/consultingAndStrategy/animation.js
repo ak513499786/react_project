@@ -15,13 +15,18 @@ const Animation = () => {
     return (
       <div
         ref={verticalRef}
-        style={{ display: "flex", height: "400px" }}
+        style={{
+          display: "flex",
+          height: "400px",
+          scrollSnapType: "y mandatory",
+        }}
         className="item-center justify-center"
       >
         <div
           style={{
             overflowY: "scroll",
             marginRight: "0px",
+            scrollSnapType: "y mandatory",
             paddingRight: "x0px",
             height: "300px",
             width: "100%",
@@ -86,7 +91,7 @@ const Animation = () => {
           </div>
         </div>
         <div ref={horizontalRef} className="horizontal-animation">
-          <div style={{ width: "2000px" }}>
+          <div style={{ width: "2000px", scrollSnapType: "y mandatory" }}>
             <div className="horizontal-animation-container">
               <li className="horizontal-animation-para">Market Research</li>
               <li className="horizontal-animation-para">
@@ -106,16 +111,23 @@ const Animation = () => {
     );
   } else if (url.pathname === "/userexperience") {
     return (
-      <div style={{ display: "flex", height: "400px" }}>
+      <div
+        ref={verticalRef}
+        style={{
+          display: "flex",
+          height: "400px",
+          scrollSnapType: "y mandatory",
+        }}
+        className="item-center justify-center"
+      >
         <div
-          ref={verticalRef}
           style={{
             overflowY: "scroll",
-            // marginRight: "20px",
-            paddingRight: "20px",
+            marginRight: "0px",
+            scrollSnapType: "y mandatory",
+            paddingRight: "x0px",
             height: "300px",
             width: "100%",
-
           }}
           onScroll={handleScroll}
         >
@@ -176,21 +188,11 @@ const Animation = () => {
                   users to seamlessly interact with them.
                 </p>
               </div>
-              {/* <div className="vertical-animation-container">
-                <h1 className="vertical-animation-h1">Digital Branding </h1>
-                <p className="vertical-animation-para">
-                  User Experience is at the core of everything we build at Our
-                  Go-To-Market Strategy entails extensive research into the
-                  market condition. We devise comprehensive launch and marketing
-                  strategies for you to position yourself in the market by
-                  mitigating the risks and capitalising on data-driven insights.
-                </p>
-              </div> */}
             </div>
           </div>
         </div>
         <div ref={horizontalRef} className="horizontal-animation">
-          <div style={{ width: "2000px" }}>
+          <div style={{ width: "2000px", scrollSnapType: "y mandatory" }}>
             <div className="horizontal-animation-container">
               <li className="horizontal-animation-para">UX Audit</li>
               <li className="horizontal-animation-para">UX Research</li>
@@ -209,17 +211,23 @@ const Animation = () => {
     );
   } else if (url.pathname === "/digitalmarketing") {
     return (
-      <div style={{ display: "flex", height: "400px" }}>
+      <div
+        ref={verticalRef}
+        style={{
+          display: "flex",
+          height: "400px",
+          scrollSnapType: "y mandatory",
+        }}
+        className="item-center justify-center"
+      >
         <div
-          ref={verticalRef}
           style={{
-            // flex: 1,
             overflowY: "scroll",
-            // marginRight: "20px",
-            paddingRight: "20px",
+            marginRight: "0px",
+            scrollSnapType: "y mandatory",
+            paddingRight: "x0px",
             height: "300px",
             width: "100%",
-
           }}
           onScroll={handleScroll}
         >
@@ -305,7 +313,7 @@ const Animation = () => {
           </div>
         </div>
         <div ref={horizontalRef} className="horizontal-animation">
-          <div style={{ width: "2000px" }}>
+          <div style={{ width: "2000px", scrollSnapType: "y mandatory" }}>
             <div className="horizontal-animation-container">
               <li className="horizontal-animation-para">Website Development</li>
               <li className="horizontal-animation-para">Web App Development</li>
@@ -328,17 +336,23 @@ const Animation = () => {
     );
   } else {
     return (
-      <div style={{ display: "flex", height: "400px" }}>
+      <div
+        ref={verticalRef}
+        style={{
+          display: "flex",
+          height: "400px",
+          scrollSnapType: "y mandatory",
+        }}
+        className="item-center justify-center"
+      >
         <div
-          ref={verticalRef}
           style={{
-            // flex: 1,
             overflowY: "scroll",
-            marginRight: "20px",
-            paddingRight: "20px",
+            marginRight: "0px",
+            scrollSnapType: "y mandatory",
+            paddingRight: "x0px",
             height: "300px",
             width: "100%",
-
           }}
           onScroll={handleScroll}
         >
@@ -387,7 +401,7 @@ const Animation = () => {
           </div>
         </div>
         <div ref={horizontalRef} className="horizontal-animation">
-          <div style={{ width: "2000px" }}>
+          <div style={{ width: "2000px", scrollSnapType: "y mandatory" }}>
             <div className="horizontal-animation-container">
               <li className="horizontal-animation-para">SEO</li>
               <li className="horizontal-animation-para">Social Media</li>
