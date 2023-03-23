@@ -20,7 +20,9 @@
   z-index: 100;
   cursor: none;
 }
-
+.cursor:hover{
+  cursor: none;
+}
 .custom-cursor-text {
   color: black;
   font-size: 18px;

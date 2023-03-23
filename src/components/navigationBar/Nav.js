@@ -1,7 +1,7 @@
 import "./nav.css";
 
 import logo from "./images/logo.svg";
-import twitter from "./images/mdi_twitter.svg";
+import Vectorr from "../footer/images/Vectorr.svg";
 import facebook from "./images/ic_baseline-facebook.svg";
 import instagram from "./images/mdi_instagram.svg";
 import linkedin from "./images/mdi_linkedin.svg";
@@ -106,10 +106,17 @@ export default function Navigation_bar() {
         </ul>
         <div className="details">
           <div className="socials">
-            <img src={linkedin} alt="" className="icons" />
+            <Link
+              target="blank"
+              to="https://www.linkedin.com/company/codelinear/mycompany/?viewAsMember=true"
+            >
+              <img src={linkedin} alt="" srcset="" className="icons" />
+            </Link>{" "}
             <img src={facebook} alt="" className="icons" />
             <img src={instagram} alt="" className="icons" />
-            <img src={twitter} alt="" className="icons" />
+            <Link target="blank" to="https://medium.com/@codelinear_">
+              <img src={Vectorr} alt="" srcset="" className="icons" />
+            </Link>
           </div>
           <p className="contact-loc">
             12<sup>o</sup> 56' 27.06" N, 77<sup>o</sup> 32' 39.228" E
