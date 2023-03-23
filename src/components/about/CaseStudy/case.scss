@@ -1,7 +1,6 @@
 .custom-cursor {
-  position: absolute;
+  position: fixed;
   left: 100px;
-
   width: 100px;
   height: 100px;
   pointer-events: none;
@@ -36,9 +35,9 @@
   width: 100%;
   overflow-x: scroll;
 }
-.circle {
-  cursor: none;
-}
+// .circle {
+//   cursor: default;
+// }
 .carousel-items {
   display: flex;
   justify-content: flex-start;

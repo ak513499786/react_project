@@ -2,6 +2,7 @@ import twitter from "../navigationBar/images/mdi_twitter.svg";
 import facebook from "../navigationBar/images/ic_baseline-facebook.svg";
 import instagram from "../navigationBar/images/mdi_instagram.svg";
 import linkedin from "../navigationBar/images/mdi_linkedin.svg";
+import Vectorr from "./images/Vectorr.svg";
 import Codelinear from "../codelinear/codelinear";
 
 import { Link } from "react-router-dom";
@@ -94,7 +95,7 @@ export default function Lowerfooter() {
           <img src={facebook} alt="" srcset="" className="icon" />
           <img src={instagram} alt="" srcset="" className="icon" />
           <Link target="blank" to="https://medium.com/@codelinear_">
-            <img src={twitter} alt="" srcset="" className="icon" />
+            <img src={Vectorr} alt="" srcset="" className="icon" />
           </Link>
         </div>
       </div>

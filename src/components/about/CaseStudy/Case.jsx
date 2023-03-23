@@ -97,7 +97,7 @@ const Case = () => {
               <SwiperSlide
                 className=" flex justify-center items-center"
                 onMouseMove={handleMouseMove}
-                style={{ cursor: "none" }}
+                //
               >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome  ">
@@ -111,7 +111,7 @@ const Case = () => {
               </SwiperSlide>
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                style={{ cursor: "none" }}
+                //
                 className="w-[600px] flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -126,7 +126,7 @@ const Case = () => {
               </SwiperSlide>{" "}
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                style={{ cursor: "none" }}
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -141,7 +141,7 @@ const Case = () => {
               </SwiperSlide>{" "}
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                style={{ cursor: "none" }}
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -156,7 +156,7 @@ const Case = () => {
               </SwiperSlide>{" "}
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                style={{ cursor: "none" }}
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -171,7 +171,7 @@ const Case = () => {
               </SwiperSlide>
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                style={{ cursor: "none" }}
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">

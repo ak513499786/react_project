@@ -26,6 +26,7 @@ function App() {
       {/* <AnimatedCursor
         innerSize={12}
         outerSize={0}
+<<<<<<< HEAD
         color="#fff"
         outerAlpha={0}
         innerScale={1.7}
@@ -38,11 +39,17 @@ function App() {
           '.cursor'
         ]}
       /> */}
+=======
+        color="255, 255, 255"
+        outerAlpha={5}
+        innerScale={1.2}
+        outerScale={5}
+      />
+>>>>>>> c815a212405ce203136c6f8678ad7b8ca2f971bd
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/" element={<Cursor />} /> */}
           {/* <Route exact path="/" element={<Dummy />} /> */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
