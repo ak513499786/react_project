@@ -98,7 +98,7 @@ const Case = () => {
               <SwiperSlide
                 className=" flex justify-center items-center"
                 onMouseMove={handleMouseMove}
-                //  
+                //
               >
                 <Link to="/case_study" className="cursor">
                   <div className="imghome1 hideehome  ">
@@ -112,7 +112,7 @@ const Case = () => {
               </SwiperSlide>
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                //  
+                //
                 className="w-[600px] flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -130,7 +130,7 @@ const Case = () => {
               </SwiperSlide>{" "}
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                //  
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -148,7 +148,7 @@ const Case = () => {
               </SwiperSlide>{" "}
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                //  
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -167,7 +167,7 @@ const Case = () => {
               </SwiperSlide>{" "}
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                //  
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -186,7 +186,7 @@ const Case = () => {
               </SwiperSlide>
               <SwiperSlide
                 onMouseMove={handleMouseMove}
-                //  
+                //
                 className=" flex justify-center items-center"
               >
                 <Link to="/case_study" className="cursor">
@@ -204,7 +204,7 @@ const Case = () => {
                   className="custom-cursor"
                   style={{
                     left: cursorPos.x - 50 + "px",
-                    top: cursorPos.y - 80 + "px",
+                    top: cursorPos.y - 300 + "px",
                   }}
                 >
                   <div className="custom-cursor-circle">
