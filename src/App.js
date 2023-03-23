@@ -15,8 +15,8 @@ import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Client from "./components/Home/client";
-import Dummy from "./components/Home/Dummy";
+// import Client from "./components/Home/client";
+// import Dummy from "./components/Home/Dummy";
 
 function App() {
   window.scroll({
@@ -25,12 +25,19 @@ function App() {
   return (
     <div>
       <AnimatedCursor
-        innerSize={8}
+        innerSize={12}
         outerSize={0}
-        color="225, 225, 225"
-        outerAlpha={2}
+        color="#fff"
+        outerAlpha={0}
         innerScale={1.7}
-        outerScale={1.5}
+        outerScale={0}
+        hasBlendMode={true}
+        innerStyle={{
+          mixBlendMode: "exclusion",
+        }}
+        clickables={[
+          '.cursor'
+        ]}
       />
       <BrowserRouter>
         <ScrollToTop />

@@ -10,6 +10,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap, TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 import "./case.scss";
+import AnimatedCursor from "react-animated-cursor";
 
 const Case = () => {
   const breakpoints = {

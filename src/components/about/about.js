@@ -13,7 +13,6 @@ export default function about() {
   return (
     <>
       {/* <AnimatedCursor color="255, 255, 255"/> */}
-
       <Navbar />
       <div className="iframe-container">
         <iframe

@@ -95,7 +95,6 @@
   width: 78.9px;
   height: 92px;
   cursor: pointer;
-  z-index: 3;
 }
 #navigation-slide {
   position: fixed;
@@ -110,7 +109,7 @@
   bottom: 150vh;
   width: 100%;
   height: 100vh;
-  z-index: 5;
+  z-index: 10;
   backdrop-filter: blur(15px);
 }
 .slide_nav_list-item {
