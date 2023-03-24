@@ -43,7 +43,6 @@
   height: 300px;
   scroll-snap-stop: always;
   scroll-snap-align: start;
-  cursor: move;
 }
 .vertical-animation-h1 {
   width: 614.53px;
