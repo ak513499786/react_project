@@ -23,8 +23,8 @@ export default function Hero() {
             </p>
             <div id="arrow">
               <p id="nums">1/8</p>
-              <img src={left_arrow} alt="" id="left" />
-              <img src={right_arrow} alt="" srcset="" id="right" />
+              <img src={left_arrow} alt="" id="left"  loading="lazy"/>
+              <img src={right_arrow} alt="" srcset="" id="right"  loading="lazy"/>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import empathy from "../Blog/Images/Frame 43.svg";
+import empathy from "../blog/Images/Frame 43.svg";
 import cheese from "./images/Ellipse 19.png";
 
 export default function Empathyhero() {
@@ -10,7 +10,7 @@ export default function Empathyhero() {
           <h1 className="empathy-hero-h1">Empathy In UX</h1>
         </div>
         <div className="cheese">
-          <img src={cheese} alt="" className="cheese-img" />
+          <img src={cheese} alt="" className="cheese-img" loading="lazy"/>
           <p className="cheese-para">cheese</p>
         </div>
       </div>

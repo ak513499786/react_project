@@ -61,7 +61,7 @@ export default function Ideas() {
             <div className="cardh  cass  mx-4 items-center">
               <div className="img max-md:flex  max-md:justify-center">
                 {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                <img src={image2} alt="" />
+                <img src={image2} alt=""  loading="lazy"/>
               </div>
               <div className="head mt-5">
                 <h2 className="text-3xl text-center text-stone-400">
@@ -80,7 +80,7 @@ export default function Ideas() {
             <div className="cardh  cass  mx-4 items-center">
               <div className="img max-md:flex  max-md:justify-center">
                 {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                <img src={image2} alt="" />
+                <img src={image2} alt=""  loading="lazy"/>
               </div>
               <div className="head mt-5">
                 <h2 className="text-3xl text-center text-stone-400">
@@ -98,7 +98,7 @@ export default function Ideas() {
           <SwiperSlide>
             <div className="cardh  cass  mx-4 items-center">
               <div className="img max-md:flex  max-md:justify-center">
-                <img src={image2} alt="" />
+                <img src={image2} alt=""  loading="lazy"/>
               </div>
               <div className="head mt-5">
                 <h2 className="text-3xl text-center text-stone-400">
@@ -117,7 +117,7 @@ export default function Ideas() {
             <div className="cardh  cass  mx-4 items-center">
               <div className="img max-md:flex  max-md:justify-center">
                 {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                <img src={image2} alt="" />
+                <img src={image2} alt=""  loading="lazy"/>
               </div>
               <div className="head mt-5">
                 <h2 className="text-3xl text-center text-stone-400">

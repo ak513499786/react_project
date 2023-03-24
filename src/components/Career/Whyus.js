@@ -25,7 +25,7 @@ export default function whyus() {
               Crust beef mozzarella ham red ranch tomatoes spinach.
             </p>
           </div>
-          <img src={image6} alt="" className="card-imgs" />
+          <img src={image6} alt="" className="card-imgs"  loading="lazy"/>
         </div>
         <div className="whyus-container">
           <div className="whyus-content-container">
@@ -34,7 +34,7 @@ export default function whyus() {
               Crust beef mozzarella ham red ranch tomatoes spinach.
             </p>
           </div>
-          <img src={image8} alt="" className="card-imgs" />
+          <img src={image8} alt="" className="card-imgs"  loading="lazy"/>
         </div>
         <div className="whyus-container">
           <div className="whyus-content-container">
@@ -43,7 +43,7 @@ export default function whyus() {
               Crust beef mozzarella ham red ranch tomatoes spinach.
             </p>
           </div>
-          <img src={image7} alt="" className="card-imgs" />
+          <img src={image7} alt="" className="card-imgs"  loading="lazy"/>
         </div>
         <div className="whyus-container">
           <div className="whyus-content-container">
@@ -52,7 +52,7 @@ export default function whyus() {
               Crust beef mozzarella ham red ranch tomatoes spinach.
             </p>
           </div>
-          <img src={image9} alt="" className="card-imgs" />
+          <img src={image9} alt="" className="card-imgs"  loading="lazy"/>
         </div>
       </div>
       <div className="life-container max-xl:my-10">

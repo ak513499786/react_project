@@ -84,8 +84,8 @@ const Vision = () => {
                 >
                   skip ahead
                   <div className="downarrows" ref={(el) => (arrows = el)}>
-                    <img src={whitedownarrow} alt="" className="arrowdown" />
-                    <img src={arrowdown} alt="" className="arrowdown" />
+                    <img src={whitedownarrow} alt="" className="arrowdown" loading="lazy"/>
+                    <img src={arrowdown} alt="" className="arrowdown"/>
                   </div>
                 </div>
               </div>
@@ -98,6 +98,7 @@ const Vision = () => {
                 src={svg1}
                 alt="svg"
                 ref={(el) => (spinimg1 = el)}
+                loading="lazy"
               />
               <h1 className="subcontainer-h1">Ideal</h1>
               <p className="subcontainer-para">
@@ -115,6 +116,7 @@ const Vision = () => {
                 src={svg2}
                 alt="svg"
                 ref={(el) => (spinimg2 = el)}
+                loading="lazy"
               />
               <h1 className="subcontainer-h1">Impact</h1>
               <p className="subcontainer-para">
@@ -131,6 +133,7 @@ const Vision = () => {
                 src={svg3}
                 alt="svg"
                 ref={(el) => (spinimg3 = el)}
+                loading="lazy"
               />
               <h1 className="subcontainer-h1">Innovation</h1>
               <p className="subcontainer-para">

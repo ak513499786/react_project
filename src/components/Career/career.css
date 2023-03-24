@@ -260,7 +260,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 20;
   background-color: black;
   padding: 153px 8px;
 }
@@ -548,7 +548,7 @@ select::placeholder {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 4;
+    z-index: 20;
     background-color: black;
     padding: 53px 8px;
   }

@@ -78,7 +78,7 @@ export default function Client() {
         }
       }
 
-      setCurrentLogoIndex((currentLogoIndex) => (currentLogoIndex + 1));
+      setCurrentLogoIndex((currentLogoIndex) => currentLogoIndex + 1);
     }, 1000);
 
     return () => clearInterval(intervalId);
@@ -104,47 +104,55 @@ export default function Client() {
           alt=""
           className="client-img1"
           style={{ opacity: logo1Opacity }}
+          loading="lazy"
         />
         <img
           src={client2}
           alt=""
           className="client-img2"
           style={{ opacity: logo2Opacity }}
+          loading="lazy"
         />
         <img
           src={client3}
           alt=""
           className="client-img3"
           style={{ opacity: logo3Opacity }}
+          loading="lazy"
         />
         <img
           src={client4}
           alt=""
           className="client-img4"
           style={{ opacity: logo4Opacity }}
+          loading="lazy"
         />
         <img
           src={client5}
           alt=""
           className="client-img5"
           style={{ opacity: logo5Opacity }}
+          loading="lazy"
         />
         <img
           src={client7}
           alt=""
           className="client-img6"
           style={{ opacity: logo6Opacity }}
+          loading="lazy"
         />
         <img
           src={client6}
           alt=""
           className="client-img7"
           style={{ opacity: logo7Opacity }}
+          loading="lazy"
         />
         <img
           src={client8}
           alt=""
           className="client-img8"
+          loading="lazy"
           style={{ opacity: logo8Opacity }}
         />
         <img
@@ -152,12 +160,14 @@ export default function Client() {
           alt=""
           className="client-img9"
           style={{ opacity: logo9Opacity }}
+          loading="lazy"
         />
         <img
           src={client10}
           alt=""
           className="client-img0"
           style={{ opacity: logo10Opacity }}
+          loading="lazy"
         />
       </div>
     </>

@@ -12,7 +12,7 @@ export default function Footer() {
           Wanna Know A Secret?
         </p>
         <div className="arrow">
-            <img src={arrow} alt="" srcset="" className="arrow" />
+            <img src={arrow} alt="" srcset="" className="arrow"  loading="lazy"/>
           </div>
         <Link to="/let's_talk" className="link">
           <h1 id="ftrh1">

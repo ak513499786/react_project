@@ -42,18 +42,21 @@ export default function Horizontalanimation2() {
           alt=""
           className="HS-img"
           ref={(el) => (slideImg1 = el)}
+          loading="lazy"
         />
         <img
           src={image5}
           alt=""
           className="HS-img"
           ref={(el) => (slideImg2 = el)}
+          loading="lazy"
         />
         <img
           src={image3}
           alt=""
           className="HS-img"
           ref={(el) => (slideImg3 = el)}
+          loading="lazy"
         />
       </div>
     </>

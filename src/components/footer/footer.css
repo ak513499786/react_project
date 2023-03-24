@@ -169,7 +169,7 @@
 }
 .codelinear {
   width: 102.06px;
-  height: auto;
+  height: 47px;
   opacity: 0.9;
 }
 .footer-animationtxt {
@@ -178,7 +178,7 @@
   height: auto;
   opacity: 0.9;
   position: relative;
-  top: 13px;
+  bottom: 0.5px;
 }
 .aligncenter {
   overflow-x: hidden;
@@ -193,7 +193,7 @@
 .footer-animation {
   display: flex;
   gap: 7px;
-  align-items: center;
+  align-items: baseline;
 }
 @media screen and (max-width: 1620px) {
   #lower-footer {
@@ -485,7 +485,7 @@
     left: 0%;
     top: 30px;
   }
-  .footer-animationtxt{
-    margin-top: 7px;
-  }
+  /* .footer-animationtxt{
+    margin-top: 6px;
+  } */
 }

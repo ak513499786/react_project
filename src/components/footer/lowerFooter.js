@@ -89,12 +89,36 @@ export default function Lowerfooter() {
             target="blank"
             to="https://www.linkedin.com/company/codelinear/mycompany/?viewAsMember=true"
           >
-            <img src={linkedin} alt="" srcset="" className="icon" />
+            <img
+              src={linkedin}
+              alt=""
+              srcset=""
+              className="icon"
+              loading="lazy"
+            />
           </Link>
-          <img src={facebook} alt="" srcset="" className="icon" />
-          <img src={instagram} alt="" srcset="" className="icon" />
+          <img
+            src={facebook}
+            alt=""
+            srcset=""
+            className="icon"
+            loading="lazy"
+          />
+          <img
+            src={instagram}
+            alt=""
+            srcset=""
+            className="icon"
+            loading="lazy"
+          />
           <Link target="blank" to="https://medium.com/@codelinear_">
-            <img src={Vectorr} alt="" srcset="" className="icon" />
+            <img
+              src={Vectorr}
+              alt=""
+              srcset=""
+              className="icon"
+              loading="lazy"
+            />
           </Link>
         </div>
       </div>

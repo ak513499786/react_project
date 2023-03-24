@@ -110,12 +110,24 @@ export default function Navigation_bar() {
               target="blank"
               to="https://www.linkedin.com/company/codelinear/mycompany/?viewAsMember=true"
             >
-              <img src={linkedin} alt="" srcset="" className="icons" />
+              <img
+                src={linkedin}
+                alt=""
+                srcset=""
+                className="icons"
+                loading="lazy"
+              />
             </Link>{" "}
-            <img src={facebook} alt="" className="icons" />
-            <img src={instagram} alt="" className="icons" />
+            <img src={facebook} alt="" className="icons" loading="lazy" />
+            <img src={instagram} alt="" className="icons" loading="lazy" />
             <Link target="blank" to="https://medium.com/@codelinear_">
-              <img src={Vectorr} alt="" srcset="" className="icons" />
+              <img
+                src={Vectorr}
+                alt=""
+                srcset=""
+                className="icons"
+                loading="lazy"
+              />
             </Link>
           </div>
           <p className="contact-loc">

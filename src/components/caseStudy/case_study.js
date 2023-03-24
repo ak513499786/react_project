@@ -42,7 +42,7 @@ export default function Case() {
       </main>
 
       <section className="aussie">
-        <img src={img1} alt="" className="case-img" />
+        <img src={img1} alt="" className="case-img"  loading="lazy"/>
         <div className="case-div">
           <h1 className="case-section-h1">Aussie Spinach Onions</h1>
           <p className="case-section-para">
@@ -82,7 +82,7 @@ export default function Case() {
             wing Hawaiian party.
           </p>
         </div>
-        <img src={web} alt="" className="web" />
+        <img src={web} alt="" className="web"  loading="lazy"/>
       </section>
       <section className="sp">
         <h1 className="sp-h1">Services Provided</h1>
@@ -106,7 +106,7 @@ export default function Case() {
           integer non aliquam sit. Tellus ullamcorper id morbi donec volutpat
           enim vitae et ipsum.
         </p>
-        <img src={graph} alt="" className="graph" />
+        <img src={graph} alt="" className="graph"  loading="lazy"/>
       </section>
 
       {Widht > 768 ? (
@@ -116,21 +116,21 @@ export default function Case() {
           </h1>
           <div className="browse-container">
             <div className="browse-mini">
-              <img src={img1} alt="" className="browse-img" />
+              <img src={img1} alt="" className="browse-img"  loading="lazy"/>
               <h1 className="img-detail-h1">COWBOY</h1>
               <p className="img-details">
                 shopify platform design + development
               </p>
             </div>
             <div className="browse-mini">
-              <img src={img2} alt="" className="browse-img" />
+              <img src={img2} alt="" className="browse-img"  loading="lazy"/>
               <h1 className="img-detail-h1">WILLAIM ABRAHAM</h1>
               <p className="img-details">
                 shopify platform design + development
               </p>
             </div>
             <div className="browse-mini">
-              <img src={img3} alt="" className="browse-img" />
+              <img src={img3} alt="" className="browse-img"  loading="lazy"/>
               <h1 className="img-detail-h1">Studio Proper</h1>
               <p className="img-details">
                 shopify platform design + development
