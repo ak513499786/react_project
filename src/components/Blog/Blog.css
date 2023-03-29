@@ -13,7 +13,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .blog-content-section {
   display: flex;
@@ -29,13 +29,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   padding: 0px;
   gap: 99px;
-  width: 787.2px;
-  height: 42.3px;
+  width: 100%;
+  height: auto;
 }
 .blog-btn-content {
-  color: #cecece;
+  color: #848484;
   font-weight: 900;
   font-size: 28px;
   font-family: graphikthin;
@@ -98,7 +99,7 @@
   line-height: 46px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   text-align: center;
 }
 .blog-para {
@@ -113,8 +114,6 @@
   color: #cecece;
 }
 .blog-btns {
-  width: 103px;
-  height: 25px;
   font-family: "Graphik";
   font-style: normal;
   font-weight: 400;
@@ -153,6 +152,7 @@
     letter-spacing: 0.01em;
   }
   .blog-content-section {
+    height: 250px;
   }
   .blog-btns {
     gap: 79px;
@@ -216,6 +216,9 @@
   .blog-hero {
     height: 650px;
   }
+  .blog-btns{
+    gap: 50px;
+  }
 }
 @media screen and (max-width: 1140px) {
   .blog-imgs {
@@ -237,6 +240,9 @@
   }
   .blog-hero-h1 {
     top: 300px;
+  }
+  .blog-btns{
+    gap: 45px;
   }
 }
 @media screen and (max-width: 838px) {
@@ -286,6 +292,9 @@
   }
   .blog-hero {
     height: 600px;
+  }
+  .blog-btns{
+    gap: 40px;
   }
 }
 @media screen and (max-width: 768px) {

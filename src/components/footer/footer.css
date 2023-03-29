@@ -373,13 +373,14 @@
     margin-top: 30px;
   }
   #socials {
-    margin-top: 30px;
+    margin-top: 35px;
+    margin-left: 20px;
   }
   .column {
     gap: 41%;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 700px) {
   .lower-footer-container {
     left: 5%;
   }
@@ -412,11 +413,13 @@
   #contact {
     position: relative;
     top: 190%;
+    margin-top: 0;
   }
   #socials {
     position: relative;
     left: -150%;
-    top: 20%;
+    top: 40%;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 428px) {
@@ -425,6 +428,7 @@
   }
   #footer {
     width: 100%;
+    padding-top: 20px;
   }
   #ftrcnt {
     white-space: nowrap;

@@ -23,7 +23,12 @@ const Explore = () => {
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
-              <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
+              <h1
+                className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5"
+                style={{
+                  color: "#d8d6d6",
+                }}
+              >
                 Explore Our Services
               </h1>
             </div>
@@ -110,7 +115,13 @@ const Explore = () => {
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
-              <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
+              <h1
+                className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5"
+                style={{
+                  color: "#d8d6d6",
+                }}
+              >
+                {" "}
                 Explore Our Services
               </h1>
             </div>
@@ -201,7 +212,13 @@ const Explore = () => {
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
-              <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
+              <h1
+                className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5"
+                style={{
+                  color: "#d8d6d6",
+                }}
+              >
+                {" "}
                 Explore Our Services
               </h1>
             </div>
@@ -292,7 +309,13 @@ const Explore = () => {
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
-              <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
+              <h1
+                className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5"
+                style={{
+                  color: "#d8d6d6",
+                }}
+              >
+                {" "}
                 Explore Our Services
               </h1>
             </div>
@@ -382,7 +405,13 @@ const Explore = () => {
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
             <div className="headifn flex justify-start items-start w-full">
-              <h1 className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5">
+              <h1
+                className="text-7xl w-2/3  max-lg:text-5xl max-lg:w-full font-extrabold max-xl:p-5"
+                style={{
+                  color: "#d8d6d6",
+                }}
+              >
+                {" "}
                 Explore Our Services
               </h1>
             </div>

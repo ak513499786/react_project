@@ -91,7 +91,7 @@ const Vision = () => {
               </div>
             </div>
           </div>
-          <div className="guiding-subcontainer max-md:mt-20">
+          <div className="guiding-subcontainer">
             <div className="subcontainer">
               <img
                 className="subcontainer-img"

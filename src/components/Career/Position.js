@@ -214,7 +214,7 @@ export default function Positions() {
         <p className="job-loc">Experience Band: 3+ Yrs</p>
         <div className="job-description" ref={(el) => (jobdesc1 = el)}>
           <p className="job-pd-desc job-loc">
-            AAt Codelinear, we are looking for people who are passionate and
+            At Codelinear, we are looking for people who are passionate and
             driven to be the "Propellers of Impact". As a mobile front-end
             developer, you will work with our front-end experts to build
             high-definition and responsive mobile applications that seamlessly

@@ -64,7 +64,7 @@
   margin-left: 9.6%;
 }
 .crewpara {
-  color: #cecece;
+  color: #848484;
   font-family: graphik;
   font-weight: 100;
   opacity: 0.9;
@@ -79,7 +79,7 @@
   gap: 10px;
   width: 140px;
   height: 42px;
-  border: 1px solid #cecece;
+  border: 1px solid #848484;
   border-radius: 72px;
   text-decoration: none;
   transition: 0.3s;
@@ -92,7 +92,7 @@
   letter-spacing: -0.045em;
   font-family: graphik;
   font-weight: 100;
-  color: #cecece;
+  color: #848484;
   padding-bottom: 4px;
 }
 .career-crew-btn:hover {
@@ -120,8 +120,8 @@
   line-height: 32px;
   font-family: graphik;
   font-weight: 100;
-  color: #d8d6d6;
-  opacity: 0.9;
+  color: #848484;
+  opacity: 1;
 }
 .vision-container {
   display: flex;
@@ -175,7 +175,7 @@
   line-height: 30px;
   font-family: graphik;
   font-weight: 100;
-  color: #cecece;
+  color: #848484;
   font-weight: 100;
 }
 .subcontainer-img {
@@ -271,17 +271,11 @@
   }
   .visionh1 {
     font-size: 35px;
-    color: #d8d6d6;
   }
   .vision-para {
     font-size: 25px;
     line-height: 37px;
   }
-  /* .crewcontainer {
-    position: relative;
-    bottom: 70px;
-    height: auto;
-  } */
   .c-container {
     display: flex;
     flex-direction: row;
@@ -299,9 +293,9 @@
     width: 85%;
     top: 250px;
   }
-  /* .core-container {
+  .core-container {
     padding: 120px 10.7%;
-  } */
+  }
   .core-para {
     font-size: 17px;
     line-height: 26px;
@@ -312,7 +306,7 @@
     align-items: center;
     padding: 0px 40px;
     gap: 0px;
-    width: 550px;
+    width: 540px;
     height: 232px;
     background: #111111;
     border-radius: 30px;
@@ -320,7 +314,6 @@
   .visionh1 {
     font-size: 40px;
     font-weight: 600;
-    color: #d8d6d6;
   }
   .vision-para {
     font-size: 27px;
@@ -441,6 +434,7 @@
   .guiding-subcontainer {
     width: 100%;
     gap: 70px;
+    margin-top: 80px;
   }
   .vision-container {
     flex-direction: column;
@@ -459,7 +453,7 @@
     justify-content: center;
     gap: 10px;
     width: 300px;
-    height: 300px;
+    height: 350px;
   }
   /* .crewcontainer {
     bottom: 200px;
@@ -481,10 +475,6 @@
     position: relative;
     bottom: 250px;
   }
-  /* .crewcontainer {
-    bottom: 50px;
-    height: 1600px;
-  } */
 }
 @media screen and (max-width: 428px) {
   .career-crew-btn{
@@ -495,29 +485,10 @@
     font-size: 40px;
     line-height: 45px;
   }
-  /* .core-container {
-    gap: 70px;
-  } */
   .core-guiding-container {
     gap: 50px;
   }
-  .strategist {
-    text-align: center;
-  }
-  /* <<<<<<< HEAD */
-  /* .crewclass {
-
-  .guiding-skip{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-  } */
   .crewclass {
-    /* >>>>>>> 197f0f4aaf057c6d88ae03b456bb3f9c37fb18ac */
     margin-left: 0;
   }
-  /* .crewcontainer {
-    bottom: 300px;
-    height: 1150px;
-  } */
 }

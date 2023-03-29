@@ -29,9 +29,9 @@ input:focus {
   font-weight: 600;
   font-size: 100px;
   line-height: 100px;
-  letter-spacing: -0.015em;
+  letter-spacing: 0em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .contact-hero-para {
   width: 655.97px;
@@ -42,8 +42,8 @@ input:focus {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  letter-spacing: -0.03em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
 }
 .contact-form {
   display: flex;
@@ -71,9 +71,9 @@ input:focus {
   font-size: 50px;
   line-height: 102.8%;
   text-align: center;
-  letter-spacing: -0.015em;
+  letter-spacing: 0em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 #form {
   display: flex;
@@ -200,7 +200,7 @@ input:focus {
   text-align: center;
   letter-spacing: -0.045em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .address-p {
   position: relative;
@@ -214,8 +214,8 @@ input:focus {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  letter-spacing: -0.03em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
 }
 .address-loc {
   width: 506px;
@@ -227,7 +227,7 @@ input:focus {
   line-height: 50px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #848484;
 }
 .sub_btn {
   display: flex;
@@ -238,7 +238,7 @@ input:focus {
   gap: 10px;
   width: 270px;
   height: 42px;
-  border: 1px solid #cecece;
+  border: 1px solid #848484;
   border-radius: 72px;
   transition: 0.3s;
 }
@@ -248,8 +248,8 @@ input:focus {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -0.03em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
   white-space: nowrap;
 }
 .phone-number::placeholder{

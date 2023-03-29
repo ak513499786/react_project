@@ -36,14 +36,6 @@ const Case = () => {
 
   return (
     <>
-      {/* <AnimatedCursor
-        innerSize={1}
-        outerSize={1}
-        color="255, 255, 255"
-        outerAlpha={0}
-        innerScale={0}
-        outerScale={0}
-      /> */}
       {/* {Widht > 1300 ? ( */}
       <div className="circle flex mt-60 justify-center h-full relative  items-center">
         <div className="width max-w-[1340px] w-full flex-col h-full items-center flex justify-center relative">
@@ -51,9 +43,12 @@ const Case = () => {
             <h1 className="text-7xl text-center font-bold max-md:text-5xl max-md:p-10">
               Take A Peek At Our <br /> Case Study
             </h1>
-            <p className="down text-center mt-8 max-md:p-10" style={{
-              color: '#848484'
-            }}>
+            <p
+              className="down text-center mt-8 max-md:p-10"
+              style={{
+                color: "#848484",
+              }}
+            >
               We handle all our projects with the utmost discretion. Through our
               case studies take a look at how we drive growth for our clients.
             </p>
@@ -72,8 +67,7 @@ const Case = () => {
               breakpoints={{
                 320: {
                   slidesPerView: 1,
-                  spaceBetween: 0,
-                  containerClass: "half-image-container",
+                  spaceBetween: 30,
                 },
                 640: {
                   slidesPerView: 1,
@@ -87,11 +81,19 @@ const Case = () => {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
+                1000: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
                 1200: {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
                 1300: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                },
+                1400: {
                   slidesPerView: 3,
                   spaceBetween: 30,
                 },
@@ -101,7 +103,7 @@ const Case = () => {
                 disableOnInteraction: false,
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className="ySwiper relative -ml-24 w-[115%] max-xl:w-[100%] max-xl:ml-0"
+              className="ySwiper relative -ml24  w-[100%] max-lg:w-[100%] max-2xl:ml-0"
             >
               {/* <div className="testhome"> */}
               <SwiperSlide
@@ -198,14 +200,19 @@ const Case = () => {
                 <div
                   className="custom-cursor"
                   style={{
-                    left: cursorPos.x - 50 + "px",
-                    top: cursorPos.y - 300 + "px",
+                    left: cursorPos.x - 150 + "px",
+                    top: cursorPos.y - 350 + "px",
                   }}
                 >
                   <div className="custom-cursor-circle">
-                    <span className="custom-cursor-text" style={{
-                      color: 'black'
-                    }}>Click</span>
+                    <span
+                      className="custom-cursor-text"
+                      style={{
+                        color: "black",
+                      }}
+                    >
+                      Click
+                    </span>
                   </div>
                 </div>
               )}

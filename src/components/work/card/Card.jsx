@@ -39,7 +39,7 @@ const Card = () => {
                     className="text-5xl mt-24 wcw"
                     style={{
                       fontFamily: "graphikthin",
-                      color: "#f6f6f6",
+                      color: "#d8d6d6",
                       fontWeight: "600",
                     }}
                   >
@@ -49,7 +49,7 @@ const Card = () => {
                     className="colo my-10 mt-20"
                     style={{
                       fontFamily: "graphik",
-                      color: "#cecece",
+                      color: "#848484",
                     }}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -69,7 +69,7 @@ const Card = () => {
                     className="text-5xl mt-24 wcw"
                     style={{
                       fontFamily: "graphikthin",
-                      color: "#f6f6f6",
+                      color: "#d8d6d6",
                       fontWeight: "600",
                     }}
                   >
@@ -79,7 +79,7 @@ const Card = () => {
                     className="colo my-10 mt-20"
                     style={{
                       fontFamily: "graphik",
-                      color: "#cecece",
+                      color: "#848484",
                     }}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -99,7 +99,7 @@ const Card = () => {
                     className="text-5xl mt-24 wcw"
                     style={{
                       fontFamily: "graphikthin",
-                      color: "#f6f6f6",
+                      color: "#d8d6d6",
                       fontWeight: "600",
                     }}
                   >
@@ -109,7 +109,7 @@ const Card = () => {
                     className="colo my-10 mt-20"
                     style={{
                       fontFamily: "graphik",
-                      color: "#cecece",
+                      color: "#848484",
                     }}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -129,7 +129,7 @@ const Card = () => {
                     className="text-5xl mt-24 wcw"
                     style={{
                       fontFamily: "graphikthin",
-                      color: "#f6f6f6",
+                      color: "#d8d6d6",
                       fontWeight: "600",
                     }}
                   >
@@ -139,7 +139,7 @@ const Card = () => {
                     className="colo my-10 mt-20"
                     style={{
                       fontFamily: "graphik",
-                      color: "#cecece",
+                      color: "#848484",
                     }}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -159,7 +159,7 @@ const Card = () => {
                     className="text-5xl mt-24 wcw"
                     style={{
                       fontFamily: "graphikthin",
-                      color: "#f6f6f6",
+                      color: "#d8d6d6",
                       fontWeight: "600",
                     }}
                   >
@@ -169,7 +169,7 @@ const Card = () => {
                     className="colo my-10 mt-20"
                     style={{
                       fontFamily: "graphik",
-                      color: "#cecece",
+                      color: "#848484",
                     }}
                   >
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -248,7 +248,7 @@ const Card = () => {
                         className="text-5xl mt-24 wcw"
                         style={{
                           fontFamily: "graphikthin",
-                          color: "#f6f6f6",
+                          color: "#d8d6d6",
                           fontWeight: "600",
                         }}
                       >
@@ -258,7 +258,7 @@ const Card = () => {
                         className="colo my-10 mt-20"
                         style={{
                           fontFamily: "graphik",
-                          color: "#cecece",
+                          color: "#848484",
                         }}
                       >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -279,7 +279,7 @@ const Card = () => {
                         className="text-5xl mt-24 wcw"
                         style={{
                           fontFamily: "graphikthin",
-                          color: "#f6f6f6",
+                          color: "#d8d6d6",
                           fontWeight: "600",
                         }}
                       >
@@ -289,7 +289,7 @@ const Card = () => {
                         className="colo my-10 mt-20"
                         style={{
                           fontFamily: "graphik",
-                          color: "#cecece",
+                          color: "#848484",
                         }}
                       >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -310,7 +310,7 @@ const Card = () => {
                         className="text-5xl mt-24 wcw"
                         style={{
                           fontFamily: "graphikthin",
-                          color: "#f6f6f6",
+                          color: "#d8d6d6",
                           fontWeight: "600",
                         }}
                       >
@@ -320,7 +320,7 @@ const Card = () => {
                         className="colo my-10 mt-20"
                         style={{
                           fontFamily: "graphik",
-                          color: "#cecece",
+                          color: "#848484",
                         }}
                       >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -341,7 +341,7 @@ const Card = () => {
                         className="text-5xl mt-24 wcw"
                         style={{
                           fontFamily: "graphikthin",
-                          color: "#f6f6f6",
+                          color: "#d8d6d6",
                           fontWeight: "600",
                         }}
                       >
@@ -351,7 +351,7 @@ const Card = () => {
                         className="colo my-10 mt-20"
                         style={{
                           fontFamily: "graphik",
-                          color: "#cecece",
+                          color: "#848484",
                         }}
                       >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -372,7 +372,7 @@ const Card = () => {
                         className="text-5xl mt-24 wcw"
                         style={{
                           fontFamily: "graphikthin",
-                          color: "#f6f6f6",
+                          color: "#d8d6d6",
                           fontWeight: "600",
                         }}
                       >
@@ -382,7 +382,7 @@ const Card = () => {
                         className="colo my-10 mt-20"
                         style={{
                           fontFamily: "graphik",
-                          color: "#cecece",
+                          color: "#848484",
                         }}
                       >
                         Lorem ipsum dolor sit, amet consectetur adipisicing
@@ -425,7 +425,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -435,7 +435,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -455,7 +455,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -465,7 +465,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -485,7 +485,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -495,7 +495,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -515,7 +515,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -525,7 +525,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -545,7 +545,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -555,7 +555,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -575,7 +575,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -585,7 +585,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -605,7 +605,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -615,7 +615,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
@@ -635,7 +635,7 @@ const Card = () => {
                   className="text-5xl -mt24 wcw"
                   style={{
                     fontFamily: "graphikthin",
-                    color: "#f6f6f6",
+                    color: "#d8d6d6",
                     fontWeight: "600",
                   }}
                 >
@@ -645,7 +645,7 @@ const Card = () => {
                   className="colo my-10 mt-20"
                   style={{
                     fontFamily: "graphik",
-                    color: "#cecece",
+                    color: "#848484",
                   }}
                 >
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero

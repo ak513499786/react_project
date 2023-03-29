@@ -30,7 +30,7 @@
   font-size: 75px;
   line-height: 88px;
   letter-spacing: -0.03em;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .words {
   width: 646px;
@@ -40,7 +40,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   white-space: nowrap;
 }
 .rolling-words {
@@ -80,7 +80,7 @@
   line-height: 100px;
   letter-spacing: -0.03em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   margin-bottom: 30px;
 }
 .wedo-para {
@@ -91,8 +91,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 139.52%;
-  letter-spacing: -0.02em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
 }
 .accordian-container {
   display: flex;
@@ -122,9 +122,9 @@
   font-weight: 600;
   font-size: 50px;
   line-height: 54px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .accordian-para {
   width: 637.98px;
@@ -135,7 +135,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #848484;
 }
 .ser-h1,
 .other-ser-h1 {
@@ -247,9 +247,9 @@
   font-size: 100px;
   line-height: 110px;
   text-align: center;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .e-para {
   width: 683.19px;
@@ -260,8 +260,8 @@
   font-size: 20px;
   line-height: 139.52%;
   text-align: center;
-  letter-spacing: -0.02em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
 }
 .skip-container {
   display: flex;
@@ -300,8 +300,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -0.03em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
 }
 .m-title {
   display: flex;
@@ -317,9 +317,9 @@
   font-weight: 600;
   font-size: 50px;
   line-height: 54px;
-  letter-spacing: -0.015em;
+  letter-spacing: 0em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .m-numbers {
   width: 331px;
@@ -329,8 +329,8 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -0.03em;
-  color: #cecece;
+  letter-spacing: 0em;
+  color: #848484;
 }
 .skip {
   display: flex;
@@ -470,7 +470,6 @@
     font-weight: 600;
     font-size: 78px;
     line-height: 78px;
-    letter-spacing: -0.03em;
     text-transform: capitalize;
     display: inline-block;
   }
@@ -622,7 +621,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: -0.03em;
     width: 100%;
     font-size: 16px;
     line-height: 22px;
@@ -647,8 +645,6 @@
     width: 35%;
     left: 6.7%;
     height: auto;
-    position: sticky;
-    top: 0;
   }
   .wedo-h1 {
     width: 100%;
@@ -752,7 +748,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    letter-spacing: -0.03em;
     width: 100%;
     font-size: 16px;
     line-height: 22px;
@@ -799,6 +794,8 @@
   }
   .wedo-container{
     position: relative;
+    top: 0;
+    width: 40%;
   }
   .accordian-h1 {
     font-size: 40px;
@@ -888,7 +885,7 @@
   }
   .e-model {
     width: 100%;
-    padding: 100px 0;
+    padding: 0;
     align-items: start;
     justify-content: start;
   }
@@ -933,6 +930,7 @@
     width: 100%;
     gap: 0;
     height: auto;
+    align-items: start;
   }
   .m-numbers {
     font-size: 16px;
@@ -1027,7 +1025,7 @@
     left: 10%;
   }
   .m-m-container {
-    padding: 14px 20px;
+    padding: 24px 20px;
     width: 100%;
     margin-left: 0;
   }
@@ -1037,6 +1035,7 @@
   }
   .m-title {
     font-size: 25px;
+    line-height: 30px;
   }
   .m-numbers {
     width: 30px;

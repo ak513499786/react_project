@@ -41,10 +41,10 @@ export default function Serviceshero() {
         </div> */}
 
         <div className="vision w-full mb-52  flex justify-center h-full relative  items-center">
-          <div className="wthh max-md:flex-col  ml-20 max-md:p-8  w-full flex relative">
-            <div className=" mt max-xl:ml-0 flex w-full max-sm:flex-col">
+          <div className="wthh max-md:flex-col  max-sm:ml-2   ml-20 max-2xl:ml-24 max-xl:ml-2 max-md:p-8  w-full flex relative">
+            <div className=" mt max-xl:ml-12 max-sm:ml-2 flex w-full  max-sm:flex-col">
               <div className="hie w-full">
-                <h1 className="text-6xl w-full mt6 ml-16 max-xl:mb-5 max-md:text-3xl font-extrabold text-white">
+                <h1 className="text-6xl w-full mt6 ml-16 max-2xl:ml-0 max-xl:mb-5 max-md:text-3xl font-extrabold text-white">
                   Leading The Way From
                 </h1>
               </div>
@@ -59,7 +59,7 @@ export default function Serviceshero() {
                   disableOnInteraction: true,
                 }}
                 modules={[Autoplay, FreeMode, Pagination, Navigation]}
-                className="mySwi -ml-32 max-xl:ml-0   w-[100%] h-40 "
+                className="mySwi -ml-32 max-2xl:-ml-5   w-[100%] h-40 "
               >
                 <SwiperSlide className="-ml">
                   <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">

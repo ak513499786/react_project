@@ -33,9 +33,9 @@ export default function Blogsection() {
     gsap.to(MVP2, 0, { display: "none" });
     gsap.to(NCR1, 0, { display: "none" });
     gsap.to(NCR2, 0, { display: "none" });
-    gsap.to(design, 0, { display: "none" });
+    gsap.to(design, 0, { display: "flex" });
     gsap.to(SVM, 0, { display: "none" });
-    gsap.to(col2, 0, { display: "none" });
+    gsap.to(col2, 0, { display: "flex" });
     gsap.to(col3, 0, { display: "none" });
     gsap.to(arrow, 0, { display: "none" });
 
@@ -78,6 +78,40 @@ export default function Blogsection() {
     gsap.to(MVP2, 0, { display: "flex" });
     gsap.to(col2, 0, { display: "flex" });
   };
+  const onClickSort4 = () => {
+    gsap.to(digitalmarketing, 0, { display: "flex" });
+    gsap.to(NCR1, 0, { display: "none" });
+    gsap.to(NCR2, 0, { display: "none" });
+    gsap.to(empathy1, 0, { display: "none" });
+    gsap.to(empathy2, 0, { display: "none" });
+    gsap.to(MVP1, 0, { display: "none" });
+    gsap.to(MVP2, 0, { display: "none" });
+    gsap.to(SVM, 0, { display: "none" });
+    gsap.to(col2, 0, { display: "none" });
+    gsap.to(col3, 0, { display: "none" });
+    gsap.to(arrow, 0, { display: "none" });
+
+    gsap.to(design, 0, { display: "none" });
+    gsap.to(all, 0, { visibility: "visible" });
+    gsap.to(col1, 0, { display: "flex" });
+  };
+  const onClickSort5 = () => {
+    gsap.to(digitalmarketing, 0, { display: "none" });
+    gsap.to(NCR1, 0, { display: "none" });
+    gsap.to(NCR2, 0, { display: "none" });
+    gsap.to(empathy1, 0, { display: "none" });
+    gsap.to(empathy2, 0, { display: "none" });
+    gsap.to(MVP1, 0, { display: "none" });
+    gsap.to(MVP2, 0, { display: "none" });
+    gsap.to(design, 0, { display: "none" });
+    gsap.to(col1, 0, { display: "none" });
+    gsap.to(col2, 0, { display: "none" });
+    gsap.to(arrow, 0, { display: "none" });
+
+    gsap.to(SVM, 0, { display: "flex" });
+    gsap.to(all, 0, { visibility: "visible" });
+    gsap.to(col3, 0, { display: "flex" });
+  };
   const onClickSort1 = () => {
     gsap.to(digitalmarketing, 0, { display: "flex" });
     gsap.to(NCR1, 0, { display: "flex" });
@@ -99,6 +133,21 @@ export default function Blogsection() {
     <>
       <section className="blog-content-section">
         <div className="blog-btns">
+          <p className="blog-btn-content" onClick={onClickSort4}>
+            Digital Marketing
+          </p>
+          <p className="blog-btn-content" onClick={onClickSort5}>
+            eCommerce
+          </p>
+          <p className="blog-btn-content" onClick={onClickSort3}>
+            MVP
+          </p>
+          <p className="blog-btn-content" onClick={onClickSort2}>
+            No Code
+          </p>
+          <p className="blog-btn-content" onClick={onClickSort}>
+            UI/UX Design
+          </p>
           <p
             className="blog-btn-content"
             ref={(el) => (all = el)}
@@ -109,15 +158,6 @@ export default function Blogsection() {
           >
             All
           </p>
-          <p className="blog-btn-content" onClick={onClickSort}>
-            UX
-          </p>
-          <p className="blog-btn-content" onClick={onClickSort2}>
-            No Code
-          </p>
-          <p className="blog-btn-content" onClick={onClickSort3}>
-            MVP
-          </p>
         </div>
       </section>
       <section>
@@ -125,7 +165,7 @@ export default function Blogsection() {
           <div className="blog-container">
             <div className="blog-containers" ref={(el) => (empathy1 = el)}>
               <Link to={"/empathy"} className="link-imgs">
-                <img src={image1} alt="" className="blog-imgs"  loading="lazy"/>
+                <img src={image1} alt="" className="blog-imgs" loading="lazy" />
               </Link>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
@@ -142,7 +182,7 @@ export default function Blogsection() {
               className="blog-containers"
               ref={(el) => (digitalmarketing = el)}
             >
-              <img src={image2} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image2} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
                 <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
                 {/* <p className="blog-para">
@@ -152,9 +192,9 @@ export default function Blogsection() {
               </div>
               {/* <p className="blog-btns">Read More</p> */}
             </div>
-            <div className="blog-containers" ref={(el) => (empathy2 = el)} >
+            <div className="blog-containers" ref={(el) => (empathy2 = el)}>
               <Link to={"/empathy"} className="link-imgs">
-                <img src={image1} alt="" className="blog-imgs"  loading="lazy"/>
+                <img src={image1} alt="" className="blog-imgs" loading="lazy" />
               </Link>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
@@ -172,7 +212,7 @@ export default function Blogsection() {
         <aside className="blogcol" ref={(el) => (col2 = el)}>
           <div className="blog-container">
             <div className="blog-containers" ref={(el) => (MVP1 = el)}>
-              <img src={image3} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image3} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
                 {/* <p className="blog-para">
@@ -184,7 +224,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (design = el)}>
-              <img src={image4} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image4} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
                 <h1 className="blog-heading">Design System</h1>
                 {/* <p className="blog-para">
@@ -196,7 +236,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (MVP2 = el)}>
-              <img src={image3} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image3} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
                 {/* <p className="blog-para">
@@ -212,7 +252,7 @@ export default function Blogsection() {
         <aside className="blogcol" ref={(el) => (col3 = el)}>
           <div className="blog-container">
             <div className="blog-containers" ref={(el) => (NCR1 = el)}>
-              <img src={image5} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image5} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
                 {/* <p className="blog-para">
@@ -224,9 +264,9 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (SVM = el)}>
-              <img src={image6} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image6} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
-                <h1 className="blog-heading">Spotify Vs Magento</h1>
+                <h1 className="blog-heading">Shopify Vs Magento</h1>
                 {/* <p className="blog-para">
                   While Shopify offers a no-coding and user-friendly platform
                   that can help you run an online shop in no time, Magento’s
@@ -236,7 +276,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (NCR2 = el)}>
-              <img src={image5} alt="" className="blog-imgs"  loading="lazy"/>
+              <img src={image5} alt="" className="blog-imgs" loading="lazy" />
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
                 {/* <p className="blog-para">
@@ -250,9 +290,15 @@ export default function Blogsection() {
           </div>
         </aside>
         <div className="arrow-left-right" ref={(el) => (arrow = el)}>
-          <img src={left_arrow} alt="" id="left-arr"  loading="lazy"/>
+          <img src={left_arrow} alt="" id="left-arr" loading="lazy" />
           <p id="no1by5">1/5</p>
-          <img src={right_arrow} alt="" srcset="" id="right-arr"  loading="lazy"/>
+          <img
+            src={right_arrow}
+            alt=""
+            srcset=""
+            id="right-arr"
+            loading="lazy"
+          />
         </div>
       </section>
     </>
