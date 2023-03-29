@@ -18,7 +18,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .whyus {
   height: 1372px;
@@ -44,7 +44,7 @@
   line-height: 100px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   white-space: nowrap;
 }
 .whyus-para {
@@ -56,7 +56,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #848484;
   margin-top: 20px;
 }
 .whyus-container {
@@ -64,9 +64,9 @@
   flex-direction: column;
   align-items: center;
   padding: 36px 15px;
-  gap: 81px;
-  width: 338.39px;
-  height: 402px;
+  gap: 40px;
+  width: 428.39px;
+  height: auto;
   background: #111111;
   border-radius: 30px;
 }
@@ -88,12 +88,12 @@
   align-items: center;
   padding: 0px;
   gap: 19px;
-  width: 308.39px;
-  height: 115px;
+  width: 388.39px;
+  height: auto;
 }
 .wucontainer-para {
-  width: 308.39px;
-  height: 56px;
+  width: 100%;
+  height: 140px;
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
@@ -101,15 +101,15 @@
   line-height: 139.52%;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #cecece;
+  color: #848484;
 }
 .card-imgs {
-  width: 137.3px;
-  height: 137.38px;
+  width: 100px;
+  height: 100px;
 }
 .no {
   width: 219.69px;
-  height: 40px;
+  height: 70px;
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
@@ -142,7 +142,7 @@
   line-height: 100px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   white-space: nowrap;
 }
 .life-para {
@@ -155,7 +155,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #848484;
 }
 .horizontal-slide {
   display: flex;
@@ -206,7 +206,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .open-pos {
   display: flex;
@@ -224,7 +224,7 @@
   line-height: 113.3%;
   letter-spacing: -0.025em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   white-space: nowrap;
 }
 .office {
@@ -276,7 +276,7 @@
   line-height: 54px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .jobline {
   width: 142px;
@@ -290,7 +290,7 @@
 .close-line{
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #d8d6d6;
 }
 .job-loc {
   font-family: graphik;
@@ -311,7 +311,7 @@
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.02em;
-  color: #cecece;
+  color: #848484;
   margin-top: 70px;
 }
 .telephone {
@@ -319,7 +319,7 @@
   border: 0;
   border-bottom: 1px solid #848484;
   height: 48px;
-  color: #cecece;
+  color: #848484;
 }
 .job-req {
   margin: 3.5% 0 4% 12.5%;
@@ -330,7 +330,7 @@
   line-height: 46px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
   opacity: 0.9;
 }
 .apply {
@@ -424,10 +424,6 @@ select::placeholder {
   font-weight: 100;
 }
 @media screen and (max-width: 1670px) {
-  .whyus-container {
-    width: 290px;
-    padding: 20px 10px;
-  }
   .main-container {
     left: 10%;
     gap: 10px;
@@ -481,11 +477,11 @@ select::placeholder {
     align-items: center;
     padding: 0px;
     gap: 19px;
-    width: 308.39px;
-    height: 115px;
+    width: 308px;
   }
   .wucontainer-para {
     font-size: 15px;
+    height: 120px;
   }
   .no {
     font-size: 30px;
@@ -563,6 +559,15 @@ select::placeholder {
     font-size: 70px;
     line-height: 75px;
   }
+  .whyus-content-container{
+    width: 350px;
+  }
+  .no{
+    height: 80px;
+  }
+  .wucontainer-para{
+    height: 160px;
+  }
   .career-hero {
     height: 650px;
   }
@@ -570,7 +575,7 @@ select::placeholder {
     top: 300px;
   }
   .whyus {
-    height: 1672px;
+    height: 1472px;
   }
   .HS-img {
     height: auto;
@@ -580,10 +585,12 @@ select::placeholder {
   }
   .main-container {
     flex-wrap: wrap;
-    margin-left: 16%;
-    width: 65%;
+    margin-left: 0%;
+    width: 100%;
     gap: 40px;
     height: auto;
+    justify-content: center;
+    left: 0;
   }
   .position-content-container {
     width: 100%;
@@ -615,7 +622,7 @@ select::placeholder {
     width: 100%;
   }
   .whyus-container {
-    width: 310px;
+    width: 380px;
     padding: 30px;
   }
 }
@@ -623,6 +630,12 @@ select::placeholder {
   .career-hero-h1 {
     font-size: 70px;
     width: 83%;
+  }
+  .whyus-container{
+    width: 350px;
+  }
+  .wucontainer-para{
+    width: 330px;
   }
   .applying-form {
     margin-top: 5px;
@@ -649,14 +662,6 @@ select::placeholder {
   }
   .office {
     margin: 0;
-  }
-  .main-container {
-    margin: 0;
-    left: 0;
-    justify-content: center;
-    width: 90%;
-    gap: 30px;
-    height: auto;
   }
   .life-h1 {
     font-size: 70px;

@@ -33,7 +33,7 @@ export default function Home() {
 
   useEffect(() => {
     const tl = gsap.timeline({
-      defaults: { duration: 0.5 },
+      defaults: { duration: 1 },
     });
     tl.fromTo(fade, { visibility: 'hidden' }, { visibility: "visible" });
     tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });

@@ -8,9 +8,9 @@ export default function Footer() {
   return (
     <footer id="footer" className="max-md:mt-10">
       <section id="footeer" className="main-footer">
-        <p id="ftrcnt">
+        <b id="ftrcnt">
           Wanna Know A Secret?
-        </p>
+        </b>
         <div className="arrow">
             <img src={arrow} alt="" srcset="" className="arrow"  loading="lazy"/>
           </div>

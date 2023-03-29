@@ -24,10 +24,5 @@
 body {
   font-family: graphikthin;
   background-color: #090909;
-  scroll-behavior: smooth;
   overflow-x: hidden;
-}
-
-html {
-  scroll-behavior: smooth;
 }

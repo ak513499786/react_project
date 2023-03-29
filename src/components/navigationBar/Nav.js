@@ -134,7 +134,18 @@ export default function Navigation_bar() {
             12<sup>o</sup> 56' 27.06" N, 77<sup>o</sup> 32' 39.228" E
           </p>
           <div className="contact">
-            <p className="contact-mail">info@codelinear.com</p>
+            <p className="contact-mail">
+              info
+              <span
+                style={{
+                  fontFamily: "sans-serif",
+                  color:'#848484'
+                }}
+              >
+                @
+              </span>
+              codelinear.com
+            </p>
             <p className="contact-no">+1 415 523 5957</p>
           </div>
         </div>

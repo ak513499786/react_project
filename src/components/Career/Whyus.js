@@ -20,39 +20,38 @@ export default function whyus() {
       <div className="main-container">
         <div className="whyus-container">
           <div className="whyus-content-container">
-            <span className="no">Sauce Bell</span>
+            <span className="no">COLLECTIVE GROWTH</span>
             <p className="wucontainer-para">
-              Crust beef mozzarella ham red ranch tomatoes spinach.
+              We ensure the collective growth and upliftment of our crew. We
+              organise several workshops, provide access to numerous skill
+              development courses, and foster an environment of mentorship
+              within the firm.
             </p>
           </div>
-          <img src={image6} alt="" className="card-imgs"  loading="lazy"/>
+          <img src={image6} alt="" className="card-imgs" loading="lazy" />
         </div>
         <div className="whyus-container">
           <div className="whyus-content-container">
-            <span className="no">Sauce Bell</span>
+            <span className="no">FLEXIBILITY</span>
             <p className="wucontainer-para">
-              Crust beef mozzarella ham red ranch tomatoes spinach.
+              We strive to provide our team with the most flexible and
+              autonomous work arrangement, enabling them to drive maximum
+              productivity whilst maintaining work-life balance.{" "}
             </p>
           </div>
-          <img src={image8} alt="" className="card-imgs"  loading="lazy"/>
+          <img src={image8} alt="" className="card-imgs" loading="lazy" />
         </div>
         <div className="whyus-container">
           <div className="whyus-content-container">
-            <span className="no">Sauce Bell</span>
+            <span className="no">VALUE-BASED PROJECTS</span>
             <p className="wucontainer-para">
-              Crust beef mozzarella ham red ranch tomatoes spinach.
+              As a part of Codelinear, you will get the opportunity to hone your
+              skills as well as disposition by working on a diverse range of
+              projects that actually create a tangible impact for clients and
+              society.
             </p>
           </div>
-          <img src={image7} alt="" className="card-imgs"  loading="lazy"/>
-        </div>
-        <div className="whyus-container">
-          <div className="whyus-content-container">
-            <span className="no">Sauce Bell</span>
-            <p className="wucontainer-para">
-              Crust beef mozzarella ham red ranch tomatoes spinach.
-            </p>
-          </div>
-          <img src={image9} alt="" className="card-imgs"  loading="lazy"/>
+          <img src={image7} alt="" className="card-imgs" loading="lazy" />
         </div>
       </div>
       <div className="life-container max-xl:my-10">

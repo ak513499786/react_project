@@ -52,7 +52,7 @@ const Case = () => {
               Take A Peek At Our <br /> Case Study
             </h1>
             <p className="down text-center mt-8 max-md:p-10" style={{
-              color: '#cecece'
+              color: '#848484'
             }}>
               We handle all our projects with the utmost discretion. Through our
               case studies take a look at how we drive growth for our clients.

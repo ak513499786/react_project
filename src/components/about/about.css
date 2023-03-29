@@ -19,7 +19,7 @@
   line-height: 88px;
   letter-spacing: -0.015em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .intersect {
   width: 182px;
@@ -120,7 +120,7 @@
   line-height: 32px;
   font-family: graphik;
   font-weight: 100;
-  color: #cecece;
+  color: #d8d6d6;
   opacity: 0.9;
 }
 .vision-container {
@@ -134,13 +134,13 @@
 .visionh1 {
   font-size: 50px;
   font-weight: 600;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .vision-para {
   font-size: 32px;
   line-height: 42px;
   font-family: graphik;
-  color: #cecece;
+  color: #848484;
   font-weight: 100;
   display: flex;
   align-items: center;
@@ -166,7 +166,7 @@
 }
 .guiding-container-h1 {
   font-size: 35px;
-  color: #f6f6f6;
+  color: #d8d6d6;
   font-family: graphikthin;
   font-weight: 600;
 }
@@ -187,7 +187,7 @@
 .subcontainer-h1 {
   display: inline-block;
   font-size: 35px;
-  color: #f6f6f6;
+  color: #d8d6d6;
   font-family: graphikthin;
   font-weight: 600;
 }
@@ -203,7 +203,7 @@
   position: absolute;
   top: -100px;
   right: 20px;
-  transform: scale(1.5);
+  transform: scale(1.4);
 }
 .subcontainer-para {
   font-size: 20px;
@@ -211,7 +211,7 @@
   font-family: graphik;
   font-weight: 100;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #848484;
   text-indent: 80px;
 }
 .guiding-subcontainer {

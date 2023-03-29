@@ -126,7 +126,7 @@
   text-align: right;
   letter-spacing: -0.035em;
   text-transform: capitalize;
-  color: #f6f6f6;
+  color: #d8d6d6;
 }
 .line-nav {
   width: 61px;
@@ -182,14 +182,14 @@
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #959595;
 }
 sup {
   font-size: 12px;
   position: relative;
   bottom: 0.8px;
   left: 0.3px;
-  color: #cecece;
+  color: #959595;
 }
 .contact {
   width: 188px;
@@ -208,7 +208,7 @@ sup {
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #959595;
 }
 .contact-no {
   position: absolute;
@@ -223,7 +223,7 @@ sup {
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.03em;
-  color: #cecece;
+  color: #959595;
 }
 @media screen and (max-width: 1540px) and (min-width: 1441px) {
   .nav_list {
@@ -336,9 +336,6 @@ sup {
   }
   .nav-menu {
     padding: 62px 140px;
-  }
-  #navigation-slide {
-    background: rgba(9, 9, 9, 0.7);
   }
   .details {
     display: flex;
@@ -516,7 +513,6 @@ sup {
     line-height: 28px;
     text-align: right;
     letter-spacing: -0.03em;
-    color: #959595;
   }
   .socials {
     display: flex;
@@ -546,7 +542,6 @@ sup {
     line-height: 28px;
     letter-spacing: -0.03em;
     text-align: right;
-    color: #959595;
     position: relative;
     top: 70px;
   }
@@ -557,7 +552,6 @@ sup {
     line-height: 28px;
     letter-spacing: -0.03em;
     text-align: right;
-    color: #959595;
     position: relative;
     top: 70px;
   }

@@ -45,7 +45,7 @@ const BlogHome = () => {
           >
             <Swiper
               ref={swiperRef}
-              slidesPerView={4}
+              slidesPerView={3}
               slidesPerGroupSkip={1}
               spaceBetween={30}
               loop={true}
@@ -74,16 +74,8 @@ const BlogHome = () => {
                   slidesPerView: 2,
                   spaceBetween: 30,
                 },
-                1060: {
+                1440: {
                   slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                1200: {
-                  slidesPerView: 4,
-                  spaceBetween: 30,
-                },
-                1500: {
-                  slidesPerView: 4,
                   spaceBetween: 30,
                 },
               }}
@@ -93,49 +85,18 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image7} alt="" loading="lazy"/>
+                    <img src={image7} alt="" />
                   </div>
                   <div className="head mt-5">
                     <h2
                       className="text-3xl text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
-                        color: "#f6f6f6",
+                        color: "#d8d6d6",
                         fontWeight: "600",
                       }}
                     >
-                      Empathy in UX
-                    </h2>
-                  </div>
-                  <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#cecece",
-                      }}
-                    >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh    mx-4 items-center">
-                  <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt=""  loading="lazy"/>
-                  </div>
-                  <div className="head mt-5">
-                    <h2
-                      className="text-3xl text-center text-stone-100"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#f6f6f6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Empathy in UX
+                      Minimum Viable Product
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
@@ -143,11 +104,12 @@ const BlogHome = () => {
                       className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
-                        color: "#cecece",
+                        color: "#848484",
                       }}
                     >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
+                      Only a few months ago, would you have ever imagined that
+                      Twitter would be bought by SpaceX and Tesla founder Elon
+                      Musk?...
                     </p>
                   </div>
                 </div>
@@ -155,19 +117,18 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                    <img src={image2} alt=""  loading="lazy"/>
+                    <img src={image3} alt="" />
                   </div>
                   <div className="head mt-5">
                     <h2
                       className="text-3xl text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
-                        color: "#f6f6f6",
+                        color: "#d8d6d6",
                         fontWeight: "600",
                       }}
                     >
-                      Empathy in UX
+                      Digital Marketing
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
@@ -175,7 +136,7 @@ const BlogHome = () => {
                       className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
-                        color: "#cecece",
+                        color: "#848484",
                       }}
                     >
                       Union flatten auto flatten duplicate. Line slice inspect
@@ -188,14 +149,14 @@ const BlogHome = () => {
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                    <img src={image6} alt=""  loading="lazy"/>
+                    <img src={image2} alt="" />
                   </div>
                   <div className="head mt-5">
                     <h2
                       className="text-3xl text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
-                        color: "#f6f6f6",
+                        color: "#d8d6d6",
                         fontWeight: "600",
                       }}
                     >
@@ -207,7 +168,7 @@ const BlogHome = () => {
                       className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
-                        color: "#cecece",
+                        color: "#848484",
                       }}
                     >
                       Union flatten auto flatten duplicate. Line slice inspect
@@ -220,18 +181,18 @@ const BlogHome = () => {
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
                     {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                    <img src={image5} alt=""  loading="lazy"/>
+                    <img src={image6} alt="" />
                   </div>
                   <div className="head mt-5">
                     <h2
                       className="text-3xl text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
-                        color: "#f6f6f6",
+                        color: "#d8d6d6",
                         fontWeight: "600",
                       }}
                     >
-                      Empathy in UX
+                      Shopify Vs Meganto
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
@@ -239,7 +200,40 @@ const BlogHome = () => {
                       className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
-                        color: "#cecece",
+                        color: "#848484",
+                      }}
+                    >
+                      If you’re a business owner of any kind, you’ve probably
+                      heard of Shopify and Magento. Today, Shopify and Magento
+                      are...
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="cass flex justify-center items-center">
+                <div className="cardh    mx-4 items-center">
+                  <div className="img max-md:flex  max-md:justify-center">
+                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                    <img src={image5} alt="" loading="lazy" />
+                  </div>
+                  <div className="head mt-5">
+                    <h2
+                      className="text-3xl text-center text-stone-100"
+                      style={{
+                        fontFamily: "graphikthin",
+                        color: "#d8d6d6",
+                        fontWeight: "600",
+                      }}
+                    >
+                      No Code Revolution
+                    </h2>
+                  </div>
+                  <div className="descrip flex flex-col justify-center items-center mt-5">
+                    <p
+                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      style={{
+                        fontFamily: "graphik",
+                        color: "#848484",
                       }}
                     >
                       Union flatten auto flatten duplicate. Line slice inspect
@@ -251,18 +245,18 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt=""  loading="lazy"/>
+                    <img src={image3} alt="" loading="lazy" />
                   </div>
                   <div className="head mt-5">
                     <h2
                       className="text-3xl text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
-                        color: "#f6f6f6",
+                        color: "#d8d6d6",
                         fontWeight: "600",
                       }}
                     >
-                      Empathy in UX
+                      Digital Marketing
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
@@ -270,69 +264,7 @@ const BlogHome = () => {
                       className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
-                        color: "#cecece",
-                      }}
-                    >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh    mx-4 items-center">
-                  <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt=""  loading="lazy"/>
-                  </div>
-                  <div className="head mt-5">
-                    <h2
-                      className="text-3xl text-center text-stone-100"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#f6f6f6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Empathy in UX
-                    </h2>
-                  </div>
-                  <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#cecece",
-                      }}
-                    >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
-                    </p>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide className="cass flex justify-center items-center">
-                <div className="cardh    mx-4 items-center">
-                  <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image5} alt=""  loading="lazy"/>
-                  </div>
-                  <div className="head mt-5">
-                    <h2
-                      className="text-3xl text-center text-stone-100"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#f6f6f6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Empathy in UX
-                    </h2>
-                  </div>
-                  <div className="descrip flex flex-col justify-center items-center mt-5">
-                    <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#cecece",
+                        color: "#848484",
                       }}
                     >
                       Union flatten auto flatten duplicate. Line slice inspect
