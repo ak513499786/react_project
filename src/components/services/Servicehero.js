@@ -28,11 +28,11 @@ export default function Serviceshero() {
         <div className="vision w-full mb-52  flex justify-center h-full relative  items-center">
           <div className="wthh max-md:flex-col  max-sm:ml-2   ml-20 max-2xl:ml-24 max-xl:ml-2 max-md:p-8  w-full flex relative">
             <div className=" mt max-xl:ml-12 max-sm:ml-2 flex w-full  max-sm:flex-col">
-              <div className="hie w-full">
-                <h1 className="text-6xl w-full mt6 ml-16 max-2xl:ml-0 max-xl:mb-5 max-md:text-3xl font-extrabold text-white">
-                  Leading The Way From
-                </h1>
-              </div>
+              <h1 className="text-6xl w-full max-2xl:w-[79%] mt6 ml-16 max-2xl:ml-0 max-xl:mb-5 max-md:text-3xl font-extrabold text-white" style={{
+                color: '#d8d6d6'
+              }}>
+                Leading The Way From
+              </h1>
               <Swiper
                 spaceBetween={30}
                 slidesPerView={1}
@@ -43,25 +43,45 @@ export default function Serviceshero() {
                   disableOnInteraction: true,
                 }}
                 modules={[Autoplay, FreeMode, Pagination, Navigation]}
-                className="mySwi -ml-32 max-2xl:-ml-5   w-[100%] h-40 "
+                className="mySwi -ml-32 max-2xl:-ml-4   w-[100%] h-40 "
               >
+                <SwiperSlide className="">
+                  <h1
+                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    style={{
+                      color: "#d8d6d6",
+                    }}
+                  >
+                    Strategy To Execution
+                  </h1>
+                </SwiperSlide>
                 <SwiperSlide className="-ml">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
+                  <h1
+                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    style={{
+                      color: "#d8d6d6",
+                    }}
+                  >
                     Design To Execution
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide className="">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
-                    Strategy To Execution
-                  </h1>
-                </SwiperSlide>
-                <SwiperSlide className="">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
+                  <h1
+                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    style={{
+                      color: "#d8d6d6",
+                    }}
+                  >
                     Development To Execution
                   </h1>
                 </SwiperSlide>
                 <SwiperSlide className="">
-                  <h1 className="text-6xl  mt16 ml-9 max-xl:ml-5 max-md:text-3xl font-extrabold text-white">
+                  <h1
+                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    style={{
+                      color: "#d8d6d6",
+                    }}
+                  >
                     Marketing to Success
                   </h1>
                 </SwiperSlide>

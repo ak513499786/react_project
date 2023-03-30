@@ -78,7 +78,7 @@ export default function Services() {
         <div className="slide-container">
           <Explore />
         </div>
-        <Model />
+        {/* <Model /> */}
       </main>
       <Footer />
     </>

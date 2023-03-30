@@ -76,13 +76,12 @@ export default function Wedo() {
           <div className="m-m-container">
             <h1 className="m-title">
               <p className="m-numbers">02</p>
-              Ut Luctus Ipsum Etiam In
+              Ut Luctus Ipsum Etiam
             </h1>
             <p className="m-desc">
               Vitae mollis consectetur congue donec nunc iaculis non. Est
               integer ultrices dolor pharetra. Arcu non ut nec nam maecenas
-              libero ornare. Lacus ullamcorper aliquam mauris nibh rutrum. In
-              fermentum arcu quis purus posuere neque ante.
+              libero ornare. Lacus ullamcorper aliquam mauris nibh rutrum.
             </p>
           </div>
           <div className="m-m-container">
@@ -94,8 +93,7 @@ export default function Wedo() {
               Commodo pellentesque risus sed non sed auctor dui donec neque.
               Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
               et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
-              quis felis. At ultrices lacus nec eget integer consectetur
-              molestie.
+              quis felis. 
             </p>
           </div>
         </div>

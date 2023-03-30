@@ -84,8 +84,8 @@ const Vision = () => {
                 >
                   skip ahead
                   <div className="downarrows" ref={(el) => (arrows = el)}>
-                    <img src={whitedownarrow} alt="" className="arrowdown"/>
-                    <img src={arrowdown} alt="" className="arrowdown"/>
+                    <img src={whitedownarrow} alt="" className="arrowdown" />
+                    <img src={arrowdown} alt="" className="arrowdown" />
                   </div>
                 </div>
               </div>
@@ -113,23 +113,6 @@ const Vision = () => {
             <div className="subcontainer">
               <img
                 className="subcontainer-img"
-                src={svg2}
-                alt="svg"
-                ref={(el) => (spinimg2 = el)}
-                loading="lazy"
-              />
-              <h1 className="subcontainer-h1">Impact</h1>
-              <p className="subcontainer-para">
-                Driven by impact, our ultimate focus is to build digital
-                products that address real-world problems. Our team of industry
-                experts ascertains that in addition to crafting epitomes of
-                digital experiences, we create products that enrich lives and
-                create value.
-              </p>
-            </div>
-            <div className="subcontainer">
-              <img
-                className="subcontainer-img"
                 src={svg3}
                 alt="svg"
                 ref={(el) => (spinimg3 = el)}
@@ -142,6 +125,23 @@ const Vision = () => {
                 the verge of transformation or running the risk of irrelevance,
                 we turn to innovation to stay ahead. We, therefore, go beyond
                 strategising and implement innovation into our projects.
+              </p>
+            </div>
+            <div className="subcontainer">
+              <img
+                className="subcontainer-img"
+                src={svg2}
+                alt="svg"
+                ref={(el) => (spinimg2 = el)}
+                loading="lazy"
+              />
+              <h1 className="subcontainer-h1">Impact</h1>
+              <p className="subcontainer-para">
+                Driven by impact, our ultimate focus is to build digital
+                products that address real-world problems. Our team of industry
+                experts ascertains that in addition to crafting epitomes of
+                digital experiences, we create products that enrich lives and
+                create value.
               </p>
             </div>
           </div>

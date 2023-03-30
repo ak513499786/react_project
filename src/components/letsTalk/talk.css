@@ -383,6 +383,12 @@ input[type=number] {
     width: 100%;
     white-space: nowrap;
   }
+  .contact-form{
+    height: auto;
+  }
+  .address{
+    padding-top: 180px;
+  }
 }
 @media screen and (max-width: 768px) {
   .contact-section {

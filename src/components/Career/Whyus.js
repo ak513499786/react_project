@@ -11,10 +11,16 @@ export default function whyus() {
         <p className="whyus-para">
           We are a diverse blend of experts, young professionals, and even
           mentees. And though we may come from diverse backgrounds, our drive to
-          make a difference in society unites us. Our cohort comprises
-          designers, developers, strategists, and marketers, and collectively we
-          blend each of our expertise to innovate, to impact.If this sounds like
-          you, we have a role for you!
+          make a difference in society unites us.
+          <p className="mt-5" style={{
+            color: '#848484'
+          }}>
+            Our cohort comprises designers, developers, strategists, and
+            marketers, and collectively we blend each of our expertise to
+            innovate, to impact.
+            <br />
+            If this sounds like you, we have a role for you!
+          </p>
         </p>
       </div>
       <div className="main-container">

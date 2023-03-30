@@ -8,10 +8,11 @@ export default function Crew() {
           Meet The Crew : A Clique <br /> Of Visionaries
         </h2>
         <p className="my-10 w-2/5 max-lg:w-full max-xl:p-5 max-md:p-6 crewpara">
-          To propel huminity forword by building digital products for business
-          that unrich peoples lives Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Est, natus veniam! Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Maxime Lorem, ipsum dolor sit amet.
+          A cohort of highly diverse and driven individuals working in
+          collaboration to amplify your digital experience. We are visionaries
+          who uplift one another, thrive on inclusion, and are determined to
+          collectively make a difference for our clients and the world around
+          them.
         </p>
         <Link to={"/career"} className="career-crew-btn">
           <p className="career-crew-content">career</p>
@@ -23,7 +24,9 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">01</p>
-                <span className="strategist">The <br /> Design Architects</span>
+                <span className="strategist">
+                  The <br /> Design Architects
+                </span>
               </h1>
               <p className="m-desc">
                 The Design Architects orchestrate the project development
@@ -34,7 +37,9 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">02</p>
-                <span className="strategist">The <br /> Strategists</span>
+                <span className="strategist">
+                  The <br /> Strategists
+                </span>
               </h1>
               <p className="m-desc">
                 They are the geniuses responsible for formulating, documenting,
@@ -45,22 +50,26 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">03</p>
-                <span className="strategist">The <br /> Tech Experts</span>
+                <span className="strategist">
+                  The <br /> Tech Experts
+                </span>
               </h1>
               <p className="m-desc">
-                Our Tech Experts devise the perfect strategy, prepare a
-                detailed roadmap, and leverage the right technology to help you
-                achieve your goals.
+                Our Tech Experts devise the perfect strategy, prepare a detailed
+                roadmap, and leverage the right technology to help you achieve
+                your goals.
               </p>
             </div>
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">04</p>
-                <span className="strategist">The <br /> Delivery Managers</span>
+                <span className="strategist">
+                  The <br /> Delivery Managers
+                </span>
               </h1>
               <p className="m-desc">
-                Your point-of-contact with Codelinear, who  keeps you
-                apprised on all the ins and outs of your project and its status.
+                Your point-of-contact with Codelinear, who keeps you apprised on
+                all the ins and outs of your project and its status.
               </p>
             </div>
           </div>

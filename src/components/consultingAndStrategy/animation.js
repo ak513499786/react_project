@@ -9,7 +9,22 @@ const Animation = () => {
   const handleScroll = (event) => {
     const { scrollTop } = event.target;
     verticalRef.current.scrollTop = scrollTop;
-    horizontalRef.current.scrollLeft = scrollTop / 1.5;
+    horizontalRef.current.scrollLeft = scrollTop / 1.35;
+  };
+  const handleScroll1 = (event) => {
+    const { scrollTop } = event.target;
+    verticalRef.current.scrollTop = scrollTop;
+    horizontalRef.current.scrollLeft = scrollTop / 1.45;
+  };
+  const handleScroll2 = (event) => {
+    const { scrollTop } = event.target;
+    verticalRef.current.scrollTop = scrollTop;
+    horizontalRef.current.scrollLeft = scrollTop / 1.2;
+  };
+  const handleScroll4 = (event) => {
+    const { scrollTop } = event.target;
+    verticalRef.current.scrollTop = scrollTop;
+    horizontalRef.current.scrollLeft = scrollTop / 1.6;
   };
   if (url.pathname === "/consultingandstrategy") {
     return (
@@ -131,7 +146,7 @@ const Animation = () => {
             width: "100%",
           }}
           className="h=[221px]"
-          onScroll={handleScroll}
+          onScroll={handleScroll1}
         >
           <div className="vertical-animation">
             <div className="vertical-effect">
@@ -197,7 +212,7 @@ const Animation = () => {
           <div style={{ width: "2000px", scrollSnapType: "y mandatory" }}>
             <div className="horizontal-animation-container">
               <li className="horizontal-animation-para">UX Audit</li>
-              <li className="horizontal-animation-para">UX Research</li>
+              <li className="horizontal-animation-para ml-5">UX Research</li>
               <li className="horizontal-animation-para">UI UX Consulting</li>
               <li className="horizontal-animation-para">
                 User Experience Design
@@ -205,7 +220,6 @@ const Animation = () => {
               <li className="horizontal-animation-para">
                 User Interface Design{" "}
               </li>
-              <li className="horizontal-animation-para">Digital Branding </li>
             </div>
           </div>
         </div>
@@ -232,7 +246,7 @@ const Animation = () => {
             width: "100%",
           }}
           className="h=[221px]"
-          onScroll={handleScroll}
+          onScroll={handleScroll2}
         >
           <div className="vertical-animation">
             <div className="vertical-effect">
@@ -324,6 +338,9 @@ const Animation = () => {
                 E-Commerce Development
               </li>
               <li className="horizontal-animation-para">
+                MVP Development
+              </li>
+              <li className="horizontal-animation-para">
                 Native App Development
               </li>
               <li className="horizontal-animation-para">
@@ -358,7 +375,7 @@ const Animation = () => {
             height: "300px",
             width: "100%",
           }}
-          onScroll={handleScroll}
+          onScroll={handleScroll4}
         >
           <div className="vertical-animation">
             <div className="vertical-effect">
@@ -408,7 +425,7 @@ const Animation = () => {
           <div style={{ width: "2000px", scrollSnapType: "y mandatory" }}>
             <div className="horizontal-animation-container">
               <li className="horizontal-animation-para">SEO</li>
-              <li className="horizontal-animation-para">Social Media</li>
+              <li className="horizontal-animation-para ml-1">Social Media</li>
               <li className="horizontal-animation-para">Paid Search</li>
               <li className="horizontal-animation-para">Paid Social </li>
             </div>

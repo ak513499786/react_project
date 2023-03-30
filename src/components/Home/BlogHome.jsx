@@ -70,7 +70,7 @@ const BlogHome = () => {
                 },
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className=" swiper-container mySwiper h-[35rem] mt-20 max-md:mt-0  w-[105%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
+              className=" swiper-container mySwiper h-[35rem] mt-20 max-md:mt-0  w-[105%] -ml-20 max-2xl:ml-0 max-xl:w-[100%]"
             >
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">

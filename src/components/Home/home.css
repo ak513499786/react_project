@@ -1455,7 +1455,7 @@
     width: 900px;
   }
   #clients {
-    width: 100%;
+    width: 70%;
   }
   #blog {
     top: calc(100vh + 3600px);
@@ -1537,24 +1537,6 @@
   .test-main-container {
     width: 100%;
   }
-  /* .client-img3 {
-    left: 41.3%;
-  }
-  .client-img4 {
-    left: 61.29%;
-  }
-  .client-img5 {
-    left: 78.76%;
-  }
-  .client-img8 {
-    left: 41.4%;
-  }
-  .client-img9 {
-    left: 61.67%;
-  }
-  .client-img0 {
-    left: 81.32%;
-  } */
 }
 @media screen and (max-width: 1060px) {
   .bgv {
@@ -1576,6 +1558,9 @@
   .bg-mini-1 {
     height: 700px;
     top: 600px;
+  }
+  #clients {
+    width: 100%;
   }
   #img2 {
     height: 620px;

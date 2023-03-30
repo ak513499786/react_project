@@ -441,6 +441,7 @@ select::placeholder {
     height: 176px;
     font-size: 60px;
     line-height: 68px;
+    width: 60%;
   }
   .whyus {
     height: 1372px;
@@ -558,6 +559,9 @@ select::placeholder {
     top: 230px;
     font-size: 70px;
     line-height: 75px;
+  }
+  .position-container{
+    margin-left: 10.3%;
   }
   .whyus-content-container{
     width: 350px;
