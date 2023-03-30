@@ -3,10 +3,7 @@ import { gsap, Power0 } from "gsap";
 
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
-// import { Link } from "react-router-dom";
 import Scroll from "react-scroll";
-import { Link } from "react-scroll";
-// import { Link } from "react";
 
 export default function Wedo() {
   const ScrollLink = Scroll.ScrollLink;
@@ -27,8 +24,6 @@ export default function Wedo() {
 
   const scrollToTarget = (target) => {
     const targetPosition = document.getElementById(target);
-
-    // scroll to the target element
     window.scrollTo({
       top: 10000,
       behavior: "smooth",
@@ -50,18 +45,6 @@ export default function Wedo() {
             </p>
           </div>
           <div className="skip-container">
-            {/* <Link to="#footer"></Link> */}
-            {/* <Link
-              activeClass="active"
-              to="footer"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={() => scrollToTarget("section1")}
-            > */}
-            {/* Section 1 */}
-
             <div
               onClick={() => scrollToTarget("section1")}
               className="skip"
@@ -75,7 +58,6 @@ export default function Wedo() {
                 <img src={arrowdown} alt="" className="arrowdown" />
               </div>
             </div>
-            {/* </Link> */}
           </div>
         </div>
         <div className="model-container">
@@ -88,9 +70,7 @@ export default function Wedo() {
               Mauris nulla ultricies aliquet massa tempor odio. Tincidunt
               parturient nec tortor dolor eu tristique dictumst ultrices
               vestibulum. Urna scelerisque nulla turpis adipiscing accumsan
-              congue etiam habitant. In convallis velit felis turpis nulla
-              gravida dictumst vel egestas. Amet tempus massa nec erat arcu et.
-              Ullamcorper pellentesque.
+              congue etiam habitant.
             </p>
           </div>
           <div className="m-m-container">
@@ -102,8 +82,7 @@ export default function Wedo() {
               Vitae mollis consectetur congue donec nunc iaculis non. Est
               integer ultrices dolor pharetra. Arcu non ut nec nam maecenas
               libero ornare. Lacus ullamcorper aliquam mauris nibh rutrum. In
-              fermentum arcu quis purus posuere neque ante. Etiam tincidunt quis
-              metus tristique vulputate. Amet nunc facilisis maecenas sit.
+              fermentum arcu quis purus posuere neque ante.
             </p>
           </div>
           <div className="m-m-container">
@@ -116,8 +95,7 @@ export default function Wedo() {
               Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
               et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
               quis felis. At ultrices lacus nec eget integer consectetur
-              molestie. Neque suscipit viverra ridiculus rhoncus sagittis
-              vulputate sed. Tristique.
+              molestie.
             </p>
           </div>
         </div>

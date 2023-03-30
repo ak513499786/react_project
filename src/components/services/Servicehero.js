@@ -1,13 +1,10 @@
 import { gsap, Power0 } from "gsap";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, FreeMode, Pagination, Navigation } from "swiper"; // import "./all.css";
+import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 
 export default function Serviceshero() {
   const [Widht, setWidth] = useState(window.innerWidth);
@@ -28,18 +25,6 @@ export default function Serviceshero() {
   return (
     <>
       <section id="hero_services">
-        {/* <div className="services_hero-text">
-          <p className="leading">Leading The Way From</p>
-          <div className="overflowcontrol">
-            <div className="rolling-words" ref={(el) => (wordanimation = el)}>
-              <p className="words">Design To Execution</p>
-              <p className="words">Strategy To Execution</p>
-              <p className="words">Development To Execution</p>
-              <p className="words">Marketing To Success</p>
-            </div>
-          </div>
-        </div> */}
-
         <div className="vision w-full mb-52  flex justify-center h-full relative  items-center">
           <div className="wthh max-md:flex-col  max-sm:ml-2   ml-20 max-2xl:ml-24 max-xl:ml-2 max-md:p-8  w-full flex relative">
             <div className=" mt max-xl:ml-12 max-sm:ml-2 flex w-full  max-sm:flex-col">
@@ -50,7 +35,6 @@ export default function Serviceshero() {
               </div>
               <Swiper
                 spaceBetween={30}
-                // centeredSlides={true}
                 slidesPerView={1}
                 direction={"vertical"}
                 loop={true}

@@ -25,8 +25,6 @@ export default function Career() {
     <>
       <Navbar />
       <main className="career-page" ref={(el) => (fade = el)}>
-        
-
         <CareerHero />
         <Horizontalanimation1 />
         <Whyus />

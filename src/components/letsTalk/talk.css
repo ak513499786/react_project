@@ -341,6 +341,12 @@ input[type=number] {
     left: 15%;
     top: 250px;
   }
+  .contact-hero-h1{
+    font-size: 78px;
+    line-height: 84px;
+    height: auto;
+    text-align: center;
+  }
   .contact-hero{
     height: 100vh;
   }

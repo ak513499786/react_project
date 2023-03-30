@@ -20,7 +20,6 @@ export default function Blog() {
     <main className="blog-page" ref={(el) => (fade = el)}>
       <Navbar />
       <Bloghero />
-
       <Blogsection />
       <Footer />
     </main>

@@ -22,7 +22,6 @@ export default function About() {
 
   return (
     <main className="aboutpage" ref={(el) => (fade = el)}>
-      {/* <AnimatedCursor color="255, 255, 255"/> */}
       <Navbar />
       <div className="iframe-container">
         <iframe

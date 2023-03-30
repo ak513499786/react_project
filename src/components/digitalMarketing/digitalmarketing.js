@@ -20,7 +20,6 @@ export default function Digitalmarketing() {
     <main className="serviceinnerpage" ref={(el) => (fade = el)}>
       <Navbar />
       <main>
-        {/* <AnimatedCursor color="255, 255, 255"/> */}
         <section className="otherservices">
           <h1 className="inner-service-h1">Digital Marketing</h1>
         </section>

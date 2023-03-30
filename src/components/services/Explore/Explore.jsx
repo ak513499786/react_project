@@ -5,19 +5,16 @@ import "./explore.scss";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
-// import required modules
 import { FreeMode, Pagination } from "swiper";
 const Explore = () => {
   const url = useLocation();
 
   if (url.pathname === "/consultingandstrategy") {
     return (
-      // background-image: url("../images/unsplash_QRWAdBCqysc.svg");
 
       <>
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
@@ -39,9 +36,6 @@ const Explore = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
                 freeMode={true}
-                // pagination={{
-                //   clickable: true,
-                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
@@ -132,9 +126,6 @@ const Explore = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
                 freeMode={true}
-                // pagination={{
-                //   clickable: true,
-                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
@@ -229,9 +220,6 @@ const Explore = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
                 freeMode={true}
-                // pagination={{
-                //   clickable: true,
-                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
@@ -326,9 +314,6 @@ const Explore = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
                 freeMode={true}
-                // pagination={{
-                //   clickable: true,
-                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
@@ -422,9 +407,6 @@ const Explore = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
                 freeMode={true}
-                // pagination={{
-                //   clickable: true,
-                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,

@@ -169,14 +169,7 @@ export default function Blogsection() {
               </Link>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
-                {/* <p className="blog-para">
-                  Empathy is a foundational principle in the concept of design
-                  thinking – a user-based approach to problem-solving that
-                  combines hands-on testing of a product or service with the
-                  actual users.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div
               className="blog-containers"
@@ -185,12 +178,7 @@ export default function Blogsection() {
               <img src={image2} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
-                {/* <p className="blog-para">
-                  We have compiled a list of digital marketing trends that may
-                  assist you in staying on top of your marketing game.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (empathy2 = el)}>
               <Link to={"/empathy"} className="link-imgs">
@@ -198,14 +186,7 @@ export default function Blogsection() {
               </Link>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
-                {/* <p className="blog-para">
-                  Empathy is a foundational principle in the concept of design
-                  thinking – a user-based approach to problem-solving that
-                  combines hands-on testing of a product or service with the
-                  actual users.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
           </div>
         </aside>
@@ -215,37 +196,19 @@ export default function Blogsection() {
               <img src={image3} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
-                {/* <p className="blog-para">
-                  Building an MVP that attracts investors enough to fund it is
-                  indeed a magic potion that is not complete without the right
-                  spells.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (design = el)}>
               <img src={image4} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Design System</h1>
-                {/* <p className="blog-para">
-                  A design system is a guide or a standard structure with
-                  parameters for design and code along with design components
-                  that will unify both.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (MVP2 = el)}>
               <img src={image3} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
-                {/* <p className="blog-para">
-                  Building an MVP that attracts investors enough to fund it is
-                  indeed a magic potion that is not complete without the right
-                  spells.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
           </div>
         </aside>
@@ -255,37 +218,19 @@ export default function Blogsection() {
               <img src={image5} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
-                {/* <p className="blog-para">
-                  The No-code revolution is indicative that modern businessmen
-                  and women want to keep creative control in their own hands
-                  when it comes to developing websites or mobile applications.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (SVM = el)}>
               <img src={image6} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Shopify Vs Magento</h1>
-                {/* <p className="blog-para">
-                  While Shopify offers a no-coding and user-friendly platform
-                  that can help you run an online shop in no time, Magento’s
-                  flexibility may help you scale faster.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (NCR2 = el)}>
               <img src={image5} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
-                {/* <p className="blog-para">
-                  The No-code revolution is indicative that modern businessmen
-                  and women want to keep creative control in their own hands
-                  when it comes to developing websites or mobile applications.
-                </p> */}
               </div>
-              {/* <p className="blog-btns">Read More</p> */}
             </div>
           </div>
         </aside>

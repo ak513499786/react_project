@@ -345,11 +345,6 @@
     width: 60%;
     gap: 70px;
   }
-  /* .crewcontainer {
-    position: relative;
-    bottom: 300px;
-    height: 1400px;
-  } */
 }
 @media screen and (max-width: 1024px) {
   .about-hero-h1 {
@@ -373,6 +368,12 @@
   }
   .iframe{
     display: none;
+  }
+  .iframe-container{
+    display: none;
+  }
+  .about-hero{
+    height: 90vh;
   }
   .circle21 {
     margin-top: 0px;
@@ -455,9 +456,6 @@
     width: 300px;
     height: 350px;
   }
-  /* .crewcontainer {
-    bottom: 200px;
-  } */
   .about-case {
     position: relative;
     bottom: 100px;

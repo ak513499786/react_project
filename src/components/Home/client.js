@@ -23,22 +23,6 @@ export default function Client() {
   const [logo9Opacity, setLogo9Opacity] = useState(0.5);
   const [logo10Opacity, setLogo10Opacity] = useState(0.5);
   const [currentLogoIndex, setCurrentLogoIndex] = useState(0);
-  // useEffect(() => {
-  //   const intervalId = setInterval(() => {
-  //     setLogo1Opacity(Math.random());
-  //     setLogo2Opacity(Math.random());
-  //     setLogo3Opacity(Math.random());
-  //     setLogo4Opacity(Math.random());
-  //     setLogo5Opacity(Math.random());
-  //     setLogo6Opacity(Math.random());
-  //     setLogo7Opacity(Math.random());
-  //     setLogo8Opacity(Math.random());
-  //     setLogo9Opacity(Math.random());
-  //     setLogo10Opacity(Math.random());
-  //   }, 2500);
-
-  //   return () => clearInterval(intervalId);
-  // }, []);
   useEffect(() => {
     const intervalId = setInterval(() => {
       for (let i = 0; i < 100; i++) {
@@ -71,6 +55,66 @@ export default function Client() {
             setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
             break;
           case 9:
+            setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 10:
+            setLogo1Opacity(logo1Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 11:
+            setLogo2Opacity(logo2Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 12:
+            setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 13:
+            setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 14:
+            setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 15:
+            setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 16:
+            setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 17:
+            setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 18:
+            setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 19:
+            setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 20:
+            setLogo1Opacity(logo1Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 21:
+            setLogo2Opacity(logo2Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 22:
+            setLogo3Opacity(logo3Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 23:
+            setLogo4Opacity(logo4Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 24:
+            setLogo5Opacity(logo5Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 25:
+            setLogo10Opacity(logo10Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 26:
+            setLogo9Opacity(logo9Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 27:
+            setLogo8Opacity(logo8Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 28:
+            setLogo7Opacity(logo7Opacity === 0.5 ? 1 : 0.5);
+            break;
+          case 29:
             setLogo6Opacity(logo6Opacity === 0.5 ? 1 : 0.5);
             break;
           default:

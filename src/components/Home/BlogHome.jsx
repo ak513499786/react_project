@@ -1,26 +1,17 @@
 import "./styles/clients.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import HorizontalScroll from "react-horizontal-scrolling";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, FreeMode, Pagination, Navigation } from "swiper"; // import "./all.css";
+import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import React, { useState, useEffect, useRef } from "react";
 
 import image2 from "./images/Frame 43.svg";
-// import image5 from "./images/Frame 3.svg";
 import image3 from "./images/Frame 44.svg";
 import image4 from "./images/Frame 472.svg";
 import image5 from "../blog/Images/Frame 45.svg";
 import image6 from "../blog/Images/Frame 47.svg";
 import image7 from "../blog/Images/Frame 46.svg";
-
-// import imgqq from "../blog/blogimages/Frame 44.png";
-// import imgq1 from "../blog/blogimages/Frame 472.png";
-import AnimatedCursor from "react-animated-cursor";
-import { gsap, TweenMax, Power3 } from "gsap";
 import { Link } from "react-router-dom";
 
 const BlogHome = () => {
@@ -32,7 +23,6 @@ const BlogHome = () => {
 
   return (
     <>
-      {/* {Widht >= 920 ? ( */}
       <>
         <div id="blog">
           <div id="blog_heading" className="-ml-20">
@@ -147,7 +137,6 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image2} alt="" />
                   </div>
                   <div className="head mt-5">
@@ -179,7 +168,6 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image6} alt="" />
                   </div>
                   <div className="head mt-5">
@@ -211,7 +199,6 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
                     <img src={image5} alt="" loading="lazy" />
                   </div>
                   <div className="head mt-5">
@@ -282,9 +269,6 @@ const BlogHome = () => {
           </div>
         </div>
       </>
-      {/* ) : ( */}
-      {/* \ */}
-      {/* )} */}
     </>
   );
 };

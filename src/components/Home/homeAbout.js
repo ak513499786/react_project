@@ -1,16 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-// import HorizontalScroll from "react-horizontal-scrolling";
 import { Link } from "react-router-dom";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, FreeMode, Pagination, Navigation } from "swiper"; // import "./all.css";
+import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import "./styles/agency.scss";
 import React, { useState, useEffect } from "react";
-import { gsap, TweenMax, Power3 } from "gsap";
-import AnimatedCursor from "react-animated-cursor";
 
 const HomeAbout = () => {
   const breakpoints = {
@@ -88,13 +84,7 @@ const HomeAbout = () => {
                 slidesPerView={3}
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
-                // loop={true}
                 freeMode={true}
-                // breakpoints
-                // autoplay={{
-                //   delay: 2500,
-                //   disableOnInteraction: false,
-                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,

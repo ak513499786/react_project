@@ -6,7 +6,6 @@ import Navbar from '../navigationBar/Nav';
 import LowerFooter from '../footer/lowerFooter'
 import Form from "./form";
 import Address from "./Address";
-import AnimatedCursor from "react-animated-cursor";
 export default function Talk() {
   let fade = useRef(null);
 
@@ -20,7 +19,6 @@ export default function Talk() {
     <>
     <main className="contact-page" ref={(el) => (fade = el)}>
       <Navbar/>
-      {/* <AnimatedCursor color="255, 255, 255"/> */}
       <Contacthero/>
       <Form/>
       <Address/>

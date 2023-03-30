@@ -1,12 +1,10 @@
 import left_arrow from "./images/Frame 7.png";
 import right_arrow from "./images/Frame 8.png";
 import Client from "./client";
-import AnimatedCursor from "react-animated-cursor";
 
 export default function Hero() {
   return (
     <section id="testimonials">
-    {/* <AnimatedCursor color="255, 255, 255" /> */}
       <div className="test-main-container">
         <div id="container-2">
           <h1 id="container-2_header">

@@ -4,7 +4,6 @@ import { gsap, Power0 } from "gsap";
 import { useRef, useEffect } from "react";
 import "swiper";
 import Explore from "./Explore/Explore";
-import { Element } from "react-scroll";
 import Servicehero from "./Servicehero";
 import Model from "./Model";
 import Navbar from "../navigationBar/Nav";
@@ -81,7 +80,6 @@ export default function Services() {
         </div>
         <Model />
       </main>
-
       <Footer />
     </>
   );

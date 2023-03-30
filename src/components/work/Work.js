@@ -3,7 +3,6 @@ import Workhero from "./Workhero";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 import Card from "./card/Card";
-// import Dummy from "../home/Dummy";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
@@ -22,7 +21,6 @@ export default function Work() {
       <Navbar />
       <Workhero />
       <Card />
-      {/* <Dummy /> */}
       <Footer />
     </main>
   );

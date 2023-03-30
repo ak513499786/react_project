@@ -173,10 +173,10 @@
 .footer-animationtxt {
   font-size: 23px;
   font-family: graphik;
+  font-weight: 100;
   height: auto;
-  opacity: 0.9;
   position: relative;
-  bottom: 0.5px;
+  color: #d8d6d6;
 }
 .aligncenter {
   overflow-x: hidden;
@@ -487,7 +487,4 @@
     left: 0%;
     top: 30px;
   }
-  /* .footer-animationtxt{
-    margin-top: 6px;
-  } */
 }
