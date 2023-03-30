@@ -58,7 +58,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                       View case study
                     </button>
                   </div>
@@ -88,7 +88,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                       View case study
                     </button>
                   </div>
@@ -242,8 +242,8 @@ const Card = () => {
                   modules={[Autoplay, Pagination, Navigation]}
                   className="mySwiper h  mt-0 max-md:mt-0  w-[100%] -ml-20 max-lg:ml-0 max-xl:w-[100%]"
                 >
-                  <SwiperSlide className="cass mr-0 flex justify-center items-center">
-                    <div className="card111 hiee max-md:mx-4 mx-10 flex flex-col justify-cnter   p-10 ">
+                  <SwiperSlide className="mr-0 flex justify-center items-center">
+                    <div className="card111 hiee max-md:mx-4 mx-10 flex flex-col justify-cnter px-5 py-10">
                       <h1
                         className="text-5xl mt-24 wcw"
                         style={{
@@ -267,14 +267,14 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn  max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                           View case study
                         </button>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="cass flex justify-center items-center">
-                    <div className="MANGO hiee max-md:mx-4 mx-10 flex flex-col justify-cnter   p-10">
+                  <SwiperSlide className="flex justify-center items-center">
+                    <div className="MANGO hiee max-md:mx-4 mx-10 flex flex-col justify-cnter px-5 py-10">
                       <h1
                         className="text-5xl mt-24 wcw"
                         style={{
@@ -298,14 +298,14 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                           View case study
                         </button>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="cass flex justify-center items-center">
-                    <div className="Willium hiee max-md:mx-4 mx-10 flex flex-col justify-center   p-10">
+                  <SwiperSlide className="flex justify-center items-center">
+                    <div className="Willium hiee max-md:mx-4 mx-10 flex flex-col justify-center px-5 py-10">
                       <h1
                         className="text-5xl mt-24 wcw"
                         style={{
@@ -329,14 +329,14 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                           View case study
                         </button>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="cass flex justify-center items-center">
-                    <div className="Lyra hiee max-md:mx-4 mx-10 mr-12 flex flex-col justify-center   p-10">
+                  <SwiperSlide className="flex justify-center items-center">
+                    <div className="Lyra hiee max-md:mx-4 mx-10 mr-12 flex flex-col justify-center px-5 py-10">
                       <h1
                         className="text-5xl mt-24 wcw"
                         style={{
@@ -360,14 +360,14 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                           View case study
                         </button>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="cass flex justify-center items-center">
-                    <div className="klub hiee max-md:mx-4 mx-10 flex flex-col justify-center   p-10">
+                  <SwiperSlide className="flex justify-center items-center">
+                    <div className="klub hiee max-md:mx-4 mx-10 flex flex-col justify-center   px-5 py-10">
                       <h1
                         className="text-5xl mt-24 wcw"
                         style={{
@@ -391,18 +391,18 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                           View case study
                         </button>
                       </div>
                     </div>
                   </SwiperSlide>
-                  <SwiperSlide className="cass flex justify-center items-center">
+                  <SwiperSlide className="flex justify-center items-center">
                     <button
-                      className="my-24 hover:text-black h-full"
+                      className=" hover:text-black h-full"
                       onClick={toggleCase}
                     >
-                      <div className="exploree hidee h-full hover:text-black max-md:mx-0 flex items-center justify-center">
+                      <div className="exploree hidee h-full max-lg:h-[600px] max-lg:w-[300px] hover:text-black max-md:mx-0 flex items-center justify-center">
                         <div className="flex w-full justify-center hover:text-black items-center h-full">
                           <h1 className="text-4xl extra  hover:text-black font-extrabold ">
                             Explore More
@@ -420,7 +420,7 @@ const Card = () => {
         <div className="workunfolds mb-20">
           <div className="lead flex flex-wrap justify-center h-full relative  items-center">
             <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10 max-sm:p-1  justify-start items-start max-xl:items-center max-xl:justify-center relative">
-              <div className="card111 hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="card111 hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -444,13 +444,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="MANGO hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="MANGO hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -474,13 +474,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="Willium hidee max-xl:mx-5 my-10   mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="Willium hidee max-xl:mx-5 my-10   mx-10 flex flex-col justify-center max-xl:my-10  px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -489,7 +489,7 @@ const Card = () => {
                     fontWeight: "600",
                   }}
                 >
-                  Willium Abraham
+                  William Abraham
                 </h1>
                 <p
                   className="colo my-10 mt-20"
@@ -504,13 +504,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="Kernel hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   p-10">
+              <div className="Kernel hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10  px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -534,13 +534,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="klub hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
+              <div className="klub hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10  px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -564,13 +564,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="Lyra hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10">
+              <div className="Lyra hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10  px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -594,13 +594,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="studio hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
+              <div className="studio hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -624,13 +624,13 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>
               </div>
 
-              <div className="deel hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   p-10 ">
+              <div className="deel hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10  px-5 py-20">
                 <h1
                   className="text-5xl -mt24 wcw"
                   style={{
@@ -654,7 +654,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
                     View case study
                   </button>
                 </div>

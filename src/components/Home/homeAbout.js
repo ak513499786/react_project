@@ -89,7 +89,7 @@ const HomeAbout = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
                 // loop={true}
-                freeMode = {true}
+                freeMode={true}
                 // breakpoints
                 // autoplay={{
                 //   delay: 2500,
@@ -128,7 +128,7 @@ const HomeAbout = () => {
                 <SwiperSlide className="cs mr-0 flex justify-center items-center -ml-20">
                   <div className="imghome1 hiehome">
                     <div className="bghome"></div>
-                    <div id="i" className="p-5">
+                    <div id="imgs1" className="p-5 mt-10">
                       <h1>COWBOY</h1>
                       <p id="imgsp" className="coloo">
                         shopify platform design + development
@@ -139,8 +139,8 @@ const HomeAbout = () => {
                 <SwiperSlide className="cs flex justify-center items-center ">
                   <div className="imghome1 hiehome">
                     <div className="bghome2"></div>
-                    <div id="i" className="p-5">
-                      <h1>COWBOY</h1>
+                    <div id="imgs2" className="p-5 mt-10">
+                      <h1>MANGO</h1>
                       <p id="imgsp" className="coloo">
                         shopify platform design + development
                       </p>
@@ -149,9 +149,9 @@ const HomeAbout = () => {
                 </SwiperSlide>
                 <SwiperSlide className="c flex justify-center items-center ">
                   <div className="imghome1 hiehome">
-                    <div className="bghome3"></div>
-                    <div id="i" className="p-5">
-                      <h1>COWBOY</h1>
+                    <div className="bghome4"></div>
+                    <div id="imgs1" className="p-5 my-10">
+                      <h1>LYRA HEALTH</h1>
                       <p id="imgsp" className="coloo">
                         shopify platform design + development
                       </p>
@@ -160,9 +160,9 @@ const HomeAbout = () => {
                 </SwiperSlide>
                 <SwiperSlide className="s flex justify-center items-center ">
                   <div className="imghome1 hiehome">
-                    <div className="bghome4"></div>
-                    <div id="i" className="p-5">
-                      <h1>COWBOY</h1>
+                    <div className="bghome3"></div>
+                    <div id="imgs4" className="p-5 mt-10">
+                      <h1>WILLIAM ABRAHAM</h1>
                       <p id="imgsp" className="coloo">
                         shopify platform design + development
                       </p>

@@ -107,9 +107,8 @@ const BlogHome = () => {
                         color: "#848484",
                       }}
                     >
-                      Only a few months ago, would you have ever imagined that
-                      Twitter would be bought by SpaceX and Tesla founder Elon
-                      Musk?...
+                      Building an MVP that attracts investors enough to fund it
+                      is indeed a magic potion...
                     </p>
                   </div>
                 </div>
@@ -139,8 +138,8 @@ const BlogHome = () => {
                         color: "#848484",
                       }}
                     >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
+                      We have compiled a list of digital marketing trends that
+                      may assist...
                     </p>
                   </div>
                 </div>
@@ -171,8 +170,8 @@ const BlogHome = () => {
                         color: "#848484",
                       }}
                     >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
+                      Empathy is a foundational principle in the concept of
+                      design thinking – a user-based approach to...
                     </p>
                   </div>
                 </div>
@@ -203,9 +202,8 @@ const BlogHome = () => {
                         color: "#848484",
                       }}
                     >
-                      If you’re a business owner of any kind, you’ve probably
-                      heard of Shopify and Magento. Today, Shopify and Magento
-                      are...
+                      While Shopify offers a no-coding and user-friendly
+                      platform that can help you run an online shop...
                     </p>
                   </div>
                 </div>
@@ -236,8 +234,8 @@ const BlogHome = () => {
                         color: "#848484",
                       }}
                     >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
+                      Building an MVP that attracts investors enough to fund it
+                      is indeed a magic potion...
                     </p>
                   </div>
                 </div>
@@ -245,7 +243,7 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    <img src={image3} alt="" loading="lazy" />
+                    <img src={image4} alt="" loading="lazy" />
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -256,7 +254,7 @@ const BlogHome = () => {
                         fontWeight: "600",
                       }}
                     >
-                      Digital Marketing
+                      Design System
                     </h2>
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
@@ -267,8 +265,8 @@ const BlogHome = () => {
                         color: "#848484",
                       }}
                     >
-                      Union flatten auto flatten duplicate. Line slice inspect
-                      horizontal image strikethrough share follower.
+                      A design system is a guide or a standard structure with
+                      parameters for design and code...
                     </p>
                   </div>
                 </div>

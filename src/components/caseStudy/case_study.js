@@ -6,6 +6,7 @@ import img2 from "./Images/img2.png";
 import img3 from "./Images/img3.png";
 import web from "./Images/web.svg";
 import graph from "./Images/graph.png";
+import gsap from "gsap";
 
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
@@ -24,8 +25,17 @@ export default function Case() {
       setExplore(false);
     }
   };
+  let fade = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 1 },
+    });
+    tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });
+  }, []);
+
   return (
-    <>
+    <main className="casepage" ref={(el) => (fade = el)}>
       <Navbar />
       <main className="case-hero">
         <section className="case-hero-container">
@@ -42,7 +52,7 @@ export default function Case() {
       </main>
 
       <section className="aussie">
-        <img src={img1} alt="" className="case-img"  loading="lazy"/>
+        <img src={img1} alt="" className="case-img" loading="lazy" />
         <div className="case-div">
           <h1 className="case-section-h1">Aussie Spinach Onions</h1>
           <p className="case-section-para">
@@ -82,7 +92,7 @@ export default function Case() {
             wing Hawaiian party.
           </p>
         </div>
-        <img src={web} alt="" className="web"  loading="lazy"/>
+        <img src={web} alt="" className="web" loading="lazy" />
       </section>
       <section className="sp">
         <h1 className="sp-h1">Services Provided</h1>
@@ -106,7 +116,7 @@ export default function Case() {
           integer non aliquam sit. Tellus ullamcorper id morbi donec volutpat
           enim vitae et ipsum.
         </p>
-        <img src={graph} alt="" className="graph"  loading="lazy"/>
+        <img src={graph} alt="" className="graph" loading="lazy" />
       </section>
 
       {Widht > 768 ? (
@@ -116,21 +126,21 @@ export default function Case() {
           </h1>
           <div className="browse-container">
             <div className="browse-mini">
-              <img src={img1} alt="" className="browse-img"  loading="lazy"/>
+              <img src={img1} alt="" className="browse-img" loading="lazy" />
               <h1 className="img-detail-h1">COWBOY</h1>
               <p className="img-details">
                 shopify platform design + development
               </p>
             </div>
             <div className="browse-mini">
-              <img src={img2} alt="" className="browse-img"  loading="lazy"/>
+              <img src={img2} alt="" className="browse-img" loading="lazy" />
               <h1 className="img-detail-h1">WILLAIM ABRAHAM</h1>
               <p className="img-details">
                 shopify platform design + development
               </p>
             </div>
             <div className="browse-mini">
-              <img src={img3} alt="" className="browse-img"  loading="lazy"/>
+              <img src={img3} alt="" className="browse-img" loading="lazy" />
               <h1 className="img-detail-h1">Studio Proper</h1>
               <p className="img-details">
                 shopify platform design + development
@@ -141,8 +151,8 @@ export default function Case() {
       ) : (
         <>
           {!explore ? (
-            <div className="worksection mt-72 max-sm:mt-80">
-              <div className="test">
+            <div className="worksection">
+              <div className="test mt-72 max-sm:mt-80">
                 <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                   <h1 className="text-5xl mt-24 wcw">COWBOY</h1>
                   <p className="colo my-10 mt-20">
@@ -254,6 +264,6 @@ export default function Case() {
       )}
 
       <Footer />
-    </>
+    </main>
   );
 }

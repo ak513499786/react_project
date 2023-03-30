@@ -165,7 +165,7 @@ export default function Blogsection() {
           <div className="blog-container">
             <div className="blog-containers" ref={(el) => (empathy1 = el)}>
               <Link to={"/empathy"} className="link-imgs">
-                <img src={image1} alt="" className="blog-imgs" loading="lazy" />
+                <img src={image1} alt="" className="blog-imgs"/>
               </Link>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
@@ -182,7 +182,7 @@ export default function Blogsection() {
               className="blog-containers"
               ref={(el) => (digitalmarketing = el)}
             >
-              <img src={image2} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image2} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
                 {/* <p className="blog-para">
@@ -194,7 +194,7 @@ export default function Blogsection() {
             </div>
             <div className="blog-containers" ref={(el) => (empathy2 = el)}>
               <Link to={"/empathy"} className="link-imgs">
-                <img src={image1} alt="" className="blog-imgs" loading="lazy" />
+                <img src={image1} alt="" className="blog-imgs"/>
               </Link>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Empathy In UX</h1>
@@ -212,7 +212,7 @@ export default function Blogsection() {
         <aside className="blogcol" ref={(el) => (col2 = el)}>
           <div className="blog-container">
             <div className="blog-containers" ref={(el) => (MVP1 = el)}>
-              <img src={image3} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image3} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
                 {/* <p className="blog-para">
@@ -224,7 +224,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (design = el)}>
-              <img src={image4} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image4} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Design System</h1>
                 {/* <p className="blog-para">
@@ -236,7 +236,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (MVP2 = el)}>
-              <img src={image3} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image3} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Minimum Viable Product</h1>
                 {/* <p className="blog-para">
@@ -252,7 +252,7 @@ export default function Blogsection() {
         <aside className="blogcol" ref={(el) => (col3 = el)}>
           <div className="blog-container">
             <div className="blog-containers" ref={(el) => (NCR1 = el)}>
-              <img src={image5} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image5} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
                 {/* <p className="blog-para">
@@ -264,7 +264,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (SVM = el)}>
-              <img src={image6} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image6} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">Shopify Vs Magento</h1>
                 {/* <p className="blog-para">
@@ -276,7 +276,7 @@ export default function Blogsection() {
               {/* <p className="blog-btns">Read More</p> */}
             </div>
             <div className="blog-containers" ref={(el) => (NCR2 = el)}>
-              <img src={image5} alt="" className="blog-imgs" loading="lazy" />
+              <img src={image5} alt="" className="blog-imgs"/>
               <div className="blog-container-content">
                 <h1 className="blog-heading">No Code Revolution</h1>
                 {/* <p className="blog-para">
@@ -290,15 +290,14 @@ export default function Blogsection() {
           </div>
         </aside>
         <div className="arrow-left-right" ref={(el) => (arrow = el)}>
-          <img src={left_arrow} alt="" id="left-arr" loading="lazy" />
+          <img src={left_arrow} alt="" id="left-arr"/>
           <p id="no1by5">1/5</p>
           <img
             src={right_arrow}
             alt=""
             srcset=""
             id="right-arr"
-            loading="lazy"
-          />
+                    />
         </div>
       </section>
     </>

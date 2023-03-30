@@ -1,16 +1,16 @@
 @font-face {
   font-family: graphikthin;
-  src: url(./GraphikThin.otf);
+  src: url(./GraphikThin.woff);
 }
 
 /* */
 @font-face {
   font-family: graphik;
-  src: url(./Graphik-Regular-Trial.otf);
+  src: url(./Graphik-Regular-Trial.woff);
 }
 @font-face {
   font-family: graphik2;
-  src: url(./graphik.otf);
+  src: url(./graphik.woff);
 }
 * {
   margin: 0;

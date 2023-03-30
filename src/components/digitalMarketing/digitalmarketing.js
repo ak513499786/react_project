@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import Servicesslide from "../services/Explore/Explore";
 
 import Footer from "../footer/footer";
@@ -8,8 +8,16 @@ import Navbar from "../navigationBar/Nav";
 import Animation from "../consultingAndStrategy/animation";
 
 export default function Digitalmarketing() {
+  let fade = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 1 },
+    });
+    tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });
+  }, []);
   return (
-    <>
+    <main className="serviceinnerpage" ref={(el) => (fade = el)}>
       <Navbar />
       <main>
         {/* <AnimatedCursor color="255, 255, 255"/> */}
@@ -22,6 +30,6 @@ export default function Digitalmarketing() {
         </div>
       </main>
       <Footer />
-    </>
+    </main>
   );
 }

@@ -326,7 +326,7 @@
     gap: 20px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 786px) {
   #ftrcnt {
     font-size: 30px;
   }

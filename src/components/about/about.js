@@ -3,15 +3,25 @@ import Navbar from "../navigationBar/Nav";
 import Circles from "./circlesanimation";
 import Abouthero from "./abouthero";
 import Crew from "./crew";
-import AnimatedCursor from "react-animated-cursor";
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
 
 import "./about.css";
 import Vision from "./vision/Vision";
 import Casestudy from "./CaseStudy/Case";
 
-export default function about() {
+export default function About() {
+  let fade = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      defaults: { duration: 1 },
+    });
+    tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });
+  }, []);
+
   return (
-    <>
+    <main className="aboutpage" ref={(el) => (fade = el)}>
       {/* <AnimatedCursor color="255, 255, 255"/> */}
       <Navbar />
       <div className="iframe-container">
@@ -35,6 +45,6 @@ export default function about() {
         <Casestudy />
       </div>
       <Footer />
-    </>
+    </main>
   );
 }

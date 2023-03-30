@@ -274,13 +274,12 @@
     left: 0%;
     width: calc(602px);
     height: 43vh;
-    min-height: 790px;
-
+    min-height: 650px;
     margin-top: -299px;
     margin-left: 109px;
     overflow-y: auto;
     overflow-x: hidden;
-    transform: rotate(-90deg) translateY(105px);
+    transform: rotate(-90deg) translateY(0px);
     transform-origin: center center;
     padding: 25px 0 0 0;
   }
@@ -310,7 +309,6 @@
     height: 70vh;
     min-height: 429px;
     margin-bottom: 200px;
-
     margin-top: -199px;
     margin-left: -119px;
     overflow-y: auto;
@@ -320,9 +318,45 @@
     padding: 25px 0 0 0;
   }
   .hidee {
-    width: 100%;
+    width: 380px;
     height: 100%;
     margin-top: 0;
+  }
+  .hidee:hover .colo {
+    visibility: hidden;
+    transition: all 0.01s ease-in-out;
+  }
+  .wcw {
+    font-size: 2.5rem;
+  }
+
+  .wcww {
+    font-size: 2.5rem;
+  }
+  .hidee:hover .wcw {
+    visibility: hidden;
+  }
+
+  .btn {
+    width: 70%;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 72px;
+    // border: 72px;
+    transition: all 0.5s ease-in-out;
+    color: #000;
+    font-family: "Graphik";
+  }
+  .hidee:hover .btn {
+    width: 100%;
+    background-color: rgb(232, 202, 33);
+    border: none;
+    color: #000;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    border-radius: 72px;
+  }
+  .btn {
+    transition: all 0.5s ease-in-out;
   }
 }
 @media (max-width: 435px) {
@@ -356,7 +390,7 @@
     min-height: 300px;
     margin-bottom: 250px;
     margin-top: -250px;
-    margin-left: -165px;
+    margin-left: -218px;
     overflow-y: auto;
     overflow-x: hidden;
     transform: rotate(-90deg) translateY(0px);

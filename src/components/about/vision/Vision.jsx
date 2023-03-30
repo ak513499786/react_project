@@ -84,7 +84,7 @@ const Vision = () => {
                 >
                   skip ahead
                   <div className="downarrows" ref={(el) => (arrows = el)}>
-                    <img src={whitedownarrow} alt="" className="arrowdown" loading="lazy"/>
+                    <img src={whitedownarrow} alt="" className="arrowdown"/>
                     <img src={arrowdown} alt="" className="arrowdown"/>
                   </div>
                 </div>

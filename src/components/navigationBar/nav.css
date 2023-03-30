@@ -440,16 +440,23 @@ sup {
   .hyphen {
     top: 43.7px;
     left: 75.7px;
+    display: none;
   }
   .nav_logo::after {
     top: 48px;
     left: 87px;
+    display: none;
   }
   .nav_logo::before {
     top: 29px;
     left: 55px;
     width: 33px;
     height: 33px;
+    display: none;
+  }
+  .nav_logo:hover{
+    transform: scale(1);
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 428px) {
@@ -457,6 +464,9 @@ sup {
     position: absolute;
     left: 9.47%;
     top: 1.82px;
+  }
+  .nav_logo:hover{
+    transform: scale(1);
   }
   .menu {
     position: absolute;
@@ -554,23 +564,6 @@ sup {
     text-align: right;
     position: relative;
     top: 70px;
-  }
-  .hyphen {
-    top: 45px;
-    left: 72px;
-    width: 5px;
-    display: none;
-  }
-  .nav_logo::after {
-    top: 50px;
-    left: 85px;
-  }
-  .nav_logo::before {
-    top: 30px;
-    left: 50px;
-    width: 35px;
-    height: 35px;
-    display: none;
   }
   .icons {
     width: 150px;
