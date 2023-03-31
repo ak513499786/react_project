@@ -21,7 +21,7 @@ export default function Digitalmarketing() {
       <Navbar />
       <main>
         <section className="otherservices">
-          <h1 className="inner-service-h1">Digital Marketing</h1>
+          <h1 className="inner-service-h1">Traversing You Closer To Your Users.</h1>
         </section>
         <Animation />
         <div className="slide-container">

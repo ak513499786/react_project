@@ -20,8 +20,7 @@ export default function Consultingandstrategy() {
       <Navbar />
       <section className="otherservices">
         <h1 className="inner-service-h1">
-          Define And Shape Tomorrow With Us By Capitalising On Today's
-          Disruptions.
+        Shaping Tomorrow By Capitalising On Today's Disruptions.
         </h1>
       </section>
       <div className="mt-72">

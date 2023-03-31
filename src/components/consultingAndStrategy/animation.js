@@ -171,13 +171,14 @@ const Animation = () => {
                 </p>
               </div>
               <div className="vertical-animation-container">
-                <h1 className="vertical-animation-h1">UI UX consulting </h1>
+                <h1 className="vertical-animation-h1">UI UX Consulting </h1>
 
                 <p className="vertical-animation-para">
-                  "Evaluation is Creation." A UX audit is a critical evaluation
-                  of the website's or application's interface, which enables us
-                  to gain valuable insights into user behaviour and formulate a
-                  data-driven action plan for you to hit the ground running.
+                  It is critical to have a digital presence that conveys your
+                  brand values while also seamlessly interacting with users. We
+                  take charge of everything from brainstorming designs to
+                  conducting ux audits, providing tailored strategies for you to
+                  thrive in the market and enhance your user experience.
                 </p>
               </div>
               <div className="vertical-animation-container">
@@ -194,15 +195,24 @@ const Animation = () => {
                 </p>
               </div>
               <div className="vertical-animation-container">
-                <h1 className="vertical-animation-h1">
-                  User Interface Design{" "}
-                </h1>
+                <h1 className="vertical-animation-h1">User Interface Design</h1>
                 <p className="vertical-animation-para">
                   In the era of plummeting user attention span, an engaging user
                   interface ensures better customer retention and conversion
                   rates. Our UI Team creates high-fidelity interfaces that
                   perfectly balance visual aesthetics and usability, enabling
                   users to seamlessly interact with them.
+                </p>
+              </div>
+              <div className="vertical-animation-container">
+                <h1 className="vertical-animation-h1">Digital Branding</h1>
+                <p className="vertical-animation-para">
+                  Given how the digital storm is transforming business processes
+                  and consumer behaviour, a digital brand image enables you to
+                  communicate with your audience. We blend creativity with
+                  strategy to design and build a brand identity that resonates
+                  with your firm's values and bridges the gap between you and
+                  your users.
                 </p>
               </div>
             </div>
@@ -218,14 +228,17 @@ const Animation = () => {
                 User Experience Design
               </li>
               <li className="horizontal-animation-para">
-                User Interface Design{" "}
+                User Interface Design
+              </li>
+              <li className="horizontal-animation-para">
+                Digital Branding
               </li>
             </div>
           </div>
         </div>
       </div>
     );
-  } else if (url.pathname === "/digitalmarketing") {
+  } else if (url.pathname === "/productdevelopment") {
     return (
       <div
         ref={verticalRef}
@@ -337,9 +350,7 @@ const Animation = () => {
               <li className="horizontal-animation-para">
                 E-Commerce Development
               </li>
-              <li className="horizontal-animation-para">
-                MVP Development
-              </li>
+              <li className="horizontal-animation-para">MVP Development</li>
               <li className="horizontal-animation-para">
                 Native App Development
               </li>

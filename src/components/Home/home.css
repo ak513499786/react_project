@@ -2080,7 +2080,7 @@
   #aboutbtn {
     width: 95%;
     position: absolute;
-    top: calc(92vh - 300px);
+    top: calc(92vh - 250px);
   }
   #about {
     top: 100vh;
@@ -2169,7 +2169,7 @@
     width: calc(100% + 20px);
     height: 1100px;
     overflow-x: scroll;
-    left: -20px;
+    left: 0px;
   }
   .blog-icon_div-h2 {
     font-size: 25px;

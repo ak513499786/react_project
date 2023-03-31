@@ -99,6 +99,7 @@
   .inner-service-h1 {
     font-size: 65px;
     line-height: 78px;
+    width: 75%;
     left: 9.7%;
     top: 362px;
   }
@@ -229,6 +230,8 @@
   .inner-service-h1 {
     font-size: 40px;
     line-height: 44px;
+    width: 90%;
+    top: 300px;
   }
   .ser-h1,
   .other-ser-h1 {

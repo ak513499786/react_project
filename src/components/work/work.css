@@ -17,7 +17,12 @@
   top: 389.5px;
 }
 .worksection{
-  height: 1050px;
+  height: 650px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 100px;
 }
 .workunfolds{
   height: auto;
@@ -45,6 +50,8 @@
   }
   .container-1 {
     top: 309.5px;
+    width: 100%;
+    left: 0;
   }
   #work_heading {
     width: 63%;
@@ -57,9 +64,17 @@
     width: 100%;
     left: 0;
   }
+  #work_heading{
+    width: 750px;
+  }
   .client-container {
     width: 100%;
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .worksection{
+    padding-top: 250px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -74,7 +89,8 @@
     height: 680px;
   }
   .worksection{
-    height: 780px;
+    height: auto;
+    overflow: visible;
   }
   .client-container {
     height: 230px;

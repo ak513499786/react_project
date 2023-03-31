@@ -214,6 +214,10 @@
   color: #848484;
   text-indent: 80px;
 }
+.about-case{
+  width: 100%;
+  overflow-x: scroll;
+}
 .guiding-subcontainer {
   width: 57%;
   display: flex;
@@ -456,22 +460,12 @@
     width: 300px;
     height: 350px;
   }
-  .about-case {
-    position: relative;
-    bottom: 100px;
-  }
 }
 @media screen and (max-width: 630px) {
   .about-hero-h1 {
     left: 5%;
     top: 200px;
     width: 90%;
-  }
-}
-@media screen and (max-width: 540px) {
-  .about-case {
-    position: relative;
-    bottom: 250px;
   }
 }
 @media screen and (max-width: 428px) {

@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react";
 import "./about.css";
 import Vision from "./vision/Vision";
 import Casestudy from "./CaseStudy/Case";
+import BlogHome from "../home/BlogHome";
 
 export default function About() {
   let fade = useRef(null);
@@ -41,7 +42,8 @@ export default function About() {
       <Vision />
       <Crew />
       <div className="about-case">
-        <Casestudy />
+        {/* <Casestudy /> */}
+        <BlogHome/>
       </div>
       <Footer />
     </main>

@@ -21,7 +21,7 @@ export default function UX() {
       <Navbar />
 
       <section className="otherservices">
-        <h1 className="inner-service-h1">User Experience</h1>
+        <h1 className="inner-service-h1">Crafting designs operating at the intersection of empathy and rationality.</h1>
       </section>
       <Animation />
       <div className="slide-container">

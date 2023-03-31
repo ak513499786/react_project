@@ -25,7 +25,8 @@ export default function Productdevelopment() {
         {/* <AnimatedCursor color="255, 255, 255" /> */}
 
         <h1 className="inner-service-h1">
-          Providing Ideas The Platform To Be Transformed Into Reality.
+          Developing Products That Transform Your Ideas Into Reality And Enrich
+          Lives.
         </h1>
       </section>
       <Animation />
