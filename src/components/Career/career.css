@@ -247,7 +247,6 @@
 }
 .positions:hover {
   background-color: #1b1a1a;
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
 }
 .positions:hover .office {
   text-shadow: 0px 0px 0px black;
@@ -256,6 +255,7 @@
 .PD {
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   display: none;
   position: fixed;
   top: 0;
@@ -393,7 +393,7 @@
   height: 238px;
 }
 .applying-form {
-  margin-top: 10%;
+  margin-top: 5%;
   display: none;
   margin-left: 12.5%;
 }
@@ -410,7 +410,7 @@
 .first-name::placeholder {
   color: #848484;
 }
-select::placeholder {
+.phone-number::placeholder {
   color: #848484;
 }
 .sub_btn-content {
@@ -546,8 +546,8 @@ select::placeholder {
     top: 0;
     left: 0;
     z-index: 20;
+    padding-top: 5vh;
     background-color: black;
-    padding: 53px 8px;
   }
   .applying-form {
     margin-left: 0%;
@@ -605,6 +605,9 @@ select::placeholder {
   .job-pd-title{
     font-size: 45px;
   }
+  .applying-form{
+    margin-left: 7%;
+  }
   .job-pd-desc {
     width: 80%;
     margin-top: 30px;
@@ -621,9 +624,6 @@ select::placeholder {
     width: 760px;
     margin-bottom: 30px;
   }
-  .PD {
-    padding-top: 50px;
-  }
   .fname,
   .lname,
   .resume-here {
@@ -634,6 +634,9 @@ select::placeholder {
   .phone {
     width: 80%;
     margin: 30px 0px;
+  }
+  .PD{
+    padding-top: 15vh;
   }
   .telephone {
     width: 20%;
@@ -695,14 +698,14 @@ select::placeholder {
     width: 85%;
     height: auto;
   }
+  .PD{
+    padding-top: 5px;
+  }
   .position-content-container {
     height: auto;
   }
   .open-pos {
     height: auto;
-  }
-  .PD {
-    padding-top: 33px;
   }
   .job-pd-desc {
     height: auto;
@@ -719,7 +722,7 @@ select::placeholder {
     margin-left: 5%;
   }
   .applying-form {
-    width: 100%;
+    width: 90%;
     margin-left: 5%;
   }
 }
@@ -796,6 +799,9 @@ select::placeholder {
   .job-pd-desc {
     width: 90%;
   }
+  .PD{
+    padding-top: 50px;
+  }
   .job-req {
     font-size: 25px;
     width: 90%;
@@ -808,9 +814,6 @@ select::placeholder {
     font-size: 15px;
     line-height: 23px;
     height: auto;
-  }
-  .PD {
-    padding: 23px 8px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -939,9 +942,6 @@ select::placeholder {
     display: flex;
     justify-content: center;
   }
-  .PD {
-    padding: 3px 8px;
-  }
   .form {
     gap: 28px;
   }
@@ -954,5 +954,24 @@ select::placeholder {
   }
   .life-para{
     margin-top: 0;
+  }
+  .first-name::placeholder {
+    color: #848484;
+    font-size: 12px;
+  }
+  select::placeholder {
+    color: #848484;
+    font-size: 12px;
+  }
+  .phone-number::placeholder{
+    font-size: 12px;
+  }
+  .tele{
+    font-size: 12px;
+  }
+}
+@media screen and (max-height: 570px) and (max-width: 428px) {
+  .PD{
+    overflow-y: scroll;
   }
 }

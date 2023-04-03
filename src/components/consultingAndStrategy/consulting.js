@@ -23,7 +23,7 @@ export default function Consultingandstrategy() {
         Shaping Tomorrow By Capitalising On Today's Disruptions.
         </h1>
       </section>
-      <div className="mt-72">
+      <div className="mt-2">
         <Animation />
       </div>
       <div className="slide-container">

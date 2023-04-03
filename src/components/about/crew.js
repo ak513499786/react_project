@@ -25,7 +25,7 @@ export default function Crew() {
               <h1 className="m-title">
                 <p className="m-numbers">01</p>
                 <span className="strategist">
-                  The <br /> Design Architects
+                  Design Architects
                 </span>
               </h1>
               <p className="m-desc">
@@ -38,7 +38,7 @@ export default function Crew() {
               <h1 className="m-title">
                 <p className="m-numbers">02</p>
                 <span className="strategist">
-                  The <br /> Strategists
+                  Strategists
                 </span>
               </h1>
               <p className="m-desc">
@@ -51,7 +51,7 @@ export default function Crew() {
               <h1 className="m-title">
                 <p className="m-numbers">03</p>
                 <span className="strategist">
-                  The <br /> Tech Experts
+                  Tech Experts
                 </span>
               </h1>
               <p className="m-desc">
@@ -64,7 +64,7 @@ export default function Crew() {
               <h1 className="m-title">
                 <p className="m-numbers">04</p>
                 <span className="strategist">
-                  The <br /> Delivery Managers
+                  Delivery Managers
                 </span>
               </h1>
               <p className="m-desc">

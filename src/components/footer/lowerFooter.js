@@ -11,6 +11,11 @@ import { useRef, useEffect } from "react";
 export default function Lowerfooter() {
   let footeranimation = useRef(null);
   let footeranimationwidth = useRef(null);
+  let footerScroll = useRef(null)
+
+  const Effect = () => {
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -46,26 +51,26 @@ export default function Lowerfooter() {
       <div id="lower-footer">
         <div className="footer-column">
           <div className="column">
-            <Link to={"/about"} className="footerlink">
+            <Link to={"/about"} className="footerlink" onClick={Effect}>
               About
             </Link>
-            <Link to={"/services"} className="footerlink">
+            <Link to={"/services"} className="footerlink" onClick={Effect}>
               Services
             </Link>
           </div>
           <div className="column">
-            <Link to={"/work"} className="footerlink">
+            <Link to={"/work"} className="footerlink" onClick={Effect}>
               Work
             </Link>
-            <Link to={"/career"} className="footerlink">
+            <Link to={"/career"} className="footerlink" onClick={Effect}>
               Careers
             </Link>
           </div>
           <div className="column">
-            <Link to={"/blog"} className="footerlink">
+            <Link to={"/blog"} className="footerlink" onClick={Effect}>
               Ideas
             </Link>
-            <Link to={"/let's_talk"} className="footerlink">
+            <Link to={"/let's_talk"} className="footerlink" onClick={Effect}>
               Let's Talk
             </Link>
           </div>

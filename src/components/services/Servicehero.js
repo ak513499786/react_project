@@ -49,7 +49,7 @@ export default function Serviceshero() {
               >
                 <SwiperSlide className="">
                   <h1
-                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    className="text-6xl  mt16 ml-8 max-xl:ml-5 max-md:text-3xl font-extrabold"
                     style={{
                       color: "#d8d6d6",
                     }}
@@ -59,7 +59,7 @@ export default function Serviceshero() {
                 </SwiperSlide>
                 <SwiperSlide className="-ml">
                   <h1
-                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    className="text-6xl  mt16 ml-8 max-xl:ml-5 max-md:text-3xl font-extrabold"
                     style={{
                       color: "#d8d6d6",
                     }}
@@ -69,7 +69,7 @@ export default function Serviceshero() {
                 </SwiperSlide>
                 <SwiperSlide className="">
                   <h1
-                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    className="text-6xl  mt16 ml-8 max-xl:ml-5 max-md:text-3xl font-extrabold"
                     style={{
                       color: "#d8d6d6",
                     }}
@@ -79,7 +79,7 @@ export default function Serviceshero() {
                 </SwiperSlide>
                 <SwiperSlide className="">
                   <h1
-                    className="text-6xl  mt16 ml-5 max-xl:ml-5 max-md:text-3xl font-extrabold"
+                    className="text-6xl  mt16 ml-8 max-xl:ml-5 max-md:text-3xl font-extrabold"
                     style={{
                       color: "#d8d6d6",
                     }}

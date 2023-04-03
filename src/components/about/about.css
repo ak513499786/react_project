@@ -67,7 +67,9 @@
   color: #848484;
   font-family: graphik;
   font-weight: 100;
-  opacity: 0.9;
+  opacity: 1;
+  font-size: 20px;
+  line-height: 30px;
 }
 .career-crew-btn {
   box-sizing: border-box;
@@ -160,10 +162,6 @@
   top: 70px;
   height: 260px;
 }
-.guiding-skip {
-  position: relative;
-  left: -25px;
-}
 .guiding-container-h1 {
   font-size: 35px;
   color: #d8d6d6;
@@ -207,10 +205,10 @@
 }
 .subcontainer-para {
   font-size: 20px;
-  line-height: 32px;
+  line-height: 30px;
   font-family: graphik;
   font-weight: 100;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
   color: #848484;
   text-indent: 80px;
 }
@@ -427,6 +425,7 @@
   }
   .core-container {
     padding: 80px 6.7%;
+    gap: 100px;
   }
   .guiding-container {
     width: 100%;
@@ -458,7 +457,7 @@
     justify-content: center;
     gap: 10px;
     width: 300px;
-    height: 350px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 630px) {
@@ -479,6 +478,9 @@
   }
   .core-guiding-container {
     gap: 50px;
+  }
+  .core-container{
+    gap: 70px;
   }
   .crewclass {
     margin-left: 0;

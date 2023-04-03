@@ -157,7 +157,7 @@
   width: 15%;
   height: 175.39px;
   left: 9.6%;
-  top: 736px;
+  top: 706px;
 }
 .icons {
   width: 40.41px;
@@ -283,7 +283,7 @@ sup {
     gap: 7px;
     position: absolute;
     left: 9.6%;
-    top: 585px;
+    top: 555px;
   }
   .icons {
     width: 30.41px;
@@ -348,7 +348,7 @@ sup {
     width: 289px;
     height: 175.39px;
     left: 149px;
-    top: 76vh;
+    top: 70vh;
   }
   .socials {
     display: flex;
@@ -398,20 +398,20 @@ sup {
     top: 6.02px;
   }
   .nav-menu {
-    padding: 62px 35px;
+    padding: 82px 65px;
   }
   .slide_nav_list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 0px;
-    gap: 25px;
+    gap: 10px;
 
     position: absolute;
     width: 41.8%;
     height: 526px;
     left: 51.5%;
-    top: 150px;
+    top: 120px;
   }
   .details {
     display: flex;
@@ -425,7 +425,7 @@ sup {
     width: 269.64px;
     height: 173.41px;
     left: 47px;
-    top: 70vh;
+    top: 65vh;
   }
   .socials {
     display: flex;
@@ -454,7 +454,7 @@ sup {
     height: 33px;
     display: none;
   }
-  .nav_logo:hover{
+  .nav_logo:hover .logo{
     transform: scale(1);
     margin-left: 0;
   }
@@ -465,7 +465,7 @@ sup {
     left: 9.47%;
     top: 1.82px;
   }
-  .nav_logo:hover{
+  .nav_logo:hover .logo{
     transform: scale(1);
   }
   .menu {
@@ -480,26 +480,29 @@ sup {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 10px 33px;
-    width: 78.9px;
-    height: 92px;
+    padding: 0;
+    width: 120px;
+    height: 180px;
   }
   .line-nav {
     width: 62.9px;
     height: 0px;
     border: 2px solid #ffcd05;
+    right: 0;
   }
   .slide_nav_list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 0px;
-    gap: 15px;
+    gap: 0;
     position: absolute;
     width: 75%;
     left: 16.3%;
-    top: 10vh;
+    top: 17vh;
+  }
+  .slide_nav_links{
+    font-size: 35px;
   }
   .details {
     display: flex;
@@ -511,7 +514,7 @@ sup {
     position: absolute;
     width: 63%;
     left: 28%;
-    top: 70vh;
+    top: 65vh;
   }
   .contact-loc {
     width: 260px;

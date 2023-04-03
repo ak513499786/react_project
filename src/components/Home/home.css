@@ -711,6 +711,36 @@
   bottom: 0.82%;
   opacity: 0.5;
 }
+.client-img0:hover{
+  opacity: 1;
+}
+.client-img1:hover{
+  opacity: 1;
+}
+.client-img2:hover{
+  opacity: 1;
+}
+.client-img3:hover{
+  opacity: 1;
+}
+.client-img4:hover{
+  opacity: 1;
+}
+.client-img5:hover{
+  opacity: 1;
+}
+.client-img6:hover{
+  opacity: 1;
+}
+.client-img7:hover{
+  opacity: 1;
+}
+.client-img8:hover{
+  opacity: 1;
+}
+.client-img9:hover{
+  opacity: 1;
+}
 #blog {
   justify-content: center;
   align-items: center;
@@ -720,6 +750,16 @@
   height: 1050.06px;
   position: absolute;
   top: 5734.05px;
+  left: 14%;
+}
+#blg {
+  justify-content: center;
+  align-items: center;
+  margin-left: 0%;
+  gap: 77px;
+  width: 80%;
+  height: auto;
+  position: relative;
   left: 14%;
 }
 #blog_heading {
@@ -835,6 +875,9 @@
     top: 500px;
   }
   #blog {
+    left: 14%;
+  }
+  #blg{
     left: 14%;
   }
   #testimonials {
@@ -1206,6 +1249,9 @@
     top: calc(100vh + 3500px);
     left: 15%;
   }
+  #blg {
+    left: 15%;
+  }
   .home {
     height: calc(100vh + 4400px);
   }
@@ -1443,7 +1489,7 @@
     width: 100%;
   }
   .test-main-container {
-    gap: 70px;
+    gap: 10px;
     width: 100%;
   }
   #container-2 {
@@ -1458,13 +1504,17 @@
     width: 70%;
   }
   #blog {
-    top: calc(100vh + 3600px);
+    top: calc(100vh + 3630px);
     margin-left: 0%;
     gap: 10px;
     height: 1050px;
     width: 100%;
     left: 0;
     overflow-x: hidden;
+  }
+  #blg {
+    width: 100%;
+    left: 0;
   }
   #blog_heading {
     left: 10.3%;
@@ -1474,7 +1524,7 @@
     display: inline-block;
   }
   .service_main {
-    gap: 30%;
+    gap: 28%;
   }
   .exp_btn {
     margin-left: 10%;
@@ -1707,8 +1757,9 @@
   }
   .bgv {
     width: 3500px;
-    height: auto;
-    top: 0;
+    height: 3500px;
+    top: -1350px;
+    left: -50px;
   }
   #imgs1 {
     align-items: start;
@@ -2059,6 +2110,9 @@
     position: absolute;
     left: 980px;
   }
+  .bgi{
+    height: 130vh;
+  }
 }
 @media screen and (max-width: 540px) {
   .horizontalAbout {
@@ -2074,6 +2128,10 @@
     font-size: 40px;
     line-height: 45px;
   }
+  #imgsp{
+    font-size: 13px;
+    width: 280px;
+  }
   #content {
     top: 200px;
   }
@@ -2088,7 +2146,9 @@
   #abtcnt {
     width: 90%;
   }
-
+  .bgv{
+    top: -1450px;
+  }
   .allwork {
     width: 100%;
     left: 0%;
@@ -2166,10 +2226,10 @@
     margin-left: 7%;
   }
   .horizontalAbout {
-    width: calc(100% + 20px);
+    width: calc(100% + 50px);
     height: 1100px;
     overflow-x: scroll;
-    left: 0px;
+    left: -50px;
   }
   .blog-icon_div-h2 {
     font-size: 25px;

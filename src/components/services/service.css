@@ -259,7 +259,7 @@
 }
 .skip-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   overflow: hidden;
   width: 180px;
 }
@@ -328,19 +328,21 @@
 }
 .skip {
   display: flex;
-  gap: 15px;
-  font-size: 20px;
+  gap: 10px;
+  font-size: 16px;
   font-family: graphik;
   overflow: hidden;
   height: 30px;
   color: #848484;
+  position: relative;
 }
 .downarrows {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
+  width: 16px;
   position: relative;
-  bottom: 23px;
+  bottom: 25px;
 }
 @media screen and (max-width: 1800px) {
   .rolling-words {
@@ -570,12 +572,6 @@
     opacity: 0.9;
     height: auto;
   }
-  .skip-container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    width: 180px;
-  }
   .model-container {
     gap: 80px;
     width: 100%;
@@ -637,7 +633,7 @@
   .wedo-container {
     gap: 34px;
     width: 35%;
-    left: 6.7%;
+    left: 10.3%;
     height: auto;
   }
   .wedo-h1 {
@@ -760,10 +756,6 @@
     font-size: 30px;
     top: 445px;
   }
-  .skip-container {
-    position: relative;
-    left: 40%;
-  }
   .engagement-model {
     gap: 70px;
   }
@@ -771,6 +763,9 @@
 @media screen and (max-width: 1140px) {
   .wedo{
     height: 1000px;
+  }
+  .wedo-container{
+    left: 7%;
   }
 }
 @media screen and (max-width: 940px) {
@@ -790,6 +785,7 @@
     position: relative;
     top: 0;
     width: 40%;
+    left: 6%;
   }
   .accordian-h1 {
     font-size: 40px;
@@ -826,7 +822,7 @@
 @media screen and (max-width: 768px) {
   #hero_services {
     font-size: 40px;
-    height: 70vh;
+    height: 100vh;
   }
   .services_hero-text {
     left: 6.7%;
@@ -849,6 +845,7 @@
   .wedo-container {
     width: 80%;
     height: auto;
+    left: 6.72%;
   }
   .accordian-container {
     position: relative;
@@ -917,7 +914,8 @@
     gap: 20px;
   }
   .skip-container {
-    left: 35%;
+    justify-content: end;
+    width: 100%;
   }
   .m-title {
     font-size: 35px;
@@ -965,6 +963,10 @@
   .overflowcontrol {
     top: 100px;
     height: 40px;
+  }
+  #hero_services {
+    position: relative;
+    left: -2%;
   }
   .leading{
     height: auto;

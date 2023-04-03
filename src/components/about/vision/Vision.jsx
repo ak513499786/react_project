@@ -73,20 +73,18 @@ const Vision = () => {
               Our guiding principles enable us to adhere to our core and deliver
               exceptional projects.
             </p>
-            <div className="guiding-skip">
-              <div className="skip-container">
-                <div
-                  onClick={() => scrollToTarget("section1")}
-                  className="skip"
-                  onMouseOut={arrowRotateBack}
-                  onMouseOver={arrowRotate}
-                  ref={(el) => (skip = el)}
-                >
-                  skip ahead
-                  <div className="downarrows" ref={(el) => (arrows = el)}>
-                    <img src={whitedownarrow} alt="" className="arrowdown" />
-                    <img src={arrowdown} alt="" className="arrowdown" />
-                  </div>
+            <div className="skip-container">
+              <div
+                onClick={() => scrollToTarget("section1")}
+                className="skip"
+                onMouseOut={arrowRotateBack}
+                onMouseOver={arrowRotate}
+                ref={(el) => (skip = el)}
+              >
+                skip ahead
+                <div className="downarrows" ref={(el) => (arrows = el)}>
+                  <img src={whitedownarrow} alt="" className="arrowdown" />
+                  <img src={arrowdown} alt="" className="arrowdown" />
                 </div>
               </div>
             </div>
