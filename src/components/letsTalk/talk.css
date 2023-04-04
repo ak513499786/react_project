@@ -198,7 +198,7 @@ input:focus {
   font-size: 35px;
   line-height: 113.3%;
   text-align: center;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.01em;
   text-transform: capitalize;
   color: #d8d6d6;
 }
@@ -522,10 +522,15 @@ input[type=number] {
     width: 100%;
     font-size: 18px;
     line-height: 23px;
-    letter-spacing: -0.03em;
-    word-spacing: -0.03em;
+    letter-spacing: 0em;
+    word-spacing: 0em;
   }
   .sub_btn {
     width: 100%;
   }
+}
+@media screen and (max-height: 650px) and (max-width: 428px) {
+    .contact-hero{
+      height: 670px;
+    } 
 }

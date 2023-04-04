@@ -156,8 +156,8 @@ export default function Positions() {
             uplift brand values.
           </p>
           <div className="job-req">
-            Figma | Wireframes <span className="and"> &</span> User Flows | Prototypes UX Research | Personas
-            | Design System
+            Figma <span className="and">|</span>Wireframes <span className="and"> &</span> User Flows <span className="and">|</span>Prototypes UX Research <span className="and">|</span>Personas
+            <span className="and">|</span>Design System
           </div>
           <p className="apply">Feel like you’re a match?</p>
           <div className="apply_btn" onClick={applyNow}>

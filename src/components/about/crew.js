@@ -4,10 +4,10 @@ export default function Crew() {
   return (
     <>
       <div className=" produc crewclass">
-        <h2 className="text-7xl max-xl:text-5xl max-xl:p-5 leading-sng font-extrabold ml">
+        <h2 className="text-7xl max-xl:text-5xl max-xl:p-5 leading-sng font-extrabold ml max-md:p-0 ml-5 max-md:text-4xl">
           Meet The Crew : A Clique <br /> Of Visionaries
         </h2>
-        <p className="my-10 w-2/5 max-lg:w-full max-xl:p-5 max-md:p-6 crewpara">
+        <p className="my-10 w-2/5 max-lg:w-full max-xl:p-5 max-md:p-6 crewpara max-md:my-0">
           A cohort of highly diverse and driven individuals working in
           collaboration to amplify your digital experience. We are visionaries
           who uplift one another, thrive on inclusion, and are determined to

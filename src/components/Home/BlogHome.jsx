@@ -34,7 +34,7 @@ const BlogHome = () => {
           <div
             onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
             onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-            className="max-w[100%] w-[100%] homeidea -ml-[6%] max-2xl:ml-8"
+            className="max-w[100%] w-[100%] homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 mt-0"
           >
             <Swiper
               ref={swiperRef}
@@ -42,9 +42,9 @@ const BlogHome = () => {
               slidesPerGroupSkip={1}
               spaceBetween={30}
               loop={true}
-              // autoplay={{
-              //   delay: 2500,
-              // }}
+              autoplay={{
+                delay: 2500,
+              }}
               breakpoints={{
                 320: {
                   slidesPerView: 1,
@@ -322,9 +322,10 @@ const BlogHome = () => {
                 Take A Peek At Our <br /> Case Study
               </h1>
               <p
-                className="down text-center mt-8 max-md:p-0"
+                className="down text-center mt-8 max-md:px-5"
                 style={{
                   color: "#848484",
+                  fontFamily:'graphik'
                 }}
               >
                 We handle all our projects with the utmost discretion. Through
@@ -335,7 +336,7 @@ const BlogHome = () => {
             <div
               onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
               onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-              className="max-w[100%] w-[100%] homeidea -ml-[6%] max-2xl:ml-8"
+              className="max-w[100%] w-[100%] homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 mt-5"
             >
               <Swiper
                 ref={swiperRef}

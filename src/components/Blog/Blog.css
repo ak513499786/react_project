@@ -97,30 +97,10 @@
   font-weight: 600;
   font-size: 35px;
   line-height: 46px;
-  letter-spacing: -0.015em;
+  letter-spacing: 0em;
   text-transform: capitalize;
   color: #d8d6d6;
   text-align: center;
-}
-.blog-para {
-  width: 319.4px;
-  font-family: "Graphik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  color: #cecece;
-}
-.blog-btns {
-  font-family: "Graphik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22.0453px;
-  line-height: 113.3%;
-  letter-spacing: -0.045em;
-  color: #848484;
 }
 .arrow-left-right {
   display: flex;

@@ -6,9 +6,20 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import "./styles/agency.scss";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import arrow from "../services/images/downarrow.svg";
+import { gsap } from "gsap";
 
 const HomeAbout = () => {
+  let arrowswipe = useRef(null)
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+    });
+    tl.fromTo(arrowswipe, 1.5, { x: "-30px" }, { x: "50px" });
+  }, []);
+
   const breakpoints = {
     320: {
       slidesPerView: 1,
@@ -30,7 +41,7 @@ const HomeAbout = () => {
   });
   return (
     <>
-      <section id="about" className=" agency mt-8">
+      <section id="about" className=" agency mt-8 max-sm:mt-0">
         <div id="rectangle" className="max-xl:none"></div>
         <div id="abtcnt">
           <div className="header1">
@@ -39,6 +50,21 @@ const HomeAbout = () => {
               We are a design-led development firm operating at the intersection
               of human touch, data-driven analytics and cutting-edge technology.
             </p>
+          </div>
+          <div className="drag"style={{
+            color:'#d8d6d6',
+            fontFamily:'graphik',
+            opacity: '0.7'
+          }}>
+            swipe
+            <div className="arrowcontainer">
+              <img
+                src={arrow}
+                alt=""
+                className="swipe-arrow"
+                ref={(el) => (arrowswipe = el)}
+              />
+            </div>
           </div>
           <Link to={"/work"} className="allwork">
             <p className="workbt_content">all works</p>
@@ -84,26 +110,31 @@ const HomeAbout = () => {
                 slidesPerView={3}
                 slidesPerGroupSkip={1}
                 spaceBetween={10}
+                // loop={true}
                 freeMode={true}
+                // breakpoints
+                // autoplay={{
+                //   delay: 2500,
+                //   disableOnInteraction: false,
+                // }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
                     spaceBetween: 0,
-                    containerClass: "half-image-container",
                   },
                   435: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 0,
                   },
                   640: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 10,
                   },
                   768: {
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 10,
                   },
-                  90: {
+                  900: {
                     slidesPerView: 2,
                     spaceBetween: 30,
                   },

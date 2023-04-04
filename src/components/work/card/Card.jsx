@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useLayoutEffect } from "react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -12,6 +12,7 @@ import "./card.scss";
 const Card = () => {
   const [Widht, setWidth] = useState(window.innerWidth);
   const [explore, setExplore] = useState(false);
+  const [isCentered, setIsCentered] = useState(false);
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
@@ -23,13 +24,35 @@ const Card = () => {
     }
   };
 
+  const checkCentered = () => {
+    const div = document.getElementById("myDiv");
+    if (div) {
+      const { left, top, width, height } = div.getBoundingClientRect();
+      const horizontalScrollThreshold = window.innerWidth / 1.5 - width / 1.5;
+      const verticalScrollThreshold = window.innerHeight / 1.5 - height / 1.5;
+      setIsCentered(
+        left >= horizontalScrollThreshold && top >= verticalScrollThreshold
+      );
+    }
+  };
+
+  useLayoutEffect(() => {
+    checkCentered();
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", checkCentered);
+    return () => {
+      window.removeEventListener("scroll", checkCentered);
+    };
+  }, []);
   return (
     <>
       {!explore ? (
         <>
           {Widht > 768 ? (
             <div className="worksection">
-              <div className="test">
+                <div id="myDiv" className={isCentered ? "testwithfalse" : "test"}>
                 <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                   <h1
                     className="text-5xl mt-24 wcw"
@@ -59,7 +82,6 @@ const Card = () => {
                     </button>
                   </div>
                 </div>
-
                 <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
                   <h1
                     className="text-5xl mt-24 wcw"
@@ -407,7 +429,7 @@ const Card = () => {
           )}
         </>
       ) : (
-        <div className="workunfolds mb-20">
+        <div className="workunfolds mb-20 max-lg:mt-40">
           <div className="lead flex flex-wrap justify-center h-full relative  items-center">
             <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10 max-sm:p-1  justify-start items-start max-xl:items-center max-xl:justify-center relative">
               <div className="card111 hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   px-5 py-20">

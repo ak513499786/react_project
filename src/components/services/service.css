@@ -15,6 +15,29 @@
   width: 100%;
   position: absolute;
 }
+.scroll{
+  width: 90%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.linecontainer{
+  width: 30px;
+  height: 1.3px;
+  background-color: #d8d6d6;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ball{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 1px solid #d8d6d6;
+  background-color: #090909;
+}
 .leading {
   display: flex;
   flex-direction: column;
@@ -134,7 +157,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
   color: #848484;
 }
 .ser-h1,
@@ -645,6 +668,8 @@
   .wedo-para {
     width: 100%;
     height: auto;
+    font-size: 18px;
+    line-height: 27px;
   }
   .accordian-container {
     gap: 62px;
@@ -668,6 +693,8 @@
   }
   .accordian-para {
     width: 100%;
+    font-size: 18px;
+    line-height: 27px;
   }
   .ser-h1,
   .other-ser-h1 {
@@ -837,6 +864,7 @@
   }
   .wedo-h1 {
     font-size: 55px;
+    margin-bottom: 10px;
   }
   .wedo-para {
     font-size: 14px;
@@ -850,9 +878,9 @@
   .accordian-container {
     position: relative;
     left: 6.72%;
-    top: 100px;
+    top: 50px;
     width: 80%;
-    gap: 70px;
+    gap: 30px;
     height: auto;
   }
   .accordian {
@@ -964,10 +992,6 @@
     top: 100px;
     height: 40px;
   }
-  #hero_services {
-    position: relative;
-    left: -2%;
-  }
   .leading{
     height: auto;
   }
@@ -983,18 +1007,19 @@
   }
   .wedo-h1 {
     font-size: 35px;
+    margin-bottom: 0;
   }
   .wedo-para {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 23px;
   }
   .accordian-h1 {
     font-size: 25px;
     line-height: 30px;
   }
   .accordian-para {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 23px;
   }
   .cns,
   .ue,

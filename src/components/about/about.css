@@ -162,6 +162,10 @@
   top: 70px;
   height: 260px;
 }
+.image{
+  display: none;
+  margin-bottom: 20px;
+}
 .guiding-container-h1 {
   font-size: 35px;
   color: #d8d6d6;
@@ -297,6 +301,8 @@
   }
   .core-container {
     padding: 120px 10.7%;
+    gap:70px;
+    padding-bottom: 50px;
   }
   .core-para {
     font-size: 17px;
@@ -362,11 +368,11 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .circle20 {
-    width: 130px;
-    height: 130px;
-    font-size: 12px;
-    opacity: 0;
+  .circle20, .circle11, .circle21, .circle22, .circle23, .arrowanimate, .intersect {
+    display: none;
+  }
+  .circles-animation{
+    display: none;
   }
   .iframe{
     display: none;
@@ -375,38 +381,19 @@
     display: none;
   }
   .about-hero{
-    height: 90vh;
+    height: 80vh;
   }
-  .circle21 {
-    margin-top: 0px;
-    margin-right: 60px;
-    margin-bottom: 35px;
-  }
-  .circle22 {
-    margin-bottom: 35px;
-    margin-left: 59px;
-  }
-  .circle23 {
-    margin-top: 60px;
-  }
-  .arrowanimate {
-    width: 250px;
-    left: 140px;
-    display: none;
-  }
-  .intersect {
-    width: 132px;
-  }
-  .circle11 {
-    width: 130px;
-    height: 130px;
-    opacity: 1;
+  .image{
+    display: inline;
+    width: 70%;
+    margin-left: 20%;
   }
   .about-hero-h1 {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 50px;
+    line-height: 55px;
     top: 300px;
     left: 6.7%;
+    width: 93.3%;
   }
   .career-crew-btn {
     margin-left: 3%;
@@ -424,12 +411,19 @@
     flex-direction: column;
   }
   .core-container {
-    padding: 80px 6.7%;
-    gap: 100px;
+    padding: 50px 6.7%;
+    gap: 50px;
   }
   .guiding-container {
     width: 100%;
     position: relative;
+    top: 30px;
+  }
+  .core-guiding-container{
+    gap: 50px;
+  }
+  .crew-model{
+    margin-top: 70px;
   }
   .guiding-skip {
     position: relative;
@@ -438,7 +432,6 @@
   .guiding-subcontainer {
     width: 100%;
     gap: 70px;
-    margin-top: 80px;
   }
   .vision-container {
     flex-direction: column;
@@ -464,7 +457,11 @@
   .about-hero-h1 {
     left: 5%;
     top: 200px;
-    width: 90%;
+  }
+  .image{
+    display: inline;
+    width: 80%;
+    margin-left: 15%;
   }
 }
 @media screen and (max-width: 428px) {
@@ -473,16 +470,33 @@
     margin-left: 5%;
   }
   .about-hero-h1 {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 35px;
+    line-height: 40px;
+    width: 95%;
   }
   .core-guiding-container {
     gap: 50px;
   }
-  .core-container{
-    gap: 70px;
+  .guiding-container{
+    top: 20px;
   }
   .crewclass {
     margin-left: 0;
+  }
+  .core-container{
+    padding-top: 0px;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+  .crew-model{
+    margin-top: 50px;
+  }
+  .guiding-subcontainer{
+    gap: 20px;
+  }
+  .image{
+    display: inline;
+    width: 90%;
+    margin-left: 10%;
   }
 }

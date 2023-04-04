@@ -8,14 +8,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
+import { gsap } from "gsap";
+import {useEffect, useRef } from "react";
 
 import { FreeMode, Pagination } from "swiper";
 const Explore = () => {
   const url = useLocation();
+  let arrowswipe = useRef(null)
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+    });
+    tl.fromTo(arrowswipe, 1, { x: "-10px" }, { x: "10px" });
+    tl.fromTo(arrowswipe, 1, { x: "10px" }, { x: "10px" });
+  }, []);
+
 
   if (url.pathname === "/consultingandstrategy") {
     return (
-
       <>
         <div className="lead flex mt-40 justify-center h-full relative  items-center">
           <div className="width w-full flex-col min n h-full  relative">
@@ -65,7 +76,7 @@ const Explore = () => {
                   <Link to="/userexperience" className="px20  cursor-grab">
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img22 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           User Experience
                         </p>
@@ -77,7 +88,7 @@ const Explore = () => {
                   <Link to="/productdevelopment" className="px20  cursor-grab">
                     <div className="card1 mx48 max-md:mx-0 hideee relative  cursor-grab">
                       <div className="img3 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Product Development
                         </p>
@@ -89,7 +100,7 @@ const Explore = () => {
                   <Link to="/digitalmarketing" className="px20  cursor-grab">
                     <div className="card1 ml48 max-md:mx-0 hideee relative  cursor-grab">
                       <div className="img4 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Digital Marketing
                         </p>
@@ -158,7 +169,7 @@ const Explore = () => {
                   >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Consulting And Strategy
                         </p>
@@ -171,7 +182,7 @@ const Explore = () => {
                   <Link to="/productdevelopment" className="px20 cursor-grab">
                     <div className="card1 mx48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img3 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Product Development
                         </p>
@@ -183,7 +194,7 @@ const Explore = () => {
                   <Link to="/digitalmarketing" className="px20 cursor-grab">
                     <div className="card1 ml48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img4 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Digital Marketing
                         </p>
@@ -252,7 +263,7 @@ const Explore = () => {
                   >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Consulting And Strategy
                         </p>
@@ -264,7 +275,7 @@ const Explore = () => {
                   <Link to="/userexperience" className="px20 cursor-grab">
                     <div className="card1 m48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img22 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           User Experience
                         </p>
@@ -277,7 +288,7 @@ const Explore = () => {
                   <Link to="/digitalmarketing" className="px20 cursor-grab">
                     <div className="card1 ml48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img4 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Digital Marketing
                         </p>
@@ -346,7 +357,7 @@ const Explore = () => {
                   >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Consulting And Strategy
                         </p>
@@ -358,7 +369,7 @@ const Explore = () => {
                   <Link to="/userexperience" className="px20 cursor-grab">
                     <div className="card1 m48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img22 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           User Experience
                         </p>
@@ -370,7 +381,7 @@ const Explore = () => {
                   <Link to="/productdevelopment" className="px20 cursor-grab">
                     <div className="card1 mx48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img3 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo  max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Product Development
                         </p>
@@ -399,6 +410,23 @@ const Explore = () => {
                 {" "}
                 Explore Our Services
               </h1>
+            </div>
+            <div
+              className="scroll"
+              style={{
+                color: "#d8d6d6",
+                fontFamily: "graphik",
+                opacity: "0.7",
+              }}
+            >
+              Drag
+              <div className="linecontainer">
+                <div
+                  className="ball"
+                  ref={(el) => (arrowswipe = el)}
+                >
+                  </div>
+              </div>
             </div>
             <div className="cards tett p-10  w-[100%] max-lg:p-0">
               <Swiper
@@ -430,7 +458,7 @@ const Explore = () => {
                   },
                 }}
                 modules={[FreeMode, Pagination]}
-                className="mySwiper w-[115%] -ml-28 max-lg:w-[100%] max-lg:ml-0 cursor-grab"
+                className="mySwiper w-[115%] -ml-28 max-sm:-ml-10 max-lg:w-[100%] max-lg:ml-0 cursor-grab"
               >
                 <SwiperSlide className="flex justify-center items-center">
                   <Link
@@ -439,7 +467,7 @@ const Explore = () => {
                   >
                     <div className="card1 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Consulting And Strategy
                         </p>
@@ -451,7 +479,7 @@ const Explore = () => {
                   <Link to="/userexperience" className="px20 cursor-grab">
                     <div className="card1 m48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img22 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           User Experience
                         </p>
@@ -463,7 +491,7 @@ const Explore = () => {
                   <Link to="/productdevelopment" className="px20 cursor-grab">
                     <div className="card1 mx48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img3 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Product Development
                         </p>
@@ -475,7 +503,7 @@ const Explore = () => {
                   <Link to="/digitalmarketing" className="px20 cursor-grab">
                     <div className="card1 ml48 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img4 ml-10  ma\  -top-0"></div>
-                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo">
+                      <div className="opacity-60 name absolute max-xl:-mt-60 top-56 bottom-10 w-full flex justify-center items-end colo max-lg:opacity-100">
                         <p className="name text-2xl max-md:-ml28 max-xl:-mt-60">
                           Digital Marketing
                         </p>

@@ -5,10 +5,10 @@ import Abouthero from "./abouthero";
 import Crew from "./crew";
 import gsap from "gsap";
 import { useEffect, useRef } from "react";
+import image from './images/ss.png'
 
 import "./about.css";
 import Vision from "./vision/Vision";
-import Casestudy from "./CaseStudy/Case";
 import BlogHome from "../home/BlogHome";
 
 export default function About() {
@@ -39,10 +39,10 @@ export default function About() {
       </div>
       <Abouthero />
       <Circles />
+      <img src={image} alt="" className="image"/>
       <Vision />
       <Crew />
       <div className="about-case">
-        {/* <Casestudy /> */}
         <BlogHome/>
       </div>
       <Footer />
