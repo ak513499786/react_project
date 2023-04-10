@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay, FreeMode, Pagination, Navigation } from "swiper"; // import "./all.css";
+import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import React, { useState, useEffect, useRef } from "react";
 
 import image2 from "./images/Frame 43.svg";
