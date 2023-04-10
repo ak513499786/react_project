@@ -69,8 +69,8 @@
 .aboutbtn_content {
   width: auto;
   height: auto;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   font-family: graphik;
   color: #848484;
@@ -141,8 +141,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
 }
@@ -166,8 +166,8 @@
   height: 30px;
   font-family: graphik;
   font-style: normal;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
   white-space: nowrap;
@@ -220,8 +220,8 @@
   opacity: 0.9;
 }
 #imgs1p {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   white-space: nowrap;
   color: #848484;
   font-weight: 100;
@@ -271,8 +271,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
   opacity: 1;
@@ -319,8 +319,8 @@
 #imgs3p {
   height: 28px;
   font-family: "Graphik";
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
   opacity: 1;
@@ -344,8 +344,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 18px;
-  line-height: 139.52%;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
   opacity: 1;
@@ -425,8 +425,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   color: #848484;
 }
 #svcbtn {
@@ -448,8 +448,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: -0.03em;
   color: #848484;
   white-space: nowrap;
@@ -577,8 +577,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
 }
@@ -794,52 +794,6 @@
   width: 1184.07px;
   height: 691.06px;
 }
-#blog-icons {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 54px;
-  width: 1184.07px;
-  height: 385.06px;
-}
-.blog-icons_img {
-  width: 358.67px;
-  height: 198.63px;
-  border-radius: 9px;
-}
-.blog-icons_div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 30px;
-  width: 358.67px;
-  height: 383.83px;
-}
-.blog_para {
-  width: 321.21px;
-  font-family: "Graphik";
-  font-style: normal;
-  font-weight: 100;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  color: #d8d6d6;
-  opacity: 0.6;
-}
-.blog-icon_div-h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 35px;
-  line-height: 46px;
-  letter-spacing: -0.03em;
-  text-transform: capitalize;
-  color: #d8d6d6;
-  text-align: center;
-  opacity: 0.8;
-}
 .explore_btn {
   display: flex;
   flex-direction: row;
@@ -858,8 +812,8 @@
   border-radius: 72px;
   font-style: normal;
   font-weight: 100;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
   transition: 0.3s;
@@ -869,6 +823,24 @@
   color: black;
   border: 1px solid #ffc017;
   box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
+}
+.para{
+  font-size: 20px;
+  line-height: 30px;
+  word-spacing: 0;
+  letter-spacing: 0;
+}
+.sub-heading{
+  font-size: 50px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  line-height: 105%;
+}
+.heading{
+  font-size: 75px;
+  line-height: 88px;
+  letter-spacing: 0;
+  word-spacing: 0;
 }
 @media screen and (min-width: 2080px) {
   .bg-mini-2 {
@@ -931,8 +903,8 @@
   .aboutbtn_content {
     width: auto;
     height: auto;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 25px;
     padding-bottom: 1px;
   }
   #rectangle {
@@ -953,8 +925,8 @@
   }
   #abtdmycnt {
     width: 63.7%;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .allwork {
     padding: 0px 0px;
@@ -967,8 +939,8 @@
   .workbt_content {
     width: auto;
     height: 28px;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .bg-mini-2 {
     gap: 15px;
@@ -1082,7 +1054,7 @@
   }
   #srvp {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 25px;
   }
   #svcbtn {
     padding: 0px 0px;
@@ -1095,8 +1067,8 @@
   .svcbtn_content {
     width: auto;
     height: auto;
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 25px;
     padding-bottom: 1px;
   }
   #buttons {
@@ -1127,8 +1099,8 @@
     font-size: 78px;
   }
   #nums {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 25px;
   }
   #left,
   #right {
@@ -1148,7 +1120,7 @@
     font-style: normal;
     font-weight: 100;
     font-size: 15px;
-    line-height: 23px;
+    line-height: 25px;
     letter-spacing: 0em;
     color: #dddada;
   }
@@ -1261,60 +1233,32 @@
     left: 15%;
   }
   #blg {
-    left: 15%;
+    left: 11%;
   }
   .home {
     height: calc(100vh + 4300px);
-  }
-  .blog-home-container {
-    gap: 60px;
-  }
-  #blog_heading {
-    font-size: 78px;
-    line-height: 102.8%;
-    letter-spacing: 0em;
-    height: 200px;
-  }
-  #blog-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 54px;
-    width: 984.07px;
-    height: auto;
-  }
-  .blog-icons_img {
-    width: 278.67px;
-    height: auto;
-  }
-  .blog-icons_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-    gap: 20px;
-    width: 278px;
-    height: auto;
-  }
-  .blog_para {
-    width: 258.21px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .blog-icon_div-h2 {
-    font-size: 27px;
-    line-height: 29px;
   }
   .exp_btn-content {
     width: 95px;
     height: auto;
     padding: 5px 30px 7px 30px;
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 25px;
     font-weight: 100;
   }
   .explore_btn {
     width: 950px;
+  }
+  .para{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .sub-heading{
+    font-size: 35px;
+  }
+  .heading{
+    font-size: 58px;
+    line-height: 70px;
   }
 }
 @media screen and (max-width: 1440px) {
@@ -1483,9 +1427,6 @@
     width: 100%;
     font-size: 80px;
   }
-  #srvp {
-    font-size: 18px;
-  }
   #buttons {
     width: 300px;
   }
@@ -1538,7 +1479,18 @@
     gap: 28%;
   }
   .exp_btn {
-    margin-left: 10%;
+    margin-left: 0%;
+  }
+  .para{
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .sub-heading{
+    font-size: 40px;
+  }
+  .heading{
+    font-size: 65px;
+    line-height: 70px;
   }
 }
 @media screen and (max-width: 1310px) {
@@ -1742,18 +1694,6 @@
     width: 280px;
     gap: 10px;
   }
-  .blog-icons_img {
-    width: 280px;
-  }
-  .blog-icon_div-h2 {
-    font-size: 25px;
-    line-height: 28px;
-  }
-  .blog_para {
-    width: 100%;
-    line-height: 20px;
-    font-size: 17px;
-  }
 }
 @media screen and (max-width: 768px) {
   .home {
@@ -1805,14 +1745,12 @@
   #aboutbtn {
     background-color: #ffcd05;
     color: black;
-    font-weight: bold;
     border: 1px solid #ffcd05;
     box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.377);
     width: 33%;
   }
   .aboutbtn_content {
     color: black;
-    font-weight: bold;
   }
   #rectangle {
     display: none;
@@ -1833,7 +1771,6 @@
     width: 40%;
     background-color: #ffcd05;
     color: black;
-    font-weight: bold;
     border: 1px solid #ffcd05;
     box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.377);
     position: absolute;
@@ -1850,7 +1787,6 @@
     width: 100%;
     background-color: #ffcd05;
     color: black;
-    font-weight: bold;
     border: 1px solid #ffcd05;
     box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.377);
     padding: 7px 10%;
@@ -1954,7 +1890,6 @@
   }
   .svcbtn_content {
     color: black;
-    font-weight: bold;
   }
   .btnlinks {
     color: white;
@@ -2129,6 +2064,13 @@
   .bgi{
     height: 130vh;
   }
+  .sub-heading{
+    font-size: 30px;
+  }
+  .heading{
+    font-size: 60px;
+    line-height: 60x;
+  }
 }
 @media screen and (max-width: 540px) {
   .horizontalAbout {
@@ -2164,7 +2106,7 @@
   }
   #imgsp{
     font-size: 13px;
-    width: 280px;
+    width: 290px;
   }
   #content {
     top: 200px;
@@ -2172,10 +2114,10 @@
   #aboutbtn {
     width: 95%;
     position: absolute;
-    top: calc(92vh - 280px);
+    top: calc(92vh - 320px);
   }
   #about {
-    top: 100vh;
+    top: 95vh;
   }
   #abtcnt {
     width: 90%;
@@ -2188,10 +2130,10 @@
   .allwork {
     width: 96%;
     left: 0%;
-    top: 830px;
+    top: 850px;
   }
   #service {
-    top: calc(100vh + 690px);
+    top: calc(92vh + 530px);
   }
   #srvcnt {
     height: auto;
@@ -2199,12 +2141,14 @@
   .service_main-content {
     text-align: left;
     gap: 10px;
+    height: 130px;
   }
   .service_main {
     text-align: left;
     align-items: start;
     padding-left: 4.7%;
     width: 95.3%;
+    height: auto;
   }
   #srvcnt {
     font-size: 35px;
@@ -2215,11 +2159,15 @@
     font-size: 16px;
   }
   #testimonials {
-    top: calc(100vh + 1520px);
+    top: calc(100vh + 1500px);
   }
   #buttons {
     width: 280px;
     gap: 10px;
+    height: auto;
+    position: absolute;
+    top: 550px;
+    left: 6.7%;
   }
   .btnlinks {
     justify-content: start;
@@ -2233,7 +2181,7 @@
   }
   #blog {
     height: auto;
-    top: calc(100vh + 2270px);
+    top: calc(100vh + 2280px);
   }
   .blog-home-container {
     height: auto;
@@ -2265,11 +2213,11 @@
     margin-left: 7%;
   }
   .horizontalAbout {
-    width: calc(100% + 50px);
+    width: calc(100% + 40px);
     height: 1100px;
     overflow-x: scroll;
-    left: -50px;
-    top: 120px;
+    left: -40px;
+    top: 130px;
   }
   .blog-icon_div-h2 {
     font-size: 25px;
@@ -2395,6 +2343,8 @@
   }
   #container-h3 {
     width: 100%;
+    font-size: 16px;
+    line-height: 20px;
   }
   #nums {
     left: 35%;
@@ -2408,7 +2358,7 @@
     height: 240px;
   }
   .home {
-    height: calc(100vh + 2900px);
+    height: calc(100vh + 2950px);
   }
   .exp_btn-content {
     padding: 7px 25%;
@@ -2418,5 +2368,9 @@
   }
   .blog-home-container {
     gap: 50px;
+  }
+  .heading{
+    font-size: 40px;
+    line-height: 45px;
   }
 }

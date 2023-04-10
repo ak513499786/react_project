@@ -272,13 +272,14 @@
   .horizontal-animation {
     left: 0px;
     bottom: 0px;
-    height: 350px;
+    height: 370px;
+    width: 200px;
     align-items: center;
   }
   .other-ser-h1 {
     font-size: 25px;
   }
   .vertical-animation-container {
-    width: 200px;
+    width: 180px;
   }
 }

@@ -365,7 +365,7 @@
   gap: 15px;
   width: 16px;
   position: relative;
-  bottom: 25px;
+  bottom: 27px;
 }
 @media screen and (max-width: 1800px) {
   .rolling-words {
@@ -849,7 +849,7 @@
 @media screen and (max-width: 768px) {
   #hero_services {
     font-size: 40px;
-    height: 100vh;
+    height: 85vh;
   }
   .services_hero-text {
     left: 6.7%;
@@ -1004,22 +1004,23 @@
   }
   .accordian-container {
     gap: 30px;
+    width: 90%;
   }
   .wedo-h1 {
     font-size: 35px;
     margin-bottom: 0;
   }
   .wedo-para {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 25px;
   }
   .accordian-h1 {
     font-size: 25px;
     line-height: 30px;
   }
   .accordian-para {
-    font-size: 14px;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 25px;
   }
   .cns,
   .ue,
@@ -1033,8 +1034,15 @@
     line-height: 40px;
     left: 4%;
   }
+  #hero_services{
+    width: 100%;
+    overflow: hidden;
+  }
+  .wedo-container{
+    width: 90%;
+  }
   .ser-txt {
-    font-size: 18px;
+    font-size: 16px;
   }
   .em-h1 {
     font-size: 35px;
