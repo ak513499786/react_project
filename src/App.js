@@ -13,6 +13,7 @@ import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from "./components/Dashboard/Login";
 
 function App() {
   window.scroll({
@@ -32,27 +33,25 @@ function App() {
           mixBlendMode: "exclusion",
         }}
       />
-        <BrowserRouter>
-          <ScrollToTop />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/work" element={<Work />} />
-            <Route exact path="/career" element={<Career />} />
-            <Route exact path="/blog" element={<Blog />} />
-            <Route exact path="/services" element={<Services />} />
-            <Route
-              exact
-              path="/consultingandstrategy"
-              element={<Consulting />}
-            />
-            <Route exact path="/userexperience" element={<UX />} />
-            <Route exact path="/productdevelopment" element={<PD />} />
-            <Route exact path="/digitalmarketing" element={<DM />} />
-            <Route exact path="/let's_talk" element={<Talk />} />
-            <Route exact path="/empathy" element={<Empathy />} />
-          </Routes>
-        </BrowserRouter>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Routes>
+          {/* <Route exact path="/" element={<Home />} /> */}
+          <Route exact path="/" element={<Login />} />
+
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/work" element={<Work />} />
+          <Route exact path="/career" element={<Career />} />
+          <Route exact path="/blog" element={<Blog />} />
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/consultingandstrategy" element={<Consulting />} />
+          <Route exact path="/userexperience" element={<UX />} />
+          <Route exact path="/productdevelopment" element={<PD />} />
+          <Route exact path="/digitalmarketing" element={<DM />} />
+          <Route exact path="/let's_talk" element={<Talk />} />
+          <Route exact path="/empathy" element={<Empathy />} />
+        </Routes>
+      </BrowserRouter>
       {/* </Cursor> */}
     </div>
   );
