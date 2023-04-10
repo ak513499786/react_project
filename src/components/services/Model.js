@@ -3,11 +3,8 @@ import { gsap, Power0 } from "gsap";
 
 import arrowdown from "./images/Vector.svg";
 import whitedownarrow from "./images/downarrow.svg";
-import Scroll from "react-scroll";
 
 export default function Wedo() {
-  const ScrollLink = Scroll.ScrollLink;
-
   let arrows = useRef(null);
   let skip = useRef(null);
 
@@ -93,7 +90,7 @@ export default function Wedo() {
               Commodo pellentesque risus sed non sed auctor dui donec neque.
               Pharetra arcu cras leo in lectus nam arcu. In faucibus velit non
               et mauris sit ornare velit. Ipsum tortor facilisi nunc egestas
-              quis felis. 
+              quis felis.
             </p>
           </div>
         </div>
