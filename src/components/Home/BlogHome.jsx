@@ -34,7 +34,7 @@ const BlogHome = () => {
           <div
             onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
             onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-            className="max-w[100%] w-[100%] homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 mt-0"
+            className="max-w[100%] w-[100%] mt-40 homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 max-sm:mt-32"
           >
             <Swiper
               ref={swiperRef}
@@ -73,7 +73,7 @@ const BlogHome = () => {
                 },
               }}
               modules={[Autoplay, Pagination, Navigation]}
-              className=" swiper-container mySwiper h-[35rem] mt-20 max-md:mt-0 px-8 w-[100%] -ml20 max-2xl:ml-0 maxxl:w-[100%]"
+              className=" swiper-container mySwiper h-[30rem] mt-20 max-md:mt-0 px-8 w-[100%] -ml20 max-2xl:ml-0 maxxl:w-[100%]"
             >
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
@@ -88,7 +88,7 @@ const BlogHome = () => {
                   </div>
                   <div className="head mt-5">
                     <h2
-                      className="text-3xl text-center text-stone-100"
+                      className="sub-heading text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
                         color: "#d8d6d6",
@@ -100,7 +100,7 @@ const BlogHome = () => {
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
                     <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      className="flex coloo para w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
                         color: "#848484",
@@ -125,7 +125,7 @@ const BlogHome = () => {
                   </div>
                   <div className="head mt-5">
                     <h2
-                      className="text-3xl text-center text-stone-100"
+                      className="sub-heading text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
                         color: "#d8d6d6",
@@ -137,7 +137,7 @@ const BlogHome = () => {
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
                     <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      className="flex coloo para w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
                         color: "#848484",
@@ -163,7 +163,7 @@ const BlogHome = () => {
                   </div>
                   <div className="head mt-5">
                     <h2
-                      className="text-3xl text-center text-stone-100"
+                      className="sub-heading text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
                         color: "#d8d6d6",
@@ -175,7 +175,7 @@ const BlogHome = () => {
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
                     <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      className="flex coloo para w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
                         color: "#848484",
@@ -201,7 +201,7 @@ const BlogHome = () => {
                   </div>
                   <div className="head mt-5">
                     <h2
-                      className="text-3xl text-center text-stone-100"
+                      className="sub-heading text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
                         color: "#d8d6d6",
@@ -213,7 +213,7 @@ const BlogHome = () => {
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
                     <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      className="flex coloo para w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
                         color: "#848484",
@@ -239,7 +239,7 @@ const BlogHome = () => {
                   </div>
                   <div className="head mt-5">
                     <h2
-                      className="text-3xl text-center text-stone-100"
+                      className="sub-heading text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
                         color: "#d8d6d6",
@@ -251,7 +251,7 @@ const BlogHome = () => {
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
                     <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      className="flex coloo para w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
                         color: "#848484",
@@ -276,7 +276,7 @@ const BlogHome = () => {
                   </div>
                   <div className="head mt-5">
                     <h2
-                      className="text-3xl text-center text-stone-100"
+                      className="sub-heading text-center text-stone-100"
                       style={{
                         fontFamily: "graphikthin",
                         color: "#d8d6d6",
@@ -288,7 +288,7 @@ const BlogHome = () => {
                   </div>
                   <div className="descrip flex flex-col justify-center items-center mt-5">
                     <p
-                      className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                      className="flex coloo para w-full box-pera text-stone-100 items-center justify-center text-center"
                       style={{
                         fontFamily: "graphik",
                         color: "#848484",
@@ -317,12 +317,12 @@ const BlogHome = () => {
       <>
         <>
           <div id="blg">
-            <div className="flex justify-center flex-col items-center">
-              <h1 className="text-7xl mt-20 text-center font-bold max-md:text-5xl max-md:p-10 max-sm:text-3xl max-sm:p-5">
+            <div className="flex justify-center flex-col items-center w-full">
+              <h1 className="heading mt-20 text-center font-bold max-md:p-10 max-sm:p-5">
                 Take A Peek At Our <br /> Case Study
               </h1>
               <p
-                className="down text-center mt-8 max-md:px-5"
+                className="w-96 text-center para mt-8 max-md:px-5 max-sm:w-full"
                 style={{
                   color: "#848484",
                   fontFamily:'graphik'
@@ -336,7 +336,7 @@ const BlogHome = () => {
             <div
               onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
               onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-              className="max-w[100%] w-[100%] homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 mt-5"
+              className="max-w[100%] w-[100%] homeidea -ml-[8%] max-2xl:ml-8 max-sm:ml-0 mt-5"
             >
               <Swiper
                 ref={swiperRef}
@@ -344,9 +344,9 @@ const BlogHome = () => {
                 slidesPerGroupSkip={1}
                 spaceBetween={30}
                 loop={true}
-                // autoplay={{
-                //   delay: 2500,
-                // }}
+                autoplay={{
+                  delay: 2500,
+                }}
                 breakpoints={{
                   320: {
                     slidesPerView: 1,
@@ -377,7 +377,7 @@ const BlogHome = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className=" swiper-container mySwiper h-[35rem] mt-20 max-md:mt-0 px-8 w-[100%] -ml20 max-2xl:ml-0 maxxl:w-[100%]"
               >
-                <SwiperSlide className="cass flex justify-center items-center">
+                <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
                       <img
@@ -390,7 +390,7 @@ const BlogHome = () => {
                     </div>
                     <div className="head mt-5">
                       <h2
-                        className="text-3xl text-center text-stone-100"
+                        className="sub-heading text-center text-stone-100"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -402,7 +402,7 @@ const BlogHome = () => {
                     </div>
                     <div className="descrip flex flex-col justify-center items-center mt-5">
                       <p
-                        className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                        className="flex para coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
@@ -414,7 +414,7 @@ const BlogHome = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
+                <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
                       <img
@@ -427,7 +427,7 @@ const BlogHome = () => {
                     </div>
                     <div className="head mt-5">
                       <h2
-                        className="text-3xl text-center text-stone-100"
+                        className="sub-heading text-center text-stone-100"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -439,7 +439,7 @@ const BlogHome = () => {
                     </div>
                     <div className="descrip flex flex-col justify-center items-center mt-5">
                       <p
-                        className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                        className="flex para coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
@@ -451,7 +451,7 @@ const BlogHome = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
+                <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
                       {/* <img src="/blog/Frame 43.png" alt="" /> */}
@@ -465,7 +465,7 @@ const BlogHome = () => {
                     </div>
                     <div className="head mt-5">
                       <h2
-                        className="text-3xl text-center text-stone-100"
+                        className="sub-heading text-center text-stone-100"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -477,19 +477,19 @@ const BlogHome = () => {
                     </div>
                     <div className="descrip flex flex-col justify-center items-center mt-5">
                       <p
-                        className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                        className="flex para coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
                         }}
                       >
                         Empathy is a foundational principle in the concept of
-                        design thinking – a user-based approach to...
+                        design thinking - a user-based approach to...
                       </p>
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
+                <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
                       {/* <img src="/blog/Frame 43.png" alt="" /> */}
@@ -503,7 +503,7 @@ const BlogHome = () => {
                     </div>
                     <div className="head mt-5">
                       <h2
-                        className="text-3xl text-center text-stone-100"
+                        className="sub-heading text-center text-stone-100"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -515,7 +515,7 @@ const BlogHome = () => {
                     </div>
                     <div className="descrip flex flex-col justify-center items-center mt-5">
                       <p
-                        className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                        className="flex para coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
@@ -527,7 +527,7 @@ const BlogHome = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
+                <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
                       {/* <img src="/blog/Frame 43.png" alt="" /> */}
@@ -541,7 +541,7 @@ const BlogHome = () => {
                     </div>
                     <div className="head mt-5">
                       <h2
-                        className="text-3xl text-center text-stone-100"
+                        className="sub-heading text-center text-stone-100"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -553,7 +553,7 @@ const BlogHome = () => {
                     </div>
                     <div className="descrip flex flex-col justify-center items-center mt-5">
                       <p
-                        className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                        className="flex para coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
@@ -565,7 +565,7 @@ const BlogHome = () => {
                     </div>
                   </div>
                 </SwiperSlide>
-                <SwiperSlide className="cass flex justify-center items-center">
+                <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
                       <img
@@ -578,7 +578,7 @@ const BlogHome = () => {
                     </div>
                     <div className="head mt-5">
                       <h2
-                        className="text-3xl text-center text-stone-100"
+                        className="sub-heading text-center text-stone-100"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -590,7 +590,7 @@ const BlogHome = () => {
                     </div>
                     <div className="descrip flex flex-col justify-center items-center mt-5">
                       <p
-                        className="flex coloo w-full box-pera text-stone-100 items-center justify-center text-center"
+                        className="flex para coloo w-full box-pera text-stone-100 items-center justify-center text-center"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",

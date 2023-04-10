@@ -8,8 +8,19 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, FreeMode, Pagination, Navigation } from "swiper";
 import "./card.scss";
+import { gsap } from "gsap";
+import arrow from '../../services/images/downarrow.svg'
 
 const Card = () => {
+  let arrowswipe = useRef(null)
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      repeat: -1,
+    });
+    tl.fromTo(arrowswipe, 1.5, { x: "-30px" }, { x: "50px" });
+  }, []);
+
   const [Widht, setWidth] = useState(window.innerWidth);
   const [explore, setExplore] = useState(false);
   const [isCentered, setIsCentered] = useState(false);
@@ -25,6 +36,7 @@ const Card = () => {
   };
 
   const checkCentered = () => {
+
     const div = document.getElementById("myDiv");
     if (div) {
       const { left, top, width, height } = div.getBoundingClientRect();
@@ -50,6 +62,21 @@ const Card = () => {
     <>
       {!explore ? (
         <>
+        <div className="drag"style={{
+            color:'#d8d6d6',
+            fontFamily:'graphik',
+            opacity: '0.7'
+          }}>
+            swipe
+            <div className="arrowcontainer">
+              <img
+                src={arrow}
+                alt=""
+                className="swipe-arrow"
+                ref={(el) => (arrowswipe = el)}
+              />
+            </div>
+          </div>
           {Widht > 768 ? (
             <div className="worksection">
                 <div id="myDiv" className={isCentered ? "testwithfalse" : "test"}>

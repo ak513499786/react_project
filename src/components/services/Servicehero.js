@@ -42,10 +42,10 @@ export default function Serviceshero() {
                 loop={true}
                 autoplay={{
                   delay: 5000,
-                  disableOnInteraction: true,
+                  disableOnInteraction: false,
                 }}
-                modules={[Autoplay, FreeMode, Pagination, Navigation]}
-                className="mySwi -ml-20 max-2xl:-ml-4   w-[100%] h-40 "
+                modules={[Autoplay]}
+                className="mySwi -ml-20 max-2xl:-ml-4   w-[100%] h-40 max-sm:h-20 max-sm:-ml-5"
               >
                 <SwiperSlide className="">
                   <h1

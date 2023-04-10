@@ -12,6 +12,7 @@ export default function Hero() {
             autoPlay
             loop
             muted
+            playsInline
             loading="lazy"
           ></video>
         </div>

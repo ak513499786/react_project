@@ -102,36 +102,37 @@ export default function Positions() {
           <h1 className="position-h1">Open Positions</h1>
           <div className="open-pos" ref={(el) => (position = el)}>
             <div className="positions" onClick={application}>
-              <h1 className="position-content-h1">Product Designer (UX/UI)</h1>
-              <span className="office">Bangalore (Remote)</span>
+              <h1 className="position-content-h1">Product Designer 
+              <span className="brackets">(</span>UX<span className="brackets">/</span>UI<span className="brackets">)</span></h1>
+              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application1}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Mobile Frontend
               </h1>
-              <span className="office">Bangalore (Remote)</span>
+              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application2}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Web Frontend
               </h1>
-              <span className="office">Bangalore (Remote)</span>
+              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application3}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Backend
               </h1>
-              <span className="office">Bangalore (Remote)</span>
+              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application4}>
               <h1 className="position-content-h1">
-                Software Development Engineer - CMS/E-Commerce
+                Software Development Engineer - CMS<span className="brackets">/</span>E-Commerce
               </h1>
-              <span className="office">Bangalore (Remote)</span>
+              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
             </div>
             <hr className="pos-hr" />
           </div>
@@ -139,7 +140,7 @@ export default function Positions() {
       </section>
       <div className="PD" ref={(el) => (positioncard = el)}>
         <h1 className="job-pd-title">
-          Product Designer (UI/UX)
+         <span className="title">Product Designer <span className="brackets">(</span>UI<span className="brackets">/</span>UX<span className="brackets">)</span></span>
           <div className="jobline" onClick={formhide}>
             <div className="close-line"></div>
           </div>
@@ -159,7 +160,7 @@ export default function Positions() {
             Figma <span className="and">|</span>Wireframes <span className="and"> &</span> User Flows <span className="and">|</span>Prototypes UX Research <span className="and">|</span>Personas
             <span className="and">|</span>Design System
           </div>
-          <p className="apply">Feel like you’re a match?</p>
+          <p className="apply">Feel like you're a match?</p>
           <div className="apply_btn" onClick={applyNow}>
             <p className="about_btn_content">apply now</p>
           </div>
@@ -194,7 +195,7 @@ export default function Positions() {
               </div>
               <input
                 type="text"
-                placeholder="Past The Drive Link Of Your Resume Here*"
+                placeholder="Past The Link Of Your Resume Here*"
                 className="first-name"
                 required
               />
@@ -224,7 +225,7 @@ export default function Positions() {
           <div className="job-req">
             Android Java | Kotlin | Objective-C | Swift | React Native | Flutter
           </div>
-          <p className="apply">Feel like you’re a match?</p>
+          <p className="apply">Feel like you're a match?</p>
           <div className="apply_btn" onClick={applyNow1}>
             <p className="about_btn_content">apply now</p>
           </div>
@@ -290,7 +291,7 @@ export default function Positions() {
             HTML5 | CSS3 | jQuery | JavaScript | BootStrap | React.js Veu.js |
             Angular
           </div>
-          <p className="apply">Feel like you’re a match?</p>
+          <p className="apply">Feel like you're a match?</p>
           <div className="apply_btn" onClick={applyNow2}>
             <p className="about_btn_content">apply now</p>
           </div>
@@ -355,7 +356,7 @@ export default function Positions() {
           <div className="job-req">
             Php | Node.js | Python | Java | Ruby On Rails | Golang
           </div>
-          <p className="apply">Feel like you’re a match?</p>
+          <p className="apply">Feel like you're a match?</p>
           <div className="apply_btn" onClick={applyNow3}>
             <p className="about_btn_content">apply now</p>
           </div>
@@ -421,7 +422,7 @@ export default function Positions() {
             WordPress | Shopify | Magento | HubSpot | WooCommerce BigCommerce |
             Drupal | Joomla | Wix | Squarespace Commerce
           </div>
-          <p className="apply">Feel like you’re a match?</p>
+          <p className="apply">Feel like you're a match?</p>
           <div className="apply_btn" onClick={applyNow4}>
             <p className="about_btn_content">apply now</p>
           </div>

@@ -32,7 +32,7 @@ const Vision = () => {
   };
 
   const arrowRotate = () => {
-    gsap.to(arrows, 0.2, { y: 30 });
+    gsap.to(arrows, 0.2, { y: 33 });
     gsap.to(skip, 0.2, { css: { color: "white" } });
   };
   const arrowRotateBack = () => {

@@ -53,9 +53,9 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.03em;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0em;
   color: #848484;
   margin-top: 20px;
 }
@@ -97,8 +97,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 20px;
-  line-height: 139.52%;
+  font-size: 15px;
+  line-height: 25px;
   text-align: center;
   letter-spacing: 0em;
   color: #848484;
@@ -152,8 +152,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 100;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 15px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
 }
@@ -358,6 +358,15 @@
   border-radius: 72px;
   padding: 7px 39px;
   transition: 0.3s;
+}
+.title{
+  color: #d8d6d6;
+}
+.brackets{
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+  sans-serif;
+  color: #d8d6d6;
+  font-weight: 100;
 }
 .about_btn_content {
   width: 92px;
@@ -580,7 +589,7 @@
     top: 300px;
   }
   .whyus {
-    height: 1472px;
+    height: 1302px;
   }
   .HS-img {
     height: auto;
@@ -612,8 +621,8 @@
   .job-pd-desc {
     width: 80%;
     margin-top: 30px;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 15px;
+    line-height: 25px;
     letter-spacing: 0.01em;
     height: auto;
   }
@@ -763,7 +772,7 @@
     width: 100%;
   }
   .no {
-    font-size: 23px;
+    font-size: 25px;
   }
   .main-container {
     flex-direction: column;
@@ -776,10 +785,6 @@
   }
   .life-h1 {
     font-size: 50px;
-  }
-  .life-para {
-    font-size: 13px;
-    line-height: 18px;
   }
   .position-content-h1 {
     font-size: 25px;
@@ -822,11 +827,13 @@
     width: 80px;
   }
   .HS-img{
-    width: 300px;
+    width: 400px;
+    margin-bottom: 20px;
   }
   .career-hero-h1 {
     font-size: 45px;
     line-height: 50px;
+    width: 90%;
   }
   .horizontal-slide {
     gap: 1em;
@@ -835,9 +842,10 @@
     font-size: 43px;
   }
   .whyus-para {
-    font-size: 16px;
-    width: 90%;
-    line-height: 22px;
+    font-size: 15px;
+    width: 98%;
+    line-height: 25px;
+    margin-top: 10px;
   }
   .no {
     font-size: 20px;
@@ -855,8 +863,8 @@
   .wucontainer-para{
     width: 100%;
     height: auto;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .no{
     height: auto;
@@ -881,6 +889,7 @@
   .why-us-container {
     height: auto;
     top: 0;
+    width: 90%;
   }
   .main-container {
     top: 50px;
@@ -890,8 +899,8 @@
     top: 50px;
   }
   .life-para {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 25px;
     height: auto;
   }
   .position-h1 {
@@ -909,7 +918,7 @@
     gap: 20px;
   }
   .office {
-    font-size: 16px;
+    font-size: 15px;
   }
   .job-pd-title {
     font-size: 25px;
@@ -922,7 +931,7 @@
     margin-top: 30px;
   }
   .PD{
-    padding-top: 50px;
+    padding-top: 18px;
   }
   .job-req {
     font-size: 18px;
