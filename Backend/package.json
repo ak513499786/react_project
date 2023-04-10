@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "codelinear ke liye ",
+  "main": "1",
+  "scripts": {
+    "test": "npm run "
+  },
+  "repository": {
+    "type": "git",
+    "url": "bad me "
+  },
+  "keywords": [
+    "ha"
+  ],
+  "author": "aman",
+  "license": "ISC"
+}
