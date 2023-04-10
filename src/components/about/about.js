@@ -9,7 +9,7 @@ import image from './images/ss.png'
 
 import "./about.css";
 import Vision from "./vision/Vision";
-import BlogHome from "../Home/BlogHome";
+import BlogHome from "../home/BlogHome";
 
 export default function About() {
   let fade = useRef(null);
