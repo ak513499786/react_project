@@ -1,4 +1,5 @@
 import db from "../index.js";
+import passport from "passport";
 
 export const addWebInfo = (req, res) => {
   try {
@@ -124,23 +125,12 @@ export const Login = (req, res) => {
   res.send({ message: "User not registered" });
 };
 
-
 export const Logout = (req, res) => {
-  //   const { email, password } = req.body;
-  req.logout();
-  res.redirect("/login");
+  req.session.destroy((err) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.redirect("/login"); // redirect the user to the login page
+    }
+  });
 };
-// app.post("/login", (req, res) => {
-//   const { email, password } = req.body;
-//   console.log(email, password);
-
-//   if (password === "123") {
-//     res.status(200);
-//     res.send({ message: "Login Successfull", user: "user" });
-//   } else {
-//     res.status(404);
-//     res.send({ message: "Password didn't match" });
-//   }
-
-//   res.send({ message: "User not registered" });
-// });

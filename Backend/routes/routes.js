@@ -12,6 +12,8 @@ import {
 const router = express.Router();
 router.get("/", getweb);
 router.post("/add", addWebInfo);
+
+
 router.post("/login", Login);
 
 router.get("/logout", Logout);
