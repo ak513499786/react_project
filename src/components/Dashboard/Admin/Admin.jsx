@@ -32,8 +32,6 @@ function Admin() {
             alert(response.data.message);
           }
         });
-      // Do something with the token (e.g. store it in local storage or state)
-      //   alert("loggged in");
     } catch (error) {
       setError(error.response.data.message);
     }

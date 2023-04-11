@@ -2,9 +2,21 @@ import profile from "./images/logout.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import React, { useState } from "react";
+import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function Dash() {
-  const navigate = useNavigate("/home");
+  // const navigate = useNavigate("/home");
+  const [editMode, setEditMode] = useState(false);
+
+  const handleEditClick = () => {
+    if (editMode === false) {
+      setEditMode(true);
+    } else {
+      setEditMode(false);
+    }
+  };
 
   const handleLogout = async () => {
     const response = await axios
@@ -14,6 +26,40 @@ export default function Dash() {
       });
   };
 
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [error, setError] = useState("");
+
+  const navigate = useNavigate("/home");
+
+  const handleUsernameChange = (event) => {
+    setTitle(event.target.value);
+  };
+
+  const handlePasswordChange = (event) => {
+    setContent(event.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    // setEditMode(false);
+
+    event.preventDefault();
+    try {
+      const response = await axios
+        .post("http://localhost:5000/code/add", { title, content })
+        .then((response) => {
+          console.log(response);
+
+          if (response.status === 200) {
+            alert("data post successfully");
+          } else {
+            alert(response.data.message);
+          }
+        });
+    } catch (error) {
+      setError(error.response.data.message);
+    }
+  };
   return (
     <>
       <nav className="dashboard-nav">
@@ -35,8 +81,70 @@ export default function Dash() {
           <div className="main">
             <h1 className="title">Home Page</h1>
             <div className="section">
-              <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
+              {editMode ? (
+                <>
+                  <div className="w-full flex justify-end">
+                    <EditIcon
+                      onClick={handleEditClick}
+                      className="w-36 h-10 rounded-lg bg-black"
+                    />
+                  </div>
+
+                  <div className="login-container">
+                    <form onSubmit={handleSubmit}>
+                      <h2>Title of pagas</h2>
+                      <label>
+                        Title
+                        <input
+                          placeholder="type"
+                          type="text"
+                          value={title}
+                          onChange={handleUsernameChange}
+                        />
+                      </label>
+                      <br />
+                      <label>
+                        cOOntent
+                        <textarea
+                          placeholder="type"
+                          // type="password"
+                          value={content}
+                          onChange={handlePasswordChange}
+                        />
+                      </label>
+                      <br />
+                      {error && <div className="error">{error}</div>}
+                      <button type="submit">Post</button>
+                    </form>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <div className="section">
+                    <div className="w-full flex justify-end">
+                      <EditIcon
+                        onClick={handleEditClick}
+                        className="w-36 mx-2 h-10 rounded-lg bg-black"
+                      />
+                      <DeleteIcon
+                        onClick={handleEditClick}
+                        className="w-36 h-10 rounded-lg bg-black"
+                      />
+                    </div>
+
+                    <div className="w-ful flex justify-between">
+                      <h2 className="sub-title">Hero Section</h2>
+                    </div>
+                    <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
+                    {/* <button
+                      className="bg-black w-36 h-10 rounded-lg"
+                      type="button"
+                    >
+                      Edit
+                    </button> */}
+                  </div>
+                </>
+              )}
             </div>
             <div className="section">
               <h2 className="sub-title">About Section</h2>
@@ -59,11 +167,21 @@ export default function Dash() {
             <div className="section">
               <h2 className="sub-title">Testimonial Section</h2>
               <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Testimonial1 Lorem ipsum dolor sit amet.</p>
-              <p className="change-para">Testimonial2 Lorem ipsum dolor sit amet.</p>
-              <p className="change-para">Testimonial3 Lorem ipsum dolor sit amet.</p>
-              <p className="change-para">Testimonial4 Lorem ipsum dolor sit amet.</p>
-              <p className="change-para">Testimonial5 Lorem ipsum dolor sit amet.</p>
+              <p className="change-para">
+                Testimonial1 Lorem ipsum dolor sit amet.
+              </p>
+              <p className="change-para">
+                Testimonial2 Lorem ipsum dolor sit amet.
+              </p>
+              <p className="change-para">
+                Testimonial3 Lorem ipsum dolor sit amet.
+              </p>
+              <p className="change-para">
+                Testimonial4 Lorem ipsum dolor sit amet.
+              </p>
+              <p className="change-para">
+                Testimonial5 Lorem ipsum dolor sit amet.
+              </p>
             </div>
             <div className="section">
               <h2 className="sub-title">Blog Section</h2>
