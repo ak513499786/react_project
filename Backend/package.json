@@ -5,7 +5,7 @@
   "main": "1",
   "type": "module",
   "scripts": {
-    "test": "npm run "
+    "start": "nodemon start"
   },
   "repository": {
     "type": "git",
