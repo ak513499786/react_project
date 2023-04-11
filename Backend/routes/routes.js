@@ -4,6 +4,7 @@ import {
   addWebInfo,
   // updateWebInfo,
   // remove,
+  Logout,
   getweb,
   Login,
 } from "../ctrl/controller.js";
@@ -12,6 +13,8 @@ const router = express.Router();
 router.get("/", getweb);
 router.post("/add", addWebInfo);
 router.post("/login", Login);
+
+router.get("/logout", Logout);
 // router.put("/update/:id", updateWebInfo);
 // router.delete("/dele/:id", remove);
 

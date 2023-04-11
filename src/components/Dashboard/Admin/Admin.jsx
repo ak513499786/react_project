@@ -33,39 +33,51 @@ function Admin() {
           }
         });
       // Do something with the token (e.g. store it in local storage or state)
-      alert("loggged in");
+      //   alert("loggged in");
     } catch (error) {
       setError(error.response.data.message);
     }
   };
+
+  const handleLogout = async () => {
+    const response = await axios
+      .get("http://localhost:5000/code/logout")
+      .then((response) => {
+        navigate("/login");
+      });
+  };
+
   return (
-    <div className="login-container">
-      <form onSubmit={handleSubmit}>
-        <h2>Title of pagas</h2>
-        <label>
-          Title
-          <input
-            placeholder="type"
-            type="text"
-            value={title}
-            onChange={handleUsernameChange}
-          />
-        </label>
-        <br />
-        <label>
-          cOOntent
-          <textarea
-            placeholder="type"
-            // type="password"
-            value={content}
-            onChange={handlePasswordChange}
-          />
-        </label>
-        <br />
-        {error && <div className="error">{error}</div>}
-        <button type="submit">Post</button>
-      </form>
-    </div>
+    <>
+      <button onClick={handleLogout}>Logout</button>
+      <div className="login-container">
+        <form onSubmit={handleSubmit}>
+          <h2>Title of pagas</h2>
+          <label>
+            Title
+            <input
+              placeholder="type"
+              type="text"
+              value={title}
+              onChange={handleUsernameChange}
+            />
+          </label>
+          <br />
+          <label>
+            cOOntent
+            <textarea
+              placeholder="type"
+              // type="password"
+              value={content}
+              onChange={handlePasswordChange}
+            />
+          </label>
+          <br />
+          {error && <div className="error">{error}</div>}
+          <button type="submit">Post</button>
+        </form>
+      </div>
+    </>
   );
 }
 

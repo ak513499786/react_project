@@ -3,15 +3,13 @@ import db from "../index.js";
 export const addWebInfo = (req, res) => {
   try {
     const { title, content } = req.body;
-    if (title && content) {
-      res.status(200);
-      res.send({ message: "Login Successfull", user: "user" });
-    } else {
-      res.status(404);
-      res.send({ message: "please Enter valid details" });
-    }
-    res.send({ message: "User not registered" });
-
+    // if (title && content) {
+    //   res.status(200);
+    //   res.send({ message: "post data Successfull", user: "user" });
+    // } else {
+    //   res.status(404);
+    //   res.send({ message: "please Enter valid details" });
+    // }
     const data = {
       title: title,
       content: content,
@@ -103,8 +101,9 @@ export const getweb = (req, res) => {
       console.error(err);
     } else {
       console.log(rows);
-      const page = rows[0];
-      res.send(page);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
     }
   });
   console.log("welcome");
@@ -123,6 +122,13 @@ export const Login = (req, res) => {
     res.send({ message: "Password didn't match" });
   }
   res.send({ message: "User not registered" });
+};
+
+
+export const Logout = (req, res) => {
+  //   const { email, password } = req.body;
+  req.logout();
+  res.redirect("/login");
 };
 // app.post("/login", (req, res) => {
 //   const { email, password } = req.body;
