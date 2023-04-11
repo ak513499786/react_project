@@ -126,11 +126,8 @@ export const Login = (req, res) => {
 };
 
 export const Logout = (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.redirect("/login"); // redirect the user to the login page
-    }
-  });
+  res.setHeader("Set-Cookie", [
+    "session=; Expires=Thu, 01 Jan 1970 00:00:00 GMT",
+  ]);
+  res.redirect("/login");
 };
