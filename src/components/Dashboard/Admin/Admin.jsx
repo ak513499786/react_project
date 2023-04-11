@@ -38,18 +38,8 @@ function Admin() {
       setError(error.response.data.message);
     }
   };
-
-  const handleLogout = async () => {
-    const response = await axios
-      .get("http://localhost:5000/code/logout")
-      .then((response) => {
-        navigate("/login");
-      });
-  };
-
   return (
     <>
-      <button onClick={handleLogout}>Logout</button>
       <div className="login-container">
         <form onSubmit={handleSubmit}>
           <h2>Title of pagas</h2>

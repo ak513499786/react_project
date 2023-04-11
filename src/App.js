@@ -38,16 +38,15 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-<<<<<<< HEAD
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/dash" element={<Dash />} />
-=======
+{/* ======= */}
           {/* <Route exact path="/" element={<Home />} /> */}
-          <Route exact path="/" element={<Login />} />
+          {/* <Route exact path="/" element={<Login />} /> */}
           <Route exact path="/admin" element={<Admin />} />
 
->>>>>>> 026aa8525450df0fc7ef50da576f417a79111ec9
+{/* >>>>>>> 026aa8525450df0fc7ef50da576f417a79111ec9 */}
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/career" element={<Career />} />
