@@ -11,6 +11,7 @@ import Consulting from "./components/consultingAndStrategy/consulting";
 import UX from "./components/userExperience/UX";
 import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
+import Dash from './components/Dashboard/dash'
 import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Dashboard/Login";
@@ -36,9 +37,9 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          {/* <Route exact path="/" element={<Home />} /> */}
-          <Route exact path="/" element={<Login />} />
-
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/login" element={<Login />} />
+          <Route exact path="/dash" element={<Dash />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/career" element={<Career />} />

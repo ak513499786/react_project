@@ -250,6 +250,49 @@
   background: #111111;
   border-radius: 30px;
 }
+.dashboard-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  padding: 0px 150px;
+  height: 50px;
+  background-color: #ffffffe1;
+  margin-top: 10px;
+}
+.dashboard-item{
+  color: #ffcd05;
+  font-family: graphik;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+.profile{
+  width: 30px;
+  height: 30px;
+}
+.dashboard-left-nav{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 130px;
+  position: fixed;
+}
+.dashboard-left-item{
+  color: #d8d6d6;
+  font-family: graphik;
+  font-size: 18px;
+  transition: 0.3s;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-left-item:hover{
+  background-color: #ffcd05;
+  color: black;
+}
 @media screen and (max-width: 1540px) and (min-width: 1441px) {
   .about-hero-h1 {
     top: 297px;

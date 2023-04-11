@@ -30,7 +30,7 @@ function Login() {
             alert(
               "logged in successfully please enter ok to visit the dash board page "
             );
-            navigate("/about");
+            navigate("/dash");
           } else if (response.status === 404) {
             alert(response.data.message);
           }
@@ -40,7 +40,7 @@ function Login() {
       // Do something with the token (e.g. store it in local storage or state)
       alert("loggged in");
     } catch (error) {
-      setError(error.response.data.message);
+      setError("Incorrect username or password");
     }
   };
   return (
@@ -49,7 +49,14 @@ function Login() {
         <h2>Login</h2>
         <label>
           Username:
-          <input type="text" value={username} onChange={handleUsernameChange} />
+          <input
+            type="text"
+            value={username}
+            onChange={handleUsernameChange}
+            style={{
+              color: "black",
+            }}
+          />
         </label>
         <br />
         <label>
@@ -58,6 +65,9 @@ function Login() {
             type="password"
             value={password}
             onChange={handlePasswordChange}
+            style={{
+              color: "black",
+            }}
           />
         </label>
         <br />
