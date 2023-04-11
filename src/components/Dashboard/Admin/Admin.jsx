@@ -1,42 +1,37 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./dash.scss";
+import "../dash.scss";
 
-function Login() {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+function Admin() {
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
   const [error, setError] = useState("");
 
   const navigate = useNavigate("/home");
 
   const handleUsernameChange = (event) => {
-    setUsername(event.target.value);
+    setTitle(event.target.value);
   };
 
   const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
+    setContent(event.target.value);
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const response = await axios
-        .post("http://localhost:5000/code/login", { username, password })
+        .post("http://localhost:5000/code/add", { title, content })
         .then((response) => {
           console.log(response);
 
           if (response.status === 200) {
-            alert(
-              "logged in successfully please enter ok to visit the dash board page "
-            );
-            navigate("/admin");
-          } else if (response.status === 404) {
+            alert("data post successfully");
+          } else {
             alert(response.data.message);
           }
         });
-
-      const token = response.data.token;
       // Do something with the token (e.g. store it in local storage or state)
       alert("loggged in");
     } catch (error) {
@@ -46,32 +41,32 @@ function Login() {
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit}>
-        <h2>Login</h2>
+        <h2>Title of pagas</h2>
         <label>
-          Username:
+          Title
           <input
             placeholder="type"
             type="text"
-            value={username}
+            value={title}
             onChange={handleUsernameChange}
           />
         </label>
         <br />
         <label>
-          Password:
-          <input
+          cOOntent
+          <textarea
             placeholder="type"
-            type="password"
-            value={password}
+            // type="password"
+            value={content}
             onChange={handlePasswordChange}
           />
         </label>
         <br />
         {error && <div className="error">{error}</div>}
-        <button type="submit">Login</button>
+        <button type="submit">Post</button>
       </form>
     </div>
   );
 }
 
-export default Login;
+export default Admin;

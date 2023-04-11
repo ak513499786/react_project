@@ -14,6 +14,7 @@ import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Dashboard/Login";
+import Admin from "./components/Dashboard/Admin/Admin";
 
 function App() {
   window.scroll({
@@ -38,6 +39,7 @@ function App() {
         <Routes>
           {/* <Route exact path="/" element={<Home />} /> */}
           <Route exact path="/" element={<Login />} />
+          <Route exact path="/admin" element={<Admin />} />
 
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />

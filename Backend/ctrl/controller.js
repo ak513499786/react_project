@@ -1,27 +1,32 @@
 import db from "../index.js";
 
-// export const addWebInfo = (req, res) => {
-//   try {
-//     const { title, description } = req.body;
-//     const data = {
-//       title: title,
-//       description: description,
-//     };
+export const addWebInfo = (req, res) => {
+  try {
+    const { title, content } = req.body;
+    if (title && content) {
+      res.status(200);
+      res.send({ message: "Login Successfull", user: "user" });
+    } else {
+      res.status(404);
+      res.send({ message: "please Enter valid details" });
+    }
+    res.send({ message: "User not registered" });
 
-//     db.query(
-//       "INSERT INTO company_notes_tbl set ?",
-//       data,
-//       (err, rows, fields) => {
-//         if (err) {
-//           console.error(err);
-//         } else {
-//           console.log(rows);
-//           res.send("added");
-//         }
-//       }
-//     );
-//   } catch (err) {}
-// };
+    const data = {
+      title: title,
+      content: content,
+    };
+
+    db.query("INSERT INTO codelinear set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
 
 // export const updateWebInfo = (req, res) => {
 //   try {
@@ -98,9 +103,38 @@ export const getweb = (req, res) => {
       console.error(err);
     } else {
       console.log(rows);
-      res.send(rows);
+      const page = rows[0];
+      res.send(page);
     }
   });
   console.log("welcome");
   // });
 };
+
+export const Login = (req, res) => {
+  const { email, password } = req.body;
+  console.log(email, password);
+
+  if (password === "123") {
+    res.status(200);
+    res.send({ message: "Login Successfull", user: "user" });
+  } else {
+    res.status(404);
+    res.send({ message: "Password didn't match" });
+  }
+  res.send({ message: "User not registered" });
+};
+// app.post("/login", (req, res) => {
+//   const { email, password } = req.body;
+//   console.log(email, password);
+
+//   if (password === "123") {
+//     res.status(200);
+//     res.send({ message: "Login Successfull", user: "user" });
+//   } else {
+//     res.status(404);
+//     res.send({ message: "Password didn't match" });
+//   }
+
+//   res.send({ message: "User not registered" });
+// });
