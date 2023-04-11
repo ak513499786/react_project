@@ -1,16 +1,14 @@
 import db from "../index.js";
-import passport from "passport";
 
 export const addWebInfo = (req, res) => {
   try {
     const { title, content } = req.body;
-    // if (title && content) {
-    //   res.status(200);
-    //   res.send({ message: "post data Successfull", user: "user" });
-    // } else {
-    //   res.status(404);
-    //   res.send({ message: "please Enter valid details" });
-    // }
+    if (title && content) {
+      res.status(200);
+    } else {
+      res.status(500);
+      res.send({ message: "please Enter valid details" });
+    }
     const data = {
       title: title,
       content: content,
