@@ -1,11 +1,24 @@
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useEffect } from "react";
+import { useState } from "react";
 
 export default function Crew() {
+  const [array, setarray] = useState();
+  const [content, setContent] = useState();
+
+  useEffect(() => {
+    axios.get("http://localhost:5000/code/").then((response) => {
+      setarray(response.data.title);
+      console.log(response.data);
+    });
+  }, []);
   return (
     <>
       <div className=" produc crewclass">
         <h2 className="text-7xl max-xl:text-5xl max-xl:p-5 leading-sng font-extrabold ml max-md:p-0 ml-5 max-md:text-4xl">
-          Meet The Crew : A Clique <br /> Of Visionaries
+          {/* Meet The Crew : A Clique <br /> Of Visionaries */}
+          {array}
         </h2>
         <p className="my-10 text-base w-2/5 max-lg:w-full max-xl:p-5 max-md:p-6 crewpara max-md:my-0">
           A cohort of highly diverse and driven individuals working in
@@ -24,9 +37,7 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">01</p>
-                <span className="strategist">
-                  Design Architects
-                </span>
+                <span className="strategist">Design Architects</span>
               </h1>
               <p className="m-desc">
                 The Design Architects orchestrate the project development
@@ -37,9 +48,7 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">02</p>
-                <span className="strategist">
-                  Strategists
-                </span>
+                <span className="strategist">Strategists</span>
               </h1>
               <p className="m-desc">
                 They are the geniuses responsible for formulating, documenting,
@@ -50,9 +59,7 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">03</p>
-                <span className="strategist">
-                  Tech Experts
-                </span>
+                <span className="strategist">Tech Experts</span>
               </h1>
               <p className="m-desc">
                 Our Tech Experts devise the perfect strategy, prepare a detailed
@@ -63,9 +70,7 @@ export default function Crew() {
             <div className="c-container">
               <h1 className="m-title">
                 <p className="m-numbers">04</p>
-                <span className="strategist">
-                  Delivery Managers
-                </span>
+                <span className="strategist">Delivery Managers</span>
               </h1>
               <p className="m-desc">
                 Your point-of-contact with Codelinear, who keeps you apprised on

@@ -15,6 +15,7 @@ import Dash from './components/Dashboard/dash'
 import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Dashboard/Login";
+import Admin from "./components/Dashboard/Admin/Admin";
 
 function App() {
   window.scroll({
@@ -37,9 +38,16 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
+<<<<<<< HEAD
           <Route exact path="/" element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/dash" element={<Dash />} />
+=======
+          {/* <Route exact path="/" element={<Home />} /> */}
+          <Route exact path="/" element={<Login />} />
+          <Route exact path="/admin" element={<Admin />} />
+
+>>>>>>> 026aa8525450df0fc7ef50da576f417a79111ec9
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/career" element={<Career />} />

@@ -22,7 +22,7 @@ function Login() {
     event.preventDefault();
     try {
       const response = await axios
-        .post("http://localhost:5000/login", { username, password })
+        .post("http://localhost:5000/code/login", { username, password })
         .then((response) => {
           console.log(response);
 
@@ -49,19 +49,13 @@ function Login() {
         <h2>Login</h2>
         <label>
           Username:
-          <input
-            type="text"
-            value={username}
-            onChange={handleUsernameChange}
-            style={{
-              color: "black",
-            }}
-          />
+          <input type="text" value={username} onChange={handleUsernameChange} />
         </label>
         <br />
         <label>
           Password:
           <input
+            placeholder="type"
             type="password"
             value={password}
             onChange={handlePasswordChange}
