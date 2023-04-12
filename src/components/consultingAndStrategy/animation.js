@@ -32,7 +32,7 @@ const Animation = () => {
         ref={verticalRef}
         style={{
           display: "flex",
-          height: "400px",
+          height: "800px",
           scrollSnapType: "y mandatory",
         }}
         className="item-center justify-center"

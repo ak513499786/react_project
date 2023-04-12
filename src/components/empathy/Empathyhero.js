@@ -1,7 +1,7 @@
 import empathy from "../Blog/Images/Frame 43.svg";
 import cheese from "./images/Ellipse 19.png";
 
-export default function Empathyhero() {
+export default function   Empathyhero() {
   return (
     <section className="empathy-hero">
       <div className="empathy-container">

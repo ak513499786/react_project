@@ -8,7 +8,6 @@ import { useRef, useEffect } from "react";
 
 export default function Empathy() {
   let fade = useRef(null);
-
   useEffect(() => {
     const tl = gsap.timeline({
       defaults: { duration: 1 },
@@ -26,4 +25,3 @@ export default function Empathy() {
     </>
   );
 }
-
