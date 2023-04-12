@@ -8,12 +8,12 @@ export default function Hero() {
   const [array, setarray] = useState();
   const [content, setContent] = useState();
 
-  useEffect(() => {
-    axios.get("http://localhost:5000/code/").then((response) => {
-      setarray(response.data.title);
-      console.log(response.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:5000/code/").then((response) => {
+  //     setarray(response.data.homeHero);
+  //     // console.log(response.data);
+  //   });
+  // }, []);
   return (
     <>
       <section id="hero">
@@ -29,7 +29,7 @@ export default function Hero() {
           ></video>
         </div>
         <section id="content">
-          <h1 id="header">{array}</h1>
+          <h1 id="header">Welcome the world of codelinear</h1>
           <Link to={"/about"} id="aboutbtn">
             <p className="aboutbtn_content">about us</p>
           </Link>

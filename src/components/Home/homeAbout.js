@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,7 +12,9 @@ import arrow from "../services/images/downarrow.svg";
 import { gsap } from "gsap";
 
 const HomeAbout = () => {
-  let arrowswipe = useRef(null)
+  const [array, setarray] = useState();
+
+  let arrowswipe = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline({
@@ -39,6 +42,13 @@ const HomeAbout = () => {
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
   });
+
+  // useEffect(() => {
+  //   axios.get("http://localhost:5000/code/").then((response) => {
+  //     setarray(response.data.homeAbout);
+  //     // console.log(response.data);
+  //   });
+  // }, []);
   return (
     <>
       <section id="about" className=" agency mt-8 max-sm:mt-0">
@@ -51,11 +61,14 @@ const HomeAbout = () => {
               of human touch, data-driven analytics and cutting-edge technology.
             </p>
           </div>
-          <div className="drag"style={{
-            color:'#d8d6d6',
-            fontFamily:'graphik',
-            opacity: '0.7'
-          }}>
+          <div
+            className="drag"
+            style={{
+              color: "#d8d6d6",
+              fontFamily: "graphik",
+              opacity: "0.7",
+            }}
+          >
             swipe
             <div className="arrowcontainer">
               <img
