@@ -1,5 +1,6 @@
 import db from "../index.js";
 
+
 export const addWebInfo = (req, res) => {
   try {
     const { title, content } = req.body;

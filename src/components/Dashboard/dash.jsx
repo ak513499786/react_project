@@ -24,6 +24,7 @@ export default function Dash() {
       .then((response) => {
         navigate("/login");
       });
+    navigate("/login");
   };
 
   const [title, setTitle] = useState("");
@@ -35,6 +36,9 @@ export default function Dash() {
   const handleUsernameChange = (event) => {
     setTitle(event.target.value);
   };
+  // const logoutt = (event) => {
+  //   navigate('/')
+  // };
 
   const handlePasswordChange = (event) => {
     setContent(event.target.value);
@@ -64,6 +68,7 @@ export default function Dash() {
     <>
       <nav className="dashboard-nav">
         <div className="dashboard-item">Codelinear</div>
+
         <img src={profile} alt="" className="profile" onClick={handleLogout} />
       </nav>
       <Tabs>
