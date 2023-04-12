@@ -1,5 +1,6 @@
 import gsap from "gsap";
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 export default function Positions() {
   let positioncard = useRef(null);
@@ -102,37 +103,57 @@ export default function Positions() {
           <h1 className="position-h1">Open Positions</h1>
           <div className="open-pos" ref={(el) => (position = el)}>
             <div className="positions" onClick={application}>
-              <h1 className="position-content-h1">Product Designer 
-              <span className="brackets">(</span>UX<span className="brackets">/</span>UI<span className="brackets">)</span></h1>
-              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
+              <h1 className="position-content-h1">
+                Product Designer
+                <span className="brackets">(</span>UX
+                <span className="brackets">/</span>UI
+                <span className="brackets">)</span>
+              </h1>
+              <span className="office">
+                Bangalore <span className="brackets">(</span>Remote
+                <span className="brackets">)</span>
+              </span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application1}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Mobile Frontend
               </h1>
-              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
+              <span className="office">
+                Bangalore <span className="brackets">(</span>Remote
+                <span className="brackets">)</span>
+              </span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application2}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Web Frontend
               </h1>
-              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
+              <span className="office">
+                Bangalore <span className="brackets">(</span>Remote
+                <span className="brackets">)</span>
+              </span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application3}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Backend
               </h1>
-              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
+              <span className="office">
+                Bangalore <span className="brackets">(</span>Remote
+                <span className="brackets">)</span>
+              </span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application4}>
               <h1 className="position-content-h1">
-                Software Development Engineer - CMS<span className="brackets">/</span>E-Commerce
+                Software Development Engineer - CMS
+                <span className="brackets">/</span>E-Commerce
               </h1>
-              <span className="office">Bangalore <span className="brackets">(</span>Remote<span className="brackets">)</span></span>
+              <span className="office">
+                Bangalore <span className="brackets">(</span>Remote
+                <span className="brackets">)</span>
+              </span>
             </div>
             <hr className="pos-hr" />
           </div>
@@ -140,7 +161,11 @@ export default function Positions() {
       </section>
       <div className="PD" ref={(el) => (positioncard = el)}>
         <h1 className="job-pd-title">
-         <span className="title">Product Designer <span className="brackets">(</span>UI<span className="brackets">/</span>UX<span className="brackets">)</span></span>
+          <span className="title">
+            Product Designer <span className="brackets">(</span>UI
+            <span className="brackets">/</span>UX
+            <span className="brackets">)</span>
+          </span>
           <div className="jobline" onClick={formhide}>
             <div className="close-line"></div>
           </div>
@@ -157,12 +182,17 @@ export default function Positions() {
             uplift brand values.
           </p>
           <div className="job-req">
-            Figma <span className="and">|</span>Wireframes <span className="and"> &</span> User Flows <span className="and">|</span>Prototypes UX Research <span className="and">|</span>Personas
+            Figma <span className="and">|</span>Wireframes{" "}
+            <span className="and"> &</span> User Flows{" "}
+            <span className="and">|</span>Prototypes UX Research{" "}
+            <span className="and">|</span>Personas
             <span className="and">|</span>Design System
           </div>
           <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn" onClick={applyNow}>
-            <p className="about_btn_content">apply now</p>
+          <div className="apply_btn">
+            <p className="about_btn_content">
+              <Link to="mailto:hr@codelinear.com">apply now</Link>
+            </p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform = el)}>
@@ -226,8 +256,10 @@ export default function Positions() {
             Android Java | Kotlin | Objective-C | Swift | React Native | Flutter
           </div>
           <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn" onClick={applyNow1}>
-            <p className="about_btn_content">apply now</p>
+          <div className="apply_btn">
+            <p className="about_btn_content">
+              <Link to="mailto:hr@codelinear.com">apply now</Link>
+            </p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform1 = el)}>
@@ -292,8 +324,10 @@ export default function Positions() {
             Angular
           </div>
           <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn" onClick={applyNow2}>
-            <p className="about_btn_content">apply now</p>
+          <div className="apply_btn">
+            <p className="about_btn_content">
+              <Link to="mailto:hr@codelinear.com">apply now</Link>
+            </p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform2 = el)}>
@@ -357,8 +391,10 @@ export default function Positions() {
             Php | Node.js | Python | Java | Ruby On Rails | Golang
           </div>
           <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn" onClick={applyNow3}>
-            <p className="about_btn_content">apply now</p>
+          <div className="apply_btn">
+            <p className="about_btn_content">
+              <Link to="mailto:hr@codelinear.com">apply now</Link>
+            </p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform3 = el)}>
@@ -423,8 +459,10 @@ export default function Positions() {
             Drupal | Joomla | Wix | Squarespace Commerce
           </div>
           <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn" onClick={applyNow4}>
-            <p className="about_btn_content">apply now</p>
+          <div className="apply_btn">
+            <p className="about_btn_content">
+              <Link to="mailto:hr@codelinear.com">apply now</Link>
+            </p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform4 = el)}>
