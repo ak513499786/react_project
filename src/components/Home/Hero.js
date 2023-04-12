@@ -29,7 +29,7 @@ export default function Hero() {
           ></video>
         </div>
         <section id="content">
-          <h1 id="header">Welcome the world of codelinear</h1>
+          <h1 id="header">Propiling the world by design</h1>
           <Link to={"/about"} id="aboutbtn">
             <p className="aboutbtn_content">about us</p>
           </Link>
