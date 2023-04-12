@@ -20,7 +20,7 @@ export default function Crew() {
   return (
     <>
       <div className=" produc crewclass">
-        <h2 className="text-7xl max-xl:text-5xl max-xl:p-5 leading-sng font-extrabold ml max-md:p-0 ml-0 max-md:text-4xl">
+        <h2 className="text-7xl max-xl:text-5xl max-xl:p-5 leading-sng font-extrabold ml max-md:p-0 max-md:ml-0 max-md:text-4xl">
           Meet The Crew : A Clique <br /> Of Visionaries
           {/* {array} */}
         </h2>

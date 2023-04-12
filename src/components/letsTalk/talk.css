@@ -346,6 +346,7 @@ input[type=number] {
   .contact-hero-h1{
     font-size: 78px;
     line-height: 84px;
+    width: 100%;
     height: auto;
     text-align: center;
   }

@@ -61,7 +61,6 @@ const Animation = () => {
                   you to make decisions driven by consumer behaviour and data.
                 </p>
               </div>
-
               <div className="vertical-animation-container">
                 <h1 className="vertical-animation-h1">Stakeholder Workshops</h1>
                 <p className="vertical-animation-para">
