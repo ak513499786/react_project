@@ -237,9 +237,9 @@ input:focus {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 7px 39px;
+  padding: 0px 0px;
   gap: 10px;
-  width: 270px;
+  width: 230px;
   height: 42px;
   border: 1px solid #848484;
   border-radius: 72px;
@@ -248,9 +248,14 @@ input:focus {
 .sub_button-content {
   font-family: "Graphik";
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 1px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
   white-space: nowrap;
@@ -406,6 +411,9 @@ input[type=number] {
   }
   .address-loc{
     height: auto;
+  }
+  .sub_button-content{
+    padding-bottom: 0;
   }
   .address-p{
     height: auto;
