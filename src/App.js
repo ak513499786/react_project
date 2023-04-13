@@ -66,9 +66,9 @@ function App() {
           <Route exact path="/Branded" element={<Brand/>} />
           <Route exact path="/changing" element={<Change/>} />
           <Route exact path="/Discovery" element={<Discovery />} />
-          <Route exact path="/Gesalt" element={<Gesalt/>} />
+          <Route exact path="/Gestalt" element={<Gesalt/>} />
           <Route exact path="/Listening" element={<Listen/>} />
-          <Route exact path="/most-viable-product" element={<MVP/>} />
+          <Route exact path="/minimum-viable-product" element={<MVP/>} />
           <Route exact path="/No-code-revolution" element={<NCR/>} />
           <Route exact path="/react-vs-flutter" element={<Reactblog/>} />
           <Route exact path="/Design" element={<Design/>} />

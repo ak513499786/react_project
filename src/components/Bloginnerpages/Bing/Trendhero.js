@@ -1,4 +1,4 @@
-import empathy from "../../Blog/Images/Frame 44.svg";
+import empathy from "../../Blog/Images/Frame 54.png";
 
 export default function Trendhero() {
   return (

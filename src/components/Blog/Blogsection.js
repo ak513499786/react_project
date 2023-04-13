@@ -19,127 +19,141 @@ import gsap from "gsap";
 import { Link } from "react-router-dom";
 
 export default function Blogsection() {
-  let empathy1 = useRef(null);
-  let empathy2 = useRef(null);
+  let empathy = useRef(null);
+  let db = useRef(null);
   let digitalmarketing = useRef(null);
-  let MVP1 = useRef(null);
-  let MVP2 = useRef(null);
+  let dw = useRef(null);
+  let MVP = useRef(null);
   let design = useRef(null);
-  let NCR1 = useRef(null);
-  let NCR2 = useRef(null);
+  let gp = useRef(null);
+  let NCR = useRef(null);
   let SVM = useRef(null);
-  let col1 = useRef(null);
-  let col2 = useRef(null);
-  let col3 = useRef(null);
-  let arrow = useRef(null);
+  let Bg = useRef(null);
+  let NSEO = useRef(null);
+  let Cust = useRef(null);
+  let UXi = useRef(null);
+  let STM = useRef(null);
+  let RVF = useRef(null);
   let all = useRef(null);
 
-  const onClickSort = () => {
-    gsap.to(digitalmarketing, 0, { display: "none" });
-    gsap.to(MVP1, 0, { display: "none" });
-    gsap.to(MVP2, 0, { display: "none" });
-    gsap.to(NCR1, 0, { display: "none" });
-    gsap.to(NCR2, 0, { display: "none" });
-    gsap.to(design, 0, { display: "flex" });
-    gsap.to(SVM, 0, { display: "none" });
-    gsap.to(col2, 0, { display: "flex" });
-    gsap.to(col3, 0, { display: "none" });
-    gsap.to(arrow, 0, { display: "none" });
+  // const onClickSort = () => {
+  //   gsap.to(digitalmarketing, 0, { display: "none" });
+  //   gsap.to(dw, 0, { display: "none" });
+  //   gsap.to(db, 0, { display: "none" });
+  //   gsap.to(gp, 0, { display: "none" });
+  //   gsap.to(NCR, 0, { display: "none" });
+  //   gsap.to(NSEO, 0, { display: "none" });
+  //   gsap.to(Cust, 0, { display: "none" });
+  //   gsap.to(UXi, 0, { display: "none" });
+  //   gsap.to(STM, 0, { display: "none" });
+  //   gsap.to(empathy, 0, { display: "none" });
+  //   gsap.to(design, 0, { display: "none" });
+  //   gsap.to(MVP, 0, { display: "none" });
 
-    gsap.to(col1, 0, { display: "flex" });
-    gsap.to(all, 0, { visibility: "visible" });
-    gsap.to(empathy1, 0, { display: "flex" });
-    gsap.to(empathy2, 0, { display: "flex" });
-  };
-  const onClickSort2 = () => {
-    gsap.to(digitalmarketing, 0, { display: "none" });
-    gsap.to(MVP1, 0, { display: "none" });
-    gsap.to(MVP2, 0, { display: "none" });
-    gsap.to(empathy1, 0, { display: "none" });
-    gsap.to(empathy2, 0, { display: "none" });
-    gsap.to(design, 0, { display: "none" });
-    gsap.to(SVM, 0, { display: "none" });
-    gsap.to(col1, 0, { display: "none" });
-    gsap.to(col2, 0, { display: "none" });
-    gsap.to(arrow, 0, { display: "none" });
+  //   gsap.to(SVM, 0, { display: "flex" });
+  //   gsap.to(all, 0, { visibility: "visible" });
+  //   gsap.to(RVF, 0, { display: "flex" });
+  //   gsap.to(Bg, 0, { display: "flex" });
+  // };
+  // const onClickSort2 = () => {
+  //   gsap.to(digitalmarketing, 0, { display: "none" });
+  //   gsap.to(dw, 0, { display: "none" });
+  //   gsap.to(db, 0, { display: "none" });
+  //   gsap.to(gp, 0, { display: "none" });
+  //   gsap.to(NCR, 0, { display: "none" });
+  //   gsap.to(NSEO, 0, { display: "none" });
+  //   gsap.to(Cust, 0, { display: "none" });
+  //   gsap.to(UXi, 0, { display: "none" });
+  //   gsap.to(STM, 0, { display: "none" });
+  //   gsap.to(empathy, 0, { display: "none" });
+  //   gsap.to(design, 0, { display: "none" });
+  //   gsap.to(MVP, 0, { display: "none" });
 
-    gsap.to(NCR1, 0, { display: "flex" });
-    gsap.to(all, 0, { visibility: "visible" });
-    gsap.to(NCR2, 0, { display: "flex" });
-    gsap.to(col3, 0, { display: "flex" });
-  };
-  const onClickSort3 = () => {
-    gsap.to(digitalmarketing, 0, { display: "none" });
-    gsap.to(NCR1, 0, { display: "none" });
-    gsap.to(NCR2, 0, { display: "none" });
-    gsap.to(empathy1, 0, { display: "none" });
-    gsap.to(empathy2, 0, { display: "none" });
-    gsap.to(design, 0, { display: "none" });
-    gsap.to(SVM, 0, { display: "none" });
-    gsap.to(col1, 0, { display: "none" });
-    gsap.to(col3, 0, { display: "none" });
-    gsap.to(arrow, 0, { display: "none" });
+  //   gsap.to(SVM, 0, { display: "flex" });
+  //   gsap.to(all, 0, { visibility: "visible" });
+  //   gsap.to(RVF, 0, { display: "flex" });
+  //   gsap.to(Bg, 0, { display: "flex" });
+  // };
+  // const onClickSort3 = () => {
+  //   gsap.to(digitalmarketing, 0, { display: "none" });
+  //   gsap.to(dw, 0, { display: "none" });
+  //   gsap.to(db, 0, { display: "none" });
+  //   gsap.to(gp, 0, { display: "none" });
+  //   gsap.to(NCR, 0, { display: "none" });
+  //   gsap.to(NSEO, 0, { display: "none" });
+  //   gsap.to(Cust, 0, { display: "none" });
+  //   gsap.to(UXi, 0, { display: "none" });
+  //   gsap.to(STM, 0, { display: "none" });
+  //   gsap.to(empathy, 0, { display: "none" });
+  //   gsap.to(design, 0, { display: "none" });
+  //   gsap.to(MVP, 0, { display: "none" });
 
-    gsap.to(MVP1, 0, { display: "flex" });
-    gsap.to(all, 0, { visibility: "visible" });
-    gsap.to(MVP2, 0, { display: "flex" });
-    gsap.to(col2, 0, { display: "flex" });
-  };
-  const onClickSort4 = () => {
-    gsap.to(digitalmarketing, 0, { display: "flex" });
-    gsap.to(NCR1, 0, { display: "none" });
-    gsap.to(NCR2, 0, { display: "none" });
-    gsap.to(empathy1, 0, { display: "none" });
-    gsap.to(empathy2, 0, { display: "none" });
-    gsap.to(MVP1, 0, { display: "none" });
-    gsap.to(MVP2, 0, { display: "none" });
-    gsap.to(SVM, 0, { display: "none" });
-    gsap.to(col2, 0, { display: "none" });
-    gsap.to(col3, 0, { display: "none" });
-    gsap.to(arrow, 0, { display: "none" });
+  //   gsap.to(SVM, 0, { display: "flex" });
+  //   gsap.to(all, 0, { visibility: "visible" });
+  //   gsap.to(RVF, 0, { display: "flex" });
+  //   gsap.to(Bg, 0, { display: "flex" });
+  // };
+  // const onClickSort4 = () => {
+  //   gsap.to(digitalmarketing, 0, { display: "none" });
+  //   gsap.to(dw, 0, { display: "none" });
+  //   gsap.to(db, 0, { display: "none" });
+  //   gsap.to(gp, 0, { display: "none" });
+  //   gsap.to(NCR, 0, { display: "none" });
+  //   gsap.to(NSEO, 0, { display: "none" });
+  //   gsap.to(Cust, 0, { display: "none" });
+  //   gsap.to(UXi, 0, { display: "none" });
+  //   gsap.to(STM, 0, { display: "none" });
+  //   gsap.to(empathy, 0, { display: "none" });
+  //   gsap.to(design, 0, { display: "none" });
+  //   gsap.to(MVP, 0, { display: "none" });
 
-    gsap.to(design, 0, { display: "none" });
-    gsap.to(all, 0, { visibility: "visible" });
-    gsap.to(col1, 0, { display: "flex" });
-  };
-  const onClickSort5 = () => {
-    gsap.to(digitalmarketing, 0, { display: "none" });
-    gsap.to(NCR1, 0, { display: "none" });
-    gsap.to(NCR2, 0, { display: "none" });
-    gsap.to(empathy1, 0, { display: "none" });
-    gsap.to(empathy2, 0, { display: "none" });
-    gsap.to(MVP1, 0, { display: "none" });
-    gsap.to(MVP2, 0, { display: "none" });
-    gsap.to(design, 0, { display: "none" });
-    gsap.to(col1, 0, { display: "none" });
-    gsap.to(col2, 0, { display: "none" });
-    gsap.to(arrow, 0, { display: "none" });
+  //   gsap.to(SVM, 0, { display: "flex" });
+  //   gsap.to(all, 0, { visibility: "visible" });
+  //   gsap.to(RVF, 0, { display: "flex" });
+  //   gsap.to(Bg, 0, { display: "flex" });
+  // };
+  // const onClickSort5 = () => {
+  //   gsap.to(digitalmarketing, 0, { display: "none" });
+  //   gsap.to(dw, 0, { display: "none" });
+  //   gsap.to(db, 0, { display: "none" });
+  //   gsap.to(gp, 0, { display: "none" });
+  //   gsap.to(NCR, 0, { display: "none" });
+  //   gsap.to(NSEO, 0, { display: "none" });
+  //   gsap.to(Cust, 0, { display: "none" });
+  //   gsap.to(UXi, 0, { display: "none" });
+  //   gsap.to(STM, 0, { display: "none" });
+  //   gsap.to(empathy, 0, { display: "none" });
+  //   gsap.to(design, 0, { display: "none" });
+  //   gsap.to(MVP, 0, { display: "none" });
 
-    gsap.to(SVM, 0, { display: "flex" });
-    gsap.to(all, 0, { visibility: "visible" });
-    gsap.to(col3, 0, { display: "flex" });
-  };
-  const onClickSort1 = () => {
-    gsap.to(digitalmarketing, 0, { display: "flex" });
-    gsap.to(NCR1, 0, { display: "flex" });
-    gsap.to(NCR2, 0, { display: "flex" });
-    gsap.to(empathy1, 0, { display: "flex" });
-    gsap.to(empathy2, 0, { display: "flex" });
-    gsap.to(design, 0, { display: "flex" });
-    gsap.to(SVM, 0, { display: "flex" });
-    gsap.to(col1, 0, { display: "flex" });
-    gsap.to(col3, 0, { display: "flex" });
-    gsap.to(arrow, 0, { display: "flex" });
+  //   gsap.to(SVM, 0, { display: "flex" });
+  //   gsap.to(all, 0, { visibility: "visible" });
+  //   gsap.to(RVF, 0, { display: "flex" });
+  //   gsap.to(Bg, 0, { display: "flex" });
+  // };
+  // const onClickSort1 = () => {
+  //   gsap.to(digitalmarketing, 0, { display: "none" });
+  //   gsap.to(dw, 0, { display: "none" });
+  //   gsap.to(db, 0, { display: "none" });
+  //   gsap.to(gp, 0, { display: "none" });
+  //   gsap.to(NCR, 0, { display: "none" });
+  //   gsap.to(NSEO, 0, { display: "none" });
+  //   gsap.to(Cust, 0, { display: "none" });
+  //   gsap.to(UXi, 0, { display: "none" });
+  //   gsap.to(STM, 0, { display: "none" });
+  //   gsap.to(empathy, 0, { display: "none" });
+  //   gsap.to(design, 0, { display: "none" });
+  //   gsap.to(MVP, 0, { display: "none" });
 
-    gsap.to(MVP1, 0, { display: "flex" });
-    gsap.to(all, 0, { visibility: "hidden" });
-    gsap.to(MVP2, 0, { display: "flex" });
-    gsap.to(col2, 0, { display: "flex" });
-  };
+  //   gsap.to(SVM, 0, { display: "flex" });
+  //   gsap.to(all, 0, { visibility: "visible" });
+  //   gsap.to(RVF, 0, { display: "flex" });
+  //   gsap.to(Bg, 0, { display: "flex" });
+  // };
   return (
     <>
       <section className="blog-content-section">
-        <div className="blog-btns">
+        {/* <div className="blog-btns">
           <p className="blog-btn-content" onClick={onClickSort4}>
             Digital Marketing
           </p>
@@ -147,7 +161,7 @@ export default function Blogsection() {
             eCommerce
           </p>
           <p className="blog-btn-content" onClick={onClickSort3}>
-            MVP
+            Comparision
           </p>
           <p className="blog-btn-content" onClick={onClickSort2}>
             No Code
@@ -165,98 +179,132 @@ export default function Blogsection() {
           >
             All
           </p>
-        </div>
+        </div> */}
       </section>
-      <section>
-        <aside className="blogcol" ref={(el) => (col2 = el)}>
-          <div className="blog-container">
-            <Link to={"/empathy"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (MVP1 = el)}>
-                <img src={image3} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">Minimum Viable Product</h1>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/Story"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (design = el)}>
-                <img src={story} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">Storytelling</h1>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/react-vs-flutter"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (MVP2 = el)}>
-                <img src={reactimg} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">React Native Vs Flutter</h1>
-                </div>
-              </div>
-            </Link>
+      <section className="blog-section">
+        <Link to={"/Branded"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (db = el)}>
+            <img src={brand} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Disruptive Branding</h1>
+            </div>
           </div>
-        </aside>
-        <aside className="blogcol" ref={(el) => (col3 = el)}>
-          <div className="blog-container">
-          <Link to={"/Design"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (design = el)}>
-                <img src={image4} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">Design System</h1>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/shopify-vs-magento"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (SVM = el)}>
-                <img src={image6} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">Shopify Vs Magento</h1>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/no-code-revolution"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (NCR2 = el)}>
-                <img src={image5} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">No Code Revolution</h1>
-                </div>
-              </div>
-            </Link>
+        </Link>
+        <Link to={"/Discovery"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (dw = el)}>
+            <img src={discovery} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Discovery Workshop</h1>
+            </div>
           </div>
-        </aside>
-        <aside className="blogcol" ref={(el) => (col1 = el)}>
-          <div className="blog-container">
-            <Link to={"/empathy"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (MVP1 = el)}>
-                <img src={image3} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">Minimum Viable Product</h1>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/digital-marketing-trends-2023"} className="link-imgs">
-              <div
-                className="blog-containers"
-                ref={(el) => (digitalmarketing = el)}
-              >
-                <img src={image2} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">
-                    Digital Marketing Trends 2023
-                  </h1>
-                </div>
-              </div>
-            </Link>
-            <Link to={"/empathy-in-UX"} className="link-imgs">
-              <div className="blog-containers" ref={(el) => (empathy2 = el)}>
-                <img src={image1} alt="" className="blog-imgs" />
-                <div className="blog-container-content">
-                  <h1 className="blog-heading">Empathy In UX</h1>
-                </div>
-              </div>
-            </Link>
+        </Link>
+        <Link to={"/gestalt"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (gp = el)}>
+            <img src={gestalt} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Gestalt Psychology</h1>
+            </div>
           </div>
-        </aside>
+        </Link>
+        <Link to={"/bing-vs-google"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (Bg = el)}>
+            <img src={BVG} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Bing Vs Google</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/Changing"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (NSEO = el)}>
+            <img src={SEO} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">The Changing Nature Of SEO</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/Listening"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (Cust = el)}>
+            <img src={listen} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">When To Listen To your customer</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/UX"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (UXi = el)}>
+            <img src={UX} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">UX Desing Benefits SMEs</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/Story"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (STM = el)}>
+            <img src={story} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Storytelling in Marketing</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/react-vs-flutter"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (RVF = el)}>
+            <img src={reactimg} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">React Native Vs Flutter</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/Design"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (design = el)}>
+            <img src={image4} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Design System</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/shopify-vs-magento"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (SVM = el)}>
+            <img src={image6} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Shopify Vs Magento</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/no-code-revolution"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (NCR = el)}>
+            <img src={image5} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">No Code Revolution</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/minimum-viable-product"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (MVP = el)}>
+            <img src={image3} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Minimum Viable Product</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/digital-marketing-trends-2023"} className="link-imgs">
+          <div
+            className="blog-containers"
+            ref={(el) => (digitalmarketing = el)}
+          >
+            <img src={image2} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/empathy-in-UX"} className="link-imgs">
+          <div className="blog-containers" ref={(el) => (empathy = el)}>
+            <img src={image1} alt="" className="blog-imgs" />
+            <div className="blog-container-content">
+              <h1 className="blog-heading">Empathy In UX</h1>
+            </div>
+          </div>
+        </Link>
       </section>
     </>
   );
