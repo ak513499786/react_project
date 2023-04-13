@@ -457,7 +457,7 @@ const Explore = () => {
                 <SwiperSlide className="flex justify-center items-center">
                   <Link
                     to="/consultingandstrategy"
-                    className="px20 cursor-grab   z-10"
+                    className="px20 cursor-grab z-10"
                   >
                     <div className="card1  z-10 mx-4 max-md:mx-0 hideee relative cursor-grab">
                       <div className="img1 z-10 ml-10  ma\  -top-0"></div>
