@@ -41,7 +41,7 @@ export default function Serviceshero() {
                 direction={"vertical"}
                 loop={true}
                 autoplay={{
-                  delay: 1000,
+                  delay: 1500,
                   disableOnInteraction: false,
                 }}
                 modules={[Autoplay]}

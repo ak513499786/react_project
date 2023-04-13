@@ -34,7 +34,7 @@ const BlogHome = () => {
           <div
             onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
             onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-            className="max-w[100%] w-[100%] mt-40 homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 max-sm:mt-32"
+            className="max-w[100%] w-[100%] mt-40 homeidea -ml-[6%] max-2xl:ml-8 max-sm:ml-0 max-sm:mt-5"
           >
             <Swiper
               ref={swiperRef}
@@ -336,7 +336,7 @@ const BlogHome = () => {
             <div
               onMouseEnter={() => swiperRef.current.swiper.autoplay.stop()}
               onMouseLeave={() => swiperRef.current.swiper.autoplay.start()}
-              className="max-w[100%] w-[100%] homeidea -ml-[8%] max-2xl:ml-8 max-sm:ml-0 mt-5"
+              className="max-w[100%] w-[100%] homeidea -ml-[0%] max-2xl:ml-8 max-sm:ml-0 mt-5"
             >
               <Swiper
                 ref={swiperRef}

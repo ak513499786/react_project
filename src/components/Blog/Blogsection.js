@@ -4,8 +4,15 @@ import image3 from "./Images/Frame 46.svg";
 import image4 from "./Images/Frame 472.svg";
 import image5 from "./Images/Frame 45.svg";
 import image6 from "./Images/Frame 47.svg";
-import left_arrow from "./Images/Frame 7.png";
-import right_arrow from "./Images/Frame 8.png";
+import discovery from "./Images/Frame 48.png";
+import story from "./Images/Frame 49.png";
+import brand from "./Images/Frame 50.png";
+import SEO from "./Images/Frame 51.png";
+import UX from "./Images/Frame 52 (1).png";
+import gestalt from "./Images/Frame 53.png";
+import BVG from "./Images/Frame 54.png";
+import listen from "./Images/Frame 56.png";
+import reactimg from "./Images/Frame 4.png";
 import { useRef } from "react";
 import gsap from "gsap";
 
@@ -161,89 +168,95 @@ export default function Blogsection() {
         </div>
       </section>
       <section>
-        <aside className="blogcol" ref={(el) => (col1 = el)}>
-          <div className="blog-container">
-            <div className="blog-containers" ref={(el) => (empathy1 = el)}>
-              <Link to={"/empathy"} className="link-imgs">
-                <img src={image1} alt="" className="blog-imgs"/>
-              </Link>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Empathy In UX</h1>
-              </div>
-            </div>
-            <div
-              className="blog-containers"
-              ref={(el) => (digitalmarketing = el)}
-            >
-              <img src={image2} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Digital Marketing Trends 2023</h1>
-              </div>
-            </div>
-            <div className="blog-containers" ref={(el) => (empathy2 = el)}>
-              <Link to={"/empathy"} className="link-imgs">
-                <img src={image1} alt="" className="blog-imgs"/>
-              </Link>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Empathy In UX</h1>
-              </div>
-            </div>
-          </div>
-        </aside>
         <aside className="blogcol" ref={(el) => (col2 = el)}>
           <div className="blog-container">
-            <div className="blog-containers" ref={(el) => (MVP1 = el)}>
-              <img src={image3} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Minimum Viable Product</h1>
+            <Link to={"/empathy"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (MVP1 = el)}>
+                <img src={image3} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">Minimum Viable Product</h1>
+                </div>
               </div>
-            </div>
-            <div className="blog-containers" ref={(el) => (design = el)}>
-              <img src={image4} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Design System</h1>
+            </Link>
+            <Link to={"/Story"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (design = el)}>
+                <img src={story} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">Storytelling</h1>
+                </div>
               </div>
-            </div>
-            <div className="blog-containers" ref={(el) => (MVP2 = el)}>
-              <img src={image3} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Minimum Viable Product</h1>
+            </Link>
+            <Link to={"/react-vs-flutter"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (MVP2 = el)}>
+                <img src={reactimg} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">React Native Vs Flutter</h1>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </aside>
         <aside className="blogcol" ref={(el) => (col3 = el)}>
           <div className="blog-container">
-            <div className="blog-containers" ref={(el) => (NCR1 = el)}>
-              <img src={image5} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">No Code Revolution</h1>
+          <Link to={"/Design"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (design = el)}>
+                <img src={image4} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">Design System</h1>
+                </div>
               </div>
-            </div>
-            <div className="blog-containers" ref={(el) => (SVM = el)}>
-              <img src={image6} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">Shopify Vs Magento</h1>
+            </Link>
+            <Link to={"/shopify-vs-magento"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (SVM = el)}>
+                <img src={image6} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">Shopify Vs Magento</h1>
+                </div>
               </div>
-            </div>
-            <div className="blog-containers" ref={(el) => (NCR2 = el)}>
-              <img src={image5} alt="" className="blog-imgs"/>
-              <div className="blog-container-content">
-                <h1 className="blog-heading">No Code Revolution</h1>
+            </Link>
+            <Link to={"/no-code-revolution"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (NCR2 = el)}>
+                <img src={image5} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">No Code Revolution</h1>
+                </div>
               </div>
-            </div>
+            </Link>
           </div>
         </aside>
-        <div className="arrow-left-right" ref={(el) => (arrow = el)}>
-          <img src={left_arrow} alt="" id="left-arr"/>
-          <p id="no1by5">1/5</p>
-          <img
-            src={right_arrow}
-            alt=""
-            srcset=""
-            id="right-arr"
-                    />
-        </div>
+        <aside className="blogcol" ref={(el) => (col1 = el)}>
+          <div className="blog-container">
+            <Link to={"/empathy"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (MVP1 = el)}>
+                <img src={image3} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">Minimum Viable Product</h1>
+                </div>
+              </div>
+            </Link>
+            <Link to={"/digital-marketing-trends-2023"} className="link-imgs">
+              <div
+                className="blog-containers"
+                ref={(el) => (digitalmarketing = el)}
+              >
+                <img src={image2} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">
+                    Digital Marketing Trends 2023
+                  </h1>
+                </div>
+              </div>
+            </Link>
+            <Link to={"/empathy-in-UX"} className="link-imgs">
+              <div className="blog-containers" ref={(el) => (empathy2 = el)}>
+                <img src={image1} alt="" className="blog-imgs" />
+                <div className="blog-container-content">
+                  <h1 className="blog-heading">Empathy In UX</h1>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </aside>
       </section>
     </>
   );
