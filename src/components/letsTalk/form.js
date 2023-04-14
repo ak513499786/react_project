@@ -12,6 +12,7 @@ function Form() {
   const navigate = useNavigate("/home");
 
   const handleSubmit = async (e) => {
+    e.preventDefault();
     const data = { fristName, lastName, email, number, message };
     console.log(data);
     const response = await axios

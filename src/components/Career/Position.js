@@ -213,7 +213,7 @@ function Position() {
                 <input
                   type="email"
                   onChange={(e) => SetEmail(e.target.value)}
-                  placeholder="Phone*"
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -288,7 +288,7 @@ function Position() {
                 <input
                   type="email"
                   onChange={(e) => SetEmail(e.target.value)}
-                  placeholder="Phone*"
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -364,7 +364,7 @@ function Position() {
                 <input
                   type="email"
                   onChange={(e) => SetEmail(e.target.value)}
-                  placeholder="Phone*"
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -439,7 +439,7 @@ function Position() {
                 <input
                   type="email"
                   onChange={(e) => SetEmail(e.target.value)}
-                  placeholder="Phone*"
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -515,7 +515,7 @@ function Position() {
                 <input
                   type="email"
                   onChange={(e) => SetEmail(e.target.value)}
-                  placeholder="Phone*"
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
