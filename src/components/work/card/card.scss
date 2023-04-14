@@ -287,8 +287,6 @@
   transform: rotate(-90deg) translateY(450px);
   transform-origin: center center;
   padding: 25px 0 0 0;
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
 }
 
 .test {
@@ -301,8 +299,6 @@
     width: 390px;
     height: 602px;
     margin: -140px 95px;
-    scroll-snap-stop: always;
-    scroll-snap-align: start;
   }
 }
 

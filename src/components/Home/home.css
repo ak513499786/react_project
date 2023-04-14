@@ -2358,13 +2358,13 @@
     height: 240px;
   }
   .home {
-    height: calc(100vh + 2950px);
+    height: calc(100vh + 2900px);
   }
   .exp_btn-content {
     padding: 7px 25%;
     text-align: center;
     position: relative;
-    bottom: 80px;
+    bottom: 30px;
   }
   .blog-home-container {
     gap: 50px;

@@ -104,7 +104,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
                       View case study
                     </button>
                   </div>
@@ -133,7 +133,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
                       View case study
                     </button>
                   </div>
@@ -163,7 +163,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
                       View case study
                     </button>
                   </div>
@@ -193,7 +193,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
                       View case study
                     </button>
                   </div>
@@ -223,7 +223,7 @@ const Card = () => {
                     esse nostrum fugit. Modi minima error tempore.
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
-                    <button className="btn about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                    <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
                       View case study
                     </button>
                   </div>
@@ -306,7 +306,7 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn  max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn  max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl ">
                           View case study
                         </button>
                       </div>
@@ -337,7 +337,7 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl ">
                           View case study
                         </button>
                       </div>
@@ -368,7 +368,7 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
                           View case study
                         </button>
                       </div>
@@ -399,7 +399,7 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
                           View case study
                         </button>
                       </div>
@@ -430,7 +430,7 @@ const Card = () => {
                         ipsa esse nostrum fugit. Modi minima error tempore.
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
-                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                        <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
                           View case study
                         </button>
                       </div>
@@ -483,7 +483,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -513,7 +513,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -543,7 +543,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -573,7 +573,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -603,7 +603,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -633,7 +633,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -663,7 +663,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
@@ -693,7 +693,7 @@ const Card = () => {
                   fugit. Modi minima error tempore.
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
-                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl text-cyan-50">
+                  <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>

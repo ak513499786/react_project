@@ -28,8 +28,8 @@
   left: 0px;
   display: flex;
   flex-direction: column;
-  scroll-snap-type: proximity;
-  scroll-snap-type: y proximity;
+  /* scroll-snap-type: scroll; */
+  /* scroll-snap-type: y; */
 }
 .vertical-animation-container {
   display: flex;
@@ -40,9 +40,11 @@
   width: 100%;
   padding-bottom: 102px;
   margin-top: 0px;
-  height: 300px;
-  scroll-snap-stop: always;
-  scroll-snap-align: start;
+  /* scroll-snap-type: both mandatory; */
+  scroll-snap-type: y mandatory;
+
+  scroll-snap-align: start end;
+  /* scroll-snap-align: center; */
 }
 .vertical-animation-h1 {
   width: 614.53px;
@@ -139,6 +141,7 @@
   }
   .vertical-animation-container {
     width: 430px;
+    height: 380px;
   }
   .vertical-animation-para {
     width: 100%;
@@ -222,7 +225,7 @@
   .horizontal-animation-container {
     gap: 150px;
   }
-  .vertical-animation-container{
+  .vertical-animation-container {
     padding-bottom: 180px;
   }
 }
