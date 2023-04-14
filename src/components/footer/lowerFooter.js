@@ -35,8 +35,8 @@ export default function Lowerfooter() {
       ease: Bounce,
     });
     tl.fromTo(footeranimationwidth, 1, { width: 102 }, { width: 102 });
-    tl.fromTo(footeranimationwidth, 0.4, { width: 102 }, { width: 230 });
-    tl.fromTo(footeranimationwidth, 1, { width: 230 }, { width: 230 });
+    tl.fromTo(footeranimationwidth, 0.4, { width: 102 }, { width: 235 });
+    tl.fromTo(footeranimationwidth, 1, { width: 235 }, { width: 235 });
   }, []);
   return (
     <section className="lower-footer">

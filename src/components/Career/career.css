@@ -657,6 +657,7 @@
   .whyus-container {
     width: 380px;
     padding: 30px;
+    gap: 0;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -871,6 +872,7 @@
   }
   .whyus-container{
     width: 300px;
+    gap: 20px;
   }
   .life-h1 {
     font-size: 43px;

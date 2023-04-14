@@ -48,8 +48,6 @@
   letter-spacing: -0.03em;
   color: #848484;
   opacity: 0.8;
-  text-align: center;
-  width: 100%;
 }
 .empathy-hero-h1 {
   width: 100%;
@@ -72,6 +70,12 @@
 .cheese-img {
   width: 45.51px;
   height: 45.51px;
+}
+.blog-date{
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 20px;
 }
 .cheese {
   display: flex;
