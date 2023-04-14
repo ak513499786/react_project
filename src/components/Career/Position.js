@@ -1,8 +1,8 @@
 import gsap from "gsap";
-import { useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useRef, useEffect, useState } from "react";
+import axios from "axios";
 
-export default function Positions() {
+function Position() {
   let positioncard = useRef(null);
   let applyingform = useRef(null);
   let jobdesc = useRef(null);
@@ -19,6 +19,28 @@ export default function Positions() {
   let applyingform4 = useRef(null);
   let jobdesc4 = useRef(null);
   let position = useRef(null);
+
+  const [fristName, SetfristName] = useState("");
+  const [lastName, SetlastName] = useState("");
+  const [email, SetEmail] = useState("");
+  const [number, SetNumber] = useState("");
+  const [message, Setmessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    const data = { fristName, lastName, email, message };
+    console.log(data);
+    const response = await axios
+      .post(
+        "https://backend-production-f9ef.up.railway.app/send_mail_career",
+        data
+      )
+      .then((response) => {
+        console.log(response);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const application = () => {
     gsap.to(positioncard, 0.1, { css: { display: "block" } });
@@ -103,57 +125,36 @@ export default function Positions() {
           <h1 className="position-h1">Open Positions</h1>
           <div className="open-pos" ref={(el) => (position = el)}>
             <div className="positions" onClick={application}>
-              <h1 className="position-content-h1">
-                Product Designer
-                <span className="brackets">(</span>UX
-                <span className="brackets">/</span>UI
-                <span className="brackets">)</span>
-              </h1>
-              <span className="office">
-                Bangalore <span className="brackets">(</span>Remote
-                <span className="brackets">)</span>
-              </span>
+              <h1 className="position-content-h1">Product Designer (UX/UI)</h1>
+              <span className="office">Bangalore (Remote)</span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application1}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Mobile Frontend
               </h1>
-              <span className="office">
-                Bangalore <span className="brackets">(</span>Remote
-                <span className="brackets">)</span>
-              </span>
+              <span className="office">Bangalore (Remote)</span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application2}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Web Frontend
               </h1>
-              <span className="office">
-                Bangalore <span className="brackets">(</span>Remote
-                <span className="brackets">)</span>
-              </span>
+              <span className="office">Bangalore (Remote)</span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application3}>
               <h1 className="position-content-h1">
                 Software Development Engineer - Backend
               </h1>
-              <span className="office">
-                Bangalore <span className="brackets">(</span>Remote
-                <span className="brackets">)</span>
-              </span>
+              <span className="office">Bangalore (Remote)</span>
             </div>
             <hr className="pos-hr" />
             <div className="positions" onClick={application4}>
               <h1 className="position-content-h1">
-                Software Development Engineer - CMS
-                <span className="brackets">/</span>E-Commerce
+                Software Development Engineer - CMS/E-Commerce
               </h1>
-              <span className="office">
-                Bangalore <span className="brackets">(</span>Remote
-                <span className="brackets">)</span>
-              </span>
+              <span className="office">Bangalore (Remote)</span>
             </div>
             <hr className="pos-hr" />
           </div>
@@ -161,11 +162,7 @@ export default function Positions() {
       </section>
       <div className="PD" ref={(el) => (positioncard = el)}>
         <h1 className="job-pd-title">
-          <span className="title">
-            Product Designer <span className="brackets">(</span>UI
-            <span className="brackets">/</span>UX
-            <span className="brackets">)</span>
-          </span>
+          Product Designer (UI/UX)
           <div className="jobline" onClick={formhide}>
             <div className="close-line"></div>
           </div>
@@ -182,32 +179,29 @@ export default function Positions() {
             uplift brand values.
           </p>
           <div className="job-req">
-            Figma <span className="and">|</span>Wireframes{" "}
-            <span className="and"> &</span> User Flows{" "}
-            <span className="and">|</span>Prototypes UX Research{" "}
-            <span className="and">|</span>Personas
-            <span className="and">|</span>Design System
+            Figma | Wireframes <span className="and"> &</span> User Flows |
+            Prototypes UX Research | Personas | Design System
           </div>
-          <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn">
-            <p className="about_btn_content">
-              <Link to="mailto:hr@codelinear.com">apply now</Link>
-            </p>
+          <p className="apply">Feel like you’re a match?</p>
+          <div className="apply_btn" onClick={applyNow}>
+            <p className="about_btn_content">apply now</p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform = el)}>
-          <form action="" className="form">
+          <div className="form">
             <div className="name-container">
               <input
                 type="text"
                 placeholder="First Name*"
                 className="first-name"
+                onChange={(e) => SetfristName(e.target.value)}
                 required
               />
               <input
                 type="text"
                 placeholder="Last Name*"
                 className="first-name"
+                onChange={(e) => SetlastName(e.target.value)}
                 required
               />
             </div>
@@ -217,21 +211,29 @@ export default function Positions() {
                   <option value="">+91</option>
                 </select>
                 <input
-                  type="number"
-                  placeholder="Phone*"
+                  type="email"
+                  onChange={(e) => SetEmail(e.target.value)}
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
               </div>
               <input
                 type="text"
-                placeholder="Past The Link Of Your Resume Here*"
+                placeholder="Past The Drive Link Of Your Resume Here*"
                 className="first-name"
+                onChange={(e) => Setmessage(e.target.value)}
                 required
               />
             </div>
-            <button className="sub_btn-content submit_btn">submit</button>
-          </form>
+
+            <button
+              onClick={handleSubmit}
+              className="sub_btn-content submit_btn"
+            >
+              submit
+            </button>
+          </div>
         </div>
       </div>
       <div className="PD" ref={(el) => (positioncard1 = el)}>
@@ -245,7 +247,7 @@ export default function Positions() {
         <p className="job-loc">Experience Band: 3+ Yrs</p>
         <div className="job-description" ref={(el) => (jobdesc1 = el)}>
           <p className="job-pd-desc job-loc">
-            At Codelinear, we are looking for people who are passionate and
+            AAt Codelinear, we are looking for people who are passionate and
             driven to be the "Propellers of Impact". As a mobile front-end
             developer, you will work with our front-end experts to build
             high-definition and responsive mobile applications that seamlessly
@@ -255,26 +257,26 @@ export default function Positions() {
           <div className="job-req">
             Android Java | Kotlin | Objective-C | Swift | React Native | Flutter
           </div>
-          <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn">
-            <p className="about_btn_content">
-              <Link to="mailto:hr@codelinear.com">apply now</Link>
-            </p>
+          <p className="apply">Feel like you’re a match?</p>
+          <div className="apply_btn" onClick={applyNow1}>
+            <p className="about_btn_content">apply now</p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform1 = el)}>
-          <form action="" className="form">
+          <div className="form">
             <div className="name-container">
               <input
                 type="text"
                 placeholder="First Name*"
                 className="first-name"
+                onChange={(e) => SetfristName(e.target.value)}
                 required
               />
               <input
                 type="text"
                 placeholder="Last Name*"
                 className="first-name"
+                onChange={(e) => SetlastName(e.target.value)}
                 required
               />
             </div>
@@ -284,8 +286,9 @@ export default function Positions() {
                   <option value="">+91</option>
                 </select>
                 <input
-                  type="number"
-                  placeholder="Phone*"
+                  type="email"
+                  onChange={(e) => SetEmail(e.target.value)}
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -294,11 +297,18 @@ export default function Positions() {
                 type="text"
                 placeholder="Past The Drive Link Of Your Resume Here*"
                 className="first-name"
+                onChange={(e) => Setmessage(e.target.value)}
                 required
               />
             </div>
-            <button className="sub_btn-content submit_btn">submit</button>
-          </form>
+
+            <button
+              onClick={handleSubmit}
+              className="sub_btn-content submit_btn"
+            >
+              submit
+            </button>
+          </div>
         </div>
       </div>
       <div className="PD" ref={(el) => (positioncard2 = el)}>
@@ -323,26 +333,26 @@ export default function Positions() {
             HTML5 | CSS3 | jQuery | JavaScript | BootStrap | React.js Veu.js |
             Angular
           </div>
-          <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn">
-            <p className="about_btn_content">
-              <Link to="mailto:hr@codelinear.com">apply now</Link>
-            </p>
+          <p className="apply">Feel like you’re a match?</p>
+          <div className="apply_btn" onClick={applyNow2}>
+            <p className="about_btn_content">apply now</p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform2 = el)}>
-          <form action="" className="form">
+          <div className="form">
             <div className="name-container">
               <input
                 type="text"
                 placeholder="First Name*"
                 className="first-name"
+                onChange={(e) => SetfristName(e.target.value)}
                 required
               />
               <input
                 type="text"
                 placeholder="Last Name*"
                 className="first-name"
+                onChange={(e) => SetlastName(e.target.value)}
                 required
               />
             </div>
@@ -352,8 +362,9 @@ export default function Positions() {
                   <option value="">+91</option>
                 </select>
                 <input
-                  type="number"
-                  placeholder="Phone*"
+                  type="email"
+                  onChange={(e) => SetEmail(e.target.value)}
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -362,11 +373,18 @@ export default function Positions() {
                 type="text"
                 placeholder="Past The Drive Link Of Your Resume Here*"
                 className="first-name"
+                onChange={(e) => Setmessage(e.target.value)}
                 required
               />
             </div>
-            <button className="sub_btn-content submit_btn">submit</button>
-          </form>
+
+            <button
+              onClick={handleSubmit}
+              className="sub_btn-content submit_btn"
+            >
+              submit
+            </button>
+          </div>
         </div>
       </div>
       <div className="PD" ref={(el) => (positioncard3 = el)}>
@@ -390,26 +408,26 @@ export default function Positions() {
           <div className="job-req">
             Php | Node.js | Python | Java | Ruby On Rails | Golang
           </div>
-          <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn">
-            <p className="about_btn_content">
-              <Link to="mailto:hr@codelinear.com">apply now</Link>
-            </p>
+          <p className="apply">Feel like you’re a match?</p>
+          <div className="apply_btn" onClick={applyNow3}>
+            <p className="about_btn_content">apply now</p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform3 = el)}>
-          <form action="" className="form">
+          <div className="form">
             <div className="name-container">
               <input
                 type="text"
                 placeholder="First Name*"
                 className="first-name"
+                onChange={(e) => SetfristName(e.target.value)}
                 required
               />
               <input
                 type="text"
                 placeholder="Last Name*"
                 className="first-name"
+                onChange={(e) => SetlastName(e.target.value)}
                 required
               />
             </div>
@@ -419,8 +437,9 @@ export default function Positions() {
                   <option value="">+91</option>
                 </select>
                 <input
-                  type="number"
-                  placeholder="Phone*"
+                  type="email"
+                  onChange={(e) => SetEmail(e.target.value)}
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -429,11 +448,18 @@ export default function Positions() {
                 type="text"
                 placeholder="Past The Drive Link Of Your Resume Here*"
                 className="first-name"
+                onChange={(e) => Setmessage(e.target.value)}
                 required
               />
             </div>
-            <button className="sub_btn-content submit_btn">submit</button>
-          </form>
+
+            <button
+              onClick={handleSubmit}
+              className="sub_btn-content submit_btn"
+            >
+              submit
+            </button>
+          </div>
         </div>
       </div>
       <div className="PD" ref={(el) => (positioncard4 = el)}>
@@ -458,26 +484,26 @@ export default function Positions() {
             WordPress | Shopify | Magento | HubSpot | WooCommerce BigCommerce |
             Drupal | Joomla | Wix | Squarespace Commerce
           </div>
-          <p className="apply">Feel like you're a match?</p>
-          <div className="apply_btn">
-            <p className="about_btn_content">
-              <Link to="mailto:hr@codelinear.com">apply now</Link>
-            </p>
+          <p className="apply">Feel like you’re a match?</p>
+          <div className="apply_btn" onClick={applyNow4}>
+            <p className="about_btn_content">apply now</p>
           </div>
         </div>
         <div className="applying-form" ref={(el) => (applyingform4 = el)}>
-          <form action="" className="form">
+          <div className="form">
             <div className="name-container">
               <input
                 type="text"
                 placeholder="First Name*"
                 className="first-name"
+                onChange={(e) => SetfristName(e.target.value)}
                 required
               />
               <input
                 type="text"
                 placeholder="Last Name*"
                 className="first-name"
+                onChange={(e) => SetlastName(e.target.value)}
                 required
               />
             </div>
@@ -487,8 +513,9 @@ export default function Positions() {
                   <option value="">+91</option>
                 </select>
                 <input
-                  type="number"
-                  placeholder="Phone*"
+                  type="email"
+                  onChange={(e) => SetEmail(e.target.value)}
+                  placeholder="Email"
                   className="phone-number"
                   required
                 />
@@ -497,13 +524,21 @@ export default function Positions() {
                 type="text"
                 placeholder="Past The Drive Link Of Your Resume Here*"
                 className="first-name"
+                onChange={(e) => Setmessage(e.target.value)}
                 required
               />
             </div>
-            <button className="sub_btn-content submit_btn">submit</button>
-          </form>
+
+            <button
+              onClick={handleSubmit}
+              className="sub_btn-content submit_btn"
+            >
+              submit
+            </button>
+          </div>
         </div>
       </div>
     </>
   );
 }
+export default Position;

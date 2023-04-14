@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import Contacthero from "./contactHero";
 import Navbar from '../navigationBar/Nav';
 import LowerFooter from '../footer/lowerFooter'
-import Form from "./form";
+import Form from "./Form";
 import Address from "./Address";
 export default function Talk() {
   let fade = useRef(null);
