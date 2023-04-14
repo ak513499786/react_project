@@ -3,37 +3,34 @@ export default function Trendsection() {
     <section className="empathy-content-container">
       <div className="empathy-content">
         <p className="empathy-para">
-          An interesting study published by Think With Google described how
-          Domino's and Diageo tackled ‘unintended bias’ in 2022. A significant
-          observation that the study made was about how brands miss out on
-          potential audiences on YouTube, and other channels by over-excluding
-          certain keywords.
+          Once upon a 2008, when a 28-year-old Londoner named Richard Pierson
+          quit his job, and felt burned out even as a freelancer, he turned to a
+          Buddhist monk named Andy Puddicombe. While Puddicombe taught Pierson a
+          2,500-year-old meditation technique, the latter had a business idea.
+          Both turned meditation into a successful local business in 2010.
         </p>
         <p className="empathy-para">
-          For instance, some brands stay away from words that the LGBTQ
-          community relates to in order to avoid hate speech online. However,
-          since YouTube has been actively taking steps against any kind of
-          specific audience, such exclusions block such brands from reaching out
-          to many potential buyers.
+          However, it was only when they converted this business into a
+          meditation and wellness app that things really began to get global.
+          Today, the app that the world knows as Headspace, has 11 million
+          downloads, and around 400,000 paying subscribers.
         </p>
         <p className="empathy-para">
-          The study then elaborated on how Domino’s and Diageo partnered with
-          YouTube to actively fight against such bias, and engage as diverse an
-          audience as possible.
+          Question - Did switching from offline to online do the trick for the
+          two local businessmen? Not at all.
         </p>
         <p className="empathy-para">
-          While YouTube is notorious for constantly changing algorithms, digital
-          marketing in general has also continually evolved. Businesses often
-          find themselves on edge, catching up to what’s changed and what
-          remains in online marketing.
-        </p>
-        <p className="empathy-para">
-          We have compiled a list of digital marketing trends that may assist
-          you in staying on top of your marketing game.
+          Headspace has a smooth user experience that instantly instills
+          confidence. Mental health and wellness are not things that people
+          easily trust. Headspace constantly gamifies the steps of meditation,
+          offers tips and tricks, and helps users follow through on their goals.
+          As a result, most users find themselves practicing meditation every
+          single day, inspiring them to become paid subscribers for deeper
+          transformation.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Customer experience over keywords</h1>
+        <h1 className="empathy-h1">What is UX design?</h1>
         <p className="empathy-para">
           This trend became a reality in 2022 when businesses saw Google’s AI
           search becoming more and more humane. As a result, content that really
@@ -43,191 +40,132 @@ export default function Trendsection() {
           and start pleasing your customers online.
         </p>
         <p className="empathy-para">
-          As a business, focus on optimizing the experience of your online
-          visitors. Some things you can do -
-          <div className="points">
-            <p className="empathy-para">
-              - easily-navigable website/mobile application
-            </p>
-            <p className="empathy-para">- ease of inquiries, order placement</p>
-            <p className="empathy-para">
-              - personalizing every touch point of purchase journey
-            </p>
-            <p className="empathy-para">
-              - informing customers through content bites
-            </p>
-          </div>
+          User Experience Design, or UX Design, is a term that is used to
+          define, and design how users will navigate an application, product, or
+          service. There was a time when UX design only meant the technical
+          experience of users on a mobile application or a website. Today, UX
+          design is carefully crafted when designing even physical products, or
+          service experiences.We will keep our scope of discussion here for
+          mobile, and web applications. UX involves bringing together the needs
+          of the customers, and matching them with the technical aspects of any
+          application.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Short videos</h1>
+        <h1 className="empathy-h1">
+          How does UX design impact the growth of SMEs?
+        </h1>
+        <h2 className="empathy-sub-heading">
+          1. UX design increases conversions
+        </h2>
         <p className="empathy-para">
-          Videos are not just about vertical or horizontal formats anymore. They
-          are about getting more information in less time. Instagram Reels is
-          just one of the many channels where your relevant customers are. Reels
-          say a lot about your customers. Let’s see -
-          <div className="points">
-            <p className="empathy-para">
-              - your customers want information or entertainment, but they don’t
-              have a lot of time
-            </p>
-            <p className="empathy-para">
-              - they are most likely to watch your content while waiting for
-              something or someone, or while traveling
-            </p>
-            <p className="empathy-para">
-              - they are more likely to watch your content on a mobile device
-            </p>
-          </div>
+          For SMEs, the initial buzz around their product, or service helps them
+          scale faster while also bringing them investment. Today, most
+          customers will visit a business’ website or a service’s application to
+          gain initial confidence. A good UX design will make them comfortable,
+          and they will be inclined to buy that product or service. A
+          significant challenge faced by Headspace UX designers initially was in
+          onboarding more clients. They used relatable graphics that showed
+          users doing meditation in their own zones such as workplace, kitchen,
+          hobbies etc - a factor that significantly improved sales.
         </p>
+        <h2 className="empathy-sub-heading">
+          2. UX design impacts brand loyalty
+        </h2>
         <p className="empathy-para">
-          Make 2023 the year you start producing short-form video content. Begin
-          with personalized content such as your team activities, your inner
-          workings, and your business routine, and eventually switch to your
-          value propositions.
+          User experience speaks to the emotions of the users. When a business
+          pays attention to the UX of their digital applications, users feel
+          connected. This impacts their (users) subconscious minds and keeps
+          them for a longer time. Retained customers become an annuity to a
+          small business, and become its brand ambassadors.
         </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">The Metaverse</h1>
+        <h2 className="empathy-sub-heading">
+          3. Saves run-up development costs
+        </h2>
         <p className="empathy-para">
-          Since some of the biggest brands, such as Starbucks and Nike, have
-          jumped on the bandwagon of the metaverse, this may become a huge trend
-          in 2023. Metaverse is like a parallel virtual world where people and
-          brands interact with each other, albeit more immersively. It is slowly
-          becoming a place where a lot of customers want to be. However, most
-          businesses do not have a practical use case. Just as it happened with
-          augmented reality and virtual reality applications back in 2018, the
-          metaverse may or may not find relevance in all business sectors.
+          When SMEs focus on UX in the beginning of their product or service
+          launch, they can practically save redesign and re-development costs
+          considerably. Remember, it will cost you less to create a great user
+          experience from scratch than it will to fix a poor UX.
         </p>
-        <p className="empathy-para">
-          A wise step would be to study the metaverse as a user in 2023,
-          interact with other users, and find out relevant areas for your
-          business. It is okay if you don’t use the metaverse at all for digital
-          marketing in 2023. However, this should be the year of collecting as
-          many use cases for your business as possible.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Information as bites</h1>
-        <p className="empathy-para">
-          If short-videos are any indication, the attention span of your
-          customers is getting worse by the day. Users today consume information
-          like snacks - it needs to provide instant gratification and satisfy
-          their hunger for knowledge or information. While long-form content
-          will never lose its significance, you must experiment with bite-sized
-          and easily digestible content in 2023, especially to lure your online
-          customers.
-        </p>
-        <p className="empathy-para">
-          As a leading UI/UX Design Agency, Codelinear delivers well-crafted
-          design services that can bring your ideas to life and make your
-          web/app stand out. If you are looking for empathetic UX/UI design, do
-          call us.
-        </p>
-        <p className="empathy-para">
-          Some things to consider -
-          <div className="points">
-            <p className="empathy-para">
-              - repurpose existing content into bite-sized information
-            </p>
-            <p className="empathy-para">
-              - simplify difficult concepts of your business/product or service
-            </p>
-            <p className="empathy-para">
-              - leverage social media channels to relay this information
-            </p>
-          </div>
+        <p
+          className="empathy-para"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            border: "1px solid #848484",
+            padding: "10px",
+            borderRadius: "13.3px",
+          }}
+        >
+          <p className="empathy-para">
+            "For every dollar spent to resolve a problem during product design.
+            10 dollars will be spent on the same problem during development. and
+            multiply it by 100 dollars or more if the problem had to be solved
+            after the product’s release."
+            <br />
+            Robert Pressmen
+            <strong className="opacity-50">
+              ("Software Engineering: A Practitioner’s Approach"){" "}
+            </strong>
+          </p>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Influencers aren’t going anywhere</h1>
+        <h2 className="empathy-sub-heading">
+          4. UX design lowers support cost
+        </h2>
         <p className="empathy-para">
-          This trend of businesses leveraging expert individuals to create brand
-          advocacy has been going on for nearly five years.2023 is not going to
-          be an exception. In fact, influencer marketing will continue to trend
-          widely, with some of the world’s biggest brands, and movie makers
-          using influencers to sell products, and entertainment.
+          The reason why good website or mobile application development
+          companies stress building a great UX design is because it ultimately
+          saves support costs in the long run. When users are easily able to
+          find what they are looking for, without getting distracted or
+          overwhelmed by the design of the web or mobile application, they
+          understand your product or service more quickly. This decreases the
+          number of support tickets or calls that your executives will need to
+          handle to answer users’ questions.
         </p>
+        <h2 className="empathy-sub-heading">
+          5. Leads to right messaging, and Google ranking
+        </h2>
         <p className="empathy-para">
-          Here’s what you can do -
-          <div className="points">
-            <p className="empathy-para">
-              - research opportunities to reach out to your audience first
-            </p>
-            <p className="empathy-para">
-              - short-list influencers who share the same values
-            </p>
-            <p className="empathy-para">
-              - start with a barter relationship with influencers instead of
-              spending money upfront
-            </p>
-          </div>
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Linked-in is a thought influencer in B2B</h1>
-        <p className="empathy-para">
-          There’s no better advocacy for B2B companies than to reach out and
-          influence relevant audiences on Linked-in. And 2023 will be the same.
-          There’s a certain credibility attached to the thought leadership
-          opportunities that Linked-in offers that B2B audiences are looking
-          for. In fact, a study has stated that Linked-in may capture nearly 25%
-          of US B2B advertising spending by 2024. Even as the platform evolves,
-          businesses should leverage the time to build relevant followers who
-          will eventually become their brand advocates.
-        </p>
-        <p className="empathy-para">
-          Some things to do in 2023 -
-          <div className="points">
-            <p className="empathy-para">
-              - use Linkedin’s new features for thought leadership
-            </p>
-            <p className="empathy-para">
-              - create credible Linked-in profiles for your founders.
-            </p>
-            <p className="empathy-para">
-              - post useful content about your industry
-            </p>
-            <p className="empathy-para">
-              - build relationships with competitors
-            </p>
-          </div>
+          Very few SMEs realize the importance of their site or mobile app's
+          Google ranking, and the kind of messaging that their app has. A smooth
+          UX design helps put the most important messages or goals of your
+          product in the right place. This also paves the way for best SEO
+          practices that your website or mobile app may need, resulting in a
+          better reach for your business on Google.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Not every trend is for your business </h1>
+        <h2 className="empathy-sub-heading">
+          6. Better understanding of your users
+        </h2>
         <p className="empathy-para">
-          Just like we mentioned about metaverse, not every digital marketing
-          trend is for you. While it is crucial to know beforehand what’s going
-          on in the market, it is all the more significant to contextualize
-          trends for your business. Let your customers be your guiding light
-          about which trends to follow, and you will eventually find the right
-          mix.
+          Headspace designers consciously put in graphics, details, interface,
+          and content language during UX design that normalized meditation for
+          people. For instance, the team experimented with making the sign-up
+          process easier; instead of a demo video, they simplified the usage of
+          the app by using Gifs showcasing steps to use the app; and even added
+          ‘Choose your own adventure’ option allowing users to choose how they
+          wished to sign up. These small experiments in UX design at beta stage
+          led to better understanding of users. Since the discipline of UX
+          design begins with creating user profiles, and adding the right touch
+          points for user purchases, this sends so much user data onto your
+          dashboard to extract valuable insights for SMEs to benefit from.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Keep focusing on your foundation </h1>
+        <h1 className="empathy-h1">
+          You need a wise UX design strategy, and UX design partners
+        </h1>
         <p className="empathy-para">
-          A trend that would never go out of fashion is to focus on your
-          foundations, such as -
-          <div className="points">
-            <p className="empathy-para">
-              - a good and easy-to-navigate website
-            </p>
-            <p className="empathy-para">- a scalable mobile application</p>
-            <p className="empathy-para">- decent presence on social media</p>
-            <p className="empathy-para">- a clear brand voices</p>
-            <p className="empathy-para">- clarity of communication</p>
-            <p className="empathy-para">- consistency in messaging</p>
-            <p className="empathy-para">- SEO best practises</p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Codelinear believes that it is the foundations that will propel your
-          company forward.We have helped many businesses get the right brand
-          voice through a robust and easily navigable website and/or mobile
-          application, design voice, and digital marketing. If you are looking
-          for something that lasts, we should talk.
+          UX design does not happen by accident or by instinct. It is a practice
+          that needs thoughtfulness, a smart strategy, and trusted design
+          partners. If you are trying to figure out how you can make your
+          digital business experience memorable for your customers, do talk to
+          us.
         </p>
       </div>
     </section>

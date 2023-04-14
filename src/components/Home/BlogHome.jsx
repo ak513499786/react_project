@@ -389,7 +389,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
-                    <Link to={"/minimu-viable-product"}>
+                    <Link to={"/minimum-viable-product"}>
                       <img
                         src={image7}
                         alt=""

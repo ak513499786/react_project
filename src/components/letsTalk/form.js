@@ -29,7 +29,7 @@ function Form() {
     <section className="contact-form">
       <div className="contact-container">
         <h1 className="contact-form-h1">How Can We Reach You?</h1>
-        {/* <form action="" id="form"> */}
+        <form action="" id="form">
         <div className="name-container">
           <input
             type="text"
@@ -79,7 +79,7 @@ function Form() {
         <button onClick={handleSubmit} className="sub_btn">
           <p className="sub_button-content">submit your response</p>
         </button>
-        {/* </form> */}
+        </form>
       </div>
     </section>
   );
