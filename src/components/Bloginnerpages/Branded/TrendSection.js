@@ -3,231 +3,105 @@ export default function Trendsection() {
     <section className="empathy-content-container">
       <div className="empathy-content">
         <p className="empathy-para">
-          An interesting study published by Think With Google described how
-          Domino's and Diageo tackled ‘unintended bias’ in 2022. A significant
-          observation that the study made was about how brands miss out on
-          potential audiences on YouTube, and other channels by over-excluding
-          certain keywords.
+          Ever walked into Nike's flagship store in New York City? The store is
+          designed to be a "shrine" to the brand's values and products, with
+          interactive displays, cutting-edge technology, and immersive
+          experiences. One of the store's most iconic features is the "Sneaker
+          Bar," where customers can customize their shoes and see them come to
+          life on a large video screen. The store's design and features create a
+          powerful emotional connection with consumers, making them feel part of
+          the Nike brand.
         </p>
         <p className="empathy-para">
-          For instance, some brands stay away from words that the LGBTQ
-          community relates to in order to avoid hate speech online. However,
-          since YouTube has been actively taking steps against any kind of
-          specific audience, such exclusions block such brands from reaching out
-          to many potential buyers.
+          If you are thinking, how's that walk-in store relevant in a
+          post-pandemic world where virtual experiences are more conveniently
+          available, then consider why a conglomerate like Apple takes the pains
+          of opening Apple Stores around the world. Apple has revolutionized the
+          retail experience by creating spaces that are minimalist, elegant, and
+          focused on the user experience design. The stores feature interactive
+          displays, knowledgeable staff, and an open layout that encourages
+          customers to explore and engage with the brand's products. By creating
+          a space that is both functional and emotionally engaging, Apple has
+          disrupted the traditional retail model and established itself as a
+          leader in the industry. This makes Apple all the more relevant as it
+          has married the virtual and the real effortlessly in its experience
+          stores, that are a form of what’s termed as ‘branded environments’,
+          apart from replicating such environments on its website.
         </p>
         <p className="empathy-para">
-          The study then elaborated on how Domino’s and Diageo partnered with
-          YouTube to actively fight against such bias, and engage as diverse an
-          audience as possible.
-        </p>
-        <p className="empathy-para">
-          While YouTube is notorious for constantly changing algorithms, digital
-          marketing in general has also continually evolved. Businesses often
-          find themselves on edge, catching up to what’s changed and what
-          remains in online marketing.
-        </p>
-        <p className="empathy-para">
-          We have compiled a list of digital marketing trends that may assist
-          you in staying on top of your marketing game.
+          One approach that has gained popularity in the field of marketing and
+          digital marketing in recent years is branded environments, which
+          create immersive experiences that engage and captivate consumers.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Customer experience over keywords</h1>
+        <h1 className="empathy-h1">What are branded environments?</h1>
         <p className="empathy-para">
-          This trend became a reality in 2022 when businesses saw Google’s AI
-          search becoming more and more humane. As a result, content that really
-          helped users or searchers began trending instead of keyword-heavy
-          content. This will mature in 2023 as search engines evolve, and become
-          more customer/user-oriented. It may be time you stop pleasing Google,
-          and start pleasing your customers online.
+          Branded environments are physical spaces that are designed to immerse
+          consumers in a brand's story, values, and personality. These spaces
+          can range from retail stores and showrooms to corporate offices, and
+          event spaces. The goal is to create an environment that reinforces a
+          brand's identity and creates an emotional connection with consumers.
+          This may be created via physical stores or online experiences such as
+          a website or a mobile application.
         </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-h1">The art of disruptive branding</h1>
         <p className="empathy-para">
-          As a business, focus on optimizing the experience of your online
-          visitors. Some things you can do -
+          Branded environments are not just for large corporations with huge
+          budgets. Any business can create a branded environment that engages
+          and captivates consumers. Here are a few key takeaways for businesses
+          looking to implement a branded environment strategy:
           <div className="points">
             <p className="empathy-para">
-              - easily-navigable website/mobile application
+              <strong className="opacity-70">1. Know your brand :</strong>{" "}
+              Before you can create a branded environment, you need to have a
+              clear understanding of your brand's values, personality, and
+              identity. This will help you design a space like the Nike flagship
+              store that reinforces your brand and creates an emotional
+              connection with consumers.
             </p>
-            <p className="empathy-para">- ease of inquiries, order placement</p>
             <p className="empathy-para">
-              - personalizing every touch point of purchase journey
+              <strong className="opacity-70">2. Think outside the box :</strong>{" "}
+              Branded environments should be unexpected and memorable. Don't be
+              afraid to push the boundaries of traditional branding and create
+              experiences that are disruptive and emotionally impactful.
             </p>
             <p className="empathy-para">
-              - informing customers through content bites
+              <strong className="opacity-70">3. Engage all the senses :</strong>{" "}
+              Branded environments should engage all the senses, not just sight.
+              Consider how sound, touch, smell, and taste can be used to
+              reinforce your brand's identity and create a memorable experience.
+            </p>
+            <p className="empathy-para">
+              <strong className="opacity-70">4. Be authentic : </strong> Branded
+              environments should be authentic and true to your brand's values
+              and personality. Don't create an experience that is out of sync
+              with your brand, as this can create confusion and undermine the
+              emotional connection with consumers.Even virtually, Apple has
+              managed to create an aura that just by engaging with the brand
+              online, its consumers find the experience fulfilling.
+            </p>
+            <p className="empathy-para">
+              <strong className="opacity-70">5. Measure your success : </strong>
+              Branded environments should be designed with specific goals and
+              metrics in mind. Be sure to measure the success of your branded
+              environment strategy and make adjustments as needed.
             </p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Short videos</h1>
+        <h1 className="empathy-h1">Final thoughts</h1>
         <p className="empathy-para">
-          Videos are not just about vertical or horizontal formats anymore. They
-          are about getting more information in less time. Instagram Reels is
-          just one of the many channels where your relevant customers are. Reels
-          say a lot about your customers. Let’s see -
-          <div className="points">
-            <p className="empathy-para">
-              - your customers want information or entertainment, but they don’t
-              have a lot of time
-            </p>
-            <p className="empathy-para">
-              - they are most likely to watch your content while waiting for
-              something or someone, or while traveling
-            </p>
-            <p className="empathy-para">
-              - they are more likely to watch your content on a mobile device
-            </p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Make 2023 the year you start producing short-form video content. Begin
-          with personalized content such as your team activities, your inner
-          workings, and your business routine, and eventually switch to your
-          value propositions.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">The Metaverse</h1>
-        <p className="empathy-para">
-          Since some of the biggest brands, such as Starbucks and Nike, have
-          jumped on the bandwagon of the metaverse, this may become a huge trend
-          in 2023. Metaverse is like a parallel virtual world where people and
-          brands interact with each other, albeit more immersively. It is slowly
-          becoming a place where a lot of customers want to be. However, most
-          businesses do not have a practical use case. Just as it happened with
-          augmented reality and virtual reality applications back in 2018, the
-          metaverse may or may not find relevance in all business sectors.
-        </p>
-        <p className="empathy-para">
-          A wise step would be to study the metaverse as a user in 2023,
-          interact with other users, and find out relevant areas for your
-          business. It is okay if you don’t use the metaverse at all for digital
-          marketing in 2023. However, this should be the year of collecting as
-          many use cases for your business as possible.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Information as bites</h1>
-        <p className="empathy-para">
-          If short-videos are any indication, the attention span of your
-          customers is getting worse by the day. Users today consume information
-          like snacks - it needs to provide instant gratification and satisfy
-          their hunger for knowledge or information. While long-form content
-          will never lose its significance, you must experiment with bite-sized
-          and easily digestible content in 2023, especially to lure your online
-          customers.
-        </p>
-        <p className="empathy-para">
-          As a leading UI/UX Design Agency, Codelinear delivers well-crafted
-          design services that can bring your ideas to life and make your
-          web/app stand out. If you are looking for empathetic UX/UI design, do
-          call us.
-        </p>
-        <p className="empathy-para">
-          Some things to consider -
-          <div className="points">
-            <p className="empathy-para">
-              - repurpose existing content into bite-sized information
-            </p>
-            <p className="empathy-para">
-              - simplify difficult concepts of your business/product or service
-            </p>
-            <p className="empathy-para">
-              - leverage social media channels to relay this information
-            </p>
-          </div>
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Influencers aren’t going anywhere</h1>
-        <p className="empathy-para">
-          This trend of businesses leveraging expert individuals to create brand
-          advocacy has been going on for nearly five years.2023 is not going to
-          be an exception. In fact, influencer marketing will continue to trend
-          widely, with some of the world’s biggest brands, and movie makers
-          using influencers to sell products, and entertainment.
-        </p>
-        <p className="empathy-para">
-          Here’s what you can do -
-          <div className="points">
-            <p className="empathy-para">
-              - research opportunities to reach out to your audience first
-            </p>
-            <p className="empathy-para">
-              - short-list influencers who share the same values
-            </p>
-            <p className="empathy-para">
-              - start with a barter relationship with influencers instead of
-              spending money upfront
-            </p>
-          </div>
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Linked-in is a thought influencer in B2B</h1>
-        <p className="empathy-para">
-          There’s no better advocacy for B2B companies than to reach out and
-          influence relevant audiences on Linked-in. And 2023 will be the same.
-          There’s a certain credibility attached to the thought leadership
-          opportunities that Linked-in offers that B2B audiences are looking
-          for. In fact, a study has stated that Linked-in may capture nearly 25%
-          of US B2B advertising spending by 2024. Even as the platform evolves,
-          businesses should leverage the time to build relevant followers who
-          will eventually become their brand advocates.
-        </p>
-        <p className="empathy-para">
-          Some things to do in 2023 -
-          <div className="points">
-            <p className="empathy-para">
-              - use Linkedin’s new features for thought leadership
-            </p>
-            <p className="empathy-para">
-              - create credible Linked-in profiles for your founders.
-            </p>
-            <p className="empathy-para">
-              - post useful content about your industry
-            </p>
-            <p className="empathy-para">
-              - build relationships with competitors
-            </p>
-          </div>
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Not every trend is for your business </h1>
-        <p className="empathy-para">
-          Just like we mentioned about metaverse, not every digital marketing
-          trend is for you. While it is crucial to know beforehand what’s going
-          on in the market, it is all the more significant to contextualize
-          trends for your business. Let your customers be your guiding light
-          about which trends to follow, and you will eventually find the right
-          mix.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Keep focusing on your foundation </h1>
-        <p className="empathy-para">
-          A trend that would never go out of fashion is to focus on your
-          foundations, such as -
-          <div className="points">
-            <p className="empathy-para">
-              - a good and easy-to-navigate website
-            </p>
-            <p className="empathy-para">- a scalable mobile application</p>
-            <p className="empathy-para">- decent presence on social media</p>
-            <p className="empathy-para">- a clear brand voices</p>
-            <p className="empathy-para">- clarity of communication</p>
-            <p className="empathy-para">- consistency in messaging</p>
-            <p className="empathy-para">- SEO best practises</p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Codelinear believes that it is the foundations that will propel your
-          company forward.We have helped many businesses get the right brand
-          voice through a robust and easily navigable website and/or mobile
-          application, design voice, and digital marketing. If you are looking
-          for something that lasts, we should talk.
+          A branded environment is a powerful tool for disruptive branding that
+          can help companies stand out from the competition and create emotional
+          connections with consumers. An integral part of creating such
+          environments is through UX design, both physically and virtually. If
+          you are looking for an agency that can create immersive branded
+          environments apart from website or mobile application development, do
+          give us a call.
         </p>
       </div>
     </section>

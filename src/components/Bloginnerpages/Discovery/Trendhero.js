@@ -7,7 +7,9 @@ export default function Trendhero() {
       <div className="empathy-container">
         <div className="empathy-inner-content">
           <p className="date">23rd Feb 2023</p>
-          <h1 className="empathy-hero-h1">Digital Marketing</h1>
+          <h1 className="empathy-hero-h1">
+            Discovery Workshop: Why do you need one?
+          </h1>
         </div>
         {/* <div className="cheese">
           <img src={cheese} alt="" className="cheese-img" loading="lazy"/>
