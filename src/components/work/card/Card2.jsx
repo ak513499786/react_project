@@ -27,6 +27,7 @@ const Card2 = () => {
   const [explore, setExplore] = useState(false);
   const [isCentered, setIsCentered] = useState(false);
   const [isCenteredWork, setIsCenteredWork] = useState(false);
+  const [pos, setPos] = useState(false);
 
   useEffect(() => {
     window.addEventListener("resize", () => setWidth(window.innerWidth));
@@ -93,8 +94,23 @@ const Card2 = () => {
     };
   }, []);
 
-  //   //////////////////////////////////////////////////////////////////////
+  const done = (e) => {
+    // useLayoutEffect(() => {
+    e.preventDefault();
+    window.addEventListener("scroll", function () {
+      console.log("scroll event fired!");
+      console.log("window.scrollX:", window.scrollX);
+      if (window.scrollY > 500 && window.scrollY < 900) {
+        console.log("window.scrollX event has occurred!");
+        setPos(true);
+      } else {
+        setPos(false);
+      }
+    });
+    // }, []);
+  };
 
+  //   //////////////////////////////////////////////////////////////////////
 
   return (
     <>
@@ -123,10 +139,14 @@ const Card2 = () => {
               id="myyDiv"
               // ref={containerRef}
               //  className="worksection"
-              className={isCenteredWork ? "worksection" : "worksection1"}
+              className={pos ? "worksection" : "worksection1"}
             >
               {/* <HorizontalScroll> */}
-              <div id="myDiv" className={isCentered ? "testwithfalse" : "test"}>
+              <div
+                id="myDiv"
+                onScrollCapture={done}
+                className={isCentered ? "testwithfalse" : "test"}
+              >
                 <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                   <h1
                     className="text-5xl mt-24 wcw"
