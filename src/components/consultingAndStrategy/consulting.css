@@ -60,8 +60,8 @@
   font-family: "Graphik";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 25px;
   letter-spacing: 0em;
   color: #848484;
 }
@@ -145,8 +145,8 @@
   }
   .vertical-animation-para {
     width: 100%;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .vertical-animation-h1 {
     font-size: 45px;
@@ -170,12 +170,12 @@
     line-height: 44px;
   }
   .vertical-animation-para {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .horizontal-animation-para {
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 15px;
+    line-height: 25px;
   }
   .horizontal-animation {
     width: 35%;
@@ -205,10 +205,6 @@
   .vertical-animation-h1 {
     font-size: 30px;
     line-height: 33px;
-  }
-  .vertical-animation-para {
-    font-size: 14px;
-    line-height: 20px;
   }
   .horizontal-animation-para {
     line-height: 20px;
@@ -246,10 +242,6 @@
   }
   .vertical-animation-h1 {
     font-size: 25px;
-  }
-  .vertical-animation-para {
-    font-size: 13px;
-    line-height: 16px;
   }
   .horizontal-animation {
     width: 150px;

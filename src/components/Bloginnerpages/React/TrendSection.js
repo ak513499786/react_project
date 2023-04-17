@@ -3,101 +3,107 @@ export default function Trendsection() {
     <section className="empathy-content-container">
       <div className="empathy-content">
         <p className="empathy-para">
-          An interesting study published by Think With Google described how
-          Domino's and Diageo tackled ‘unintended bias’ in 2022. A significant
-          observation that the study made was about how brands miss out on
-          potential audiences on YouTube, and other channels by over-excluding
-          certain keywords.
+          Only a decade ago, it was hard to imagine life without mobile apps.
+          They now make our lives easier, with some even assisting us with our
+          daily chores. Statista reports that mobile apps are expected to
+          generate $935 billion in revenue globally in 2023.
         </p>
         <p className="empathy-para">
-          For instance, some brands stay away from words that the LGBTQ
-          community relates to in order to avoid hate speech online. However,
-          since YouTube has been actively taking steps against any kind of
-          specific audience, such exclusions block such brands from reaching out
-          to many potential buyers.
+          Businesses today need mobile apps faster, and they want apps that
+          perform equally well across all the platforms. But do all businesses
+          have the time and resources for the same?
         </p>
         <p className="empathy-para">
-          The study then elaborated on how Domino’s and Diageo partnered with
-          YouTube to actively fight against such bias, and engage as diverse an
-          audience as possible.
-        </p>
-        <p className="empathy-para">
-          While YouTube is notorious for constantly changing algorithms, digital
-          marketing in general has also continually evolved. Businesses often
-          find themselves on edge, catching up to what’s changed and what
-          remains in online marketing.
-        </p>
-        <p className="empathy-para">
-          We have compiled a list of digital marketing trends that may assist
-          you in staying on top of your marketing game.
+          Enter React Native and Flutter - two of the most popular
+          cross-platform mobile app development platforms.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Customer experience over keywords</h1>
+        <h1 className="empathy-h1">
+          How did React and Flutter enter the mobile universe?
+        </h1>
         <p className="empathy-para">
-          This trend became a reality in 2022 when businesses saw Google’s AI
-          search becoming more and more humane. As a result, content that really
-          helped users or searchers began trending instead of keyword-heavy
-          content. This will mature in 2023 as search engines evolve, and become
-          more customer/user-oriented. It may be time you stop pleasing Google,
-          and start pleasing your customers online.
+          Facebook launched its open-source framework, called React Native back
+          in 2015. It was the company’s attempt at equipping developers with a
+          JavaScript-based framework for the development of cross-platform apps.
+          React eliminates the need for compiling other technology stacks for
+          mobile app development. Companies such as Uber Eats, Instagram, and
+          Skype have since used React Native for their mobile app development
+          needs.
         </p>
         <p className="empathy-para">
-          As a business, focus on optimizing the experience of your online
-          visitors. Some things you can do -
+          In 2017, Google launched an open-source User Interface (UI) framework
+          that was targeted at aiding developers to design cross-platform apps
+          to run on mobile, Windows, macOS, and Linux. Flutter’s framework is
+          built upon Dart.
+        </p>
+        <p className="empathy-para">
+          Soon after, many big companies such as Philips Hue, Hamilton, Alibaba,
+          etc began developing mobile apps using Flutter. Ever since, Google has
+          frequently provided updates for Flutter, improving its performance
+          with each update.
+        </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-h1">Why are React and Flutter so popular?</h1>
+        <p className="empathy-para">
+          While native apps work better on mobile phones, developing native apps
+          for each platform is quite a waste of time. As a result, businesses
+          are always looking for technologies that would help them build
+          cross-platform apps that would run as well, if not better, than native
+          apps. Both React and Flutter offer open-source frameworks that solve
+          this problem. Both the frameworks offer many tools and features, such
+          as code reusability and Hot Reload with its ability to make changes on
+          the fly etc - a freedom that makes mobile app development faster.
+        </p>
+        <h2 className="empathy-sub-heading">React Native</h2>
+        <p className="empathy-para">
+          Based on React.JS, React Native uses JavaScript to create mobile
+          applications for iOS and Android. It also allows developers to develop
+          apps using one codebase. React offers fast mobile application
+          development and allows access to some third-party UI libraries with
+          ready-to-use components. React also enables the delivery of new
+          functionalities to supported platforms immediately.
+        </p>
+        <p className="empathy-para">
+          Pros of React Native
           <div className="points">
             <p className="empathy-para">
-              - easily-navigable website/mobile application
-            </p>
-            <p className="empathy-para">- ease of inquiries, order placement</p>
-            <p className="empathy-para">
-              - personalizing every touch point of purchase journey
+              - One codebase to build apps for two or more platforms
             </p>
             <p className="empathy-para">
-              - informing customers through content bites
+              - Uses JavaScript that makes mobile app development smoother
             </p>
+            <p className="empathy-para">
+              - Has a faster learning curve for developers
+            </p>
+            <p className="empathy-para">
+              - It saves upto 50% time on the testing
+            </p>
+            <p className="empathy-para">
+              - Growing and active community of developers
+            </p>
+          </div>
+        </p>
+        <p className="empathy-para">
+          Cons of React Native
+          <div className="points">
+            <p className="empathy-para">- Has limited components</p>
+            <p className="empathy-para">
+              - The user interface is easily broken
+            </p>
+            <p className="empathy-para">- Apps are larger than native ones</p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Short videos</h1>
+        <h1 className="empathy-sub-heading">Flutter </h1>
         <p className="empathy-para">
-          Videos are not just about vertical or horizontal formats anymore. They
-          are about getting more information in less time. Instagram Reels is
-          just one of the many channels where your relevant customers are. Reels
-          say a lot about your customers. Let’s see -
-          <div className="points">
-            <p className="empathy-para">
-              - your customers want information or entertainment, but they don’t
-              have a lot of time
-            </p>
-            <p className="empathy-para">
-              - they are most likely to watch your content while waiting for
-              something or someone, or while traveling
-            </p>
-            <p className="empathy-para">
-              - they are more likely to watch your content on a mobile device
-            </p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Make 2023 the year you start producing short-form video content. Begin
-          with personalized content such as your team activities, your inner
-          workings, and your business routine, and eventually switch to your
-          value propositions.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">The Metaverse</h1>
-        <p className="empathy-para">
-          Since some of the biggest brands, such as Starbucks and Nike, have
-          jumped on the bandwagon of the metaverse, this may become a huge trend
-          in 2023. Metaverse is like a parallel virtual world where people and
-          brands interact with each other, albeit more immersively. It is slowly
-          becoming a place where a lot of customers want to be. However, most
-          businesses do not have a practical use case. Just as it happened with
-          augmented reality and virtual reality applications back in 2018, the
-          metaverse may or may not find relevance in all business sectors.
+          Flutter helps create cross-platform applications using a single
+          codebase. So you don’t have to develop separate apps for mobile, web,
+          and desktop. Being an open-source platform, any business owner can
+          download it and get started. Apps built using Flutter are intuitive
+          and easier to navigate.
         </p>
         <p className="empathy-para">
           A wise step would be to study the metaverse as a user in 2023,

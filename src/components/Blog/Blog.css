@@ -88,6 +88,12 @@
   width: 358.67px;
   height: 198.63px;
   border-radius: 13.3px;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+.blog-imgs:hover{
+  opacity: 1;
+  box-shadow: 0px 0px 10px #848484;
 }
 .blog-container-content {
   display: flex;
@@ -301,6 +307,9 @@
   }
   .blog-btn-content {
     font-size: 20px;
+  }
+  .blog-imgs{
+    opacity: 1;
   }
 }
 @media screen and (max-width: 428px) {

@@ -78,13 +78,15 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    <img
-                      src={image7}
-                      alt=""
-                      style={{
-                        borderRadius: "11.4px",
-                      }}
-                    />
+                    <Link to={"/minimum-viable-product"}>
+                      <img
+                        src={image7}
+                        alt=""
+                        style={{
+                          borderRadius: "11.4px",
+                        }}
+                      />
+                    </Link>
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -110,18 +112,20 @@ const BlogHome = () => {
                       is indeed a magic potion...
                     </p>
                   </div>
-                </div>
+                </div>{" "}
               </SwiperSlide>
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    <img
-                      src={image3}
-                      alt=""
-                      style={{
-                        borderRadius: "11.4px",
-                      }}
-                    />
+                    <Link to={"/digital-marketing-trends-2023"}>
+                      <img
+                        src={image3}
+                        alt=""
+                        style={{
+                          borderRadius: "11.4px",
+                        }}
+                      />
+                    </Link>
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -152,14 +156,15 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                    <img
-                      src={image2}
-                      alt=""
-                      style={{
-                        borderRadius: "11.4px",
-                      }}
-                    />
+                    <Link to={"/empathy-in-UX"}>
+                      <img
+                        src={image2}
+                        alt=""
+                        style={{
+                          borderRadius: "11.4px",
+                        }}
+                      />
+                    </Link>
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -190,14 +195,15 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
-                    <img
-                      src={image6}
-                      alt=""
-                      style={{
-                        borderRadius: "11.4px",
-                      }}
-                    />
+                    <Link to={"/shopify-vs-magento"}>
+                      <img
+                        src={image6}
+                        alt=""
+                        style={{
+                          borderRadius: "11.4px",
+                        }}
+                      />
+                    </Link>
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -228,7 +234,7 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
-                    {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                  <Link to={"/no-code-revolution"}>
                     <img
                       src={image5}
                       alt=""
@@ -236,6 +242,7 @@ const BlogHome = () => {
                         borderRadius: "11.4px",
                       }}
                     />
+                    </Link>
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -266,6 +273,7 @@ const BlogHome = () => {
               <SwiperSlide className="cass flex justify-center items-center">
                 <div className="cardh    mx-4 items-center">
                   <div className="img max-md:flex  max-md:justify-center">
+                  <Link to={"/design"}>
                     <img
                       src={image4}
                       alt=""
@@ -273,6 +281,7 @@ const BlogHome = () => {
                         borderRadius: "11.4px",
                       }}
                     />
+                    </Link>
                   </div>
                   <div className="head mt-5">
                     <h2
@@ -325,7 +334,7 @@ const BlogHome = () => {
                 className="w-96 text-center para mt-8 max-md:px-5 max-sm:w-full"
                 style={{
                   color: "#848484",
-                  fontFamily:'graphik'
+                  fontFamily: "graphik",
                 }}
               >
                 We handle all our projects with the utmost discretion. Through
@@ -380,6 +389,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
+                    <Link to={"/minimum-viable-product"}>
                       <img
                         src={image7}
                         alt=""
@@ -387,6 +397,7 @@ const BlogHome = () => {
                           borderRadius: "11.4px",
                         }}
                       />
+                      </Link>
                     </div>
                     <div className="head mt-5">
                       <h2
@@ -417,6 +428,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
+                    <Link to={"/digital-marketing-trends-2023"}>
                       <img
                         src={image3}
                         alt=""
@@ -424,6 +436,7 @@ const BlogHome = () => {
                           borderRadius: "11.4px",
                         }}
                       />
+                      </Link>
                     </div>
                     <div className="head mt-5">
                       <h2
@@ -454,7 +467,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
-                      {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                    <Link to={"/empathy-in-UX"}>
                       <img
                         src={image2}
                         alt=""
@@ -462,6 +475,7 @@ const BlogHome = () => {
                           borderRadius: "11.4px",
                         }}
                       />
+                      </Link>
                     </div>
                     <div className="head mt-5">
                       <h2
@@ -492,7 +506,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
-                      {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                    <Link to={"/shopify-vs-magento"}>
                       <img
                         src={image6}
                         alt=""
@@ -500,6 +514,7 @@ const BlogHome = () => {
                           borderRadius: "11.4px",
                         }}
                       />
+                      </Link>
                     </div>
                     <div className="head mt-5">
                       <h2
@@ -530,7 +545,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
-                      {/* <img src="/blog/Frame 43.png" alt="" /> */}
+                    <Link to={"/no-code-revolution"}>
                       <img
                         src={image5}
                         alt=""
@@ -538,6 +553,7 @@ const BlogHome = () => {
                           borderRadius: "11.4px",
                         }}
                       />
+                      </Link>
                     </div>
                     <div className="head mt-5">
                       <h2
@@ -568,6 +584,7 @@ const BlogHome = () => {
                 <SwiperSlide className="cass flex justify-center items-center mt-20">
                   <div className="cardh    mx-4 items-center">
                     <div className="img max-md:flex  max-md:justify-center">
+                    <Link to={"/design"}>
                       <img
                         src={image4}
                         alt=""
@@ -575,6 +592,7 @@ const BlogHome = () => {
                           borderRadius: "11.4px",
                         }}
                       />
+                      </Link>
                     </div>
                     <div className="head mt-5">
                       <h2

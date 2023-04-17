@@ -6,13 +6,14 @@ export default function Trendhero() {
     <section className="empathy-hero">
       <div className="empathy-container">
         <div className="empathy-inner-content">
-          <p className="date">23rd Feb 2023</p>
-          <h1 className="empathy-hero-h1">Digital Marketing</h1>
+          <h1 className="empathy-hero-h1">
+            React Native V/S Flutter- What’s better for you?
+          </h1>
+          <div className="blog-date">
+            <p className="date">codelinear</p>
+            <p className="date">16th Feb 2023</p>
+          </div>
         </div>
-        {/* <div className="cheese">
-          <img src={cheese} alt="" className="cheese-img" loading="lazy"/>
-          <p className="cheese-para">cheese</p>
-        </div> */}
       </div>
       <img src={empathy} alt="" className="empathy" />
     </section>

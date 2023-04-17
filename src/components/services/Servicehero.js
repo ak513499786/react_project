@@ -74,16 +74,6 @@ export default function Serviceshero() {
                       color: "#d8d6d6",
                     }}
                   >
-                    Development To Execution
-                  </h1>
-                </SwiperSlide>
-                <SwiperSlide className="">
-                  <h1
-                    className="text-6xl  mt16 ml-8 max-xl:ml-5 max-md:text-3xl font-extrabold"
-                    style={{
-                      color: "#d8d6d6",
-                    }}
-                  >
                     Marketing to Success
                   </h1>
                 </SwiperSlide>

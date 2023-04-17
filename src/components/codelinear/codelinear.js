@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 export default function Codelinear() {
   const url = useLocation();
-  let footerScroll = useRef(null)
+  let footerScroll = useRef(null);
 
   const Effect = () => {
     window.scrollTo(0, 0);
@@ -42,8 +42,7 @@ export default function Codelinear() {
     url.pathname === "/consultingandstrategy" ||
     url.pathname === "/userexperience" ||
     url.pathname === "/productdevelopment" ||
-    url.pathname === "/digitalmarketing" ||
-    url.pathname === "/career"
+    url.pathname === "/digitalmarketing"
   ) {
     return (
       <Link to={"/"} className="footer-animation">
@@ -58,11 +57,26 @@ export default function Codelinear() {
         <span className="footer-animationtxt"> to ideas</span>
       </Link>
     );
+  } else if (url.pathname === "/career") {
+    return (
+      <Link to={"/"} className="footer-animation">
+        <img src={codelinear} alt="" className="codelinear" />
+        <span className="footer-animationtxt"> to people</span>
+      </Link>
+    );
   } else if (url.pathname === "/let's_talk") {
     return (
       <Link to={"/"} className="footer-animation">
         <img src={codelinear} alt="" className="codelinear" />
         <span className="footer-animationtxt"> to passion</span>
+      </Link>
+    );
+  }
+  else{
+    return (
+      <Link to={"/"} className="footer-animation">
+        <img src={codelinear} alt="" className="codelinear" />
+        <span className="footer-animationtxt"> to transformation</span>
       </Link>
     );
   }
