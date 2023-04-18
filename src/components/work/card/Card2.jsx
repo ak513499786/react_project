@@ -98,10 +98,10 @@ const Card2 = () => {
     // useLayoutEffect(() => {
     e.preventDefault();
     window.addEventListener("scroll", function () {
-      console.log("scroll event fired!");
-      console.log("window.scrollX:", window.scrollX);
-      if (window.scrollY > 500 && window.scrollY < 900) {
-        console.log("window.scrollX event has occurred!");
+      // console.log("scroll event fired!");
+      // console.log("window.scrollX:", window.scrollX);
+      if (window.scrollY > 500 && window.scrollY < 1200) {
+        // console.log("window.scrollX event has occurred!");
         setPos(true);
       } else {
         setPos(false);

@@ -6,6 +6,8 @@ import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
 import Animation from "./animation";
 
+import Scrooll from "./Scrooll";
+
 export default function Consultingandstrategy() {
   let fade = useRef(null);
 
@@ -20,11 +22,12 @@ export default function Consultingandstrategy() {
       <Navbar />
       <section className="otherservices">
         <h1 className="inner-service-h1">
-        Shaping Tomorrow By Capitalising On Today's Disruptions.
+          Shaping Tomorrow By Capitalising On Today's Disruptions.
         </h1>
       </section>
       <div className="mt-2">
-        <Animation />
+        {/* <Animation /> */}
+        <Scrooll />
       </div>
       <div className="slide-container">
         <Servicesslide />
