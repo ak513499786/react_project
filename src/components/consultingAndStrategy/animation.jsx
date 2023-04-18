@@ -149,6 +149,7 @@ const Animation = () => {
         >
           <div className="vertical-animation">
             <div className="vertical-effect">
+
               <div className="vertical-animation-container">
                 <h1 className="vertical-animation-h1">Ux Audit</h1>
                 <p className="vertical-animation-para">
@@ -214,6 +215,8 @@ const Animation = () => {
                   your users.
                 </p>
               </div>
+
+
             </div>
           </div>
         </div>
@@ -338,6 +341,8 @@ const Animation = () => {
                   mitigating the risks and capitalising on data-driven insights.
                 </p>
               </div>
+
+
             </div>
           </div>
         </div>
@@ -411,7 +416,6 @@ const Animation = () => {
               </div>
               <div className="vertical-animation-container">
                 <h1 className="vertical-animation-h1">Paid Search </h1>
-
                 <p className="vertical-animation-para">
                   "Evaluation is Creation." A UX audit is a critical evaluation
                   of the website's or application's interface, which enables us
@@ -428,6 +432,8 @@ const Animation = () => {
                   the essence of the original product with minimal investment.
                 </p>
               </div>
+
+              
             </div>
           </div>
         </div>
@@ -446,4 +452,4 @@ const Animation = () => {
   }
 };
 
-export default Animation;
+export default Animation

@@ -6,6 +6,7 @@ import Footer from "../footer/footer";
 import AnimatedCursor from "react-animated-cursor";
 import Navbar from "../navigationBar/Nav";
 import Animation from "../consultingAndStrategy/animation";
+import Parent from "../consultingAndStrategy/Scrooll";
 
 export default function Productdevelopment() {
   let fade = useRef(null);
@@ -29,7 +30,8 @@ export default function Productdevelopment() {
           Lives.
         </h1>
       </section>
-      <Animation />
+      {/* <Animation /> */}
+      <Parent />
       <div className="slide-container">
         <Servicesslide />
       </div>

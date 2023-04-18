@@ -3,8 +3,11 @@ import Servicesslide from "../services/Explore/Explore";
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
 import Animation from "../consultingAndStrategy/animation";
+// import Animation from "../consultingAndStrategy/animation";
+
 import gsap from "gsap";
 import { useRef, useEffect } from "react";
+import Parent from "../consultingAndStrategy/Scrooll";
 
 export default function UX() {
   let fade = useRef(null);
@@ -21,9 +24,13 @@ export default function UX() {
       <Navbar />
 
       <section className="otherservices">
-        <h1 className="inner-service-h1">Crafting designs operating at the intersection of empathy and rationality.</h1>
+        <h1 className="inner-service-h1">
+          Crafting designs operating at the intersection of empathy and
+          rationality.
+        </h1>
       </section>
-      <Animation />
+      {/* <Animation /> */}
+      <Parent />
       <div className="slide-container">
         <Servicesslide />
       </div>

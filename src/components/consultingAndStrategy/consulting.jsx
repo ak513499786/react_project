@@ -6,7 +6,7 @@ import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
 import Animation from "./animation";
 
-import Scrooll from "./Scrooll";
+import Parent from "./Scrooll";
 
 export default function Consultingandstrategy() {
   let fade = useRef(null);
@@ -27,7 +27,7 @@ export default function Consultingandstrategy() {
       </section>
       <div className="mt-2">
         {/* <Animation /> */}
-        <Scrooll />
+        <Parent />
       </div>
       <div className="slide-container">
         <Servicesslide />
