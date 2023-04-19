@@ -3,6 +3,7 @@ import Workhero from "./Workhero";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 import Card from "./card/Card";
+import Card2 from "./card/Card2";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 
@@ -20,7 +21,8 @@ export default function Work() {
     <main className="aboutpage" ref={(el) => (fade = el)}>
       <Navbar />
       <Workhero />
-      <Card />
+      {/* <Card /> */}
+      <Card2 />
       <Footer />
     </main>
   );

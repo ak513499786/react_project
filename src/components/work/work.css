@@ -17,11 +17,19 @@
   top: 389.5px;
 }
 .worksection{
+  height: 750px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  padding-top: 100px;
+}
+.worksection1{
   height: 650px;
   width: 100%;
   position: relative;
   top: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding-top: 100px;
 }
 .workunfolds{

@@ -18,6 +18,10 @@ function Form() {
     const response = await axios
       .post("https://backend-production-f9ef.up.railway.app/send_mail", data)
       .then((response) => {
+        if (response.status === 200) {
+          alert("Your Application was sent successfully");
+          window.refresh();
+        }
         console.log(response);
       })
       .catch((error) => {

@@ -35,6 +35,10 @@ function Position() {
         data
       )
       .then((response) => {
+        if (response.status === 200) {
+          alert("Your Application was sent successfully");
+          window.refresh();
+        }
         console.log(response);
       })
       .catch((error) => {

@@ -6,14 +6,15 @@ import React, { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-
 // Hostinger / Hosting	syedsaif018@gmail.com 	Codelinear@CLSS123
 
 export default function Dash() {
   // const navigate = useNavigate("/home");
   const [editMode, setEditMode] = useState(false);
-  const [array, setarray] = useState();
+  const [array, setarray] = useState("");
   const [Aboutarray, setAboutarray] = useState();
+  // const [pera, setPera] = useState();
+  const [pera, setPeraa] = useState();
 
   const handleEditClick = () => {
     if (editMode === false) {
@@ -22,15 +23,23 @@ export default function Dash() {
       setEditMode(false);
     }
   };
-
-  const handleLogout = async () => {
-    const response = await axios
-      .get("http://localhost:5000/code/logout")
-      .then((response) => {
-        navigate("/login");
-      });
-    navigate("/login");
+  const handleLogouttt = async () => {
+    // const response = await axios
+    //   .get("http://localhost:4000")
+    //   .then((response) => {
+    //     setPera(response.data.homeHero);
+    //     console.log(response);
+    //   });
   };
+
+  // const handleLogout = async () => {
+  //   const response = await axios
+  //     .get("http://localhost:5000/code/logout")
+  //     .then((response) => {
+  //       navigate("/login");
+  //     });
+  //   navigate("/login");
+  // };
 
   const [homeHero, sethomeHero] = useState("");
   const [homeAbout, setAboutHero] = useState("");
@@ -87,18 +96,24 @@ export default function Dash() {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5000/code/").then((response) => {
+    axios.get("http://localhost:4000").then((response) => {
       setarray(response.data.homeHero);
-      setAboutarray(response.data.homeAbout);
-      console.log(response.data);
+      // setAboutarray(response.data.homeAbout);
+      // console.log(response.data);
     });
   }, []);
+  const smallParas = array.split(". ");
   return (
     <>
       <nav className="dashboard-nav">
         <div className="dashboard-item">Codelinear</div>
 
-        <img src={profile} alt="" className="profile" onClick={handleLogout} />
+        <img
+          src={profile}
+          alt=""
+          className="profile"
+          onClick={handleLogouttt}
+        />
       </nav>
       <Tabs>
         <TabList className="dashboard-left-nav">
@@ -114,6 +129,7 @@ export default function Dash() {
         <TabPanel>
           <div className="main">
             <h1 className="title">Home Page</h1>
+
             <div className="section">
               {editMode ? (
                 <>
@@ -158,8 +174,17 @@ export default function Dash() {
                       />
                     </div>
 
-                    <div className="w-ful flex justify-between">
-                      <h2 className="sub-title text-4xl">{array}</h2>
+                    <div className="w-full justify-between">
+                      {/* <h2 className="sub-title text-4xl text-black"> */}
+                      {smallParas.map((para, index) => (
+                        <p
+                          className="sub-title text-4xl text-black"
+                          key={index}
+                        >
+                          {para}
+                        </p>
+                      ))}
+                      {/* </h2> */}
                     </div>
                   </div>
                 </>
@@ -235,7 +260,7 @@ export default function Dash() {
               </div>
             </div>
             <div className="section">
-              <h2 className="sub-title">Service Section</h2>
+              <h2 className="sub-title">Service Section {pera}</h2>
               <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
               <p className="change-para">Lorem ipsum dolor sit amet.</p>
               <p className="change-para">Buttons</p>
@@ -408,7 +433,7 @@ export default function Dash() {
         <TabPanel>
           <div className="main">
             <h1 className="title">Blog Page</h1>
-            <div className="section">
+            {/* <div className="section">
               <h2 className="sub-title">Hero Section</h2>
               <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
             </div>
@@ -420,8 +445,8 @@ export default function Dash() {
               <h3 className="change-h1">Lorem</h3>
               <h3 className="change-h1">Lorem</h3>
               <h3 className="change-h1">Lorem</h3>
-            </div>
-            <div className="section">
+            </div> */}
+            {/* <div className="section">
               <h2 className="sub-title">Blog Section</h2>
               <h3 className="change-h1">Lorem, ipsum dolor.</h3>
               <h3 className="change-h1">Lorem, ipsum dolor.</h3>
@@ -432,7 +457,7 @@ export default function Dash() {
               <h3 className="change-h1">Lorem, ipsum dolor.</h3>
               <h3 className="change-h1">Lorem, ipsum dolor.</h3>
               <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-            </div>
+            </div> */}
             <h1 className="title">Blog Inner Page</h1>
             <div className="section">
               <h2 className="sub-title">Hero Section</h2>

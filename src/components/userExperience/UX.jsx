@@ -1,12 +1,15 @@
-import "./consulting.css";
 import Servicesslide from "../services/Explore/Explore";
-import { useRef, useEffect } from "react";
-import { gsap } from "gsap";
+
 import Footer from "../footer/footer";
 import Navbar from "../navigationBar/Nav";
-import Animation from "./animation";
+import Animation from "../consultingAndStrategy/animation";
+// import Animation from "../consultingAndStrategy/animation";
 
-export default function Consultingandstrategy() {
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
+import Parent from "../consultingAndStrategy/Scrooll";
+
+export default function UX() {
   let fade = useRef(null);
 
   useEffect(() => {
@@ -15,17 +18,19 @@ export default function Consultingandstrategy() {
     });
     tl.fromTo(fade, { opacity: "0" }, { opacity: "1" });
   }, []);
+
   return (
-    <main className="service-inner-page" ref={(el) => (fade = el)}>
+    <main className="serviceinnerpage" ref={(el) => (fade = el)}>
       <Navbar />
+
       <section className="otherservices">
         <h1 className="inner-service-h1">
-        Shaping Tomorrow By Capitalising On Today's Disruptions.
+          Crafting designs operating at the intersection of empathy and
+          rationality.
         </h1>
       </section>
-      <div className="mt-2">
-        <Animation />
-      </div>
+      {/* <Animation /> */}
+      <Parent />
       <div className="slide-container">
         <Servicesslide />
       </div>

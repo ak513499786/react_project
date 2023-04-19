@@ -29,7 +29,11 @@ export default function Hero() {
           ></video>
         </div>
         <section id="content">
-          <h1 id="header">Propeling The World By Design</h1>
+{/* <<<<<<< HEAD */}
+          <h1 id="header">Propelling The World By Design</h1>
+{/* ======= */}
+          {/* <h1 id="header">Propeling The World By Design</h1> */}
+{/* >>>>>>> e54453664bb103af8dba99ffc8f91c4869b50f38 */}
           <Link to={"/about"} id="aboutbtn">
             <p className="aboutbtn_content">about us</p>
           </Link>

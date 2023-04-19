@@ -1,5 +1,8 @@
 .otherservices {
-  height: 100vh;
+  height: 900px;
+}
+.scrolling-fix {
+  margin-left: -10%;
 }
 .inner-service-h1 {
   width: 68.5%;
@@ -15,10 +18,17 @@
   left: 184px;
   top: 452px;
 }
+.snapwala {
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start end;
+}
 .vertical-animation {
   height: 300px;
   margin-top: 0px;
   margin-left: 12.7%;
+  scroll-snap-type: y mandatory;
+
+  scroll-snap-align: start end;
 }
 .animation-container {
   display: flex;
@@ -28,8 +38,9 @@
   left: 0px;
   display: flex;
   flex-direction: column;
-  /* scroll-snap-type: scroll; */
-  /* scroll-snap-type: y; */
+  scroll-snap-type: y mandatory;
+
+  scroll-snap-align: start end;
 }
 .vertical-animation-container {
   display: flex;
@@ -93,10 +104,12 @@
   letter-spacing: 0em;
   color: #848484;
   list-style: none;
+  margin: 20px 80px;
 }
 @media screen and (min-width: 1441px) and (max-width: 1540px) {
   .otherservices {
-    height: 100vh;
+    /* height: 100vh; */
+    height: 900px;
   }
   .inner-service-h1 {
     font-size: 65px;
