@@ -3,231 +3,233 @@ export default function Trendsection() {
     <section className="empathy-content-container">
       <div className="empathy-content">
         <p className="empathy-para">
-          An interesting study published by Think With Google described how
-          Domino's and Diageo tackled ‘unintended bias’ in 2022. A significant
-          observation that the study made was about how brands miss out on
-          potential audiences on YouTube, and other channels by over-excluding
-          certain keywords.
+          When Ole Kirk Christiansen went out of business back in the 1930s,
+          little did he know that the scraps from his furniture factory would
+          help build a whole new business during the world recession. Ole along
+          with his son Godtfred founded Lego (meaning ‘put together’ in Latin) -
+          a company that sold toys made of fine wood.
         </p>
         <p className="empathy-para">
-          For instance, some brands stay away from words that the LGBTQ
-          community relates to in order to avoid hate speech online. However,
-          since YouTube has been actively taking steps against any kind of
-          specific audience, such exclusions block such brands from reaching out
-          to many potential buyers.
+          However, after a decade of selling those toys while braving the Great
+          Depression and the Second World War, Godtfred felt this business model
+          wasn’t quite right. Lego was not the only toy-producing company.
+          Meanwhile his father Ole couldn’t get his mind off of a brick-like toy
+          made of plastic, that he had seen many years ago in a business
+          exhibition. Both the men put together the idea and created what Lego
+          is today - a set of building blocks that allows children to put their
+          imagination to work.
         </p>
         <p className="empathy-para">
-          The study then elaborated on how Domino’s and Diageo partnered with
-          YouTube to actively fight against such bias, and engage as diverse an
-          audience as possible.
+          The no-code creation in a website and application development is
+          perhaps moving in the Lego direction. A kind of app development that
+          allows creative freedom to build apps without much technical
+          knowledge.
         </p>
         <p className="empathy-para">
-          While YouTube is notorious for constantly changing algorithms, digital
-          marketing in general has also continually evolved. Businesses often
-          find themselves on edge, catching up to what’s changed and what
-          remains in online marketing.
-        </p>
-        <p className="empathy-para">
-          We have compiled a list of digital marketing trends that may assist
-          you in staying on top of your marketing game.
+          The No-code revolution is indicative that modern businessmen and women
+          want to keep creative control in their own hands when it comes to
+          developing websites or mobile applications. No-code is really for the
+          businesses who wish to personalize their product or service branding,
+          and it does not mean that no-code platforms can only produce simple
+          apps.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Customer experience over keywords</h1>
+        <h1 className="empathy-h1">A no-code revolution is brewing</h1>
         <p className="empathy-para">
-          This trend became a reality in 2022 when businesses saw Google’s AI
-          search becoming more and more humane. As a result, content that really
-          helped users or searchers began trending instead of keyword-heavy
-          content. This will mature in 2023 as search engines evolve, and become
-          more customer/user-oriented. It may be time you stop pleasing Google,
-          and start pleasing your customers online.
+          Forbes reported in 2021 that “60% of all custom apps were being
+          developed outside of the IT department while 40% of these users worked
+          in a professional setting.” Many businesses today are opting for
+          no-code creation for several reasons, one of them being faster time to
+          market.
+        </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-h1">What are no-code platforms?</h1>
+        <p className="empathy-para">
+          No-code tools or platforms are basically programming styles and
+          methodologies that do not require coding. Instead, these platforms use
+          GUI (Graphical User Interface) tools to create websites or mobile
+          applications. A user does not need to be either a coder or a developer
+          but someone who knows the basics of using keyboard tools such as
+          click, drag, drop, and scroll.
+        </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-h1">Benefits of no-code</h1>
+        <span className="empathy-sub-heading">
+          1. Better allocation of IT/engineer hours :
+        </span>
+        <p className="empathy-para">
+          - Since no-code platforms are more like drag-and-drop tools, business
+          users need not employ coders and engineers in the website and
+          application development. This technical workforce then can be applied
+          towards mission-critical work.
+        </p>
+        <span className="empathy-sub-heading">2. Faster time to market :</span>
+        <p className="empathy-para">
+          When it comes to developing a business website or a mobile
+          application, a business needs to go through several rounds of
+          approvals and iterations. With no-code platforms, the task can be
+          allotted only to a few employees after approvals from the upper
+          management. This reduces the approval and development time, and your
+          product or service may come out in the market in much less time.
+        </p>
+        <span className="empathy-sub-heading">3. Cost reduction :</span>
+        <p className="empathy-para">
+          Through no-code environments, you can create more applications in less
+          time and resources, which leads to lower costs. It also reduces the
+          costs of hiring since coders or developers are not needed for
+          launching web or mobile apps.
+        </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-h1">
+          Some of the best no-code platforms to watch out in 2023
+        </h1>
+        <h2 className="empathy-sub-heading">1. Appy Pie </h2>
+        <p className="empathy-para">
+          This is a no-code mobile and software application development platform
+          that involves the creation of chat boxes, websites, intelligent
+          workflows, and automation. It allows users to connect 300+ apps to
+          simplify further development work.
         </p>
         <p className="empathy-para">
-          As a business, focus on optimizing the experience of your online
-          visitors. Some things you can do -
+          Pros
           <div className="points">
-            <p className="empathy-para">
-              - easily-navigable website/mobile application
-            </p>
-            <p className="empathy-para">- ease of inquiries, order placement</p>
-            <p className="empathy-para">
-              - personalizing every touch point of purchase journey
-            </p>
-            <p className="empathy-para">
-              - informing customers through content bites
-            </p>
+            <p className="empathy-para">- User friendly</p>
+            <p className="empathy-para">- Quick customer support</p>
+            <p className="empathy-para">- Automates tasks</p>
+            <p className="empathy-para">- Can build and launch chatbots</p>
+            <p className="empathy-para">- Custom mobile app development</p>
+          </div>
+        </p>
+        <p className="empathy-para">
+          Cons
+          <div className="points">
+            <p className="empathy-para">- No webview button on the main menu</p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Short videos</h1>
+        <h1 className="empathy-sub-heading">2. Webflow</h1>
         <p className="empathy-para">
-          Videos are not just about vertical or horizontal formats anymore. They
-          are about getting more information in less time. Instagram Reels is
-          just one of the many channels where your relevant customers are. Reels
-          say a lot about your customers. Let’s see -
+          The platform has been around for quite some time and has evolved to be
+          more than just a website builder. It allows users to create responsive
+          software and websites with absolute web design freedom. Compared to
+          traditional website development platforms such as Wix or WordPress,
+          Webflow offers more customization options.
+        </p>
+        <p className="empathy-para">
+          Pros
           <div className="points">
             <p className="empathy-para">
-              - your customers want information or entertainment, but they don’t
-              have a lot of time
+              - Allows building of custom databases for CMS and e-commerce
+              stores
             </p>
-            <p className="empathy-para">
-              - they are most likely to watch your content while waiting for
-              something or someone, or while traveling
-            </p>
-            <p className="empathy-para">
-              - they are more likely to watch your content on a mobile device
-            </p>
+            <p className="empathy-para">- Hassle-free hosting network</p>
+            <p className="empathy-para">- 999.9% uptime</p>
+            <p className="empathy-para">- Zero maintenance</p>
           </div>
         </p>
         <p className="empathy-para">
-          Make 2023 the year you start producing short-form video content. Begin
-          with personalized content such as your team activities, your inner
-          workings, and your business routine, and eventually switch to your
-          value propositions.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">The Metaverse</h1>
-        <p className="empathy-para">
-          Since some of the biggest brands, such as Starbucks and Nike, have
-          jumped on the bandwagon of the metaverse, this may become a huge trend
-          in 2023. Metaverse is like a parallel virtual world where people and
-          brands interact with each other, albeit more immersively. It is slowly
-          becoming a place where a lot of customers want to be. However, most
-          businesses do not have a practical use case. Just as it happened with
-          augmented reality and virtual reality applications back in 2018, the
-          metaverse may or may not find relevance in all business sectors.
-        </p>
-        <p className="empathy-para">
-          A wise step would be to study the metaverse as a user in 2023,
-          interact with other users, and find out relevant areas for your
-          business. It is okay if you don’t use the metaverse at all for digital
-          marketing in 2023. However, this should be the year of collecting as
-          many use cases for your business as possible.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Information as bites</h1>
-        <p className="empathy-para">
-          If short-videos are any indication, the attention span of your
-          customers is getting worse by the day. Users today consume information
-          like snacks - it needs to provide instant gratification and satisfy
-          their hunger for knowledge or information. While long-form content
-          will never lose its significance, you must experiment with bite-sized
-          and easily digestible content in 2023, especially to lure your online
-          customers.
-        </p>
-        <p className="empathy-para">
-          As a leading UI/UX Design Agency, Codelinear delivers well-crafted
-          design services that can bring your ideas to life and make your
-          web/app stand out. If you are looking for empathetic UX/UI design, do
-          call us.
-        </p>
-        <p className="empathy-para">
-          Some things to consider -
+          Cons
           <div className="points">
             <p className="empathy-para">
-              - repurpose existing content into bite-sized information
+              - Compared to other web builders, it is difficult to use
             </p>
-            <p className="empathy-para">
-              - simplify difficult concepts of your business/product or service
-            </p>
-            <p className="empathy-para">
-              - leverage social media channels to relay this information
-            </p>
+            <p className="empathy-para">- Expensive for small businesses</p>
+            <p className="empathy-para">- No live chat or phone support</p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Influencers aren’t going anywhere</h1>
+        <h1 className="empathy-sub-heading">3. Bubble.io</h1>
         <p className="empathy-para">
-          This trend of businesses leveraging expert individuals to create brand
-          advocacy has been going on for nearly five years.2023 is not going to
-          be an exception. In fact, influencer marketing will continue to trend
-          widely, with some of the world’s biggest brands, and movie makers
-          using influencers to sell products, and entertainment.
+          Bubble allows for easy custom web application development offering a
+          wide range of features including databases, APIs, and e-commerce.
+          Bubble is the most suitable web application builder for SaaS
+          entrepreneurs who are testing a prototype or businesses intending to
+          launch tools/apps quickly.
         </p>
         <p className="empathy-para">
-          Here’s what you can do -
+          Pros
           <div className="points">
+            <p className="empathy-para">- User-friendly</p>
+            <p className="empathy-para">- Free version has enough features</p>
             <p className="empathy-para">
-              - research opportunities to reach out to your audience first
+              - Paid subscription gives access to a wide range of features
             </p>
             <p className="empathy-para">
-              - short-list influencers who share the same values
+              - Thriving user community of 300,000 people
             </p>
-            <p className="empathy-para">
-              - start with a barter relationship with influencers instead of
-              spending money upfront
-            </p>
+          </div>
+        </p>
+        <p className="empathy-para">
+          Cons
+          <div className="points">
+            <p className="empathy-para">- Cannot test plugins before buying</p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Linked-in is a thought influencer in B2B</h1>
+        <h1 className="empathy-sub-heading">4. Bildr</h1>
         <p className="empathy-para">
-          There’s no better advocacy for B2B companies than to reach out and
-          influence relevant audiences on Linked-in. And 2023 will be the same.
-          There’s a certain credibility attached to the thought leadership
-          opportunities that Linked-in offers that B2B audiences are looking
-          for. In fact, a study has stated that Linked-in may capture nearly 25%
-          of US B2B advertising spending by 2024. Even as the platform evolves,
-          businesses should leverage the time to build relevant followers who
-          will eventually become their brand advocates.
+          Non-technical startup entrepreneurs use Bildr to create functional and
+          stunning websites for testing prototypes or for reiteration of ideas.
+          You can create web applications or SaaS products using Bildr.
         </p>
         <p className="empathy-para">
-          Some things to do in 2023 -
+          Pros
           <div className="points">
+            <p className="empathy-para">- Precoded building blocks</p>
+            <p className="empathy-para">- Functional APIs to retrieve data </p>
             <p className="empathy-para">
-              - use Linkedin’s new features for thought leadership
-            </p>
-            <p className="empathy-para">
-              - create credible Linked-in profiles for your founders.
-            </p>
-            <p className="empathy-para">
-              - post useful content about your industry
-            </p>
-            <p className="empathy-para">
-              - build relationships with competitors
+              - Real-time collaboration with integrated apps
             </p>
           </div>
         </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Not every trend is for your business </h1>
         <p className="empathy-para">
-          Just like we mentioned about metaverse, not every digital marketing
-          trend is for you. While it is crucial to know beforehand what’s going
-          on in the market, it is all the more significant to contextualize
-          trends for your business. Let your customers be your guiding light
-          about which trends to follow, and you will eventually find the right
-          mix.
+          Cons
+          <div className="points">
+            <p className="empathy-para">- May require some coding knowledge</p>
+            <p className="empathy-para">
+              - Best only for simple Web3 decentralised applications
+            </p>
+          </div>
         </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Keep focusing on your foundation </h1>
+        <h1 className="empathy-sub-heading">5. Thunkable </h1>
         <p className="empathy-para">
-          A trend that would never go out of fashion is to focus on your
-          foundations, such as -
+          Thunkable is a drag-and-drop no-code application builder that’s
+          designed specifically for building native mobile applications. It
+          offers a wide variety of options for customizing the look and feel of
+          your iOS or Android app. That’s because it provides a blank canvas to
+          build the applications from blocks, modules, and integrations with
+          other platforms. You can put together your user interface (UI), and
+          advanced logic modules, and handle the functionality of your app.
+        </p>
+        <p className="empathy-para">
+          Pros
           <div className="points">
             <p className="empathy-para">
-              - a good and easy-to-navigate website
+              - Assistance with publishing your app on App Store and Google Play
             </p>
-            <p className="empathy-para">- a scalable mobile application</p>
-            <p className="empathy-para">- decent presence on social media</p>
-            <p className="empathy-para">- a clear brand voices</p>
-            <p className="empathy-para">- clarity of communication</p>
-            <p className="empathy-para">- consistency in messaging</p>
-            <p className="empathy-para">- SEO best practises</p>
+            <p className="empathy-para">- Perfect for native apps building </p>
+            <p className="empathy-para">- Advanced logic workflow builder</p>
           </div>
         </p>
         <p className="empathy-para">
-          Codelinear believes that it is the foundations that will propel your
-          company forward.We have helped many businesses get the right brand
-          voice through a robust and easily navigable website and/or mobile
-          application, design voice, and digital marketing. If you are looking
-          for something that lasts, we should talk.
+          Cons
+          <div className="points">
+            <p className="empathy-para">
+              - Advanced features building takes technical skills
+            </p>
+            <p className="empathy-para">- Hard to detect bugs</p>
+          </div>
+        </p>
+        <p className="empathy-para">
+          If you need assistance in understanding more about no-code creation,
+          our team at Codelinear would be delighted to have a chat with you.
         </p>
       </div>
     </section>

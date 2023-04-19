@@ -11,7 +11,6 @@ import "./card.scss";
 import { gsap } from "gsap";
 import arrow from "../../services/images/downarrow.svg";
 
-import HorizontalScroll from "react-scroll-horizontal";
 
 const Card2 = () => {
   let arrowswipe = useRef(null);
