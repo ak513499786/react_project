@@ -43,9 +43,9 @@ const Peak = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post("http://localhost:5000/code/addaboutcrew", {
-          crew,
-          crew_pera,
+        .post("http://localhost:5000/code/addaboutcaseStudy", {
+          peak,
+          peakPera,
         })
         .then((response) => {
           console.log(response);
