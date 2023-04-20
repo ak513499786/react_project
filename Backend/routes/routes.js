@@ -25,6 +25,8 @@ import {
   addWebInfoAboutcrew,
   addWebInfoAboutcrew_box,
   getWebAboutcrew_box,
+  getWebAboutcase_study,
+  addWebInfoAboutcaseStudy,
 } from "../ctrl/controller.js";
 
 const router = express.Router();
@@ -39,6 +41,7 @@ router.get("/aboutguiding", getWebAboutGuiding);
 router.get("/abouttest", getWebAbouttest);
 router.get("/aboutcrew", getWebAboutcrew);
 router.get("/aboutcrew_box", getWebAboutcrew_box);
+router.get("/aboutcaseStudy", getWebAboutcase_study);
 
 
 router.post("/add", addWebInfo);
@@ -50,6 +53,7 @@ router.post("/addaboutguiding", addWebInfoAboutguiding);
 router.post("/addabouttest", addWebInfoAboutTestimonial);
 router.post("/addaboutcrew", addWebInfoAboutcrew);
 router.post("/addaboutcrew_box", addWebInfoAboutcrew_box);
+router.post("/addaboutcaseStudy", addWebInfoAboutcaseStudy);
 
 router.post("/login", Login);
 router.post("/send_mail", sendMailContact);

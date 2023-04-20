@@ -331,7 +331,7 @@ const AboutTab = () => {
       <div className="section">
         <h2 className="sub-title">Case study </h2>
         < Peak/>
-      </div>
+    </div>
     </div>
   );
 };
