@@ -7,6 +7,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import AboutTest from "./AboutTest";
 import Meet from "./Meet";
 import Crewbox from "./Crew_box";
+import Peak from "./peak";
 // import AboutTab from "./aboutTab/AboutTab";
 
 const AboutTab = () => {
@@ -326,6 +327,10 @@ const AboutTab = () => {
       <div className="section">
         <h2 className="sub-title">Crew boxes</h2>
         <Crewbox />
+      </div>
+      <div className="section">
+        <h2 className="sub-title">Case study </h2>
+        < Peak/>
       </div>
     </div>
   );

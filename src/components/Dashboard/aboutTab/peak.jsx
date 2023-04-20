@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const peak = () => {
+const Peak = () => {
   const [editMode, setEditMode] = useState(false);
   const [vision_pera, setvision_pera] = useState(false);
   const [editModeServices, seteditModeServices] = useState(false);
@@ -135,7 +135,7 @@ const peak = () => {
     <div className="main">
       <h1 className="title">About Page</h1>
       <div className="section">
-        <h2 className="sub-title">Hero Section</h2>
+        <h2 className="sub-title">Peak Section</h2>
         <div className="section mt-10">
           <div className="section mt-0">
             {editModeServices ? (
@@ -215,4 +215,4 @@ const peak = () => {
   );
 };
 
-export default peak;
+export default Peak;
