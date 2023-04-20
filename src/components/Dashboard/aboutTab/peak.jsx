@@ -124,8 +124,8 @@ const peak = () => {
     // update the get -> url 
     axios.get("http://localhost:5000/code/aboutcaseStudy").then((response) => {
       // setarray(response.data.homeHero);
-      setServicesarray(response.data.crew);
-      setAboutarray(response.data.crew_pera);
+      setServicesarray(response.data.peak);
+      setAboutarray(response.data.peakPera);
 
       console.log(response.data);
     });
