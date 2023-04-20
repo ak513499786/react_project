@@ -19,9 +19,12 @@ const peak = () => {
 
   const [crew, setcrew] = useState("");
   const [crew_pera, setcrew_pera] = useState("");
+
 //   added the peak and peak para state
   const [peak, setpeak] = useState("");
-  const [peakpara, setpeak_para] = useState("");
+  
+//   added the peakpara and peak setpeak_para state
+  const [peakPera, setpeak_para] = useState("");
   
   const [error, setError] = useState("");
 
@@ -77,7 +80,7 @@ const peak = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post("http://localhost:5000/code/addaboutvision", {
+        .post("http://localhost:5000/code/addaboutcaseStudy", {
           vision_pera,
         })
         .then((response) => {
@@ -118,7 +121,8 @@ const peak = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5000/code/aboutcrew").then((response) => {
+    // update the get -> url 
+    axios.get("http://localhost:5000/code/aboutcaseStudy").then((response) => {
       // setarray(response.data.homeHero);
       setServicesarray(response.data.crew);
       setAboutarray(response.data.crew_pera);
@@ -151,18 +155,22 @@ const peak = () => {
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={crew}
+                    //   added the peak here 
+                      value={peak}
                       onChange={(e) => {
-                        setcrew(e.target.value);
+                        // update the peak with setpeak
+                        setpeak(e.target.value);
                       }}
                     />
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={crew_pera}
+                    //   added the peakpara here 
+                      value={peakPera}
                       onChange={(e) => {
-                        setcrew_pera(e.target.value);
+                        // update the peak_para with setpeak_para
+                        setpeak_para(e.target.value);
                       }}
                     />
 
