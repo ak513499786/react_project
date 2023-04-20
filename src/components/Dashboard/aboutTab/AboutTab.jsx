@@ -327,10 +327,6 @@ const AboutTab = () => {
         <h2 className="sub-title">Crew boxes</h2>
         <Crewbox />
       </div>
-      <div className="section">
-        <h2 className="sub-title">Crew boxes</h2>
-        <Crewbox />
-      </div>
     </div>
   );
 };
