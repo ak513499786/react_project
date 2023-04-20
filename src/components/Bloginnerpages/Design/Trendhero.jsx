@@ -6,7 +6,9 @@ export default function Trendhero() {
     <section className="empathy-hero">
       <div className="empathy-container">
         <div className="empathy-inner-content">
-          <h1 className="empathy-hero-h1">Digital Marketing</h1>
+          <h1 className="empathy-hero-h1">
+            How to build a design system that will last beyond 2023?
+          </h1>
           <div className="blog-date">
             <p className="date">codelinear</p>
             <p className="date">16th Feb 2023</p>

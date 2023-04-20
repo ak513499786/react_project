@@ -115,67 +115,64 @@ export default function Trendsection() {
         <p className="empathy-para">
           Pros of Flutter
           <div className="points">
+            <p className="empathy-para">- Offers a rich library of widgets</p>
+            <p className="empathy-para">- Well-structured documentation</p>
             <p className="empathy-para">
-              - Offers a rich library of widgets 
+              - Apps are fast and easy to navigate, and they require less
+              testing
             </p>
             <p className="empathy-para">
-              - Well-structured documentation
+              - Flutter helps to create the same UI for older devices
             </p>
             <p className="empathy-para">
-              - Apps are fast and easy to navigate, and they require less testing
+              - Flutter 2 helps in web app development
             </p>
-            <p className="empathy-para">
-              - Apps are fast and easy to navigate, and they require less testing
-            </p>
-            <p className="empathy-para">
-              - Apps are fast and easy to navigate, and they require less testing
-            </p>
-            <p className="empathy-para">
-              - Apps are fast and easy to navigate, and they require less testing
-            </p>
+            <p className="empathy-para">- Has rapidly growing community</p>
+            <p className="empathy-para">- Offers Hot Reload feature</p>
           </div>
         </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Information as bites</h1>
         <p className="empathy-para">
-          If short-videos are any indication, the attention span of your
-          customers is getting worse by the day. Users today consume information
-          like snacks - it needs to provide instant gratification and satisfy
-          their hunger for knowledge or information. While long-form content
-          will never lose its significance, you must experiment with bite-sized
-          and easily digestible content in 2023, especially to lure your online
-          customers.
-        </p>
-        <p className="empathy-para">
-          As a leading UI/UX Design Agency, Codelinear delivers well-crafted
-          design services that can bring your ideas to life and make your
-          web/app stand out. If you are looking for empathetic UX/UI design, do
-          call us.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <p className="empathy-para">
-          A trend that would never go out of fashion is to focus on your
-          foundations, such as -
+          Cons of Flutter
           <div className="points">
             <p className="empathy-para">
-              - a good and easy-to-navigate website
+              - Apps built on it are larger than native apps
             </p>
-            <p className="empathy-para">- a scalable mobile application</p>
-            <p className="empathy-para">- decent presence on social media</p>
-            <p className="empathy-para">- a clear brand voices</p>
-            <p className="empathy-para">- clarity of communication</p>
-            <p className="empathy-para">- consistency in messaging</p>
-            <p className="empathy-para">- SEO best practises</p>
+            <p className="empathy-para">
+              - Limited set of tools and libraries{" "}
+            </p>
           </div>
         </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-h1">How to choose between the two?</h1>
         <p className="empathy-para">
-          Codelinear believes that it is the foundations that will propel your
-          company forward.We have helped many businesses get the right brand
-          voice through a robust and easily navigable website and/or mobile
-          application, design voice, and digital marketing. If you are looking
-          for something that lasts, we should talk.
+          <span className="opacity-80">Performance :</span> React uses
+          JavaScript while Flutter uses the Dart programming language, which has
+          a higher compilation rate than JS. As a result, Flutter’s apps deliver
+          high performance by default. So if performance is one of your chief
+          goals, you should choose Flutter.
+        </p>
+        <p className="empathy-para">
+          <span className="opacity-80">Learning curve :</span> According to
+          Statista, only 6.54% of developers use Dart that makes it harder to
+          find Dart developers or for developers to learn the language. React
+          has a shorter learning curve.
+        </p>
+      </div>
+      <div className="empathy-content">
+        <p className="empathy-para">
+          <span className="opacity-80">Testing :</span> For testing a React
+          Native app, you will need a third-party testing framework such as
+          Detox. If that’s a challenge, then it is better to choose Flutter
+          because it is enriched with integrated testing features.
+        </p>
+        <h1 className="empathy-h1">Final thoughts</h1>
+        <p className="empathy-para">
+          Statista states that 38% of developers used React Native in 2021,
+          whereas 42% used Flutter for development. However, you should make a
+          decision based on your overall goals in terms of your cross-platform
+          mobile app development needs. If you need help or advice on what’s
+          best for you, do give us a call.
         </p>
       </div>
     </section>

@@ -3,231 +3,135 @@ export default function Trendsection() {
     <section className="empathy-content-container">
       <div className="empathy-content">
         <p className="empathy-para">
-          An interesting study published by Think With Google described how
-          Domino's and Diageo tackled ‘unintended bias’ in 2022. A significant
-          observation that the study made was about how brands miss out on
-          potential audiences on YouTube, and other channels by over-excluding
-          certain keywords.
+          Late Steve Jobs loved his childhood home for its simple design. He
+          lived in working-class subdivision homes between San Francisco and San
+          Jose. These were the postwar suburban homes with floor-to-ceiling
+          glass walls, exposed post-and-beam construction with concrete slab
+          floors and lots of sliding glass doors. These urban homes were
+          developed by Joseph Eichler and his imitators in the 1950s.
         </p>
         <p className="empathy-para">
-          For instance, some brands stay away from words that the LGBTQ
-          community relates to in order to avoid hate speech online. However,
-          since YouTube has been actively taking steps against any kind of
-          specific audience, such exclusions block such brands from reaching out
-          to many potential buyers.
+          In Jobs’ words, “His (Eichler’s) houses were smart and cheap and good.
+          They brought clean design and simple taste to lower-income people.” It
+          was this simplicity that formed the basis of Jobs’ passion for making
+          sharply designed products for the mass market. “It was the original
+          vision for Apple. That’s what we tried to do with the first Mac.
+          That’s what we did with the iPod,” Jobs stated later.
         </p>
         <p className="empathy-para">
-          The study then elaborated on how Domino’s and Diageo partnered with
-          YouTube to actively fight against such bias, and engage as diverse an
-          audience as possible.
-        </p>
-        <p className="empathy-para">
-          While YouTube is notorious for constantly changing algorithms, digital
-          marketing in general has also continually evolved. Businesses often
-          find themselves on edge, catching up to what’s changed and what
-          remains in online marketing.
-        </p>
-        <p className="empathy-para">
-          We have compiled a list of digital marketing trends that may assist
-          you in staying on top of your marketing game.
+          Jobs’ vision for Apple did not just reflect in its products, but also
+          in its design philosophy and eventually in its design system. The
+          legacy of Steve Jobs would have never carried forward if it were not
+          translated in an organized design system.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Customer experience over keywords</h1>
+        <h1 className="empathy-h1">What is a design system?</h1>
         <p className="empathy-para">
-          This trend became a reality in 2022 when businesses saw Google’s AI
-          search becoming more and more humane. As a result, content that really
-          helped users or searchers began trending instead of keyword-heavy
-          content. This will mature in 2023 as search engines evolve, and become
-          more customer/user-oriented. It may be time you stop pleasing Google,
-          and start pleasing your customers online.
-        </p>
-        <p className="empathy-para">
-          As a business, focus on optimizing the experience of your online
-          visitors. Some things you can do -
+          A design system is a guide or a standard structure with parameters for
+          design and code along with design components that will unify both. For
+          instance, Apple built Human Interface Guidelines - a design system -
+          that has pattern libraries, downloadable templates, the iOS UI Kit,
+          style guides, and visual guidelines. The system has been built using
+          Steve Jobs' design principles. Its system lists important factors such
+          as -
           <div className="points">
-            <p className="empathy-para">
-              - easily-navigable website/mobile application
-            </p>
-            <p className="empathy-para">- ease of inquiries, order placement</p>
-            <p className="empathy-para">
-              - personalizing every touch point of purchase journey
-            </p>
-            <p className="empathy-para">
-              - informing customers through content bites
-            </p>
+            <p className="empathy-para">- Visual design</p>
+            <p className="empathy-para">- Visual index</p>
+            <p className="empathy-para">- App architecture</p>
+            <p className="empathy-para">- System capabilities</p>
+            <p className="empathy-para">- Themes, menus, buttons </p>
+            <p className="empathy-para">- Icons and images</p>
+            <p className="empathy-para">- Fields and labels </p>
+            <p className="empathy-para">- Window and view </p>
+            <p className="empathy-para">- Indicators </p>
+            <p className="empathy-para">- Selectors and extensions </p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Short videos</h1>
+        <h1 className="empathy-h1">What to include in a design system?</h1>
+        <h2 className="empathy-sub-heading">1. Design Principles </h2>
         <p className="empathy-para">
-          Videos are not just about vertical or horizontal formats anymore. They
-          are about getting more information in less time. Instagram Reels is
-          just one of the many channels where your relevant customers are. Reels
-          say a lot about your customers. Let’s see -
-          <div className="points">
-            <p className="empathy-para">
-              - your customers want information or entertainment, but they don’t
-              have a lot of time
-            </p>
-            <p className="empathy-para">
-              - they are most likely to watch your content while waiting for
-              something or someone, or while traveling
-            </p>
-            <p className="empathy-para">
-              - they are more likely to watch your content on a mobile device
-            </p>
-          </div>
+          The rules and values that drive your design team are your design
+          principles. Just as we saw in the example of Quartz, you can create
+          some non-negotiable ground rules that the team needs to keep in mind
+          while designing any element of your product or service.
         </p>
+        <h2 className="empathy-sub-heading">2. A design pattern library </h2>
         <p className="empathy-para">
-          Make 2023 the year you start producing short-form video content. Begin
-          with personalized content such as your team activities, your inner
-          workings, and your business routine, and eventually switch to your
-          value propositions.
+          Patterns are standard structures of repeated design elements that are
+          used repeatedly in specific work situations. Your design system needs
+          a design pattern library as a central repository of commonly used
+          patterns.
         </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">The Metaverse</h1>
+        <h2 className="empathy-sub-heading">3. A UI kit </h2>
         <p className="empathy-para">
-          Since some of the biggest brands, such as Starbucks and Nike, have
-          jumped on the bandwagon of the metaverse, this may become a huge trend
-          in 2023. Metaverse is like a parallel virtual world where people and
-          brands interact with each other, albeit more immersively. It is slowly
-          becoming a place where a lot of customers want to be. However, most
-          businesses do not have a practical use case. Just as it happened with
-          augmented reality and virtual reality applications back in 2018, the
-          metaverse may or may not find relevance in all business sectors.
+          A UI kit is a component library with a collection of UI-focused
+          elements such as widgets, buttons, etc. This kit helps your teams
+          create UI-friendly designs consistently, and quickly.
         </p>
+        <h2 className="empathy-sub-heading">4. Process guidelines</h2>
         <p className="empathy-para">
-          A wise step would be to study the metaverse as a user in 2023,
-          interact with other users, and find out relevant areas for your
-          business. It is okay if you don’t use the metaverse at all for digital
-          marketing in 2023. However, this should be the year of collecting as
-          many use cases for your business as possible.
+          These guidelines are interpretations of design principles.
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Information as bites</h1>
+        <h1 className="empathy-h1">
+          A step-by-step process to build a design system{" "}
+        </h1>
+        <h2 className="empathy-sub-heading">
+          1. Audit the existing product/offering{" "}
+        </h2>
         <p className="empathy-para">
-          If short-videos are any indication, the attention span of your
-          customers is getting worse by the day. Users today consume information
-          like snacks - it needs to provide instant gratification and satisfy
-          their hunger for knowledge or information. While long-form content
-          will never lose its significance, you must experiment with bite-sized
-          and easily digestible content in 2023, especially to lure your online
-          customers.
+          What does your product or service stand for? How does it help people?
+          List down the features of your product, service, or application and
+          build a catalog of UI components, visual elements, and visual
+          language. This will become the foundation of your design system.
         </p>
+        <h2 className="empathy-sub-heading">
+          2. Create and define your design language
+        </h2>
         <p className="empathy-para">
-          As a leading UI/UX Design Agency, Codelinear delivers well-crafted
-          design services that can bring your ideas to life and make your
-          web/app stand out. If you are looking for empathetic UX/UI design, do
-          call us.
+          How will you bring your design principles to life? What do you want
+          your customers to feel? Excited? Curious? How does this feeling align
+          with your branding language? Do you want your brand to come across as
+          premium, friendly, a problem-solver, or a go-getter? Create guidelines
+          about the way you want your customers to feel. Now spell out this
+          feeling in words, and this will be your design language. Based on this
+          language, you can create guides for color palettes, iconography,
+          imagery, and typography.
         </p>
+        <h2 className="empathy-sub-heading">
+          3. Apply your design pattern library
+        </h2>
         <p className="empathy-para">
-          Some things to consider -
+          Create clear processes to execute the design pattern library that you
+          have created. Remember that there are two main types of patterns -
+          functional and perceptual. Functional patterns will define the
+          day-to-day usage of your product or app, while perceptual patterns
+          will create a visual imprint through colors, typography, spacing, etc.
+        </p>
+        <h2 className="empathy-sub-heading">4. Document your design system</h2>
+        <p className="empathy-para">
+          You need to draw out a clear plan about when and how to use the design
+          principles and patterns for the teams to follow in future. Document
+          shared practices, use cases and case studies to serve as guidelines
+          and references. This could include things like:
           <div className="points">
-            <p className="empathy-para">
-              - repurpose existing content into bite-sized information
-            </p>
-            <p className="empathy-para">
-              - simplify difficult concepts of your business/product or service
-            </p>
-            <p className="empathy-para">
-              - leverage social media channels to relay this information
-            </p>
+            <p className="empathy-para">- Ways of contributing to the system</p>
+            <p className="empathy-para">- Reporting an issue</p>
+            <p className="empathy-para">- Maintenance challenges</p>
+            <p className="empathy-para">- Efficiency parameters</p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Influencers aren’t going anywhere</h1>
+        <h1 className="empathy-h1">Get inspired</h1>
         <p className="empathy-para">
-          This trend of businesses leveraging expert individuals to create brand
-          advocacy has been going on for nearly five years.2023 is not going to
-          be an exception. In fact, influencer marketing will continue to trend
-          widely, with some of the world’s biggest brands, and movie makers
-          using influencers to sell products, and entertainment.
-        </p>
-        <p className="empathy-para">
-          Here’s what you can do -
-          <div className="points">
-            <p className="empathy-para">
-              - research opportunities to reach out to your audience first
-            </p>
-            <p className="empathy-para">
-              - short-list influencers who share the same values
-            </p>
-            <p className="empathy-para">
-              - start with a barter relationship with influencers instead of
-              spending money upfront
-            </p>
-          </div>
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Linked-in is a thought influencer in B2B</h1>
-        <p className="empathy-para">
-          There’s no better advocacy for B2B companies than to reach out and
-          influence relevant audiences on Linked-in. And 2023 will be the same.
-          There’s a certain credibility attached to the thought leadership
-          opportunities that Linked-in offers that B2B audiences are looking
-          for. In fact, a study has stated that Linked-in may capture nearly 25%
-          of US B2B advertising spending by 2024. Even as the platform evolves,
-          businesses should leverage the time to build relevant followers who
-          will eventually become their brand advocates.
-        </p>
-        <p className="empathy-para">
-          Some things to do in 2023 -
-          <div className="points">
-            <p className="empathy-para">
-              - use Linkedin’s new features for thought leadership
-            </p>
-            <p className="empathy-para">
-              - create credible Linked-in profiles for your founders.
-            </p>
-            <p className="empathy-para">
-              - post useful content about your industry
-            </p>
-            <p className="empathy-para">
-              - build relationships with competitors
-            </p>
-          </div>
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Not every trend is for your business </h1>
-        <p className="empathy-para">
-          Just like we mentioned about metaverse, not every digital marketing
-          trend is for you. While it is crucial to know beforehand what’s going
-          on in the market, it is all the more significant to contextualize
-          trends for your business. Let your customers be your guiding light
-          about which trends to follow, and you will eventually find the right
-          mix.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Keep focusing on your foundation </h1>
-        <p className="empathy-para">
-          A trend that would never go out of fashion is to focus on your
-          foundations, such as -
-          <div className="points">
-            <p className="empathy-para">
-              - a good and easy-to-navigate website
-            </p>
-            <p className="empathy-para">- a scalable mobile application</p>
-            <p className="empathy-para">- decent presence on social media</p>
-            <p className="empathy-para">- a clear brand voices</p>
-            <p className="empathy-para">- clarity of communication</p>
-            <p className="empathy-para">- consistency in messaging</p>
-            <p className="empathy-para">- SEO best practises</p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Codelinear believes that it is the foundations that will propel your
-          company forward.We have helped many businesses get the right brand
-          voice through a robust and easily navigable website and/or mobile
-          application, design voice, and digital marketing. If you are looking
-          for something that lasts, we should talk.
+          Check out design systems of some of these noted companies across
+          industry verticals. You may get some real-life examples of the
+          elements that would be needed for your design system.
         </p>
       </div>
     </section>

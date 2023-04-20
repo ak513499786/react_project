@@ -3,231 +3,220 @@ export default function Trendsection() {
     <section className="empathy-content-container">
       <div className="empathy-content">
         <p className="empathy-para">
-          An interesting study published by Think With Google described how
-          Domino's and Diageo tackled ‘unintended bias’ in 2022. A significant
-          observation that the study made was about how brands miss out on
-          potential audiences on YouTube, and other channels by over-excluding
-          certain keywords.
+          If you're a business owner of any kind, you've probably heard of
+          Shopify and Magento.Today, Shopify and Magento are two of the most
+          popular ecommerce platforms for businesses and entrepreneurs.
         </p>
         <p className="empathy-para">
-          For instance, some brands stay away from words that the LGBTQ
-          community relates to in order to avoid hate speech online. However,
-          since YouTube has been actively taking steps against any kind of
-          specific audience, such exclusions block such brands from reaching out
-          to many potential buyers.
+          Shopify, with more than 4.1 million online stores, is a user-friendly
+          content management system (CMS) to build and maintain online or
+          e-commerce stores. Users need to pay a monthly fee, and businesses of
+          any size can use the platform.
         </p>
         <p className="empathy-para">
-          The study then elaborated on how Domino’s and Diageo partnered with
-          YouTube to actively fight against such bias, and engage as diverse an
-          audience as possible.
-        </p>
-        <p className="empathy-para">
-          While YouTube is notorious for constantly changing algorithms, digital
-          marketing in general has also continually evolved. Businesses often
-          find themselves on edge, catching up to what’s changed and what
-          remains in online marketing.
-        </p>
-        <p className="empathy-para">
-          We have compiled a list of digital marketing trends that may assist
-          you in staying on top of your marketing game.
+          Magento, which powers over 2.3% of e-commerce stores worldwide, is an
+          open-source platform that is free to install on any computer. However,
+          users have to pay for web hosting, security, and extensions (that work
+          like different applications).
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Customer experience over keywords</h1>
+        <h1 className="empathy-h1">What’s new in Shopify?</h1>
         <p className="empathy-para">
-          This trend became a reality in 2022 when businesses saw Google’s AI
-          search becoming more and more humane. As a result, content that really
-          helped users or searchers began trending instead of keyword-heavy
-          content. This will mature in 2023 as search engines evolve, and become
-          more customer/user-oriented. It may be time you stop pleasing Google,
-          and start pleasing your customers online.
-        </p>
-        <p className="empathy-para">
-          As a business, focus on optimizing the experience of your online
-          visitors. Some things you can do -
+          In June 2022, Shopify rolled out a set of new features. Among them
+          are:
           <div className="points">
             <p className="empathy-para">
-              - easily-navigable website/mobile application
-            </p>
-            <p className="empathy-para">- ease of inquiries, order placement</p>
-            <p className="empathy-para">
-              - personalizing every touch point of purchase journey
+              <span className="opacity-80">Shopify Audiences</span> - a new app
+              that offers insights to identify buyers searching for your
+              products.{" "}
             </p>
             <p className="empathy-para">
-              - informing customers through content bites
+              <span className="opacity-80">Shop Cash</span> - a facility that
+              provides buyers with Shop Cash bonuses in millions of dollars as
+              an incentive.
+            </p>
+            <p className="empathy-para">
+              <span className="opacity-80">Twitter Shopping</span> - Merchants
+              can now sell products directly from their Twitter profiles.
+            </p>
+            <p className="empathy-para">
+              <span className="opacity-80">B2B on Shopify</span> - Shopify Admin
+              now has wholesale capabilities built right in to allow sellers to
+              run their entire business on the platform.
+            </p>
+            <p className="empathy-para">
+              <span className="opacity-80">Shopify Point of Sale (POS)</span> -
+              a POS software that allows payments from an iPhone and sells
+              anywhere there is Shopify POS hardware.
+            </p>
+            <p className="empathy-para">
+              <span className="opacity-80">Linkpop</span> - is a free link-in
+              bio tool designed for commerce through social media and powered by
+              a fast and secure checkout. You can put this shoppable link on
+              your blog, social media handles, playlists, podcasts, etc.
             </p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Short videos</h1>
+        <h1 className="empathy-h1">What’s new in Magento?</h1>
         <p className="empathy-para">
-          Videos are not just about vertical or horizontal formats anymore. They
-          are about getting more information in less time. Instagram Reels is
-          just one of the many channels where your relevant customers are. Reels
-          say a lot about your customers. Let’s see -
+          A new version of Magento 2.4.5 was released in August 2022. Some of
+          its features are -
           <div className="points">
             <p className="empathy-para">
-              - your customers want information or entertainment, but they don’t
-              have a lot of time
+              <span className="opacity-80">Security enhancements</span> - These
+              new features support security patches, and protect the admin
+              section through two-factor authentication, a VPN, strong
+              passwords, and IP-allow listing. In addition, there are security
+              features such as -
+              <div className="points">
+                <p className="empathy-para">- Access Control List (ACL)</p>
+                <p className="empathy-para">
+                  - Google reCAPTCHA support added to Wish List sharing, Gift
+                  Card forms, or for creating customer accounts{" "}
+                </p>
+                <p className="empathy-para">
+                  - HTML Purifier now includes a MaliciousCode filter.
+                </p>
+              </div>
             </p>
             <p className="empathy-para">
-              - they are most likely to watch your content while waiting for
-              something or someone, or while traveling
+              <span className="opacity-80">Platform enhancements</span> -
+              Composer 2.2 support has been added to Magento open-source.There
+              are improvements in Magento B2B commerce catalogs while Duplicate
+              SKU data from shared catalogs has been removed.
             </p>
             <p className="empathy-para">
-              - they are more likely to watch your content on a mobile device
-            </p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Make 2023 the year you start producing short-form video content. Begin
-          with personalized content such as your team activities, your inner
-          workings, and your business routine, and eventually switch to your
-          value propositions.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">The Metaverse</h1>
-        <p className="empathy-para">
-          Since some of the biggest brands, such as Starbucks and Nike, have
-          jumped on the bandwagon of the metaverse, this may become a huge trend
-          in 2023. Metaverse is like a parallel virtual world where people and
-          brands interact with each other, albeit more immersively. It is slowly
-          becoming a place where a lot of customers want to be. However, most
-          businesses do not have a practical use case. Just as it happened with
-          augmented reality and virtual reality applications back in 2018, the
-          metaverse may or may not find relevance in all business sectors.
-        </p>
-        <p className="empathy-para">
-          A wise step would be to study the metaverse as a user in 2023,
-          interact with other users, and find out relevant areas for your
-          business. It is okay if you don’t use the metaverse at all for digital
-          marketing in 2023. However, this should be the year of collecting as
-          many use cases for your business as possible.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Information as bites</h1>
-        <p className="empathy-para">
-          If short-videos are any indication, the attention span of your
-          customers is getting worse by the day. Users today consume information
-          like snacks - it needs to provide instant gratification and satisfy
-          their hunger for knowledge or information. While long-form content
-          will never lose its significance, you must experiment with bite-sized
-          and easily digestible content in 2023, especially to lure your online
-          customers.
-        </p>
-        <p className="empathy-para">
-          As a leading UI/UX Design Agency, Codelinear delivers well-crafted
-          design services that can bring your ideas to life and make your
-          web/app stand out. If you are looking for empathetic UX/UI design, do
-          call us.
-        </p>
-        <p className="empathy-para">
-          Some things to consider -
-          <div className="points">
-            <p className="empathy-para">
-              - repurpose existing content into bite-sized information
+              <span className="opacity-80">Accessibility improvements</span> -
+              Keyword accessibility and keyboard contrast have been improved,
+              while now screen readers will be informed of every new page load.
             </p>
             <p className="empathy-para">
-              - simplify difficult concepts of your business/product or service
+              <span className="opacity-80">Payment upgrades</span> - Apple Pay
+              and PayPal Later options have been added.
             </p>
             <p className="empathy-para">
-              - leverage social media channels to relay this information
+              <span className="opacity-80">GTag</span> - Google Tags will now
+              aid in smarter Search Engine Optimization (SEO).
             </p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Influencers aren’t going anywhere</h1>
+        <h1 className="empathy-h1">
+          Shopify or Magento: Which should you choose?
+        </h1>
         <p className="empathy-para">
-          This trend of businesses leveraging expert individuals to create brand
-          advocacy has been going on for nearly five years.2023 is not going to
-          be an exception. In fact, influencer marketing will continue to trend
-          widely, with some of the world’s biggest brands, and movie makers
-          using influencers to sell products, and entertainment.
+          First up, the decision to choose Shopify or Magento or to switch from
+          one to another should not be based purely on the new or old features.
+          The basis of your decision should be your current business goals, the
+          scalability of your business operations, and your 2023 targets.
         </p>
         <p className="empathy-para">
-          Here’s what you can do -
+          Although pricing will be an important factor, it is vital to note that
+          while Shopify’s monthly subscription costs less, its add-on features
+          will amount to the equivalent of the extra costs of hosting and
+          security features that Magento charges for.
+        </p>
+        <p className="empathy-para">
+          Here’s a comparison of the two platforms -
+        </p>
+      </div>
+      <div className="empathy-content">
+        <h1 className="empathy-sub-heading">Shopify</h1>
+        <p className="empathy-para">
+          The big idea behind Shopify is to give business owners the key
+          features to set up an online store in exchange for a monthly
+          subscription. When you buy more Shopify apps, you can go further in
+          terms of customization.
+        </p>
+        <p className="empathy-para">
+          Pros
           <div className="points">
             <p className="empathy-para">
-              - research opportunities to reach out to your audience first
+              - Offers 11 free and 95 premium fully responsive themes
             </p>
             <p className="empathy-para">
-              - short-list influencers who share the same values
+              - Easy drag-and-drop editor to custom, switch, add, remove, and
+              resize elements
+            </p>
+            <p className="empathy-para">- Multi-channel integration</p>
+            <p className="empathy-para">- 100+ payment gateways</p>
+            <p className="empathy-para">- 1200+ apps</p>
+            <p className="empathy-para">- No coding knowledge is required.</p>
+            <p className="empathy-para">- Round-the-clock customer support</p>
+            <p className="empathy-para">
+              - Good for beginners as well as larger stores
+            </p>
+          </div>
+        </p>
+        <p className="empathy-para">
+          Cons
+          <div className="points">
+            <p className="empathy-para">
+              - The editing tool is not as intuitive, and takes some learning
+              curve
+            </p>
+            <p className="empathy-para">- Overly reliant on paid apps</p>
+            <p className="empathy-para">
+              - Except for Shopify payments, the transaction fee is expensive{" "}
             </p>
             <p className="empathy-para">
-              - start with a barter relationship with influencers instead of
-              spending money upfront
+              - The use of apps may hike up monthly costing for retailers{" "}
             </p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Linked-in is a thought influencer in B2B</h1>
+        <h1 className="empathy-sub-heading">Magento</h1>
         <p className="empathy-para">
-          There’s no better advocacy for B2B companies than to reach out and
-          influence relevant audiences on Linked-in. And 2023 will be the same.
-          There’s a certain credibility attached to the thought leadership
-          opportunities that Linked-in offers that B2B audiences are looking
-          for. In fact, a study has stated that Linked-in may capture nearly 25%
-          of US B2B advertising spending by 2024. Even as the platform evolves,
-          businesses should leverage the time to build relevant followers who
-          will eventually become their brand advocates.
+          Being a free open-source platform, Magento allows for changing of the
+          code that allows for customization of templates and functionality.
+          Here are some pros and cons.
         </p>
         <p className="empathy-para">
-          Some things to do in 2023 -
+          Pros
           <div className="points">
             <p className="empathy-para">
-              - use Linkedin’s new features for thought leadership
+              - A wide range of features allow for multiple stores, multiple
+              locations, languages, pricing, and currencies.
             </p>
             <p className="empathy-para">
-              - create credible Linked-in profiles for your founders.
+              - Mobile-friendly, and allows for easy creation of a mobile site
             </p>
             <p className="empathy-para">
-              - post useful content about your industry
+              - High scalability, it can support upto 500,000 users and
+              thousands of transactions per hour
+            </p>
+            <p className="empathy-para">- Great security features</p>
+            <p className="empathy-para">- Highly flexible</p>
+          </div>
+        </p>
+        <p className="empathy-para">
+          Cons
+          <div className="points">
+            <p className="empathy-para">
+              - Can become time-consuming due to coding requirements or
+              customization
             </p>
             <p className="empathy-para">
-              - build relationships with competitors
+              - You need a dedicated server to host Magento.
             </p>
+            <p className="empathy-para">- Product support is expensive</p>
+            <p className="empathy-para">- May need coding</p>
           </div>
         </p>
       </div>
       <div className="empathy-content">
-        <h1 className="empathy-h1">Not every trend is for your business </h1>
+        <h1 className="empathy-h1">Final thoughts</h1>
         <p className="empathy-para">
-          Just like we mentioned about metaverse, not every digital marketing
-          trend is for you. While it is crucial to know beforehand what’s going
-          on in the market, it is all the more significant to contextualize
-          trends for your business. Let your customers be your guiding light
-          about which trends to follow, and you will eventually find the right
-          mix.
-        </p>
-      </div>
-      <div className="empathy-content">
-        <h1 className="empathy-h1">Keep focusing on your foundation </h1>
-        <p className="empathy-para">
-          A trend that would never go out of fashion is to focus on your
-          foundations, such as -
-          <div className="points">
-            <p className="empathy-para">
-              - a good and easy-to-navigate website
-            </p>
-            <p className="empathy-para">- a scalable mobile application</p>
-            <p className="empathy-para">- decent presence on social media</p>
-            <p className="empathy-para">- a clear brand voices</p>
-            <p className="empathy-para">- clarity of communication</p>
-            <p className="empathy-para">- consistency in messaging</p>
-            <p className="empathy-para">- SEO best practises</p>
-          </div>
-        </p>
-        <p className="empathy-para">
-          Codelinear believes that it is the foundations that will propel your
-          company forward.We have helped many businesses get the right brand
-          voice through a robust and easily navigable website and/or mobile
-          application, design voice, and digital marketing. If you are looking
-          for something that lasts, we should talk.
+          While Shopify offers a no-coding and user-friendly platform that can
+          help you run an online shop in no time, Magento’s flexibility may help
+          you scale faster. We suggest you make a decision based on the size of
+          your business, and your future goals. For more information on building
+          an online store that clicks with your customers, feel free to call us.
         </p>
       </div>
     </section>

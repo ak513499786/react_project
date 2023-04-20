@@ -11,8 +11,6 @@ import "./card.scss";
 import { gsap } from "gsap";
 import arrow from "../../services/images/downarrow.svg";
 
-import HorizontalScroll from "react-scroll-horizontal";
-
 const Card = () => {
   let arrowswipe = useRef(null);
 
@@ -82,176 +80,171 @@ const Card = () => {
             </div>
           </div>
           {Widht > 768 ? (
-              <div className="worksection">
-            <HorizontalScroll>
-                <div
-                  id="myDiv"
-                  className={isCentered ? "testwithfalse" : "test"}
-                >
-                  <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
-                    <h1
-                      className="text-5xl mt-24 wcw"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#d8d6d6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      COWBOY
-                    </h1>
-                    <p
-                      className="colo my-10 mt-20"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#848484",
-                      }}
-                    >
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Vero iusto deleniti, rem atque laborum tempore,
-                      reprehenderit minima enim mollitia quae pariatur ipsum
-                      ipsa esse nostrum fugit. Modi minima error tempore.
-                    </p>
-                    <div className=" mt-5 max-lg:ml-0 ">
-                      <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
-                        View case study
-                      </button>
-                    </div>
-                  </div>
-                  <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
-                    <h1
-                      className="text-5xl mt-24 wcw"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#d8d6d6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      MANGO
-                    </h1>
-                    <p
-                      className="colo my-10 mt-20"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#848484",
-                      }}
-                    >
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Vero iusto deleniti, rem atque laborum tempore,
-                      reprehenderit minima enim mollitia quae pariatur ipsum
-                      ipsa esse nostrum fugit. Modi minima error tempore.
-                    </p>
-                    <div className=" mt-5 max-lg:ml-0 ">
-                      <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
-                        View case study
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-                    <h1
-                      className="text-5xl mt-24 wcw"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#d8d6d6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      William Abraham
-                    </h1>
-                    <p
-                      className="colo my-10 mt-20"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#848484",
-                      }}
-                    >
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Vero iusto deleniti, rem atque laborum tempore,
-                      reprehenderit minima enim mollitia quae pariatur ipsum
-                      ipsa esse nostrum fugit. Modi minima error tempore.
-                    </p>
-                    <div className=" mt-5 max-lg:ml-0 ">
-                      <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
-                        View case study
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
-                    <h1
-                      className="text-5xl mt-24 wcw"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#d8d6d6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Lyra Health
-                    </h1>
-                    <p
-                      className="colo my-10 mt-20"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#848484",
-                      }}
-                    >
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Vero iusto deleniti, rem atque laborum tempore,
-                      reprehenderit minima enim mollitia quae pariatur ipsum
-                      ipsa esse nostrum fugit. Modi minima error tempore.
-                    </p>
-                    <div className=" mt-5 max-lg:ml-0 ">
-                      <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
-                        View case study
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="klub hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
-                    <h1
-                      className="text-5xl mt-24 wcw"
-                      style={{
-                        fontFamily: "graphikthin",
-                        color: "#d8d6d6",
-                        fontWeight: "600",
-                      }}
-                    >
-                      Klub
-                    </h1>
-                    <p
-                      className="colo my-10 mt-20"
-                      style={{
-                        fontFamily: "graphik",
-                        color: "#848484",
-                      }}
-                    >
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Vero iusto deleniti, rem atque laborum tempore,
-                      reprehenderit minima enim mollitia quae pariatur ipsum
-                      ipsa esse nostrum fugit. Modi minima error tempore.
-                    </p>
-                    <div className=" mt-5 max-lg:ml-0 ">
-                      <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
-                        View case study
-                      </button>
-                    </div>
-                  </div>
-
-                  <button
-                    className="my-36 hover:text-black -20 "
-                    onClick={toggleCase}
+            <div className="worksection">
+              <div id="myDiv" className={isCentered ? "testwithfalse" : "test"}>
+                <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#d8d6d6",
+                      fontWeight: "600",
+                    }}
                   >
-                    <div className="exploree card111 hidee max-md:mx-0 mx-10 ml-10 flex flex-col justify-cnter   p-10">
-                      <div className="flex w-full justify-center hover:text-black items-center h-full">
-                        <h1 className="text-4xl extra  hover:text-black font-extrabold ">
-                          Explore More
-                        </h1>
-                      </div>
-                    </div>
-                  </button>
+                    COWBOY
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#848484",
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Vero iusto deleniti, rem atque laborum tempore,
+                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
+                    esse nostrum fugit. Modi minima error tempore.
+                  </p>
+                  <div className=" mt-5 max-lg:ml-0 ">
+                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
+                      View case study
+                    </button>
+                  </div>
                 </div>
-            </HorizontalScroll>
+                <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#d8d6d6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    MANGO
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#848484",
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Vero iusto deleniti, rem atque laborum tempore,
+                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
+                    esse nostrum fugit. Modi minima error tempore.
+                  </p>
+                  <div className=" mt-5 max-lg:ml-0 ">
+                    <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
+                      View case study
+                    </button>
+                  </div>
+                </div>
+
+                <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#d8d6d6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    William Abraham
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#848484",
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Vero iusto deleniti, rem atque laborum tempore,
+                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
+                    esse nostrum fugit. Modi minima error tempore.
+                  </p>
+                  <div className=" mt-5 max-lg:ml-0 ">
+                    <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
+                      View case study
+                    </button>
+                  </div>
+                </div>
+
+                <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#d8d6d6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Lyra Health
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#848484",
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Vero iusto deleniti, rem atque laborum tempore,
+                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
+                    esse nostrum fugit. Modi minima error tempore.
+                  </p>
+                  <div className=" mt-5 max-lg:ml-0 ">
+                    <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
+                      View case study
+                    </button>
+                  </div>
+                </div>
+
+                <div className="klub hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
+                  <h1
+                    className="text-5xl mt-24 wcw"
+                    style={{
+                      fontFamily: "graphikthin",
+                      color: "#d8d6d6",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Klub
+                  </h1>
+                  <p
+                    className="colo my-10 mt-20"
+                    style={{
+                      fontFamily: "graphik",
+                      color: "#848484",
+                    }}
+                  >
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Vero iusto deleniti, rem atque laborum tempore,
+                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
+                    esse nostrum fugit. Modi minima error tempore.
+                  </p>
+                  <div className=" mt-5 max-lg:ml-0 ">
+                    <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
+                      View case study
+                    </button>
+                  </div>
+                </div>
+
+                <button
+                  className="my-36 hover:text-black -20 "
+                  onClick={toggleCase}
+                >
+                  <div className="exploree card111 hidee max-md:mx-0 mx-10 ml-10 flex flex-col justify-cnter   p-10">
+                    <div className="flex w-full justify-center hover:text-black items-center h-full">
+                      <h1 className="text-4xl extra  hover:text-black font-extrabold ">
+                        Explore More
+                      </h1>
+                    </div>
+                  </div>
+                </button>
               </div>
+            </div>
           ) : (
             <div className="worksection">
               <div className="tst">
