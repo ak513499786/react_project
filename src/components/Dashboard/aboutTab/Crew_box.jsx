@@ -18,7 +18,11 @@ const Crewbox = () => {
   const [Servicesarray, setServicesarray] = useState();
 
   const [crew, setcrew] = useState("");
+
   const [crew_pera, setcrew_pera] = useState("");
+  const [peak, setpeak] = useState("");
+
+
 
   const [error, setError] = useState("");
 
@@ -54,6 +58,9 @@ const Crewbox = () => {
       setError(error.response.data.message);
     }
   };
+
+
+
   const handleEditClick = () => {
     if (editMode === false) {
       setEditMode(true);
@@ -143,16 +150,17 @@ const Crewbox = () => {
                 <div className="login-container">
                   <form onSubmit={handleSubmitServices}>
                     <h2>Title of pagas</h2>
-
+{/* ?/                                  ;;;;;;;;;;;;;;;;;;;;;;;;;; */}
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={crew}
+                      value={peak}
                       onChange={(e) => {
-                        setcrew(e.target.value);
+                        setpeak(e.target.value);
                       }}
                     />
+
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
@@ -161,6 +169,7 @@ const Crewbox = () => {
                       onChange={(e) => {
                         setcrew_pera(e.target.value);
                       }}
+
                     />
 
                     <br />

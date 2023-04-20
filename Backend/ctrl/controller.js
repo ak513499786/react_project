@@ -176,6 +176,25 @@ export const addWebInfoAboutcrew_box = (req, res) => {
     });
   } catch (err) {}
 };
+// ?<=====================================>
+export const addWebInfoAboutcaseStudy = (req, res) => {
+  try {
+    const { peak, peakPera } = req.body;
+    const data = {
+      peak: peak,
+      peakPera: peakPera,
+    };
+
+    db.query("INSERT INTO case_study set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
 
 // careers page - hr@codelinear.com
 // contact us page - info@codelinear.com
@@ -453,6 +472,22 @@ export const getWebAboutcrew = (req, res) => {
 export const getWebAboutcrew_box = (req, res) => {
   // app.get("", (req, res) => {
   db.query("SELECT * FROM crew_boxess", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAboutcase_study = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM case_study", (err, rows, fields) => {
     if (err) {
       console.error(err);
     } else {
