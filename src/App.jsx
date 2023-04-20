@@ -27,7 +27,7 @@ import DM from "./components/digitalMarketing/digitalmarketing";
 import PD from "./components/productDevelopment/productdevelopment";
 import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Dash from "./components/Dashboard/dash";
+import Dash from "./components/Dashboard/dash";
 
 function App() {
   window.scroll({
@@ -51,8 +51,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          {/* <Route exact path="/admin" element={<Dash />} /> */}
-
+          <Route exact path="/admin" element={<Dash />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/career" element={<Career />} />

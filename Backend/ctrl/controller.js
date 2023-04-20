@@ -3,19 +3,14 @@ import nodemailer from "nodemailer";
 
 export const addWebInfo = (req, res) => {
   try {
-    const { homeHero, homeAbout, homeService, homeClient, homeBlog } = req.body;
-    // if (homeHero) {
-    //   res.status(200);
-    // } else {
-    //   res.status(500);
-    //   res.send({ message: "please Enter valid details" });
-    // }
+    const { homeHero } = req.body;
     const data = {
       homeHero: homeHero,
-      homeAbout: homeAbout,
-      homeService: homeService,
-      homeClient: homeClient,
-      homeBlog: homeBlog,
+      // homeAbout: homeAbout,
+      // homeService: homeService,
+      // homeClient: homeClient,
+      // homeBlog: homeBlog,
+      // homeAbout, homeService, homeClient, homeBlog
     };
 
     db.query("INSERT INTO home_page set ?", data, (err, rows, fields) => {
@@ -28,8 +23,163 @@ export const addWebInfo = (req, res) => {
     });
   } catch (err) {}
 };
+
+export const addWebInfoAbout = (req, res) => {
+  try {
+    const { homeAbout } = req.body;
+    const data = {
+      homeAbout: homeAbout,
+    };
+
+    db.query("INSERT INTO home_page_about set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfoServices = (req, res) => {
+  try {
+    const { homeServices } = req.body;
+    const data = {
+      homeServices: homeServices,
+    };
+
+    db.query(
+      "INSERT INTO home_page_service set ?",
+      data,
+      (err, rows, fields) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log(rows);
+          res.send("added");
+        }
+      }
+    );
+  } catch (err) {}
+};
+// ?<=====================================>
+export const addWebInfoAboutHero = (req, res) => {
+  try {
+    const { aboutHeading } = req.body;
+    const data = {
+      aboutHeading: aboutHeading,
+    };
+
+    db.query("INSERT INTO abouthero set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<=====================================>
+export const addWebInfoAboutvision = (req, res) => {
+  try {
+    const { vision_pera } = req.body;
+    const data = {
+      vision_pera: vision_pera,
+    };
+
+    db.query("INSERT INTO vision set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<=====================================>
+export const addWebInfoAboutguiding = (req, res) => {
+  try {
+    const { guiding_pera } = req.body;
+    const data = {
+      guiding_pera: guiding_pera,
+    };
+
+    db.query("INSERT INTO guiding set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<=====================================>
+export const addWebInfoAboutTestimonial = (req, res) => {
+  try {
+    const { idea, innovate, imp } = req.body;
+    const data = {
+      idea: idea,
+      innovate: innovate,
+      imp: imp,
+    };
+
+    db.query("INSERT INTO test set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<=====================================>
+export const addWebInfoAboutcrew = (req, res) => {
+  try {
+    const { crew, crew_pera } = req.body;
+    const data = {
+      crew: crew,
+      crew_pera: crew_pera,
+    };
+
+    db.query("INSERT INTO crew set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<=====================================>
+export const addWebInfoAboutcrew_box = (req, res) => {
+  try {
+    const { Design, Strategists, Tech_Experts, Delivery_Managers } = req.body;
+    const data = {
+      Design: Design,
+      Strategists: Strategists,
+      Tech_Experts: Tech_Experts,
+      Delivery_Managers: Delivery_Managers,
+    };
+
+    db.query("INSERT INTO crew_boxess set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+
 // careers page - hr@codelinear.com
 // contact us page - info@codelinear.com
+// /////////////////////////////////////////////////////
 
 export const sendMailContact = (req, res) => {
   const { fristName, lastName, email, number, message } = req.body;
@@ -89,6 +239,8 @@ export const sendMailCareer = (req, res) => {
     }
   });
 };
+
+// //////////////////////////////////////////////////////////////
 // export const updateWebInfo = (req, res) => {
 //   try {
 //     const { title, description } = req.body;
@@ -160,6 +312,147 @@ export const sendMailCareer = (req, res) => {
 export const getweb = (req, res) => {
   // app.get("", (req, res) => {
   db.query("SELECT * FROM home_page", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getwebHero = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM home_page", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getwebHomeAbout = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM home_page_about", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getwebHomeservices = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM home_page_service", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAboutHero = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM abouthero", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAboutVision = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM vision", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAboutGuiding = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM guiding", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAbouttest = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM test", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAboutcrew = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM crew", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebAboutcrew_box = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM crew_boxess", (err, rows, fields) => {
     if (err) {
       console.error(err);
     } else {

@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use("/code", webroute);
 
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "root",
   password: "",
   database: "dashboard",
@@ -27,22 +27,6 @@ db.connect((err) => {
     console.log("Database Connected");
   }
 });
-
-//Routes
-// app.post("/login", (req, res) => {
-//   const { email, password } = req.body;
-//   console.log(email, password);
-
-//   if (password === "123") {
-//     res.status(200);
-//     res.send({ message: "Login Successfull", user: "user" });
-//   } else {
-//     res.status(404);
-//     res.send({ message: "Password didn't match" });
-//   }
-
-//   res.send({ message: "User not registered" });
-// });
 
 app.listen(5000, () => {
   console.log("port started at port 5000");

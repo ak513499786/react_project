@@ -5,16 +5,18 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import React, { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
-
-// Hostinger / Hosting	syedsaif018@gmail.com 	Codelinear@CLSS123
+import AboutTab from "./aboutTab/AboutTab";
 
 export default function Dash() {
   // const navigate = useNavigate("/home");
   const [editMode, setEditMode] = useState(false);
+  const [editModeAbout, setEditModeAbout] = useState(false);
+  const [editModeServices, seteditModeServices] = useState(false);
   const [array, setarray] = useState("");
   const [Aboutarray, setAboutarray] = useState();
+  const [Servicesarray, setServicesarray] = useState();
   // const [pera, setPera] = useState();
-  const [pera, setPeraa] = useState();
+  const [guiding_pera	, setguiding_pera	] = useState();
 
   const handleEditClick = () => {
     if (editMode === false) {
@@ -23,31 +25,30 @@ export default function Dash() {
       setEditMode(false);
     }
   };
-  const handleLogouttt = async () => {
-    // const response = await axios
-    //   .get("http://localhost:4000")
-    //   .then((response) => {
-    //     setPera(response.data.homeHero);
-    //     console.log(response);
-    //   });
+  const handleEditClickAbout = () => {
+    if (editModeAbout === false) {
+      setEditModeAbout(true);
+    } else {
+      setEditModeAbout(false);
+    }
   };
-
-  // const handleLogout = async () => {
-  //   const response = await axios
-  //     .get("http://localhost:5000/code/logout")
-  //     .then((response) => {
-  //       navigate("/login");
-  //     });
-  //   navigate("/login");
-  // };
+  const handleEditClickServices = () => {
+    if (editModeServices === false) {
+      seteditModeServices(true);
+    } else {
+      seteditModeServices(false);
+    }
+  };
+  const handleLogouttt = async () => {};
 
   const [homeHero, sethomeHero] = useState("");
   const [homeAbout, setAboutHero] = useState("");
+  const [homeAboutPera, sethomeAboutPera] = useState("");
   // const [homeAbout, setAboutHero] = useState("");
   const [homeContent, setContentHero] = useState("");
   const [homeClient, sethomeClient] = useState("");
   const [homeBlog, sethomeBlog] = useState("");
-  const [homeService, setHomeService] = useState("");
+  const [homeServices, setHomeService] = useState("");
 
   const [content, setContent] = useState("");
   const [error, setError] = useState("");
@@ -60,26 +61,18 @@ export default function Dash() {
   const handleaboutChange = (event) => {
     setAboutHero(event.target.value);
   };
-  // const logoutt = (event) => {
-  //   navigate('/')
-  // };
 
   const handlePasswordChange = (event) => {
     setContent(event.target.value);
   };
 
   const handleSubmit = async (event) => {
-    // setEditMode(false);
-
+    setEditMode(false);
     event.preventDefault();
     try {
       const response = await axios
         .post("http://localhost:5000/code/add", {
           homeHero,
-          homeAbout,
-          homeService,
-          homeClient,
-          homeBlog,
         })
         .then((response) => {
           console.log(response);
@@ -94,15 +87,74 @@ export default function Dash() {
       setError(error.response.data.message);
     }
   };
+  // ?/////////////////////////////////////handleSubmitAbout/ ////////////////////////////////////////////
+  const handleSubmitAbout = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios
+        .post("http://localhost:5000/code/addAbout", {
+          homeAbout,
+        })
+        .then((response) => {
+          console.log(response);
+
+          if (response.status === 200) {
+            alert("data post successfully");
+            window.refresh();
+          } else {
+            alert(response.data.message);
+          }
+        });
+    } catch (error) {
+      setError(error.response.data.message);
+    }
+  };
+
+  const handleSubmitServices = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios
+        .post("http://localhost:5000/code/addServices", {
+          homeServices,
+        })
+        .then((response) => {
+          console.log(response);
+          if (response.status === 200) {
+            alert("data post successfully");
+            window.refresh();
+          } else {
+            alert(response.data.message);
+          }
+        });
+    } catch (error) {
+      setError(error.response.data.message);
+    }
+  };
 
   useEffect(() => {
-    axios.get("http://localhost:4000").then((response) => {
+    axios.get("http://localhost:5000/code").then((response) => {
       setarray(response.data.homeHero);
       // setAboutarray(response.data.homeAbout);
-      // console.log(response.data);
+      console.log(response.data);
     });
   }, []);
-  const smallParas = array.split(". ");
+  useEffect(() => {
+    axios.get("http://localhost:5000/code/homeAbout").then((response) => {
+      // setarray(response.data.homeHero);
+      setAboutarray(response.data.homeAbout);
+      console.log(response.data);
+    });
+  }, []);
+  useEffect(() => {
+    axios.get("http://localhost:5000/code/homeServices").then((response) => {
+      // setarray(response.data.homeHero);
+      setServicesarray(response.data.homeServices);
+      console.log(response.data);
+    });
+  }, []);
+
+  // const smallParas = array.split(". ");
+
   return (
     <>
       <nav className="dashboard-nav">
@@ -129,7 +181,6 @@ export default function Dash() {
         <TabPanel>
           <div className="main">
             <h1 className="title">Home Page</h1>
-
             <div className="section">
               {editMode ? (
                 <>
@@ -145,7 +196,7 @@ export default function Dash() {
                       <h2>Title of pagas</h2>
 
                       <input
-                        className="text-black"
+                        className="text-black w-full bg-back border-2 border-red-400"
                         placeholder={array}
                         type="text w-[70%]"
                         value={homeHero}
@@ -156,13 +207,16 @@ export default function Dash() {
 
                       <br />
                       {error && <div className="error">{error}</div>}
-                      <button type="submit">Post</button>
+                      <button className="bg-black" type="submit">
+                        Post
+                      </button>
                     </form>
                   </div>
                 </>
               ) : (
                 <>
                   <div className="section mt-1">
+                    <h1 className="text-black text-5xl">{array}</h1>
                     <div className="w-full flex justify-end">
                       <EditIcon
                         onClick={handleEditClick}
@@ -173,19 +227,6 @@ export default function Dash() {
                         className="w-36 h-10 rounded-lg bg-black"
                       />
                     </div>
-
-                    <div className="w-full justify-between">
-                      {/* <h2 className="sub-title text-4xl text-black"> */}
-                      {smallParas.map((para, index) => (
-                        <p
-                          className="sub-title text-4xl text-black"
-                          key={index}
-                        >
-                          {para}
-                        </p>
-                      ))}
-                      {/* </h2> */}
-                    </div>
                   </div>
                 </>
               )}
@@ -193,39 +234,40 @@ export default function Dash() {
             <h1 className="title">About Section</h1>
             <div className="section mt-10">
               <div className="section mt-0">
-                {editMode ? (
+                {editModeAbout ? (
                   <>
                     <div className="w-full flex justify-end">
                       <EditIcon
-                        onClick={handleEditClick}
+                        onClick={handleEditClickAbout}
                         className="w-36 h-10 rounded-lg bg-black"
                       />
                     </div>
 
                     <div className="login-container">
-                      <form onSubmit={handleSubmit}>
+                      <form onSubmit={handleSubmitAbout}>
                         <h2>Title of pagas</h2>
 
                         <input
-                          className="text-black"
+                          className="text-black w-full bg-back border-2 border-red-400"
                           placeholder={Aboutarray}
                           type="text w-[70%]"
                           value={homeAbout}
                           onChange={handleaboutChange}
                         />
+                        {/* <input
+                          className="text-black w-full bg-back border-2 border-red-400"
+                          placeholder={Aboutarray}
+                          type="text w-[70%]"
+                          value={homeAboutPera}
+                          onChange={handleaboutChange}
+                        /> */}
 
                         <br />
-                        {/* <label>
-                        cOOntent
-                        <textarea
-                          placeholder="type"
-                          value={content}
-                          onChange={handlePasswordChange}
-                        />
-                      </label> */}
                         <br />
                         {error && <div className="error">{error}</div>}
-                        <button type="submit">Post</button>
+                        <button className="bg-black" type="submit">
+                          Post
+                        </button>
                       </form>
                     </div>
                   </>
@@ -233,8 +275,9 @@ export default function Dash() {
                   <>
                     <div className="section mt-1">
                       <div className="w-full flex justify-end">
+                        {/* <h1 className="text-black text-5xl">{Aboutarray}</h1> */}
                         <EditIcon
-                          onClick={handleEditClick}
+                          onClick={handleEditClickAbout}
                           className="w-36 mx-2 h-10 rounded-lg bg-black"
                         />
                         <DeleteIcon
@@ -247,27 +290,72 @@ export default function Dash() {
                         {/* <h2 className="sub-title">Home Hero</h2> */}
                         <h2 className="sub-title text-4xl">{Aboutarray}</h2>
                       </div>
-                      {/* <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3> */}
-                      {/* <button
-                      className="bg-black w-36 h-10 rounded-lg"
-                      type="button"
-                    >
-                      Edit
-                    </button> */}
                     </div>
                   </>
                 )}
               </div>
             </div>
-            <div className="section">
-              <h2 className="sub-title">Service Section {pera}</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-              <p className="change-para">Buttons</p>
-              <p className="change-para">Buttons</p>
-              <p className="change-para">Buttons</p>
-              <p className="change-para">Buttons</p>
+            <h1 className="title">Service Section </h1>
+
+            <div className="section mt-10">
+              <div className="section mt-0">
+                {editModeServices ? (
+                  <>
+                    <div className="w-full flex justify-end">
+                      <EditIcon
+                        onClick={handleEditClickServices}
+                        className="w-36 h-10 rounded-lg bg-black"
+                      />
+                    </div>
+
+                    <div className="login-container">
+                      <form onSubmit={handleSubmitServices}>
+                        <h2>Title of pagas</h2>
+
+                        <input
+                          className="text-black w-full bg-back border-2 border-red-400"
+                          placeholder={Servicesarray}
+                          type="text w-[70%]"
+                          value={homeServices}
+                          onChange={(e) => {
+                            setHomeService(e.target.value);
+                          }}
+                        />
+
+                        <br />
+                        <br />
+                        {error && <div className="error">{error}</div>}
+                        <button className="bg-black" type="submit">
+                          Post
+                        </button>
+                      </form>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="section mt-1">
+                      <div className="w-full flex justify-end">
+                        {/* <h1 className="text-black text-5xl">{Aboutarray}</h1> */}
+                        <EditIcon
+                          onClick={handleEditClickServices}
+                          className="w-36 mx-2 h-10 rounded-lg bg-black"
+                        />
+                        <DeleteIcon
+                          onClick={handleEditClick}
+                          className="w-36 h-10 rounded-lg bg-black"
+                        />
+                      </div>
+
+                      <div className="w-ful flex justify-between">
+                        {/* <h2 className="sub-title">Home Hero</h2> */}
+                        <h2 className="sub-title text-4xl">{Servicesarray}</h2>
+                      </div>
+                    </div>
+                  </>
+                )}
+              </div>
             </div>
+
             <div className="section">
               <h2 className="sub-title">Testimonial Section</h2>
               <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
@@ -295,33 +383,7 @@ export default function Dash() {
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="main">
-            <h1 className="title">About Page</h1>
-            <div className="section">
-              <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">About Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Service Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Testimonial Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Blog Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
+          <AboutTab />
         </TabPanel>
         <TabPanel>
           <div className="main">
