@@ -5,26 +5,20 @@ import React, { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const Crewbox = () => {
+const WhyUS = () => {
   const [editMode, setEditMode] = useState(false);
   const [vision_pera, setvision_pera] = useState(false);
   const [editModeServices, seteditModeServices] = useState(false);
-  const [editModeAbout, setEditModeAbout] = useState(false);
 
-  const [guiding_pera, setguiding_pera] = useState();
+  const [guiding_pera, setguiding_pera] = useState("");
 
   const [array, setarray] = useState("");
   const [Aboutarray, setAboutarray] = useState();
   const [Servicesarray, setServicesarray] = useState();
 
-  const [crew, setcrew] = useState("");
-
-  const [crew_pera, setcrew_pera] = useState("");
-  const [Design, setDesign] = useState("");
-  const [Strategists, setStrategists] = useState("");
-  const [Tech_Experts, setTech_Experts] = useState("");
-  const [Delivery_Managers, setDelivery_Managers] = useState("");
-
+  const [heading, setheading] = useState("");
+  const [pera1, setpera1] = useState("");
+  const [pera2, setpera2] = useState("");
   const [error, setError] = useState("");
 
   const handleEditClickServices = () => {
@@ -39,11 +33,10 @@ const Crewbox = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post("http://localhost:5000/code/addaboutcrew_box", {
-          Design,
-          Strategists,
-          Tech_Experts,
-          Delivery_Managers,
+        .post("http://localhost:5000/code/addcareerwhyus", {
+          heading,
+          pera1,
+          pera2,
         })
         .then((response) => {
           console.log(response);
@@ -60,21 +53,17 @@ const Crewbox = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5000/code/aboutcrew_box").then((response) => {
-      setServicesarray(response.data.Design);
-      setAboutarray(response.data.Strategists);
-      setarray(response.data.Tech_Experts);
-      setguiding_pera(response.data.Delivery_Managers);
-
+    axios.get("http://localhost:5000/code/careerwhyus").then((response) => {
+      setServicesarray(response.data.heading);
+      setAboutarray(response.data.pera1);
+      setarray(response.data.pera2);
       console.log(response.data);
     });
   }, []);
 
   return (
     <div className="main">
-      <h1 className="title">About Page</h1>
       <div className="section">
-        <h2 className="sub-title">Hero Section</h2>
         <div className="section mt-10">
           <div className="section mt-0">
             {editModeServices ? (
@@ -88,43 +77,31 @@ const Crewbox = () => {
 
                 <div className="login-container">
                   <form onSubmit={handleSubmitServices}>
-                    <h2>Title of pagas</h2>
-                    {/* ?/                 kjlkjb                 ;;;;;;;;;;;;;;;;;;;;;;;;;; */}
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Design}
+                      value={heading}
                       onChange={(e) => {
-                        setDesign(e.target.value);
-                      }}
-                    />
-
-                    <input
-                      className="text-black w-full bg-back border-2 border-red-400"
-                      placeholder={Servicesarray}
-                      type="text w-[70%]"
-                      value={Strategists}
-                      onChange={(e) => {
-                        setStrategists(e.target.value);
+                        setheading(e.target.value);
                       }}
                     />
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Tech_Experts}
+                      value={pera1}
                       onChange={(e) => {
-                        setTech_Experts(e.target.value);
+                        setpera1(e.target.value);
                       }}
                     />
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Delivery_Managers}
+                      value={pera2}
                       onChange={(e) => {
-                        setDelivery_Managers(e.target.value);
+                        setpera2(e.target.value);
                       }}
                     />
 
@@ -153,14 +130,9 @@ const Crewbox = () => {
                   </div>
 
                   <div className="w-ful flex flex-col justify-between ">
-                    {/* <h2 className="sub-title">Home Hero</h2> */}
                     <h2 className="sub-title text-4xl">{Servicesarray}</h2>
-
-                    <h2 className="sub-title text-4xl">{Aboutarray}</h2>
-
-                    <h2 className="sub-title text-4xl">{array}</h2>
-
-                    <h2 className="sub-title text-4xl">{guiding_pera}</h2>
+                    <h2 className="sub-title text-4xl">{Servicesarray}</h2>
+                    <h2 className="sub-title text-4xl">{Servicesarray}</h2>
                   </div>
                 </div>
               </>
@@ -168,9 +140,8 @@ const Crewbox = () => {
           </div>
         </div>
       </div>
-      {/* <h1 className="title">vision pera</h1> */}
     </div>
   );
 };
 
-export default Crewbox;
+export default WhyUS;
