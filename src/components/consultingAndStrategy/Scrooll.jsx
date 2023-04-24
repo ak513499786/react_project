@@ -20,13 +20,12 @@ const Parent = () => {
 
   if (url.pathname === "/consultingandstrategy") {
     return (
-      <div className="ml-[10%]" style={{ display: "flex", height: "400px" }}>
+      <div className="ml-0" style={{ display: "flex", height: "400px" }}>
         <div
           style={{
             width: "100%",
             overflowY: "scroll",
-            height: "45%",
-            // borderRight: "1px solid black",
+            height: "400px",
             position: "absolute",
           }}
           className="snapwala"
@@ -90,7 +89,7 @@ const Parent = () => {
         </div>
         <div
           style={{ width: "100%", overflowX: "auto", height: "100%" }}
-          className="ml-[900px]"
+          className="horizontal-section"
           ref={child2Ref}
           onScroll={handleChild2Scroll}
         >
@@ -112,12 +111,12 @@ const Parent = () => {
     );
   } else if (url.pathname === "/userexperience") {
     return (
-      <div className="ml-[10%]" style={{ display: "flex", height: "400px" }}>
+      <div className="ml-0" style={{ display: "flex", height: "400px" }}>
         <div
           style={{
             width: "100%",
             overflowY: "scroll",
-            height: "45%",
+            height: "400px",
             // borderRight: "1px solid black",
             position: "absolute",
           }}
@@ -191,7 +190,7 @@ const Parent = () => {
         </div>
         <div
           style={{ width: "100%", overflowX: "auto", height: "100%" }}
-          className="ml-[900px]"
+          className="horizontal-section"
           ref={child2Ref}
           onScroll={handleChild2Scroll}
         >
@@ -214,12 +213,12 @@ const Parent = () => {
     );
   } else if (url.pathname === "/productdevelopment") {
     return (
-      <div className="ml-[10%]" style={{ display: "flex", height: "400px" }}>
+      <div className="ml-0" style={{ display: "flex", height: "400px" }}>
         <div
           style={{
             width: "100%",
             overflowY: "scroll",
-            height: "45%",
+            height: "400px",
             // borderRight: "1px solid black",
             position: "absolute",
           }}
@@ -291,7 +290,7 @@ const Parent = () => {
         </div>
         <div
           style={{ width: "100%", overflowX: "auto", height: "100%" }}
-          className="ml-[900px]"
+          className="horizontal-section"
           ref={child2Ref}
           onScroll={handleChild2Scroll}
         >
@@ -319,12 +318,12 @@ const Parent = () => {
     );
   } else {
     return (
-      <div className="ml-[10%]" style={{ display: "flex", height: "400px" }}>
+      <div className="ml-0" style={{ display: "flex", height: "400px" }}>
         <div
           style={{
             width: "100%",
             overflowY: "scroll",
-            height: "45%",
+            height: "400px",
             // borderRight: "1px solid black",
             position: "absolute",
           }}
@@ -374,7 +373,7 @@ const Parent = () => {
         </div>
         <div
           style={{ width: "100%", overflowX: "auto", height: "100%" }}
-          className="ml-[900px]"
+          className="horizontal-section"
           ref={child2Ref}
           onScroll={handleChild2Scroll}
         >

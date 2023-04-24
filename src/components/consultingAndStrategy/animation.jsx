@@ -42,7 +42,7 @@ const Animation = () => {
             overflowY: "scroll",
             marginRight: "0px",
             scrollSnapType: "y mandatory",
-            paddingRight: "x0px",
+            paddingRight: "0px",
             height: "300px",
             width: "100%",
           }}
