@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const Crewbox = () => {
+const Boxes = () => {
   const [editMode, setEditMode] = useState(false);
   const [vision_pera, setvision_pera] = useState(false);
   const [editModeServices, seteditModeServices] = useState(false);
@@ -17,13 +17,13 @@ const Crewbox = () => {
   const [Aboutarray, setAboutarray] = useState();
   const [Servicesarray, setServicesarray] = useState();
 
-  const [crew, setcrew] = useState("");
+  const [grothHeading, setgrothHeading] = useState("");
 
-  const [crew_pera, setcrew_pera] = useState("");
-  const [Design, setDesign] = useState("");
-  const [Strategists, setStrategists] = useState("");
-  const [Tech_Experts, setTech_Experts] = useState("");
-  const [Delivery_Managers, setDelivery_Managers] = useState("");
+  const [grothPera, setgrothPera] = useState("");
+  const [flex, setflex] = useState("");
+  const [flexPera, setflexPera] = useState("");
+  const [value, setvalue] = useState("");
+  const [valuePera, setvaluePera] = useState("");
 
   const [error, setError] = useState("");
 
@@ -39,11 +39,13 @@ const Crewbox = () => {
     event.preventDefault();
     try {
       const response = await axios
-        .post("http://localhost:5000/code/addaboutcrew_box", {
-          Design,
-          Strategists,
-          Tech_Experts,
-          Delivery_Managers,
+        .post("http://localhost:5000/code/addcareerwhyusBoxes", {
+          grothHeading,
+          grothPera,
+          flex,
+          flexPera,
+          value,
+          valuePera,
         })
         .then((response) => {
           console.log(response);
@@ -60,11 +62,13 @@ const Crewbox = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:5000/code/aboutcrew_box").then((response) => {
-      setServicesarray(response.data.Design);
-      setAboutarray(response.data.Strategists);
-      setarray(response.data.Tech_Experts);
-      setguiding_pera(response.data.Delivery_Managers);
+    axios.get("http://localhost:5000/code/careerBoxes").then((response) => {
+      setServicesarray(response.data.grothHeading);
+      setAboutarray(response.data.grothPera);
+      setarray(response.data.flex);
+      setguiding_pera(response.data.flexPera);
+      setvision_pera(response.data.value);
+      setEditMode(response.data.valuePera);
 
       console.log(response.data);
     });
@@ -94,9 +98,9 @@ const Crewbox = () => {
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Design}
+                      value={grothHeading}
                       onChange={(e) => {
-                        setDesign(e.target.value);
+                        setgrothHeading(e.target.value);
                       }}
                     />
 
@@ -104,27 +108,45 @@ const Crewbox = () => {
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Strategists}
+                      value={grothPera}
                       onChange={(e) => {
-                        setStrategists(e.target.value);
+                        setgrothPera(e.target.value);
                       }}
                     />
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Tech_Experts}
+                      value={flex}
                       onChange={(e) => {
-                        setTech_Experts(e.target.value);
+                        setflex(e.target.value);
                       }}
                     />
                     <input
                       className="text-black w-full bg-back border-2 border-red-400"
                       placeholder={Servicesarray}
                       type="text w-[70%]"
-                      value={Delivery_Managers}
+                      value={flexPera}
                       onChange={(e) => {
-                        setDelivery_Managers(e.target.value);
+                        setflexPera(e.target.value);
+                      }}
+                    />
+                    <input
+                      className="text-black w-full bg-back border-2 border-red-400"
+                      placeholder={value}
+                      type="text w-[70%]"
+                      value={value}
+                      onChange={(e) => {
+                        setvalue(e.target.value);
+                      }}
+                    />
+                    <input
+                      className="text-black w-full bg-back border-2 border-red-400"
+                      placeholder={Servicesarray}
+                      type="text w-[70%]"
+                      value={valuePera}
+                      onChange={(e) => {
+                        setvaluePera(e.target.value);
                       }}
                     />
 
@@ -161,6 +183,8 @@ const Crewbox = () => {
                     <h2 className="sub-title text-4xl">{array}</h2>
 
                     <h2 className="sub-title text-4xl">{guiding_pera}</h2>
+                    <h2 className="sub-title text-4xl">{vision_pera}</h2>
+                    <h2 className="sub-title text-4xl">{editMode}</h2>
                   </div>
                 </div>
               </>
@@ -173,4 +197,4 @@ const Crewbox = () => {
   );
 };
 
-export default Crewbox;
+export default Boxes;

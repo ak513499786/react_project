@@ -6,6 +6,13 @@ import React, { useState, useEffect } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AboutTab from "./aboutTab/AboutTab";
+import Servicedo from "./ServiceTab/Servicedo";
+import AbilityService from "./ServiceTab/AbilityService";
+import WrokHero from "./WorkTab/WorkHero";
+import ContactHero from "./ContactTab/ContactHero";
+import CareerHero from "./CareerTab/CareerHero";
+import WhyUS from "./CareerTab/WhyUs";
+import Boxes from "./CareerTab/Boxes";
 
 export default function Dash() {
   // const navigate = useNavigate("/home");
@@ -16,7 +23,7 @@ export default function Dash() {
   const [Aboutarray, setAboutarray] = useState();
   const [Servicesarray, setServicesarray] = useState();
   // const [pera, setPera] = useState();
-  const [guiding_pera	, setguiding_pera	] = useState();
+  const [guiding_pera, setguiding_pera] = useState();
 
   const handleEditClick = () => {
     if (editMode === false) {
@@ -393,24 +400,12 @@ export default function Dash() {
               <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
             </div>
             <div className="section">
-              <h2 className="sub-title">About Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
+              <h2 className="sub-title">We Do It All</h2>
+              <Servicedo />
             </div>
             <div className="section">
               <h2 className="sub-title">Service Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Testimonial Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Blog Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
+              <AbilityService />
             </div>
           </div>
         </TabPanel>
@@ -419,17 +414,15 @@ export default function Dash() {
             <h1 className="title">Career Page</h1>
             <div className="section">
               <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
+              <CareerHero />
             </div>
             <div className="section">
-              <h2 className="sub-title">About Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
+              <h2 className="sub-title">Why Us Section</h2>
+              <WhyUS />
             </div>
             <div className="section">
-              <h2 className="sub-title">Service Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
+              <h2 className="sub-title">Boxes Section</h2>
+              <Boxes />
             </div>
             <div className="section">
               <h2 className="sub-title">Testimonial Section</h2>
@@ -447,8 +440,7 @@ export default function Dash() {
           <div className="main">
             <h1 className="title">Work Page</h1>
             <div className="section">
-              <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
+              <WrokHero />
             </div>
             <div className="section">
               <h2 className="sub-title">About Section</h2>
@@ -477,18 +469,7 @@ export default function Dash() {
             <h1 className="title">Contact Page</h1>
             <div className="section">
               <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Form Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Location Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
+              <ContactHero />
             </div>
           </div>
         </TabPanel>

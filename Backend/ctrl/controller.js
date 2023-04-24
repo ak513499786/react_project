@@ -195,6 +195,169 @@ export const addWebInfoAboutcaseStudy = (req, res) => {
     });
   } catch (err) {}
 };
+// ?<=====================================>
+export const addWebInfoservicewedo = (req, res) => {
+  try {
+    const { heading, do_pera } = req.body;
+    const data = {
+      heading: heading,
+      do_pera: do_pera,
+    };
+
+    db.query("INSERT INTO services_wedo set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<====================-----------=================>
+export const addWebInfoserviceability = (req, res) => {
+  try {
+    const {
+      problem_solve,
+      problem_pera,
+      leader,
+      leader_pera,
+      patrons,
+      patron_pera,
+    } = req.body;
+    const data = {
+      problem_solve: problem_solve,
+      problem_pera: problem_pera,
+      leader: leader,
+      leader_pera: leader_pera,
+      patrons: patrons,
+      patron_pera: patron_pera,
+    };
+
+    db.query("INSERT INTO ability set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<====================-----------=================>
+export const addWebInfoWork = (req, res) => {
+  try {
+    const { work_hero } = req.body;
+    const data = {
+      work_hero: work_hero,
+    };
+
+    db.query("INSERT INTO wookpage set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+// ?<====================-----------=================>
+export const addWebInfocareer = (req, res) => {
+  try {
+    const { careerHero } = req.body;
+    const data = {
+      careerHero: careerHero,
+    };
+
+    db.query("INSERT INTO career set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfocareerwhyus = (req, res) => {
+  try {
+    const { heading, pera2, pera1 } = req.body;
+    const data = {
+      heading: heading,
+      pera1: pera1,
+      pera2: pera2,
+    };
+
+    db.query("INSERT INTO why_us set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfocareerwhyusBoxes = (req, res) => {
+  try {
+    const { grothHeading, grothPera, flex, flexPera, value, valuePera } =
+      req.body;
+    const data = {
+      grothHeading: grothHeading,
+      grothPera: grothPera,
+      flex: flex,
+      flexPera: flexPera,
+      value: value,
+      valuePera: valuePera,
+    };
+
+    db.query("INSERT INTO why_boxes set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfocareerlifeat = (req, res) => {
+  try {
+    const { lifeHeading, lifePera } = req.body;
+    const data = {
+      lifeHeading: lifeHeading,
+      lifePera: lifePera,
+    };
+
+    db.query("INSERT INTO lifeat set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfocontact = (req, res) => {
+  try {
+    const { heading, pera } = req.body;
+    const data = {
+      heading: heading,
+      pera: pera,
+    };
+
+    db.query("INSERT INTO contactus set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
 
 // careers page - hr@codelinear.com
 // contact us page - info@codelinear.com
@@ -488,6 +651,129 @@ export const getWebAboutcrew_box = (req, res) => {
 export const getWebAboutcase_study = (req, res) => {
   // app.get("", (req, res) => {
   db.query("SELECT * FROM case_study", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebservicedo = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM services_wedo", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebserviceability = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM ability", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+// <=================================================================|?
+export const getWebwork = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM wookpage", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebcareer = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM career", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebcareerwhyus = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM why_us", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebcareerwhyusboxes = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM why_boxes", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebcareerlifeat = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM lifeat", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebcontact = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM contactus", (err, rows, fields) => {
     if (err) {
       console.error(err);
     } else {
