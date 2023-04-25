@@ -99,7 +99,7 @@ const Card2 = () => {
     window.addEventListener("scroll", function () {
       // console.log("scroll event fired!");
       // console.log("window.scrollX:", window.scrollX);
-      if (window.scrollY > 500 && window.scrollY < 1200) {
+      if (window.scrollY > 500 && window.scrollY < 1000) {
         // console.log("window.scrollX event has occurred!");
         setPos(true);
       } else {

@@ -2,8 +2,8 @@ import "./nav.css";
 
 import logo from "./images/logo.svg";
 import Vectorr from "../footer/images/Vectorr.svg";
-import facebook from "./images/ic_baseline-facebook.svg";
-import instagram from "./images/mdi_instagram.svg";
+import facebook from "./images/mdi_instagram.svg";
+import instagram from "./images/mdi_twitter.svg";
 import linkedin from "./images/mdi_linkedin.svg";
 
 import { Link } from "react-router-dom";
@@ -110,24 +110,16 @@ export default function Navigation_bar() {
               target="blank"
               to="https://www.linkedin.com/company/codelinear/mycompany/?viewAsMember=true"
             >
-              <img
-                src={linkedin}
-                alt=""
-                srcset=""
-                className="icons"
-                loading="lazy"
-              />
+              <img src={linkedin} className="icons" loading="lazy" />
             </Link>{" "}
-            <img src={facebook} alt="" className="icons" loading="lazy" />
-            <img src={instagram} alt="" className="icons" loading="lazy" />
+            <Link target="blank" to="https://www.instagram.com/codelinear_">
+              <img src={facebook} alt="" className="icons" loading="lazy" />
+            </Link>
+            <Link target="blank" to="https://twitter.com/Codelinear_">
+              <img src={instagram} alt="" className="icons" loading="lazy" />
+            </Link>
             <Link target="blank" to="https://medium.com/@codelinear_">
-              <img
-                src={Vectorr}
-                alt=""
-                srcset=""
-                className="icons"
-                loading="lazy"
-              />
+              <img src={Vectorr} className="icons" loading="lazy" />
             </Link>
           </div>
           <p className="contact-loc">
@@ -139,7 +131,7 @@ export default function Navigation_bar() {
               <span
                 style={{
                   fontFamily: "sans-serif",
-                  color:'#848484'
+                  color: "#848484",
                 }}
               >
                 @
