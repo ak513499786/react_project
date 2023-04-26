@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./dash.scss";
+import Mascot from "./images/Screenshot 2023-04-09 144546 1.svg";
+import login from "./images/Vector.svg";
+import user from "./images/user.svg";
+import pass from "./images/pass.svg";
 
 function Login() {
   const [username, setUsername] = useState("");
@@ -45,15 +49,21 @@ function Login() {
   };
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit}>
-        <h2>Login</h2>
+      <form onSubmit={handleSubmit} className="rightpart">
+        <h2 className="rightpart-login">Login</h2>
         <label>
-          Username:
-          <input type="text" value={username} onChange={handleUsernameChange} />
+          <img src={user} alt="" />
+          <input
+            type="text"
+            value={username}
+            onChange={handleUsernameChange}
+            placeholder="Username"
+          />
         </label>
+
         <br />
         <label>
-          Password:
+          <img src={pass} alt="" />
           <input
             placeholder="type"
             type="password"
@@ -64,10 +74,22 @@ function Login() {
             }}
           />
         </label>
+        <p className="forgot">Forgot Password ?</p>
         <br />
         {error && <div className="error">{error}</div>}
-        <button type="submit">Login</button>
+        <button type="submit">
+          <img src={login} alt="" className="arrow-login" />
+        </button>
       </form>
+      <div className="leftpart">
+        <div className="left-upper">
+          <img src={Mascot} alt="" className="masco" />
+        </div>
+        <div className="left-lower">
+          <div className="lines"></div>
+          <h1 className="left-lower-txt">Codelinear</h1>
+        </div>
+      </div>
     </div>
   );
 }

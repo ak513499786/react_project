@@ -1,5 +1,5 @@
-import facebook from "../navigationBar/images/ic_baseline-facebook.svg";
-import instagram from "../navigationBar/images/mdi_instagram.svg";
+import facebook from "../navigationBar/images/mdi_instagram.svg";
+import instagram from "../navigationBar/images/mdi_twitter.svg";
 import linkedin from "../navigationBar/images/mdi_linkedin.svg";
 import Vectorr from "./images/Vectorr.svg";
 import Codelinear from "../codelinear/codelinear";
@@ -11,7 +11,7 @@ import { useRef, useEffect } from "react";
 export default function Lowerfooter() {
   let footeranimation = useRef(null);
   let footeranimationwidth = useRef(null);
-  let footerScroll = useRef(null)
+  let footerScroll = useRef(null);
 
   const Effect = () => {
     window.scrollTo(0, 0);
@@ -102,20 +102,24 @@ export default function Lowerfooter() {
               loading="lazy"
             />
           </Link>
-          <img
-            src={facebook}
-            alt=""
-            srcset=""
-            className="icon"
-            loading="lazy"
-          />
-          <img
-            src={instagram}
-            alt=""
-            srcset=""
-            className="icon"
-            loading="lazy"
-          />
+          <Link target="blank" to="https://www.instagram.com/codelinear_">
+            <img
+              src={facebook}
+              alt=""
+              srcset=""
+              className="icon"
+              loading="lazy"
+            />
+          </Link>
+          <Link target="blank" to="https://twitter.com/Codelinear_">
+            <img
+              src={instagram}
+              alt=""
+              srcset=""
+              className="icon"
+              loading="lazy"
+            />
+          </Link>
           <Link target="blank" to="https://medium.com/@codelinear_">
             <img
               src={Vectorr}

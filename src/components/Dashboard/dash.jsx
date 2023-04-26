@@ -18,6 +18,15 @@ import UserExper from "./innerpagess/UserExper";
 import Productdev from "./innerpagess/Productdev";
 import DigitalMarketing from "./innerpagess/DigitalMarketing";
 
+import Mascot from "./images/Screenshot 2023-04-09 144546 1.svg";
+import Dashimg from "./images/dash.svg";
+import Home from "./images/home.svg";
+import About from "./images/about.svg";
+import Blog from "./images/blog.svg";
+import Setting from "./images/settings.svg";
+import Contact from "./images/contact.svg";
+import Case from "./images/case.svg";
+
 export default function Dash() {
   // const navigate = useNavigate("/home");
   const [editMode, setEditMode] = useState(false);
@@ -169,14 +178,19 @@ export default function Dash() {
   return (
     <>
       <nav className="dashboard-nav">
-        <div className="dashboard-item">Codelinear</div>
-
-        <img
-          src={profile}
-          alt=""
-          className="profile"
-          onClick={handleLogouttt}
-        />
+        <div className="dashboard-item">
+          <img src={Mascot} alt="" className="dash-mascot" />
+          Codelinear
+        </div>
+        <div className="logout">
+          <h1 className="logout-txt">Logout</h1>
+          <img
+            src={profile}
+            alt=""
+            className="profile"
+            onClick={handleLogouttt}
+          />
+        </div>
       </nav>
       <Tabs>
         <TabList className="dashboard-left-nav">
@@ -186,213 +200,67 @@ export default function Dash() {
           <Tab className="dashboard-left-item">Career</Tab>
           <Tab className="dashboard-left-item">Work</Tab>
           <Tab className="dashboard-left-item">Contact</Tab>
-
           <Tab className="dashboard-left-item">Blog</Tab>
           <Tab className="dashboard-left-item">service inner</Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={Dashimg} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> DashBoard</h1>
+          </Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={Home} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> About Us</h1>
+          </Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={About} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> Clients</h1>
+          </Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={Setting} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> Services</h1>
+          </Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={Case} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> Career</h1>
+          </Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={Blog} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> Blogs</h1>
+          </Tab>
+          <Tab className="dashboard-left-item">
+            <div className="tabtxt">
+              <img src={Contact} alt="" className="dash-images" />
+            </div>
+            <h1 className="dash-item-h1"> Contact Us</h1>
+          </Tab>
         </TabList>
-
+        <TabPanel>
+          <div className="main" style={{ height: "100vh" }}></div>
+        </TabPanel>
         <TabPanel>
           <div className="main">
-            <h1 className="title">Home Page</h1>
-            <div className="section">
-              {editMode ? (
-                <>
-                  <div className="w-full flex justify-end">
-                    <EditIcon
-                      onClick={handleEditClick}
-                      className="w-36 h-10 rounded-lg bg-black"
-                    />
-                  </div>
-
-                  <div className="login-container">
-                    <form onSubmit={handleSubmit}>
-                      <h2>Title of pagas</h2>
-
-                      <input
-                        className="text-black w-full bg-back border-2 border-red-400"
-                        placeholder={array}
-                        type="text w-[70%]"
-                        value={homeHero}
-                        onChange={handleUsernameChange}
-                      />
-
-                      <br />
-
-                      <br />
-                      {error && <div className="error">{error}</div>}
-                      <button className="bg-black" type="submit">
-                        Post
-                      </button>
-                    </form>
-                  </div>
-                </>
-              ) : (
-                <>
-                  <div className="section mt-1">
-                    <h1 className="text-black text-5xl">{array}</h1>
-                    <div className="w-full flex justify-end">
-                      <EditIcon
-                        onClick={handleEditClick}
-                        className="w-36 mx-2 h-10 rounded-lg bg-black"
-                      />
-                      <DeleteIcon
-                        onClick={handleEditClick}
-                        className="w-36 h-10 rounded-lg bg-black"
-                      />
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-            <h1 className="title">About Section</h1>
-            <div className="section mt-10">
-              <div className="section mt-0">
-                {editModeAbout ? (
-                  <>
-                    <div className="w-full flex justify-end">
-                      <EditIcon
-                        onClick={handleEditClickAbout}
-                        className="w-36 h-10 rounded-lg bg-black"
-                      />
-                    </div>
-
-                    <div className="login-container">
-                      <form onSubmit={handleSubmitAbout}>
-                        <h2>Title of pagas</h2>
-
-                        <input
-                          className="text-black w-full bg-back border-2 border-red-400"
-                          placeholder={Aboutarray}
-                          type="text w-[70%]"
-                          value={homeAbout}
-                          onChange={handleaboutChange}
-                        />
-                        {/* <input
-                          className="text-black w-full bg-back border-2 border-red-400"
-                          placeholder={Aboutarray}
-                          type="text w-[70%]"
-                          value={homeAboutPera}
-                          onChange={handleaboutChange}
-                        /> */}
-
-                        <br />
-                        <br />
-                        {error && <div className="error">{error}</div>}
-                        <button className="bg-black" type="submit">
-                          Post
-                        </button>
-                      </form>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="section mt-1">
-                      <div className="w-full flex justify-end">
-                        {/* <h1 className="text-black text-5xl">{Aboutarray}</h1> */}
-                        <EditIcon
-                          onClick={handleEditClickAbout}
-                          className="w-36 mx-2 h-10 rounded-lg bg-black"
-                        />
-                        <DeleteIcon
-                          onClick={handleEditClick}
-                          className="w-36 h-10 rounded-lg bg-black"
-                        />
-                      </div>
-
-                      <div className="w-ful flex justify-between">
-                        {/* <h2 className="sub-title">Home Hero</h2> */}
-                        <h2 className="sub-title text-4xl">{Aboutarray}</h2>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
-            <h1 className="title">Service Section </h1>
-
-            <div className="section mt-10">
-              <div className="section mt-0">
-                {editModeServices ? (
-                  <>
-                    <div className="w-full flex justify-end">
-                      <EditIcon
-                        onClick={handleEditClickServices}
-                        className="w-36 h-10 rounded-lg bg-black"
-                      />
-                    </div>
-
-                    <div className="login-container">
-                      <form onSubmit={handleSubmitServices}>
-                        <h2>Title of pagas</h2>
-
-                        <input
-                          className="text-black w-full bg-back border-2 border-red-400"
-                          placeholder={Servicesarray}
-                          type="text w-[70%]"
-                          value={homeServices}
-                          onChange={(e) => {
-                            setHomeService(e.target.value);
-                          }}
-                        />
-
-                        <br />
-                        <br />
-                        {error && <div className="error">{error}</div>}
-                        <button className="bg-black" type="submit">
-                          Post
-                        </button>
-                      </form>
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <div className="section mt-1">
-                      <div className="w-full flex justify-end">
-                        {/* <h1 className="text-black text-5xl">{Aboutarray}</h1> */}
-                        <EditIcon
-                          onClick={handleEditClickServices}
-                          className="w-36 mx-2 h-10 rounded-lg bg-black"
-                        />
-                        <DeleteIcon
-                          onClick={handleEditClick}
-                          className="w-36 h-10 rounded-lg bg-black"
-                        />
-                      </div>
-
-                      <div className="w-ful flex justify-between">
-                        {/* <h2 className="sub-title">Home Hero</h2> */}
-                        <h2 className="sub-title text-4xl">{Servicesarray}</h2>
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-            </div>
-
-            <div className="section">
-              <h2 className="sub-title">Testimonial Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">
-                Testimonial1 Lorem ipsum dolor sit amet.
-              </p>
-              <p className="change-para">
-                Testimonial2 Lorem ipsum dolor sit amet.
-              </p>
-              <p className="change-para">
-                Testimonial3 Lorem ipsum dolor sit amet.
-              </p>
-              <p className="change-para">
-                Testimonial4 Lorem ipsum dolor sit amet.
-              </p>
-              <p className="change-para">
-                Testimonial5 Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Blog Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
+            <Tabs className="about-page-dash">
+              <TabList className="about-page-dash-txt">Home Page</TabList>
+              <TabList className="about-page-dash-txt">About Us</TabList>
+            </Tabs>
+            <TabPanel className="about-page-dash-panel">
+              <input type="text" className="about-page-dash-search" />
+              <h2 className="sub-title">Why Us Section</h2>
+            </TabPanel>
+            <TabPanel className="about-page-dash-panel">
+              <input type="text" className="about-page-dash-search" />
+            </TabPanel>
           </div>
         </TabPanel>
         <TabPanel>
