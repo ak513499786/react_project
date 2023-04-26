@@ -11,7 +11,6 @@ import "./card.scss";
 import { gsap } from "gsap";
 import arrow from "../../services/images/downarrow.svg";
 
-
 const Card2 = () => {
   let arrowswipe = useRef(null);
 
@@ -99,18 +98,14 @@ const Card2 = () => {
     window.addEventListener("scroll", function () {
       // console.log("scroll event fired!");
       // console.log("window.scrollX:", window.scrollX);
-      if (window.scrollY > 500 && window.scrollY < 1000) {
+      if (window.scrollY > 500 && window.scrollY < 700) {
         // console.log("window.scrollX event has occurred!");
         setPos(true);
       } else {
         setPos(false);
       }
     });
-    // }, []);
   };
-
-  //   //////////////////////////////////////////////////////////////////////
-
   return (
     <>
       {!explore ? (
@@ -148,7 +143,7 @@ const Card2 = () => {
               >
                 <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                   <h1
-                    className="text-5xl mt-24 wcw"
+                    className="text-5xl mt-16 wcw"
                     style={{
                       fontFamily: "graphikthin",
                       color: "#d8d6d6",
@@ -158,16 +153,59 @@ const Card2 = () => {
                     COWBOY
                   </h1>
                   <p
-                    className="colo my-10 mt-20"
+                    className="colo my-10 mt-10"
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
                     }}
                   >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Vero iusto deleniti, rem atque laborum tempore,
-                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
-                    esse nostrum fugit. Modi minima error tempore.
+                    Cowboy is an e-bike provider, unifying intelligent
+                    technology, delightful design and meticulous service to
+                    revolutionise the daily commute of its riders to the next
+                    level.
+                    <ul
+                      style={{
+                        listStyle: "disc",
+                        marginLeft: "20px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UX/UI Designs
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Frontend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Shopify Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Landing Pages Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Mobile Application Development
+                      </li>
+                    </ul>
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
                     <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
@@ -177,7 +215,7 @@ const Card2 = () => {
                 </div>
                 <div className="MANGO hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10">
                   <h1
-                    className="text-5xl mt-24 wcw"
+                    className="text-5xl mt-16 wcw"
                     style={{
                       fontFamily: "graphikthin",
                       color: "#d8d6d6",
@@ -187,16 +225,72 @@ const Card2 = () => {
                     MANGO
                   </h1>
                   <p
-                    className="colo my-10 mt-20"
+                    className="colo my-10 mt-10"
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
                     }}
                   >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Vero iusto deleniti, rem atque laborum tempore,
-                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
-                    esse nostrum fugit. Modi minima error tempore.
+                    Mango is a leading luxury apparel brand that through its
+                    unique, sophisticated and trendy designs has taken over the
+                    world of fashion.
+                    <ul
+                      style={{
+                        listStyle: "disc",
+                        marginLeft: "20px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Discovery Workshop
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UX Design
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UI Design
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Mobile Frontend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Backend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Quality Analysis
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        DevOps
+                      </li>
+                    </ul>
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
                     <button className="btn max-sm:text-sm about px-7 py-1 flex justify-center  text-1xl ">
@@ -204,10 +298,9 @@ const Card2 = () => {
                     </button>
                   </div>
                 </div>
-
                 <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
                   <h1
-                    className="text-5xl mt-24 wcw"
+                    className="text-5xl mt-16 wcw"
                     style={{
                       fontFamily: "graphikthin",
                       color: "#d8d6d6",
@@ -217,16 +310,51 @@ const Card2 = () => {
                     William Abraham
                   </h1>
                   <p
-                    className="colo my-10 mt-20"
+                    className="colo my-10 mt-10"
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
                     }}
                   >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Vero iusto deleniti, rem atque laborum tempore,
-                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
-                    esse nostrum fugit. Modi minima error tempore.
+                    William Abraham is a luxury sock company that through their
+                    unparalleled and innovative approach bring the comfort and
+                    luxury to one place.
+                    <ul
+                      style={{
+                        listStyle: "disc",
+                        marginLeft: "20px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UX/UI Designs
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Frontend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Shopify Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Landing Pages Development
+                      </li>
+                    </ul>
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
                     <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
@@ -234,10 +362,9 @@ const Card2 = () => {
                     </button>
                   </div>
                 </div>
-
                 <div className="Lyra hidee max-md:mx-0 mx-10 mr-12 flex flex-col justify-center   p-10">
                   <h1
-                    className="text-5xl mt-24 wcw"
+                    className="text-5xl mt-16 wcw"
                     style={{
                       fontFamily: "graphikthin",
                       color: "#d8d6d6",
@@ -247,16 +374,58 @@ const Card2 = () => {
                     Lyra Health
                   </h1>
                   <p
-                    className="colo my-10 mt-20"
+                    className="colo my-10 mt-10"
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
                     }}
                   >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Vero iusto deleniti, rem atque laborum tempore,
-                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
-                    esse nostrum fugit. Modi minima error tempore.
+                    Lyra Health, a mental well-being firm, is transforming
+                    behavioural health care through technology with a human
+                    touch.
+                    <ul
+                      style={{
+                        listStyle: "disc",
+                        marginLeft: "20px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Discovery Workshop
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UX Designs
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UI Designs
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Frontend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        CMS Integration
+                      </li>
+                    </ul>
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
                     <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
@@ -264,10 +433,9 @@ const Card2 = () => {
                     </button>
                   </div>
                 </div>
-
                 <div className="klub hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
                   <h1
-                    className="text-5xl mt-24 wcw"
+                    className="text-5xl mt-10 wcw"
                     style={{
                       fontFamily: "graphikthin",
                       color: "#d8d6d6",
@@ -277,16 +445,85 @@ const Card2 = () => {
                     Klub
                   </h1>
                   <p
-                    className="colo my-10 mt-20"
+                    className="colo my-10 mt-5"
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
                     }}
                   >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Vero iusto deleniti, rem atque laborum tempore,
-                    reprehenderit minima enim mollitia quae pariatur ipsum ipsa
-                    esse nostrum fugit. Modi minima error tempore.
+                    Klub is the first investment-oriented platform enhanced by a
+                    community to take your finances beyond traditional banking.
+                    <ul
+                      style={{
+                        listStyle: "disc",
+                        marginLeft: "20px",
+                        marginTop: "20px",
+                      }}
+                    >
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Discovery Workshop
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UX Designs
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        UI Designs
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Website Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Web App Frontend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Mobile Frontend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Backend Development
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        Quality Analysis
+                      </li>
+                      <li
+                        style={{
+                          color: "#848484",
+                        }}
+                      >
+                        DevOps
+                      </li>
+                    </ul>
                   </p>
                   <div className=" mt-5 max-lg:ml-0 ">
                     <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
@@ -294,7 +531,6 @@ const Card2 = () => {
                     </button>
                   </div>
                 </div>
-
                 <button
                   className="my-36 hover:text-black -20 "
                   onClick={toggleCase}
@@ -351,7 +587,7 @@ const Card2 = () => {
                   <SwiperSlide className="mr-0 flex justify-center items-center">
                     <div className="card111 hiee max-md:mx-4 mx-10 flex flex-col justify-cnter px-5 py-10">
                       <h1
-                        className="text-5xl mt-24 wcw"
+                        className="text-5xl mt-16 wcw"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -361,16 +597,59 @@ const Card2 = () => {
                         COWBOY
                       </h1>
                       <p
-                        className="colo my-10 mt-20"
+                        className="colo my-10 mt-10"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
                         }}
                       >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Vero iusto deleniti, rem atque laborum tempore,
-                        reprehenderit minima enim mollitia quae pariatur ipsum
-                        ipsa esse nostrum fugit. Modi minima error tempore.
+                        Cowboy is an e-bike provider, unifying intelligent
+                        technology, delightful design and meticulous service to
+                        revolutionise the daily commute of its riders to the
+                        next level.
+                        <ul
+                          style={{
+                            listStyle: "disc",
+                            marginLeft: "20px",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UX/UI Designs
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Frontend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Shopify Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Landing Pages Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Mobile Application Development
+                          </li>
+                        </ul>
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
                         <button className="btn  max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl ">
@@ -382,7 +661,7 @@ const Card2 = () => {
                   <SwiperSlide className="flex justify-center items-center">
                     <div className="MANGO hiee max-md:mx-4 mx-10 flex flex-col justify-cnter px-5 py-10">
                       <h1
-                        className="text-5xl mt-24 wcw"
+                        className="text-5xl mt-16 wcw"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -392,16 +671,72 @@ const Card2 = () => {
                         MANGO
                       </h1>
                       <p
-                        className="colo my-10 mt-20"
+                        className="colo my-10 mt-10"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
                         }}
                       >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Vero iusto deleniti, rem atque laborum tempore,
-                        reprehenderit minima enim mollitia quae pariatur ipsum
-                        ipsa esse nostrum fugit. Modi minima error tempore.
+                        Mango is a leading luxury apparel brand that through its
+                        unique, sophisticated and trendy designs has taken over
+                        the world of fashion.
+                        <ul
+                          style={{
+                            listStyle: "disc",
+                            marginLeft: "20px",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Discovery Workshop
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UX Design
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UI Design
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Mobile Frontend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Backend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Quality Analysis
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            DevOps
+                          </li>
+                        </ul>
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
                         <button className="btn max-sm:text-[0.7rem] about px-7 py-1 flex justify-center  text-1xl ">
@@ -413,7 +748,7 @@ const Card2 = () => {
                   <SwiperSlide className="flex justify-center items-center">
                     <div className="Willium hiee max-md:mx-4 mx-10 flex flex-col justify-center px-5 py-10">
                       <h1
-                        className="text-5xl mt-24 wcw"
+                        className="text-5xl mt-16 wcw"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -423,16 +758,51 @@ const Card2 = () => {
                         William Abraham
                       </h1>
                       <p
-                        className="colo my-10 mt-20"
+                        className="colo my-10 mt-10"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
                         }}
                       >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Vero iusto deleniti, rem atque laborum tempore,
-                        reprehenderit minima enim mollitia quae pariatur ipsum
-                        ipsa esse nostrum fugit. Modi minima error tempore.
+                        William Abraham is a luxury sock company that through
+                        their unparalleled and innovative approach bring the
+                        comfort and luxury to one place.
+                        <ul
+                          style={{
+                            listStyle: "disc",
+                            marginLeft: "20px",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UX/UI Designs
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Frontend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Shopify Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Landing Pages Development
+                          </li>
+                        </ul>
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
                         <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
@@ -444,7 +814,7 @@ const Card2 = () => {
                   <SwiperSlide className="flex justify-center items-center">
                     <div className="Lyra hiee max-md:mx-4 mx-10 mr-12 flex flex-col justify-center px-5 py-10">
                       <h1
-                        className="text-5xl mt-24 wcw"
+                        className="text-5xl mt-16 wcw"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -454,16 +824,58 @@ const Card2 = () => {
                         Lyra Health
                       </h1>
                       <p
-                        className="colo my-10 mt-20"
+                        className="colo my-10 mt-10"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
                         }}
                       >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Vero iusto deleniti, rem atque laborum tempore,
-                        reprehenderit minima enim mollitia quae pariatur ipsum
-                        ipsa esse nostrum fugit. Modi minima error tempore.
+                        Lyra Health, a mental well-being firm, is transforming
+                        behavioural health care through technology with a human
+                        touch.
+                        <ul
+                          style={{
+                            listStyle: "disc",
+                            marginLeft: "20px",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Discovery Workshop
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UX Designs
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UI Designs
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Frontend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            CMS Integration
+                          </li>
+                        </ul>
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
                         <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
@@ -475,7 +887,7 @@ const Card2 = () => {
                   <SwiperSlide className="flex justify-center items-center">
                     <div className="klub hiee max-md:mx-4 mx-10 flex flex-col justify-center   px-5 py-10">
                       <h1
-                        className="text-5xl mt-24 wcw"
+                        className="text-5xl mt-10 wcw"
                         style={{
                           fontFamily: "graphikthin",
                           color: "#d8d6d6",
@@ -485,16 +897,86 @@ const Card2 = () => {
                         Klub
                       </h1>
                       <p
-                        className="colo my-10 mt-20"
+                        className="colo my-10 mt-5"
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
                         }}
                       >
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Vero iusto deleniti, rem atque laborum tempore,
-                        reprehenderit minima enim mollitia quae pariatur ipsum
-                        ipsa esse nostrum fugit. Modi minima error tempore.
+                        Klub is the first investment-oriented platform enhanced
+                        by a community to take your finances beyond traditional
+                        banking.
+                        <ul
+                          style={{
+                            listStyle: "disc",
+                            marginLeft: "20px",
+                            marginTop: "20px",
+                          }}
+                        >
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Discovery Workshop
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UX Designs
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            UI Designs
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Website Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Web App Frontend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Mobile Frontend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Backend Development
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            Quality Analysis
+                          </li>
+                          <li
+                            style={{
+                              color: "#848484",
+                            }}
+                          >
+                            DevOps
+                          </li>
+                        </ul>
                       </p>
                       <div className=" mt-5 max-lg:ml-0 ">
                         <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
@@ -528,7 +1010,7 @@ const Card2 = () => {
             <div className="widthhh flex-wrap w-full max-lg:-mt-72 flex min-h-screen h-full itemter ml20 max-xlml-48 max-md:p-10 max-sm:p-1  justify-start items-start max-xl:items-center max-xl:justify-center relative">
               <div className="card111 hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -538,16 +1020,58 @@ const Card2 = () => {
                   COWBOY
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Cowboy is an e-bike provider, unifying intelligent technology,
+                  delightful design and meticulous service to revolutionise the
+                  daily commute of its riders to the next level.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX/UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Shopify Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Landing Pages Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Mobile Application Development
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn max-sm:text-[0.7rem]  about px-7 py-1 flex justify-center  text-1xl ">
@@ -555,10 +1079,9 @@ const Card2 = () => {
                   </button>
                 </div>
               </div>
-
               <div className="MANGO hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10   px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -568,16 +1091,72 @@ const Card2 = () => {
                   MANGO
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Mango is a leading luxury apparel brand that through its
+                  unique, sophisticated and trendy designs has taken over the
+                  world of fashion.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Discovery Workshop
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX Design
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UI Design
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Mobile Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Backend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Quality Analysis
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      DevOps
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
@@ -588,7 +1167,7 @@ const Card2 = () => {
 
               <div className="Willium hidee max-xl:mx-5 my-10   mx-10 flex flex-col justify-center max-xl:my-10  px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -598,16 +1177,51 @@ const Card2 = () => {
                   William Abraham
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  William Abraham is a luxury sock company that through their
+                  unparalleled and innovative approach bring the comfort and
+                  luxury to one place.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX/UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Shopify Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Landing Pages Development
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
@@ -615,10 +1229,9 @@ const Card2 = () => {
                   </button>
                 </div>
               </div>
-
               <div className="Kernel hidee max-xl:mx-5  my-10 mx-10 flex flex-col justify-center max-xl:my-10  px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -628,16 +1241,71 @@ const Card2 = () => {
                   Kernel Wealth
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Kernel Wealth is a digital investing platform that aims to
+                  create a healthier financial ecosystem in New Zealand.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Design Audit
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      CMS Integration
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Maintenance
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Web Presence and Strategy Management
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
@@ -648,7 +1316,7 @@ const Card2 = () => {
 
               <div className="klub hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10  px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt10 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -658,16 +1326,85 @@ const Card2 = () => {
                   Klub
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-5"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Klub is the first investment-oriented platform enhanced by a
+                  community to take your finances beyond traditional banking.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Discovery Workshop
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Website Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Web App Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Mobile Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Backend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Quality Analysis
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      DevOps
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
@@ -675,10 +1412,9 @@ const Card2 = () => {
                   </button>
                 </div>
               </div>
-
               <div className="Lyra hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10  px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -688,16 +1424,57 @@ const Card2 = () => {
                   Lyra Health
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Lyra Health, a mental well-being firm, is transforming
+                  behavioural health care through technology with a human touch.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Discovery Workshop
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      CMS Integration
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
@@ -705,10 +1482,9 @@ const Card2 = () => {
                   </button>
                 </div>
               </div>
-
               <div className="studio hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10   px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -718,16 +1494,36 @@ const Card2 = () => {
                   Studio Neat
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Studio Neat is a design studio that is focused on making truly
+                  great and useful products in a sustainable way.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Product Design
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Website Maintenance
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
@@ -735,10 +1531,9 @@ const Card2 = () => {
                   </button>
                 </div>
               </div>
-
               <div className="deel hidee max-xl:mx-5 my-10  mx-10 flex flex-col justify-center max-md:my-10  px-5 py-20">
                 <h1
-                  className="text-5xl -mt24 wcw"
+                  className="text-5xl -mt16 wcw"
                   style={{
                     fontFamily: "graphikthin",
                     color: "#d8d6d6",
@@ -748,19 +1543,212 @@ const Card2 = () => {
                   Deel
                 </h1>
                 <p
-                  className="colo my-10 mt-20"
+                  className="colo my-10 mt-10"
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
                   }}
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                  iusto deleniti, rem atque laborum tempore, reprehenderit
-                  minima enim mollitia quae pariatur ipsum ipsa esse nostrum
-                  fugit. Modi minima error tempore.
+                  Deel is the #1 global hiring, HR and payroll platform that
+                  helps thousands of companies expand globally with unmatched
+                  speed and flexibility. They are reshaping the global team
+                  management, and are enabling firms worldwide to tap into an
+                  infinite pool of talent.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      CMS Integration
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Maintenance
+                    </li>
+                  </ul>
                 </p>
                 <div className=" mt-5 max-lg:ml-0 ">
                   <button className="btn about max-sm:text-[0.7rem]  px-7 py-1 flex justify-center  text-1xl ">
+                    View case study
+                  </button>
+                </div>
+              </div>
+              <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
+                <h1
+                  className="text-5xl mt-16 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#d8d6d6",
+                    fontWeight: "600",
+                  }}
+                >
+                  IMAPAC
+                </h1>
+                <p
+                  className="colo my-10 mt-10"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#848484",
+                  }}
+                >
+                  IMAPAC is the one-stop shop for market intelligence B2B
+                  events, and business connections for the global
+                  biopharmaceutical industry.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Design Audit
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      CMS Integration
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Maintenance
+                    </li>
+                  </ul>
+                </p>
+                <div className=" mt-5 max-lg:ml-0 ">
+                  <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
+                    View case study
+                  </button>
+                </div>
+              </div>
+              <div className="Willium hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
+                <h1
+                  className="text-5xl mt-10 wcw"
+                  style={{
+                    fontFamily: "graphikthin",
+                    color: "#d8d6d6",
+                    fontWeight: "600",
+                  }}
+                >
+                  SDU
+                </h1>
+                <p
+                  className="colo my-10 mt-5"
+                  style={{
+                    fontFamily: "graphik",
+                    color: "#848484",
+                  }}
+                >
+                  SDU is an accounting firm that are the pioneers who adopted
+                  networking technology and computer-aided tools for auditing
+                  and reporting.
+                  <ul
+                    style={{
+                      listStyle: "disc",
+                      marginLeft: "20px",
+                      marginTop: "20px",
+                    }}
+                  >
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Design Audit
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UX Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      UI Designs
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Frontend Development
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      CMS Integration
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Maintenance
+                    </li>
+                    <li
+                      style={{
+                        color: "#848484",
+                      }}
+                    >
+                      Web Presence and Strategy Management
+                    </li>
+                  </ul>
+                </p>
+                <div className=" mt-5 max-lg:ml-0 ">
+                  <button className="btn about px-7 py-1 flex justify-center  text-1xl ">
                     View case study
                   </button>
                 </div>
