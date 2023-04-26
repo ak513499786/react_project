@@ -43,6 +43,15 @@ import {
   getWebcareerlifeat,
   getWebcontact,
   addWebInfocontact,
+  addWebInfoculsulting,
+  getWebconsulting,
+  getWebuserExperince,
+  addWebInfouserExper,
+  addWebInfoproducdev,
+  getWebProducDev,
+  getWebdigitalmarket,
+  addWebInfodigitalmark,
+  addWebInfoImages,
 } from "../ctrl/controller.js";
 
 const router = express.Router();
@@ -65,10 +74,13 @@ router.get("/careerwhyus", getWebcareerwhyus);
 router.get("/careerBoxes", getWebcareerwhyusboxes);
 router.get("/careerlifeat", getWebcareerlifeat);
 router.get("/contact", getWebcontact);
-
-
+router.get("/consulting", getWebconsulting);
+router.get("/userexper", getWebuserExperince);
+router.get("/producdev", getWebProducDev);
+router.get("/digitalmarketing", getWebdigitalmarket);
 
 router.post("/add", addWebInfo);
+router.post("/addimages", addWebInfoImages);
 router.post("/addAbout", addWebInfoAbout);
 router.post("/addServices", addWebInfoServices);
 router.post("/addaboutHero", addWebInfoAboutHero);
@@ -86,9 +98,11 @@ router.post("/addcareerwhyus", addWebInfocareerwhyus);
 router.post("/addcareerwhyusBoxes", addWebInfocareerwhyusBoxes);
 router.post("/addcareerlifeat", addWebInfocareerlifeat);
 router.post("/addcontact", addWebInfocontact);
-
-
-
+router.post("/addconsulting", addWebInfoculsulting);
+router.post("/adduserexper", addWebInfouserExper);
+router.post("/addproductdev", addWebInfoproducdev);
+router.post("/adddigitalmark", addWebInfodigitalmark);
+// router.post("/uploads", addWebInfohomeHeroImages);
 
 router.post("/login", Login);
 router.post("/send_mail", sendMailContact);

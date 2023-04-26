@@ -13,6 +13,10 @@ import ContactHero from "./ContactTab/ContactHero";
 import CareerHero from "./CareerTab/CareerHero";
 import WhyUS from "./CareerTab/WhyUs";
 import Boxes from "./CareerTab/Boxes";
+import Cunsulting from "./innerpagess/Consulting";
+import UserExper from "./innerpagess/UserExper";
+import Productdev from "./innerpagess/Productdev";
+import DigitalMarketing from "./innerpagess/DigitalMarketing";
 
 export default function Dash() {
   // const navigate = useNavigate("/home");
@@ -182,7 +186,9 @@ export default function Dash() {
           <Tab className="dashboard-left-item">Career</Tab>
           <Tab className="dashboard-left-item">Work</Tab>
           <Tab className="dashboard-left-item">Contact</Tab>
+
           <Tab className="dashboard-left-item">Blog</Tab>
+          <Tab className="dashboard-left-item">service inner</Tab>
         </TabList>
 
         <TabPanel>
@@ -424,16 +430,6 @@ export default function Dash() {
               <h2 className="sub-title">Boxes Section</h2>
               <Boxes />
             </div>
-            <div className="section">
-              <h2 className="sub-title">Testimonial Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Blog Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
           </div>
         </TabPanel>
         <TabPanel>
@@ -546,6 +542,25 @@ export default function Dash() {
                 excepturi accusantium amet rerum ea consectetur ex distinctio,
                 non dignissimos tenetur dolorem odit nobis laudantium ut in.
               </h3>
+            </div>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="main">
+            <h1 className="title">Service Inner Page</h1>
+
+            <div className="section">
+              <Cunsulting />
+            </div>
+
+            <div className="section">
+              <UserExper />
+            </div>
+            <div className="section">
+              <Productdev />
+            </div>
+            <div className="section">
+              <DigitalMarketing />
             </div>
           </div>
         </TabPanel>
