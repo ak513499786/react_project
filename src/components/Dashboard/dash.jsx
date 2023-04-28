@@ -2,7 +2,7 @@ import profile from "./images/logout.png";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AboutTab from "./aboutTab/AboutTab";
@@ -31,6 +31,7 @@ import edit from "./images/edit.svg";
 import close from "./images/close.svg";
 import Search from "./images/scg.svg";
 import Add from "./images/add.svg";
+import gsap from "gsap";
 
 export default function Dash() {
   // const navigate = useNavigate("/home");
@@ -42,7 +43,53 @@ export default function Dash() {
   const [Servicesarray, setServicesarray] = useState();
   // const [pera, setPera] = useState();
   const [guiding_pera, setguiding_pera] = useState();
+  let panel1 = useRef(null);
+  let panel2 = useRef(null);
+  let panel3 = useRef(null);
+  let panel4 = useRef(null);
+  let panel5 = useRef(null);
+  let dashbutton1 = useRef(null);
+  let dashbutton2 = useRef(null);
+  let dashbutton3 = useRef(null);
+  let dashbutton4 = useRef(null);
+  let dashbutton5 = useRef(null);
 
+  const handleSwitchClick1 = () => {
+    gsap.to(dashbutton1, 0, { backgroundColor: "#fff" });
+    gsap.to(dashbutton2, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(dashbutton3, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(panel1, 0, { display: "block" });
+    gsap.to(panel2, 0, { display: "none" });
+    gsap.to(panel3, 0, { display: "none" });
+  };
+  const handleSwitchClick2 = () => {
+    gsap.to(dashbutton1, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(dashbutton2, 0, { backgroundColor: "#fff" });
+    gsap.to(dashbutton3, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(panel1, 0, { display: "none" });
+    gsap.to(panel2, 0, { display: "block" });
+    gsap.to(panel3, 0, { display: "none" });
+  };
+  const handleSwitchClick3 = () => {
+    gsap.to(dashbutton1, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(dashbutton2, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(dashbutton3, 0, { backgroundColor: "#fff" });
+    gsap.to(panel1, 0, { display: "none" });
+    gsap.to(panel2, 0, { display: "none" });
+    gsap.to(panel3, 0, { display: "block" });
+  };
+  const handleSwitchClick4 = () => {
+    gsap.to(dashbutton4, 0, { backgroundColor: "#fff" });
+    gsap.to(dashbutton5, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(panel4, 0, { display: "block" });
+    gsap.to(panel5, 0, { display: "none" });
+  };
+  const handleSwitchClick5 = () => {
+    gsap.to(dashbutton4, 0, { backgroundColor: "#EEEEEE" });
+    gsap.to(dashbutton5, 0, { backgroundColor: "#fff" });
+    gsap.to(panel4, 0, { display: "none" });
+    gsap.to(panel5, 0, { display: "block" });
+  };
   const handleEditClick = () => {
     if (editMode === false) {
       setEditMode(true);
@@ -199,14 +246,6 @@ export default function Dash() {
       </nav>
       <Tabs>
         <TabList className="dashboard-left-nav">
-          <Tab className="dashboard-left-item">Home</Tab>
-          <Tab className="dashboard-left-item">About</Tab>
-          <Tab className="dashboard-left-item">Services</Tab>
-          <Tab className="dashboard-left-item">Career</Tab>
-          <Tab className="dashboard-left-item">Work</Tab>
-          <Tab className="dashboard-left-item">Contact</Tab>
-          <Tab className="dashboard-left-item">Blog</Tab>
-          <Tab className="dashboard-left-item">service inner</Tab>
           <Tab className="dashboard-left-item">
             <div className="tabtxt">
               <img src={Dashimg} alt="" className="dash-images" />
@@ -255,17 +294,327 @@ export default function Dash() {
         </TabPanel>
         <TabPanel>
           <div className="main">
-            <Tabs className="about-page-dash" defaultIndex={1}>
-              <TabList className="about-page-dash-txt">Home Page</TabList>
-              <TabList className="about-page-dash-txt">About Us</TabList>
-            </Tabs>
-            <TabPanel className="about-page-dash-panel">
-              <input type="text" className="about-page-dash-search" />
-              <h2 className="sub-title">Why Us Section</h2>
-            </TabPanel>
-            <TabPanel className="about-page-dash-panel">
-              <input type="text" className="about-page-dash-search" />
-            </TabPanel>
+            <div
+              className="about-page-dash"
+              style={{
+                background: "#EAEAEA",
+              }}
+            >
+              <div
+                className="about-page-dash-txt"
+                ref={(el) => (dashbutton4 = el)}
+                onClick={handleSwitchClick4}
+                style={{
+                  backgroundColor: "#fff",
+                }}
+              >
+                Home Page
+              </div>
+              <div
+                className="about-page-dash-txt"
+                ref={(el) => (dashbutton5 = el)}
+                onClick={handleSwitchClick5}
+                style={{
+                  backgroundColor: "#EEEEEE",
+                }}
+              >
+                About Us
+              </div>
+            </div>
+            <div className="about-page-dash-panel" ref={(el) => (panel4 = el)}>
+              <div className="operation-container">
+                <div className="search-container">
+                  <input type="text" placeholder="search" className="search" />
+                  <img src={Search} alt="" className="search-img" />
+                </div>
+                <div className="add-container">
+                  <img src={Add} alt="" className="add" />
+                </div>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+            </div>
+            <div
+              className="about-page-dash-panel"
+              style={{
+                display: "none",
+              }}
+              ref={(el) => (panel5 = el)}
+            >
+              <div className="operation-container">
+                <div className="search-container">
+                  <input type="text" placeholder="search" className="search" />
+                  <img src={Search} alt="" className="search-img" />
+                </div>
+                <div className="add-container">
+                  <img src={Add} alt="" className="add" />
+                </div>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
+            </div>
           </div>
         </TabPanel>
         <TabPanel>
@@ -334,17 +683,55 @@ export default function Dash() {
           </div>
         </TabPanel>
         <TabPanel>
-          <div className="main">
-            <div className="about-page-dash">
-              <h1 className="about-page-dash-txt">Page Intro</h1>
-              <h1 className="about-page-dash-txt">Contact Details</h1>
-              <h1 className="about-page-dash-txt">Enquiry Form</h1>
+          <div
+            className="main"
+            style={{
+              height: "92vh",
+            }}
+          >
+            <div
+              className="about-page-dash"
+              style={{
+                background: "#EAEAEA",
+              }}
+            >
+              <h1
+                className="about-page-dash-txt"
+                ref={(el) => (dashbutton1 = el)}
+                onClick={handleSwitchClick1}
+                style={{
+                  backgroundColor: "#EEEEEE",
+                }}
+              >
+                Page Intro
+              </h1>
+              <h1
+                className="about-page-dash-txt"
+                ref={(el) => (dashbutton2 = el)}
+                onClick={handleSwitchClick2}
+                style={{
+                  backgroundColor: "#fff",
+                }}
+              >
+                Contact Details
+              </h1>
+              <h1
+                className="about-page-dash-txt"
+                ref={(el) => (dashbutton3 = el)}
+                onClick={handleSwitchClick3}
+                style={{
+                  backgroundColor: "#EEEEEE",
+                }}
+              >
+                Enquiry Form
+              </h1>
             </div>
             <div
               className="about-page-dash-panel"
               style={{
                 display: "none",
               }}
+              ref={(el) => (panel1 = el)}
             >
               <div className="operation-container">
                 <div className="search-container">
@@ -377,57 +764,41 @@ export default function Dash() {
             </div>
             <div
               className="about-page-dash-panel"
-              style={
-                {
-                  // display: 'none'
-                }
-              }
+              style={{
+                marginTop: "15vh",
+              }}
+              ref={(el) => (panel2 = el)}
             >
-              <div className="container-dash">
+              <div className="container-address">
                 <p className="para-container">
-                  <div className="images-container">
-                    <img src={edit} alt="" className="view" />
-                  </div>
-                  <h1 className="title-container">Title : </h1>
-                  The sky's the limit!​
+                  <h1 className="title-container">Address : </h1>
+                  #671, 26th Main, 17th Cross, 6th Phase,J P Nagar, Bangalore{" "}
                 </p>
-              </div>
-              <div className="container-dash">
-                <p className="para-container">
-                  <div className="images-container">
-                    <img src={edit} alt="" className="view" />
-                  </div>
-                  <h1 className="title-container">Title : </h1>
-                  The sky's the limit!​
-                </p>
+                <img src={edit} alt="" className="view" />
               </div>
               <div className="container-address">
                 <p className="para-container">
-                  <h1 className="title-container">Title : </h1>
-                  The sky's the limit!​
-                  <img src={edit} alt="" className="view" />
+                  <h1 className="title-container">Mail Id : </h1>
+                  info@codelinear.com{" "}
                 </p>
+                <img src={edit} alt="" className="view" />
+              </div>
+              <div className="container-address">
+                <p className="para-container">
+                  <h1 className="title-container">Phone No. : </h1>
+                  +1 415 523 5957{" "}
+                </p>
+                <img src={edit} alt="" className="view" />
               </div>
             </div>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="main">
-            <h1 className="title">Service Inner Page</h1>
-
-            <div className="section">
-              <Cunsulting />
-            </div>
-
-            <div className="section">
-              <UserExper />
-            </div>
-            <div className="section">
-              <Productdev />
-            </div>
-            <div className="section">
-              <DigitalMarketing />
-            </div>
+            <div
+              className="about-page-dash-panel"
+              style={{
+                display: "none",
+                marginTop: "15vh",
+              }}
+              ref={(el) => (panel3 = el)}
+            ></div>
           </div>
         </TabPanel>
       </Tabs>

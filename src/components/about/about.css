@@ -259,7 +259,6 @@
   height: 60px;
   background-color: #ffffff;
   margin-top: 0px;
-  box-shadow: 0px 0px 10px #000;
   position: sticky;
   top: 0;
 }
@@ -365,8 +364,18 @@
   margin-left: 7%;
   padding: 0px 5px 0px 30px;
   background-color: #fff;
-  margin-top: 5vh;
+  border-left: 5px solid #fff;
+  margin-top: 1vh;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-address:hover {
+  border-left: 5px solid #ffcd05;
+}
+.container-address:hover .view {
+  visibility: visible;
 }
 .images-container {
   display: flex;
@@ -377,6 +386,14 @@
 .container-dash:hover .view {
   visibility: visible;
 }
+.about-page-dash-txt:hover{
+  border-top: 3px solid #ffcd05
+}
+.about-page-dash-txt{
+  border-top: 3px solid transparent;
+  transition: 0.3s;
+}
+
 .search-container {
   display: flex;
 }
