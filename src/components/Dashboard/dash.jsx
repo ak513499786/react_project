@@ -242,7 +242,7 @@ export default function Dash() {
             <div className="tabtxt">
               <img src={Contact} alt="" className="dash-images" />
             </div>
-            <h1 className="dash-item-h1"> Contact Us</h1>
+            <h1 className="dash-item-h1">Contact Us</h1>
           </Tab>
         </TabList>
         <TabPanel>
