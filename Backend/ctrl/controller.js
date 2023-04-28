@@ -1,16 +1,62 @@
 import db from "../index.js";
 import nodemailer from "nodemailer";
+import path from "path";
 
-export const addWebInfo = (req, res) => {
+export const addWebInfoImages = (req, res) => {
   try {
-    const { homeHero } = req.body;
+    // const { homeHero } = req.body;
+    const { image } = req.files.image;
+
     const data = {
-      homeHero: homeHero,
+      image: image,
+
+      // homeHero: homeHero,
       // homeAbout: homeAbout,
       // homeService: homeService,
       // homeClient: homeClient,
       // homeBlog: homeBlog,
       // homeAbout, homeService, homeClient, homeBlog
+    };
+
+    const imageName = Date.now() + "-" + image.name;
+    const imagePath = path.join(__dirname, "public", imageName);
+
+    image.mv(imagePath, (error) => {
+      if (error) {
+        console.log(error);
+        res.status(500).send(error);
+      } else {
+        const query = "INSERT INTO images SET ?";
+        const values = { name: imageName };
+
+        db.query(query, values, (error, results) => {
+          if (error) {
+            console.log(error);
+            res.status(500).send(error);
+          } else {
+            res.status(200).send("Image uploaded successfully!");
+          }
+        });
+      }
+    });
+
+    // db.query("INSERT INTO homeHero_image set ?", data, (err, rows, fields) => {
+    //   if (err) {
+    //     console.error(err);
+    //   } else {
+    //     console.log(rows);
+    //     res.send("added");
+    //   }
+    // });
+  } catch (err) {}
+};
+
+export const addWebInfo = (req, res) => {
+  try {
+    // const { image } = req.files.image;
+    const { homeHero } = req.body;
+    const data = {
+      homeHero: homeHero,
     };
 
     db.query("INSERT INTO home_page set ?", data, (err, rows, fields) => {
@@ -358,6 +404,79 @@ export const addWebInfocontact = (req, res) => {
     });
   } catch (err) {}
 };
+export const addWebInfoculsulting = (req, res) => {
+  try {
+    const { heading } = req.body;
+    const data = {
+      heading: heading,
+    };
+
+    db.query("INSERT INTO cunsulting set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfouserExper = (req, res) => {
+  try {
+    const { heading } = req.body;
+    const data = {
+      heading: heading,
+    };
+
+    db.query("INSERT INTO useexperience set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+export const addWebInfoproducdev = (req, res) => {
+  try {
+    const { heading } = req.body;
+    const data = {
+      heading: heading,
+    };
+
+    db.query("INSERT INTO productdev set ?", data, (err, rows, fields) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.log(rows);
+        res.send("added");
+      }
+    });
+  } catch (err) {}
+};
+
+export const addWebInfodigitalmark = (req, res) => {
+  try {
+    const { heading } = req.body;
+    const data = {
+      heading: heading,
+    };
+
+    db.query(
+      "INSERT INTO digitalmarketing set ?",
+      data,
+      (err, rows, fields) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log(rows);
+          res.send("added");
+        }
+      }
+    );
+  } catch (err) {}
+};
 
 // careers page - hr@codelinear.com
 // contact us page - info@codelinear.com
@@ -403,6 +522,7 @@ export const sendMailCareer = (req, res) => {
       pass: "zcgdsscknnjxmjlh", // Replace with your own email password
     },
   });
+  
   // zcgdsscknnjxmjlh
 
   const mailOptions = {
@@ -786,14 +906,74 @@ export const getWebcontact = (req, res) => {
   console.log("welcome");
   // });
 };
+export const getWebconsulting = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM cunsulting", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebuserExperince = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM useexperience", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebProducDev = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM productdev", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
+export const getWebdigitalmarket = (req, res) => {
+  // app.get("", (req, res) => {
+  db.query("SELECT * FROM digitalmarketing", (err, rows, fields) => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log(rows);
+      let rve = rows.reverse();
+      const erve = rve[0];
+      res.send(erve);
+    }
+  });
+  console.log("welcome");
+  // });
+};
 
 export const Login = (req, res) => {
-  const { email, password } = req.body;
-  console.log(email, password);
+  const { username, password } = req.body;
+  console.log(username, password);
 
   if (password === "123") {
     res.status(200);
-    res.send({ message: "Login Successfull", user: "user" });
+    res.send({ message: "Login Successfull"});
   } else {
     res.status(404);
     res.send({ message: "Password didn't match" });

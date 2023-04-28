@@ -13,6 +13,11 @@ import ContactHero from "./ContactTab/ContactHero";
 import CareerHero from "./CareerTab/CareerHero";
 import WhyUS from "./CareerTab/WhyUs";
 import Boxes from "./CareerTab/Boxes";
+import Cunsulting from "./innerpagess/Consulting";
+import UserExper from "./innerpagess/UserExper";
+import Productdev from "./innerpagess/Productdev";
+import DigitalMarketing from "./innerpagess/DigitalMarketing";
+
 import Mascot from "./images/Screenshot 2023-04-09 144546 1.svg";
 import Dashimg from "./images/dash.svg";
 import Home from "./images/home.svg";
@@ -194,6 +199,14 @@ export default function Dash() {
       </nav>
       <Tabs>
         <TabList className="dashboard-left-nav">
+          <Tab className="dashboard-left-item">Home</Tab>
+          <Tab className="dashboard-left-item">About</Tab>
+          <Tab className="dashboard-left-item">Services</Tab>
+          <Tab className="dashboard-left-item">Career</Tab>
+          <Tab className="dashboard-left-item">Work</Tab>
+          <Tab className="dashboard-left-item">Contact</Tab>
+          <Tab className="dashboard-left-item">Blog</Tab>
+          <Tab className="dashboard-left-item">service inner</Tab>
           <Tab className="dashboard-left-item">
             <div className="tabtxt">
               <img src={Dashimg} alt="" className="dash-images" />
@@ -234,7 +247,7 @@ export default function Dash() {
             <div className="tabtxt">
               <img src={Contact} alt="" className="dash-images" />
             </div>
-            <h1 className="dash-item-h1"> Contact Us</h1>
+            <h1 className="dash-item-h1">Contact Us</h1>
           </Tab>
         </TabList>
         <TabPanel>
@@ -289,16 +302,6 @@ export default function Dash() {
             <div className="section">
               <h2 className="sub-title">Boxes Section</h2>
               <Boxes />
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Testimonial Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Blog Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <p className="change-para">Lorem ipsum dolor sit amet.</p>
             </div>
           </div>
         </TabPanel>
@@ -405,6 +408,25 @@ export default function Dash() {
                   <img src={edit} alt="" className="view" />
                 </p>
               </div>
+            </div>
+          </div>
+        </TabPanel>
+        <TabPanel>
+          <div className="main">
+            <h1 className="title">Service Inner Page</h1>
+
+            <div className="section">
+              <Cunsulting />
+            </div>
+
+            <div className="section">
+              <UserExper />
+            </div>
+            <div className="section">
+              <Productdev />
+            </div>
+            <div className="section">
+              <DigitalMarketing />
             </div>
           </div>
         </TabPanel>
