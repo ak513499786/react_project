@@ -92,20 +92,31 @@ const Card2 = () => {
     };
   }, []);
 
-  const done = (e) => {
-    // useLayoutEffect(() => {
-    e.preventDefault();
-    window.addEventListener("scroll", function () {
-      // console.log("scroll event fired!");
-      // console.log("window.scrollX:", window.scrollX);
-      if (window.scrollY > 500 && window.scrollY < 570) {
-        // console.log("window.scrollX event has occurred!");
-        setPos(true);
-      } else {
-        setPos(false);
+  const done = (e) => {};
+
+  //   //////////////////////////////////////////////////////////////////////
+
+  const endRef = useRef(null);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (endRef.current) {
+        const isEndOfContent =
+          endRef.current.getBoundingClientRect().left <= window.innerHeight;
+        if (isEndOfContent) {
+          // User has reached the end of the content
+          // Add your end of content indicator here
+          console.log("End of content indicator hhhhh");
+          setPos(true);
+        } else {
+          setPos(false);
+        }
       }
-    });
-  };
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       {!explore ? (
@@ -129,19 +140,19 @@ const Card2 = () => {
             </div>
           </div>
           {Widht > 768 ? (
-            <div
-              id="myyDiv"
-              // ref={containerRef}
-              //  className="worksection"
-              className={pos ? "worksection" : "worksection1"}
-            >
-              {/* <HorizontalScroll> */}
-              <div
-                id="myDiv"
-                onScrollCapture={done}
-                className={isCentered ? "testwithfalse" : "test"}
+            <>
+              <section
+                id="myyDiv"
+                className={pos ? "worksection1" : "worksection"}
               >
-                <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
+                {/* <HorizontalScroll> */}
+                <div>
+                  <div
+                    id="myDiv"
+                    onScrollCapture={done}
+                    className={isCentered ? "testwithfalse" : "test"}
+                  >
+                    <div className="card111 hidee max-md:mx-0 mx-10 flex flex-col justify-cnter   p-10 ">
                   <h1
                     className="text-5xl mt-16 wcw"
                     style={{
@@ -473,6 +484,8 @@ const Card2 = () => {
                     </button>
                   </div>
                 </div>
+
+                <div ref={endRef} />
                 <div className="klub hidee max-md:mx-0 mx-10 flex flex-col justify-center   p-10">
                   <h1
                     className="text-5xl mt-10 wcw"
@@ -581,21 +594,27 @@ const Card2 = () => {
                     </button>
                   </div>
                 </div>
-                <button
-                  className="my-36 hover:text-black -20 "
-                  onClick={toggleCase}
-                >
-                  <div className="exploree card111 hidee max-md:mx-0 mx-10 ml-10 flex flex-col justify-cnter   p-10">
-                    <div className="flex w-full justify-center hover:text-black items-center h-full">
-                      <h1 className="text-4xl extra  hover:text-black font-extrabold ">
-                        Explore More
-                      </h1>
-                    </div>
+
+                    <button
+                      className="my-36 hover:text-black -20 "
+                      onClick={toggleCase}
+                    >
+                      <div className="exploree card111 hidee max-md:mx-0 mx-10 ml-10 flex flex-col justify-cnter   p-10">
+                        <div className="flex w-full justify-center hover:text-black items-center h-full">
+                          <h1 className="text-4xl extra  hover:text-black font-extrabold ">
+                            Explore More
+                          </h1>
+                        </div>
+                      </div>
+                    </button>
+
                   </div>
-                </button>
-              </div>
-              {/* </HorizontalScroll> */}
-            </div>
+
+
+
+                </div>
+              </section>
+            </>
           ) : (
             <div className="worksection">
               <div className="tst">
@@ -1957,6 +1976,8 @@ const Card2 = () => {
           </div>
         </div>
       )}
+
+      
     </>
   );
 };
