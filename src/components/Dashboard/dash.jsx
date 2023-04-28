@@ -21,6 +21,11 @@ import Blog from "./images/blog.svg";
 import Setting from "./images/settings.svg";
 import Contact from "./images/contact.svg";
 import Case from "./images/case.svg";
+import view from "./images/view.svg";
+import edit from "./images/edit.svg";
+import close from "./images/close.svg";
+import Search from "./images/scg.svg";
+import Add from "./images/add.svg";
 
 export default function Dash() {
   // const navigate = useNavigate("/home");
@@ -237,16 +242,16 @@ export default function Dash() {
         </TabPanel>
         <TabPanel>
           <div className="main">
-            <Tabs className="about-page-dash">
+            <Tabs className="about-page-dash" defaultIndex={1}>
               <TabList className="about-page-dash-txt">Home Page</TabList>
               <TabList className="about-page-dash-txt">About Us</TabList>
             </Tabs>
             <TabPanel className="about-page-dash-panel">
-              <input type="text" className="about-page-dash-search"/>
+              <input type="text" className="about-page-dash-search" />
               <h2 className="sub-title">Why Us Section</h2>
             </TabPanel>
             <TabPanel className="about-page-dash-panel">
-              <input type="text" className="about-page-dash-search"/>
+              <input type="text" className="about-page-dash-search" />
             </TabPanel>
           </div>
         </TabPanel>
@@ -327,86 +332,79 @@ export default function Dash() {
         </TabPanel>
         <TabPanel>
           <div className="main">
-            <h1 className="title">Contact Page</h1>
-            <div className="section">
-              <h2 className="sub-title">Hero Section</h2>
-              <ContactHero />
+            <div className="about-page-dash">
+              <h1 className="about-page-dash-txt">Page Intro</h1>
+              <h1 className="about-page-dash-txt">Contact Details</h1>
+              <h1 className="about-page-dash-txt">Enquiry Form</h1>
             </div>
-          </div>
-        </TabPanel>
-        <TabPanel>
-          <div className="main">
-            <h1 className="title">Blog Page</h1>
-            {/* <div className="section">
-              <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
+            <div
+              className="about-page-dash-panel"
+              style={{
+                display: "none",
+              }}
+            >
+              <div className="operation-container">
+                <div className="search-container">
+                  <input type="text" placeholder="search" className="search" />
+                  <img src={Search} alt="" className="search-img" />
+                </div>
+                <div className="add-container">
+                  <img src={Add} alt="" className="add" />
+                </div>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={view} alt="" className="view" />
+                    <img src={edit} alt="" className="view" />
+                    <img src={close} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+                <br />
+                <p className="para-container">
+                  <h1 className="title-container">Paragraph : </h1>
+                  Feel free to contact us for a detailed portfolio or a
+                  no-strings-attached quote. Or, if you may, hit us up with a
+                  hey to get chatting! After all, the real treasure is the
+                  friends we make along the way!​
+                </p>
+              </div>
             </div>
-            <div className="section">
-              <h2 className="sub-title">Buttons Section</h2>
-              <h3 className="change-h1">Lorem</h3>
-              <h3 className="change-h1">Lorem</h3>
-              <h3 className="change-h1">Lorem</h3>
-              <h3 className="change-h1">Lorem</h3>
-              <h3 className="change-h1">Lorem</h3>
-              <h3 className="change-h1">Lorem</h3>
-            </div> */}
-            {/* <div className="section">
-              <h2 className="sub-title">Blog Section</h2>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-              <h3 className="change-h1">Lorem, ipsum dolor.</h3>
-            </div> */}
-            <h1 className="title">Blog Inner Page</h1>
-            <div className="section">
-              <h2 className="sub-title">Hero Section</h2>
-              <h3 className="change-h1">Date</h3>
-              <h3 className="change-h1">Lorem ipsum dolor sit amet.</h3>
-              <h3 className="change-h1">Cheese</h3>
-            </div>
-            <div className="section">
-              <h2 className="sub-title">Content Section</h2>
-              <h3 className="change-h1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                saepe sequi dolore voluptates ad quo aperiam et totam nesciunt
-                itaque iusto ipsam temporibus impedit culpa, eaque ducimus
-                officia quas qui perferendis minus illo! Deleniti, deserunt
-                quisquam quibusdam iure, dolorum nam earum illo ex reprehenderit
-                fuga voluptates recusandae veniam aspernatur id eum? Aut
-                excepturi accusantium amet rerum ea consectetur ex distinctio,
-                non dignissimos tenetur dolorem odit nobis laudantium ut in.
-              </h3>
-              <h3 className="change-h1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h3>
-              <h3 className="change-h1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                saepe sequi dolore voluptates ad quo aperiam et totam nesciunt
-                itaque iusto ipsam temporibus impedit culpa, eaque ducimus
-                officia quas qui perferendis minus illo! Deleniti, deserunt
-                quisquam quibusdam iure, dolorum nam earum illo ex reprehenderit
-                fuga voluptates recusandae veniam aspernatur id eum? Aut
-                excepturi accusantium amet rerum ea consectetur ex distinctio,
-                non dignissimos tenetur dolorem odit nobis laudantium ut in.
-              </h3>
-              <h3 className="change-h1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </h3>
-              <h3 className="change-h1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                saepe sequi dolore voluptates ad quo aperiam et totam nesciunt
-                itaque iusto ipsam temporibus impedit culpa, eaque ducimus
-                officia quas qui perferendis minus illo! Deleniti, deserunt
-                quisquam quibusdam iure, dolorum nam earum illo ex reprehenderit
-                fuga voluptates recusandae veniam aspernatur id eum? Aut
-                excepturi accusantium amet rerum ea consectetur ex distinctio,
-                non dignissimos tenetur dolorem odit nobis laudantium ut in.
-              </h3>
+            <div
+              className="about-page-dash-panel"
+              style={
+                {
+                  // display: 'none'
+                }
+              }
+            >
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={edit} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+              </div>
+              <div className="container-dash">
+                <p className="para-container">
+                  <div className="images-container">
+                    <img src={edit} alt="" className="view" />
+                  </div>
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                </p>
+              </div>
+              <div className="container-address">
+                <p className="para-container">
+                  <h1 className="title-container">Title : </h1>
+                  The sky's the limit!​
+                  <img src={edit} alt="" className="view" />
+                </p>
+              </div>
             </div>
           </div>
         </TabPanel>

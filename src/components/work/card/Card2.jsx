@@ -98,7 +98,7 @@ const Card2 = () => {
     window.addEventListener("scroll", function () {
       // console.log("scroll event fired!");
       // console.log("window.scrollX:", window.scrollX);
-      if (window.scrollY > 500 && window.scrollY < 700) {
+      if (window.scrollY > 500 && window.scrollY < 570) {
         // console.log("window.scrollX event has occurred!");
         setPos(true);
       } else {
@@ -157,6 +157,7 @@ const Card2 = () => {
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
+                      height: "58%",
                     }}
                   >
                     Cowboy is an e-bike provider, unifying intelligent
@@ -170,6 +171,15 @@ const Card2 = () => {
                         marginTop: "20px",
                       }}
                     >
+                      <div
+                        style={{
+                          marginLeft: "-20px",
+                          color: "#848484",
+                          marginBottom: "5px",
+                        }}
+                      >
+                        Services Rendered:
+                      </div>
                       <li
                         style={{
                           color: "#848484",
@@ -229,6 +239,7 @@ const Card2 = () => {
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
+                      height: "58%",
                     }}
                   >
                     Mango is a leading luxury apparel brand that through its
@@ -241,6 +252,15 @@ const Card2 = () => {
                         marginTop: "20px",
                       }}
                     >
+                      <div
+                        style={{
+                          marginLeft: "-20px",
+                          color: "#848484",
+                          marginBottom: "5px",
+                        }}
+                      >
+                        Services Rendered:
+                      </div>
                       <li
                         style={{
                           color: "#848484",
@@ -314,6 +334,7 @@ const Card2 = () => {
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
+                      height: "49%",
                     }}
                   >
                     William Abraham is a luxury sock company that through their
@@ -326,6 +347,15 @@ const Card2 = () => {
                         marginTop: "20px",
                       }}
                     >
+                      <div
+                        style={{
+                          marginLeft: "-20px",
+                          color: "#848484",
+                          marginBottom: "5px",
+                        }}
+                      >
+                        Services Rendered:
+                      </div>
                       <li
                         style={{
                           color: "#848484",
@@ -378,6 +408,7 @@ const Card2 = () => {
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
+                      height: "58%",
                     }}
                   >
                     Lyra Health, a mental well-being firm, is transforming
@@ -390,6 +421,15 @@ const Card2 = () => {
                         marginTop: "20px",
                       }}
                     >
+                      <div
+                        style={{
+                          marginLeft: "-20px",
+                          color: "#848484",
+                          marginBottom: "5px",
+                        }}
+                      >
+                        Services Rendered:
+                      </div>
                       <li
                         style={{
                           color: "#848484",
@@ -449,6 +489,7 @@ const Card2 = () => {
                     style={{
                       fontFamily: "graphik",
                       color: "#848484",
+                      height: "66%",
                     }}
                   >
                     Klub is the first investment-oriented platform enhanced by a
@@ -460,6 +501,15 @@ const Card2 = () => {
                         marginTop: "20px",
                       }}
                     >
+                      <div
+                        style={{
+                          marginLeft: "-20px",
+                          color: "#848484",
+                          marginBottom: "5px",
+                        }}
+                      >
+                        Services Rendered:
+                      </div>
                       <li
                         style={{
                           color: "#848484",
@@ -601,6 +651,7 @@ const Card2 = () => {
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
+                          height: "58%",
                         }}
                       >
                         Cowboy is an e-bike provider, unifying intelligent
@@ -614,6 +665,15 @@ const Card2 = () => {
                             marginTop: "20px",
                           }}
                         >
+                          <div
+                            style={{
+                              marginLeft: "-20px",
+                              color: "#848484",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            Services Rendered:
+                          </div>
                           <li
                             style={{
                               color: "#848484",
@@ -675,6 +735,7 @@ const Card2 = () => {
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
+                          height: "58%",
                         }}
                       >
                         Mango is a leading luxury apparel brand that through its
@@ -687,6 +748,15 @@ const Card2 = () => {
                             marginTop: "20px",
                           }}
                         >
+                          <div
+                            style={{
+                              marginLeft: "-20px",
+                              color: "#848484",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            Services Rendered:
+                          </div>
                           <li
                             style={{
                               color: "#848484",
@@ -762,6 +832,7 @@ const Card2 = () => {
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
+                          height: "58%",
                         }}
                       >
                         William Abraham is a luxury sock company that through
@@ -774,6 +845,15 @@ const Card2 = () => {
                             marginTop: "20px",
                           }}
                         >
+                          <div
+                            style={{
+                              marginLeft: "-20px",
+                              color: "#848484",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            Services Rendered:
+                          </div>
                           <li
                             style={{
                               color: "#848484",
@@ -828,6 +908,7 @@ const Card2 = () => {
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
+                          height: "58%",
                         }}
                       >
                         Lyra Health, a mental well-being firm, is transforming
@@ -840,6 +921,15 @@ const Card2 = () => {
                             marginTop: "20px",
                           }}
                         >
+                          <div
+                            style={{
+                              marginLeft: "-20px",
+                              color: "#848484",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            Services Rendered:
+                          </div>
                           <li
                             style={{
                               color: "#848484",
@@ -901,6 +991,7 @@ const Card2 = () => {
                         style={{
                           fontFamily: "graphik",
                           color: "#848484",
+                          height: "58%",
                         }}
                       >
                         Klub is the first investment-oriented platform enhanced
@@ -913,6 +1004,15 @@ const Card2 = () => {
                             marginTop: "20px",
                           }}
                         >
+                          <div
+                            style={{
+                              marginLeft: "-20px",
+                              color: "#848484",
+                              marginBottom: "5px",
+                            }}
+                          >
+                            Services Rendered:
+                          </div>
                           <li
                             style={{
                               color: "#848484",
@@ -1024,6 +1124,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   Cowboy is an e-bike provider, unifying intelligent technology,
@@ -1036,6 +1137,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1095,6 +1205,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   Mango is a leading luxury apparel brand that through its
@@ -1107,6 +1218,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1181,6 +1301,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   William Abraham is a luxury sock company that through their
@@ -1193,6 +1314,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1245,6 +1375,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   Kernel Wealth is a digital investing platform that aims to
@@ -1256,6 +1387,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1330,6 +1470,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "64%",
                   }}
                 >
                   Klub is the first investment-oriented platform enhanced by a
@@ -1341,6 +1482,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1428,6 +1578,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   Lyra Health, a mental well-being firm, is transforming
@@ -1439,6 +1590,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1498,6 +1658,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   Studio Neat is a design studio that is focused on making truly
@@ -1509,6 +1670,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1547,6 +1717,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   Deel is the #1 global hiring, HR and payroll platform that
@@ -1561,6 +1732,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1606,6 +1786,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "53%",
                   }}
                 >
                   IMAPAC is the one-stop shop for market intelligence B2B
@@ -1618,6 +1799,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",
@@ -1684,6 +1874,7 @@ const Card2 = () => {
                   style={{
                     fontFamily: "graphik",
                     color: "#848484",
+                    height: "58%",
                   }}
                 >
                   SDU is an accounting firm that are the pioneers who adopted
@@ -1696,6 +1887,15 @@ const Card2 = () => {
                       marginTop: "20px",
                     }}
                   >
+                    <div
+                      style={{
+                        marginLeft: "-20px",
+                        color: "#848484",
+                        marginBottom: "5px",
+                      }}
+                    >
+                      Services Rendered:
+                    </div>
                     <li
                       style={{
                         color: "#848484",

@@ -302,7 +302,7 @@
 .dashboard-left-item {
   transition: 0.3s;
   height: 60px;
-  width: 185px;
+  width: 63px;
   display: flex;
   align-items: center;
 }
@@ -316,8 +316,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 63px;
   transition: 0.3s;
-  opacity: 0;
+  display: none;
 }
 .tabtxt {
   width: 75px;
@@ -330,8 +332,8 @@
 .tabtxt:hover {
   background-color: #696969;
 }
-.tabtxt:hover .dash-item-h1 {
-  opacity: 1;
+.dashboard-left-item:hover .dash-item-h1 {
+  display: flex;
 }
 .main {
   margin-left: 63px;
@@ -348,6 +350,93 @@
   width: 80px;
   white-space: nowrap;
   color: #000;
+}
+.container-dash {
+  width: 80%;
+  margin-left: 7%;
+  padding: 0px 5px 30px 30px;
+  background-color: #fff;
+  border-left: 5px solid #000;
+  margin-top: 5vh;
+  transition: 0.3s;
+}
+.container-address {
+  width: 80%;
+  margin-left: 7%;
+  padding: 0px 5px 0px 30px;
+  background-color: #fff;
+  margin-top: 5vh;
+  transition: 0.3s;
+}
+.images-container {
+  display: flex;
+  justify-content: end;
+  transition: 0.3s;
+  margin-right: -5px;
+}
+.container-dash:hover .view {
+  visibility: visible;
+}
+.search-container {
+  display: flex;
+}
+.search-img {
+  width: 40px;
+  padding: 0 10px;
+  background-color: #111111;
+  height: 50px;
+}
+.operation-container {
+  display: flex;
+  width: 86%;
+  justify-content: space-between;
+  margin-top: 10vh;
+  margin-left: 7%;
+}
+.add {
+  width: 60px;
+  height: 60px;
+}
+.add-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.view {
+  opacity: 0.6;
+  transition: 0.3;
+  padding: 3px;
+  visibility: hidden;
+}
+.view:hover {
+  opacity: 1;
+  background-color: #ffcc00;
+}
+.search::placeholder {
+  font-family: graphik;
+  color: #696969;
+}
+.search {
+  padding: 10px 25px;
+  height: 50px;
+  width: 350px;
+  color: #000;
+  font-family: graphik;
+}
+.container-dash:hover {
+  border-left: 5px solid #ffcd05;
+}
+.title-container {
+  color: #111;
+  font-family: graphik;
+  display: inline;
+}
+.para-container {
+  color: #696969;
+  font-weight: bolder;
 }
 .section {
   width: 90%;

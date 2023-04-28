@@ -20,7 +20,7 @@
   }
   label {
     display: flex;
-    width: 33%;
+    width: 320px;
     img {
       background-color: #fee994;
       width: 60px;
@@ -126,4 +126,9 @@
 .error {
   color: red;
   margin-top: -25px;
+}
+@media screen and (max-width: 1440px) {
+    .lines{
+      margin-left: calc(41% - 0.5px);
+    }  
 }
