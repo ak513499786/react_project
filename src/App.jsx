@@ -29,13 +29,20 @@ import AnimatedCursor from "react-animated-cursor";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Dash from "./components/Dashboard/dash";
 import Login from "./components/Dashboard/Login";
+import { useState } from "react";
 
 function App() {
   window.scroll({
     behavior: "smooth",
   });
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
   return (
-    <div>
+    <div style={{ backgroundColor: isDarkMode ? "white" : "#090909" }}>
       <AnimatedCursor
         innerSize={8}
         outerSize={0}
@@ -51,9 +58,15 @@ function App() {
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/admin" element={<Dash />} /> 
-          <Route exact path="/login" element={<Login />} /> 
+          <Route
+            exact
+            path="/"
+            element={
+              <Home isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route exact path="/admin" element={<Dash />} />
+          <Route exact path="/login" element={<Login />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/career" element={<Career />} />

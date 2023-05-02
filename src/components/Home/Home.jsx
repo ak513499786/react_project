@@ -10,7 +10,7 @@ import Testimonials from "./Testmonials";
 import Navbar from "../navigationBar/Nav";
 import Footer from "../footer/footer";
 
-export default function Home() {
+export default function Home({ isDarkMode, toggleDarkMode }) {
   let fade = useRef(null);
 
   const [scrollY, setScrollY] = useState(0);
@@ -36,11 +36,13 @@ export default function Home() {
   return (
     <>
       <header className="App-header" style={{ top: scrollY }}>
-        <Navbar />
+        <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       </header>
       <main ref={(el) => (fade = el)} className="home">
         <Hero />
+        {/* <div className="mt-10"> */}
         <HomeAbout />
+        {/* </div> */}
         <HomeServices />
         <Testimonials />
         <BlogHome />

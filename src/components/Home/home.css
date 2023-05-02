@@ -11,6 +11,7 @@
 #hero {
   width: 100%;
   height: 1080px;
+  background-color: #000;
 }
 .bgv {
   position: absolute;
@@ -23,7 +24,7 @@
 .bgi {
   position: relative;
   top: -10vh;
-  height: 110vh;
+  height: 117vh;
   width: 100%;
   overflow: hidden;
 }
@@ -404,7 +405,7 @@
   width: 562px;
   height: 223px;
 }
-.drag{
+.drag {
   display: none;
 }
 #srvcnt {
@@ -592,7 +593,7 @@
   color: #848484;
   margin-top: 30px;
 }
-.test-content{
+.test-content {
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -720,34 +721,34 @@
   bottom: 0.82%;
   opacity: 0.5;
 }
-.client-img0:hover{
+.client-img0:hover {
   opacity: 1;
 }
-.client-img1:hover{
+.client-img1:hover {
   opacity: 1;
 }
-.client-img2:hover{
+.client-img2:hover {
   opacity: 1;
 }
-.client-img3:hover{
+.client-img3:hover {
   opacity: 1;
 }
-.client-img4:hover{
+.client-img4:hover {
   opacity: 1;
 }
-.client-img5:hover{
+.client-img5:hover {
   opacity: 1;
 }
-.client-img6:hover{
+.client-img6:hover {
   opacity: 1;
 }
-.client-img7:hover{
+.client-img7:hover {
   opacity: 1;
 }
-.client-img8:hover{
+.client-img8:hover {
   opacity: 1;
 }
-.client-img9:hover{
+.client-img9:hover {
   opacity: 1;
 }
 #blog {
@@ -822,19 +823,19 @@
   border: 1px solid #ffc017;
   box-shadow: 0px 0px 38px 8px rgba(255, 225, 105, 0.28);
 }
-.para{
+.para {
   font-size: 20px;
   line-height: 30px;
   word-spacing: 0;
   letter-spacing: 0;
 }
-.sub-heading{
+.sub-heading {
   font-size: 50px;
   letter-spacing: 0;
   word-spacing: 0;
   line-height: 105%;
 }
-.heading{
+.heading {
   font-size: 75px;
   line-height: 88px;
   letter-spacing: 0;
@@ -858,7 +859,7 @@
   #blog {
     left: 14%;
   }
-  #blg{
+  #blg {
     left: 14%;
   }
   #testimonials {
@@ -1247,14 +1248,14 @@
   .explore_btn {
     width: 950px;
   }
-  .para{
+  .para {
     font-size: 15px;
     line-height: 25px;
   }
-  .sub-heading{
+  .sub-heading {
     font-size: 35px;
   }
-  .heading{
+  .heading {
     font-size: 58px;
     line-height: 70px;
   }
@@ -1281,7 +1282,7 @@
     max-width: 2543.52px;
     height: 1316.67px;
     left: -27.78px;
-    top:calc( -370.34px + 10vh);
+    top: calc(-370.34px + 10vh);
   }
   #hero {
     height: 100vh;
@@ -1479,14 +1480,14 @@
   .exp_btn {
     margin-left: 0%;
   }
-  .para{
+  .para {
     font-size: 15px;
     line-height: 25px;
   }
-  .sub-heading{
+  .sub-heading {
     font-size: 40px;
   }
-  .heading{
+  .heading {
     font-size: 65px;
     line-height: 70px;
   }
@@ -1697,7 +1698,7 @@
   .home {
     height: calc(100vh + 3400px);
   }
-  .bgv{
+  .bgv {
     transform: scale(1.5);
     opacity: 0.8;
   }
@@ -2059,13 +2060,13 @@
     position: absolute;
     left: 980px;
   }
-  .bgi{
+  .bgi {
     height: 130vh;
   }
-  .sub-heading{
+  .sub-heading {
     font-size: 30px;
   }
-  .heading{
+  .heading {
     font-size: 60px;
     line-height: 60x;
   }
@@ -2084,25 +2085,25 @@
     font-size: 40px;
     line-height: 45px;
   }
-  .swipe-arrow{
+  .swipe-arrow {
     transform: rotate(-90deg);
   }
-  .arrowcontainer{
+  .arrowcontainer {
     width: 40px;
     overflow: hidden;
     margin-left: 5px;
   }
-  .drag{
+  .drag {
     width: 100%;
     display: flex;
     height: 50px;
     justify-content: end;
     align-items: center;
   }
-  #container-h3{
+  #container-h3 {
     height: 270px;
   }
-  #imgsp{
+  #imgsp {
     font-size: 13px;
     width: 290px;
   }
@@ -2120,7 +2121,7 @@
   #abtcnt {
     width: 90%;
   }
-  .bgv{
+  .bgv {
     top: -1450px;
     transform: scale(2);
     left: 0px;
@@ -2367,7 +2368,7 @@
   .blog-home-container {
     gap: 50px;
   }
-  .heading{
+  .heading {
     font-size: 40px;
     line-height: 45px;
   }

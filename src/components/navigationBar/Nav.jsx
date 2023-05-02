@@ -9,7 +9,8 @@ import linkedin from "./images/mdi_linkedin.svg";
 import { Link } from "react-router-dom";
 import { gsap, Power3 } from "gsap/gsap-core";
 import { useRef, useState, useEffect } from "react";
-export default function Navigation_bar() {
+import Toggle from "../../Toggle";
+export default function Navigation_bar({ isDarkMode, toggleDarkMode }) {
   let slide = useRef(null);
 
   const navSlide = () => {
@@ -62,8 +63,10 @@ export default function Navigation_bar() {
                 <span className="hyphen"></span>
               </Link>
             </li>
-            <li className="nav_list-item">
-              <div className="menu" onClick={navSlide}></div>
+            <li className="nav_list-item flex items-center justify-center ">
+              <Toggle isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+
+              <div className="menu mx-4" onClick={navSlide}></div>
             </li>
           </ul>
         </nav>

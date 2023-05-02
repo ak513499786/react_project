@@ -51,7 +51,7 @@ const HomeAbout = () => {
   // }, []);
   return (
     <>
-      <section id="about" className=" agency mt-8 max-sm:mt-0">
+      <section id="about" className=" agency mt-16 max-sm:mt-0">
         <div id="rectangle" className="max-xl:none"></div>
         <div id="abtcnt">
           <div className="header1">
