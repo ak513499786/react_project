@@ -39,16 +39,16 @@ export default function Home({ isDarkMode, toggleDarkMode }) {
         <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       </header>
       <main ref={(el) => (fade = el)} className="home">
-        <Hero />
+        <Hero isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         {/* <div className="mt-10"> */}
-        <HomeAbout />
+        <HomeAbout isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
         {/* </div> */}
-        <HomeServices />
-        <Testimonials />
-        <BlogHome />
+        <HomeServices isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <Testimonials isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+        <BlogHome isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       </main>
       <footer className="App-footer" style={{ bottom: -scrollY }}>
-        <Footer />
+        <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
       </footer>
     </>
   );

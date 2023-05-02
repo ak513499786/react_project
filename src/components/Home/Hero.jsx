@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 
-export default function Hero() {
+export default function Hero({ isDarkMode, toggleDarkMode }) {
   const [array, setarray] = useState();
   const [content, setContent] = useState();
 
@@ -16,7 +16,7 @@ export default function Hero() {
   // }, []);
   return (
     <>
-      <section id="hero">
+      <section style={{ backgroundColor: isDarkMode ? "white" : "#000" }} id="hero">
         <div className="bgi">
           <video
             className="bgv"

@@ -42,7 +42,7 @@ function App() {
     setIsDarkMode(!isDarkMode);
   };
   return (
-    <div style={{ backgroundColor: isDarkMode ? "white" : "#090909" }}>
+    <div style={{ backgroundColor: isDarkMode ? "#FFFFFF" : "#090909" }}>
       <AnimatedCursor
         innerSize={8}
         outerSize={0}
@@ -67,17 +67,92 @@ function App() {
           />
           <Route exact path="/admin" element={<Dash />} />
           <Route exact path="/login" element={<Login />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/work" element={<Work />} />
-          <Route exact path="/career" element={<Career />} />
-          <Route exact path="/blog" element={<Blog />} />
-          <Route exact path="/services" element={<Services />} />
-          <Route exact path="/consultingandstrategy" element={<Consulting />} />
-          <Route exact path="/userexperience" element={<UX />} />
-          <Route exact path="/productdevelopment" element={<PD />} />
-          <Route exact path="/digitalmarketing" element={<DM />} />
-          <Route exact path="/let's_talk" element={<Talk />} />
-          <Route exact path="/empathy-in-UX" element={<Empathy />} />
+          <Route
+            exact
+            path="/about"
+            element={
+              <About isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/work"
+            element={
+              <Work isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/career"
+            element={
+              <Career isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/blog"
+            element={
+              <Blog isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/services"
+            element={
+              <Services
+                isDarkMode={isDarkMode}
+                toggleDarkMode={toggleDarkMode}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/consultingandstrategy"
+            element={
+              <Consulting
+                isDarkMode={isDarkMode}
+                toggleDarkMode={toggleDarkMode}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/userexperience"
+            element={
+              <UX isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/productdevelopment"
+            element={
+              <PD isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/digitalmarketing"
+            element={
+              <DM isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/let's_talk"
+            element={
+              <Talk isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+            }
+          />
+          <Route
+            exact
+            path="/empathy-in-UX"
+            element={
+              <Empathy
+                isDarkMode={isDarkMode}
+                toggleDarkMode={toggleDarkMode}
+              />
+            }
+          />
           <Route
             exact
             path="/digital-marketing-trends-2023"
